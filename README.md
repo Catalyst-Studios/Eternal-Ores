@@ -24,6 +24,7 @@ We also plan to add Items for mods, but we already have some prepared!
 - GregTech (Implemented)
 - Forbidden And Arcanus (NYI)
 - Occultism (Implemented)
+- Productive Bees (NYI)
 
 KubeJS
 ============

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "cooked_carrot",
+  "ingredient": {
+    "item": "minecraft:carrot"
+  },
+  "result": {
+    "id": "eternalitems:cooked_carrot"
+  }
+}

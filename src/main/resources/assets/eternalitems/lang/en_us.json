@@ -18,6 +18,9 @@
   "item.eternalitems.silicon": "Silicon",
   "item.eternalitems.fang": "Fang",
 
+  "item.eternalitems.cooked_apple": "Cooked Apple",
+  "item.eternalitems.cooked_carrot": "Cooked Carrot",
+
   "item.eternalitems.eternal_dark_sword": "Eternal Dark Sword",
   "item.eternalitems.copper_sword": "Copper Sword",
   "item.eternalitems.bone_knife": "Bone Knife",
@@ -29,6 +32,7 @@
   "item.eternalitems.copper_hoe": "Copper Hoe",
 
   "item.eternalitems.aluminum_ingot": "Aluminum Ingot",
+  "item.eternalitems.cobalt_ingot": "Cobalt Ingot",
   "item.eternalitems.eternal_dark_ingot": "Eternal Dark Ingot",
   "item.eternalitems.eternal_light_ingot": "Eternal Light Ingot",
   "item.eternalitems.graphite_ingot": "Graphite Ingot",
@@ -39,6 +43,7 @@
   "item.eternalitems.uranium_ingot": "Uranium Ingot",
 
   "item.eternalitems.aluminum_nugget": "Aluminum Nugget",
+  "item.eternalitems.cobalt_nugget": "Cobalt Nugget",
   "item.eternalitems.copper_nugget": "Copper Nugget",
   "item.eternalitems.lead_nugget": "Lead Nugget",
   "item.eternalitems.osmium_nugget": "Osmium Nugget",
@@ -65,19 +70,22 @@
 
   "item.eternalitems.ultimate_gear": "Ultimate Gear",
 
-  "item.eternalitems.raw_uranium": "Raw Uranium Ore",
-  "item.eternalitems.raw_osmium": "Raw Osmium Ore",
-  "item.eternalitems.raw_platinum": "Raw Platinum Ore",
-  "item.eternalitems.raw_tin": "Raw Tin Ore",
-  "item.eternalitems.raw_lead": "Raw Lead Ore",
-  "item.eternalitems.raw_aluminum": "Raw Aluminum Ore",
-  "item.eternalitems.raw_nickel": "Raw Nickel Ore",
-  "item.eternalitems.raw_silver": "Raw Silver Ore",
+  "item.eternalitems.raw_uranium": "Raw Uranium",
+  "item.eternalitems.raw_osmium": "Raw Osmium",
+  "item.eternalitems.raw_platinum": "Raw Platinum",
+  "item.eternalitems.raw_tin": "Raw Tin",
+  "item.eternalitems.raw_lead": "Raw Lead",
+  "item.eternalitems.raw_aluminum": "Raw Aluminum",
+  "item.eternalitems.raw_nickel": "Raw Nickel",
+  "item.eternalitems.raw_silver": "Raw Silver",
+  "item.eternalitems.raw_cobalt": "Raw Cobalt",
 
   "item.eternalitems.aluminum_dust": "Aluminum Dust",
+  "item.eternalitems.cobalt_dust": "Cobalt Dust",
   "item.eternalitems.copper_dust": "Copper Dust",
   "item.eternalitems.gold_dust": "Gold Dust",
   "item.eternalitems.iron_dust": "Iron Dust",
+  "item.eternalitems.fluorite_dust": "Fluorite Dust",
   "item.eternalitems.lead_dust": "Lead Dust",
   "item.eternalitems.osmium_dust": "Osmium Dust",
   "item.eternalitems.platinum_dust": "Platinum Dust",
@@ -90,25 +98,32 @@
   "item.eternalitems.gem_peridot": "Peridot",
   "item.eternalitems.gem_sapphire": "Sapphire",
   "item.eternalitems.sulfur": "Sulfur",
+  "item.eternalitems.fluorite": "Fluorite",
 
   "block.eternalitems.aluminum_ore_block": "Aluminum Ore",
+  "block.eternalitems.cobalt_ore_block": "Cobalt Ore",
+  "block.eternalitems.fluorite_ore_block": "Fluorite Ore",
   "block.eternalitems.lead_ore_block": "Lead Ore",
   "block.eternalitems.osmium_ore_block": "Osmium Ore",
   "block.eternalitems.platinum_ore_block": "Platinum Ore",
   "block.eternalitems.uranium_ore_block": "Uranium Ore",
 
+  "block.eternalitems.deepslate_cobalt_ore_block": "Deepslate Cobalt Ore",
+  "block.eternalitems.deepslate_fluorite_ore_block": "Deepslate Fluorite Ore",
   "block.eternalitems.deepslate_lead_ore_block": "Deepslate Lead Ore",
   "block.eternalitems.deepslate_osmium_ore_block": "Deepslate Osmium Ore",
   "block.eternalitems.deepslate_platinum_ore_block": "Deepslate Platinum Ore",
   "block.eternalitems.deepslate_uranium_ore_block": "Deepslate Uranium Ore",
 
   "block.eternalitems.raw_aluminum_block": "Raw Aluminum Block",
+  "block.eternalitems.raw_cobalt_block": "Raw Cobalt Block",
   "block.eternalitems.raw_lead_block": "Raw Lead Block",
   "block.eternalitems.raw_osmium_block": "Raw Osmium Block",
   "block.eternalitems.raw_platinum_block": "Raw Platinum Block",
   "block.eternalitems.raw_uranium_block": "Raw Uranium Block",
 
   "block.eternalitems.aluminum_block": "Aluminum Block",
+  "block.eternalitems.cobalt_block": "Cobalt Block",
   "block.eternalitems.lead_block": "Lead Block",
   "block.eternalitems.osmium_block": "Osmium Block",
   "block.eternalitems.platinum_block": "Platinum Block",
@@ -127,5 +142,6 @@
   "creativetab.eternalitems.eternal_ore_dust": "Eternal Ore Dust",
   "creativetab.eternalitems.eternal_gems": "Eternal Gems",
   "creativetab.eternalitems.eternal_weapons": "Eternal Weapons",
-  "creativetab.eternalitems.eternal_tools": "Eternal Tools"
+  "creativetab.eternalitems.eternal_tools": "Eternal Tools",
+  "creativetab.eternalitems.eternal_foods": "Eternal Foods"
 }

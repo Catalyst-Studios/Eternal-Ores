@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:raw_aluminum",
+    "eternalitems:raw_cobalt",
+    "eternalitems:raw_lead",
+    "eternalitems:raw_nickel",
+    "eternalitems:raw_osmium",
+    "eternalitems:raw_platinum",
+    "eternalitems:raw_silver",
+    "eternalitems:sulfur",
+    "eternalitems:raw_tin",
+    "eternalitems:raw_uranium"
+  ]
+}

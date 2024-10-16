@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:fluorite",
+    "eternalitems:gem_obsidian_shard",
+    "eternalitems:gem_onyx",
+    "eternalitems:gem_peridot",
+    "eternalitems:gem_ruby",
+    "eternalitems:gem_sapphire"
+  ]
+}

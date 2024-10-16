@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalitems.EternalItems;
+import net.radzratz.eternalitems.item.custom.ModFoodProperties;
 
 public class Moditems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EternalItems.MOD_ID);
@@ -60,6 +61,16 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SULFUR_DUST = ITEMS.register("sulfur_dust",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FLUORITE_DUST = ITEMS.register("fluorite_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FLUORITE = ITEMS.register("fluorite",
+            ()-> new Item(new Item.Properties()));
+
+    //Food
+    public static final DeferredItem<Item> COOKED_APPLE = ITEMS.register("cooked_apple",
+            ()-> new Item(new Item.Properties().food(ModFoodProperties.COOKED_APPLE)));
+    public static final DeferredItem<Item> COOKED_CARROT = ITEMS.register("cooked_carrot",
+            ()-> new Item(new Item.Properties().food(ModFoodProperties.COOKED_CARROT)));
 
     //Swords
     public static final DeferredItem<Item> ETERNAL_DARK_SWORD = ITEMS.register("eternal_dark_sword",
@@ -100,6 +111,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATINUM_INGOT = ITEMS.register("platinum_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",
+            ()-> new Item(new Item.Properties()));
 
     //Nuggets
     public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
@@ -113,6 +126,8 @@ public class Moditems {
     public static final DeferredItem<Item> PLATINUM_NUGGET = ITEMS.register("platinum_nugget",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
             ()-> new Item(new Item.Properties()));
 
     //Rods
@@ -172,6 +187,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_SILVER = ITEMS.register("raw_silver",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
+            ()-> new Item(new Item.Properties()));
 
     //Ore Dust
     public static final DeferredItem<Item> ALUMINUM_DUST = ITEMS.register("aluminum_dust",
@@ -189,6 +206,8 @@ public class Moditems {
     public static final DeferredItem<Item> COPPER_DUST = ITEMS.register("copper_dust",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> IRON_DUST = ITEMS.register("iron_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COBALT_DUST = ITEMS.register("cobalt_dust",
             ()-> new Item(new Item.Properties()));
 
     //Gems
