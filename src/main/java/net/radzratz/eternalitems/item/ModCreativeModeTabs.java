@@ -6,6 +6,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalitems.EternalItems;
 import net.radzratz.eternalitems.block.ModBlocks;
@@ -20,6 +21,9 @@ public class ModCreativeModeTabs {
             ()-> CreativeModeTab.builder().icon(()-> new ItemStack(Moditems.RATZ_HEAD.get()))
                     .title(Component.translatable("creativetab.eternalitems.eternal_items"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //ModCompatItems
+                        addAE2ItemsToTab(output);
+                        //Normal Eternal Items Items kek
                         output.accept(Moditems.ANTIMATTER_FUSE);
                         output.accept(Moditems.ANGELS_STRING);
                         output.accept(Moditems.BLACK_HOLE);
@@ -32,13 +36,23 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.FORGOTTEN_SEA_COIN);
                         output.accept(Moditems.GODS_TEAR);
                         output.accept(Moditems.GREGTASTIC_ATOMIC_PHD);
-                        output.accept(Moditems.MULTIPRESS);
                         output.accept(Moditems.RATZ_HEAD);
                         output.accept(Moditems.SILICON);
                         output.accept(Moditems.SERAPHIMS_FEATHER);
                         output.accept(Moditems.SOURCE_MANIFESTATION);
                         output.accept(Moditems.UNDEAD_HAND);
                     }).build());
+
+    //This Is to show AE2 Items
+    private static void addAE2ItemsToTab(CreativeModeTab.Output output) {
+        if(ModList.get().isLoaded("ae2")) {
+            System.out.println("Adding Multipress to tab.");
+            output.accept(new ItemStack(Moditems.MULTIPRESS.get()));
+        } else {
+            System.out.println("Adding Dummypress to tab.");
+            output.accept(new ItemStack(Moditems.DUMMYPRESS.get()));
+        }
+    }
 
 //FOODS
 public static final Supplier<CreativeModeTab> ETERNAL_FOODS_TAB = CREATIVE_MODE_TAB.register("eternal_foods_tab",
@@ -109,6 +123,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     .title(Component.translatable("creativetab.eternalitems.eternal_rods"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ROD_ALUMINUM);
+                        output.accept(Moditems.ROD_COBALT);
                         output.accept(Moditems.ROD_COPPER);
                         output.accept(Moditems.ROD_GOLD);
                         output.accept(Moditems.ROD_IRON);
@@ -124,6 +139,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     .title(Component.translatable("creativetab.eternalitems.eternal_plates"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.PLATE_ALUMINUM);
+                        output.accept(Moditems.PLATE_COBALT);
                         output.accept(Moditems.PLATE_COPPER);
                         output.accept(Moditems.PLATE_GOLD);
                         output.accept(Moditems.PLATE_IRON);

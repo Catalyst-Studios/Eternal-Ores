@@ -10,6 +10,7 @@
   "item.eternalitems.forgotten_sea_coin": "Forgotten Sea Coin",
   "item.eternalitems.eternal_vortex": "Eternal Vortex",
   "item.eternalitems.multipress": "Multipress",
+  "item.eternalitems.dummypress": "Multipress",
   "item.eternalitems.undead_hand": "Undead Hand",
   "item.eternalitems.gods_tear": "Gods Tear",
   "item.eternalitems.devils_tooth": "Devils Tooth",
@@ -51,6 +52,7 @@
   "item.eternalitems.uranium_nugget": "Uranium Nugget",
 
   "item.eternalitems.rod_aluminum": "Aluminum Rod",
+  "item.eternalitems.rod_cobalt": "Cobalt Rod",
   "item.eternalitems.rod_copper": "Copper Rod",
   "item.eternalitems.rod_gold": "Gold Rod",
   "item.eternalitems.rod_iron": "Iron Rod",
@@ -60,6 +62,7 @@
   "item.eternalitems.rod_uranium": "Uranium Rod",
 
   "item.eternalitems.plate_aluminum": "Aluminum Plate",
+  "item.eternalitems.plate_cobalt": "Cobalt Plate",
   "item.eternalitems.plate_copper": "Copper Plate",
   "item.eternalitems.plate_gold": "Gold Plate",
   "item.eternalitems.plate_iron": "Iron Plate",

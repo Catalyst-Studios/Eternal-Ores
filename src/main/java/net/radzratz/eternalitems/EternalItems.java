@@ -6,6 +6,7 @@ import net.neoforged.fml.ModList;
 import net.radzratz.eternalitems.block.ModBlocks;
 import net.radzratz.eternalitems.item.ModCreativeModeTabs;
 import net.radzratz.eternalitems.item.Moditems;
+import net.radzratz.eternalitems.util.ModCompatibility;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -35,6 +36,7 @@ public class EternalItems
     public EternalItems(IEventBus modEventBus, ModContainer modContainer)
     {
         // Register the commonSetup method for modloading
+        System.out.println("addListener Started.");
         modEventBus.addListener(this::commonSetup);
 
         // Register ourselves for server and other game events we are interested in.
@@ -42,26 +44,12 @@ public class EternalItems
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
-        ModCreativeModeTabs.register(modEventBus);
-
         Moditems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        if(ModList.get().isLoaded("mekanism")) {
+        System.out.println("ModCreativeModeTabs Register Initialized.");
+        ModCreativeModeTabs.register(modEventBus);
 
-        }
-        if(ModList.get().isLoaded("appliedenergistics2")) {
-
-        }
-        if(ModList.get().isLoaded("occultism")) {
-
-        }
-        if(ModList.get().isLoaded("gtceu")) {
-
-        }
-        if(ModList.get().isLoaded("productivebees")) {
-
-        }
 
             // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -72,7 +60,9 @@ public class EternalItems
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        System.out.println("Common setup is running.");
+        ModCompatibility.checkOtherModsAppliedEnergistics2();
+        ModCompatibility.checkOtherModsArsNouveau();
     }
 
     // Add the example block item to the building blocks tab
@@ -80,128 +70,18 @@ public class EternalItems
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             //Items
-            event.accept(Moditems.DEMONIC_HEART);
-            event.accept(Moditems.DEVILS_TOOTH);
-            event.accept(Moditems.SOURCE_MANIFESTATION);
-            event.accept(Moditems.RATZ_HEAD);
-            event.accept(Moditems.ANTIMATTER_FUSE);
-            event.accept(Moditems.GREGTASTIC_ATOMIC_PHD);
-            event.accept(Moditems.CAPACITOR);
-            event.accept(Moditems.BLACK_HOLE);
-            event.accept(Moditems.COMET_SHARD);
-            event.accept(Moditems.FORGOTTEN_SEA_COIN);
-            event.accept(Moditems.ETERNAL_VORTEX);
-            event.accept(Moditems.MULTIPRESS);
-            event.accept(Moditems.GODS_TEAR);
-            event.accept(Moditems.ANGELS_STRING);
-            event.accept(Moditems.SERAPHIMS_FEATHER);
-            event.accept(Moditems.SILICON);
-            event.accept(Moditems.FANG);
-            //Ingots
-            event.accept(Moditems.ALUMINUM_INGOT);
-            event.accept(Moditems.ETERNAL_DARK_INGOT);
-            event.accept(Moditems.ETERNAL_LIGHT_INGOT);
-            event.accept(Moditems.GRAPHITE_INGOT);
-            event.accept(Moditems.LEAD_INGOT);
-            event.accept(Moditems.STEEL_INGOT);
-            event.accept(Moditems.OSMIUM_INGOT);
-            event.accept(Moditems.PLATINUM_INGOT);
-            event.accept(Moditems.URANIUM_INGOT);
-            //Nuggets
-            event.accept(Moditems.ALUMINUM_NUGGET);
-            event.accept(Moditems.COPPER_NUGGET);
-            event.accept(Moditems.LEAD_NUGGET);
-            event.accept(Moditems.OSMIUM_NUGGET);
-            event.accept(Moditems.PLATINUM_NUGGET);
-            event.accept(Moditems.URANIUM_NUGGET);
-            //Rods
-            event.accept(Moditems.ROD_ALUMINUM);
-            event.accept(Moditems.ROD_COPPER);
-            event.accept(Moditems.ROD_GOLD);
-            event.accept(Moditems.ROD_IRON);
-            event.accept(Moditems.ROD_LEAD);
-            event.accept(Moditems.ROD_OSMIUM);
-            event.accept(Moditems.ROD_PLATINUM);
-            event.accept(Moditems.ROD_URANIUM);
-            //Plates
-            event.accept(Moditems.PLATE_ALUMINUM);
-            event.accept(Moditems.PLATE_COPPER);
-            event.accept(Moditems.PLATE_GOLD);
-            event.accept(Moditems.PLATE_IRON);
-            event.accept(Moditems.PLATE_LEAD);
-            event.accept(Moditems.PLATE_OSMIUM);
-            event.accept(Moditems.PLATE_PLATINUM);
-            event.accept(Moditems.PLATE_URANIUM);
-            //Gears
-            event.accept(Moditems.ULTIMATE_GEAR);
-            //Raw Ores
-            event.accept(Moditems.RAW_ALUMINUM);
-            event.accept(Moditems.RAW_LEAD);
-            event.accept(Moditems.RAW_NICKEL);
-            event.accept(Moditems.RAW_OSMIUM);
-            event.accept(Moditems.RAW_PLATINUM);
-            event.accept(Moditems.RAW_SILVER);
-            event.accept(Moditems.RAW_TIN);
-            event.accept(Moditems.RAW_URANIUM);
-            //Ore Dust
-            event.accept(Moditems.ALUMINUM_DUST);
-            event.accept(Moditems.COPPER_DUST);
-            event.accept(Moditems.GOLD_DUST);
-            event.accept(Moditems.IRON_DUST);
-            event.accept(Moditems.LEAD_DUST);
-            event.accept(Moditems.OSMIUM_DUST);
-            event.accept(Moditems.PLATINUM_DUST);
-            event.accept(Moditems.SULFUR_DUST);
-            event.accept(Moditems.URANIUM_DUST);
-            //Gems
-            event.accept(Moditems.GEM_OBSIDIAN_SHARD);
-            event.accept(Moditems.GEM_ONYX);
-            event.accept(Moditems.GEM_PERIDOT);
-            event.accept(Moditems.GEM_RUBY);
-            event.accept(Moditems.GEM_SAPPHIRE);
-            event.accept(Moditems.SULFUR);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             //ORE BLOCKS
-            event.accept(ModBlocks.ALUMINUM_ORE_BLOCK);
-            event.accept(ModBlocks.LEAD_ORE_BLOCK);
-            event.accept(ModBlocks.OSMIUM_ORE_BLOCK);
-            event.accept(ModBlocks.PLATINUM_ORE_BLOCK);
-            event.accept(ModBlocks.URANIUM_ORE_BLOCK);
-            //DEEPSLATE ORE BLOCKS (If there is one)
-            event.accept(ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK);
-            event.accept(ModBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK);
-            event.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK);
-            event.accept(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
-            //RAW ORE BLOCKS
-            event.accept(ModBlocks.RAW_ALUMINUM_BLOCK);
-            event.accept(ModBlocks.RAW_LEAD_BLOCK);
-            event.accept(ModBlocks.RAW_OSMIUM_BLOCK);
-            event.accept(ModBlocks.RAW_PLATINUM_BLOCK);
-            event.accept(ModBlocks.RAW_URANIUM_BLOCK);
         }
         //METAL BLOCKS
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.ALUMINUM_BLOCK);
-            event.accept(ModBlocks.LEAD_BLOCK);
-            event.accept(ModBlocks.OSMIUM_BLOCK);
-            event.accept(ModBlocks.PLATINUM_BLOCK);
-            event.accept(ModBlocks.URANIUM_BLOCK);
-        }
         //Swords
-        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(Moditems.BONE_KNIFE);
-            event.accept(Moditems.COPPER_SWORD);
-            event.accept(Moditems.ETERNAL_DARK_SWORD);
+
         }
         //Pickaxes
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(Moditems.COPPER_AXE);
-            event.accept(Moditems.COPPER_HOE);
-            event.accept(Moditems.COPPER_PICKAXE);
-            event.accept(Moditems.COPPER_SHOVEL);
-            event.accept(Moditems.ETERNAL_DARK_PICKAXE);
         }
 
     }

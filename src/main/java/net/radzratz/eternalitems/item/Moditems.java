@@ -25,8 +25,10 @@ public class Moditems {
     //Needs GregTechCEU
     public static final DeferredItem<Item> GREGTASTIC_ATOMIC_PHD = ITEMS.register("gregtastic_atomic_phd",
             ()-> new Item(new Item.Properties()));
-    //Need AE2
+    //Needs AE2
     public static final DeferredItem<Item> MULTIPRESS = ITEMS.register("multipress",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DUMMYPRESS = ITEMS.register("dummypress",
             ()-> new Item(new Item.Properties()));
     //
     public static final DeferredItem<Item> CAPACITOR = ITEMS.register("capacitor",
@@ -147,6 +149,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_IRON = ITEMS.register("rod_iron",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_COBALT = ITEMS.register("rod_cobalt",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -164,6 +168,8 @@ public class Moditems {
     public static final DeferredItem<Item> PLATE_COPPER = ITEMS.register("plate_copper",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_IRON = ITEMS.register("plate_iron",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_COBALT = ITEMS.register("plate_cobalt",
             ()-> new Item(new Item.Properties()));
 
     //Gears
