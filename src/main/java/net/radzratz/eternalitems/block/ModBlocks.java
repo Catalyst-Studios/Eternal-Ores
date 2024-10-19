@@ -90,6 +90,17 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
+    //Tin
+    public static final DeferredBlock<Block> DEEPSLATE_TIN_ORE_BLOCK = registerBlock("deepslate_tin_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> TIN_ORE_BLOCK = registerBlock("tin_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
 
     //RAW ORE BLOCKS
     public static final DeferredBlock<Block> RAW_ALUMINUM_BLOCK = registerBlock("raw_aluminum_block",
@@ -118,6 +129,11 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
     public static final DeferredBlock<Block> RAW_PLATINUM_BLOCK = registerBlock("raw_platinum_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> RAW_TIN_BLOCK = registerBlock("raw_tin_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
                     .requiresCorrectToolForDrops()
@@ -152,6 +168,11 @@ public class ModBlocks {
     public static final DeferredBlock<Block> COBALT_BLOCK = registerBlock("cobalt_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> TIN_BLOCK = registerBlock("tin_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 

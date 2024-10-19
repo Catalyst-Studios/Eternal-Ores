@@ -67,6 +67,10 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> FLUORITE = ITEMS.register("fluorite",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DRAGONS_SCALE = ITEMS.register("dragons_scale",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> WRENCH = ITEMS.register("wrench",
+            ()-> new Item(new Item.Properties()));
 
     //Food
     public static final DeferredItem<Item> COOKED_APPLE = ITEMS.register("cooked_apple",
@@ -115,6 +119,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COBALT_INGOT = ITEMS.register("cobalt_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot",
+            ()-> new Item(new Item.Properties()));
 
     //Nuggets
     public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
@@ -130,6 +136,8 @@ public class Moditems {
     public static final DeferredItem<Item> COPPER_NUGGET = ITEMS.register("copper_nugget",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
             ()-> new Item(new Item.Properties()));
 
     //Rods
@@ -151,6 +159,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_COBALT = ITEMS.register("rod_cobalt",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_TIN = ITEMS.register("rod_tin",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -170,6 +180,8 @@ public class Moditems {
     public static final DeferredItem<Item> PLATE_IRON = ITEMS.register("plate_iron",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_COBALT = ITEMS.register("plate_cobalt",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_TIN = ITEMS.register("plate_tin",
             ()-> new Item(new Item.Properties()));
 
     //Gears
@@ -214,6 +226,8 @@ public class Moditems {
     public static final DeferredItem<Item> IRON_DUST = ITEMS.register("iron_dust",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COBALT_DUST = ITEMS.register("cobalt_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> TIN_DUST = ITEMS.register("tin_dust",
             ()-> new Item(new Item.Properties()));
 
     //Gems

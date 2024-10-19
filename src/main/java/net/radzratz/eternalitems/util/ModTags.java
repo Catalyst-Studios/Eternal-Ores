@@ -19,21 +19,18 @@ public class ModTags {
     }
     public static class Items {
 
-        //Ingots
-        public static final TagKey<Item> ALUMINUM_INGOT = createTag("aluminum_ingot");
-        public static final TagKey<Item> COBALT_INGOT = createTag("cobalt_ingot");
-        //Raw Ores
-        public static final TagKey<Item> ALUMINUM = createTag("raw_aluminum");
-        public static final TagKey<Item> COBALT = createTag("raw_cobalt");
-        public static final TagKey<Item> LEAD = createTag("raw_lead");
-        public static final TagKey<Item> URANIUM = createTag("raw_uranium");
-        //Nuggets
-        //Plates
-        //Rods
+        //Copper Tools
+        public static final TagKey<Item> COPPER_TOOLS = createTagCopperTools("copper_tools");
 
+        private static TagKey<Item> createTagCopperTools(String copper_tools) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("copper_tools", copper_tools));
+        }
 
-        private static TagKey<Item> createTag(String name) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+        //Eternal Dark Tools
+        public static final TagKey<Item> ETERNAL_DARK_TOOLS = createTagEternalDarkTools("eternal_dark_tools");
+
+        private static TagKey<Item> createTagEternalDarkTools(String eternal_dark_tools) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternal_dark_tools", eternal_dark_tools));
         }
     }
 

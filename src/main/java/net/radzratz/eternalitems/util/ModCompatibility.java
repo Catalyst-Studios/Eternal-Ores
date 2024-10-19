@@ -34,8 +34,8 @@ public class ModCompatibility {
     }
 
     public static void registerRealItemArsItems() {
-        System.out.println("AE2 Loaded, Loading Multipress, DummyPress should dissapear");
-        Moditems.MULTIPRESS.get();
+        System.out.println("Ars Nouveau Loaded, Loading Multipress, Dummy Source Manifestation should dissapear");
+        Moditems.SOURCE_MANIFESTATION.get();
     }
 
     public static void registerDummyItemArsItems() {

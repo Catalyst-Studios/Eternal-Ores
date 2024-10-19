@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:rod_aluminum",
+    "eternalitems:rod_cobalt",
+    "eternalitems:rod_copper",
+    "eternalitems:rod_gold",
+    "eternalitems:rod_iron",
+    "eternalitems:rod_lead",
+    "eternalitems:rod_osmium",
+    "eternalitems:rod_platinum",
+    "eternalitems:rod_tin",
+    "eternalitems:rod_uranium"
+  ]
+}

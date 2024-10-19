@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:aluminum_ingot",
+    "eternalitems:cobalt_ingot",
+    "eternalitems:graphite_ingot",
+    "eternalitems:eternal_dark_ingot",
+    "eternalitems:eternal_light_ingot",
+    "eternalitems:osmium_ingot",
+    "eternalitems:steel_ingot",
+    "eternalitems:uranium_ingot",
+    "eternalitems:lead_ingot",
+    "eternalitems:platinum_ingot",
+    "eternalitems:tin_ingot"
+  ]
+}

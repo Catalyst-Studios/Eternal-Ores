@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:copper_sword",
+    "eternalitems:copper_shovel",
+    "eternalitems:copper_pickaxe",
+    "eternalitems:copper_axe",
+    "eternalitems:copper_hoe"
+  ]
+}

@@ -18,6 +18,10 @@
   "item.eternalitems.seraphims_feather": "Seraphim's Feather",
   "item.eternalitems.silicon": "Silicon",
   "item.eternalitems.fang": "Fang",
+  "item.eternalitems.wrench": "Wrench",
+  "item.eternalitems.dragons_scale": "Dragons Scale",
+  "item.eternalitems.crosshead_screwdriver": "Crosshead Screwdriver",
+  "item.eternalitems.flathead_screwdriver": "Flathead Screwdriver",
 
   "item.eternalitems.cooked_apple": "Cooked Apple",
   "item.eternalitems.cooked_carrot": "Cooked Carrot",
@@ -42,6 +46,7 @@
   "item.eternalitems.platinum_ingot": "Platinum Ingot",
   "item.eternalitems.steel_ingot": "Steel Ingot",
   "item.eternalitems.uranium_ingot": "Uranium Ingot",
+  "item.eternalitems.tin_ingot": "Tin Ingot",
 
   "item.eternalitems.aluminum_nugget": "Aluminum Nugget",
   "item.eternalitems.cobalt_nugget": "Cobalt Nugget",
@@ -50,6 +55,7 @@
   "item.eternalitems.osmium_nugget": "Osmium Nugget",
   "item.eternalitems.platinum_nugget": "Platinum Nugget",
   "item.eternalitems.uranium_nugget": "Uranium Nugget",
+  "item.eternalitems.tin_nugget": "Tin Nugget",
 
   "item.eternalitems.rod_aluminum": "Aluminum Rod",
   "item.eternalitems.rod_cobalt": "Cobalt Rod",
@@ -60,6 +66,7 @@
   "item.eternalitems.rod_osmium": "Osmium Rod",
   "item.eternalitems.rod_platinum": "Platinum Rod",
   "item.eternalitems.rod_uranium": "Uranium Rod",
+  "item.eternalitems.rod_tin": "Tin Rod",
 
   "item.eternalitems.plate_aluminum": "Aluminum Plate",
   "item.eternalitems.plate_cobalt": "Cobalt Plate",
@@ -70,6 +77,7 @@
   "item.eternalitems.plate_osmium": "Osmium Plate",
   "item.eternalitems.plate_platinum": "Platinum Plate",
   "item.eternalitems.plate_uranium": "Uranium Plate",
+  "item.eternalitems.plate_tin": "Tin Plate",
 
   "item.eternalitems.ultimate_gear": "Ultimate Gear",
 
@@ -94,6 +102,7 @@
   "item.eternalitems.platinum_dust": "Platinum Dust",
   "item.eternalitems.sulfur_dust": "Sulfur Dust",
   "item.eternalitems.uranium_dust": "Uranium Dust",
+  "item.eternalitems.tin_dust": "Tin Dust",
 
   "item.eternalitems.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalitems.gem_onyx": "Onyx",
@@ -110,6 +119,7 @@
   "block.eternalitems.osmium_ore_block": "Osmium Ore",
   "block.eternalitems.platinum_ore_block": "Platinum Ore",
   "block.eternalitems.uranium_ore_block": "Uranium Ore",
+  "block.eternalitems.tin_ore_block": "Tin Ore",
 
   "block.eternalitems.deepslate_cobalt_ore_block": "Deepslate Cobalt Ore",
   "block.eternalitems.deepslate_fluorite_ore_block": "Deepslate Fluorite Ore",
@@ -117,6 +127,7 @@
   "block.eternalitems.deepslate_osmium_ore_block": "Deepslate Osmium Ore",
   "block.eternalitems.deepslate_platinum_ore_block": "Deepslate Platinum Ore",
   "block.eternalitems.deepslate_uranium_ore_block": "Deepslate Uranium Ore",
+  "block.eternalitems.deepslate_tin_ore_block": "Deepslate Tin Ore",
 
   "block.eternalitems.raw_aluminum_block": "Raw Aluminum Block",
   "block.eternalitems.raw_cobalt_block": "Raw Cobalt Block",
@@ -124,6 +135,7 @@
   "block.eternalitems.raw_osmium_block": "Raw Osmium Block",
   "block.eternalitems.raw_platinum_block": "Raw Platinum Block",
   "block.eternalitems.raw_uranium_block": "Raw Uranium Block",
+  "block.eternalitems.raw_tin_block": "Raw Tin Block",
 
   "block.eternalitems.aluminum_block": "Aluminum Block",
   "block.eternalitems.cobalt_block": "Cobalt Block",
@@ -131,6 +143,7 @@
   "block.eternalitems.osmium_block": "Osmium Block",
   "block.eternalitems.platinum_block": "Platinum Block",
   "block.eternalitems.uranium_block": "Uranium Block",
+  "block.eternalitems.tin_block": "Tin Block",
 
   "creativetab.eternalitems.eternal_items": "Eternal Items",
   "creativetab.eternalitems.eternal_ingots": "Eternal Ingots",
