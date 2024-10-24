@@ -8,9 +8,11 @@
     "eternalitems:eternal_light_ingot",
     "eternalitems:osmium_ingot",
     "eternalitems:steel_ingot",
-    "eternalitems:uranium_ingot",
     "eternalitems:lead_ingot",
     "eternalitems:platinum_ingot",
-    "eternalitems:tin_ingot"
+    "eternalitems:tin_ingot",
+    "eternalitems:ultimatitanium_ingot",
+    "eternalitems:uranium_ingot",
+    "eternalitems:zinc_ingot"
   ]
 }

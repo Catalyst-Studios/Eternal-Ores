@@ -1,0 +1,16 @@
+{
+  "type": "ae2:inscriber",
+  "ingredients": {
+    "middle": {
+      "item": "minecraft:diamond"
+    },
+    "top": {
+      "item": "eternalitems:multipress"
+    }
+  },
+  "mode": "press",
+  "result": {
+    "count": 1,
+    "id": "ae2:printed_engineering_processor"
+  }
+}

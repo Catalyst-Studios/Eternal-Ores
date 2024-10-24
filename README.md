@@ -66,12 +66,12 @@ This section is still in a W.I.P state!
 Licence
 =======
 
-As stated, this mod is under MIT License. And I approve anyone who forks this project, but I would really appreciate you mention me if you
-plan on doing a backport of this mod or using the textures on your project!
+As stated, this mod is under ARR Licence. That being said, the use of this mod on any modpack is allowed, however, it will be appreciated
+if you mention me that the mod is being used on said modpack.
 
-**BUT** I do not allow the distribution of Eternal Items mod outside CurseForge or Modrinth Websites.
+Have fun and I hope you enjoy the Mod!
 
-Don't be a jerk!
+Also, **I do not allow the distribution of Eternal Items mod outside CurseForge or Modrinth Websites.**
 
 *atte RadzRatz*
 

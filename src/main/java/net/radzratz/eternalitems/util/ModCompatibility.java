@@ -15,12 +15,17 @@ public class ModCompatibility {
     }
 
     public static void registerRealItemAE2Items() {
-        System.out.println("AE2 Loaded, Loading Multipress, DummyPress should dissapear");
+        System.out.println("AE2 Recognized, Mod Compat Enabled, Multipress Initialized");
         Moditems.MULTIPRESS.get();
+        System.out.print("Multipress Loaded, Loading AE2 Addons Compat");
+        System.out.println("MegaCells Compat enabled");
+        System.out.println("Applied Flux Compat enabled");
+        System.out.println("ExtendedAE Compat enabled");
+        System.out.println("Compat for AE2 and Addons Loaded Correctly");
     }
 
     public static void registerDummyItemAE2Items() {
-        System.out.println("AE2 not loaded, DummyPress will replace Multipress");
+        System.out.println("AE2 and addons Mod Compat disabled");
         Moditems.DUMMYPRESS.get();
     }
 

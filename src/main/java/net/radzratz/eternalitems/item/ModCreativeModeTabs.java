@@ -43,6 +43,8 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.SILICON);
                         output.accept(Moditems.SERAPHIMS_FEATHER);
                         output.accept(Moditems.SOURCE_MANIFESTATION);
+                        output.accept(Moditems.TINY_COAL);
+                        output.accept(Moditems.TINY_CHARCOAL);
                         output.accept(Moditems.UNDEAD_HAND);
                         output.accept(Moditems.WRENCH);
                     }).build());
@@ -82,6 +84,8 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
         ()-> CreativeModeTab.builder().icon(()-> new ItemStack(Moditems.ETERNAL_DARK_PICKAXE.get()))
                 .title(Component.translatable("creativetab.eternalitems.eternal_tools"))
                 .displayItems((itemDisplayParameters, output) -> {
+                    output.accept(Moditems.COBALT_HAMMER);
+                    output.accept(Moditems.COPPER_HAMMER);
                     output.accept(Moditems.COPPER_AXE);
                     output.accept(Moditems.COPPER_HOE);
                     output.accept(Moditems.COPPER_PICKAXE);
@@ -105,7 +109,9 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.PLATINUM_INGOT);
                         output.accept(Moditems.STEEL_INGOT);
                         output.accept(Moditems.TIN_INGOT);
+                        output.accept(Moditems.ULTIMATITANIUM_INGOT);
                         output.accept(Moditems.URANIUM_INGOT);
+                        output.accept(Moditems.ZINC_INGOT);
                     }).build());
 //NUGGETS
     public static final Supplier<CreativeModeTab> ETERNAL_NUGGETS_TAB = CREATIVE_MODE_TAB.register("eternal_nuggets_tab",
@@ -120,7 +126,9 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.OSMIUM_NUGGET);
                         output.accept(Moditems.PLATINUM_NUGGET);
                         output.accept(Moditems.TIN_NUGGET);
+                        output.accept(Moditems.ULTIMATITANIUM_NUGGET);
                         output.accept(Moditems.URANIUM_NUGGET);
+                        output.accept(Moditems.ZINC_NUGGET);
                     }).build());
 //RODS
     public static final Supplier<CreativeModeTab> ETERNAL_RODS_TAB = CREATIVE_MODE_TAB.register("eternal_rods_tab",
@@ -137,7 +145,9 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.ROD_OSMIUM);
                         output.accept(Moditems.ROD_PLATINUM);
                         output.accept(Moditems.ROD_TIN);
+                        output.accept(Moditems.ROD_ULTIMATITANIUM);
                         output.accept(Moditems.ROD_URANIUM);
+                        output.accept(Moditems.ROD_ZINC);
                     }).build());
 //PLATES
     public static final Supplier<CreativeModeTab> ETERNAL_PLATES_TAB = CREATIVE_MODE_TAB.register("eternal_plates_tab",
@@ -154,7 +164,9 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.PLATE_OSMIUM);
                         output.accept(Moditems.PLATE_PLATINUM);
                         output.accept(Moditems.PLATE_TIN);
+                        output.accept(Moditems.PLATE_ULTIMATITANIUM);
                         output.accept(Moditems.PLATE_URANIUM);
+                        output.accept(Moditems.PLATE_ZINC);
                     }).build());
 //GEARS
     public static final Supplier<CreativeModeTab> ETERNAL_GEARS_TAB = CREATIVE_MODE_TAB.register("eternal_gears_tab",
@@ -179,6 +191,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.RAW_SILVER);
                         output.accept(Moditems.RAW_TIN);
                         output.accept(Moditems.RAW_URANIUM);
+                        output.accept(Moditems.RAW_ZINC);
                     }).build());
 //ORE DUST
     public static final Supplier<CreativeModeTab> ETERNAL_ORE_DUST_TAB = CREATIVE_MODE_TAB.register("eternal_ore_dust_tab",
@@ -197,7 +210,9 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.PLATINUM_DUST);
                         output.accept(Moditems.SULFUR_DUST);
                         output.accept(Moditems.TIN_DUST);
+                        output.accept(Moditems.ULTIMATITANIUM_DUST);
                         output.accept(Moditems.URANIUM_DUST);
+                        output.accept(Moditems.ZINC_DUST);
                     }).build());
 //GEMS
     public static final Supplier<CreativeModeTab> ETERNAL_GEMS = CREATIVE_MODE_TAB.register("eternal_gems_tab",
@@ -248,6 +263,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                         output.accept(ModBlocks.OSMIUM_BLOCK);
                         output.accept(ModBlocks.PLATINUM_BLOCK);
                         output.accept(ModBlocks.TIN_BLOCK);
+                        output.accept(ModBlocks.ULTIMATITANIUM_BLOCK);
                         output.accept(ModBlocks.URANIUM_BLOCK);
                 }).build());
 //RAW ORE BLOCKS

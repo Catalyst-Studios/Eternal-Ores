@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:plate_aluminum",
+    "eternalitems:plate_cobalt",
+    "eternalitems:plate_copper",
+    "eternalitems:plate_gold",
+    "eternalitems:plate_iron",
+    "eternalitems:plate_lead",
+    "eternalitems:plate_osmium",
+    "eternalitems:plate_platinum",
+    "eternalitems:plate_tin",
+    "eternalitems:plate_ultimatitanium",
+    "eternalitems:plate_uranium",
+    "eternalitems:plate_zinc"
+  ]
+}

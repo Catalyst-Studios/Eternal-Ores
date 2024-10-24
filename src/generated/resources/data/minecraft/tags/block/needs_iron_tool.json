@@ -1,0 +1,26 @@
+{
+  "values": [
+    "eternalitems:aluminum_ore_block",
+    "eternalitems:fluorite_ore_block",
+    "eternalitems:deepslate_fluorite_ore_block",
+    "eternalitems:osmium_ore_block",
+    "eternalitems:deepslate_osmium_ore_block",
+    "eternalitems:tin_ore_block",
+    "eternalitems:deepslate_tin_ore_block",
+    "eternalitems:aluminum_block",
+    "eternalitems:cobalt_block",
+    "eternalitems:lead_block",
+    "eternalitems:osmium_block",
+    "eternalitems:platinum_block",
+    "eternalitems:tin_block",
+    "eternalitems:ultimatitanium_block",
+    "eternalitems:uranium_block",
+    "eternalitems:raw_aluminum_block",
+    "eternalitems:raw_cobalt_block",
+    "eternalitems:raw_lead_block",
+    "eternalitems:raw_osmium_block",
+    "eternalitems:raw_platinum_block",
+    "eternalitems:raw_tin_block",
+    "eternalitems:raw_uranium_block"
+  ]
+}

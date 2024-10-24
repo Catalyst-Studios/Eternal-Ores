@@ -23,6 +23,9 @@
   "item.eternalitems.crosshead_screwdriver": "Crosshead Screwdriver",
   "item.eternalitems.flathead_screwdriver": "Flathead Screwdriver",
 
+  "item.eternalitems.tiny_coal": "Tiny Coal",
+  "item.eternalitems.tiny_charcoal": "Tiny Charcoal",
+
   "item.eternalitems.cooked_apple": "Cooked Apple",
   "item.eternalitems.cooked_carrot": "Cooked Carrot",
 
@@ -36,6 +39,9 @@
   "item.eternalitems.copper_axe": "Copper Axe",
   "item.eternalitems.copper_hoe": "Copper Hoe",
 
+  "item.eternalitems.cobalt_hammer": "Cobalt Hammer",
+  "item.eternalitems.copper_hammer": "Copper Hammer",
+
   "item.eternalitems.aluminum_ingot": "Aluminum Ingot",
   "item.eternalitems.cobalt_ingot": "Cobalt Ingot",
   "item.eternalitems.eternal_dark_ingot": "Eternal Dark Ingot",
@@ -45,8 +51,10 @@
   "item.eternalitems.osmium_ingot": "Osmium Ingot",
   "item.eternalitems.platinum_ingot": "Platinum Ingot",
   "item.eternalitems.steel_ingot": "Steel Ingot",
+  "item.eternalitems.ultimatitanium_ingot": "Ultimatitanium Ingot",
   "item.eternalitems.uranium_ingot": "Uranium Ingot",
   "item.eternalitems.tin_ingot": "Tin Ingot",
+  "item.eternalitems.zinc_ingot": "Zinc Ingot",
 
   "item.eternalitems.aluminum_nugget": "Aluminum Nugget",
   "item.eternalitems.cobalt_nugget": "Cobalt Nugget",
@@ -54,8 +62,10 @@
   "item.eternalitems.lead_nugget": "Lead Nugget",
   "item.eternalitems.osmium_nugget": "Osmium Nugget",
   "item.eternalitems.platinum_nugget": "Platinum Nugget",
+  "item.eternalitems.ultimatitanium_nugget": "Ultimatitanium Nugget",
   "item.eternalitems.uranium_nugget": "Uranium Nugget",
   "item.eternalitems.tin_nugget": "Tin Nugget",
+  "item.eternalitems.zinc_nugget": "Zinc Nugget",
 
   "item.eternalitems.rod_aluminum": "Aluminum Rod",
   "item.eternalitems.rod_cobalt": "Cobalt Rod",
@@ -65,8 +75,10 @@
   "item.eternalitems.rod_lead": "Lead Rod",
   "item.eternalitems.rod_osmium": "Osmium Rod",
   "item.eternalitems.rod_platinum": "Platinum Rod",
+  "item.eternalitems.rod_ultimatitanium": "Ultimatitanium Rod",
   "item.eternalitems.rod_uranium": "Uranium Rod",
   "item.eternalitems.rod_tin": "Tin Rod",
+  "item.eternalitems.rod_zinc": "Zinc Rod",
 
   "item.eternalitems.plate_aluminum": "Aluminum Plate",
   "item.eternalitems.plate_cobalt": "Cobalt Plate",
@@ -76,8 +88,10 @@
   "item.eternalitems.plate_lead": "Lead Plate",
   "item.eternalitems.plate_osmium": "Osmium Plate",
   "item.eternalitems.plate_platinum": "Platinum Plate",
+  "item.eternalitems.plate_ultimatitanium": "Ultimatitanium Plate",
   "item.eternalitems.plate_uranium": "Uranium Plate",
   "item.eternalitems.plate_tin": "Tin Plate",
+  "item.eternalitems.plate_zinc": "Zinc Plate",
 
   "item.eternalitems.ultimate_gear": "Ultimate Gear",
 
@@ -90,6 +104,7 @@
   "item.eternalitems.raw_nickel": "Raw Nickel",
   "item.eternalitems.raw_silver": "Raw Silver",
   "item.eternalitems.raw_cobalt": "Raw Cobalt",
+  "item.eternalitems.raw_zinc": "Raw Zinc",
 
   "item.eternalitems.aluminum_dust": "Aluminum Dust",
   "item.eternalitems.cobalt_dust": "Cobalt Dust",
@@ -101,8 +116,10 @@
   "item.eternalitems.osmium_dust": "Osmium Dust",
   "item.eternalitems.platinum_dust": "Platinum Dust",
   "item.eternalitems.sulfur_dust": "Sulfur Dust",
+  "item.eternalitems.ultimatitanium_dust": "Ultimatitanium Dust",
   "item.eternalitems.uranium_dust": "Uranium Dust",
   "item.eternalitems.tin_dust": "Tin Dust",
+  "item.eternalitems.zinc_dust": "Zinc Dust",
 
   "item.eternalitems.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalitems.gem_onyx": "Onyx",
@@ -144,6 +161,7 @@
   "block.eternalitems.platinum_block": "Platinum Block",
   "block.eternalitems.uranium_block": "Uranium Block",
   "block.eternalitems.tin_block": "Tin Block",
+  "block.eternalitems.ultimatitanium_block": "Ultimatitanium Block",
 
   "creativetab.eternalitems.eternal_items": "Eternal Items",
   "creativetab.eternalitems.eternal_ingots": "Eternal Ingots",

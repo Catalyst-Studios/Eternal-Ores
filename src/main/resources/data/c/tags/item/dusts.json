@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:aluminum_dust",
+    "eternalitems:cobalt_dust",
+    "eternalitems:copper_dust",
+    "eternalitems:fluorite_dust",
+    "eternalitems:gold_dust",
+    "eternalitems:iron_dust",
+    "eternalitems:lead_dust",
+    "eternalitems:osmium_dust",
+    "eternalitems:platinum_dust",
+    "eternalitems:sulfur_dust",
+    "eternalitems:tin_dust",
+    "eternalitems:ultimatitanium_dust",
+    "eternalitems:uranium_dust",
+    "eternalitems:zinc_dust"
+  ]
+}

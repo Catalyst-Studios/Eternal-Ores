@@ -1,6 +1,8 @@
 Mods that we added compatibility so far are:
 
 - Applied Energistics 2 (Implemented)
+- Applied Flux (Implemented)
+- Mega Cells (Implemented)
 - Mekanism (Planned)
 
 ===================

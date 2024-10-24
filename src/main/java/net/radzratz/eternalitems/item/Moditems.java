@@ -1,10 +1,15 @@
 package net.radzratz.eternalitems.item;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalitems.EternalItems;
+import net.radzratz.eternalitems.item.custom.EternalHammers;
+import net.radzratz.eternalitems.item.custom.EternalToolTiers;
+import net.radzratz.eternalitems.item.custom.FuelItem;
 import net.radzratz.eternalitems.item.custom.ModFoodProperties;
 
 public class Moditems {
@@ -81,14 +86,16 @@ public class Moditems {
     //Swords
     public static final DeferredItem<Item> ETERNAL_DARK_SWORD = ITEMS.register("eternal_dark_sword",
             ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COPPER_SWORD = ITEMS.register("copper_sword",
-            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
+            ()-> new SwordItem(EternalToolTiers.COPPER_TOOLS, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 5, 1.6f))));
     public static final DeferredItem<Item> BONE_KNIFE = ITEMS.register("bone_knife",
             ()-> new Item(new Item.Properties()));
 
-    //Pickaxes
-    public static final DeferredItem<Item> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
-            ()-> new Item(new Item.Properties()));
+    //Tools
+    public static final DeferredItem<PickaxeItem> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
+            ()-> new PickaxeItem(EternalToolTiers.COPPER_TOOLS, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 3, 1.6f))));
     public static final DeferredItem<Item> ETERNAL_DARK_PICKAXE = ITEMS.register("eternal_dark_pickaxe",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COPPER_AXE = ITEMS.register("copper_axe",
@@ -97,6 +104,18 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COPPER_HOE = ITEMS.register("copper_hoe",
             ()-> new Item(new Item.Properties()));
+
+    //Fuels
+    public static final DeferredItem<Item> TINY_COAL = ITEMS.register("tiny_coal",
+            ()-> new FuelItem(new Item.Properties(), 200));
+    public static final DeferredItem<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal",
+            ()-> new FuelItem(new Item.Properties(), 200));
+
+    //Hammers
+    public static final DeferredItem<Item> COBALT_HAMMER = ITEMS.register("cobalt_hammer",
+            ()-> new EternalHammers(new Item.Properties(),512));
+    public static final DeferredItem<Item> COPPER_HAMMER = ITEMS.register("copper_hammer",
+            ()-> new EternalHammers(new Item.Properties(),128));
 
     //Ingots
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
@@ -121,6 +140,10 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIN_INGOT = ITEMS.register("tin_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ZINC_INGOT = ITEMS.register("zinc_ingot",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ULTIMATITANIUM_INGOT = ITEMS.register("ultimatitanium_ingot",
+            ()-> new Item(new Item.Properties()));
 
     //Nuggets
     public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
@@ -138,6 +161,10 @@ public class Moditems {
     public static final DeferredItem<Item> COBALT_NUGGET = ITEMS.register("cobalt_nugget",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIN_NUGGET = ITEMS.register("tin_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ULTIMATITANIUM_NUGGET = ITEMS.register("ultimatitanium_nugget",
             ()-> new Item(new Item.Properties()));
 
     //Rods
@@ -161,6 +188,10 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_TIN = ITEMS.register("rod_tin",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_ZINC = ITEMS.register("rod_zinc",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_ULTIMATITANIUM = ITEMS.register("rod_ultimatitanium",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -182,6 +213,10 @@ public class Moditems {
     public static final DeferredItem<Item> PLATE_COBALT = ITEMS.register("plate_cobalt",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_TIN = ITEMS.register("plate_tin",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_ZINC = ITEMS.register("plate_zinc",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_ULTIMATITANIUM = ITEMS.register("plate_ultimatitanium",
             ()-> new Item(new Item.Properties()));
 
     //Gears
@@ -207,6 +242,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_ZINC = ITEMS.register("raw_zinc",
+            ()-> new Item(new Item.Properties()));
 
     //Ore Dust
     public static final DeferredItem<Item> ALUMINUM_DUST = ITEMS.register("aluminum_dust",
@@ -228,6 +265,10 @@ public class Moditems {
     public static final DeferredItem<Item> COBALT_DUST = ITEMS.register("cobalt_dust",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TIN_DUST = ITEMS.register("tin_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ZINC_DUST = ITEMS.register("zinc_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ULTIMATITANIUM_DUST = ITEMS.register("ultimatitanium_dust",
             ()-> new Item(new Item.Properties()));
 
     //Gems

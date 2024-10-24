@@ -1,0 +1,4 @@
+// 1.21.1	2024-10-23T21:57:45.0420741	Tags for minecraft:block mod id eternalitems
+4364c396b8aa45f4d383880389db855df2e3775e data/minecraft/tags/block/mineable/pickaxe.json
+b5b2ae5a027dc93a12fd7035f31d03bee2a52bdd data/minecraft/tags/block/needs_diamond_tool.json
+e12ecbeabf412d4ffacacdadc0b182c2ca8dfd2d data/minecraft/tags/block/needs_iron_tool.json

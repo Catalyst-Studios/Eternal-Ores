@@ -1,27 +1,27 @@
-RadzRatz License (v1.0)
+RadzRatz License (v1.1)
 
 Copyright© RadzRatz 2024
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
-including textures and images, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge,
-publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+This software, including all associated textures and images (the "Software"),
+is owned by RadzRatz. No part of the Software may be copied, modified, merged,
+published, distributed, sublicensed, or sold, in whole or in part, without the express
+written permission of RadzRatz.
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 DON'T BE AN ASS CLAUSE
 =======================
-Any attempt to claim ownership of this project or its provided code, whether by redistributing it without proper attribution or
-claiming it as your own, will be considered a severe violation of this license. The consequences of such behavior will be determined at the
-discretion of the creator, RadzRatz, and may include legal or public actions. Unless the creator explicitly states otherwise, everyone is
-expected to respect these terms.
+Any attempt to claim ownership of this project or its provided code, whether
+by redistributing it without proper attribution or claiming it as your own, will be
+considered a violation of this license. The consequences of such behavior will be determined
+by RadzRatz, and may include legal actions or public notices. Unless RadzRatz explicitly states
+otherwise, everyone is expected to respect these terms. Don't be an ass.
+
+If you want to use the Textures of "item/block models" ask, it doesn't hurt anyone asking for permission.
 =======================
 
-Use of textures and images from this project in other projects is allowed without prior permission, but it is appreciated if
-credit is given to the original author (RadzRatz). RadzRatz guarantees that no copyright claims or DMCA takedown notices will be
-issued regarding the use of this mod and its resources, as long as this license is respected.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
-TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -1,0 +1,16 @@
+{
+  "type": "ae2:inscriber",
+  "ingredients": {
+    "middle": {
+      "item": "megacells:sky_steel_ingot"
+    },
+    "top": {
+      "item": "eternalitems:multipress"
+    }
+  },
+  "mode": "press",
+  "result": {
+    "count": 1,
+    "id": "megacells:printed_accumulation_processor"
+  }
+}

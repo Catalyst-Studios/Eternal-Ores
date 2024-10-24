@@ -1,0 +1,10 @@
+{
+  "values": {
+    "eternalitems:tiny_charcoal": {
+      "burn_time": 200
+    },
+    "eternalitems:tiny_coal": {
+      "burn_time": 200
+    }
+  }
+}
