@@ -18,12 +18,12 @@ We also plan to add Items for mods, but we already have some prepared!
 
 **Like**;
 
-- Ars Nouveau (Implemented)
+- Ars Nouveau (NYI)
 - Applied Energistics 2 (Implemented)
 - Evilraft (NYI)
-- GregTech (Implemented)
+- GregTech (NYI)
 - Forbidden And Arcanus (NYI)
-- Occultism (Implemented)
+- Occultism (NYI)
 - Productive Bees (NYI)
 
 KubeJS

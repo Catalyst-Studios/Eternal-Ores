@@ -18,7 +18,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ALUMINUM_BLOCK);
         blockWithItem(ModBlocks.COBALT_BLOCK);
         blockWithItem(ModBlocks.LEAD_BLOCK);
-        //blockWithItem(ModBlocks.NICKEL_BLOCK);
+        blockWithItem(ModBlocks.NICKEL_BLOCK);
         blockWithItem(ModBlocks.OSMIUM_BLOCK);
         blockWithItem(ModBlocks.PLATINUM_BLOCK);
         blockWithItem(ModBlocks.TIN_BLOCK);
@@ -29,8 +29,10 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_ALUMINUM_BLOCK);
         blockWithItem(ModBlocks.RAW_COBALT_BLOCK);
         blockWithItem(ModBlocks.RAW_LEAD_BLOCK);
+        blockWithItem(ModBlocks.RAW_NICKEL_BLOCK);
         blockWithItem(ModBlocks.RAW_OSMIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_PLATINUM_BLOCK);
+        blockWithItem(ModBlocks.SULFUR_BLOCK);
         blockWithItem(ModBlocks.RAW_TIN_BLOCK);
         blockWithItem(ModBlocks.RAW_URANIUM_BLOCK);
 
@@ -45,14 +47,17 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.LEAD_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK);
         //NICKEL
-        //blockWithItem(ModBlocks.NICKEL_ORE_BLOCK);
-        //blockWithItem(ModBlocks.DEEPSLATE_NICKEL_ORE_BLOCK);
+        blockWithItem(ModBlocks.NICKEL_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_NICKEL_ORE_BLOCK);
         //OSMIUM
         blockWithItem(ModBlocks.OSMIUM_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK);
         //PLATINUM
         blockWithItem(ModBlocks.PLATINUM_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK);
+        //SULFUR
+        blockWithItem(ModBlocks.SULFUR_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK);
         //TIN
         blockWithItem(ModBlocks.TIN_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_TIN_ORE_BLOCK);

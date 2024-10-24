@@ -4,10 +4,14 @@ Mods that we added compatibility so far are:
 - Applied Flux (Implemented)
 - Mega Cells (Implemented)
 - Mekanism (Planned)
+- Ars Nouveau (Planned)
+- GregTech (Planned)
+- Modern Industrialization (Planned)
 
 ===================
 
 RadzRatz also made a tiny guide of the steps he did to load these items without problem over NeoForge for version 1.21.1
+
 ===================
 
 

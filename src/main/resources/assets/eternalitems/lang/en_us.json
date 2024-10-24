@@ -55,6 +55,7 @@
   "item.eternalitems.uranium_ingot": "Uranium Ingot",
   "item.eternalitems.tin_ingot": "Tin Ingot",
   "item.eternalitems.zinc_ingot": "Zinc Ingot",
+  "item.eternalitems.nickel_ingot": "Nickel Ingot",
 
   "item.eternalitems.aluminum_nugget": "Aluminum Nugget",
   "item.eternalitems.cobalt_nugget": "Cobalt Nugget",
@@ -66,6 +67,7 @@
   "item.eternalitems.uranium_nugget": "Uranium Nugget",
   "item.eternalitems.tin_nugget": "Tin Nugget",
   "item.eternalitems.zinc_nugget": "Zinc Nugget",
+  "item.eternalitems.nickel_nugget": "Nickel Nugget",
 
   "item.eternalitems.rod_aluminum": "Aluminum Rod",
   "item.eternalitems.rod_cobalt": "Cobalt Rod",
@@ -79,6 +81,7 @@
   "item.eternalitems.rod_uranium": "Uranium Rod",
   "item.eternalitems.rod_tin": "Tin Rod",
   "item.eternalitems.rod_zinc": "Zinc Rod",
+  "item.eternalitems.rod_nickel": "Nickel Rod",
 
   "item.eternalitems.plate_aluminum": "Aluminum Plate",
   "item.eternalitems.plate_cobalt": "Cobalt Plate",
@@ -92,6 +95,7 @@
   "item.eternalitems.plate_uranium": "Uranium Plate",
   "item.eternalitems.plate_tin": "Tin Plate",
   "item.eternalitems.plate_zinc": "Zinc Plate",
+  "item.eternalitems.plate_nickel": "Nickel Plate",
 
   "item.eternalitems.ultimate_gear": "Ultimate Gear",
 
@@ -120,6 +124,7 @@
   "item.eternalitems.uranium_dust": "Uranium Dust",
   "item.eternalitems.tin_dust": "Tin Dust",
   "item.eternalitems.zinc_dust": "Zinc Dust",
+  "item.eternalitems.nickel_dust": "Nickel Dust",
 
   "item.eternalitems.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalitems.gem_onyx": "Onyx",
@@ -137,6 +142,8 @@
   "block.eternalitems.platinum_ore_block": "Platinum Ore",
   "block.eternalitems.uranium_ore_block": "Uranium Ore",
   "block.eternalitems.tin_ore_block": "Tin Ore",
+  "block.eternalitems.nickel_ore_block": "Nickel Ore",
+  "block.eternalitems.sulfur_ore_block": "Sulfur Ore",
 
   "block.eternalitems.deepslate_cobalt_ore_block": "Deepslate Cobalt Ore",
   "block.eternalitems.deepslate_fluorite_ore_block": "Deepslate Fluorite Ore",
@@ -145,6 +152,8 @@
   "block.eternalitems.deepslate_platinum_ore_block": "Deepslate Platinum Ore",
   "block.eternalitems.deepslate_uranium_ore_block": "Deepslate Uranium Ore",
   "block.eternalitems.deepslate_tin_ore_block": "Deepslate Tin Ore",
+  "block.eternalitems.deepslate_nickel_ore_block": "Deepslate Nickel Ore",
+  "block.eternalitems.deepslate_sulfur_ore_block": "Deepslate Sulfur Ore",
 
   "block.eternalitems.raw_aluminum_block": "Raw Aluminum Block",
   "block.eternalitems.raw_cobalt_block": "Raw Cobalt Block",
@@ -153,6 +162,8 @@
   "block.eternalitems.raw_platinum_block": "Raw Platinum Block",
   "block.eternalitems.raw_uranium_block": "Raw Uranium Block",
   "block.eternalitems.raw_tin_block": "Raw Tin Block",
+  "block.eternalitems.raw_nickel_block": "Raw Nickel Block",
+  "block.eternalitems.sulfur_block": "Sulfur Block",
 
   "block.eternalitems.aluminum_block": "Aluminum Block",
   "block.eternalitems.cobalt_block": "Cobalt Block",
@@ -162,6 +173,7 @@
   "block.eternalitems.uranium_block": "Uranium Block",
   "block.eternalitems.tin_block": "Tin Block",
   "block.eternalitems.ultimatitanium_block": "Ultimatitanium Block",
+  "block.eternalitems.nickel_block": "Nickel Block",
 
   "creativetab.eternalitems.eternal_items": "Eternal Items",
   "creativetab.eternalitems.eternal_ingots": "Eternal Ingots",

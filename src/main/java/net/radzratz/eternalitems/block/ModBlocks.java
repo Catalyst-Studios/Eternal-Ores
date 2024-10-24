@@ -101,6 +101,28 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
+    //Nickel
+    public static final DeferredBlock<Block> DEEPSLATE_NICKEL_ORE_BLOCK = registerBlock("deepslate_nickel_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> NICKEL_ORE_BLOCK = registerBlock("nickel_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+    //Sulfur
+    public static final DeferredBlock<Block> DEEPSLATE_SULFUR_ORE_BLOCK = registerBlock("deepslate_sulfur_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> SULFUR_ORE_BLOCK = registerBlock("sulfur_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
 
     //RAW ORE BLOCKS
     public static final DeferredBlock<Block> RAW_ALUMINUM_BLOCK = registerBlock("raw_aluminum_block",
@@ -136,6 +158,16 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RAW_TIN_BLOCK = registerBlock("raw_tin_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> RAW_NICKEL_BLOCK = registerBlock("raw_nickel_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> SULFUR_BLOCK = registerBlock("sulfur_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
@@ -178,6 +210,11 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ULTIMATITANIUM_BLOCK = registerBlock("ultimatitanium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> NICKEL_BLOCK = registerBlock("nickel_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
 

@@ -39,7 +39,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.FANG.get());
         basicItem(Moditems.SILICON.get());
         basicItem(Moditems.DRAGONS_SCALE.get());
-        basicItem(Moditems.WRENCH.get());
+        handheldItem(Moditems.WRENCH);
         //FOODS
         basicItem(Moditems.COOKED_APPLE.get());
         basicItem(Moditems.COOKED_CARROT.get());
@@ -68,6 +68,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.ETERNAL_LIGHT_INGOT.get());
         basicItem(Moditems.GRAPHITE_INGOT.get());
         basicItem(Moditems.LEAD_INGOT.get());
+        basicItem(Moditems.NICKEL_INGOT.get());
         basicItem(Moditems.OSMIUM_INGOT.get());
         basicItem(Moditems.PLATINUM_INGOT.get());
         basicItem(Moditems.STEEL_INGOT.get());
@@ -80,6 +81,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.COBALT_NUGGET.get());
         basicItem(Moditems.COPPER_NUGGET.get());
         basicItem(Moditems.LEAD_NUGGET.get());
+        basicItem(Moditems.NICKEL_NUGGET.get());
         basicItem(Moditems.OSMIUM_NUGGET.get());
         basicItem(Moditems.PLATINUM_NUGGET.get());
         basicItem(Moditems.TIN_NUGGET.get());
@@ -94,6 +96,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.GOLD_DUST.get());
         basicItem(Moditems.IRON_DUST.get());
         basicItem(Moditems.LEAD_DUST.get());
+        basicItem(Moditems.NICKEL_DUST.get());
         basicItem(Moditems.OSMIUM_DUST.get());
         basicItem(Moditems.PLATINUM_DUST.get());
         basicItem(Moditems.SULFUR_DUST.get());
@@ -108,6 +111,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.ROD_GOLD.get());
         basicItem(Moditems.ROD_IRON.get());
         basicItem(Moditems.ROD_LEAD.get());
+        basicItem(Moditems.ROD_NICKEL.get());
         basicItem(Moditems.ROD_OSMIUM.get());
         basicItem(Moditems.ROD_PLATINUM.get());
         basicItem(Moditems.ROD_TIN.get());
@@ -121,6 +125,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.PLATE_GOLD.get());
         basicItem(Moditems.PLATE_IRON.get());
         basicItem(Moditems.PLATE_LEAD.get());
+        basicItem(Moditems.PLATE_NICKEL.get());
         basicItem(Moditems.PLATE_OSMIUM.get());
         basicItem(Moditems.PLATE_PLATINUM.get());
         basicItem(Moditems.PLATE_TIN.get());

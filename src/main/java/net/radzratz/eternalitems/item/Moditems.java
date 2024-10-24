@@ -144,6 +144,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ULTIMATITANIUM_INGOT = ITEMS.register("ultimatitanium_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot",
+            ()-> new Item(new Item.Properties()));
 
     //Nuggets
     public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
@@ -165,6 +167,8 @@ public class Moditems {
     public static final DeferredItem<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ULTIMATITANIUM_NUGGET = ITEMS.register("ultimatitanium_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NICKEL_NUGGET = ITEMS.register("nickel_nugget",
             ()-> new Item(new Item.Properties()));
 
     //Rods
@@ -192,6 +196,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_ULTIMATITANIUM = ITEMS.register("rod_ultimatitanium",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_NICKEL = ITEMS.register("rod_nickel",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -217,6 +223,8 @@ public class Moditems {
     public static final DeferredItem<Item> PLATE_ZINC = ITEMS.register("plate_zinc",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_ULTIMATITANIUM = ITEMS.register("plate_ultimatitanium",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_NICKEL = ITEMS.register("plate_nickel",
             ()-> new Item(new Item.Properties()));
 
     //Gears
@@ -269,6 +277,8 @@ public class Moditems {
     public static final DeferredItem<Item> ZINC_DUST = ITEMS.register("zinc_dust",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ULTIMATITANIUM_DUST = ITEMS.register("ultimatitanium_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NICKEL_DUST = ITEMS.register("nickel_dust",
             ()-> new Item(new Item.Properties()));
 
     //Gems

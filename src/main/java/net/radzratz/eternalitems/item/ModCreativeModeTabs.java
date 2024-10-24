@@ -105,6 +105,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.ETERNAL_LIGHT_INGOT);
                         output.accept(Moditems.GRAPHITE_INGOT);
                         output.accept(Moditems.LEAD_INGOT);
+                        output.accept(Moditems.NICKEL_INGOT);
                         output.accept(Moditems.OSMIUM_INGOT);
                         output.accept(Moditems.PLATINUM_INGOT);
                         output.accept(Moditems.STEEL_INGOT);
@@ -123,6 +124,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.COBALT_NUGGET);
                         output.accept(Moditems.COPPER_NUGGET);
                         output.accept(Moditems.LEAD_NUGGET);
+                        output.accept(Moditems.NICKEL_NUGGET);
                         output.accept(Moditems.OSMIUM_NUGGET);
                         output.accept(Moditems.PLATINUM_NUGGET);
                         output.accept(Moditems.TIN_NUGGET);
@@ -142,6 +144,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.ROD_GOLD);
                         output.accept(Moditems.ROD_IRON);
                         output.accept(Moditems.ROD_LEAD);
+                        output.accept(Moditems.ROD_NICKEL);
                         output.accept(Moditems.ROD_OSMIUM);
                         output.accept(Moditems.ROD_PLATINUM);
                         output.accept(Moditems.ROD_TIN);
@@ -161,6 +164,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.PLATE_GOLD);
                         output.accept(Moditems.PLATE_IRON);
                         output.accept(Moditems.PLATE_LEAD);
+                        output.accept(Moditems.PLATE_NICKEL);
                         output.accept(Moditems.PLATE_OSMIUM);
                         output.accept(Moditems.PLATE_PLATINUM);
                         output.accept(Moditems.PLATE_TIN);
@@ -189,6 +193,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.RAW_OSMIUM);
                         output.accept(Moditems.RAW_PLATINUM);
                         output.accept(Moditems.RAW_SILVER);
+                        output.accept(Moditems.SULFUR);
                         output.accept(Moditems.RAW_TIN);
                         output.accept(Moditems.RAW_URANIUM);
                         output.accept(Moditems.RAW_ZINC);
@@ -206,6 +211,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.GOLD_DUST);
                         output.accept(Moditems.IRON_DUST);
                         output.accept(Moditems.LEAD_DUST);
+                        output.accept(Moditems.NICKEL_DUST);
                         output.accept(Moditems.OSMIUM_DUST);
                         output.accept(Moditems.PLATINUM_DUST);
                         output.accept(Moditems.SULFUR_DUST);
@@ -226,7 +232,6 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.GEM_RUBY);
                         output.accept(Moditems.GEM_PERIDOT);
                         output.accept(Moditems.GEM_SAPPHIRE);
-                        output.accept(Moditems.SULFUR);
                     }).build());
 ////BLOCKS
 //ORE BLOCKS
@@ -239,15 +244,19 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(ModBlocks.COBALT_ORE_BLOCK);
                         output.accept(ModBlocks.FLUORITE_ORE_BLOCK);
                         output.accept(ModBlocks.LEAD_ORE_BLOCK);
+                        output.accept(ModBlocks.NICKEL_ORE_BLOCK);
                         output.accept(ModBlocks.URANIUM_ORE_BLOCK);
                         output.accept(ModBlocks.OSMIUM_ORE_BLOCK);
                         output.accept(ModBlocks.PLATINUM_ORE_BLOCK);
                         output.accept(ModBlocks.TIN_ORE_BLOCK);
+                        output.accept(ModBlocks.SULFUR_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK);
+                        output.accept(ModBlocks.DEEPSLATE_NICKEL_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK);
+                        output.accept(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_TIN_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
                     }).build());
@@ -260,6 +269,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                         output.accept(ModBlocks.ALUMINUM_BLOCK);
                         output.accept(ModBlocks.COBALT_BLOCK);
                         output.accept(ModBlocks.LEAD_BLOCK);
+                        output.accept(ModBlocks.NICKEL_BLOCK);
                         output.accept(ModBlocks.OSMIUM_BLOCK);
                         output.accept(ModBlocks.PLATINUM_BLOCK);
                         output.accept(ModBlocks.TIN_BLOCK);
@@ -275,8 +285,10 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                         output.accept(ModBlocks.RAW_ALUMINUM_BLOCK);
                         output.accept(ModBlocks.RAW_COBALT_BLOCK);
                         output.accept(ModBlocks.RAW_LEAD_BLOCK);
+                        output.accept(ModBlocks.RAW_NICKEL_BLOCK);
                         output.accept(ModBlocks.RAW_OSMIUM_BLOCK);
                         output.accept(ModBlocks.RAW_PLATINUM_BLOCK);
+                        output.accept(ModBlocks.SULFUR_BLOCK);
                         output.accept(ModBlocks.RAW_TIN_BLOCK);
                         output.accept(ModBlocks.RAW_URANIUM_BLOCK);
                     }).build());

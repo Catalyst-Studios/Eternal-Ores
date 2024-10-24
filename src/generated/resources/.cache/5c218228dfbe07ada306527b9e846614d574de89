@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-23T21:57:45.0380738	Item Models: eternalitems
+// 1.21.1	2024-10-24T03:20:59.9732137	Item Models: eternalitems
 f8b4dc9c72f694edafd5a8dfc6923f2eb1eb1761 assets/eternalitems/models/item/aluminum_dust.json
 02c83395e9f13183b3f678e7dca5cd980e623572 assets/eternalitems/models/item/aluminum_ingot.json
 dadf922c6870a58f314f1653d3a4c8b6504f6e34 assets/eternalitems/models/item/aluminum_nugget.json
@@ -51,6 +51,9 @@ e314e48cd9272564dfa6d0733fa5b96a595771a7 assets/eternalitems/models/item/gods_te
 27711d3e6ecf1e5484ab440fd55dc1be26bb663f assets/eternalitems/models/item/lead_ingot.json
 f0f2a302557bdbaa596f08bf88b37eabb6936855 assets/eternalitems/models/item/lead_nugget.json
 545843a422642167fbe5200b9fa1f6d474b17505 assets/eternalitems/models/item/multipress.json
+11aa31f6fa3176897424b39dee60b1ef73719380 assets/eternalitems/models/item/nickel_dust.json
+27adc3e9dbd855a8dd2b7b01e965275f5d6c02da assets/eternalitems/models/item/nickel_ingot.json
+e8c1007523da9904b68955cc1ab9d210b9338a9b assets/eternalitems/models/item/nickel_nugget.json
 4b8b294d388ca36b2c93921cdad6867168b13d70 assets/eternalitems/models/item/osmium_dust.json
 7367fce7e8354ce2973307b1ee6d6165f4221fe4 assets/eternalitems/models/item/osmium_ingot.json
 61a61fd9454598c0f942963c5cf99c5a99bae4b8 assets/eternalitems/models/item/osmium_nugget.json
@@ -60,6 +63,7 @@ d6a1374d4426f3a25926828ac21e0a6146de7bba assets/eternalitems/models/item/plate_a
 ff10ed527600690b49191604204dfa541371fa73 assets/eternalitems/models/item/plate_gold.json
 4002e440a9a8aff5e7bc8239574f3837d9e89a08 assets/eternalitems/models/item/plate_iron.json
 41d639b510f6a2d74b64a02c4d35d75be1bd9d36 assets/eternalitems/models/item/plate_lead.json
+b622ce622526066e5028db2babc081114f267e0b assets/eternalitems/models/item/plate_nickel.json
 7d06a1d0e9234fd329bbea2eb53bef6a178acd0e assets/eternalitems/models/item/plate_osmium.json
 f39c4051e82f05303ed86cd0f5e342f8d004146d assets/eternalitems/models/item/plate_platinum.json
 2ea2c055c3687ec287bac5c4e169a7ccab0a39de assets/eternalitems/models/item/plate_tin.json
@@ -86,6 +90,7 @@ fb494ae3cfdafaf1fea321f84c0f8981b35d94f3 assets/eternalitems/models/item/rod_cop
 6aaad5a6ad8eb1364fdee1a24a63951251e034c5 assets/eternalitems/models/item/rod_gold.json
 73d89206094ddef84163341cc6846b44815435d7 assets/eternalitems/models/item/rod_iron.json
 9042a322ef0ae3938ebeed39aaf1cf7c1e0f68ad assets/eternalitems/models/item/rod_lead.json
+8087b7c6c8acf6f5da7c0cedcf7dd546aacf5b40 assets/eternalitems/models/item/rod_nickel.json
 a652b9f23c0861d5ab10cd04d42347eb286a8710 assets/eternalitems/models/item/rod_osmium.json
 a5b2fb75761dc74875b5f66c54f4254ede8a9adc assets/eternalitems/models/item/rod_platinum.json
 a1f1191eea1f621d6ccb38a663318f81e57a0e50 assets/eternalitems/models/item/rod_tin.json
@@ -111,7 +116,7 @@ c82b6b06432d6f1df2b2d7703e876574dcafacec assets/eternalitems/models/item/ultimat
 b5b89d06b498e94fc7fe4dd632b4e1af241ae84b assets/eternalitems/models/item/uranium_dust.json
 3411eddb4657d4b13f0cf56ac8d7a5db0ed97409 assets/eternalitems/models/item/uranium_ingot.json
 76e5884f524dad429b71dbf64f78609b8d2c3608 assets/eternalitems/models/item/uranium_nugget.json
-e99e9bf8021d95cfa1e562b7ef1694d915f26329 assets/eternalitems/models/item/wrench.json
+0664b9f1dbf2215824dfce5092b8531029eb7f6d assets/eternalitems/models/item/wrench.json
 c0f74d6d42ebbecacc71b2616e14ceae66522786 assets/eternalitems/models/item/zinc_dust.json
 2e50984a8c253d9fef7e4deaf023ca74b0b41815 assets/eternalitems/models/item/zinc_ingot.json
 c87c63333c32ddc92aade2abc32d66874da23a77 assets/eternalitems/models/item/zinc_nugget.json
