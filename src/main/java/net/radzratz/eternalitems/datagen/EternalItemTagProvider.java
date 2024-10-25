@@ -31,6 +31,10 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
                 tag(ModTags.Items.HAMMERS)
                         .add(Moditems.COPPER_HAMMER.get())
+                        .add(Moditems.STONE_HAMMER.get())
+                        .add(Moditems.DIAMOND_HAMMER.get())
+                        .add(Moditems.IRON_HAMMER.get())
+                        .add(Moditems.ETERNAL_DARK_HAMMER.get())
                         .add(Moditems.COBALT_HAMMER.get());
 
                 tag(ModTags.Items.BONE_TOOLS)

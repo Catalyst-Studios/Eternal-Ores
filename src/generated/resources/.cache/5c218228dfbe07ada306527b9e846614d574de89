@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-24T03:20:59.9732137	Item Models: eternalitems
+// 1.21.1	2024-10-25T01:20:18.0807075	Item Models: eternalitems
 f8b4dc9c72f694edafd5a8dfc6923f2eb1eb1761 assets/eternalitems/models/item/aluminum_dust.json
 02c83395e9f13183b3f678e7dca5cd980e623572 assets/eternalitems/models/item/aluminum_ingot.json
 dadf922c6870a58f314f1653d3a4c8b6504f6e34 assets/eternalitems/models/item/aluminum_nugget.json
@@ -25,8 +25,10 @@ e9ac5a6c483e3fad45b6ec64c60bacd52616f4aa assets/eternalitems/models/item/copper_
 425bc0093c1ca1c8e2abf19e7894c5bd95b89ac6 assets/eternalitems/models/item/crosshead_screwdriver.json
 637a7d28afd497bd421fcc2b494fb1c17d2dd09c assets/eternalitems/models/item/demonic_heart.json
 2e71c7007f89c45b6f684a1fc1d45e105c3c13e0 assets/eternalitems/models/item/devils_tooth.json
+6c8c7dcea3d831e51a60acee27d93691414e2657 assets/eternalitems/models/item/diamond_hammer.json
 1bacef4eede6fb12ad390f6b450318f35a9fce58 assets/eternalitems/models/item/dragons_scale.json
 b730b8beaa37b8578ab9fb088aff53a393758d57 assets/eternalitems/models/item/dummypress.json
+7c1849f7d38da7e90a8f89d640ea49a304e3f5ed assets/eternalitems/models/item/eternal_dark_hammer.json
 02ad44495e981b0f38099185d382f0599ce294aa assets/eternalitems/models/item/eternal_dark_ingot.json
 c18c99e725df757cef08a0bf898314e37ce764be assets/eternalitems/models/item/eternal_dark_pickaxe.json
 648aaf050776b63845514e762d21a9dfad9bd924 assets/eternalitems/models/item/eternal_dark_sword.json
@@ -47,6 +49,7 @@ e314e48cd9272564dfa6d0733fa5b96a595771a7 assets/eternalitems/models/item/gods_te
 32f386e31bf31b928eddad43689cae3105658c99 assets/eternalitems/models/item/graphite_ingot.json
 49c6b6b0f71a86f669f92af68699ad1cff5c5e58 assets/eternalitems/models/item/gregtastic_atomic_phd.json
 85e3816861a8738d5ce2bc2c2d439db2d10da4c1 assets/eternalitems/models/item/iron_dust.json
+1b47ce3b46c307d99ec37d1d5576bbe85719eb36 assets/eternalitems/models/item/iron_hammer.json
 4b15178345251004d06d14305d489868cf7d5e02 assets/eternalitems/models/item/lead_dust.json
 27711d3e6ecf1e5484ab440fd55dc1be26bb663f assets/eternalitems/models/item/lead_ingot.json
 f0f2a302557bdbaa596f08bf88b37eabb6936855 assets/eternalitems/models/item/lead_nugget.json
@@ -82,6 +85,7 @@ acc878f1d360e039ac038b7b3b63756b6ca8e924 assets/eternalitems/models/item/raw_nic
 4f5f4b61bb373b139af57f75e1efb31f91614f1f assets/eternalitems/models/item/raw_platinum.json
 c78c379282cf69af3f539fa73349598f634bcf7a assets/eternalitems/models/item/raw_silver.json
 4cbd511dd76289d8493a5382be4cecc2483a3638 assets/eternalitems/models/item/raw_tin.json
+654677af8a0cb1cd7f5367a9a29ed6e9092ef823 assets/eternalitems/models/item/raw_ultimatitanium.json
 b967a30688328fb2e098b075034afbcfa20e8fef assets/eternalitems/models/item/raw_uranium.json
 017e9fdf1e14ce97b80943f574cae258c0c798be assets/eternalitems/models/item/raw_zinc.json
 6efd3c132eeb197c16a581a262712865906542a0 assets/eternalitems/models/item/rod_aluminum.json
@@ -101,6 +105,7 @@ b197486284274198f775678f1e18f83377745955 assets/eternalitems/models/item/rod_ult
 5e5cdb6494f15a90776a8f30167811d76e62e742 assets/eternalitems/models/item/silicon.json
 d5822d187a0b6e96cb41713aa791452ab6a5a837 assets/eternalitems/models/item/source_manifestation.json
 574eb086c8fc38e85ca7c6ff737775da6c29b38f assets/eternalitems/models/item/steel_ingot.json
+9c5984acd15dff66431f6a9134b57d8a7e16950d assets/eternalitems/models/item/stone_hammer.json
 18fdb798ccae7659508333694faff1326d181632 assets/eternalitems/models/item/sulfur.json
 14e6cb0b7922e0abdb8e674fc670a134db3f00d8 assets/eternalitems/models/item/sulfur_dust.json
 7c4f2f16b5360779ebb60a4608233e4734b34514 assets/eternalitems/models/item/tiny_charcoal.json

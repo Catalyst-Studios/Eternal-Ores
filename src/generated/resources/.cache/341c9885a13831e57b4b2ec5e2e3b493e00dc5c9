@@ -1,5 +1,5 @@
-// 1.21.1	2024-10-23T21:57:45.0430772	Tags for minecraft:item mod id eternalitems
+// 1.21.1	2024-10-24T23:29:43.4982989	Tags for minecraft:item mod id eternalitems
 e39f2565420ac7a956dbcdddb43d200c2b302ab0 data/bone_tools/tags/item/bone_tools.json
 d80f832439499a9bb0ec5128281948334b5a2e44 data/copper_tools/tags/item/copper_tools.json
 422a17b3dc89d7a8c9698d40a61c38016b6324c3 data/eternal_dark_tools/tags/item/eternal_dark_tools.json
-4933e326674999aa8a42fff2c24b577b002a6c8e data/hammers/tags/item/hammers.json
+e0b89fbdf6630d519b334279059cac8266dacaa9 data/hammers/tags/item/hammers.json

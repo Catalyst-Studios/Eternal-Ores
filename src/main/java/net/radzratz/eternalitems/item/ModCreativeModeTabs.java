@@ -90,7 +90,11 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     output.accept(Moditems.COPPER_HOE);
                     output.accept(Moditems.COPPER_PICKAXE);
                     output.accept(Moditems.COPPER_SHOVEL);
+                    output.accept(Moditems.DIAMOND_HAMMER);
+                    output.accept(Moditems.ETERNAL_DARK_HAMMER);
                     output.accept(Moditems.ETERNAL_DARK_PICKAXE);
+                    output.accept(Moditems.IRON_HAMMER);
+                    output.accept(Moditems.STONE_HAMMER);
                 }).build());
 
 //INGOTS
@@ -195,6 +199,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.RAW_SILVER);
                         output.accept(Moditems.SULFUR);
                         output.accept(Moditems.RAW_TIN);
+                        output.accept(Moditems.RAW_ULTIMATITANIUM);
                         output.accept(Moditems.RAW_URANIUM);
                         output.accept(Moditems.RAW_ZINC);
                     }).build());

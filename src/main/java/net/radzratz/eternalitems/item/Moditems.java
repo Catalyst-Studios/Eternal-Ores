@@ -74,6 +74,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DRAGONS_SCALE = ITEMS.register("dragons_scale",
             ()-> new Item(new Item.Properties()));
+
+
     public static final DeferredItem<Item> WRENCH = ITEMS.register("wrench",
             ()-> new Item(new Item.Properties()));
 
@@ -84,24 +86,32 @@ public class Moditems {
             ()-> new Item(new Item.Properties().food(ModFoodProperties.COOKED_CARROT)));
 
     //Swords
-    public static final DeferredItem<Item> ETERNAL_DARK_SWORD = ITEMS.register("eternal_dark_sword",
-            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<SwordItem> ETERNAL_DARK_SWORD = ITEMS.register("eternal_dark_sword",
+            ()-> new SwordItem(EternalToolTiers.ETERNAL_DARK_TOOLS,new Item.Properties()
+                    .attributes(SwordItem.createAttributes(EternalToolTiers.ETERNAL_DARK_TOOLS, 2450, 45))));
+
     public static final DeferredItem<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
             ()-> new SwordItem(EternalToolTiers.COPPER_TOOLS, new Item.Properties()
                     .attributes(SwordItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 5, 1.6f))));
-    public static final DeferredItem<Item> BONE_KNIFE = ITEMS.register("bone_knife",
-            ()-> new Item(new Item.Properties()));
+
+    public static final DeferredItem<SwordItem> BONE_KNIFE = ITEMS.register("bone_knife",
+            ()-> new SwordItem(EternalToolTiers.BONE_TOOLS,new Item.Properties()
+                    .attributes(SwordItem.createAttributes(EternalToolTiers.BONE_TOOLS, 4,-1.4f))));
 
     //Tools
     public static final DeferredItem<PickaxeItem> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
             ()-> new PickaxeItem(EternalToolTiers.COPPER_TOOLS, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 3, 1.6f))));
+
     public static final DeferredItem<Item> ETERNAL_DARK_PICKAXE = ITEMS.register("eternal_dark_pickaxe",
             ()-> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> COPPER_AXE = ITEMS.register("copper_axe",
             ()-> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel",
             ()-> new Item(new Item.Properties()));
+
     public static final DeferredItem<Item> COPPER_HOE = ITEMS.register("copper_hoe",
             ()-> new Item(new Item.Properties()));
 
@@ -113,9 +123,17 @@ public class Moditems {
 
     //Hammers
     public static final DeferredItem<Item> COBALT_HAMMER = ITEMS.register("cobalt_hammer",
-            ()-> new EternalHammers(new Item.Properties(),512));
+            ()-> new EternalHammers(new Item.Properties(),1024));
     public static final DeferredItem<Item> COPPER_HAMMER = ITEMS.register("copper_hammer",
             ()-> new EternalHammers(new Item.Properties(),128));
+    public static final DeferredItem<Item> STONE_HAMMER = ITEMS.register("stone_hammer",
+            ()-> new EternalHammers(new Item.Properties(),64));
+    public static final DeferredItem<Item> DIAMOND_HAMMER = ITEMS.register("diamond_hammer",
+            ()-> new EternalHammers(new Item.Properties(),512));
+    public static final DeferredItem<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
+            ()-> new EternalHammers(new Item.Properties(),256));
+    public static final DeferredItem<Item> ETERNAL_DARK_HAMMER = ITEMS.register("eternal_dark_hammer",
+            ()-> new EternalHammers(new Item.Properties(),2048));
 
     //Ingots
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
@@ -251,6 +269,8 @@ public class Moditems {
     public static final DeferredItem<Item> RAW_COBALT = ITEMS.register("raw_cobalt",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_ZINC = ITEMS.register("raw_zinc",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_ULTIMATITANIUM = ITEMS.register("raw_ultimatitanium",
             ()-> new Item(new Item.Properties()));
 
     //Ore Dust

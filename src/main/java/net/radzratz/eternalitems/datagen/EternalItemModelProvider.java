@@ -2,7 +2,6 @@ package net.radzratz.eternalitems.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
-import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -46,6 +45,10 @@ public class EternalItemModelProvider extends ItemModelProvider {
         //HAMMERS
         basicItem(Moditems.COBALT_HAMMER.get());
         basicItem(Moditems.COPPER_HAMMER.get());
+        basicItem(Moditems.DIAMOND_HAMMER.get());
+        basicItem(Moditems.ETERNAL_DARK_HAMMER.get());
+        basicItem(Moditems.IRON_HAMMER.get());
+        basicItem(Moditems.STONE_HAMMER.get());
         //RAW ORES
         basicItem(Moditems.SULFUR.get());
         basicItem(Moditems.RAW_ALUMINUM.get());
@@ -56,6 +59,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.RAW_PLATINUM.get());
         basicItem(Moditems.RAW_SILVER.get());
         basicItem(Moditems.RAW_TIN.get());
+        basicItem(Moditems.RAW_ULTIMATITANIUM.get());
         basicItem(Moditems.RAW_URANIUM.get());
         basicItem(Moditems.RAW_ZINC.get());
         //FUELS
@@ -153,8 +157,8 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.GEM_RUBY.get());
     }
 
-    private ItemModelBuilder handheldItem(DeferredItem<?> item) {
-        return withExistingParent(item.getId().getPath(),
+    private void handheldItem(DeferredItem<?> item) {
+        withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/handheld")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(EternalItems.MOD_ID, "item/" + item.getId().getPath()));
     }

@@ -18,6 +18,9 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_ETERNALDARK_TOOLS = createTag("needs_eternaldark_tools");
         public static final TagKey<Block> INCORRECT_FOR_ETERNALDARK_TOOLS = createTag("incorrect_for_eternaldark_tools");
 
+        public static final TagKey<Block> NEEDS_BONE_TOOLS = createTag("needs_bone_tools");
+        public static final TagKey<Block> INCORRECT_FOR_BONE_TOOLS = createTag("incorrect_for_bone_tools");
+
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(EternalItems.MOD_ID, name));
         }
@@ -35,7 +38,7 @@ public class ModTags {
         private static TagKey<Item> createTagHammers(String hammers) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("hammers", hammers));
         }
-
+        //Bone Tools
         public static final TagKey<Item> BONE_TOOLS = createTagBoneTools("bone_tools");
         private static TagKey<Item> createTagBoneTools(String bone_tools) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("bone_tools", bone_tools));

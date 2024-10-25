@@ -41,6 +41,10 @@
 
   "item.eternalitems.cobalt_hammer": "Cobalt Hammer",
   "item.eternalitems.copper_hammer": "Copper Hammer",
+  "item.eternalitems.stone_hammer": "Stone Hammer",
+  "item.eternalitems.iron_hammer": "Iron Hammer",
+  "item.eternalitems.eternal_dark_hammer": "Eternal Dark Hammer",
+  "item.eternalitems.diamond_hammer": "Diamond Hammer",
 
   "item.eternalitems.aluminum_ingot": "Aluminum Ingot",
   "item.eternalitems.cobalt_ingot": "Cobalt Ingot",
@@ -109,6 +113,7 @@
   "item.eternalitems.raw_silver": "Raw Silver",
   "item.eternalitems.raw_cobalt": "Raw Cobalt",
   "item.eternalitems.raw_zinc": "Raw Zinc",
+  "item.eternalitems.raw_ultimatitanium": "Raw Ultimatitanium",
 
   "item.eternalitems.aluminum_dust": "Aluminum Dust",
   "item.eternalitems.cobalt_dust": "Cobalt Dust",
