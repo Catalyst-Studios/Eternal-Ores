@@ -104,14 +104,22 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     .title(Component.translatable("creativetab.eternalitems.eternal_ingots"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ALUMINUM_INGOT);
+                        output.accept(Moditems.BRONZE_INGOT);
                         output.accept(Moditems.COBALT_INGOT);
+                        output.accept(Moditems.ELECTRUM_INGOT);
                         output.accept(Moditems.ETERNAL_DARK_INGOT);
                         output.accept(Moditems.ETERNAL_LIGHT_INGOT);
+                        output.accept(Moditems.ENDERIUM_INGOT);
                         output.accept(Moditems.GRAPHITE_INGOT);
+                        output.accept(Moditems.INVAR_INGOT);
                         output.accept(Moditems.LEAD_INGOT);
+                        output.accept(Moditems.LUMIUM_INGOT);
                         output.accept(Moditems.NICKEL_INGOT);
                         output.accept(Moditems.OSMIUM_INGOT);
                         output.accept(Moditems.PLATINUM_INGOT);
+                        output.accept(Moditems.PLUTONIUM_INGOT);
+                        output.accept(Moditems.REDSTONE_INGOT);
+                        output.accept(Moditems.SIGNALUM_INGOT);
                         output.accept(Moditems.STEEL_INGOT);
                         output.accept(Moditems.TIN_INGOT);
                         output.accept(Moditems.ULTIMATITANIUM_INGOT);
@@ -125,12 +133,19 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     .title(Component.translatable("creativetab.eternalitems.eternal_nuggets"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ALUMINUM_NUGGET);
+                        output.accept(Moditems.BRONZE_NUGGET);
                         output.accept(Moditems.COBALT_NUGGET);
                         output.accept(Moditems.COPPER_NUGGET);
+                        output.accept(Moditems.ELECTRUM_NUGGET);
+                        output.accept(Moditems.ENDERIUM_NUGGET);
+                        output.accept(Moditems.INVAR_NUGGET);
                         output.accept(Moditems.LEAD_NUGGET);
+                        output.accept(Moditems.LUMIUM_NUGGET);
                         output.accept(Moditems.NICKEL_NUGGET);
                         output.accept(Moditems.OSMIUM_NUGGET);
                         output.accept(Moditems.PLATINUM_NUGGET);
+                        output.accept(Moditems.PLUTONIUM_NUGGET);
+                        output.accept(Moditems.SIGNALUM_NUGGET);
                         output.accept(Moditems.TIN_NUGGET);
                         output.accept(Moditems.ULTIMATITANIUM_NUGGET);
                         output.accept(Moditems.URANIUM_NUGGET);
@@ -143,14 +158,21 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     .title(Component.translatable("creativetab.eternalitems.eternal_rods"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ROD_ALUMINUM);
+                        output.accept(Moditems.ROD_BRONZE);
                         output.accept(Moditems.ROD_COBALT);
                         output.accept(Moditems.ROD_COPPER);
+                        output.accept(Moditems.ROD_ELECTRUM);
+                        output.accept(Moditems.ROD_ENDERIUM);
                         output.accept(Moditems.ROD_GOLD);
+                        output.accept(Moditems.ROD_INVAR);
                         output.accept(Moditems.ROD_IRON);
                         output.accept(Moditems.ROD_LEAD);
+                        output.accept(Moditems.ROD_LUMIUM);
                         output.accept(Moditems.ROD_NICKEL);
                         output.accept(Moditems.ROD_OSMIUM);
                         output.accept(Moditems.ROD_PLATINUM);
+                        output.accept(Moditems.ROD_PLUTONIUM);
+                        output.accept(Moditems.ROD_SIGNALUM);
                         output.accept(Moditems.ROD_TIN);
                         output.accept(Moditems.ROD_ULTIMATITANIUM);
                         output.accept(Moditems.ROD_URANIUM);
@@ -163,14 +185,21 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     .title(Component.translatable("creativetab.eternalitems.eternal_plates"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.PLATE_ALUMINUM);
+                        output.accept(Moditems.PLATE_BRONZE);
                         output.accept(Moditems.PLATE_COBALT);
                         output.accept(Moditems.PLATE_COPPER);
+                        output.accept(Moditems.PLATE_ELECTRUM);
+                        output.accept(Moditems.PLATE_ENDERIUM);
                         output.accept(Moditems.PLATE_GOLD);
+                        output.accept(Moditems.PLATE_INVAR);
                         output.accept(Moditems.PLATE_IRON);
                         output.accept(Moditems.PLATE_LEAD);
+                        output.accept(Moditems.PLATE_LUMIUM);
                         output.accept(Moditems.PLATE_NICKEL);
                         output.accept(Moditems.PLATE_OSMIUM);
                         output.accept(Moditems.PLATE_PLATINUM);
+                        output.accept(Moditems.PLATE_PLUTONIUM);
+                        output.accept(Moditems.PLATE_SIGNALUM);
                         output.accept(Moditems.PLATE_TIN);
                         output.accept(Moditems.PLATE_ULTIMATITANIUM);
                         output.accept(Moditems.PLATE_URANIUM);
@@ -196,6 +225,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(Moditems.RAW_NICKEL);
                         output.accept(Moditems.RAW_OSMIUM);
                         output.accept(Moditems.RAW_PLATINUM);
+                        output.accept(Moditems.RAW_PLUTONIUM);
                         output.accept(Moditems.RAW_SILVER);
                         output.accept(Moditems.SULFUR);
                         output.accept(Moditems.RAW_TIN);
@@ -210,15 +240,22 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     .title(Component.translatable("creativetab.eternalitems.eternal_ore_dust"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ALUMINUM_DUST);
+                        output.accept(Moditems.BRONZE_DUST);
                         output.accept(Moditems.COBALT_DUST);
                         output.accept(Moditems.COPPER_DUST);
+                        output.accept(Moditems.ELECTRUM_DUST);
+                        output.accept(Moditems.ENDER_DUST);
+                        output.accept(Moditems.ENDERIUM_DUST);
                         output.accept(Moditems.FLUORITE_DUST);
                         output.accept(Moditems.GOLD_DUST);
+                        output.accept(Moditems.INVAR_DUST);
                         output.accept(Moditems.IRON_DUST);
                         output.accept(Moditems.LEAD_DUST);
                         output.accept(Moditems.NICKEL_DUST);
                         output.accept(Moditems.OSMIUM_DUST);
                         output.accept(Moditems.PLATINUM_DUST);
+                        output.accept(Moditems.PLUTONIUM_DUST);
+                        output.accept(Moditems.SIGNALUM_DUST);
                         output.accept(Moditems.SULFUR_DUST);
                         output.accept(Moditems.TIN_DUST);
                         output.accept(Moditems.ULTIMATITANIUM_DUST);
@@ -253,6 +290,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(ModBlocks.URANIUM_ORE_BLOCK);
                         output.accept(ModBlocks.OSMIUM_ORE_BLOCK);
                         output.accept(ModBlocks.PLATINUM_ORE_BLOCK);
+                        output.accept(ModBlocks.PLUTONIUM_ORE_BLOCK);
                         output.accept(ModBlocks.TIN_ORE_BLOCK);
                         output.accept(ModBlocks.SULFUR_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
@@ -261,6 +299,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                         output.accept(ModBlocks.DEEPSLATE_NICKEL_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK);
+                        output.accept(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_TIN_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
@@ -272,12 +311,19 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                 .title(Component.translatable("creativetab.eternalitems.eternal_blocks"))
                 .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ALUMINUM_BLOCK);
+                        output.accept(ModBlocks.BRONZE_BLOCK);
                         output.accept(ModBlocks.COBALT_BLOCK);
+                        output.accept(ModBlocks.ELECTRUM_BLOCK);
+                        output.accept(ModBlocks.ENDERIUM_BLOCK);
+                        output.accept(ModBlocks.INVAR_BLOCK);
                         output.accept(ModBlocks.LEAD_BLOCK);
+                        output.accept(ModBlocks.LUMIUM_BLOCK);
                         output.accept(ModBlocks.NICKEL_BLOCK);
                         output.accept(ModBlocks.OSMIUM_BLOCK);
                         output.accept(ModBlocks.PLATINUM_BLOCK);
+                        output.accept(ModBlocks.PLUTONIUM_BLOCK);
                         output.accept(ModBlocks.TIN_BLOCK);
+                        output.accept(ModBlocks.SIGNALUM_BLOCK);
                         output.accept(ModBlocks.ULTIMATITANIUM_BLOCK);
                         output.accept(ModBlocks.URANIUM_BLOCK);
                 }).build());
@@ -293,6 +339,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                         output.accept(ModBlocks.RAW_NICKEL_BLOCK);
                         output.accept(ModBlocks.RAW_OSMIUM_BLOCK);
                         output.accept(ModBlocks.RAW_PLATINUM_BLOCK);
+                        output.accept(ModBlocks.RAW_PLUTONIUM_BLOCK);
                         output.accept(ModBlocks.SULFUR_BLOCK);
                         output.accept(ModBlocks.RAW_TIN_BLOCK);
                         output.accept(ModBlocks.RAW_URANIUM_BLOCK);

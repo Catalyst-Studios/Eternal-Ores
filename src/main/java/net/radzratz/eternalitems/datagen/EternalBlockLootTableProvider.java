@@ -31,14 +31,21 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         //METAL BLOCKS
         dropSelf(ModBlocks.ALUMINUM_BLOCK.get());
+        dropSelf(ModBlocks.BRONZE_BLOCK.get());
         dropSelf(ModBlocks.COBALT_BLOCK.get());
+        dropSelf(ModBlocks.ELECTRUM_BLOCK.get());
+        dropSelf(ModBlocks.ENDERIUM_BLOCK.get());
+        dropSelf(ModBlocks.INVAR_BLOCK.get());
         dropSelf(ModBlocks.LEAD_BLOCK.get());
+        dropSelf(ModBlocks.LUMIUM_BLOCK.get());
         dropSelf(ModBlocks.OSMIUM_BLOCK.get());
         dropSelf(ModBlocks.URANIUM_BLOCK.get());
         dropSelf(ModBlocks.ULTIMATITANIUM_BLOCK.get());
         dropSelf(ModBlocks.TIN_BLOCK.get());
         dropSelf(ModBlocks.PLATINUM_BLOCK.get());
+        dropSelf(ModBlocks.PLUTONIUM_BLOCK.get());
         dropSelf(ModBlocks.NICKEL_BLOCK.get());
+        dropSelf(ModBlocks.SIGNALUM_BLOCK.get());
         //RAW ORE BLOCKS
         dropSelf(ModBlocks.RAW_ALUMINUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_COBALT_BLOCK.get());
@@ -46,6 +53,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_NICKEL_BLOCK.get());
         dropSelf(ModBlocks.RAW_OSMIUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_PLATINUM_BLOCK.get());
+        dropSelf(ModBlocks.RAW_PLUTONIUM_BLOCK.get());
         dropSelf(ModBlocks.SULFUR_BLOCK.get());
         dropSelf(ModBlocks.RAW_TIN_BLOCK.get());
         dropSelf(ModBlocks.RAW_URANIUM_BLOCK.get());
@@ -69,7 +77,10 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //PLATINUM ORE BLOCKS
         add(ModBlocks.PLATINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.PLATINUM_ORE_BLOCK.get(), Moditems.RAW_PLATINUM.get(),1,5));
         add(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get(), Moditems.RAW_PLATINUM.get(),1,5));
-        //SULFUR
+        //PLUTONIUM ORE BLOCKS
+        add(ModBlocks.PLUTONIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.PLUTONIUM_ORE_BLOCK.get(), Moditems.RAW_PLUTONIUM.get(),1,3));
+        add(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get(), Moditems.RAW_PLUTONIUM.get(),1,3));
+        //SULFUR ORE BLOCKS
         add(ModBlocks.SULFUR_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.SULFUR_ORE_BLOCK.get(), Moditems.SULFUR.get(),3,7));
         add(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get(), Moditems.SULFUR.get(),3,7));
         //TIN ORE BLOCKS

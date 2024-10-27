@@ -16,12 +16,19 @@ public class EternalBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         //METAL BLOCKS
         blockWithItem(ModBlocks.ALUMINUM_BLOCK);
+        blockWithItem(ModBlocks.BRONZE_BLOCK);
         blockWithItem(ModBlocks.COBALT_BLOCK);
+        blockWithItem(ModBlocks.ELECTRUM_BLOCK);
+        blockWithItem(ModBlocks.ENDERIUM_BLOCK);
+        blockWithItem(ModBlocks.INVAR_BLOCK);
         blockWithItem(ModBlocks.LEAD_BLOCK);
+        blockWithItem(ModBlocks.LUMIUM_BLOCK);
         blockWithItem(ModBlocks.NICKEL_BLOCK);
         blockWithItem(ModBlocks.OSMIUM_BLOCK);
         blockWithItem(ModBlocks.PLATINUM_BLOCK);
+        blockWithItem(ModBlocks.PLUTONIUM_BLOCK);
         blockWithItem(ModBlocks.TIN_BLOCK);
+        blockWithItem(ModBlocks.SIGNALUM_BLOCK);
         blockWithItem(ModBlocks.URANIUM_BLOCK);
         blockWithItem(ModBlocks.ULTIMATITANIUM_BLOCK);
 
@@ -32,6 +39,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_NICKEL_BLOCK);
         blockWithItem(ModBlocks.RAW_OSMIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_PLATINUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_PLUTONIUM_BLOCK);
         blockWithItem(ModBlocks.SULFUR_BLOCK);
         blockWithItem(ModBlocks.RAW_TIN_BLOCK);
         blockWithItem(ModBlocks.RAW_URANIUM_BLOCK);
@@ -55,6 +63,9 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         //PLATINUM
         blockWithItem(ModBlocks.PLATINUM_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK);
+        //PLUTONIUM
+        blockWithItem(ModBlocks.PLUTONIUM_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK);
         //SULFUR
         blockWithItem(ModBlocks.SULFUR_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK);

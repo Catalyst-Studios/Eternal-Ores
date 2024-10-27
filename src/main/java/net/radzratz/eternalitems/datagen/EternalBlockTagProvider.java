@@ -34,6 +34,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.OSMIUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.get())
                     .add(ModBlocks.PLATINUM_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.PLUTONIUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get())
                     .add(ModBlocks.SULFUR_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
@@ -43,12 +45,19 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get())
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
+                    .add(ModBlocks.BRONZE_BLOCK.get())
                     .add(ModBlocks.COBALT_BLOCK.get())
+                    .add(ModBlocks.ELECTRUM_BLOCK.get())
+                    .add(ModBlocks.ENDERIUM_BLOCK.get())
+                    .add(ModBlocks.INVAR_BLOCK.get())
                     .add(ModBlocks.LEAD_BLOCK.get())
+                    .add(ModBlocks.LUMIUM_BLOCK.get())
                     .add(ModBlocks.NICKEL_BLOCK.get())
                     .add(ModBlocks.OSMIUM_BLOCK.get())
                     .add(ModBlocks.PLATINUM_BLOCK.get())
+                    .add(ModBlocks.PLUTONIUM_BLOCK.get())
                     .add(ModBlocks.TIN_BLOCK.get())
+                    .add(ModBlocks.SIGNALUM_BLOCK.get())
                     .add(ModBlocks.ULTIMATITANIUM_BLOCK.get())
                     .add(ModBlocks.URANIUM_BLOCK.get())
                     //RAW ORE BLOCKS
@@ -58,6 +67,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.RAW_NICKEL_BLOCK.get())
                     .add(ModBlocks.RAW_OSMIUM_BLOCK.get())
                     .add(ModBlocks.RAW_PLATINUM_BLOCK.get())
+                    .add(ModBlocks.RAW_PLUTONIUM_BLOCK.get())
                     .add(ModBlocks.SULFUR_BLOCK.get())
                     .add(ModBlocks.RAW_TIN_BLOCK.get())
                     .add(ModBlocks.RAW_URANIUM_BLOCK.get());
@@ -77,12 +87,19 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
+                    .add(ModBlocks.BRONZE_BLOCK.get())
                     .add(ModBlocks.COBALT_BLOCK.get())
+                    .add(ModBlocks.ELECTRUM_BLOCK.get())
+                    .add(ModBlocks.ENDERIUM_BLOCK.get())
+                    .add(ModBlocks.INVAR_BLOCK.get())
                     .add(ModBlocks.LEAD_BLOCK.get())
+                    .add(ModBlocks.LUMIUM_BLOCK.get())
                     .add(ModBlocks.NICKEL_BLOCK.get())
                     .add(ModBlocks.OSMIUM_BLOCK.get())
                     .add(ModBlocks.PLATINUM_BLOCK.get())
+                    .add(ModBlocks.PLUTONIUM_BLOCK.get())
                     .add(ModBlocks.TIN_BLOCK.get())
+                    .add(ModBlocks.SIGNALUM_BLOCK.get())
                     .add(ModBlocks.ULTIMATITANIUM_BLOCK.get())
                     .add(ModBlocks.URANIUM_BLOCK.get())
                     //RAW ORE BLOCKS
@@ -92,6 +109,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.RAW_NICKEL_BLOCK.get())
                     .add(ModBlocks.RAW_OSMIUM_BLOCK.get())
                     .add(ModBlocks.RAW_PLATINUM_BLOCK.get())
+                    .add(ModBlocks.RAW_PLUTONIUM_BLOCK.get())
                     .add(ModBlocks.SULFUR_BLOCK.get())
                     .add(ModBlocks.RAW_TIN_BLOCK.get())
                     .add(ModBlocks.RAW_URANIUM_BLOCK.get());
@@ -103,6 +121,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
                     .add(ModBlocks.PLATINUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get())
+                    .add(ModBlocks.PLUTONIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get())
                     .add(ModBlocks.URANIUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get());
 
