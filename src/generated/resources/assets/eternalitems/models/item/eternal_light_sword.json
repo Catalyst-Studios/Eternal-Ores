@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "eternalitems:item/rod_signalum"
+    "layer0": "eternalitems:item/eternal_light_sword"
   }
 }

@@ -22,6 +22,7 @@
   "item.eternalitems.dragons_scale": "Dragons Scale",
   "item.eternalitems.crosshead_screwdriver": "Crosshead Screwdriver",
   "item.eternalitems.flathead_screwdriver": "Flathead Screwdriver",
+  "item.eternalitems.meteorite_chunk": "Meteorite Chunk",
 
   "item.eternalitems.tiny_coal": "Tiny Coal",
   "item.eternalitems.tiny_charcoal": "Tiny Charcoal",
@@ -30,10 +31,16 @@
   "item.eternalitems.cooked_carrot": "Cooked Carrot",
 
   "item.eternalitems.eternal_dark_sword": "Eternal Dark Sword",
+  "item.eternalitems.eternal_light_sword": "Eternal Light Sword",
+  "item.eternalitems.eternal_gray_sword": "Eternal Gray Sword",
   "item.eternalitems.copper_sword": "Copper Sword",
   "item.eternalitems.bone_knife": "Bone Knife",
 
   "item.eternalitems.eternal_dark_pickaxe": "Eternal Dark Pickaxe",
+  "item.eternalitems.eternal_gray_pickaxe": "Eternal Gray Pickaxe",
+  "item.eternalitems.eternal_gray_axe": "Eternal Gray Axe",
+  "item.eternalitems.eternal_gray_shovel": "Eternal Gray Shovel",
+  "item.eternalitems.eternal_gray_scythe": "Eternal Gray Scythe",
   "item.eternalitems.copper_pickaxe": "Copper Pickaxe",
   "item.eternalitems.copper_shovel": "Copper Shovel",
   "item.eternalitems.copper_axe": "Copper Axe",

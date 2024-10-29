@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:copper_shovel"
+    "eternalitems:copper_shovel",
+    "eternalitems:eternal_gray_shovel"
   ]
 }

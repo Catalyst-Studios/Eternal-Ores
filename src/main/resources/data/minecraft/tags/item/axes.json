@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:copper_axe"
+    "eternalitems:copper_axe",
+    "eternalitems:eternal_gray_axe"
   ]
 }

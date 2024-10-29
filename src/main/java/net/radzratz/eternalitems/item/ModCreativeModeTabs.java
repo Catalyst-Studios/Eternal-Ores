@@ -39,6 +39,7 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.FLATHEAD_SCREWDRIVER);
                         output.accept(Moditems.GODS_TEAR);
                         output.accept(Moditems.GREGTASTIC_ATOMIC_PHD);
+                        output.accept(Moditems.METEORITE_CHUNK);
                         output.accept(Moditems.RATZ_HEAD);
                         output.accept(Moditems.SILICON);
                         output.accept(Moditems.SERAPHIMS_FEATHER);
@@ -77,6 +78,8 @@ public static final Supplier<CreativeModeTab> ETERNAL_SWORDS_TAB = CREATIVE_MODE
                     output.accept(Moditems.BONE_KNIFE);
                     output.accept(Moditems.COPPER_SWORD);
                     output.accept(Moditems.ETERNAL_DARK_SWORD);
+                    output.accept(Moditems.ETERNAL_LIGHT_SWORD);
+                    output.accept(Moditems.ETERNAL_GRAY_SWORD);
                 }).build());
 
 //TOOLS
@@ -93,6 +96,10 @@ public static final Supplier<CreativeModeTab> ETERNAL_PICKAXES_TAB = CREATIVE_MO
                     output.accept(Moditems.DIAMOND_HAMMER);
                     output.accept(Moditems.ETERNAL_DARK_HAMMER);
                     output.accept(Moditems.ETERNAL_DARK_PICKAXE);
+                    output.accept(Moditems.ETERNAL_GRAY_AXE);
+                    output.accept(Moditems.ETERNAL_GRAY_PICKAXE);
+                    output.accept(Moditems.ETERNAL_GRAY_SHOVEL);
+                    output.accept(Moditems.ETERNAL_GRAY_SCYTHE);
                     output.accept(Moditems.IRON_HAMMER);
                     output.accept(Moditems.STONE_HAMMER);
                 }).build());

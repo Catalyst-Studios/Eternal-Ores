@@ -43,5 +43,12 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(ModTags.Items.ETERNAL_DARK_TOOLS)
                         .add(Moditems.ETERNAL_DARK_PICKAXE.get())
                         .add(Moditems.ETERNAL_DARK_SWORD.get());
+
+                tag(ModTags.Items.ETERNAL_GRAY_TOOLS)
+                        .add(Moditems.ETERNAL_GRAY_SWORD.get())
+                        .add(Moditems.ETERNAL_GRAY_AXE.get())
+                        .add(Moditems.ETERNAL_GRAY_PICKAXE.get())
+                        .add(Moditems.ETERNAL_GRAY_SHOVEL.get())
+                        .add(Moditems.ETERNAL_GRAY_SCYTHE.get());
     }
 }

@@ -15,11 +15,17 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_COPPER_TOOLS = createTag("needs_copper_tools");
         public static final TagKey<Block> INCORRECT_FOR_COPPER_TOOLS = createTag("incorrect_for_copper_tools");
 
-        public static final TagKey<Block> NEEDS_ETERNALDARK_TOOLS = createTag("needs_eternaldark_tools");
-        public static final TagKey<Block> INCORRECT_FOR_ETERNALDARK_TOOLS = createTag("incorrect_for_eternaldark_tools");
+        public static final TagKey<Block> NEEDS_ETERNAL_DARK_TOOLS = createTag("needs_eternal_dark_tools");
+        public static final TagKey<Block> INCORRECT_FOR_ETERNAL_DARK_TOOLS = createTag("incorrect_for_eternal_dark_tools");
 
         public static final TagKey<Block> NEEDS_BONE_TOOLS = createTag("needs_bone_tools");
         public static final TagKey<Block> INCORRECT_FOR_BONE_TOOLS = createTag("incorrect_for_bone_tools");
+
+        public static final TagKey<Block> NEEDS_ETERNAL_LIGHT_TOOLS = createTag("needs_eternal_light_tools");
+        public static final TagKey<Block> INCORRECT_FOR_ETERNAL_LIGHT_TOOLS = createTag("incorrect_for_eternal_light_tools");
+
+        public static final TagKey<Block> NEEDS_ETERNAL_GRAY_TOOLS = createTag("needs_eternal_gray_tools");
+        public static final TagKey<Block> INCORRECT_FOR_ETERNAL_GRAY_TOOLS = createTag("incorrect_for_eternal_gray_tools");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(EternalItems.MOD_ID, name));
@@ -49,6 +55,15 @@ public class ModTags {
         private static TagKey<Item> createTagEternalDarkTools(String eternal_dark_tools) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternal_dark_tools", eternal_dark_tools));
         }
+        //Eternal Light Tools
+        public static final TagKey<Item> ETERNAL_LIGHT_TOOLS = createTagEternalLightTools("eternal_light_tools");
+        private static TagKey<Item> createTagEternalLightTools(String eternal_light_tools) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternal_light_tools", eternal_light_tools));
+        }
+        //Eternal Gray Tools
+        public static final TagKey<Item> ETERNAL_GRAY_TOOLS = createTagEternalGrayTools("eternal_gray_tools");
+        private static TagKey<Item> createTagEternalGrayTools(String eternal_gray_tools) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternal_gray_tools", eternal_gray_tools));
+        }
     }
-
 }

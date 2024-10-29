@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:copper_hoe"
+    "eternalitems:copper_hoe",
+    "eternalitems:eternal_gray_scythe"
   ]
 }

@@ -39,6 +39,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.SILICON.get());
         basicItem(Moditems.DRAGONS_SCALE.get());
         handheldItem(Moditems.WRENCH);
+        basicItem(Moditems.METEORITE_CHUNK.get());
         //FOODS
         basicItem(Moditems.COOKED_APPLE.get());
         basicItem(Moditems.COOKED_CARROT.get());
@@ -133,26 +134,26 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.URANIUM_DUST.get());
         basicItem(Moditems.ZINC_DUST.get());
         //RODS
-        basicItem(Moditems.ROD_ALUMINUM.get());
-        basicItem(Moditems.ROD_BRONZE.get());
-        basicItem(Moditems.ROD_COBALT.get());
-        basicItem(Moditems.ROD_COPPER.get());
-        basicItem(Moditems.ROD_ELECTRUM.get());
-        basicItem(Moditems.ROD_ENDERIUM.get());
-        basicItem(Moditems.ROD_GOLD.get());
-        basicItem(Moditems.ROD_INVAR.get());
-        basicItem(Moditems.ROD_IRON.get());
-        basicItem(Moditems.ROD_LEAD.get());
-        basicItem(Moditems.ROD_LUMIUM.get());
-        basicItem(Moditems.ROD_NICKEL.get());
-        basicItem(Moditems.ROD_OSMIUM.get());
-        basicItem(Moditems.ROD_PLATINUM.get());
-        basicItem(Moditems.ROD_PLUTONIUM.get());
-        basicItem(Moditems.ROD_TIN.get());
-        basicItem(Moditems.ROD_SIGNALUM.get());
-        basicItem(Moditems.ROD_ULTIMATITANIUM.get());
-        basicItem(Moditems.ROD_URANIUM.get());
-        basicItem(Moditems.ROD_ZINC.get());
+        handheldItem(Moditems.ROD_ALUMINUM);
+        handheldItem(Moditems.ROD_BRONZE);
+        handheldItem(Moditems.ROD_COBALT);
+        handheldItem(Moditems.ROD_COPPER);
+        handheldItem(Moditems.ROD_ELECTRUM);
+        handheldItem(Moditems.ROD_ENDERIUM);
+        handheldItem(Moditems.ROD_GOLD);
+        handheldItem(Moditems.ROD_INVAR);
+        handheldItem(Moditems.ROD_IRON);
+        handheldItem(Moditems.ROD_LEAD);
+        handheldItem(Moditems.ROD_LUMIUM);
+        handheldItem(Moditems.ROD_NICKEL);
+        handheldItem(Moditems.ROD_OSMIUM);
+        handheldItem(Moditems.ROD_PLATINUM);
+        handheldItem(Moditems.ROD_PLUTONIUM);
+        handheldItem(Moditems.ROD_TIN);
+        handheldItem(Moditems.ROD_SIGNALUM);
+        handheldItem(Moditems.ROD_ULTIMATITANIUM);
+        handheldItem(Moditems.ROD_URANIUM);
+        handheldItem(Moditems.ROD_ZINC);
         //PLATES
         basicItem(Moditems.PLATE_ALUMINUM.get());
         basicItem(Moditems.PLATE_BRONZE.get());
@@ -184,6 +185,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         handheldItem(Moditems.COPPER_HOE);
         //SWORDS
         handheldItem(Moditems.ETERNAL_DARK_SWORD);
+        handheldItem(Moditems.ETERNAL_LIGHT_SWORD);
         handheldItem(Moditems.COPPER_SWORD);
         handheldItem(Moditems.BONE_KNIFE);
         //GEMS

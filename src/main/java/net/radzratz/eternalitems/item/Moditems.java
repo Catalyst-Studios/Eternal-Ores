@@ -1,8 +1,6 @@
 package net.radzratz.eternalitems.item;
 
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -74,6 +72,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DRAGONS_SCALE = ITEMS.register("dragons_scale",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> METEORITE_CHUNK = ITEMS.register("meteorite_chunk",
+            ()-> new Item(new Item.Properties()));
 
 
     public static final DeferredItem<Item> WRENCH = ITEMS.register("wrench",
@@ -88,11 +88,25 @@ public class Moditems {
     //Swords
     public static final DeferredItem<SwordItem> ETERNAL_DARK_SWORD = ITEMS.register("eternal_dark_sword",
             ()-> new SwordItem(EternalToolTiers.ETERNAL_DARK_TOOLS,new Item.Properties()
-                    .attributes(SwordItem.createAttributes(EternalToolTiers.ETERNAL_DARK_TOOLS, 2450, 45))));
+                    .attributes(SwordItem.createAttributes(EternalToolTiers.ETERNAL_DARK_TOOLS, 450, 25))));
+
+    public static final DeferredItem<SwordItem> ETERNAL_LIGHT_SWORD = ITEMS.register("eternal_light_sword",
+            ()-> new SwordItem(EternalToolTiers.ETERNAL_LIGHT_TOOLS,new Item.Properties()
+                    .attributes(SwordItem.createAttributes(EternalToolTiers.ETERNAL_LIGHT_TOOLS, 450, 25))));
+
+    public static final DeferredItem<SwordItem> ETERNAL_GRAY_SWORD = ITEMS.register("eternal_gray_sword",
+            ()-> new SwordItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
+                    new Item.Properties()
+                    .stacksTo(1)
+                    .fireResistant()
+                    .durability(Integer.MAX_VALUE)
+                    .setNoRepair()
+                    .attributes(SwordItem.createAttributes(EternalToolTiers
+                    .ETERNAL_GRAY_TOOLS, 2000, 128))));
 
     public static final DeferredItem<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
             ()-> new SwordItem(EternalToolTiers.COPPER_TOOLS, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 5, 1.6f))));
+                    .attributes(SwordItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 3, 1.6f))));
 
     public static final DeferredItem<SwordItem> BONE_KNIFE = ITEMS.register("bone_knife",
             ()-> new SwordItem(EternalToolTiers.BONE_TOOLS,new Item.Properties()
@@ -102,6 +116,46 @@ public class Moditems {
     public static final DeferredItem<PickaxeItem> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
             ()-> new PickaxeItem(EternalToolTiers.COPPER_TOOLS, new Item.Properties()
                     .attributes(PickaxeItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 3, 1.6f))));
+
+    public static final DeferredItem<PickaxeItem> ETERNAL_GRAY_PICKAXE = ITEMS.register("eternal_gray_pickaxe",
+            ()-> new PickaxeItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .fireResistant()
+                            .durability(Integer.MAX_VALUE)
+                            .setNoRepair()
+                            .attributes(PickaxeItem.createAttributes(EternalToolTiers
+                            .ETERNAL_GRAY_TOOLS,2000,128))));
+
+    public static final DeferredItem<AxeItem> ETERNAL_GRAY_AXE = ITEMS.register("eternal_gray_axe",
+            ()-> new AxeItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .fireResistant()
+                            .durability(Integer.MAX_VALUE)
+                            .setNoRepair()
+                            .attributes(PickaxeItem.createAttributes(EternalToolTiers
+                            .ETERNAL_GRAY_TOOLS,2000,128))));
+
+    public static final DeferredItem<ShovelItem> ETERNAL_GRAY_SHOVEL = ITEMS.register("eternal_gray_shovel",
+            ()-> new ShovelItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .fireResistant()
+                            .durability(Integer.MAX_VALUE)
+                            .setNoRepair()
+                            .attributes(PickaxeItem.createAttributes(EternalToolTiers
+                            .ETERNAL_GRAY_TOOLS,2000,128))));
+
+    public static final DeferredItem<HoeItem> ETERNAL_GRAY_SCYTHE = ITEMS.register("eternal_gray_scythe",
+            ()-> new HoeItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
+                    new Item.Properties()
+                            .stacksTo(1)
+                            .fireResistant()
+                            .durability(Integer.MAX_VALUE)
+                            .setNoRepair()
+                            .attributes(PickaxeItem.createAttributes(EternalToolTiers
+                            .ETERNAL_GRAY_TOOLS,2000,128))));
 
     public static final DeferredItem<Item> ETERNAL_DARK_PICKAXE = ITEMS.register("eternal_dark_pickaxe",
             ()-> new Item(new Item.Properties()));

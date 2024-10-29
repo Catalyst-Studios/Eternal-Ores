@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "eternalitems:copper_sword",
-    "eternalitems:eternal_dark_sword"
+    "eternalitems:eternal_dark_sword",
+    "eternalitems:eternal_gray_sword",
+    "eternalitems:eternal_light_sword"
   ]
 }
