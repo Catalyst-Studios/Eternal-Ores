@@ -46,6 +46,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.PLUTONIUM_BLOCK.get());
         dropSelf(ModBlocks.NICKEL_BLOCK.get());
         dropSelf(ModBlocks.SIGNALUM_BLOCK.get());
+        dropSelf(ModBlocks.SILVER_BLOCK.get());
         //RAW ORE BLOCKS
         dropSelf(ModBlocks.RAW_ALUMINUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_COBALT_BLOCK.get());
@@ -54,6 +55,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_OSMIUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_PLATINUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_PLUTONIUM_BLOCK.get());
+        dropSelf(ModBlocks.RAW_SILVER_BLOCK.get());
         dropSelf(ModBlocks.SULFUR_BLOCK.get());
         dropSelf(ModBlocks.RAW_TIN_BLOCK.get());
         dropSelf(ModBlocks.RAW_URANIUM_BLOCK.get());
@@ -61,7 +63,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //ORE BLOCK TO RAW ORE
         //ALUMINUM ORE BLOCKS
         add(ModBlocks.ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.ALUMINUM_ORE_BLOCK.get(), Moditems.RAW_ALUMINUM.get(),2,5));
-        //add(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrop(ModBlocks.ALUMINUM_ORE_BLOCK.get(), Moditems.RAW_ALUMINUM.get(),2,5));
+        add(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), Moditems.RAW_ALUMINUM.get(),2,5));
         //COBALT ORE BLOCKS
         add(ModBlocks.COBALT_ORE_BLOCK.get(), block -> createOreDrop(ModBlocks.COBALT_ORE_BLOCK.get(), Moditems.RAW_COBALT.get()));
         add(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get(), block -> createOreDrop(ModBlocks.COBALT_ORE_BLOCK.get(), Moditems.RAW_COBALT.get()));
@@ -89,6 +91,9 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //URANIUM ORE BLOCKS
         add(ModBlocks.URANIUM_ORE_BLOCK.get(), block -> createOreDrop(ModBlocks.URANIUM_ORE_BLOCK.get(), Moditems.RAW_URANIUM.get()));
         add(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get(), block -> createOreDrop(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get(), Moditems.RAW_URANIUM.get()));
+        //Silver
+        add(ModBlocks.SILVER_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.SILVER_ORE_BLOCK.get(), Moditems.RAW_SILVER.get(),2,4));
+        add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get(), Moditems.RAW_SILVER.get(),2,4));
 
         //GEMS
         //FLUORITE TO GEM

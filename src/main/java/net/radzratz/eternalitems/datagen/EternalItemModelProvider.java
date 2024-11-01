@@ -15,34 +15,6 @@ public class EternalItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        //ITEMS
-        basicItem(Moditems.ANGELS_STRING.get());
-        basicItem(Moditems.BLACK_HOLE.get());
-        basicItem(Moditems.CAPACITOR.get());
-        basicItem(Moditems.DEMONIC_HEART.get());
-        basicItem(Moditems.GREGTASTIC_ATOMIC_PHD.get());
-        basicItem(Moditems.DUMMYPRESS.get());
-        basicItem(Moditems.MULTIPRESS.get());
-        basicItem(Moditems.RATZ_HEAD.get());
-        basicItem(Moditems.UNDEAD_HAND.get());
-        basicItem(Moditems.SOURCE_MANIFESTATION.get());
-        basicItem(Moditems.ANTIMATTER_FUSE.get());
-        basicItem(Moditems.COMET_SHARD.get());
-        basicItem(Moditems.FORGOTTEN_SEA_COIN.get());
-        basicItem(Moditems.ETERNAL_VORTEX.get());
-        basicItem(Moditems.GODS_TEAR.get());
-        basicItem(Moditems.DEVILS_TOOTH.get());
-        basicItem(Moditems.SERAPHIMS_FEATHER.get());
-        basicItem(Moditems.FLATHEAD_SCREWDRIVER.get());
-        basicItem(Moditems.CROSSHEAD_SCREWDRIVER.get());
-        basicItem(Moditems.FANG.get());
-        basicItem(Moditems.SILICON.get());
-        basicItem(Moditems.DRAGONS_SCALE.get());
-        handheldItem(Moditems.WRENCH);
-        basicItem(Moditems.METEORITE_CHUNK.get());
-        //FOODS
-        basicItem(Moditems.COOKED_APPLE.get());
-        basicItem(Moditems.COOKED_CARROT.get());
         //HAMMERS
         basicItem(Moditems.COBALT_HAMMER.get());
         basicItem(Moditems.COPPER_HAMMER.get());
@@ -85,6 +57,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.PLUTONIUM_INGOT.get());
         basicItem(Moditems.REDSTONE_INGOT.get());
         basicItem(Moditems.SIGNALUM_INGOT.get());
+        basicItem(Moditems.SILVER_INGOT.get());
         basicItem(Moditems.STEEL_INGOT.get());
         basicItem(Moditems.TIN_INGOT.get());
         basicItem(Moditems.ULTIMATITANIUM_INGOT.get());
@@ -106,6 +79,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.PLUTONIUM_NUGGET.get());
         basicItem(Moditems.TIN_NUGGET.get());
         basicItem(Moditems.SIGNALUM_NUGGET.get());
+        basicItem(Moditems.SILVER_NUGGET.get());
         basicItem(Moditems.ULTIMATITANIUM_NUGGET.get());
         basicItem(Moditems.URANIUM_NUGGET.get());
         basicItem(Moditems.ZINC_NUGGET.get());
@@ -130,6 +104,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.SULFUR_DUST.get());
         basicItem(Moditems.TIN_DUST.get());
         basicItem(Moditems.SIGNALUM_DUST.get());
+        basicItem(Moditems.SILVER_DUST.get());
         basicItem(Moditems.ULTIMATITANIUM_DUST.get());
         basicItem(Moditems.URANIUM_DUST.get());
         basicItem(Moditems.ZINC_DUST.get());
@@ -150,6 +125,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         handheldItem(Moditems.ROD_PLATINUM);
         handheldItem(Moditems.ROD_PLUTONIUM);
         handheldItem(Moditems.ROD_TIN);
+        handheldItem(Moditems.ROD_SILVER);
         handheldItem(Moditems.ROD_SIGNALUM);
         handheldItem(Moditems.ROD_ULTIMATITANIUM);
         handheldItem(Moditems.ROD_URANIUM);
@@ -171,23 +147,13 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.PLATE_PLATINUM.get());
         basicItem(Moditems.PLATE_PLUTONIUM.get());
         basicItem(Moditems.PLATE_SIGNALUM.get());
+        basicItem(Moditems.PLATE_SILVER.get());
         basicItem(Moditems.PLATE_TIN.get());
         basicItem(Moditems.PLATE_ULTIMATITANIUM.get());
         basicItem(Moditems.PLATE_URANIUM.get());
         basicItem(Moditems.PLATE_ZINC.get());
         //GEARS
         basicItem(Moditems.ULTIMATE_GEAR.get());
-        //TOOLS
-        handheldItem(Moditems.ETERNAL_DARK_PICKAXE);
-        handheldItem(Moditems.COPPER_AXE);
-        handheldItem(Moditems.COPPER_PICKAXE);
-        handheldItem(Moditems.COPPER_SHOVEL);
-        handheldItem(Moditems.COPPER_HOE);
-        //SWORDS
-        handheldItem(Moditems.ETERNAL_DARK_SWORD);
-        handheldItem(Moditems.ETERNAL_LIGHT_SWORD);
-        handheldItem(Moditems.COPPER_SWORD);
-        handheldItem(Moditems.BONE_KNIFE);
         //GEMS
         basicItem(Moditems.FLUORITE.get());
         basicItem(Moditems.GEM_SAPPHIRE.get());

@@ -31,6 +31,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SIGNALUM_BLOCK);
         blockWithItem(ModBlocks.URANIUM_BLOCK);
         blockWithItem(ModBlocks.ULTIMATITANIUM_BLOCK);
+        blockWithItem(ModBlocks.SILVER_BLOCK);
 
         //RAW BLOCKS
         blockWithItem(ModBlocks.RAW_ALUMINUM_BLOCK);
@@ -40,6 +41,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.RAW_OSMIUM_BLOCK);
         blockWithItem(ModBlocks.RAW_PLATINUM_BLOCK);
         blockWithItem(ModBlocks.RAW_PLUTONIUM_BLOCK);
+        blockWithItem(ModBlocks.RAW_SILVER_BLOCK);
         blockWithItem(ModBlocks.SULFUR_BLOCK);
         blockWithItem(ModBlocks.RAW_TIN_BLOCK);
         blockWithItem(ModBlocks.RAW_URANIUM_BLOCK);
@@ -47,7 +49,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         //ORE BLOCKS
         //ALUMINUM
         blockWithItem(ModBlocks.ALUMINUM_ORE_BLOCK);
-        //blockWithItem(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK);
         //COBALT
         blockWithItem(ModBlocks.COBALT_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
@@ -75,6 +77,9 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         //URANIUM
         blockWithItem(ModBlocks.URANIUM_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
+        //SILVER
+        blockWithItem(ModBlocks.SILVER_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK);
 
         //GEMS
         //FLUORITE

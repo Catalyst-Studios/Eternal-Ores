@@ -6,174 +6,10 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalitems.EternalItems;
 import net.radzratz.eternalitems.item.custom.EternalHammers;
-import net.radzratz.eternalitems.item.custom.EternalToolTiers;
 import net.radzratz.eternalitems.item.custom.FuelItem;
-import net.radzratz.eternalitems.item.custom.ModFoodProperties;
 
 public class Moditems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EternalItems.MOD_ID);
-
-    //Items
-    //Needs Occultism
-    public static final DeferredItem<Item> DEMONIC_HEART = ITEMS.register("demonic_heart",
-            ()-> new Item(new Item.Properties()));
-    //Needs Ars Nouveau
-    public static final DeferredItem<Item> SOURCE_MANIFESTATION = ITEMS.register("source_manifestation",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> RATZ_HEAD = ITEMS.register("ratz_head",
-            ()-> new Item(new Item.Properties()));
-    //Needs Mekanism
-    public static final DeferredItem<Item> ANTIMATTER_FUSE = ITEMS.register("antimatter_fuse",
-            ()-> new Item(new Item.Properties()));
-    //Needs GregTechCEU
-    public static final DeferredItem<Item> GREGTASTIC_ATOMIC_PHD = ITEMS.register("gregtastic_atomic_phd",
-            ()-> new Item(new Item.Properties()));
-    //Needs AE2
-    public static final DeferredItem<Item> MULTIPRESS = ITEMS.register("multipress",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DUMMYPRESS = ITEMS.register("dummypress",
-            ()-> new Item(new Item.Properties()));
-    //
-    public static final DeferredItem<Item> CAPACITOR = ITEMS.register("capacitor",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BLACK_HOLE = ITEMS.register("black_hole",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> COMET_SHARD = ITEMS.register("comet_shard",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FORGOTTEN_SEA_COIN = ITEMS.register("forgotten_sea_coin",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ETERNAL_VORTEX = ITEMS.register("eternal_vortex",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> UNDEAD_HAND = ITEMS.register("undead_hand",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> GODS_TEAR = ITEMS.register("gods_tear",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DEVILS_TOOTH = ITEMS.register("devils_tooth",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> ANGELS_STRING = ITEMS.register("angels_string",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SERAPHIMS_FEATHER = ITEMS.register("seraphims_feather",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FLATHEAD_SCREWDRIVER = ITEMS.register("flathead_screwdriver",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> CROSSHEAD_SCREWDRIVER = ITEMS.register("crosshead_screwdriver",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FANG = ITEMS.register("fang",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SILICON = ITEMS.register("silicon",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SULFUR = ITEMS.register("sulfur",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SULFUR_DUST = ITEMS.register("sulfur_dust",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FLUORITE_DUST = ITEMS.register("fluorite_dust",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> FLUORITE = ITEMS.register("fluorite",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DRAGONS_SCALE = ITEMS.register("dragons_scale",
-            ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> METEORITE_CHUNK = ITEMS.register("meteorite_chunk",
-            ()-> new Item(new Item.Properties()));
-
-
-    public static final DeferredItem<Item> WRENCH = ITEMS.register("wrench",
-            ()-> new Item(new Item.Properties()));
-
-    //Food
-    public static final DeferredItem<Item> COOKED_APPLE = ITEMS.register("cooked_apple",
-            ()-> new Item(new Item.Properties().food(ModFoodProperties.COOKED_APPLE)));
-    public static final DeferredItem<Item> COOKED_CARROT = ITEMS.register("cooked_carrot",
-            ()-> new Item(new Item.Properties().food(ModFoodProperties.COOKED_CARROT)));
-
-    //Swords
-    public static final DeferredItem<SwordItem> ETERNAL_DARK_SWORD = ITEMS.register("eternal_dark_sword",
-            ()-> new SwordItem(EternalToolTiers.ETERNAL_DARK_TOOLS,new Item.Properties()
-                    .attributes(SwordItem.createAttributes(EternalToolTiers.ETERNAL_DARK_TOOLS, 450, 25))));
-
-    public static final DeferredItem<SwordItem> ETERNAL_LIGHT_SWORD = ITEMS.register("eternal_light_sword",
-            ()-> new SwordItem(EternalToolTiers.ETERNAL_LIGHT_TOOLS,new Item.Properties()
-                    .attributes(SwordItem.createAttributes(EternalToolTiers.ETERNAL_LIGHT_TOOLS, 450, 25))));
-
-    public static final DeferredItem<SwordItem> ETERNAL_GRAY_SWORD = ITEMS.register("eternal_gray_sword",
-            ()-> new SwordItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
-                    new Item.Properties()
-                    .stacksTo(1)
-                    .fireResistant()
-                    .durability(Integer.MAX_VALUE)
-                    .setNoRepair()
-                    .attributes(SwordItem.createAttributes(EternalToolTiers
-                    .ETERNAL_GRAY_TOOLS, 2000, 128))));
-
-    public static final DeferredItem<SwordItem> COPPER_SWORD = ITEMS.register("copper_sword",
-            ()-> new SwordItem(EternalToolTiers.COPPER_TOOLS, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 3, 1.6f))));
-
-    public static final DeferredItem<SwordItem> BONE_KNIFE = ITEMS.register("bone_knife",
-            ()-> new SwordItem(EternalToolTiers.BONE_TOOLS,new Item.Properties()
-                    .attributes(SwordItem.createAttributes(EternalToolTiers.BONE_TOOLS, 4,-1.4f))));
-
-    //Tools
-    public static final DeferredItem<PickaxeItem> COPPER_PICKAXE = ITEMS.register("copper_pickaxe",
-            ()-> new PickaxeItem(EternalToolTiers.COPPER_TOOLS, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(EternalToolTiers.COPPER_TOOLS, 3, 1.6f))));
-
-    public static final DeferredItem<PickaxeItem> ETERNAL_GRAY_PICKAXE = ITEMS.register("eternal_gray_pickaxe",
-            ()-> new PickaxeItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
-                    new Item.Properties()
-                            .stacksTo(1)
-                            .fireResistant()
-                            .durability(Integer.MAX_VALUE)
-                            .setNoRepair()
-                            .attributes(PickaxeItem.createAttributes(EternalToolTiers
-                            .ETERNAL_GRAY_TOOLS,2000,128))));
-
-    public static final DeferredItem<AxeItem> ETERNAL_GRAY_AXE = ITEMS.register("eternal_gray_axe",
-            ()-> new AxeItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
-                    new Item.Properties()
-                            .stacksTo(1)
-                            .fireResistant()
-                            .durability(Integer.MAX_VALUE)
-                            .setNoRepair()
-                            .attributes(PickaxeItem.createAttributes(EternalToolTiers
-                            .ETERNAL_GRAY_TOOLS,2000,128))));
-
-    public static final DeferredItem<ShovelItem> ETERNAL_GRAY_SHOVEL = ITEMS.register("eternal_gray_shovel",
-            ()-> new ShovelItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
-                    new Item.Properties()
-                            .stacksTo(1)
-                            .fireResistant()
-                            .durability(Integer.MAX_VALUE)
-                            .setNoRepair()
-                            .attributes(PickaxeItem.createAttributes(EternalToolTiers
-                            .ETERNAL_GRAY_TOOLS,2000,128))));
-
-    public static final DeferredItem<HoeItem> ETERNAL_GRAY_SCYTHE = ITEMS.register("eternal_gray_scythe",
-            ()-> new HoeItem(EternalToolTiers.ETERNAL_GRAY_TOOLS,
-                    new Item.Properties()
-                            .stacksTo(1)
-                            .fireResistant()
-                            .durability(Integer.MAX_VALUE)
-                            .setNoRepair()
-                            .attributes(PickaxeItem.createAttributes(EternalToolTiers
-                            .ETERNAL_GRAY_TOOLS,2000,128))));
-
-    public static final DeferredItem<Item> ETERNAL_DARK_PICKAXE = ITEMS.register("eternal_dark_pickaxe",
-            ()-> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> COPPER_AXE = ITEMS.register("copper_axe",
-            ()-> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> COPPER_SHOVEL = ITEMS.register("copper_shovel",
-            ()-> new Item(new Item.Properties()));
-
-    public static final DeferredItem<Item> COPPER_HOE = ITEMS.register("copper_hoe",
-            ()-> new Item(new Item.Properties()));
-
-    //Fuels
-    public static final DeferredItem<Item> TINY_COAL = ITEMS.register("tiny_coal",
-            ()-> new FuelItem(new Item.Properties(), 200));
-    public static final DeferredItem<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal",
-            ()-> new FuelItem(new Item.Properties(), 200));
 
     //Hammers
     public static final DeferredItem<Item> COBALT_HAMMER = ITEMS.register("cobalt_hammer",
@@ -188,6 +24,13 @@ public class Moditems {
             ()-> new EternalHammers(new Item.Properties(),256));
     public static final DeferredItem<Item> ETERNAL_DARK_HAMMER = ITEMS.register("eternal_dark_hammer",
             ()-> new EternalHammers(new Item.Properties(),2048));
+
+    //Fuels
+    //Fuels
+    public static final DeferredItem<Item> TINY_COAL = ITEMS.register("tiny_coal",
+            ()-> new FuelItem(new Item.Properties(), 200));
+    public static final DeferredItem<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal",
+            ()-> new FuelItem(new Item.Properties(), 200));
 
     //Ingots
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
@@ -234,6 +77,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> REDSTONE_INGOT = ITEMS.register("redstone_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+            ()-> new Item(new Item.Properties()));
 
     //Nuggets
     public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
@@ -271,6 +116,8 @@ public class Moditems {
     public static final DeferredItem<Item> LUMIUM_NUGGET = ITEMS.register("lumium_nugget",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SIGNALUM_NUGGET = ITEMS.register("signalum_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
             ()-> new Item(new Item.Properties()));
 
     //Rods
@@ -314,6 +161,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_SIGNALUM = ITEMS.register("rod_signalum",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_SILVER = ITEMS.register("rod_silver",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -356,6 +205,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_SIGNALUM = ITEMS.register("plate_signalum",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_SILVER = ITEMS.register("plate_silver",
+            ()-> new Item(new Item.Properties()));
 
     //Gears
     public static final DeferredItem<Item> ULTIMATE_GEAR = ITEMS.register("ultimate_gear",
@@ -385,6 +236,8 @@ public class Moditems {
     public static final DeferredItem<Item> RAW_ULTIMATITANIUM = ITEMS.register("raw_ultimatitanium",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_PLUTONIUM = ITEMS.register("raw_plutonium",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SULFUR = ITEMS.register("sulfur",
             ()-> new Item(new Item.Properties()));
 
     //Ore Dust
@@ -430,6 +283,12 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ENDER_DUST = ITEMS.register("ender_dust",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SILVER_DUST = ITEMS.register("silver_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SULFUR_DUST = ITEMS.register("sulfur_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FLUORITE_DUST = ITEMS.register("fluorite_dust",
+            ()-> new Item(new Item.Properties()));
 
     //Gems
     public static final DeferredItem<Item> GEM_OBSIDIAN_SHARD = ITEMS.register("gem_obsidian_shard",
@@ -441,6 +300,8 @@ public class Moditems {
     public static final DeferredItem<Item> GEM_RUBY = ITEMS.register("gem_ruby",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GEM_SAPPHIRE = ITEMS.register("gem_sapphire",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> FLUORITE = ITEMS.register("fluorite",
             ()-> new Item(new Item.Properties()));
 
 

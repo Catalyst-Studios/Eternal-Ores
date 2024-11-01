@@ -5,39 +5,16 @@ About
 
 Eternal Items mod adds quite a lot of known items to a single mod.
 
-Whether you want known Ingots, *forgotten* and *new* Foods, Gears, Ore Blocks and even Raw Ores, Metal Blocks, you will find 'almost' **EVERYTHING** in one spot!
+Such as Ingots, Gears, Rods, Nuggets, Plates, Raw Ores and Ore Blocks!
 
-We even have quite a lot of NEW Items for you use!
-
-**Note**: These items DO NOT HAVE a recipe include.
-
-Mod Compat (W.I.P)
+Mod Compat
 ===================
 
-We also plan to add Items for mods, but we already have some prepared!
+We also plan to add Items for mods!
 
 **Like**;
 
-- Ars Nouveau (NYI)
-- Applied Energistics 2 (Implemented)
-- Evilraft (NYI)
-- GregTech (NYI)
-- Forbidden And Arcanus (NYI)
-- Occultism (NYI)
-- Productive Bees (NYI)
-
-KubeJS
-============
-
-As mentioned before, some items don't include a recipe, but you can add them with **KubeJS** to add an useful functionality and RECIPE.
-
-Don't know about KubeJS Mod?
-
-You can find all the needed Documentation in here: https://wiki.latvian.dev/books/kubejs/page/recipes
-
-Need more help?
-
-Go to their Discord Server to ask about this mod and its capabilities: https://discord.gg/lat
+- Mekanism (NYI)
 
 Catalyst Team
 ==========
@@ -89,26 +66,8 @@ Como Lingotes, Comidas *perdidas* y *nuevas*, Engranajes, Bloques de Minerales e
 Compatibilidad con Mods (T.E.P)
 ===================
 
-Tambien planeamos agregar nuevos para mods conocidos, pero ya tenemos unos preparados!
+Tambien planeamos agregar nuevos Items para mods conocidos!
 
 **Como**;
 
-- Ars Nouveau (Implementado)
-- Applied Energistics 2 (Implementado)
-- EvilCraft (NI)
-- GregTech (Implementado)
-- Forbidden And Arcanus (NI)
-- Occultism (Implementado)
-
-KubeJS
-============
-
-Como lo mencionamos, algunos ítems no tienen una receta, pero las puedes agregar con **KubeJS** para darles una receta nueva y una **FUNCIONALIDAD**.
-
-No sabes acerca del mod de KubeJS?
-
-Aqui podras encontrar toda la documentación necesaria: https://wiki.latvian.dev/books/kubejs/page/recipes
-
-Necesitas más ayuda?
-
-Visita su Discord para aprender más y concer sus capacidades: https://discord.gg/lat
+- Mekanism (No Implementado)

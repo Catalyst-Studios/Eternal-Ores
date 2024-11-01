@@ -1,50 +1,6 @@
 {
-  "item.eternalitems.demonic_heart": "Demonic Heart",
-  "item.eternalitems.source_manifestation": "Source Manifestation",
-  "item.eternalitems.ratz_head": "RadzRatz Head",
-  "item.eternalitems.antimatter_fuse": "Antimatter Fuse",
-  "item.eternalitems.capacitor": "Capacitor",
-  "item.eternalitems.gregtastic_atomic_phd": "GregTastic Atomic PHD™",
-  "item.eternalitems.black_hole": "Black Hole",
-  "item.eternalitems.comet_shard": "Comet Shard",
-  "item.eternalitems.forgotten_sea_coin": "Forgotten Sea Coin",
-  "item.eternalitems.eternal_vortex": "Eternal Vortex",
-  "item.eternalitems.multipress": "Multipress",
-  "item.eternalitems.dummypress": "Multipress",
-  "item.eternalitems.undead_hand": "Undead Hand",
-  "item.eternalitems.gods_tear": "Gods Tear",
-  "item.eternalitems.devils_tooth": "Devils Tooth",
-  "item.eternalitems.angels_string": "Angels String",
-  "item.eternalitems.seraphims_feather": "Seraphim's Feather",
-  "item.eternalitems.silicon": "Silicon",
-  "item.eternalitems.fang": "Fang",
-  "item.eternalitems.wrench": "Wrench",
-  "item.eternalitems.dragons_scale": "Dragons Scale",
-  "item.eternalitems.crosshead_screwdriver": "Crosshead Screwdriver",
-  "item.eternalitems.flathead_screwdriver": "Flathead Screwdriver",
-  "item.eternalitems.meteorite_chunk": "Meteorite Chunk",
-
   "item.eternalitems.tiny_coal": "Tiny Coal",
   "item.eternalitems.tiny_charcoal": "Tiny Charcoal",
-
-  "item.eternalitems.cooked_apple": "Cooked Apple",
-  "item.eternalitems.cooked_carrot": "Cooked Carrot",
-
-  "item.eternalitems.eternal_dark_sword": "Eternal Dark Sword",
-  "item.eternalitems.eternal_light_sword": "Eternal Light Sword",
-  "item.eternalitems.eternal_gray_sword": "Eternal Gray Sword",
-  "item.eternalitems.copper_sword": "Copper Sword",
-  "item.eternalitems.bone_knife": "Bone Knife",
-
-  "item.eternalitems.eternal_dark_pickaxe": "Eternal Dark Pickaxe",
-  "item.eternalitems.eternal_gray_pickaxe": "Eternal Gray Pickaxe",
-  "item.eternalitems.eternal_gray_axe": "Eternal Gray Axe",
-  "item.eternalitems.eternal_gray_shovel": "Eternal Gray Shovel",
-  "item.eternalitems.eternal_gray_scythe": "Eternal Gray Scythe",
-  "item.eternalitems.copper_pickaxe": "Copper Pickaxe",
-  "item.eternalitems.copper_shovel": "Copper Shovel",
-  "item.eternalitems.copper_axe": "Copper Axe",
-  "item.eternalitems.copper_hoe": "Copper Hoe",
 
   "item.eternalitems.cobalt_hammer": "Cobalt Hammer",
   "item.eternalitems.copper_hammer": "Copper Hammer",
@@ -75,6 +31,7 @@
   "item.eternalitems.plutonium_ingot": "Plutonium Ingot",
   "item.eternalitems.redstone_ingot": "Redstone Ingot",
   "item.eternalitems.signalum_ingot": "Signalum Ingot",
+  "item.eternalitems.silver_ingot": "Silver Ingot",
 
   "item.eternalitems.aluminum_nugget": "Aluminum Nugget",
   "item.eternalitems.cobalt_nugget": "Cobalt Nugget",
@@ -94,6 +51,7 @@
   "item.eternalitems.lumium_nugget": "Lumium Nugget",
   "item.eternalitems.plutonium_nugget": "Plutonium Nugget",
   "item.eternalitems.signalum_nugget": "Signalum Nugget",
+  "item.eternalitems.silver_nugget": "Silver Nugget",
 
   "item.eternalitems.rod_aluminum": "Aluminum Rod",
   "item.eternalitems.rod_cobalt": "Cobalt Rod",
@@ -115,6 +73,7 @@
   "item.eternalitems.rod_lumium": "Lumium Rod",
   "item.eternalitems.rod_plutonium": "Plutonium Rod",
   "item.eternalitems.rod_signalum": "Signalum Rod",
+  "item.eternalitems.rod_silver": "Silver Rod",
 
   "item.eternalitems.plate_aluminum": "Aluminum Plate",
   "item.eternalitems.plate_cobalt": "Cobalt Plate",
@@ -136,6 +95,7 @@
   "item.eternalitems.plate_lumium": "Lumium Plate",
   "item.eternalitems.plate_plutonium": "Plutonium Plate",
   "item.eternalitems.plate_signalum": "Signalum Plate",
+  "item.eternalitems.plate_silver": "Silver Plate",
 
   "item.eternalitems.ultimate_gear": "Ultimate Gear",
 
@@ -175,6 +135,7 @@
   "item.eternalitems.lumium_dust": "Lumium Dust",
   "item.eternalitems.plutonium_dust": "Plutonium Dust",
   "item.eternalitems.signalum_dust": "Signalum Dust",
+  "item.eternalitems.silver_dust": "Silver Dust",
 
   "item.eternalitems.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalitems.gem_onyx": "Onyx",
@@ -195,6 +156,7 @@
   "block.eternalitems.nickel_ore_block": "Nickel Ore",
   "block.eternalitems.sulfur_ore_block": "Sulfur Ore",
   "block.eternalitems.plutonium_ore_block": "Plutonium Ore",
+  "block.eternalitems.silver_ore_block": "Silver Ore",
 
   "block.eternalitems.deepslate_cobalt_ore_block": "Deepslate Cobalt Ore",
   "block.eternalitems.deepslate_fluorite_ore_block": "Deepslate Fluorite Ore",
@@ -206,17 +168,20 @@
   "block.eternalitems.deepslate_nickel_ore_block": "Deepslate Nickel Ore",
   "block.eternalitems.deepslate_sulfur_ore_block": "Deepslate Sulfur Ore",
   "block.eternalitems.deepslate_plutonium_ore_block": "Deepslate Plutonium Ore",
+  "block.eternalitems.deepslate_silver_ore_block": "Deepslate Silver Ore",
+  "block.eternalitems.deepslate_aluminum_ore_block": "Deepslate Aluminum Ore",
 
-  "block.eternalitems.raw_aluminum_block": "Raw Aluminum Block",
-  "block.eternalitems.raw_cobalt_block": "Raw Cobalt Block",
-  "block.eternalitems.raw_lead_block": "Raw Lead Block",
-  "block.eternalitems.raw_osmium_block": "Raw Osmium Block",
-  "block.eternalitems.raw_platinum_block": "Raw Platinum Block",
-  "block.eternalitems.raw_uranium_block": "Raw Uranium Block",
-  "block.eternalitems.raw_tin_block": "Raw Tin Block",
-  "block.eternalitems.raw_nickel_block": "Raw Nickel Block",
+  "block.eternalitems.raw_aluminum_block": "Block of Raw Aluminum",
+  "block.eternalitems.raw_cobalt_block": "Block of Raw Cobalt",
+  "block.eternalitems.raw_lead_block": "Block of Raw Lead",
+  "block.eternalitems.raw_osmium_block": "Block of Raw Osmium",
+  "block.eternalitems.raw_platinum_block": "Block of Raw Platinum",
+  "block.eternalitems.raw_uranium_block": "Block of Raw Uranium",
+  "block.eternalitems.raw_tin_block": "Block of Raw Tin",
+  "block.eternalitems.raw_nickel_block": "Block of Raw Nickel",
   "block.eternalitems.sulfur_block": "Sulfur Block",
-  "block.eternalitems.raw_plutonium_block": "Plutonium Block",
+  "block.eternalitems.raw_plutonium_block": "Block of Raw Plutonium",
+  "block.eternalitems.raw_silver_block": "Block of Raw Silver",
 
   "block.eternalitems.aluminum_block": "Aluminum Block",
   "block.eternalitems.cobalt_block": "Cobalt Block",
@@ -234,8 +199,8 @@
   "block.eternalitems.enderium_block": "Enderium Block",
   "block.eternalitems.bronze_block": "Bronze Block",
   "block.eternalitems.lumium_block": "Lumium Block",
+  "block.eternalitems.silver_block": "Silver Block",
 
-  "creativetab.eternalitems.eternal_items": "Eternal Items",
   "creativetab.eternalitems.eternal_ingots": "Eternal Ingots",
   "creativetab.eternalitems.eternal_ore_blocks": "Eternal Ore Blocks",
   "creativetab.eternalitems.eternal_raw_ores": "Eternal Raw Ores",
@@ -246,8 +211,5 @@
   "creativetab.eternalitems.eternal_rods": "Eternal Rods",
   "creativetab.eternalitems.eternal_plates": "Eternal Plates",
   "creativetab.eternalitems.eternal_ore_dust": "Eternal Ore Dust",
-  "creativetab.eternalitems.eternal_gems": "Eternal Gems",
-  "creativetab.eternalitems.eternal_weapons": "Eternal Weapons",
-  "creativetab.eternalitems.eternal_tools": "Eternal Tools",
-  "creativetab.eternalitems.eternal_foods": "Eternal Foods"
+  "creativetab.eternalitems.eternal_gems": "Eternal Gems"
 }

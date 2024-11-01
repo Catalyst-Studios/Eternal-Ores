@@ -3,6 +3,7 @@ package net.radzratz.eternalitems.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalitems.EternalItems;
@@ -22,13 +23,6 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
-                tag(ModTags.Items.COPPER_TOOLS)
-                        .add(Moditems.COPPER_PICKAXE.get())
-                        .add(Moditems.COPPER_SHOVEL.get())
-                        .add(Moditems.COPPER_AXE.get())
-                        .add(Moditems.COPPER_SWORD.get())
-                        .add(Moditems.COPPER_HOE.get());
-
                 tag(ModTags.Items.HAMMERS)
                         .add(Moditems.COPPER_HAMMER.get())
                         .add(Moditems.STONE_HAMMER.get())
@@ -37,18 +31,8 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(Moditems.ETERNAL_DARK_HAMMER.get())
                         .add(Moditems.COBALT_HAMMER.get());
 
-                tag(ModTags.Items.BONE_TOOLS)
-                        .add(Moditems.BONE_KNIFE.get());
-
-                tag(ModTags.Items.ETERNAL_DARK_TOOLS)
-                        .add(Moditems.ETERNAL_DARK_PICKAXE.get())
-                        .add(Moditems.ETERNAL_DARK_SWORD.get());
-
-                tag(ModTags.Items.ETERNAL_GRAY_TOOLS)
-                        .add(Moditems.ETERNAL_GRAY_SWORD.get())
-                        .add(Moditems.ETERNAL_GRAY_AXE.get())
-                        .add(Moditems.ETERNAL_GRAY_PICKAXE.get())
-                        .add(Moditems.ETERNAL_GRAY_SHOVEL.get())
-                        .add(Moditems.ETERNAL_GRAY_SCYTHE.get());
+                tag(ItemTags.COALS)
+                        .add(Moditems.TINY_COAL.get())
+                        .add(Moditems.TINY_CHARCOAL.get());
     }
 }

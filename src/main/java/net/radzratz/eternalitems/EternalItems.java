@@ -61,28 +61,11 @@ public class EternalItems
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         System.out.println("Common setup is running.");
-        ModCompatibility.checkOtherModsAppliedEnergistics2();
-        ModCompatibility.checkOtherModsArsNouveau();
+        ModCompatibility.checkOtherModsMekanism();
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            //Items
-        }
-
-        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            //ORE BLOCKS
-        }
-        //METAL BLOCKS
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-        //Swords
-
-        }
-        //Pickaxes
-        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-        }
 
     }
 

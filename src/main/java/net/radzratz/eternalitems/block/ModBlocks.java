@@ -24,6 +24,11 @@ public class ModBlocks {
                     .strength(3f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> DEEPSLATE_ALUMINUM_ORE_BLOCK = registerBlock("deepslate_aluminum_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
     //Lead
     public static final DeferredBlock<Block> LEAD_ORE_BLOCK = registerBlock("lead_ore_block",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -134,6 +139,17 @@ public class ModBlocks {
                     .strength(3f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
+    //Silver
+    public static final DeferredBlock<Block> DEEPSLATE_SILVER_ORE_BLOCK = registerBlock("deepslate_silver_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> SILVER_ORE_BLOCK = registerBlock("silver_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
 
     //RAW ORE BLOCKS
     public static final DeferredBlock<Block> RAW_ALUMINUM_BLOCK = registerBlock("raw_aluminum_block",
@@ -184,6 +200,11 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RAW_PLUTONIUM_BLOCK = registerBlock("raw_plutonium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> RAW_SILVER_BLOCK = registerBlock("raw_silver_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
@@ -264,6 +285,11 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
     public static final DeferredBlock<Block> BRONZE_BLOCK = registerBlock("bronze_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> SILVER_BLOCK = registerBlock("silver_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f)
                     .requiresCorrectToolForDrops()
