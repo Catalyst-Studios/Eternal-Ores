@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:ingots/osmium"
+   },
+    "B": {
+      "tag": "hammers:hammers"
+    }
+  },
+  "pattern": [
+    " B ",
+    " A ",
+    " A "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalitems:plate_osmium"
+  }
+}

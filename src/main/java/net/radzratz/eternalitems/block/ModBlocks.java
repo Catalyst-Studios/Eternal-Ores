@@ -294,6 +294,21 @@ public class ModBlocks {
                     .strength(3f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> GRAPHITE_BLOCK = registerBlock("graphite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> CONSTANTAN_BLOCK = registerBlock("constantan_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> BRASS_BLOCK = registerBlock("brass_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
 
 
 

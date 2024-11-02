@@ -19,7 +19,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.COBALT_HAMMER.get());
         basicItem(Moditems.COPPER_HAMMER.get());
         basicItem(Moditems.DIAMOND_HAMMER.get());
-        basicItem(Moditems.ETERNAL_DARK_HAMMER.get());
+        //basicItem(Moditems.ETERNAL_DARK_HAMMER.get());
         basicItem(Moditems.IRON_HAMMER.get());
         basicItem(Moditems.STONE_HAMMER.get());
         //RAW ORES
@@ -36,13 +36,11 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.RAW_ULTIMATITANIUM.get());
         basicItem(Moditems.RAW_URANIUM.get());
         basicItem(Moditems.RAW_ZINC.get());
-        //FUELS
-        basicItem(Moditems.TINY_CHARCOAL.get());
-        basicItem(Moditems.TINY_COAL.get());
         //INGOTS
         basicItem(Moditems.ALUMINUM_INGOT.get());
         basicItem(Moditems.BRONZE_INGOT.get());
         basicItem(Moditems.COBALT_INGOT.get());
+        basicItem(Moditems.CONSTANTAN_INGOT.get());
         basicItem(Moditems.ELECTRUM_INGOT.get());
         basicItem(Moditems.ENDERIUM_INGOT.get());
         basicItem(Moditems.ETERNAL_DARK_INGOT.get());
@@ -63,10 +61,12 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.ULTIMATITANIUM_INGOT.get());
         basicItem(Moditems.URANIUM_INGOT.get());
         basicItem(Moditems.ZINC_INGOT.get());
+        basicItem(Moditems.BRASS_INGOT.get());
         //NUGGETS
         basicItem(Moditems.ALUMINUM_NUGGET.get());
         basicItem(Moditems.BRONZE_NUGGET.get());
         basicItem(Moditems.COBALT_NUGGET.get());
+        basicItem(Moditems.CONSTANTAN_NUGGET.get());
         basicItem(Moditems.COPPER_NUGGET.get());
         basicItem(Moditems.ELECTRUM_NUGGET.get());
         basicItem(Moditems.ENDERIUM_NUGGET.get());
@@ -83,10 +83,13 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.ULTIMATITANIUM_NUGGET.get());
         basicItem(Moditems.URANIUM_NUGGET.get());
         basicItem(Moditems.ZINC_NUGGET.get());
+        basicItem(Moditems.GRAPHITE_NUGGET.get());
+        basicItem(Moditems.BRASS_NUGGET.get());
         //DUSTS
         basicItem(Moditems.ALUMINUM_DUST.get());
         basicItem(Moditems.BRONZE_DUST.get());
         basicItem(Moditems.COBALT_DUST.get());
+        basicItem(Moditems.CONSTANTAN_DUST.get());
         basicItem(Moditems.COPPER_DUST.get());
         basicItem(Moditems.ELECTRUM_DUST.get());
         basicItem(Moditems.ENDERIUM_DUST.get());
@@ -108,10 +111,12 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.ULTIMATITANIUM_DUST.get());
         basicItem(Moditems.URANIUM_DUST.get());
         basicItem(Moditems.ZINC_DUST.get());
+        basicItem(Moditems.BRASS_DUST.get());
         //RODS
         handheldItem(Moditems.ROD_ALUMINUM);
         handheldItem(Moditems.ROD_BRONZE);
         handheldItem(Moditems.ROD_COBALT);
+        handheldItem(Moditems.ROD_CONSTANTAN);
         handheldItem(Moditems.ROD_COPPER);
         handheldItem(Moditems.ROD_ELECTRUM);
         handheldItem(Moditems.ROD_ENDERIUM);
@@ -130,10 +135,13 @@ public class EternalItemModelProvider extends ItemModelProvider {
         handheldItem(Moditems.ROD_ULTIMATITANIUM);
         handheldItem(Moditems.ROD_URANIUM);
         handheldItem(Moditems.ROD_ZINC);
+        handheldItem(Moditems.ROD_GRAPHITE);
+        handheldItem(Moditems.ROD_BRASS);
         //PLATES
         basicItem(Moditems.PLATE_ALUMINUM.get());
         basicItem(Moditems.PLATE_BRONZE.get());
         basicItem(Moditems.PLATE_COBALT.get());
+        basicItem(Moditems.PLATE_CONSTANTAN.get());
         basicItem(Moditems.PLATE_COPPER.get());
         basicItem(Moditems.PLATE_ELECTRUM.get());
         basicItem(Moditems.PLATE_ENDERIUM.get());
@@ -152,6 +160,8 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.PLATE_ULTIMATITANIUM.get());
         basicItem(Moditems.PLATE_URANIUM.get());
         basicItem(Moditems.PLATE_ZINC.get());
+        basicItem(Moditems.PLATE_GRAPHITE.get());
+        basicItem(Moditems.PLATE_BRASS.get());
         //GEARS
         basicItem(Moditems.ULTIMATE_GEAR.get());
         //GEMS

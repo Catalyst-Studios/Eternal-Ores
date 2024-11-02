@@ -1,9 +1,11 @@
-// 1.21.1	2024-10-31T22:30:27.1564572	Loot Tables
+// 1.21.1	2024-11-02T00:37:06.8917418	Loot Tables
 9d46450fd9d06e90e4eb79749240d146deca5fb7 data/eternalitems/loot_table/blocks/aluminum_block.json
 b2e8a28cbbf1a0885dc667c6a432a0e69b43a51a data/eternalitems/loot_table/blocks/aluminum_ore_block.json
+237a2854a7a139938396c3429319bb7426d79a09 data/eternalitems/loot_table/blocks/brass_block.json
 7c037f2ee0817a7fc0f723bd0c1258d8f857abcf data/eternalitems/loot_table/blocks/bronze_block.json
 71e9ca95aee845370092d26ad0d93c25828fcec3 data/eternalitems/loot_table/blocks/cobalt_block.json
 9e7d499569907b6131575b98bdd7de126bda784f data/eternalitems/loot_table/blocks/cobalt_ore_block.json
+ae68dbe51a73190121e4e9f16bc667223c20abb1 data/eternalitems/loot_table/blocks/constantan_block.json
 f9ee71e0f4158d1a22e492c63d870525dca8d668 data/eternalitems/loot_table/blocks/deepslate_aluminum_ore_block.json
 89e9bb73715f5441084736e63e4e26dafe050dd1 data/eternalitems/loot_table/blocks/deepslate_cobalt_ore_block.json
 10600377e8c2eeca25d8939fa1bfb50b5bc04dd2 data/eternalitems/loot_table/blocks/deepslate_fluorite_ore_block.json
@@ -19,6 +21,7 @@ e4e83ad4ec785108db84e1edf24ee8504c76a101 data/eternalitems/loot_table/blocks/dee
 13b6f075a1b7b72b1e62914d87d8b2fdc7023366 data/eternalitems/loot_table/blocks/electrum_block.json
 0ceffc8eba3080b08f02c6f2177420fb4df15441 data/eternalitems/loot_table/blocks/enderium_block.json
 c3de1780735104c42e6a4a30d2d5c2e5946fbb60 data/eternalitems/loot_table/blocks/fluorite_ore_block.json
+0b83cf834e50ebd060460819073289f0928a6d69 data/eternalitems/loot_table/blocks/graphite_block.json
 fb9c5e390c2788e98d542cdc1d46e132c366972f data/eternalitems/loot_table/blocks/invar_block.json
 d335bacd4ab4c71043e9e33fd6fb04d885a7ad70 data/eternalitems/loot_table/blocks/lead_block.json
 c1fe92a23acbd6ebccc12c31249be12f57a4ad0b data/eternalitems/loot_table/blocks/lead_ore_block.json

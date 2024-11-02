@@ -28,11 +28,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(Moditems.STONE_HAMMER.get())
                         .add(Moditems.DIAMOND_HAMMER.get())
                         .add(Moditems.IRON_HAMMER.get())
-                        .add(Moditems.ETERNAL_DARK_HAMMER.get())
+                        //.add(Moditems.ETERNAL_DARK_HAMMER.get())
                         .add(Moditems.COBALT_HAMMER.get());
-
-                tag(ItemTags.COALS)
-                        .add(Moditems.TINY_COAL.get())
-                        .add(Moditems.TINY_CHARCOAL.get());
     }
 }

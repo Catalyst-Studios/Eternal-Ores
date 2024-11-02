@@ -2,8 +2,10 @@
   "replace": false,
   "values": [
     "eternalitems:aluminum_ingot",
+    "eternalitems:brass_ingot",
     "eternalitems:bronze_ingot",
     "eternalitems:cobalt_ingot",
+    "eternalitems:constantan_ingot",
     "eternalitems:electrum_ingot",
     "eternalitems:eternal_dark_ingot",
     "eternalitems:eternal_light_ingot",

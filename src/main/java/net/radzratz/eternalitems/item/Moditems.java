@@ -6,7 +6,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalitems.EternalItems;
 import net.radzratz.eternalitems.item.custom.EternalHammers;
-import net.radzratz.eternalitems.item.custom.FuelItem;
 
 public class Moditems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EternalItems.MOD_ID);
@@ -22,15 +21,8 @@ public class Moditems {
             ()-> new EternalHammers(new Item.Properties(),512));
     public static final DeferredItem<Item> IRON_HAMMER = ITEMS.register("iron_hammer",
             ()-> new EternalHammers(new Item.Properties(),256));
-    public static final DeferredItem<Item> ETERNAL_DARK_HAMMER = ITEMS.register("eternal_dark_hammer",
-            ()-> new EternalHammers(new Item.Properties(),2048));
-
-    //Fuels
-    //Fuels
-    public static final DeferredItem<Item> TINY_COAL = ITEMS.register("tiny_coal",
-            ()-> new FuelItem(new Item.Properties(), 200));
-    public static final DeferredItem<Item> TINY_CHARCOAL = ITEMS.register("tiny_charcoal",
-            ()-> new FuelItem(new Item.Properties(), 200));
+    //public static final DeferredItem<Item> ETERNAL_DARK_HAMMER = ITEMS.register("eternal_dark_hammer",
+    //        ()-> new EternalHammers(new Item.Properties(),2048));
 
     //Ingots
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
@@ -79,6 +71,10 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CONSTANTAN_INGOT = ITEMS.register("constantan_ingot",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRASS_INGOT = ITEMS.register("brass_ingot",
+            ()-> new Item(new Item.Properties()));
 
     //Nuggets
     public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
@@ -118,6 +114,12 @@ public class Moditems {
     public static final DeferredItem<Item> SIGNALUM_NUGGET = ITEMS.register("signalum_nugget",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SILVER_NUGGET = ITEMS.register("silver_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GRAPHITE_NUGGET = ITEMS.register("graphite_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CONSTANTAN_NUGGET = ITEMS.register("constantan_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRASS_NUGGET = ITEMS.register("brass_nugget",
             ()-> new Item(new Item.Properties()));
 
     //Rods
@@ -163,6 +165,12 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_SILVER = ITEMS.register("rod_silver",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_GRAPHITE = ITEMS.register("rod_graphite",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_CONSTANTAN = ITEMS.register("rod_constantan",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_BRASS = ITEMS.register("rod_brass",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -206,6 +214,12 @@ public class Moditems {
     public static final DeferredItem<Item> PLATE_SIGNALUM = ITEMS.register("plate_signalum",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_SILVER = ITEMS.register("plate_silver",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_GRAPHITE = ITEMS.register("plate_graphite",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_CONSTANTAN = ITEMS.register("plate_constantan",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_BRASS = ITEMS.register("plate_brass",
             ()-> new Item(new Item.Properties()));
 
     //Gears
@@ -288,6 +302,10 @@ public class Moditems {
     public static final DeferredItem<Item> SULFUR_DUST = ITEMS.register("sulfur_dust",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> FLUORITE_DUST = ITEMS.register("fluorite_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CONSTANTAN_DUST = ITEMS.register("constantan_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRASS_DUST = ITEMS.register("brass_dust",
             ()-> new Item(new Item.Properties()));
 
     //Gems

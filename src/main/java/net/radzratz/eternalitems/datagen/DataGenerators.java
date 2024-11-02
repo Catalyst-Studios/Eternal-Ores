@@ -35,8 +35,6 @@ public class DataGenerators {
 
         generator.addProvider(event.includeClient(), new EternalItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeClient(), new EternalBlockStateProvider(packOutput, existingFileHelper));
-
-        generator.addProvider(event.includeServer(), new EternalMapProvider(packOutput, lookupProvider));
     }
 
 }

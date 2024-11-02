@@ -64,6 +64,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.ULTIMATITANIUM_BLOCK.get())
                     .add(ModBlocks.URANIUM_BLOCK.get())
                     .add(ModBlocks.SILVER_BLOCK.get())
+                    .add(ModBlocks.GRAPHITE_BLOCK.get())
+                    .add(ModBlocks.CONSTANTAN_BLOCK.get())
+                    .add(ModBlocks.BRASS_BLOCK.get())
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(ModBlocks.RAW_COBALT_BLOCK.get())
@@ -111,6 +114,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.ULTIMATITANIUM_BLOCK.get())
                     .add(ModBlocks.URANIUM_BLOCK.get())
                     .add(ModBlocks.SILVER_BLOCK.get())
+                    .add(ModBlocks.GRAPHITE_BLOCK.get())
+                    .add(ModBlocks.CONSTANTAN_BLOCK.get())
+                    .add(ModBlocks.BRASS_BLOCK.get())
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(ModBlocks.RAW_COBALT_BLOCK.get())

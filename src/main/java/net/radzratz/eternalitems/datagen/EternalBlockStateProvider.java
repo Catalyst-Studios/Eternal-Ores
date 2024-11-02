@@ -18,6 +18,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.ALUMINUM_BLOCK);
         blockWithItem(ModBlocks.BRONZE_BLOCK);
         blockWithItem(ModBlocks.COBALT_BLOCK);
+        blockWithItem(ModBlocks.CONSTANTAN_BLOCK);
         blockWithItem(ModBlocks.ELECTRUM_BLOCK);
         blockWithItem(ModBlocks.ENDERIUM_BLOCK);
         blockWithItem(ModBlocks.INVAR_BLOCK);
@@ -32,6 +33,8 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.URANIUM_BLOCK);
         blockWithItem(ModBlocks.ULTIMATITANIUM_BLOCK);
         blockWithItem(ModBlocks.SILVER_BLOCK);
+        blockWithItem(ModBlocks.GRAPHITE_BLOCK);
+        blockWithItem(ModBlocks.BRASS_BLOCK);
 
         //RAW BLOCKS
         blockWithItem(ModBlocks.RAW_ALUMINUM_BLOCK);

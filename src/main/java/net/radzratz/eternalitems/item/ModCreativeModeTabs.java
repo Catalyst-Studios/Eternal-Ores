@@ -6,7 +6,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalitems.EternalItems;
 import net.radzratz.eternalitems.block.ModBlocks;
@@ -24,8 +23,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.eternalitems.eternal_ingots"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ALUMINUM_INGOT);
+                        output.accept(Moditems.BRASS_INGOT);
                         output.accept(Moditems.BRONZE_INGOT);
                         output.accept(Moditems.COBALT_INGOT);
+                        output.accept(Moditems.CONSTANTAN_INGOT);
                         output.accept(Moditems.ELECTRUM_INGOT);
                         output.accept(Moditems.ETERNAL_DARK_INGOT);
                         output.accept(Moditems.ETERNAL_LIGHT_INGOT);
@@ -54,11 +55,14 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.eternalitems.eternal_nuggets"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ALUMINUM_NUGGET);
+                        output.accept(Moditems.BRASS_NUGGET);
                         output.accept(Moditems.BRONZE_NUGGET);
                         output.accept(Moditems.COBALT_NUGGET);
+                        output.accept(Moditems.CONSTANTAN_NUGGET);
                         output.accept(Moditems.COPPER_NUGGET);
                         output.accept(Moditems.ELECTRUM_NUGGET);
                         output.accept(Moditems.ENDERIUM_NUGGET);
+                        output.accept(Moditems.GRAPHITE_NUGGET);
                         output.accept(Moditems.INVAR_NUGGET);
                         output.accept(Moditems.LEAD_NUGGET);
                         output.accept(Moditems.LUMIUM_NUGGET);
@@ -80,12 +84,15 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.eternalitems.eternal_rods"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ROD_ALUMINUM);
+                        output.accept(Moditems.ROD_BRASS);
                         output.accept(Moditems.ROD_BRONZE);
                         output.accept(Moditems.ROD_COBALT);
+                        output.accept(Moditems.ROD_CONSTANTAN);
                         output.accept(Moditems.ROD_COPPER);
                         output.accept(Moditems.ROD_ELECTRUM);
                         output.accept(Moditems.ROD_ENDERIUM);
                         output.accept(Moditems.ROD_GOLD);
+                        output.accept(Moditems.ROD_GRAPHITE);
                         output.accept(Moditems.ROD_INVAR);
                         output.accept(Moditems.ROD_IRON);
                         output.accept(Moditems.ROD_LEAD);
@@ -108,12 +115,15 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.eternalitems.eternal_plates"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.PLATE_ALUMINUM);
+                        output.accept(Moditems.PLATE_BRASS);
                         output.accept(Moditems.PLATE_BRONZE);
                         output.accept(Moditems.PLATE_COBALT);
+                        output.accept(Moditems.PLATE_CONSTANTAN);
                         output.accept(Moditems.PLATE_COPPER);
                         output.accept(Moditems.PLATE_ELECTRUM);
                         output.accept(Moditems.PLATE_ENDERIUM);
                         output.accept(Moditems.PLATE_GOLD);
+                        output.accept(Moditems.PLATE_GRAPHITE);
                         output.accept(Moditems.PLATE_INVAR);
                         output.accept(Moditems.PLATE_IRON);
                         output.accept(Moditems.PLATE_LEAD);
@@ -164,8 +174,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.eternalitems.eternal_ore_dust"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ALUMINUM_DUST);
+                        output.accept(Moditems.BRASS_DUST);
                         output.accept(Moditems.BRONZE_DUST);
                         output.accept(Moditems.COBALT_DUST);
+                        output.accept(Moditems.CONSTANTAN_DUST);
                         output.accept(Moditems.COPPER_DUST);
                         output.accept(Moditems.ELECTRUM_DUST);
                         output.accept(Moditems.ENDER_DUST);
@@ -175,6 +187,7 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.INVAR_DUST);
                         output.accept(Moditems.IRON_DUST);
                         output.accept(Moditems.LEAD_DUST);
+                        output.accept(Moditems.LUMIUM_DUST);
                         output.accept(Moditems.NICKEL_DUST);
                         output.accept(Moditems.OSMIUM_DUST);
                         output.accept(Moditems.PLATINUM_DUST);
@@ -239,8 +252,10 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                 .title(Component.translatable("creativetab.eternalitems.eternal_blocks"))
                 .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ALUMINUM_BLOCK);
+                        output.accept(ModBlocks.BRASS_BLOCK);
                         output.accept(ModBlocks.BRONZE_BLOCK);
                         output.accept(ModBlocks.COBALT_BLOCK);
+                        output.accept(ModBlocks.CONSTANTAN_BLOCK);
                         output.accept(ModBlocks.ELECTRUM_BLOCK);
                         output.accept(ModBlocks.ENDERIUM_BLOCK);
                         output.accept(ModBlocks.INVAR_BLOCK);

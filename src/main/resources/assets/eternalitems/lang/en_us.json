@@ -1,7 +1,4 @@
 {
-  "item.eternalitems.tiny_coal": "Tiny Coal",
-  "item.eternalitems.tiny_charcoal": "Tiny Charcoal",
-
   "item.eternalitems.cobalt_hammer": "Cobalt Hammer",
   "item.eternalitems.copper_hammer": "Copper Hammer",
   "item.eternalitems.stone_hammer": "Stone Hammer",
@@ -32,6 +29,8 @@
   "item.eternalitems.redstone_ingot": "Redstone Ingot",
   "item.eternalitems.signalum_ingot": "Signalum Ingot",
   "item.eternalitems.silver_ingot": "Silver Ingot",
+  "item.eternalitems.constantan_ingot": "Constantan Ingot",
+  "item.eternalitems.brass_ingot": "Brass Ingot",
 
   "item.eternalitems.aluminum_nugget": "Aluminum Nugget",
   "item.eternalitems.cobalt_nugget": "Cobalt Nugget",
@@ -52,6 +51,9 @@
   "item.eternalitems.plutonium_nugget": "Plutonium Nugget",
   "item.eternalitems.signalum_nugget": "Signalum Nugget",
   "item.eternalitems.silver_nugget": "Silver Nugget",
+  "item.eternalitems.graphite_nugget": "Graphite Nugget",
+  "item.eternalitems.constantan_nugget": "Constantan Nugget",
+  "item.eternalitems.brass_nugget": "Brass Nugget",
 
   "item.eternalitems.rod_aluminum": "Aluminum Rod",
   "item.eternalitems.rod_cobalt": "Cobalt Rod",
@@ -74,6 +76,9 @@
   "item.eternalitems.rod_plutonium": "Plutonium Rod",
   "item.eternalitems.rod_signalum": "Signalum Rod",
   "item.eternalitems.rod_silver": "Silver Rod",
+  "item.eternalitems.rod_graphite": "Graphite Rod",
+  "item.eternalitems.rod_constantan": "Constantan Rod",
+  "item.eternalitems.rod_brass": "Brass Rod",
 
   "item.eternalitems.plate_aluminum": "Aluminum Plate",
   "item.eternalitems.plate_cobalt": "Cobalt Plate",
@@ -96,6 +101,9 @@
   "item.eternalitems.plate_plutonium": "Plutonium Plate",
   "item.eternalitems.plate_signalum": "Signalum Plate",
   "item.eternalitems.plate_silver": "Silver Plate",
+  "item.eternalitems.plate_graphite": "Graphite Plate",
+  "item.eternalitems.plate_constantan": "Constantan Plate",
+  "item.eternalitems.plate_brass": "Brass Plate",
 
   "item.eternalitems.ultimate_gear": "Ultimate Gear",
 
@@ -136,6 +144,8 @@
   "item.eternalitems.plutonium_dust": "Plutonium Dust",
   "item.eternalitems.signalum_dust": "Signalum Dust",
   "item.eternalitems.silver_dust": "Silver Dust",
+  "item.eternalitems.constantan_dust": "Constantan Dust",
+  "item.eternalitems.brass_dust": "Brass Dust",
 
   "item.eternalitems.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalitems.gem_onyx": "Onyx",
@@ -200,6 +210,9 @@
   "block.eternalitems.bronze_block": "Bronze Block",
   "block.eternalitems.lumium_block": "Lumium Block",
   "block.eternalitems.silver_block": "Silver Block",
+  "block.eternalitems.graphite_block": "Graphite Block",
+  "block.eternalitems.constantan_block": "Constantan Block",
+  "block.eternalitems.brass_block": "Brass Block",
 
   "creativetab.eternalitems.eternal_ingots": "Eternal Ingots",
   "creativetab.eternalitems.eternal_ore_blocks": "Eternal Ore Blocks",

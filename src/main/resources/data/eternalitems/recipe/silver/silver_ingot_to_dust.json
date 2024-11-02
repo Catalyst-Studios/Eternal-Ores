@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/silver"
+    },
+    {
+      "tag": "hammers:hammers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalitems:silver_dust"
+  }
+}
