@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:aluminum_block",
+    "eternalitems:brass_block",
+    "eternalitems:bronze_block",
+    "eternalitems:cobalt_block",
+    "eternalitems:constantan_block",
+    "eternalitems:electrum_block",
+    "eternalitems:enderium_block",
+    "eternalitems:graphite_block",
+    "eternalitems:invar_block",
+    "eternalitems:lead_block",
+    "eternalitems:lumium_block",
+    "eternalitems:nickel_block",
+    "eternalitems:osmium_block",
+    "eternalitems:platinum_block",
+    "eternalitems:plutonium_block",
+    "eternalitems:silver_block",
+    "eternalitems:signalum_block",
+    "eternalitems:tin_block",
+    "eternalitems:ultimatitanium_block",
+    "eternalitems:uranium_block",
+    "eternalitems:zinc_block"
+  ]
+}
