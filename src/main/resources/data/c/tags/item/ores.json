@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:aluminum_ore_block",
+    "eternalitems:deepslate_aluminum_ore_block",
+    "eternalitems:cobalt_ore_block",
+    "eternalitems:deepslate_cobalt_ore_block",
+    "eternalitems:fluorite_ore_block",
+    "eternalitems:deepslate_fluorite_ore_block",
+    "eternalitems:lead_ore_block",
+    "eternalitems:deepslate_lead_ore_block",
+    "eternalitems:nickel_ore_block",
+    "eternalitems:deepslate_nickel_ore_block",
+    "eternalitems:osmium_ore_block",
+    "eternalitems:deepslate_osmium_ore_block",
+    "eternalitems:platinum_ore_block",
+    "eternalitems:deepslate_platinum_ore_block",
+    "eternalitems:plutonium_ore_block",
+    "eternalitems:deepslate_plutonium_ore_block",
+    "eternalitems:silver_ore_block",
+    "eternalitems:deepslate_silver_ore_block",
+    "eternalitems:sulfur_ore_block",
+    "eternalitems:deepslate_sulfur_ore_block",
+    "eternalitems:tin_ore_block",
+    "eternalitems:deepslate_tin_ore_block",
+    "eternalitems:uranium_ore_block",
+    "eternalitems:deepslate_uranium_ore_block",
+    "eternalitems:zinc_ore_block",
+    "eternalitems:deepslate_zinc_ore_block"
+  ]
+}

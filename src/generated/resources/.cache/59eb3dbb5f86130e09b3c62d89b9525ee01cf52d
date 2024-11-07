@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-02T00:37:06.8917418	Loot Tables
+// 1.21.1	2024-11-05T21:18:22.094801	Loot Tables
 9d46450fd9d06e90e4eb79749240d146deca5fb7 data/eternalitems/loot_table/blocks/aluminum_block.json
 b2e8a28cbbf1a0885dc667c6a432a0e69b43a51a data/eternalitems/loot_table/blocks/aluminum_ore_block.json
 237a2854a7a139938396c3429319bb7426d79a09 data/eternalitems/loot_table/blocks/brass_block.json
@@ -18,6 +18,7 @@ dd67ae819c8788cdb20208da38b2d507be280a14 data/eternalitems/loot_table/blocks/dee
 ee9b5a2923b892efa77fd85bf18aa24b6989b5a4 data/eternalitems/loot_table/blocks/deepslate_sulfur_ore_block.json
 a7f3f3c553b465cc0e743402926fffc601b3735a data/eternalitems/loot_table/blocks/deepslate_tin_ore_block.json
 e4e83ad4ec785108db84e1edf24ee8504c76a101 data/eternalitems/loot_table/blocks/deepslate_uranium_ore_block.json
+6dc80a9dfb265b279d4bcd9915a276d7a553df0b data/eternalitems/loot_table/blocks/deepslate_zinc_ore_block.json
 13b6f075a1b7b72b1e62914d87d8b2fdc7023366 data/eternalitems/loot_table/blocks/electrum_block.json
 0ceffc8eba3080b08f02c6f2177420fb4df15441 data/eternalitems/loot_table/blocks/enderium_block.json
 c3de1780735104c42e6a4a30d2d5c2e5946fbb60 data/eternalitems/loot_table/blocks/fluorite_ore_block.json
@@ -44,6 +45,7 @@ ce1a8a1c63220ce91b4590c52c01daa2be0569b4 data/eternalitems/loot_table/blocks/raw
 6e25a06b111303c806a8fbee12f5182a5ea9cfdb data/eternalitems/loot_table/blocks/raw_silver_block.json
 5db3ea6fb6c357ea90180e54805cf9e9b3dfe2da data/eternalitems/loot_table/blocks/raw_tin_block.json
 7eff06ccab3fd94b2fe3fdd3b124df60c7df96f6 data/eternalitems/loot_table/blocks/raw_uranium_block.json
+64339475a3d2fa1d4a5deed5735027dfda111f89 data/eternalitems/loot_table/blocks/raw_zinc_block.json
 2b11a220f95bff7809e0b49671c452837ec4af5b data/eternalitems/loot_table/blocks/signalum_block.json
 41b270503fff0191a34ad2f47d26efe91f0a954f data/eternalitems/loot_table/blocks/silver_block.json
 bd3030a08147ca6354eaa7ee2f3f100d5c336c73 data/eternalitems/loot_table/blocks/silver_ore_block.json
@@ -54,3 +56,5 @@ bbd5ce62649fc1e464170f752598064096243500 data/eternalitems/loot_table/blocks/sul
 85950a9188b324a7a37874c55e8ed7bca4256cdf data/eternalitems/loot_table/blocks/ultimatitanium_block.json
 f50c7e189d540d9dae1a0e4080492bf58fb4a8f7 data/eternalitems/loot_table/blocks/uranium_block.json
 f536a3d888fac6025351ea3363188d0e2be546f3 data/eternalitems/loot_table/blocks/uranium_ore_block.json
+a4130101030730960af6add53ff17845c1697c85 data/eternalitems/loot_table/blocks/zinc_block.json
+46de3c9c1d771719c83934150109efad589726a7 data/eternalitems/loot_table/blocks/zinc_ore_block.json

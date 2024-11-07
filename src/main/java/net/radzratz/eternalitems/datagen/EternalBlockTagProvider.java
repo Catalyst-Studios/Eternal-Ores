@@ -46,6 +46,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get())
                     .add(ModBlocks.SILVER_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
+                    .add(ModBlocks.ZINC_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get())
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
                     .add(ModBlocks.BRONZE_BLOCK.get())
@@ -67,6 +69,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.GRAPHITE_BLOCK.get())
                     .add(ModBlocks.CONSTANTAN_BLOCK.get())
                     .add(ModBlocks.BRASS_BLOCK.get())
+                    .add(ModBlocks.ZINC_BLOCK.get())
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(ModBlocks.RAW_COBALT_BLOCK.get())
@@ -78,7 +81,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.RAW_SILVER_BLOCK.get())
                     .add(ModBlocks.SULFUR_BLOCK.get())
                     .add(ModBlocks.RAW_TIN_BLOCK.get())
-                    .add(ModBlocks.RAW_URANIUM_BLOCK.get());
+                    .add(ModBlocks.RAW_URANIUM_BLOCK.get())
+                    .add(ModBlocks.RAW_ZINC_BLOCK.get());
 
             tag(BlockTags.NEEDS_IRON_TOOL)
                     //ORE BLOCKS
@@ -96,6 +100,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
                     .add(ModBlocks.SILVER_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
+                    .add(ModBlocks.ZINC_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get())
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
                     .add(ModBlocks.BRONZE_BLOCK.get())
@@ -117,6 +123,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.GRAPHITE_BLOCK.get())
                     .add(ModBlocks.CONSTANTAN_BLOCK.get())
                     .add(ModBlocks.BRASS_BLOCK.get())
+                    .add(ModBlocks.ZINC_BLOCK.get())
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(ModBlocks.RAW_COBALT_BLOCK.get())
@@ -128,7 +135,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.RAW_SILVER_BLOCK.get())
                     .add(ModBlocks.SULFUR_BLOCK.get())
                     .add(ModBlocks.RAW_TIN_BLOCK.get())
-                    .add(ModBlocks.RAW_URANIUM_BLOCK.get());
+                    .add(ModBlocks.RAW_URANIUM_BLOCK.get())
+                    .add(ModBlocks.RAW_ZINC_BLOCK.get());
 
             tag(BlockTags.NEEDS_DIAMOND_TOOL)
                     .add(ModBlocks.COBALT_ORE_BLOCK.get())

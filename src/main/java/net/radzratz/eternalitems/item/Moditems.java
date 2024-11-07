@@ -121,6 +121,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BRASS_NUGGET = ITEMS.register("brass_nugget",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget",
+            ()-> new Item(new Item.Properties()));
 
     //Rods
     public static final DeferredItem<Item> ROD_ALUMINUM = ITEMS.register("rod_aluminum",
@@ -171,6 +173,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_BRASS = ITEMS.register("rod_brass",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_NETHERITE = ITEMS.register("rod_netherite",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -220,6 +224,8 @@ public class Moditems {
     public static final DeferredItem<Item> PLATE_CONSTANTAN = ITEMS.register("plate_constantan",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_BRASS = ITEMS.register("plate_brass",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_NETHERITE = ITEMS.register("plate_netherite",
             ()-> new Item(new Item.Properties()));
 
     //Gears
@@ -306,6 +312,10 @@ public class Moditems {
     public static final DeferredItem<Item> CONSTANTAN_DUST = ITEMS.register("constantan_dust",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> BRASS_DUST = ITEMS.register("brass_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NETHERITE_DUST = ITEMS.register("netherite_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GRAPHITE_DUST = ITEMS.register("graphite_dust",
             ()-> new Item(new Item.Properties()));
 
     //Gems

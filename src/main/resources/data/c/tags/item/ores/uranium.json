@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "eternalitems:uranium_ore_block",
+    "eternalitems:deepslate_uranium_ore_block"
+  ]
+}

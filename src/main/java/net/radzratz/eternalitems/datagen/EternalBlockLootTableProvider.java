@@ -48,6 +48,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.GRAPHITE_BLOCK.get());
         dropSelf(ModBlocks.CONSTANTAN_BLOCK.get());
         dropSelf(ModBlocks.BRASS_BLOCK.get());
+        dropSelf(ModBlocks.ZINC_BLOCK.get());
         //RAW ORE BLOCKS
         dropSelf(ModBlocks.RAW_ALUMINUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_COBALT_BLOCK.get());
@@ -60,6 +61,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SULFUR_BLOCK.get());
         dropSelf(ModBlocks.RAW_TIN_BLOCK.get());
         dropSelf(ModBlocks.RAW_URANIUM_BLOCK.get());
+        dropSelf(ModBlocks.RAW_ZINC_BLOCK.get());
 
         //ORE BLOCK TO RAW ORE
         //ALUMINUM ORE BLOCKS
@@ -95,6 +97,9 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //Silver
         add(ModBlocks.SILVER_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.SILVER_ORE_BLOCK.get(), Moditems.RAW_SILVER.get(),2,4));
         add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get(), Moditems.RAW_SILVER.get(),2,4));
+        //Zinc
+        add(ModBlocks.ZINC_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.ZINC_ORE_BLOCK.get(), Moditems.RAW_ZINC.get(),1,5));
+        add(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get(), Moditems.RAW_ZINC.get(),1,5));
 
         //GEMS
         //FLUORITE TO GEM

@@ -1,7 +1,6 @@
 package net.radzratz.eternalitems.util;
 
 import net.neoforged.fml.ModList;
-import net.radzratz.eternalitems.item.Moditems;
 
 public class ModCompatibility {
 

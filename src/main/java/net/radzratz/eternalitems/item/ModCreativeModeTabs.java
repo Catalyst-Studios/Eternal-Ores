@@ -66,6 +66,7 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.INVAR_NUGGET);
                         output.accept(Moditems.LEAD_NUGGET);
                         output.accept(Moditems.LUMIUM_NUGGET);
+                        output.accept(Moditems.NETHERITE_NUGGET);
                         output.accept(Moditems.NICKEL_NUGGET);
                         output.accept(Moditems.OSMIUM_NUGGET);
                         output.accept(Moditems.PLATINUM_NUGGET);
@@ -97,6 +98,7 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.ROD_IRON);
                         output.accept(Moditems.ROD_LEAD);
                         output.accept(Moditems.ROD_LUMIUM);
+                        output.accept(Moditems.ROD_NETHERITE);
                         output.accept(Moditems.ROD_NICKEL);
                         output.accept(Moditems.ROD_OSMIUM);
                         output.accept(Moditems.ROD_PLATINUM);
@@ -128,6 +130,7 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.PLATE_IRON);
                         output.accept(Moditems.PLATE_LEAD);
                         output.accept(Moditems.PLATE_LUMIUM);
+                        output.accept(Moditems.PLATE_NETHERITE);
                         output.accept(Moditems.PLATE_NICKEL);
                         output.accept(Moditems.PLATE_OSMIUM);
                         output.accept(Moditems.PLATE_PLATINUM);
@@ -184,10 +187,12 @@ public class ModCreativeModeTabs {
                         output.accept(Moditems.ENDERIUM_DUST);
                         output.accept(Moditems.FLUORITE_DUST);
                         output.accept(Moditems.GOLD_DUST);
+                        output.accept(Moditems.GRAPHITE_DUST);
                         output.accept(Moditems.INVAR_DUST);
                         output.accept(Moditems.IRON_DUST);
                         output.accept(Moditems.LEAD_DUST);
                         output.accept(Moditems.LUMIUM_DUST);
+                        output.accept(Moditems.NETHERITE_DUST);
                         output.accept(Moditems.NICKEL_DUST);
                         output.accept(Moditems.OSMIUM_DUST);
                         output.accept(Moditems.PLATINUM_DUST);
@@ -232,6 +237,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SILVER_ORE_BLOCK);
                         output.accept(ModBlocks.SULFUR_ORE_BLOCK);
                         output.accept(ModBlocks.TIN_ORE_BLOCK);
+                        output.accept(ModBlocks.ZINC_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK);
@@ -244,6 +250,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_TIN_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
+                        output.accept(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK);
                     }).build());
 //METAL BLOCKS
 public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB.register("eternal_blocks",
@@ -258,6 +265,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                         output.accept(ModBlocks.CONSTANTAN_BLOCK);
                         output.accept(ModBlocks.ELECTRUM_BLOCK);
                         output.accept(ModBlocks.ENDERIUM_BLOCK);
+                        output.accept(ModBlocks.GRAPHITE_BLOCK);
                         output.accept(ModBlocks.INVAR_BLOCK);
                         output.accept(ModBlocks.LEAD_BLOCK);
                         output.accept(ModBlocks.LUMIUM_BLOCK);
@@ -270,6 +278,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                         output.accept(ModBlocks.TIN_BLOCK);
                         output.accept(ModBlocks.ULTIMATITANIUM_BLOCK);
                         output.accept(ModBlocks.URANIUM_BLOCK);
+                        output.accept(ModBlocks.ZINC_BLOCK);
                 }).build());
 //RAW ORE BLOCKS
     public static final Supplier<CreativeModeTab> ETERNAL_RAW_ORE_BLOCKS = CREATIVE_MODE_TAB.register("eternal_raw_ore_blocks",
@@ -288,6 +297,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                         output.accept(ModBlocks.SULFUR_BLOCK);
                         output.accept(ModBlocks.RAW_TIN_BLOCK);
                         output.accept(ModBlocks.RAW_URANIUM_BLOCK);
+                        output.accept(ModBlocks.RAW_ZINC_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {

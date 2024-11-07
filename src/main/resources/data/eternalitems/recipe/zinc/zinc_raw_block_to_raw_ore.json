@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalitems:raw_zinc_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalitems:raw_zinc"
+  }
+}

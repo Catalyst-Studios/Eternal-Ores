@@ -24,6 +24,8 @@
     "eternalitems:deepslate_uranium_ore_block",
     "eternalitems:silver_ore_block",
     "eternalitems:deepslate_silver_ore_block",
+    "eternalitems:zinc_ore_block",
+    "eternalitems:deepslate_zinc_ore_block",
     "eternalitems:aluminum_block",
     "eternalitems:bronze_block",
     "eternalitems:cobalt_block",
@@ -44,6 +46,7 @@
     "eternalitems:graphite_block",
     "eternalitems:constantan_block",
     "eternalitems:brass_block",
+    "eternalitems:zinc_block",
     "eternalitems:raw_aluminum_block",
     "eternalitems:raw_cobalt_block",
     "eternalitems:raw_lead_block",
@@ -54,6 +57,7 @@
     "eternalitems:raw_silver_block",
     "eternalitems:sulfur_block",
     "eternalitems:raw_tin_block",
-    "eternalitems:raw_uranium_block"
+    "eternalitems:raw_uranium_block",
+    "eternalitems:raw_zinc_block"
   ]
 }
