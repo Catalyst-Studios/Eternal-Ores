@@ -6,6 +6,8 @@
   "item.eternalitems.eternal_dark_hammer": "Eternal Dark Hammer",
   "item.eternalitems.diamond_hammer": "Diamond Hammer",
 
+  "item.eternalitems.iron_gem_cutter": "Iron Gem Cutter",
+
   "item.eternalitems.aluminum_ingot": "Aluminum Ingot",
   "item.eternalitems.cobalt_ingot": "Cobalt Ingot",
   "item.eternalitems.eternal_dark_ingot": "Eternal Dark Ingot",
@@ -55,6 +57,7 @@
   "item.eternalitems.constantan_nugget": "Constantan Nugget",
   "item.eternalitems.brass_nugget": "Brass Nugget",
   "item.eternalitems.netherite_nugget": "Netherite Nugget",
+  "item.eternalitems.steel_nugget": "Steel Nugget",
 
   "item.eternalitems.rod_aluminum": "Aluminum Rod",
   "item.eternalitems.rod_cobalt": "Cobalt Rod",
@@ -81,6 +84,8 @@
   "item.eternalitems.rod_constantan": "Constantan Rod",
   "item.eternalitems.rod_brass": "Brass Rod",
   "item.eternalitems.rod_netherite": "Netherite Rod",
+  "item.eternalitems.rod_steel": "Steel Rod",
+  "item.eternalitems.rod_sapphire": "Sapphire Rod",
 
   "item.eternalitems.plate_aluminum": "Aluminum Plate",
   "item.eternalitems.plate_cobalt": "Cobalt Plate",
@@ -107,6 +112,8 @@
   "item.eternalitems.plate_constantan": "Constantan Plate",
   "item.eternalitems.plate_brass": "Brass Plate",
   "item.eternalitems.plate_netherite": "Netherite Plate",
+  "item.eternalitems.plate_steel": "Steel Plate",
+  "item.eternalitems.plate_sapphire": "Sapphire Plate",
 
   "item.eternalitems.ultimate_gear": "Ultimate Gear",
 
@@ -151,6 +158,9 @@
   "item.eternalitems.brass_dust": "Brass Dust",
   "item.eternalitems.netherite_dust": "Netherite Dust",
   "item.eternalitems.graphite_dust": "Graphite Dust",
+  "item.eternalitems.steel_dust": "Steel Dust",
+  "item.eternalitems.sapphire_dust": "Sapphire Dust",
+  "item.eternalitems.coal_dust": "Coal Dust",
 
   "item.eternalitems.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalitems.gem_onyx": "Onyx",
@@ -159,6 +169,8 @@
   "item.eternalitems.gem_sapphire": "Sapphire",
   "item.eternalitems.sulfur": "Sulfur",
   "item.eternalitems.fluorite": "Fluorite",
+
+  "item.eternalitems.gem_sapphire_shard": "Sapphire Shard",
 
   "block.eternalitems.aluminum_ore_block": "Aluminum Ore",
   "block.eternalitems.cobalt_ore_block": "Cobalt Ore",
@@ -173,6 +185,7 @@
   "block.eternalitems.plutonium_ore_block": "Plutonium Ore",
   "block.eternalitems.silver_ore_block": "Silver Ore",
   "block.eternalitems.zinc_ore_block": "Zinc Ore",
+  "block.eternalitems.sapphire_ore_block": "Sapphire Ore",
 
   "block.eternalitems.deepslate_cobalt_ore_block": "Deepslate Cobalt Ore",
   "block.eternalitems.deepslate_fluorite_ore_block": "Deepslate Fluorite Ore",
@@ -187,6 +200,7 @@
   "block.eternalitems.deepslate_silver_ore_block": "Deepslate Silver Ore",
   "block.eternalitems.deepslate_aluminum_ore_block": "Deepslate Aluminum Ore",
   "block.eternalitems.deepslate_zinc_ore_block": "Deepslate Zinc Ore",
+  "block.eternalitems.deepslate_sapphire_ore_block": "Deepslate Sapphire Ore",
 
   "block.eternalitems.raw_aluminum_block": "Block of Raw Aluminum",
   "block.eternalitems.raw_cobalt_block": "Block of Raw Cobalt",
@@ -222,6 +236,9 @@
   "block.eternalitems.constantan_block": "Constantan Block",
   "block.eternalitems.brass_block": "Brass Block",
   "block.eternalitems.zinc_block": "Zinc Block",
+  "block.eternalitems.steel_block": "Steel Block",
+  "block.eternalitems.sapphire_block": "Sapphire Block",
+  "block.eternalitems.fluorite_block": "Fluorite Block",
 
   "creativetab.eternalitems.eternal_ingots": "Eternal Ingots",
   "creativetab.eternalitems.eternal_ore_blocks": "Eternal Ore Blocks",

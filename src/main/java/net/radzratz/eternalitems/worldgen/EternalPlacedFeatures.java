@@ -48,6 +48,10 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PLUTONIUM_ORE_PLACED_KEY = registerKey("plutonium_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_PLUTONIUM_ORE_PLACED_KEY = registerKey("nether_plutonium_ore_placed");
     public static final ResourceKey<PlacedFeature> END_PLUTONIUM_ORE_PLACED_KEY = registerKey("end_plutonium_ore_placed");
+    //Sapphire
+    public static final ResourceKey<PlacedFeature> SAPPHIRE_ORE_PLACED_KEY = registerKey("sapphire_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_SAPPHIRE_ORE_PLACED_KEY = registerKey("nether_sapphire_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_SAPPHIRE_ORE_PLACED_KEY = registerKey("end_sapphire_ore_placed");
     //Silver
     public static final ResourceKey<PlacedFeature> SILVER_ORE_PLACED_KEY = registerKey("silver_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_SILVER_ORE_PLACED_KEY = registerKey("nether_silver_ore_placed");
@@ -168,6 +172,17 @@ public class EternalPlacedFeatures {
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, END_SILVER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_SILVER_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+    //SAPPHIRE
+    register(context, SAPPHIRE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_SAPPHIRE_ORE_KEY),
+            EternalOrePlacement.commonOrePlacement(18,
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+    //register(context, NETHER_SAPPHIRE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_SAPPHIRE_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+    //register(context, END_SAPPHIRE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_SAPPHIRE_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 

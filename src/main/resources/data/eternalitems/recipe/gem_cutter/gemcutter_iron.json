@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:rods/iron"
+    },
+    "B": {
+      "tag": "c:plates/iron"
+    }
+  },
+  "pattern": [
+    " B ",
+    " AB",
+    "A  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalitems:iron_gem_cutter"
+  }
+}

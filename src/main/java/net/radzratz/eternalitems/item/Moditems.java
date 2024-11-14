@@ -5,6 +5,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalitems.EternalItems;
+import net.radzratz.eternalitems.item.custom.EternalGemCutter;
 import net.radzratz.eternalitems.item.custom.EternalHammers;
 
 public class Moditems {
@@ -23,6 +24,10 @@ public class Moditems {
             ()-> new EternalHammers(new Item.Properties(),256));
     //public static final DeferredItem<Item> ETERNAL_DARK_HAMMER = ITEMS.register("eternal_dark_hammer",
     //        ()-> new EternalHammers(new Item.Properties(),2048));
+
+    //Gem Cutter
+    public static final DeferredItem<Item> IRON_GEM_CUTTER = ITEMS.register("iron_gem_cutter",
+            ()-> new EternalGemCutter(new Item.Properties(),256));
 
     //Ingots
     public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
@@ -123,6 +128,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> NETHERITE_NUGGET = ITEMS.register("netherite_nugget",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_NUGGET = ITEMS.register("steel_nugget",
+            ()-> new Item(new Item.Properties()));
 
     //Rods
     public static final DeferredItem<Item> ROD_ALUMINUM = ITEMS.register("rod_aluminum",
@@ -175,6 +182,10 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_NETHERITE = ITEMS.register("rod_netherite",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_STEEL = ITEMS.register("rod_steel",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_SAPPHIRE = ITEMS.register("rod_sapphire",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -226,6 +237,10 @@ public class Moditems {
     public static final DeferredItem<Item> PLATE_BRASS = ITEMS.register("plate_brass",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_NETHERITE = ITEMS.register("plate_netherite",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_STEEL = ITEMS.register("plate_steel",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_SAPPHIRE = ITEMS.register("plate_sapphire",
             ()-> new Item(new Item.Properties()));
 
     //Gears
@@ -317,10 +332,14 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GRAPHITE_DUST = ITEMS.register("graphite_dust",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_DUST = ITEMS.register("steel_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SAPPHIRE_DUST = ITEMS.register("sapphire_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COAL_DUST = ITEMS.register("coal_dust",
+            ()-> new Item(new Item.Properties()));
 
     //Gems
-    public static final DeferredItem<Item> GEM_OBSIDIAN_SHARD = ITEMS.register("gem_obsidian_shard",
-            ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GEM_ONYX = ITEMS.register("gem_onyx",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GEM_PERIDOT = ITEMS.register("gem_peridot",
@@ -330,6 +349,12 @@ public class Moditems {
     public static final DeferredItem<Item> GEM_SAPPHIRE = ITEMS.register("gem_sapphire",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> FLUORITE = ITEMS.register("fluorite",
+            ()-> new Item(new Item.Properties()));
+
+    //Gem Shard
+    public static final DeferredItem<Item> GEM_SAPPHIRE_SHARD = ITEMS.register("gem_sapphire_shard",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEM_OBSIDIAN_SHARD = ITEMS.register("gem_obsidian_shard",
             ()-> new Item(new Item.Properties()));
 
 

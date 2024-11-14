@@ -36,6 +36,11 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.GRAPHITE_BLOCK);
         blockWithItem(ModBlocks.BRASS_BLOCK);
         blockWithItem(ModBlocks.ZINC_BLOCK);
+        blockWithItem(ModBlocks.STEEL_BLOCK);
+
+        //GEM BLOCKS
+        blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
+        blockWithItem(ModBlocks.FLUORITE_BLOCK);
 
         //RAW BLOCKS
         blockWithItem(ModBlocks.RAW_ALUMINUM_BLOCK);
@@ -93,6 +98,9 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         //FLUORITE
         blockWithItem(ModBlocks.FLUORITE_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK);
+        //SAPPHIRE
+        blockWithItem(ModBlocks.SAPPHIRE_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

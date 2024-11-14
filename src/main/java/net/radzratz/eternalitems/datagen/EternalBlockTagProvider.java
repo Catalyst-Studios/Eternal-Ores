@@ -38,6 +38,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get())
                     .add(ModBlocks.PLUTONIUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get())
+                    .add(ModBlocks.SAPPHIRE_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get())
                     .add(ModBlocks.SULFUR_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
                     .add(ModBlocks.TIN_ORE_BLOCK.get())
@@ -48,6 +50,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
                     .add(ModBlocks.ZINC_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get())
+
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
                     .add(ModBlocks.BRONZE_BLOCK.get())
@@ -70,6 +73,12 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.CONSTANTAN_BLOCK.get())
                     .add(ModBlocks.BRASS_BLOCK.get())
                     .add(ModBlocks.ZINC_BLOCK.get())
+                    .add(ModBlocks.STEEL_BLOCK.get())
+
+                    //GEM BLOCKS
+                    .add(ModBlocks.SAPPHIRE_BLOCK.get())
+                    .add(ModBlocks.FLUORITE_BLOCK.get())
+
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(ModBlocks.RAW_COBALT_BLOCK.get())
@@ -94,6 +103,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get())
                     .add(ModBlocks.OSMIUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.SAPPHIRE_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get())
                     .add(ModBlocks.SULFUR_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
                     .add(ModBlocks.TIN_ORE_BLOCK.get())
@@ -102,6 +113,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
                     .add(ModBlocks.ZINC_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get())
+
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
                     .add(ModBlocks.BRONZE_BLOCK.get())
@@ -124,6 +136,12 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.CONSTANTAN_BLOCK.get())
                     .add(ModBlocks.BRASS_BLOCK.get())
                     .add(ModBlocks.ZINC_BLOCK.get())
+                    .add(ModBlocks.STEEL_BLOCK.get())
+
+                    //GEM BLOCKS
+                    .add(ModBlocks.SAPPHIRE_BLOCK.get())
+                    .add(ModBlocks.FLUORITE_BLOCK.get())
+
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(ModBlocks.RAW_COBALT_BLOCK.get())

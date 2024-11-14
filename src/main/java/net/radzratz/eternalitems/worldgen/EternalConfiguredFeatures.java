@@ -49,6 +49,10 @@ public class EternalConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PLUTONIUM_ORE_KEY = registerKey("plutonium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_PLUTONIUM_ORE_KEY = registerKey("nether_plutonium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_PLUTONIUM_ORE_KEY = registerKey("end_plutonium_ore");
+    //Sapphire
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY = registerKey("sapphire_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SAPPHIRE_ORE_KEY = registerKey("nether_sapphire_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_SAPPHIRE_ORE_KEY = registerKey("end_sapphire_ore");
     //Silver
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SILVER_ORE_KEY = registerKey("silver_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_SILVER_ORE_KEY = registerKey("nether_silver_ore");
@@ -163,6 +167,17 @@ public class EternalConfiguredFeatures {
         //        ModBlocks.NETHER_PLUTONIUM_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_PLUTONIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
         //        ModBlocks.END_PLUTONIUM_ORE_BLOCK.get().defaultBlockState(9)));
+
+        //Sapphire
+        List<OreConfiguration.TargetBlockState> overworldSapphireOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.SAPPHIRE_ORE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables,
+                        ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get().defaultBlockState()));
+        register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres,20));
+        //register(context, NETHER_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
+        //        ModBlocks.NETHER_SAPPHIRE_ORE_BLOCK.get().defaultBlockState(9)));
+        //register(context, END_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
+        //        ModBlocks.END_SAPPHIRE_ORE_BLOCK.get().defaultBlockState(9)));
 
         //Silver
         List<OreConfiguration.TargetBlockState> overworldSilverOres = List.of(OreConfiguration.target(stoneReplaceable,

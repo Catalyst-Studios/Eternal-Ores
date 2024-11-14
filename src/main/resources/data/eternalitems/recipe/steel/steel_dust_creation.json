@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "tag": "c:dusts/coal"
+    },
+    {
+      "tag": "c:dusts/coal"
+    },
+    {
+      "tag": "c:dusts/coal"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalitems:steel_dust"
+  }
+}

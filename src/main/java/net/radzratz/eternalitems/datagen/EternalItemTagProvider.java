@@ -3,7 +3,6 @@ package net.radzratz.eternalitems.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalitems.EternalItems;
@@ -30,5 +29,9 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(Moditems.IRON_HAMMER.get())
                         //.add(Moditems.ETERNAL_DARK_HAMMER.get())
                         .add(Moditems.COBALT_HAMMER.get());
+
+                tag(ModTags.Items.GEMCUTTER)
+                        .add(Moditems.IRON_GEM_CUTTER.get());
+
     }
 }

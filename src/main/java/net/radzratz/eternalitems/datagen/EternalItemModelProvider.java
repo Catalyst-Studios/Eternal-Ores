@@ -22,6 +22,10 @@ public class EternalItemModelProvider extends ItemModelProvider {
         //basicItem(Moditems.ETERNAL_DARK_HAMMER.get());
         basicItem(Moditems.IRON_HAMMER.get());
         basicItem(Moditems.STONE_HAMMER.get());
+
+        //GEM CUTTER
+        basicItem(Moditems.IRON_GEM_CUTTER.get());
+
         //RAW ORES
         basicItem(Moditems.SULFUR.get());
         basicItem(Moditems.RAW_ALUMINUM.get());
@@ -36,6 +40,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.RAW_ULTIMATITANIUM.get());
         basicItem(Moditems.RAW_URANIUM.get());
         basicItem(Moditems.RAW_ZINC.get());
+
         //INGOTS
         basicItem(Moditems.ALUMINUM_INGOT.get());
         basicItem(Moditems.BRONZE_INGOT.get());
@@ -62,6 +67,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.URANIUM_INGOT.get());
         basicItem(Moditems.ZINC_INGOT.get());
         basicItem(Moditems.BRASS_INGOT.get());
+
         //NUGGETS
         basicItem(Moditems.ALUMINUM_NUGGET.get());
         basicItem(Moditems.BRONZE_NUGGET.get());
@@ -86,6 +92,8 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.GRAPHITE_NUGGET.get());
         basicItem(Moditems.BRASS_NUGGET.get());
         basicItem(Moditems.NETHERITE_NUGGET.get());
+        basicItem(Moditems.STEEL_NUGGET.get());
+
         //DUSTS
         basicItem(Moditems.ALUMINUM_DUST.get());
         basicItem(Moditems.BRONZE_DUST.get());
@@ -115,6 +123,10 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.BRASS_DUST.get());
         basicItem(Moditems.NETHERITE_DUST.get());
         basicItem(Moditems.GRAPHITE_DUST.get());
+        basicItem(Moditems.STEEL_DUST.get());
+        basicItem(Moditems.SAPPHIRE_DUST.get());
+        basicItem(Moditems.COAL_DUST.get());
+
         //RODS
         handheldItem(Moditems.ROD_ALUMINUM);
         handheldItem(Moditems.ROD_BRONZE);
@@ -141,6 +153,9 @@ public class EternalItemModelProvider extends ItemModelProvider {
         handheldItem(Moditems.ROD_GRAPHITE);
         handheldItem(Moditems.ROD_BRASS);
         handheldItem(Moditems.ROD_NETHERITE);
+        handheldItem(Moditems.ROD_STEEL);
+        handheldItem(Moditems.ROD_SAPPHIRE);
+
         //PLATES
         basicItem(Moditems.PLATE_ALUMINUM.get());
         basicItem(Moditems.PLATE_BRONZE.get());
@@ -167,8 +182,12 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.PLATE_GRAPHITE.get());
         basicItem(Moditems.PLATE_BRASS.get());
         basicItem(Moditems.PLATE_NETHERITE.get());
+        basicItem(Moditems.PLATE_STEEL.get());
+        basicItem(Moditems.PLATE_SAPPHIRE.get());
+
         //GEARS
         basicItem(Moditems.ULTIMATE_GEAR.get());
+
         //GEMS
         basicItem(Moditems.FLUORITE.get());
         basicItem(Moditems.GEM_SAPPHIRE.get());
@@ -176,6 +195,9 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.GEM_OBSIDIAN_SHARD.get());
         basicItem(Moditems.GEM_PERIDOT.get());
         basicItem(Moditems.GEM_RUBY.get());
+
+        //GEM SHARDS
+        basicItem(Moditems.GEM_SAPPHIRE_SHARD.get());
     }
 
     private void handheldItem(DeferredItem<?> item) {
