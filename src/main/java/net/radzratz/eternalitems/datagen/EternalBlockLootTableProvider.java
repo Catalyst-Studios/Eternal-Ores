@@ -69,7 +69,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_URANIUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_ZINC_BLOCK.get());
 
-        //ORE BLOCK TO RAW ORE
+        //ORE BLOCK TO RAW ORE/GEM
         //ALUMINUM ORE BLOCKS
         add(ModBlocks.ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.ALUMINUM_ORE_BLOCK.get(), Moditems.RAW_ALUMINUM.get(),2,5));
         add(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), Moditems.RAW_ALUMINUM.get(),2,5));
