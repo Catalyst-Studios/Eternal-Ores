@@ -172,6 +172,29 @@ public class ModBlocks {
                     .strength(4f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
+    //Apatite
+    public static final DeferredBlock<Block> DEEPSLATE_APATITE_ORE_BLOCK = registerBlock("deepslate_apatite_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> APATITE_ORE_BLOCK = registerBlock("apatite_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+
+    //Cinnabar
+    public static final DeferredBlock<Block> DEEPSLATE_CINNABAR_ORE_BLOCK = registerBlock("deepslate_cinnabar_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> CINNABAR_ORE_BLOCK = registerBlock("cinnabar_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
 
     //RAW ORE BLOCKS
     public static final DeferredBlock<Block> RAW_ALUMINUM_BLOCK = registerBlock("raw_aluminum_block",
@@ -354,6 +377,16 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
     public static final DeferredBlock<Block> FLUORITE_BLOCK = registerBlock("fluorite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> APATITE_BLOCK = registerBlock("apatite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> CINNABAR_BLOCK = registerBlock("cinnabar_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f)
                     .requiresCorrectToolForDrops()

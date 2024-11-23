@@ -2,8 +2,10 @@
   "replace": false,
   "values": [
     "eternalitems:aluminum_block",
+    "eternalitems:apatite_block",
     "eternalitems:bronze_block",
     "eternalitems:brass_block",
+    "eternalitems:cinnabar_block",
     "eternalitems:cobalt_block",
     "eternalitems:constantan_block",
     "eternalitems:electrum_block",

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "eternalitems:gem_apatite",
+    "eternalitems:gem_cinnabar",
     "eternalitems:fluorite",
     "eternalitems:gem_obsidian_shard",
     "eternalitems:gem_onyx",

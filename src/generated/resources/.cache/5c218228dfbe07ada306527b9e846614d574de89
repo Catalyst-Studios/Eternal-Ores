@@ -1,13 +1,15 @@
-// 1.21.1	2024-11-14T03:06:39.0141042	Item Models: eternalitems
+// 1.21.1	2024-11-22T18:11:59.7771399	Item Models: eternalitems
 f8b4dc9c72f694edafd5a8dfc6923f2eb1eb1761 assets/eternalitems/models/item/aluminum_dust.json
 02c83395e9f13183b3f678e7dca5cd980e623572 assets/eternalitems/models/item/aluminum_ingot.json
 dadf922c6870a58f314f1653d3a4c8b6504f6e34 assets/eternalitems/models/item/aluminum_nugget.json
+87edeb6f44510c4155abdbb655e9bdba2f1d8702 assets/eternalitems/models/item/apatite_dust.json
 2a5d04124c787b429bc1a177685473a7db6e784a assets/eternalitems/models/item/brass_dust.json
 cf7501e5cd74a86ceee629567f394f8dc8cf34b3 assets/eternalitems/models/item/brass_ingot.json
 06ed34231feca5aeba8a25141cb8ad74ecb0dc37 assets/eternalitems/models/item/brass_nugget.json
 afce91b30c58c9f15686f395a10cddfb53aea0b1 assets/eternalitems/models/item/bronze_dust.json
 874a5b5c1d2fc2ee15b07eb2b1e50db3fb06ea55 assets/eternalitems/models/item/bronze_ingot.json
 5f5253760c10df15a711301233e06bfcf499bf80 assets/eternalitems/models/item/bronze_nugget.json
+c4ff6d4ea78cb00f34366e9fc46898a708bcbb2f assets/eternalitems/models/item/cinnabar_dust.json
 3b6593992da00ee90321eddd28969cf96d87f405 assets/eternalitems/models/item/coal_dust.json
 aaca3e57943a42f5736bd8805f18e7daa5daaf98 assets/eternalitems/models/item/cobalt_dust.json
 193b61d1f9b191b103e04e2d01daca23f5096a41 assets/eternalitems/models/item/cobalt_hammer.json
@@ -31,6 +33,8 @@ c65659a75b5d30335115270d74ca7a74a3d294a3 assets/eternalitems/models/item/ender_d
 869ec02392532238e1b3c58f16e7bf035a43f2eb assets/eternalitems/models/item/eternal_light_ingot.json
 b54b07327139e2f07c76abca6aa6eed8288ce53f assets/eternalitems/models/item/fluorite.json
 779943fd74d7b216171170bd22b1a88c9bfad557 assets/eternalitems/models/item/fluorite_dust.json
+018dd5dda45a8516da2ffd01d3b8798f803f76f7 assets/eternalitems/models/item/gem_apatite.json
+b69b6f09e8eea96be217dc698abeee14f47c933b assets/eternalitems/models/item/gem_cinnabar.json
 d347eb13f705f5ec1314dac1daec1209cc67347f assets/eternalitems/models/item/gem_obsidian_shard.json
 7fe728b649b153684fdb8d3197c534dece47aa83 assets/eternalitems/models/item/gem_onyx.json
 0a849f2f4e80aff43524c647e3684f9c7fd2ca5c assets/eternalitems/models/item/gem_peridot.json

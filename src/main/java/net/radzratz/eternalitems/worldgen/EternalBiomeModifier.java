@@ -17,6 +17,14 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_ALUMINUM_ORE = registerKey("add_aluminum_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_ALUMINUM_ORE = registerKey("add_nether_aluminum_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_ALUMINUM_ORE = registerKey("add_end_aluminum_ore");
+    //Apatite
+    public static final ResourceKey<BiomeModifier> ADD_APATITE_ORE = registerKey("add_apatite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_APATITE_ORE = registerKey("add_nether_apatite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_APATITE_ORE = registerKey("add_end_apatite_ore");
+    //Cinnabar
+    public static final ResourceKey<BiomeModifier> ADD_CINNABAR_ORE = registerKey("add_cinnabar_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_CINNABAR_ORE = registerKey("add_nether_cinnabar_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_CINNABAR_ORE = registerKey("add_end_cinnabar_ore");
     //Cobalt
     public static final ResourceKey<BiomeModifier> ADD_COBALT_ORE = registerKey("add_cobalt_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_COBALT_ORE = registerKey("add_nether_cobalt_ore");
@@ -78,6 +86,18 @@ public class EternalBiomeModifier {
         context.register(ADD_ALUMINUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.ALUMINUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Apatite
+        context.register(ADD_APATITE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.APATITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Cinnabar
+        context.register(ADD_CINNABAR_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.CINNABAR_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Cobalt

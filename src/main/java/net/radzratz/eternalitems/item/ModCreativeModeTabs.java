@@ -182,6 +182,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.eternalitems.eternal_ore_dust"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(Moditems.ALUMINUM_DUST);
+                        output.accept(Moditems.APATITE_DUST);
                         output.accept(Moditems.BRASS_DUST);
                         output.accept(Moditems.BRONZE_DUST);
                         output.accept(Moditems.COAL_DUST);
@@ -219,6 +220,8 @@ public class ModCreativeModeTabs {
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(EternalItems.MOD_ID, "eternal_items_tabs"))
                     .title(Component.translatable("creativetab.eternalitems.eternal_gems"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(Moditems.GEM_APATITE);
+                        output.accept(Moditems.GEM_CINNABAR);
                         output.accept(Moditems.FLUORITE);
                         output.accept(Moditems.GEM_OBSIDIAN_SHARD);
                         output.accept(Moditems.GEM_ONYX);
@@ -235,6 +238,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.eternalitems.eternal_ore_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ALUMINUM_ORE_BLOCK);
+                        output.accept(ModBlocks.APATITE_ORE_BLOCK);
+                        output.accept(ModBlocks.CINNABAR_ORE_BLOCK);
                         output.accept(ModBlocks.COBALT_ORE_BLOCK);
                         output.accept(ModBlocks.FLUORITE_ORE_BLOCK);
                         output.accept(ModBlocks.LEAD_ORE_BLOCK);
@@ -249,6 +254,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.TIN_ORE_BLOCK);
                         output.accept(ModBlocks.ZINC_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK);
+                        output.accept(ModBlocks.DEEPSLATE_APATITE_ORE_BLOCK);
+                        output.accept(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK);
                         output.accept(ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK);
@@ -270,8 +277,10 @@ public static final Supplier<CreativeModeTab> ETERNAL_BLOCKS = CREATIVE_MODE_TAB
                 .title(Component.translatable("creativetab.eternalitems.eternal_blocks"))
                 .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.ALUMINUM_BLOCK);
+                        output.accept(ModBlocks.APATITE_BLOCK);
                         output.accept(ModBlocks.BRASS_BLOCK);
                         output.accept(ModBlocks.BRONZE_BLOCK);
+                        output.accept(ModBlocks.CINNABAR_BLOCK);
                         output.accept(ModBlocks.COBALT_BLOCK);
                         output.accept(ModBlocks.CONSTANTAN_BLOCK);
                         output.accept(ModBlocks.ELECTRUM_BLOCK);

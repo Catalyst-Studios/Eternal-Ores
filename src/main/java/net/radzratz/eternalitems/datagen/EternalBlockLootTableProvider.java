@@ -54,6 +54,8 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //GEM BLOCKS
         dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
         dropSelf(ModBlocks.FLUORITE_BLOCK.get());
+        dropSelf(ModBlocks.APATITE_BLOCK.get());
+        dropSelf(ModBlocks.CINNABAR_BLOCK.get());
 
         //RAW ORE BLOCKS
         dropSelf(ModBlocks.RAW_ALUMINUM_BLOCK.get());
@@ -120,12 +122,20 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
 
         //GEMS
         //FLUORITE TO GEM
-        add(ModBlocks.FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.FLUORITE_ORE_BLOCK.get(), Moditems.FLUORITE.get(), 1,5));
-        add(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get(), Moditems.FLUORITE.get(),1,5));
+        add(ModBlocks.FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.FLUORITE_ORE_BLOCK.get(), Moditems.FLUORITE.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get(), Moditems.FLUORITE.get(),1,3));
 
         //SAPPHIRE TO GEM
-        add(ModBlocks.SAPPHIRE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.SAPPHIRE_ORE_BLOCK.get(), Moditems.GEM_SAPPHIRE.get(), 1,5));
-        add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get(), Moditems.GEM_SAPPHIRE.get(),1,5));
+        add(ModBlocks.SAPPHIRE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.SAPPHIRE_ORE_BLOCK.get(), Moditems.GEM_SAPPHIRE.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get(), Moditems.GEM_SAPPHIRE.get(),1,3));
+
+        //APATITE TO GEM
+        add(ModBlocks.APATITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.APATITE_ORE_BLOCK.get(), Moditems.GEM_APATITE.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get(), Moditems.GEM_APATITE.get(),1,3));
+
+        //CINNABAR TO GEM
+        add(ModBlocks.CINNABAR_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.CINNABAR_ORE_BLOCK.get(), Moditems.GEM_CINNABAR.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get(), Moditems.GEM_CINNABAR.get(),1,3));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

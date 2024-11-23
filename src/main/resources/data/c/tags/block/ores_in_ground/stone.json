@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "eternalitems:aluminum_ore_block",
+    "eternalitems:apatite_ore_block",
+    "eternalitems:cinnabar_ore_block",
     "eternalitems:cobalt_ore_block",
     "eternalitems:fluorite_ore_block",
     "eternalitems:lead_ore_block",

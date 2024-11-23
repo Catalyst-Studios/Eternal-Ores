@@ -338,6 +338,10 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> COAL_DUST = ITEMS.register("coal_dust",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> APATITE_DUST = ITEMS.register("apatite_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CINNABAR_DUST = ITEMS.register("cinnabar_dust",
+            ()-> new Item(new Item.Properties()));
 
     //Gems
     public static final DeferredItem<Item> GEM_ONYX = ITEMS.register("gem_onyx",
@@ -349,6 +353,10 @@ public class Moditems {
     public static final DeferredItem<Item> GEM_SAPPHIRE = ITEMS.register("gem_sapphire",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> FLUORITE = ITEMS.register("fluorite",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEM_APATITE = ITEMS.register("gem_apatite",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEM_CINNABAR = ITEMS.register("gem_cinnabar",
             ()-> new Item(new Item.Properties()));
 
     //Gem Shard

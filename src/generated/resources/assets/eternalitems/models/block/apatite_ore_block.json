@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalitems:block/apatite_ore_block"
+  }
+}

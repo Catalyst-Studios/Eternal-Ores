@@ -21,6 +21,14 @@ public class EternalConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ALUMINUM_ORE_KEY = registerKey("aluminum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_ALUMINUM_ORE_KEY = registerKey("nether_aluminum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_ALUMINUM_ORE_KEY = registerKey("end_aluminum_ore");
+    //Apatite
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_APATITE_ORE_KEY = registerKey("apatite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_APATITE_ORE_KEY = registerKey("nether_apatite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_APATITE_ORE_KEY = registerKey("end_apatite_ore");
+    //Cinnabar
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CINNABAR_ORE_KEY = registerKey("cinnabar_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_CINNABAR_ORE_KEY = registerKey("nether_cinnabar_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_CINNABAR_ORE_KEY = registerKey("end_cinnabar_ore");
     //Cobalt
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COBALT_ORE_KEY = registerKey("cobalt_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_COBALT_ORE_KEY = registerKey("nether_cobalt_ore");
@@ -90,6 +98,28 @@ public class EternalConfiguredFeatures {
         //        ModBlocks.NETHER_ALUMINUM_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_ALUMINUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
         //        ModBlocks.END_ALUMINUM_ORE_BLOCK.get().defaultBlockState(9)));
+
+        //APATITE ORES
+        List<OreConfiguration.TargetBlockState> overworldApatiteOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.APATITE_ORE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables,
+                        ModBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get().defaultBlockState()));
+        register(context, OVERWORLD_APATITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldApatiteOres,20));
+        //register(context, NETHER_APATITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
+        //        ModBlocks.NETHER_APATITE_ORE_BLOCK.get().defaultBlockState(9)));
+        //register(context, END_APATITE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
+        //        ModBlocks.END_APATITE_ORE_BLOCK.get().defaultBlockState(9)));
+
+        //CINNABAR ORES
+        List<OreConfiguration.TargetBlockState> overworldCinnabarOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.CINNABAR_ORE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables,
+                        ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get().defaultBlockState()));
+        register(context, OVERWORLD_CINNABAR_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCinnabarOres,20));
+        //register(context, NETHER_CINNABAR_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
+        //        ModBlocks.NETHER_CINNABAR_ORE_BLOCK.get().defaultBlockState(9)));
+        //register(context, END_CINNABAR_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
+        //        ModBlocks.END_CINNABAR_ORE_BLOCK.get().defaultBlockState(9)));
 
         //COBALT ORES
         List<OreConfiguration.TargetBlockState> overworldCobaltOres = List.of(OreConfiguration.target(stoneReplaceable,

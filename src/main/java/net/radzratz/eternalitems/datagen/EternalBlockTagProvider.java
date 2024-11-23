@@ -24,6 +24,10 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     //ORE BLOCKS
                     .add(ModBlocks.ALUMINUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get())
+                    .add(ModBlocks.APATITE_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get())
+                    .add(ModBlocks.CINNABAR_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get())
                     .add(ModBlocks.COBALT_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get())
                     .add(ModBlocks.FLUORITE_ORE_BLOCK.get())
@@ -78,6 +82,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     //GEM BLOCKS
                     .add(ModBlocks.SAPPHIRE_BLOCK.get())
                     .add(ModBlocks.FLUORITE_BLOCK.get())
+                    .add(ModBlocks.APATITE_BLOCK.get())
+                    .add(ModBlocks.CINNABAR_BLOCK.get())
 
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
@@ -97,6 +103,10 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     //ORE BLOCKS
                     .add(ModBlocks.ALUMINUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get())
+                    .add(ModBlocks.APATITE_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get())
+                    .add(ModBlocks.CINNABAR_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get())
                     .add(ModBlocks.FLUORITE_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get())
                     .add(ModBlocks.NICKEL_ORE_BLOCK.get())
@@ -141,6 +151,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     //GEM BLOCKS
                     .add(ModBlocks.SAPPHIRE_BLOCK.get())
                     .add(ModBlocks.FLUORITE_BLOCK.get())
+                    .add(ModBlocks.APATITE_BLOCK.get())
+                    .add(ModBlocks.CINNABAR_BLOCK.get())
 
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())

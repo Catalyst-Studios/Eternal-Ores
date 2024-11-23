@@ -2,8 +2,10 @@
   "replace": false,
   "values": [
     "eternalitems:aluminum_dust",
+    "eternalitems:apatite_dust",
     "eternalitems:brass_dust",
     "eternalitems:bronze_dust",
+    "eternalitems:cinnabar_dust",
     "eternalitems:coal_dust",
     "eternalitems:cobalt_dust",
     "eternalitems:constantan_dust",

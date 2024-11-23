@@ -161,6 +161,8 @@
   "item.eternalitems.steel_dust": "Steel Dust",
   "item.eternalitems.sapphire_dust": "Sapphire Dust",
   "item.eternalitems.coal_dust": "Coal Dust",
+  "item.eternalitems.apatite_dust": "Apatite Dust",
+  "item.eternalitems.cinnabar_dust": "Cinnabar Dust",
 
   "item.eternalitems.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalitems.gem_onyx": "Onyx",
@@ -169,6 +171,8 @@
   "item.eternalitems.gem_sapphire": "Sapphire",
   "item.eternalitems.sulfur": "Sulfur",
   "item.eternalitems.fluorite": "Fluorite",
+  "item.eternalitems.gem_apatite": "Apatite",
+  "item.eternalitems.gem_cinnabar": "Cinnabar",
 
   "item.eternalitems.gem_sapphire_shard": "Sapphire Shard",
 
@@ -186,6 +190,8 @@
   "block.eternalitems.silver_ore_block": "Silver Ore",
   "block.eternalitems.zinc_ore_block": "Zinc Ore",
   "block.eternalitems.sapphire_ore_block": "Sapphire Ore",
+  "block.eternalitems.apatite_ore_block": "Apatite Ore",
+  "block.eternalitems.cinnabar_ore_block": "Cinnabar Ore",
 
   "block.eternalitems.deepslate_cobalt_ore_block": "Deepslate Cobalt Ore",
   "block.eternalitems.deepslate_fluorite_ore_block": "Deepslate Fluorite Ore",
@@ -201,6 +207,8 @@
   "block.eternalitems.deepslate_aluminum_ore_block": "Deepslate Aluminum Ore",
   "block.eternalitems.deepslate_zinc_ore_block": "Deepslate Zinc Ore",
   "block.eternalitems.deepslate_sapphire_ore_block": "Deepslate Sapphire Ore",
+  "block.eternalitems.deepslate_apatite_ore_block": "Deepslate Apatite Ore",
+  "block.eternalitems.deepslate_cinnabar_ore_block": "Deepslate Cinnabar Ore",
 
   "block.eternalitems.raw_aluminum_block": "Block of Raw Aluminum",
   "block.eternalitems.raw_cobalt_block": "Block of Raw Cobalt",
@@ -239,6 +247,8 @@
   "block.eternalitems.steel_block": "Steel Block",
   "block.eternalitems.sapphire_block": "Sapphire Block",
   "block.eternalitems.fluorite_block": "Fluorite Block",
+  "block.eternalitems.apatite_block": "Apatite Block",
+  "block.eternalitems.cinnabar_block": "Cinnabar Block",
 
   "creativetab.eternalitems.eternal_ingots": "Eternal Ingots",
   "creativetab.eternalitems.eternal_ore_blocks": "Eternal Ore Blocks",
