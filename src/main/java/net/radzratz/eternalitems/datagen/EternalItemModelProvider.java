@@ -128,6 +128,10 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.COAL_DUST.get());
         basicItem(Moditems.APATITE_DUST.get());
         basicItem(Moditems.CINNABAR_DUST.get());
+        basicItem(Moditems.RUBY_DUST.get());
+        basicItem(Moditems.ONYX_DUST.get());
+        basicItem(Moditems.AMBER_DUST.get());
+        basicItem(Moditems.NITER_DUST.get());
 
         //RODS
         handheldItem(Moditems.ROD_ALUMINUM);
@@ -199,6 +203,8 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.GEM_RUBY.get());
         basicItem(Moditems.GEM_APATITE.get());
         basicItem(Moditems.GEM_CINNABAR.get());
+        basicItem(Moditems.GEM_AMBER.get());
+        basicItem(Moditems.GEM_NITER.get());
 
         //GEM SHARDS
         basicItem(Moditems.GEM_SAPPHIRE_SHARD.get());

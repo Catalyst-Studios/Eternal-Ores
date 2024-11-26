@@ -17,6 +17,10 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_ALUMINUM_ORE = registerKey("add_aluminum_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_ALUMINUM_ORE = registerKey("add_nether_aluminum_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_ALUMINUM_ORE = registerKey("add_end_aluminum_ore");
+    //Amber
+    public static final ResourceKey<BiomeModifier> ADD_AMBER_ORE = registerKey("add_amber_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_AMBER_ORE = registerKey("add_nether_amber_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_AMBER_ORE = registerKey("add_end_amber_ore");
     //Apatite
     public static final ResourceKey<BiomeModifier> ADD_APATITE_ORE = registerKey("add_apatite_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_APATITE_ORE = registerKey("add_nether_apatite_ore");
@@ -41,6 +45,14 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_NICKEL_ORE = registerKey("add_nickel_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_NICKEL_ORE = registerKey("add_nether_nickel_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_NICKEL_ORE = registerKey("add_end_nickel_ore");
+    //Niter
+    public static final ResourceKey<BiomeModifier> ADD_NITER_ORE = registerKey("add_niter_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_NITER_ORE = registerKey("add_nether_niter_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_NITER_ORE = registerKey("add_end_niter_ore");
+    //Onyx
+    public static final ResourceKey<BiomeModifier> ADD_ONYX_ORE = registerKey("add_onyx_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_ONYX_ORE = registerKey("add_nether_onyx_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_ONYX_ORE = registerKey("add_end_onyx_ore");
     //Osmium
     public static final ResourceKey<BiomeModifier> ADD_OSMIUM_ORE = registerKey("add_osmium_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_OSMIUM_ORE = registerKey("add_nether_osmium_ore");
@@ -53,6 +65,10 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_PLUTONIUM_ORE = registerKey("add_plutonium_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_PLUTONIUM_ORE = registerKey("add_nether_plutonium_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_PLUTONIUM_ORE = registerKey("add_end_plutonium_ore");
+    //Ruby
+    public static final ResourceKey<BiomeModifier> ADD_RUBY_ORE = registerKey("add_ruby_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_RUBY_ORE = registerKey("add_nether_ruby_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_RUBY_ORE = registerKey("add_end_ruby_ore");
     //Sapphire
     public static final ResourceKey<BiomeModifier> ADD_SAPPHIRE_ORE = registerKey("add_sapphire_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_SAPPHIRE_ORE = registerKey("add_nether_sapphire_ore");
@@ -88,6 +104,12 @@ public class EternalBiomeModifier {
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.ALUMINUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        //Amber
+        context.register(ADD_AMBER_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.AMBER_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
         //Apatite
         context.register(ADD_APATITE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
@@ -118,10 +140,22 @@ public class EternalBiomeModifier {
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.LEAD_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        //Niter
+        context.register(ADD_NITER_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.NITER_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
         //Nickel
         context.register(ADD_NICKEL_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.NICKEL_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Onyx
+        context.register(ADD_ONYX_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.ONYX_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Osmium
@@ -140,6 +174,12 @@ public class EternalBiomeModifier {
         context.register(ADD_PLUTONIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.PLUTONIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Ruby
+        context.register(ADD_RUBY_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.RUBY_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Silver

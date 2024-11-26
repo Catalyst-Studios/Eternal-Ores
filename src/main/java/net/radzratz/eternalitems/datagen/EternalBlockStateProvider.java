@@ -43,6 +43,10 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.FLUORITE_BLOCK);
         blockWithItem(ModBlocks.APATITE_BLOCK);
         blockWithItem(ModBlocks.CINNABAR_BLOCK);
+        blockWithItem(ModBlocks.AMBER_BLOCK);
+        blockWithItem(ModBlocks.NITER_BLOCK);
+        blockWithItem(ModBlocks.RUBY_BLOCK);
+        blockWithItem(ModBlocks.ONYX_BLOCK);
 
         //RAW BLOCKS
         blockWithItem(ModBlocks.RAW_ALUMINUM_BLOCK);
@@ -109,6 +113,18 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         //CINNABAR
         blockWithItem(ModBlocks.CINNABAR_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK);
+        //AMBER
+        blockWithItem(ModBlocks.AMBER_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_AMBER_ORE_BLOCK);
+        //ONYX
+        blockWithItem(ModBlocks.ONYX_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_ONYX_ORE_BLOCK);
+        //NITER
+        blockWithItem(ModBlocks.NITER_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_NITER_ORE_BLOCK);
+        //RUBY
+        blockWithItem(ModBlocks.RUBY_ORE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_RUBY_ORE_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

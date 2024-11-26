@@ -56,6 +56,10 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.FLUORITE_BLOCK.get());
         dropSelf(ModBlocks.APATITE_BLOCK.get());
         dropSelf(ModBlocks.CINNABAR_BLOCK.get());
+        dropSelf(ModBlocks.AMBER_BLOCK.get());
+        dropSelf(ModBlocks.ONYX_BLOCK.get());
+        dropSelf(ModBlocks.NITER_BLOCK.get());
+        dropSelf(ModBlocks.RUBY_BLOCK.get());
 
         //RAW ORE BLOCKS
         dropSelf(ModBlocks.RAW_ALUMINUM_BLOCK.get());
@@ -136,6 +140,22 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //CINNABAR TO GEM
         add(ModBlocks.CINNABAR_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.CINNABAR_ORE_BLOCK.get(), Moditems.GEM_CINNABAR.get(), 1,3));
         add(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get(), Moditems.GEM_CINNABAR.get(),1,3));
+
+        //ONYX TO GEM
+        add(ModBlocks.ONYX_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.ONYX_ORE_BLOCK.get(), Moditems.GEM_ONYX.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_ONYX_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_ONYX_ORE_BLOCK.get(), Moditems.GEM_ONYX.get(),1,3));
+
+        //AMBER TO GEM
+        add(ModBlocks.AMBER_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.AMBER_ORE_BLOCK.get(), Moditems.GEM_AMBER.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_AMBER_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_AMBER_ORE_BLOCK.get(), Moditems.GEM_AMBER.get(),1,3));
+
+        //NITER TO GEM
+        add(ModBlocks.NITER_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.NITER_ORE_BLOCK.get(), Moditems.GEM_NITER.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_NITER_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_NITER_ORE_BLOCK.get(), Moditems.GEM_NITER.get(),1,3));
+
+        //RUBY TO GEM
+        add(ModBlocks.RUBY_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.RUBY_ORE_BLOCK.get(), Moditems.GEM_RUBY.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get(), Moditems.GEM_RUBY.get(),1,3));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

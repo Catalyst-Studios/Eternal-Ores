@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "ruby_gem",
+  "ingredient": {
+    "tag": "c:dusts/ruby"
+  },
+  "result": {
+    "id": "eternalitems:gem_ruby"
+  }
+}

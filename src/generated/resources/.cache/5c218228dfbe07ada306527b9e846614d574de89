@@ -1,7 +1,8 @@
-// 1.21.1	2024-11-22T18:11:59.7771399	Item Models: eternalitems
+// 1.21.1	2024-11-23T19:05:36.314982	Item Models: eternalitems
 f8b4dc9c72f694edafd5a8dfc6923f2eb1eb1761 assets/eternalitems/models/item/aluminum_dust.json
 02c83395e9f13183b3f678e7dca5cd980e623572 assets/eternalitems/models/item/aluminum_ingot.json
 dadf922c6870a58f314f1653d3a4c8b6504f6e34 assets/eternalitems/models/item/aluminum_nugget.json
+c10ba9ffbc92764dce09de8f30f0f3d3b47b3760 assets/eternalitems/models/item/amber_dust.json
 87edeb6f44510c4155abdbb655e9bdba2f1d8702 assets/eternalitems/models/item/apatite_dust.json
 2a5d04124c787b429bc1a177685473a7db6e784a assets/eternalitems/models/item/brass_dust.json
 cf7501e5cd74a86ceee629567f394f8dc8cf34b3 assets/eternalitems/models/item/brass_ingot.json
@@ -33,8 +34,10 @@ c65659a75b5d30335115270d74ca7a74a3d294a3 assets/eternalitems/models/item/ender_d
 869ec02392532238e1b3c58f16e7bf035a43f2eb assets/eternalitems/models/item/eternal_light_ingot.json
 b54b07327139e2f07c76abca6aa6eed8288ce53f assets/eternalitems/models/item/fluorite.json
 779943fd74d7b216171170bd22b1a88c9bfad557 assets/eternalitems/models/item/fluorite_dust.json
+4121f8cbeb156485c6d16640d86aeeeaf2be8391 assets/eternalitems/models/item/gem_amber.json
 018dd5dda45a8516da2ffd01d3b8798f803f76f7 assets/eternalitems/models/item/gem_apatite.json
 b69b6f09e8eea96be217dc698abeee14f47c933b assets/eternalitems/models/item/gem_cinnabar.json
+c687bccda335599cb6ec85e824cad596f66adb58 assets/eternalitems/models/item/gem_niter.json
 d347eb13f705f5ec1314dac1daec1209cc67347f assets/eternalitems/models/item/gem_obsidian_shard.json
 7fe728b649b153684fdb8d3197c534dece47aa83 assets/eternalitems/models/item/gem_onyx.json
 0a849f2f4e80aff43524c647e3684f9c7fd2ca5c assets/eternalitems/models/item/gem_peridot.json
@@ -62,6 +65,8 @@ cd74899e35997babf09adc5ad255325e1a029726 assets/eternalitems/models/item/netheri
 11aa31f6fa3176897424b39dee60b1ef73719380 assets/eternalitems/models/item/nickel_dust.json
 27adc3e9dbd855a8dd2b7b01e965275f5d6c02da assets/eternalitems/models/item/nickel_ingot.json
 e8c1007523da9904b68955cc1ab9d210b9338a9b assets/eternalitems/models/item/nickel_nugget.json
+10b54b6810ff9337ad582182178b0ef412ea978b assets/eternalitems/models/item/niter_dust.json
+3bf4426fceeac0ef7bc211c50b29901445e58c9a assets/eternalitems/models/item/onyx_dust.json
 4b8b294d388ca36b2c93921cdad6867168b13d70 assets/eternalitems/models/item/osmium_dust.json
 7367fce7e8354ce2973307b1ee6d6165f4221fe4 assets/eternalitems/models/item/osmium_ingot.json
 61a61fd9454598c0f942963c5cf99c5a99bae4b8 assets/eternalitems/models/item/osmium_nugget.json
@@ -138,6 +143,7 @@ d633e0eb179d85dc5bd870b1db1dbb2c86ceecca assets/eternalitems/models/item/rod_tin
 6aaaa258c8cd8b53ecbcaaa3c79d625f1e21648c assets/eternalitems/models/item/rod_ultimatitanium.json
 efddd8199cdadf6d0e7745e52002902ac82cee5e assets/eternalitems/models/item/rod_uranium.json
 74f9ea99f08fbe39f781a0f8b59b4afabf5b6a2c assets/eternalitems/models/item/rod_zinc.json
+883aa3a98e7bb1f302fac44506cbc6d085022c13 assets/eternalitems/models/item/ruby_dust.json
 674cd97157f770b77a98737005dcd2851aaf09e2 assets/eternalitems/models/item/sapphire_dust.json
 9a8d547f5cb59ba78753f894367932b8548ff149 assets/eternalitems/models/item/signalum_dust.json
 cefae4101e81c53c57b6fdfde6a75ae489d1d19f assets/eternalitems/models/item/signalum_ingot.json

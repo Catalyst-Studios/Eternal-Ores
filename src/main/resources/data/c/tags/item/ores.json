@@ -4,6 +4,9 @@
     "eternalitems:aluminum_ore_block",
     "eternalitems:deepslate_aluminum_ore_block",
 
+    "eternalitems:amber_ore_block",
+    "eternalitems:deepslate_amber_ore_block",
+
     "eternalitems:apatite_ore_block",
     "eternalitems:deepslate_apatite_ore_block",
 
@@ -22,6 +25,12 @@
     "eternalitems:nickel_ore_block",
     "eternalitems:deepslate_nickel_ore_block",
 
+    "eternalitems:niter_ore_block",
+    "eternalitems:deepslate_niter_ore_block",
+
+    "eternalitems:onyx_ore_block",
+    "eternalitems:deepslate_onyx_ore_block",
+
     "eternalitems:osmium_ore_block",
     "eternalitems:deepslate_osmium_ore_block",
 
@@ -30,6 +39,9 @@
 
     "eternalitems:plutonium_ore_block",
     "eternalitems:deepslate_plutonium_ore_block",
+
+    "eternalitems:ruby_ore_block",
+    "eternalitems:deepslate_ruby_ore_block",
 
     "eternalitems:sapphire_ore_block",
     "eternalitems:deepslate_sapphire_ore_block",

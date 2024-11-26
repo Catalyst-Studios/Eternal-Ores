@@ -2,9 +2,11 @@
   "replace": false,
   "values": [
     "eternalitems:gem_apatite",
+    "eternalitems:gem_amber",
     "eternalitems:gem_cinnabar",
     "eternalitems:fluorite",
     "eternalitems:gem_obsidian_shard",
+    "eternalitems:gem_niter",
     "eternalitems:gem_onyx",
     "eternalitems:gem_peridot",
     "eternalitems:gem_ruby",

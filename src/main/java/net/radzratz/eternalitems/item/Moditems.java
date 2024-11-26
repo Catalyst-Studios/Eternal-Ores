@@ -342,6 +342,14 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CINNABAR_DUST = ITEMS.register("cinnabar_dust",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> AMBER_DUST = ITEMS.register("amber_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NITER_DUST = ITEMS.register("niter_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ONYX_DUST = ITEMS.register("onyx_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RUBY_DUST = ITEMS.register("ruby_dust",
+            ()-> new Item(new Item.Properties()));
 
     //Gems
     public static final DeferredItem<Item> GEM_ONYX = ITEMS.register("gem_onyx",
@@ -357,6 +365,10 @@ public class Moditems {
     public static final DeferredItem<Item> GEM_APATITE = ITEMS.register("gem_apatite",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GEM_CINNABAR = ITEMS.register("gem_cinnabar",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEM_AMBER = ITEMS.register("gem_amber",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEM_NITER = ITEMS.register("gem_niter",
             ()-> new Item(new Item.Properties()));
 
     //Gem Shard
