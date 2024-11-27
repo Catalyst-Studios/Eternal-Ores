@@ -1,15 +1,15 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:gem_apatite",
-    "eternalitems:gem_amber",
-    "eternalitems:gem_cinnabar",
-    "eternalitems:fluorite",
-    "eternalitems:gem_obsidian_shard",
-    "eternalitems:gem_niter",
-    "eternalitems:gem_onyx",
-    "eternalitems:gem_peridot",
-    "eternalitems:gem_ruby",
-    "eternalitems:gem_sapphire"
+    "eternalores:gem_apatite",
+    "eternalores:gem_amber",
+    "eternalores:gem_cinnabar",
+    "eternalores:fluorite",
+    "eternalores:gem_obsidian_shard",
+    "eternalores:gem_niter",
+    "eternalores:gem_onyx",
+    "eternalores:gem_peridot",
+    "eternalores:gem_ruby",
+    "eternalores:gem_sapphire"
   ]
 }

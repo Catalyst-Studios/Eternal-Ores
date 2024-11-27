@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:aluminum_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:aluminum_ingot"
+  }
+}

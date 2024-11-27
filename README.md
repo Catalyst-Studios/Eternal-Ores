@@ -3,9 +3,9 @@ English Section
 About
 =======
 
-The Eternal Items mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, and ore blocks!
+The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, and ore blocks!
 
-Based on FTB Materials, AllTheOres, and Emendatus Enigmatica, Eternal Items is compatible with these mods, using the correct tags 
+Based on FTB Materials, AllTheOres, and Emendatus Enigmatica, Eternal Ores is compatible with these mods, using the correct tags 
 for proper integration while adding new materials and ores for Catalyst Studios Modpacks. It also adds ore 
 generation for its ores, compatible with both modded and vanilla biomes.
 
@@ -56,7 +56,7 @@ if you mention me that the mod is being used on said modpack, you are not forced
 
 Have fun and I hope you enjoy the Mod!
 
-Also, **I do not allow the distribution of Eternal Items mod outside CurseForge or Modrinth Websites.**
+Also, **I do not allow the distribution of Eternal Ores mod outside CurseForge or Modrinth Websites.**
 
 *atte RadzRatz*
 
@@ -65,7 +65,7 @@ Sección en Español
 Acerca
 =======
 
-El mod Eternal Items agrega muchos ítems bien conocidos en un solo mod, como lingotes, engranajes, varillas, pepitas, placas, minerales 
+El mod Eternal Ores agrega muchos ítems bien conocidos en un solo mod, como lingotes, engranajes, varillas, pepitas, placas, minerales 
 en bruto y bloques de mineral.
 
 Basado en FTB Materials, AllTheOres y Emendatus Enigmatica, Eternal Items es compatible con estos mods, utilizando las etiquetas 

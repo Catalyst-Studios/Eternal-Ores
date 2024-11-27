@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "cobalt_ingot",
+  "ingredient": {
+    "item": "eternalores:raw_cobalt_block"
+  },
+  "result": {
+    "id": "eternalores:cobalt_block"
+  }
+}

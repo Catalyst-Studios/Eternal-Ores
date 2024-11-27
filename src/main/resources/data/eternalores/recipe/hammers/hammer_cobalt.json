@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "eternalores:cobalt_nugget"
+   },
+    "B": {
+      "item": "minecraft:stick"
+    },
+    "C": {
+      "item": "eternalores:cobalt_block"
+    }
+  },
+  "pattern": [
+    " C ",
+    " BC",
+    "A  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:cobalt_hammer"
+  }
+}

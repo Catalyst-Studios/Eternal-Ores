@@ -1,12 +1,7 @@
 Mods that we added compatibility so far are:
 
-- Applied Energistics 2 (Implemented)
-- Applied Flux (Implemented)
-- Mega Cells (Implemented)
 - Mekanism (Planned)
-- Ars Nouveau (Planned)
-- GregTech (Planned)
-- Modern Industrialization (Planned)
+- Create (Planned)
 
 ===================
 
@@ -150,5 +145,3 @@ in the creative tab!
 ========================
 
 Note: In case something in here is wrong, make sure to notify RadzRatz about the errors or typos you found!
-
-While RadzRatz is not an expert in Modding nor in Java/JavaScript, these are the steps he made to ensure these mods and their added items loaded correctly

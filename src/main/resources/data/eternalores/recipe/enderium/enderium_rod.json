@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:ingots/enderium"
+   },
+    "B": {
+      "tag": "hammers:hammers"
+    }
+  },
+  "pattern": [
+    "B  ",
+    " A ",
+    "  A"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:rod_enderium"
+  }
+}

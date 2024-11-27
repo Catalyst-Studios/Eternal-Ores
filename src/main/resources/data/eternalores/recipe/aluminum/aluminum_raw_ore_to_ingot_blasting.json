@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "aluminum_ingot",
+  "ingredient": {
+    "tag": "c:raw_materials/aluminum"
+  },
+  "result": {
+    "id": "eternalores:aluminum_ingot"
+  }
+}

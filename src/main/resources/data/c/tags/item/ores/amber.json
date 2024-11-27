@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:amber_ore_block",
-    "eternalitems:deepslate_amber_ore_block"
+    "eternalores:amber_ore_block",
+    "eternalores:deepslate_amber_ore_block"
   ]
 }

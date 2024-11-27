@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "enderium_ingot",
+  "ingredient": {
+    "tag": "c:dusts/enderium"
+  },
+  "result": {
+    "id": "eternalores:enderium_ingot"
+  }
+}

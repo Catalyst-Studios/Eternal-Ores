@@ -1,19 +1,19 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:raw_aluminum",
-    "eternalitems:raw_cobalt",
-    "eternalitems:raw_lead",
-    "eternalitems:raw_nickel",
-    "eternalitems:raw_osmium",
-    "eternalitems:raw_platinum",
-    "eternalitems:raw_plutonium",
-    "eternalitems:raw_silver",
-    "eternalitems:sulfur",
-    "eternalitems:raw_silver",
-    "eternalitems:raw_tin",
-    "eternalitems:raw_ultimatitanium",
-    "eternalitems:raw_uranium",
-    "eternalitems:raw_zinc"
+    "eternalores:raw_aluminum",
+    "eternalores:raw_cobalt",
+    "eternalores:raw_lead",
+    "eternalores:raw_nickel",
+    "eternalores:raw_osmium",
+    "eternalores:raw_platinum",
+    "eternalores:raw_plutonium",
+    "eternalores:raw_silver",
+    "eternalores:sulfur",
+    "eternalores:raw_silver",
+    "eternalores:raw_tin",
+    "eternalores:raw_ultimatitanium",
+    "eternalores:raw_uranium",
+    "eternalores:raw_zinc"
   ]
 }

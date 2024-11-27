@@ -1,9 +1,9 @@
 {
   "values": [
-    "eternalitems:copper_hammer",
-    "eternalitems:stone_hammer",
-    "eternalitems:diamond_hammer",
-    "eternalitems:iron_hammer",
-    "eternalitems:cobalt_hammer"
+    "eternalores:copper_hammer",
+    "eternalores:stone_hammer",
+    "eternalores:diamond_hammer",
+    "eternalores:iron_hammer",
+    "eternalores:cobalt_hammer"
   ]
 }

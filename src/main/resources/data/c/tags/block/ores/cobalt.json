@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:cobalt_ore_block",
-    "eternalitems:deepslate_cobalt_ore_block"
+    "eternalores:cobalt_ore_block",
+    "eternalores:deepslate_cobalt_ore_block"
   ]
 }

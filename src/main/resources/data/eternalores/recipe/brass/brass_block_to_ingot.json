@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:brass_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:brass_ingot"
+  }
+}

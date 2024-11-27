@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "tag": "c:dusts/nickel"
+    },
+    {
+      "tag": "c:dusts/iron"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:invar_dust"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:platinum_ore_block",
-    "eternalitems:deepslate_platinum_ore_block"
+    "eternalores:platinum_ore_block",
+    "eternalores:deepslate_platinum_ore_block"
   ]
 }

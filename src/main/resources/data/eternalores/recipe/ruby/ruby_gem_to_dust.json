@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:gems/ruby"
+    },
+    {
+      "tag": "hammers:hammers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:ruby_dust"
+  }
+}

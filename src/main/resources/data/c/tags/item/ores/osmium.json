@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "eternalitems:osmium_ore_block",
-    "eternalitems:deepslate_osmium_ore_block"
+    "eternalores:osmium_ore_block",
+    "eternalores:deepslate_osmium_ore_block"
   ]
 }
