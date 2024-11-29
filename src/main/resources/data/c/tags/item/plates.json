@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "eternalores:plate_aluminum",
+    "eternalores:plate_blue_steel",
     "eternalores:plate_brass",
     "eternalores:plate_bronze",
     "eternalores:plate_cobalt",
@@ -9,6 +10,7 @@
     "eternalores:plate_copper",
     "eternalores:plate_electrum",
     "eternalores:plate_enderium",
+    "eternalores:plate_gallium",
     "eternalores:plate_gold",
     "eternalores:plate_graphite",
     "eternalores:plate_invar",
@@ -25,6 +27,7 @@
     "eternalores:plate_silver",
     "eternalores:plate_steel",
     "eternalores:plate_tin",
+    "eternalores:plate_titanium",
     "eternalores:plate_ultimatitanium",
     "eternalores:plate_uranium",
     "eternalores:plate_zinc"

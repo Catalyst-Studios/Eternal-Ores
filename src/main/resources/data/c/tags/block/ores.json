@@ -19,6 +19,9 @@
     "eternalores:fluorite_ore_block",
     "eternalores:deepslate_fluorite_ore_block",
 
+    "eternalores:gallium_ore_block",
+    "eternalores:deepslate_gallium_ore_block",
+
     "eternalores:lead_ore_block",
     "eternalores:deepslate_lead_ore_block",
 
@@ -33,6 +36,9 @@
 
     "eternalores:osmium_ore_block",
     "eternalores:deepslate_osmium_ore_block",
+
+    "eternalores:peridot_ore_block",
+    "eternalores:deepslate_peridot_ore_block",
 
     "eternalores:platinum_ore_block",
     "eternalores:deepslate_platinum_ore_block",

@@ -244,6 +244,30 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
 
+    //Gallium
+    public static final DeferredBlock<Block> DEEPSLATE_GALLIUM_ORE_BLOCK = registerBlock("deepslate_gallium_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> GALLIUM_ORE_BLOCK = registerBlock("gallium_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+
+    //Peridot
+    public static final DeferredBlock<Block> DEEPSLATE_PERIDOT_ORE_BLOCK = registerBlock("deepslate_peridot_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+    public static final DeferredBlock<Block> PERIDOT_ORE_BLOCK = registerBlock("peridot_ore_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+
     //RAW ORE BLOCKS
     public static final DeferredBlock<Block> RAW_ALUMINUM_BLOCK = registerBlock("raw_aluminum_block",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -301,6 +325,11 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)));
     public static final DeferredBlock<Block> RAW_ZINC_BLOCK = registerBlock("raw_zinc_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> RAW_GALLIUM_BLOCK = registerBlock("raw_gallium_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f)
                     .requiresCorrectToolForDrops()
@@ -417,6 +446,21 @@ public class ModBlocks {
                     .strength(3f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> BLUE_STEEL_BLOCK = registerBlock("blue_steel_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> GALLIUM_BLOCK = registerBlock("gallium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> TITANIUM_BLOCK = registerBlock("titanium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
 
     //Gem Blocks
     public static final DeferredBlock<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
@@ -455,6 +499,11 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
     public static final DeferredBlock<Block> RUBY_BLOCK = registerBlock("ruby_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> PERIDOT_BLOCK = registerBlock("peridot_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f)
                     .requiresCorrectToolForDrops()

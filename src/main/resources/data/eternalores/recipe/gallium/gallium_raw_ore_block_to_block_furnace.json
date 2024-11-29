@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "gallium_ingot",
+  "ingredient": {
+    "item": "eternalores:raw_gallium_block"
+  },
+  "result": {
+    "id": "eternalores:gallium_block"
+  }
+}

@@ -62,6 +62,10 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
                     .add(ModBlocks.ZINC_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get())
+                    .add(ModBlocks.GALLIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.PERIDOT_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get())
 
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
@@ -86,6 +90,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.BRASS_BLOCK.get())
                     .add(ModBlocks.ZINC_BLOCK.get())
                     .add(ModBlocks.STEEL_BLOCK.get())
+                    .add(ModBlocks.BLUE_STEEL_BLOCK.get())
+                    .add(ModBlocks.GALLIUM_BLOCK.get())
+                    .add(ModBlocks.TITANIUM_BLOCK.get())
 
                     //GEM BLOCKS
                     .add(ModBlocks.SAPPHIRE_BLOCK.get())
@@ -96,6 +103,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.ONYX_BLOCK.get())
                     .add(ModBlocks.NITER_BLOCK.get())
                     .add(ModBlocks.RUBY_BLOCK.get())
+                    .add(ModBlocks.PERIDOT_BLOCK.get())
 
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
@@ -109,7 +117,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.SULFUR_BLOCK.get())
                     .add(ModBlocks.RAW_TIN_BLOCK.get())
                     .add(ModBlocks.RAW_URANIUM_BLOCK.get())
-                    .add(ModBlocks.RAW_ZINC_BLOCK.get());
+                    .add(ModBlocks.RAW_ZINC_BLOCK.get())
+                    .add(ModBlocks.RAW_GALLIUM_BLOCK.get());
 
             tag(BlockTags.NEEDS_IRON_TOOL)
                     //ORE BLOCKS
@@ -143,6 +152,10 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
                     .add(ModBlocks.ZINC_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get())
+                    .add(ModBlocks.GALLIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.PERIDOT_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get())
 
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
@@ -167,6 +180,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.BRASS_BLOCK.get())
                     .add(ModBlocks.ZINC_BLOCK.get())
                     .add(ModBlocks.STEEL_BLOCK.get())
+                    .add(ModBlocks.BLUE_STEEL_BLOCK.get())
+                    .add(ModBlocks.GALLIUM_BLOCK.get())
+                    .add(ModBlocks.TITANIUM_BLOCK.get())
 
                     //GEM BLOCKS
                     .add(ModBlocks.SAPPHIRE_BLOCK.get())
@@ -177,6 +193,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.ONYX_BLOCK.get())
                     .add(ModBlocks.NITER_BLOCK.get())
                     .add(ModBlocks.RUBY_BLOCK.get())
+                    .add(ModBlocks.PERIDOT_BLOCK.get())
 
                     //RAW ORE BLOCKS
                     .add(ModBlocks.RAW_ALUMINUM_BLOCK.get())
@@ -190,6 +207,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.SULFUR_BLOCK.get())
                     .add(ModBlocks.RAW_TIN_BLOCK.get())
                     .add(ModBlocks.RAW_URANIUM_BLOCK.get())
+                    .add(ModBlocks.RAW_GALLIUM_BLOCK.get())
                     .add(ModBlocks.RAW_ZINC_BLOCK.get());
 
             tag(BlockTags.NEEDS_DIAMOND_TOOL)

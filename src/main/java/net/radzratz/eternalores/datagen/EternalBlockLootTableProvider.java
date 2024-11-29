@@ -50,6 +50,9 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CONSTANTAN_BLOCK.get());
         dropSelf(ModBlocks.BRASS_BLOCK.get());
         dropSelf(ModBlocks.ZINC_BLOCK.get());
+        dropSelf(ModBlocks.BLUE_STEEL_BLOCK.get());
+        dropSelf(ModBlocks.GALLIUM_BLOCK.get());
+        dropSelf(ModBlocks.TITANIUM_BLOCK.get());
 
         //GEM BLOCKS
         dropSelf(ModBlocks.SAPPHIRE_BLOCK.get());
@@ -60,6 +63,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.ONYX_BLOCK.get());
         dropSelf(ModBlocks.NITER_BLOCK.get());
         dropSelf(ModBlocks.RUBY_BLOCK.get());
+        dropSelf(ModBlocks.PERIDOT_BLOCK.get());
 
         //RAW ORE BLOCKS
         dropSelf(ModBlocks.RAW_ALUMINUM_BLOCK.get());
@@ -74,6 +78,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.RAW_TIN_BLOCK.get());
         dropSelf(ModBlocks.RAW_URANIUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_ZINC_BLOCK.get());
+        dropSelf(ModBlocks.RAW_GALLIUM_BLOCK.get());
 
         //ORE BLOCK TO RAW ORE/GEM
         //ALUMINUM ORE BLOCKS
@@ -124,6 +129,10 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.ZINC_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.ZINC_ORE_BLOCK.get(), Moditems.RAW_ZINC.get(),1,5));
         add(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get(), Moditems.RAW_ZINC.get(),1,5));
 
+        //GALLIUM ORE BLOCKS
+        add(ModBlocks.GALLIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.GALLIUM_ORE_BLOCK.get(), Moditems.RAW_GALLIUM.get(),1,3));
+        add(ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get(), Moditems.RAW_GALLIUM.get(),1,3));
+
         //GEMS
         //FLUORITE TO GEM
         add(ModBlocks.FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.FLUORITE_ORE_BLOCK.get(), Moditems.FLUORITE.get(), 1,3));
@@ -156,6 +165,10 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //RUBY TO GEM
         add(ModBlocks.RUBY_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.RUBY_ORE_BLOCK.get(), Moditems.GEM_RUBY.get(), 1,3));
         add(ModBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get(), Moditems.GEM_RUBY.get(),1,3));
+
+        //PERIDOT TO GEM
+        add(ModBlocks.PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.PERIDOT_ORE_BLOCK.get(), Moditems.GEM_PERIDOT.get(), 1,3));
+        add(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), Moditems.GEM_PERIDOT.get(),1,3));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

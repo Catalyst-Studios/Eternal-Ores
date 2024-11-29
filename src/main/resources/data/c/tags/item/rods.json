@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "eternalores:rod_aluminum",
+    "eternalores:rod_blue_steel",
     "eternalores:rod_bronze",
     "eternalores:rod_brass",
     "eternalores:rod_cobalt",
@@ -9,6 +10,7 @@
     "eternalores:rod_copper",
     "eternalores:rod_electrum",
     "eternalores:rod_enderium",
+    "eternalores:rod_gallium",
     "eternalores:rod_gold",
     "eternalores:rod_graphite",
     "eternalores:rod_invar",
@@ -25,6 +27,7 @@
     "eternalores:rod_silver",
     "eternalores:rod_steel",
     "eternalores:rod_tin",
+    "eternalores:rod_titanium",
     "eternalores:rod_ultimatitanium",
     "eternalores:rod_uranium",
     "eternalores:rod_zinc"

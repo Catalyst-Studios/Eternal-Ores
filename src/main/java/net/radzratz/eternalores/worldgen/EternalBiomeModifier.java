@@ -37,6 +37,10 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_FLUORITE_ORE = registerKey("add_fluorite_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_FLUORITE_ORE = registerKey("add_nether_fluorite_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_FLUORITE_ORE = registerKey("add_end_fluorite_ore");
+    //Gallium
+    public static final ResourceKey<BiomeModifier> ADD_GALLIUM_ORE = registerKey("add_gallium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_GALLIUM_ORE = registerKey("add_nether_gallium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_GALLIUM_ORE = registerKey("add_end_gallium_ore");
     //Lead
     public static final ResourceKey<BiomeModifier> ADD_LEAD_ORE = registerKey("add_lead_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_LEAD_ORE = registerKey("add_nether_lead_ore");
@@ -57,6 +61,10 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_OSMIUM_ORE = registerKey("add_osmium_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_OSMIUM_ORE = registerKey("add_nether_osmium_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_OSMIUM_ORE = registerKey("add_end_osmium_ore");
+    //Peridot
+    public static final ResourceKey<BiomeModifier> ADD_PERIDOT_ORE = registerKey("add_peridot_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_PERIDOT_ORE = registerKey("add_nether_peridot_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_PERIDOT_ORE = registerKey("add_end_peridot_ore");
     //Platinum
     public static final ResourceKey<BiomeModifier> ADD_PLATINUM_ORE = registerKey("add_platinum_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_PLATINUM_ORE = registerKey("add_nether_platinum_ore");
@@ -134,6 +142,12 @@ public class EternalBiomeModifier {
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.FLUORITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
+        //Gallium
+        context.register(ADD_GALLIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.GALLIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
         //Lead
         context.register(ADD_LEAD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
@@ -162,6 +176,12 @@ public class EternalBiomeModifier {
         context.register(ADD_OSMIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.OSMIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Peridot
+        context.register(ADD_PERIDOT_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.PERIDOT_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Platinum

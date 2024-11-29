@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "eternalores:aluminum_ingot",
+    "eternalores:blue_steel_ingot",
     "eternalores:brass_ingot",
     "eternalores:bronze_ingot",
     "eternalores:cobalt_ingot",
@@ -10,6 +11,7 @@
     "eternalores:eternal_dark_ingot",
     "eternalores:eternal_light_ingot",
     "eternalores:enderium_ingot",
+    "eternalores:gallium_ingot",
     "eternalores:graphite_ingot",
     "eternalores:invar_ingot",
     "eternalores:lead_ingot",
@@ -23,6 +25,7 @@
     "eternalores:signalum_ingot",
     "eternalores:steel_ingot",
     "eternalores:tin_ingot",
+    "eternalores:titanium_ingot",
     "eternalores:ultimatitanium_ingot",
     "eternalores:uranium_ingot",
     "eternalores:zinc_ingot"

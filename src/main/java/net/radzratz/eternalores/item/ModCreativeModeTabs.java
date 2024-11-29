@@ -29,11 +29,13 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(ModBlocks.CINNABAR_ORE_BLOCK);
                     output.accept(ModBlocks.COBALT_ORE_BLOCK);
                     output.accept(ModBlocks.FLUORITE_ORE_BLOCK);
+                    output.accept(ModBlocks.GALLIUM_ORE_BLOCK);
                     output.accept(ModBlocks.LEAD_ORE_BLOCK);
                     output.accept(ModBlocks.NICKEL_ORE_BLOCK);
                     output.accept(ModBlocks.NITER_ORE_BLOCK);
                     output.accept(ModBlocks.ONYX_ORE_BLOCK);
                     output.accept(ModBlocks.OSMIUM_ORE_BLOCK);
+                    output.accept(ModBlocks.PERIDOT_ORE_BLOCK);
                     output.accept(ModBlocks.PLATINUM_ORE_BLOCK);
                     output.accept(ModBlocks.PLUTONIUM_ORE_BLOCK);
                     output.accept(ModBlocks.RUBY_ORE_BLOCK);
@@ -50,11 +52,13 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK);
+                    output.accept(ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_NICKEL_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_NITER_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_ONYX_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK);
+                    output.accept(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_RUBY_ORE_BLOCK);
@@ -69,6 +73,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     //RAW ORE BLOCKS
                     output.accept(ModBlocks.RAW_ALUMINUM_BLOCK);
                     output.accept(ModBlocks.RAW_COBALT_BLOCK);
+                    output.accept(ModBlocks.RAW_GALLIUM_BLOCK);
                     output.accept(ModBlocks.RAW_LEAD_BLOCK);
                     output.accept(ModBlocks.RAW_NICKEL_BLOCK);
                     output.accept(ModBlocks.RAW_OSMIUM_BLOCK);
@@ -83,6 +88,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(ModBlocks.ALUMINUM_BLOCK);
                     output.accept(ModBlocks.AMBER_BLOCK);
                     output.accept(ModBlocks.APATITE_BLOCK);
+                    output.accept(ModBlocks.BLUE_STEEL_BLOCK);
                     output.accept(ModBlocks.BRASS_BLOCK);
                     output.accept(ModBlocks.BRONZE_BLOCK);
                     output.accept(ModBlocks.CINNABAR_BLOCK);
@@ -91,6 +97,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(ModBlocks.ELECTRUM_BLOCK);
                     output.accept(ModBlocks.ENDERIUM_BLOCK);
                     output.accept(ModBlocks.FLUORITE_BLOCK);
+                    output.accept(ModBlocks.GALLIUM_BLOCK);
                     output.accept(ModBlocks.GRAPHITE_BLOCK);
                     output.accept(ModBlocks.INVAR_BLOCK);
                     output.accept(ModBlocks.LEAD_BLOCK);
@@ -99,19 +106,23 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(ModBlocks.NITER_BLOCK);
                     output.accept(ModBlocks.ONYX_BLOCK);
                     output.accept(ModBlocks.OSMIUM_BLOCK);
+                    output.accept(ModBlocks.PERIDOT_BLOCK);
                     output.accept(ModBlocks.PLATINUM_BLOCK);
+                    output.accept(ModBlocks.PLUTONIUM_BLOCK);
                     output.accept(ModBlocks.RUBY_BLOCK);
                     output.accept(ModBlocks.SAPPHIRE_BLOCK);
                     output.accept(ModBlocks.SIGNALUM_BLOCK);
                     output.accept(ModBlocks.SILVER_BLOCK);
                     output.accept(ModBlocks.STEEL_BLOCK);
                     output.accept(ModBlocks.TIN_BLOCK);
+                    output.accept(ModBlocks.TITANIUM_BLOCK);
                     output.accept(ModBlocks.ULTIMATITANIUM_BLOCK);
                     output.accept(ModBlocks.URANIUM_BLOCK);
                     output.accept(ModBlocks.ZINC_BLOCK);
                     //RAW ORES
                     output.accept(Moditems.RAW_ALUMINUM);
                     output.accept(Moditems.RAW_COBALT);
+                    output.accept(Moditems.RAW_GALLIUM);
                     output.accept(Moditems.RAW_LEAD);
                     output.accept(Moditems.RAW_NICKEL);
                     output.accept(Moditems.RAW_OSMIUM);
@@ -125,6 +136,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.RAW_ZINC);
                     //INGOTS
                     output.accept(Moditems.ALUMINUM_INGOT);
+                    output.accept(Moditems.BLUE_STEEL_INGOT);
                     output.accept(Moditems.BRASS_INGOT);
                     output.accept(Moditems.BRONZE_INGOT);
                     output.accept(Moditems.COBALT_INGOT);
@@ -133,6 +145,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.ETERNAL_DARK_INGOT);
                     output.accept(Moditems.ETERNAL_LIGHT_INGOT);
                     output.accept(Moditems.ENDERIUM_INGOT);
+                    output.accept(Moditems.GALLIUM_INGOT);
                     output.accept(Moditems.GRAPHITE_INGOT);
                     output.accept(Moditems.INVAR_INGOT);
                     output.accept(Moditems.LEAD_INGOT);
@@ -146,11 +159,13 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.SILVER_INGOT);
                     output.accept(Moditems.STEEL_INGOT);
                     output.accept(Moditems.TIN_INGOT);
+                    output.accept(Moditems.TITANIUM_INGOT);
                     output.accept(Moditems.ULTIMATITANIUM_INGOT);
                     output.accept(Moditems.URANIUM_INGOT);
                     output.accept(Moditems.ZINC_INGOT);
                     //NUGGETS
                     output.accept(Moditems.ALUMINUM_NUGGET);
+                    output.accept(Moditems.BLUE_STEEL_NUGGET);
                     output.accept(Moditems.BRASS_NUGGET);
                     output.accept(Moditems.BRONZE_NUGGET);
                     output.accept(Moditems.COBALT_NUGGET);
@@ -158,6 +173,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.COPPER_NUGGET);
                     output.accept(Moditems.ELECTRUM_NUGGET);
                     output.accept(Moditems.ENDERIUM_NUGGET);
+                    output.accept(Moditems.GALLIUM_NUGGET);
                     output.accept(Moditems.GRAPHITE_NUGGET);
                     output.accept(Moditems.INVAR_NUGGET);
                     output.accept(Moditems.LEAD_NUGGET);
@@ -171,6 +187,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.SILVER_NUGGET);
                     output.accept(Moditems.STEEL_NUGGET);
                     output.accept(Moditems.TIN_NUGGET);
+                    output.accept(Moditems.TITANIUM_NUGGET);
                     output.accept(Moditems.ULTIMATITANIUM_NUGGET);
                     output.accept(Moditems.URANIUM_NUGGET);
                     output.accept(Moditems.ZINC_NUGGET);
@@ -191,29 +208,37 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.ALUMINUM_DUST);
                     output.accept(Moditems.AMBER_DUST);
                     output.accept(Moditems.APATITE_DUST);
+                    output.accept(Moditems.BLUE_STEEL_DUST);
                     output.accept(Moditems.BRASS_DUST);
                     output.accept(Moditems.BRONZE_DUST);
                     output.accept(Moditems.COAL_DUST);
                     output.accept(Moditems.COBALT_DUST);
                     output.accept(Moditems.CONSTANTAN_DUST);
                     output.accept(Moditems.COPPER_DUST);
+                    output.accept(Moditems.DIAMOND_DUST);
                     output.accept(Moditems.ELECTRUM_DUST);
+                    output.accept(Moditems.EMERALD_DUST);
                     output.accept(Moditems.ENDER_DUST);
                     output.accept(Moditems.ENDERIUM_DUST);
                     output.accept(Moditems.FLUORITE_DUST);
+                    output.accept(Moditems.GALLIUM_DUST);
                     output.accept(Moditems.GOLD_DUST);
                     output.accept(Moditems.GRAPHITE_DUST);
                     output.accept(Moditems.INVAR_DUST);
                     output.accept(Moditems.IRON_DUST);
+                    output.accept(Moditems.LAPIS_LAZULI_DUST);
                     output.accept(Moditems.LEAD_DUST);
                     output.accept(Moditems.LUMIUM_DUST);
                     output.accept(Moditems.NETHERITE_DUST);
                     output.accept(Moditems.NICKEL_DUST);
                     output.accept(Moditems.NITER_DUST);
+                    output.accept(Moditems.OBSIDIAN_DUST);
                     output.accept(Moditems.ONYX_DUST);
                     output.accept(Moditems.OSMIUM_DUST);
+                    output.accept(Moditems.PERIDOT_DUST);
                     output.accept(Moditems.PLATINUM_DUST);
                     output.accept(Moditems.PLUTONIUM_DUST);
+                    output.accept(Moditems.QUARTZ_DUST);
                     output.accept(Moditems.RUBY_DUST);
                     output.accept(Moditems.SAPPHIRE_DUST);
                     output.accept(Moditems.SIGNALUM_DUST);
@@ -221,11 +246,13 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.SULFUR_DUST);
                     output.accept(Moditems.STEEL_DUST);
                     output.accept(Moditems.TIN_DUST);
+                    output.accept(Moditems.TITANIUM_DUST);
                     output.accept(Moditems.ULTIMATITANIUM_DUST);
                     output.accept(Moditems.URANIUM_DUST);
                     output.accept(Moditems.ZINC_DUST);
                     //PLATES
                     output.accept(Moditems.PLATE_ALUMINUM);
+                    output.accept(Moditems.PLATE_BLUE_STEEL);
                     output.accept(Moditems.PLATE_BRASS);
                     output.accept(Moditems.PLATE_BRONZE);
                     output.accept(Moditems.PLATE_COBALT);
@@ -233,6 +260,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.PLATE_COPPER);
                     output.accept(Moditems.PLATE_ELECTRUM);
                     output.accept(Moditems.PLATE_ENDERIUM);
+                    output.accept(Moditems.PLATE_GALLIUM);
                     output.accept(Moditems.PLATE_GOLD);
                     output.accept(Moditems.PLATE_GRAPHITE);
                     output.accept(Moditems.PLATE_INVAR);
@@ -249,11 +277,13 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.PLATE_SILVER);
                     output.accept(Moditems.PLATE_STEEL);
                     output.accept(Moditems.PLATE_TIN);
+                    output.accept(Moditems.PLATE_TITANIUM);
                     output.accept(Moditems.PLATE_ULTIMATITANIUM);
                     output.accept(Moditems.PLATE_URANIUM);
                     output.accept(Moditems.PLATE_ZINC);
                     //RODS
                     output.accept(Moditems.ROD_ALUMINUM);
+                    output.accept(Moditems.ROD_BLUE_STEEL);
                     output.accept(Moditems.ROD_BRASS);
                     output.accept(Moditems.ROD_BRONZE);
                     output.accept(Moditems.ROD_COBALT);
@@ -261,6 +291,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.ROD_COPPER);
                     output.accept(Moditems.ROD_ELECTRUM);
                     output.accept(Moditems.ROD_ENDERIUM);
+                    output.accept(Moditems.ROD_GALLIUM);
                     output.accept(Moditems.ROD_GOLD);
                     output.accept(Moditems.ROD_GRAPHITE);
                     output.accept(Moditems.ROD_INVAR);
@@ -277,6 +308,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.ROD_SILVER);
                     output.accept(Moditems.ROD_STEEL);
                     output.accept(Moditems.ROD_TIN);
+                    output.accept(Moditems.ROD_TITANIUM);
                     output.accept(Moditems.ROD_ULTIMATITANIUM);
                     output.accept(Moditems.ROD_URANIUM);
                     output.accept(Moditems.ROD_ZINC);

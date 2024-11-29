@@ -68,11 +68,11 @@ Acerca
 El mod Eternal Ores agrega muchos ítems bien conocidos en un solo mod, como lingotes, engranajes, varillas, pepitas, placas, minerales 
 en bruto y bloques de mineral.
 
-Basado en FTB Materials, AllTheOres y Emendatus Enigmatica, Eternal Items es compatible con estos mods, utilizando las etiquetas 
+Basado en FTB Materials, AllTheOres y Emendatus Enigmatica, Eternal Ores es compatible con estos mods, utilizando las etiquetas 
 correctas para una integración adecuada, al mismo tiempo que añade nuevos materiales y minerales para los Modpacks de Catalyst Studios. 
 También incluye generación de minerales compatible con biomas tanto de mods como de Minecraft Vanilla.
 
-Se recomienda encarecidamente el uso de Almost Unified para unificar los minerales y lingotes de Eternal Items con los de otros mods. 
+Se recomienda encarecidamente el uso de Almost Unified para unificar los minerales y lingotes de Eternal Ores con los de otros mods. 
 Además, se recomienda KubeJS si deseas evitar recetas duplicadas para un mismo ítem o tipos específicos de minerales y materiales.
 
 ¡Este mod se puede utilizar en cualquier modpack!

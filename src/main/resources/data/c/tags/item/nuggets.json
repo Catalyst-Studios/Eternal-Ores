@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "eternalores:aluminum_nugget",
+    "eternalores:blue_steel_nugget",
     "eternalores:brass_nugget",
     "eternalores:bronze_nugget",
     "eternalores:cobalt_nugget",
@@ -9,6 +10,7 @@
     "eternalores:copper_nugget",
     "eternalores:electrum_nugget",
     "eternalores:enderium_nugget",
+    "eternalores:gallium_nugget",
     "eternalores:graphite_nugget",
     "eternalores:invar_nugget",
     "eternalores:lead_nugget",
@@ -22,6 +24,7 @@
     "eternalores:silver_nugget",
     "eternalores:steel_nugget",
     "eternalores:tin_nugget",
+    "eternalores:titanium_nugget",
     "eternalores:ultimatitanium_nugget",
     "eternalores:uranium_nugget",
     "eternalores:zinc_nugget"

@@ -40,6 +40,10 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> FLUORITE_ORE_PLACED_KEY = registerKey("fluorite_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_FLUORITE_ORE_PLACED_KEY = registerKey("nether_fluorite_ore_placed");
     public static final ResourceKey<PlacedFeature> END_FLUORITE_ORE_PLACED_KEY = registerKey("end_fluorite_ore_placed");
+    //Gallium
+    public static final ResourceKey<PlacedFeature> GALLIUM_ORE_PLACED_KEY = registerKey("gallium_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_GALLIUM_ORE_PLACED_KEY = registerKey("nether_gallium_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_GALLIUM_ORE_PLACED_KEY = registerKey("end_gallium_ore_placed");
     //Lead
     public static final ResourceKey<PlacedFeature> LEAD_ORE_PLACED_KEY = registerKey("lead_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_LEAD_ORE_PLACED_KEY = registerKey("nether_lead_ore_placed");
@@ -60,6 +64,10 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> OSMIUM_ORE_PLACED_KEY = registerKey("osmium_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_OSMIUM_ORE_PLACED_KEY = registerKey("nether_osmium_ore_placed");
     public static final ResourceKey<PlacedFeature> END_OSMIUM_ORE_PLACED_KEY = registerKey("end_osmium_ore_placed");
+    //Peridot
+    public static final ResourceKey<PlacedFeature> PERIDOT_ORE_PLACED_KEY = registerKey("peridot_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_PERIDOT_ORE_PLACED_KEY = registerKey("nether_peridot_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_PERIDOT_ORE_PLACED_KEY = registerKey("end_peridot_ore_placed");
     //Platinum
     public static final ResourceKey<PlacedFeature> PLATINUM_ORE_PLACED_KEY = registerKey("platinum_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_PLATINUM_ORE_PLACED_KEY = registerKey("nether_platinum_ore_placed");
@@ -166,6 +174,17 @@ public class EternalPlacedFeatures {
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
+    //GALLIUM
+    register(context, GALLIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_GALLIUM_ORE_KEY),
+            EternalOrePlacement.commonOrePlacement(16,
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+    //register(context, NETHER_GALLIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_GALLIUM_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+    //register(context, END_GALLIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_GALLIUM_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
     //LEAD
     register(context, LEAD_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_LEAD_ORE_KEY),
             EternalOrePlacement.commonOrePlacement(16,
@@ -218,6 +237,17 @@ public class EternalPlacedFeatures {
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, END_OSMIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_OSMIUM_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+    //PERIDOT
+    register(context, PERIDOT_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_PERIDOT_ORE_KEY),
+            EternalOrePlacement.commonOrePlacement(16,
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(64))));
+    //register(context, NETHER_PERIDOT_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_PERIDOT_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+    //register(context, END_PERIDOT_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_PERIDOT_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 

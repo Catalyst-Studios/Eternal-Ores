@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-26T21:17:21.8390781	Tags for minecraft:block mod id eternalores
-4ab8d5a50c3bfb865c3726c1785e41286e593395 data/minecraft/tags/block/mineable/pickaxe.json
+// 1.21.1	2024-11-28T19:55:35.4264841	Tags for minecraft:block mod id eternalores
+799d847700acd811a73b0183b89e838192222e30 data/minecraft/tags/block/mineable/pickaxe.json
 5e28a27c841a1ca5ab67fc4048a07de9568f1b40 data/minecraft/tags/block/needs_diamond_tool.json
-310f4de1d5b3cf002f130732cd4e919dc8657474 data/minecraft/tags/block/needs_iron_tool.json
+74576d64b9c4db96d1483aed19aba6470f2de135 data/minecraft/tags/block/needs_iron_tool.json

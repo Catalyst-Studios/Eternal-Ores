@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "eternalores:aluminum_dust",
+    "eternalores:blue_steel_dust",
     "eternalores:brass_dust",
     "eternalores:bronze_dust",
     "eternalores:cobalt_dust",
@@ -9,6 +10,7 @@
     "eternalores:copper_dust",
     "eternalores:electrum_dust",
     "eternalores:enderium_dust",
+    "eternalores:gallium_dust",
     "eternalores:gold_dust",
     "eternalores:invar_dust",
     "eternalores:iron_dust",
@@ -22,6 +24,7 @@
     "eternalores:silver_dust",
     "eternalores:signalum_dust",
     "eternalores:tin_dust",
+    "eternalores:titanium_dust",
     "eternalores:ultimatitanium_dust",
     "eternalores:uranium_dust",
     "eternalores:zinc_dust"

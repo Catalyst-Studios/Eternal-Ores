@@ -2,12 +2,14 @@
   "replace": false,
   "values": [
     "eternalores:aluminum_block",
+    "eternalores:blue_steel_block",
     "eternalores:brass_block",
     "eternalores:bronze_block",
     "eternalores:cobalt_block",
     "eternalores:constantan_block",
     "eternalores:electrum_block",
     "eternalores:enderium_block",
+    "eternalores:gallium_block",
     "eternalores:graphite_block",
     "eternalores:invar_block",
     "eternalores:lead_block",
@@ -20,6 +22,7 @@
     "eternalores:signalum_block",
     "eternalores:steel_block",
     "eternalores:tin_block",
+    "eternalores:titanium_block",
     "eternalores:ultimatitanium_block",
     "eternalores:uranium_block",
     "eternalores:zinc_block"
