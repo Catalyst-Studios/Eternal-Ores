@@ -35,7 +35,9 @@
   "item.eternalores.brass_ingot": "Lingote de Latón",
   "item.eternalores.blue_steel_ingot": "Lingote de Acero Azúl",
   "item.eternalores.gallium_ingot": "Lingote de Galio",
-  "item.eternalores.titanium_ingot": "Lingot de Titanio",
+  "item.eternalores.titanium_ingot": "Lingote de Titanio",
+  "item.eternalores.pewter_ingot": "Lingote de Peltre",
+  "item.eternalores.rose_gold_ingot": "Lingote de Oro Rosa",
 
   "item.eternalores.aluminum_nugget": "Pepita de Aluminio",
   "item.eternalores.cobalt_nugget": "Pepita de Cobalt",
@@ -64,6 +66,8 @@
   "item.eternalores.blue_steel_nugget": "Pepita de Acero Azúl",
   "item.eternalores.gallium_nugget": "Pepita de Galio",
   "item.eternalores.titanium_nugget": "Pepita de Titanio",
+  "item.eternalores.pewter_nugget": "Pepita de Peltre",
+  "item.eternalores.oro_rosa_nugget": "Pepita de Oro Rosa",
 
   "item.eternalores.rod_aluminum": "Vara de Aluminio",
   "item.eternalores.rod_cobalt": "Vara de Cobalt",
@@ -95,6 +99,7 @@
   "item.eternalores.rod_blue_steel": "Vara de Acero Azúl",
   "item.eternalores.rod_gallium": "Vara de Galio",
   "item.eternalores.rod_titanium": "Vara de Titanio",
+  "item.eternalores.rod_rose_gold": "Vara de Oro Rosa",
 
   "item.eternalores.plate_aluminum": "Placa de Aluminio",
   "item.eternalores.plate_cobalt": "Placa de Cobalto",
@@ -126,6 +131,7 @@
   "item.eternalores.plate_blue_steel": "Placa de Acero Azúl",
   "item.eternalores.plate_gallium": "Placa de Galio",
   "item.eternalores.plate_titanium": "Placa de Titanio",
+  "item.eternalores.plate_rose_gold": "Placa de Oro Rosa",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
 
@@ -189,6 +195,10 @@
   "item.eternalores.titanium_dust": "Polvo de Titanio",
   "item.eternalores.peridot_dust": "Polvo de Peridoto",
   "item.eternalores.obsidian_dust": "Polvo de Obsidiana",
+  "item.eternalores.endstone_dust": "Polvo de Piedra del End",
+  "item.eternalores.netherrack_dust": "Polvo de Netherrack",
+  "item.eternalores.pewter_dust": "Polvo de Peltre",
+  "item.eternalores.rose_gold_dust": "Polvo de Oro Rosa",
 
   "item.eternalores.gem_obsidian_shard": "Fragmento de Obsidiana",
   "item.eternalores.gem_onyx": "Onix",
@@ -298,6 +308,8 @@
   "block.eternalores.gallium_block": "Bloque de Galio",
   "block.eternalores.peridot_block": "Bloque de Peridoto",
   "block.eternalores.titanium_block": "Bloque de Titanio",
+  "block.eternalores.pewter_block": "Bloque de Peltre",
+  "block.eternalores.rose_gold_block": "Bloque de Oro Rosa",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }

@@ -71,6 +71,9 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.BLUE_STEEL_INGOT.get());
         basicItem(Moditems.GALLIUM_INGOT.get());
         basicItem(Moditems.TITANIUM_INGOT.get());
+        basicItem(Moditems.PEWTER_INGOT.get());
+        basicItem(Moditems.ROSE_GOLD_INGOT.get());
+        basicItem(Moditems.BRITANNIA_SILVER_INGOT.get());
 
         //NUGGETS
         basicItem(Moditems.ALUMINUM_NUGGET.get());
@@ -100,6 +103,9 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.BLUE_STEEL_NUGGET.get());
         basicItem(Moditems.GALLIUM_NUGGET.get());
         basicItem(Moditems.TITANIUM_NUGGET.get());
+        basicItem(Moditems.PEWTER_NUGGET.get());
+        basicItem(Moditems.ROSE_GOLD_NUGGET.get());
+        basicItem(Moditems.BRITANNIA_SILVER_NUGGET.get());
 
         //DUSTS
         basicItem(Moditems.ALUMINUM_DUST.get());
@@ -148,6 +154,11 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.QUARTZ_DUST.get());
         basicItem(Moditems.PERIDOT_DUST.get());
         basicItem(Moditems.OBSIDIAN_DUST.get());
+        basicItem(Moditems.NETHERRACK_DUST.get());
+        basicItem(Moditems.ENDSTONE_DUST.get());
+        basicItem(Moditems.PEWTER_DUST.get());
+        basicItem(Moditems.ROSE_GOLD_DUST.get());
+        basicItem(Moditems.BRITANNIA_SILVER_DUST.get());
 
         //RODS
         handheldItem(Moditems.ROD_ALUMINUM);
@@ -180,6 +191,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         handheldItem(Moditems.ROD_BLUE_STEEL);
         handheldItem(Moditems.ROD_GALLIUM);
         handheldItem(Moditems.ROD_TITANIUM);
+        handheldItem(Moditems.ROD_ROSE_GOLD);
 
         //PLATES
         basicItem(Moditems.PLATE_ALUMINUM.get());
@@ -212,6 +224,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.PLATE_BLUE_STEEL.get());
         basicItem(Moditems.PLATE_GALLIUM.get());
         basicItem(Moditems.PLATE_TITANIUM.get());
+        basicItem(Moditems.PLATE_ROSE_GOLD.get());
 
         //GEARS
         basicItem(Moditems.ULTIMATE_GEAR.get());

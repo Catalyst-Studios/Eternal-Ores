@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/gold"
+    },
+    {
+      "tag": "c:dusts/gold"
+    },
+    {
+      "tag": "c:dusts/gold"
+    },
+    {
+      "tag": "c:dusts/copper"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:rose_gold_dust"
+  }
+}

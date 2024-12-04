@@ -86,6 +86,12 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PEWTER_INGOT = ITEMS.register("pewter_ingot",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROSE_GOLD_INGOT = ITEMS.register("rose_gold_ingot",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRITANNIA_SILVER_INGOT = ITEMS.register("britannia_silver_ingot",
+            ()-> new Item(new Item.Properties()));
 
     //Nuggets
     public static final DeferredItem<Item> ALUMINUM_NUGGET = ITEMS.register("aluminum_nugget",
@@ -141,6 +147,12 @@ public class Moditems {
     public static final DeferredItem<Item> GALLIUM_NUGGET = ITEMS.register("gallium_nugget",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PEWTER_NUGGET = ITEMS.register("pewter_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROSE_GOLD_NUGGET = ITEMS.register("rose_gold_nugget",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRITANNIA_SILVER_NUGGET = ITEMS.register("britannia_silver_nugget",
             ()-> new Item(new Item.Properties()));
 
     //Rods
@@ -204,6 +216,8 @@ public class Moditems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ROD_TITANIUM = ITEMS.register("rod_titanium",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROD_ROSE_GOLD = ITEMS.register("rod_rose_gold",
+            ()-> new Item(new Item.Properties()));
 
     //Plates
     public static final DeferredItem<Item> PLATE_ALUMINUM = ITEMS.register("plate_aluminum",
@@ -265,6 +279,8 @@ public class Moditems {
     public static final DeferredItem<Item> PLATE_GALLIUM = ITEMS.register("plate_gallium",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PLATE_TITANIUM = ITEMS.register("plate_titanium",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PLATE_ROSE_GOLD = ITEMS.register("plate_rose_gold",
             ()-> new Item(new Item.Properties()));
 
     //Gears
@@ -393,6 +409,16 @@ public class Moditems {
     public static final DeferredItem<Item> PERIDOT_DUST = ITEMS.register("peridot_dust",
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> OBSIDIAN_DUST = ITEMS.register("obsidian_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ENDSTONE_DUST = ITEMS.register("endstone_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> NETHERRACK_DUST = ITEMS.register("netherrack_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PEWTER_DUST = ITEMS.register("pewter_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ROSE_GOLD_DUST = ITEMS.register("rose_gold_dust",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRITANNIA_SILVER_DUST = ITEMS.register("britannia_silver_dust",
             ()-> new Item(new Item.Properties()));
 
     //Gems

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/silver"
+    },
+    {
+      "tag": "c:dusts/copper"
+    },
+    {
+      "tag": "c:dusts/tin"
+    },
+    {
+      "tag": "c:dusts/tin"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:pewter_dust"
+  }
+}

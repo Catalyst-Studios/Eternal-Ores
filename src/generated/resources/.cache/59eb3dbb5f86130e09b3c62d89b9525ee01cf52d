@@ -1,4 +1,4 @@
-// 1.21.1	2024-11-28T19:55:35.4214824	Loot Tables
+// 1.21.1	2024-12-03T23:42:20.8559322	Loot Tables
 7c29615ef61bc39400d3ae8fac7e6ce7a52c3073 data/eternalores/loot_table/blocks/aluminum_block.json
 5280c280d8a89ef453e6e13c1f54c6031d9d9eb4 data/eternalores/loot_table/blocks/aluminum_ore_block.json
 351caea42c6ba11c95dedb2047634525696cb814 data/eternalores/loot_table/blocks/amber_block.json
@@ -7,6 +7,7 @@ eb2fa4509e412cfd32785efc24adca553a2c8712 data/eternalores/loot_table/blocks/ambe
 c1701229d63221b330237018836818dd53491d0c data/eternalores/loot_table/blocks/apatite_ore_block.json
 27b3c9d5a30a73fef609e7ac4fb988eb5714ef9d data/eternalores/loot_table/blocks/blue_steel_block.json
 aab2635f51e358c9a052fadff1e6cdf6f12d9272 data/eternalores/loot_table/blocks/brass_block.json
+8c28315cb634139fd46584d527922038efcf983a data/eternalores/loot_table/blocks/britannia_silver_block.json
 6cd66acad66276528ed3e849d4eebade3585a3d8 data/eternalores/loot_table/blocks/bronze_block.json
 d9747c8bd5da7596edbdde18cbc571fe45c45c3a data/eternalores/loot_table/blocks/cinnabar_block.json
 da905c48a5bce1f3dda2173abf4f82da353e7ec6 data/eternalores/loot_table/blocks/cinnabar_ore_block.json
@@ -56,6 +57,7 @@ e7f2bae4835fe1b87e68f0f4874db1aa2362d4aa data/eternalores/loot_table/blocks/onyx
 690203bd0b6501167e4094e098009804c5211884 data/eternalores/loot_table/blocks/osmium_ore_block.json
 248dad581fc5eadcf776de4b972b066109c5ea2c data/eternalores/loot_table/blocks/peridot_block.json
 4b33cdc47d7b64ecf72a1a1360af1b20a6f52b8c data/eternalores/loot_table/blocks/peridot_ore_block.json
+e451aa43c3e2cbb0a97d0017c9166ddee1da2262 data/eternalores/loot_table/blocks/pewter_block.json
 4614b3795ce49d164911e69a04efb6d39a47f53f data/eternalores/loot_table/blocks/platinum_block.json
 c9a485ae3e9cb10be1ba9bf235c9cf3beab20fe7 data/eternalores/loot_table/blocks/platinum_ore_block.json
 2ae0b08873876a9d9f7b27d7f898f377c76d54b5 data/eternalores/loot_table/blocks/plutonium_block.json
@@ -72,6 +74,7 @@ ad27f7d07ed58ff561097cc9a416a37b9c72c26f data/eternalores/loot_table/blocks/raw_
 033ec671f3f4071722ab8863dca982d721c92cf9 data/eternalores/loot_table/blocks/raw_tin_block.json
 86eacb561bbd58d98da5793e4e8461798c65c071 data/eternalores/loot_table/blocks/raw_uranium_block.json
 0afeab30ba49a2838a212133cb5a6a4b661f45ee data/eternalores/loot_table/blocks/raw_zinc_block.json
+28f4859c40c360b8fcd3565433d445f7aa115abe data/eternalores/loot_table/blocks/rose_gold_block.json
 6fe4b0f9cf6bc010e887e2b8f623848d81de3f6a data/eternalores/loot_table/blocks/ruby_block.json
 6e9e3af8670892074580ff68f91845db34605a81 data/eternalores/loot_table/blocks/ruby_ore_block.json
 7b93021090f267578f9b4c128a853c998df98ffa data/eternalores/loot_table/blocks/sapphire_block.json

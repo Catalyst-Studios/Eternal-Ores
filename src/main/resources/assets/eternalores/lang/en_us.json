@@ -36,6 +36,8 @@
   "item.eternalores.blue_steel_ingot": "Blue Steel Ingot",
   "item.eternalores.gallium_ingot": "Gallium Ingot",
   "item.eternalores.titanium_ingot": "Titanium Ingot",
+  "item.eternalores.pewter_ingot": "Pewter Ingot",
+  "item.eternalores.rose_gold_ingot": "Rose Gold Ingot",
 
   "item.eternalores.aluminum_nugget": "Aluminum Nugget",
   "item.eternalores.cobalt_nugget": "Cobalt Nugget",
@@ -64,6 +66,8 @@
   "item.eternalores.blue_steel_nugget": "Blue Steel Nugget",
   "item.eternalores.gallium_nugget": "Gallium Nugget",
   "item.eternalores.titanium_nugget": "Titanium Nugget",
+  "item.eternalores.pewter_nugget": "Pewter Nugget",
+  "item.eternalores.rose_gold_nugget": "Rose Gold Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -95,6 +99,7 @@
   "item.eternalores.rod_blue_steel": "Blue Steel Rod",
   "item.eternalores.rod_gallium": "Gallium Rod",
   "item.eternalores.rod_titanium": "Titanium Rod",
+  "item.eternalores.rod_rose_gold": "Rose Gold Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -126,6 +131,7 @@
   "item.eternalores.plate_blue_steel": "Blue Steel Plate",
   "item.eternalores.plate_gallium": "Gallium Plate",
   "item.eternalores.plate_titanium": "Titanium Plate",
+  "item.eternalores.plate_rose_gold": "Rose Gold Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
 
@@ -189,6 +195,10 @@
   "item.eternalores.titanium_dust": "Titanium Dust",
   "item.eternalores.peridot_dust": "Peridot Dust",
   "item.eternalores.obsidian_dust": "Obsidian Dust",
+  "item.eternalores.endstone_dust": "Endstone Dust",
+  "item.eternalores.netherrack_dust": "Netherrack Dust",
+  "item.eternalores.pewter_dust": "Pewter Dust",
+  "item.eternalores.rose_gold_dust": "Rose Gold Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -298,6 +308,8 @@
   "block.eternalores.gallium_block": "Gallium Block",
   "block.eternalores.peridot_block": "Peridot Block",
   "block.eternalores.titanium_block": "Titanium Block",
+  "block.eternalores.pewter_block": "Pewter Block",
+  "block.eternalores.rose_gold_block": "Rose Gold Block",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }

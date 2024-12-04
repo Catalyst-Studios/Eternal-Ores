@@ -93,6 +93,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.BLUE_STEEL_BLOCK.get())
                     .add(ModBlocks.GALLIUM_BLOCK.get())
                     .add(ModBlocks.TITANIUM_BLOCK.get())
+                    .add(ModBlocks.PEWTER_BLOCK.get())
+                    .add(ModBlocks.ROSE_GOLD_BLOCK.get())
+                    .add(ModBlocks.BRITANNIA_SILVER_BLOCK.get())
 
                     //GEM BLOCKS
                     .add(ModBlocks.SAPPHIRE_BLOCK.get())
@@ -183,6 +186,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.BLUE_STEEL_BLOCK.get())
                     .add(ModBlocks.GALLIUM_BLOCK.get())
                     .add(ModBlocks.TITANIUM_BLOCK.get())
+                    .add(ModBlocks.PEWTER_BLOCK.get())
+                    .add(ModBlocks.ROSE_GOLD_BLOCK.get())
+                    .add(ModBlocks.BRITANNIA_SILVER_BLOCK.get())
 
                     //GEM BLOCKS
                     .add(ModBlocks.SAPPHIRE_BLOCK.get())

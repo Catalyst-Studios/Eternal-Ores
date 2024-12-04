@@ -40,6 +40,9 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.BLUE_STEEL_BLOCK);
         blockWithItem(ModBlocks.GALLIUM_BLOCK);
         blockWithItem(ModBlocks.TITANIUM_BLOCK);
+        blockWithItem(ModBlocks.PEWTER_BLOCK);
+        blockWithItem(ModBlocks.ROSE_GOLD_BLOCK);
+        blockWithItem(ModBlocks.BRITANNIA_SILVER_BLOCK);
 
         //GEM BLOCKS
         blockWithItem(ModBlocks.SAPPHIRE_BLOCK);
