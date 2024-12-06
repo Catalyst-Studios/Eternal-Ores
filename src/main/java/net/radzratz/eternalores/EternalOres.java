@@ -41,6 +41,7 @@ public class EternalOres
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        System.out.println("Registering Blocks and Items");
         Moditems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -58,6 +59,7 @@ public class EternalOres
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         System.out.println("Common setup is running.");
+        System.out.println("Checking on ModCompat class");
         ModCompatibility.checkOtherModsMekanism();
     }
 

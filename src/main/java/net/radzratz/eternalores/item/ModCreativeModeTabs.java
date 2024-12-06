@@ -69,6 +69,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
                     output.accept(ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK);
                     //NETHER ORES W.I.P
+                    output.accept(ModBlocks.OBSIDIAN_ORE_BLOCK);
                     //END ORES W.I.P
                     //RAW ORE BLOCKS
                     output.accept(ModBlocks.RAW_ALUMINUM_BLOCK);

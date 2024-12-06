@@ -139,6 +139,8 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         //PERIDOT
         blockWithItem(ModBlocks.PERIDOT_ORE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK);
+        //
+        blockWithItem(ModBlocks.OBSIDIAN_ORE_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

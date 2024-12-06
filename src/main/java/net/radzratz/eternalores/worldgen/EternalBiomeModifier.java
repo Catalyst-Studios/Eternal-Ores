@@ -61,6 +61,8 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_OSMIUM_ORE = registerKey("add_osmium_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_OSMIUM_ORE = registerKey("add_nether_osmium_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_OSMIUM_ORE = registerKey("add_end_osmium_ore");
+    //Obsidian
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_OBSIDIAN_ORE = registerKey("add_nether_obsidian_ore");
     //Peridot
     public static final ResourceKey<BiomeModifier> ADD_PERIDOT_ORE = registerKey("add_peridot_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_PERIDOT_ORE = registerKey("add_nether_peridot_ore");
@@ -170,6 +172,12 @@ public class EternalBiomeModifier {
         context.register(ADD_ONYX_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.ONYX_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Obsidian
+        context.register(ADD_NETHER_OBSIDIAN_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.OBSIDIAN_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Osmium

@@ -66,6 +66,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get())
                     .add(ModBlocks.PERIDOT_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get())
+                    .add(ModBlocks.OBSIDIAN_ORE_BLOCK.get())
 
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
@@ -123,10 +124,16 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.RAW_ZINC_BLOCK.get())
                     .add(ModBlocks.RAW_GALLIUM_BLOCK.get());
 
-            tag(BlockTags.NEEDS_IRON_TOOL)
-                    //ORE BLOCKS
+            tag(BlockTags.NEEDS_STONE_TOOL)
                     .add(ModBlocks.ALUMINUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get())
+                    .add(ModBlocks.TIN_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
+                    .add(ModBlocks.SULFUR_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get());
+
+            tag(BlockTags.NEEDS_IRON_TOOL)
+                    //ORE BLOCKS
                     .add(ModBlocks.AMBER_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_AMBER_ORE_BLOCK.get())
                     .add(ModBlocks.APATITE_ORE_BLOCK.get())
@@ -135,6 +142,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get())
                     .add(ModBlocks.FLUORITE_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get())
+                    .add(ModBlocks.LEAD_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
                     .add(ModBlocks.NICKEL_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get())
                     .add(ModBlocks.NITER_ORE_BLOCK.get())
@@ -147,10 +156,6 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get())
                     .add(ModBlocks.SAPPHIRE_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get())
-                    .add(ModBlocks.SULFUR_ORE_BLOCK.get())
-                    .add(ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
-                    .add(ModBlocks.TIN_ORE_BLOCK.get())
-                    .add(ModBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
                     .add(ModBlocks.SILVER_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
                     .add(ModBlocks.ZINC_ORE_BLOCK.get())
@@ -159,6 +164,10 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get())
                     .add(ModBlocks.PERIDOT_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get())
+                    .add(ModBlocks.URANIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get())
+                    .add(ModBlocks.PLATINUM_ORE_BLOCK.get())
+                    .add(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get())
 
                     //METAL BLOCKS
                     .add(ModBlocks.ALUMINUM_BLOCK.get())
@@ -219,14 +228,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(BlockTags.NEEDS_DIAMOND_TOOL)
                     .add(ModBlocks.COBALT_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get())
-                    .add(ModBlocks.LEAD_ORE_BLOCK.get())
-                    .add(ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
-                    .add(ModBlocks.PLATINUM_ORE_BLOCK.get())
-                    .add(ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get())
                     .add(ModBlocks.PLUTONIUM_ORE_BLOCK.get())
                     .add(ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get())
-                    .add(ModBlocks.URANIUM_ORE_BLOCK.get())
-                    .add(ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get());
+                    .add(ModBlocks.OBSIDIAN_ORE_BLOCK.get());
 
     }
 }

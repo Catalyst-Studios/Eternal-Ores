@@ -56,6 +56,8 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NITER_ORE_PLACED_KEY = registerKey("niter_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_NITER_ORE_PLACED_KEY = registerKey("nether_niter_ore_placed");
     public static final ResourceKey<PlacedFeature> END_NITER_ORE_PLACED_KEY = registerKey("end_niter_ore_placed");
+    //Obsidian
+    public static final ResourceKey<PlacedFeature> OBSIDIAN_ORE_PLACED_KEY = registerKey("obsidian_ore_placed");
     //Onyx
     public static final ResourceKey<PlacedFeature> ONYX_ORE_PLACED_KEY = registerKey("onyx_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_ONYX_ORE_PLACED_KEY = registerKey("nether_onyx_ore_placed");
@@ -217,6 +219,11 @@ public class EternalPlacedFeatures {
     //register(context, END_NICKEL_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_NICKEL_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+    //OBSIDIAN
+    register(context, OBSIDIAN_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_OBSIDIAN_ORE_KEY),
+             EternalOrePlacement.commonOrePlacement(12,
+                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(128))));
 
     //ONYX
     register(context, ONYX_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_ONYX_ORE_KEY),

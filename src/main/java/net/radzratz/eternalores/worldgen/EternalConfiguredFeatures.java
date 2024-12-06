@@ -5,10 +5,12 @@ import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.radzratz.eternalores.EternalOres;
@@ -57,6 +59,8 @@ public class EternalConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_NITER_ORE_KEY = registerKey("niter_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_NITER_ORE_KEY = registerKey("nether_niter_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_NITER_ORE_KEY = registerKey("end_niter_ore");
+    //Obsidian
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_OBSIDIAN_ORE_KEY = registerKey("nether_obsidian_ore");
     //Onyx
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ONYX_ORE_KEY = registerKey("onyx_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_ONYX_ORE_KEY = registerKey("nether_onyx_ore");
@@ -109,7 +113,7 @@ public class EternalConfiguredFeatures {
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        //RuleTest netherReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
+        RuleTest netherReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
         //RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
 
         //ALUMINUM ORES
@@ -221,6 +225,10 @@ public class EternalConfiguredFeatures {
         //        ModBlocks.NETHER_NITER_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_NITER_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
         //        ModBlocks.END_NITER_ORE_BLOCK.get().defaultBlockState(9)));
+
+        //Obsidian
+        register(context, NETHER_OBSIDIAN_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
+                ModBlocks.OBSIDIAN_ORE_BLOCK.get().defaultBlockState(), 12));
 
         //Onyx
         List<OreConfiguration.TargetBlockState> overworldOnyxOres = List.of(OreConfiguration.target(stoneReplaceable,

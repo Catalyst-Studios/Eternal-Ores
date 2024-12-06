@@ -172,6 +172,9 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //PERIDOT TO GEM
         add(ModBlocks.PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.PERIDOT_ORE_BLOCK.get(), Moditems.GEM_PERIDOT.get(), 1,3));
         add(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), Moditems.GEM_PERIDOT.get(),1,3));
+
+        //OBSIDIAN ORE TO GEM
+        add(ModBlocks.OBSIDIAN_ORE_BLOCK.get(), block -> createMultipleOreDrops(ModBlocks.OBSIDIAN_ORE_BLOCK.get(), Moditems.GEM_OBSIDIAN_SHARD.get(),1,2));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
