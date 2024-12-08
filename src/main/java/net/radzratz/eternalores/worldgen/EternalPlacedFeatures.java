@@ -74,10 +74,6 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PLATINUM_ORE_PLACED_KEY = registerKey("platinum_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_PLATINUM_ORE_PLACED_KEY = registerKey("nether_platinum_ore_placed");
     public static final ResourceKey<PlacedFeature> END_PLATINUM_ORE_PLACED_KEY = registerKey("end_platinum_ore_placed");
-    //Plutonium
-    public static final ResourceKey<PlacedFeature> PLUTONIUM_ORE_PLACED_KEY = registerKey("plutonium_ore_placed");
-    public static final ResourceKey<PlacedFeature> NETHER_PLUTONIUM_ORE_PLACED_KEY = registerKey("nether_plutonium_ore_placed");
-    public static final ResourceKey<PlacedFeature> END_PLUTONIUM_ORE_PLACED_KEY = registerKey("end_plutonium_ore_placed");
     //Ruby
     public static final ResourceKey<PlacedFeature> RUBY_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_RUBY_ORE_PLACED_KEY = registerKey("nether_ruby_ore_placed");
@@ -108,11 +104,11 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> END_ZINC_ORE_PLACED_KEY = registerKey("end_zinc_ore_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
-        HolderGetter<ConfiguredFeature<?, ?>> ConfiguredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+        var ConfiguredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
     //ALUMINUM
     register(context, ALUMINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_ALUMINUM_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_ALUMINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_ALUMINUM_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -123,8 +119,8 @@ public class EternalPlacedFeatures {
 
     //AMBER
     register(context, AMBER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_AMBER_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
-                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+            EternalOrePlacement.rareOrePlacement(10,
+                    HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(78))));
     //register(context, NETHER_AMBER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_AMBER_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
@@ -134,8 +130,8 @@ public class EternalPlacedFeatures {
 
     //APATITE
     register(context, APATITE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_APATITE_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
-                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+            EternalOrePlacement.commonOrePlacement(10,
+                    HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(75))));
     //register(context, NETHER_APATITE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_APATITE_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
@@ -145,8 +141,8 @@ public class EternalPlacedFeatures {
 
     //CINNABAR
     register(context, CINNABAR_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_CINNABAR_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
-                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+            EternalOrePlacement.rareOrePlacement(10,
+                    HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(68))));
     //register(context, NETHER_CINNABAR_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_CINNABAR_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
@@ -156,7 +152,7 @@ public class EternalPlacedFeatures {
 
     //COBALT
     register(context, COBALT_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_COBALT_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.rareOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(34))));
     //register(context, NETHER_COBALT_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_ALUMINUM_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -167,8 +163,8 @@ public class EternalPlacedFeatures {
 
     //FLUORITE
     register(context, FLUORITE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_FLUORITE_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
-                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+            EternalOrePlacement.commonOrePlacement(10,
+                    HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_FLUORITE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_FLUORITE_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
@@ -178,7 +174,7 @@ public class EternalPlacedFeatures {
 
     //GALLIUM
     register(context, GALLIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_GALLIUM_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_GALLIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_GALLIUM_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -189,7 +185,7 @@ public class EternalPlacedFeatures {
 
     //LEAD
     register(context, LEAD_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_LEAD_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_LEAD_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_LEAD_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -200,7 +196,7 @@ public class EternalPlacedFeatures {
 
     //NITER
     register(context, NITER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_NITER_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_NITER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_NITER_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -211,7 +207,7 @@ public class EternalPlacedFeatures {
 
     //NICKEL
     register(context, NICKEL_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_NICKEL_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_NICKEL_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_NICKEL_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -222,12 +218,12 @@ public class EternalPlacedFeatures {
 
     //OBSIDIAN
     register(context, OBSIDIAN_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_OBSIDIAN_ORE_KEY),
-             EternalOrePlacement.commonOrePlacement(12,
+             EternalOrePlacement.commonOrePlacement(10,
                      HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(128))));
 
     //ONYX
     register(context, ONYX_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_ONYX_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.rareOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_ONYX_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_ONYX_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -238,7 +234,7 @@ public class EternalPlacedFeatures {
 
     //OSMIUM
     register(context, OSMIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_OSMIUM_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_OSMIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_OSMIUM_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -249,7 +245,7 @@ public class EternalPlacedFeatures {
 
     //PERIDOT
     register(context, PERIDOT_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_PERIDOT_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.rareOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(64))));
     //register(context, NETHER_PERIDOT_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_PERIDOT_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -260,7 +256,7 @@ public class EternalPlacedFeatures {
 
     //PLATINUM
     register(context, PLATINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_PLATINUM_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.rareOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(34))));
     //register(context, NETHER_PLATINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_PLATINUM_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -269,20 +265,9 @@ public class EternalPlacedFeatures {
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
-    //PLUTONIUM
-    register(context, PLUTONIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_PLUTONIUM_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
-                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(34))));
-    //register(context, NETHER_PLUTONIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_PLATINUM_ORE_KEY),
-    //        EternalOrePlacement.commonOrePlacement(12,
-    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-    //register(context, END_PLUTONIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_PLATINUM_ORE_KEY),
-    //        EternalOrePlacement.commonOrePlacement(12,
-    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-
     //RUBY
     register(context, RUBY_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_RUBY_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.rareOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_RUBY_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_RUBY_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -293,7 +278,7 @@ public class EternalPlacedFeatures {
 
     //SILVER
     register(context, SILVER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_SILVER_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_SILVER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_SILVER_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -304,7 +289,7 @@ public class EternalPlacedFeatures {
 
     //SAPPHIRE
     register(context, SAPPHIRE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_SAPPHIRE_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.rareOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_SAPPHIRE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_SAPPHIRE_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -315,7 +300,7 @@ public class EternalPlacedFeatures {
 
     //SULFUR
     register(context, SULFUR_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_SULFUR_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_SULFUR_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_SULFUR_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -326,7 +311,7 @@ public class EternalPlacedFeatures {
 
     //TIN
     register(context, TIN_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_TIN_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_TIN_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_TIN_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -337,7 +322,7 @@ public class EternalPlacedFeatures {
 
     //URANIUM
     register(context, URANIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_URANIUM_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(34))));
     //register(context, NETHER_URANIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_URANIUM_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
@@ -348,7 +333,7 @@ public class EternalPlacedFeatures {
 
     //ZINC
     register(context, ZINC_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_ZINC_ORE_KEY),
-            EternalOrePlacement.commonOrePlacement(16,
+            EternalOrePlacement.commonOrePlacement(10,
                     HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, NETHER_ZINC_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_ZINC_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,

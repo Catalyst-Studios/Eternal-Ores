@@ -71,10 +71,6 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_PLATINUM_ORE = registerKey("add_platinum_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_PLATINUM_ORE = registerKey("add_nether_platinum_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_PLATINUM_ORE = registerKey("add_end_platinum_ore");
-    //Plutonium
-    public static final ResourceKey<BiomeModifier> ADD_PLUTONIUM_ORE = registerKey("add_plutonium_ore");
-    public static final ResourceKey<BiomeModifier> ADD_NETHER_PLUTONIUM_ORE = registerKey("add_nether_plutonium_ore");
-    public static final ResourceKey<BiomeModifier> ADD_END_PLUTONIUM_ORE = registerKey("add_end_plutonium_ore");
     //Ruby
     public static final ResourceKey<BiomeModifier> ADD_RUBY_ORE = registerKey("add_ruby_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_RUBY_ORE = registerKey("add_nether_ruby_ore");
@@ -105,6 +101,7 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_END_ZINC_ORE = registerKey("add_end_zinc_ore");
 
     public static void bootstrap(BootstrapContext<BiomeModifier> context) {
+
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 
@@ -198,12 +195,6 @@ public class EternalBiomeModifier {
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.PLATINUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        //Plutonium
-        context.register(ADD_PLUTONIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.PLUTONIUM_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
-
         //Ruby
         context.register(ADD_RUBY_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
@@ -251,8 +242,7 @@ public class EternalBiomeModifier {
     private static ResourceKey<BiomeModifier> registerKey(String name) {
         return ResourceKey.create(
                 NeoForgeRegistries.Keys.BIOME_MODIFIERS,
-                ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, name)
-        );
+                ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, name));
 
     }
 }

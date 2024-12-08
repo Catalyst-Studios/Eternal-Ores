@@ -77,10 +77,6 @@ public class EternalConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PLATINUM_ORE_KEY = registerKey("platinum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_PLATINUM_ORE_KEY = registerKey("nether_platinum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_PLATINUM_ORE_KEY = registerKey("end_platinum_ore");
-    //Plutonium
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PLUTONIUM_ORE_KEY = registerKey("plutonium_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_PLUTONIUM_ORE_KEY = registerKey("nether_plutonium_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> END_PLUTONIUM_ORE_KEY = registerKey("end_plutonium_ore");
     //Ruby
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("ruby_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_RUBY_ORE_KEY = registerKey("nether_ruby_ore");
@@ -111,17 +107,20 @@ public class EternalConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_ZINC_ORE_KEY = registerKey("end_zinc_ore");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
+
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest netherReplaceables = new BlockMatchTest(Blocks.NETHERRACK);
         //RuleTest endReplaceables = new BlockMatchTest(Blocks.END_STONE);
+
+
 
         //ALUMINUM ORES
         List<OreConfiguration.TargetBlockState> overworldAluminumOres = List.of(OreConfiguration.target(stoneReplaceable,
                 ModBlocks.ALUMINUM_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                 ModBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_ALUMINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAluminumOres,12));
+        register(context, OVERWORLD_ALUMINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAluminumOres,9));
         //register(context, NETHER_ALUMINUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_ALUMINUM_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_ALUMINUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -132,7 +131,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.AMBER_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_AMBER_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_AMBER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAmberOres,12));
+        register(context, OVERWORLD_AMBER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAmberOres,9));
         //register(context, NETHER_AMBER_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_AMBER_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_AMBER_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -143,7 +142,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.APATITE_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_APATITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldApatiteOres,12));
+        register(context, OVERWORLD_APATITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldApatiteOres,5));
         //register(context, NETHER_APATITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_APATITE_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_APATITE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -154,7 +153,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.CINNABAR_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_CINNABAR_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCinnabarOres,12));
+        register(context, OVERWORLD_CINNABAR_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCinnabarOres,5));
         //register(context, NETHER_CINNABAR_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_CINNABAR_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_CINNABAR_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -165,7 +164,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.COBALT_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_COBALT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCobaltOres,12));
+        register(context, OVERWORLD_COBALT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCobaltOres,9));
         //register(context, NETHER_COBALT_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_COBALT_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_COBALT_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -176,7 +175,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.FLUORITE_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFluoriteOres,12));
+        register(context, OVERWORLD_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldFluoriteOres,6));
         //register(context, NETHER_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_FLUORITE_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_FLUORITE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -187,7 +186,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.GALLIUM_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_GALLIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldGalliumOres,12));
+        register(context, OVERWORLD_GALLIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldGalliumOres,8));
         //register(context, NETHER_GALLIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_GALLIUM_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_GALLIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -198,7 +197,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.LEAD_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLeadOres,12));
+        register(context, OVERWORLD_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(overworldLeadOres,9));
         //register(context, NETHER_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_LEAD_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -209,7 +208,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.NICKEL_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldNickelOres,12));
+        register(context, OVERWORLD_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldNickelOres,9));
         //register(context, NETHER_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_NICKEL_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_NICKEL_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -220,7 +219,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.NITER_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_NITER_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_NITER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldNiterOres,12));
+        register(context, OVERWORLD_NITER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldNiterOres,4));
         //register(context, NETHER_NITER_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_NITER_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_NITER_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -228,14 +227,14 @@ public class EternalConfiguredFeatures {
 
         //Obsidian
         register(context, NETHER_OBSIDIAN_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
-                ModBlocks.OBSIDIAN_ORE_BLOCK.get().defaultBlockState(), 12));
+                ModBlocks.OBSIDIAN_ORE_BLOCK.get().defaultBlockState(), 8));
 
         //Onyx
         List<OreConfiguration.TargetBlockState> overworldOnyxOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.ONYX_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_ONYX_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_ONYX_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOnyxOres,12));
+        register(context, OVERWORLD_ONYX_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOnyxOres,9));
         //register(context, NETHER_ONYX_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_ONYX_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_ONYX_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -246,7 +245,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.OSMIUM_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_OSMIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOsmiumOres,12));
+        register(context, OVERWORLD_OSMIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOsmiumOres,9));
         //register(context, NETHER_OSMIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_OSMIUM_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_OSMIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -257,7 +256,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.PERIDOT_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPeridotOres,12));
+        register(context, OVERWORLD_PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPeridotOres,4));
         //register(context, NETHER_PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_PERIDOT_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_PERIDOT_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -268,29 +267,18 @@ public class EternalConfiguredFeatures {
                         ModBlocks.PLATINUM_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlatinumOres,12));
+        register(context, OVERWORLD_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlatinumOres,9));
         //register(context, NETHER_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_PLATINUM_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_PLATINUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
         //        ModBlocks.END_PLATINUM_ORE_BLOCK.get().defaultBlockState(9)));
-
-        //Plutonium
-        List<OreConfiguration.TargetBlockState> overworldPlutoniumOres = List.of(OreConfiguration.target(stoneReplaceable,
-                        ModBlocks.PLUTONIUM_ORE_BLOCK.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables,
-                        ModBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_PLUTONIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlutoniumOres,12));
-        //register(context, NETHER_PLUTONIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
-        //        ModBlocks.NETHER_PLUTONIUM_ORE_BLOCK.get().defaultBlockState(9)));
-        //register(context, END_PLUTONIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
-        //        ModBlocks.END_PLUTONIUM_ORE_BLOCK.get().defaultBlockState(9)));
 
         //Ruby
         List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.RUBY_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOres,12));
+        register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOres,5));
         //register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_RUBY_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -301,7 +289,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.SAPPHIRE_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres,12));
+        register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres,4));
         //register(context, NETHER_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_SAPPHIRE_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -312,7 +300,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.SILVER_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSilverOres,12));
+        register(context, OVERWORLD_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSilverOres,9));
         //register(context, NETHER_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_SILVER_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_SILVER_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -323,7 +311,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.SULFUR_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSulfurOres,12));
+        register(context, OVERWORLD_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSulfurOres,5));
         //register(context, NETHER_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_SULFUR_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_SULFUR_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -334,7 +322,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.TIN_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_TIN_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTinOres,12));
+        register(context, OVERWORLD_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(overworldTinOres,9));
         //register(context, NETHER_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_TIN_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -345,7 +333,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.URANIUM_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_URANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUraniumOres,12));
+        register(context, OVERWORLD_URANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUraniumOres,9));
         //register(context, NETHER_URANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_URANIUM_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_URANIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
@@ -356,7 +344,7 @@ public class EternalConfiguredFeatures {
                         ModBlocks.ZINC_ORE_BLOCK.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables,
                         ModBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get().defaultBlockState()));
-        register(context, OVERWORLD_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(overworldZincOres,12));
+        register(context, OVERWORLD_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(overworldZincOres,9));
         //register(context, NETHER_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
         //        ModBlocks.NETHER_ZINC_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,

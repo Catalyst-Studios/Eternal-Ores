@@ -38,6 +38,7 @@
   "item.eternalores.titanium_ingot": "Titanium Ingot",
   "item.eternalores.pewter_ingot": "Pewter Ingot",
   "item.eternalores.rose_gold_ingot": "Rose Gold Ingot",
+  "item.eternalores.britannia_silver_ingot": "Britannia Silver Ingot",
 
   "item.eternalores.aluminum_nugget": "Aluminum Nugget",
   "item.eternalores.cobalt_nugget": "Cobalt Nugget",
@@ -68,6 +69,7 @@
   "item.eternalores.titanium_nugget": "Titanium Nugget",
   "item.eternalores.pewter_nugget": "Pewter Nugget",
   "item.eternalores.rose_gold_nugget": "Rose Gold Nugget",
+  "item.eternalores.britannia_silver_nugget": "Britannia Silver Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -199,6 +201,7 @@
   "item.eternalores.netherrack_dust": "Netherrack Dust",
   "item.eternalores.pewter_dust": "Pewter Dust",
   "item.eternalores.rose_gold_dust": "Rose Gold Dust",
+  "item.eternalores.britannia_silver_dust": "Britannia Silver Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -312,6 +315,7 @@
   "block.eternalores.titanium_block": "Titanium Block",
   "block.eternalores.pewter_block": "Pewter Block",
   "block.eternalores.rose_gold_block": "Rose Gold Block",
+  "block.eternalores.britannia_silver_block": "Britannia Silver Block",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }
