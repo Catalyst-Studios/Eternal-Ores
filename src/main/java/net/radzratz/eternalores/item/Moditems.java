@@ -286,6 +286,28 @@ public class Moditems {
     //Gears
     public static final DeferredItem<Item> ULTIMATE_GEAR = ITEMS.register("ultimate_gear",
             ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_IRON = ITEMS.register("gear_iron",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_COPPER = ITEMS.register("gear_copper",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_TIN = ITEMS.register("gear_tin",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_LEAD = ITEMS.register("gear_lead",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_ENDERIUM = ITEMS.register("gear_enderium",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_GOLD = ITEMS.register("gear_gold",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_BRONZE = ITEMS.register("gear_bronze",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_STEEL = ITEMS.register("gear_steel",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_OSMIUM = ITEMS.register("gear_osmium",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_DIAMOND = ITEMS.register("gear_diamond",
+            ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GEAR_ALUMINUM = ITEMS.register("gear_aluminum",
+            ()-> new Item(new Item.Properties()));
 
     //Raw Ores
     public static final DeferredItem<Item> RAW_URANIUM = ITEMS.register("raw_uranium",

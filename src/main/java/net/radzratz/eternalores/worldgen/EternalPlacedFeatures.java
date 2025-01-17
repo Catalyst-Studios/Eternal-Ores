@@ -1,7 +1,6 @@
 package net.radzratz.eternalores.worldgen;
 
 import net.minecraft.core.Holder;
-import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -16,6 +15,7 @@ import net.radzratz.eternalores.EternalOres;
 import java.util.List;
 
 public class EternalPlacedFeatures {
+
     //Aluminum
     public static final ResourceKey<PlacedFeature> ALUMINUM_ORE_PLACED_KEY = registerKey("aluminum_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_ALUMINUM_ORE_PLACED_KEY = registerKey("nether_aluminum_ore_placed");
@@ -104,18 +104,22 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> END_ZINC_ORE_PLACED_KEY = registerKey("end_zinc_ore_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
+        System.out.println("Bootstrap of PlacedFeature is Loading");
         var ConfiguredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+
+        System.out.println("Loading Placed Features");
 
     //ALUMINUM
     register(context, ALUMINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_ALUMINUM_ORE_KEY),
             EternalOrePlacement.commonOrePlacement(10,
-                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-    //register(context, NETHER_ALUMINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_ALUMINUM_ORE_KEY),
-    //        EternalOrePlacement.commonOrePlacement(12,
-    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
-    //register(context, END_ALUMINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_ALUMINUM_ORE_KEY),
-    //        EternalOrePlacement.commonOrePlacement(12,
-    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+            //register(context, NETHER_ALUMINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_ALUMINUM_ORE_KEY),
+            //        EternalOrePlacement.commonOrePlacement(12,
+            //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+            //register(context, END_ALUMINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_ALUMINUM_ORE_KEY),
+            //        EternalOrePlacement.commonOrePlacement(12,
+            //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
     //AMBER
     register(context, AMBER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_AMBER_ORE_KEY),
@@ -345,12 +349,14 @@ public class EternalPlacedFeatures {
 
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
+        System.out.println("Loading Register Key of Placed Features");
         return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, name));
     }
 
     private static void register(BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key,
                                  Holder<ConfiguredFeature<?, ?>> configuration,
                                  List<PlacementModifier> modifiers) {
+        System.out.println("Loading Bootstrap Context of Placed Features");
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
     }
 }

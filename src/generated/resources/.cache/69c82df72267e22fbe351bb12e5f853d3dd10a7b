@@ -1,4 +1,4 @@
-// 1.21.1	2024-12-03T23:42:20.8579322	Item Models: eternalores
+// 1.21.1	2025-01-13T17:45:06.3367631	Item Models: eternalores
 293fcce73e4be1f592385efaa6d0112679efe58f assets/eternalores/models/item/aluminum_dust.json
 8b7b671749e69be15657d4376b2dfd82dbd96d8d assets/eternalores/models/item/aluminum_ingot.json
 ce97247738e758b17ab7f3a0a4665e7b0401f443 assets/eternalores/models/item/aluminum_nugget.json
@@ -46,6 +46,17 @@ ef230ccc7a08a6318a41f58f2e915d1235559b1c assets/eternalores/models/item/eternal_
 d5f2fe1779fe557ad0a89cc4879f5a4842795e71 assets/eternalores/models/item/gallium_dust.json
 444de1de0125fbc3d71637906516983bb78b89e8 assets/eternalores/models/item/gallium_ingot.json
 4e5270d2f85aaea924d22191c8c7988c80e5d5fc assets/eternalores/models/item/gallium_nugget.json
+153d1d6ef1d125b6b184929c1659659987d314f7 assets/eternalores/models/item/gear_aluminum.json
+8a1348422a45460ea41e4d9af084fcc87ec66fa3 assets/eternalores/models/item/gear_bronze.json
+f3514e07153ba057a08f32c504e54e60316a9a3d assets/eternalores/models/item/gear_copper.json
+2a37737f85221229a703fdf8b28e4e5e5dae1138 assets/eternalores/models/item/gear_diamond.json
+2f74f46ffd1126d85f1195a4e6aeaf14d7fdd40a assets/eternalores/models/item/gear_enderium.json
+0e2f7916e63b549675b0dd9955a84d9d3d2106f0 assets/eternalores/models/item/gear_gold.json
+49ed3e5cf57db41a57d48fd0a5a72e8bcc1132d6 assets/eternalores/models/item/gear_iron.json
+6e723af166e4b1bc788172f8ccad14d0243b90ac assets/eternalores/models/item/gear_lead.json
+089becdd4bb9954543dee4014ba4765498bfd1dc assets/eternalores/models/item/gear_osmium.json
+f51bfef7230d600ae2dff86f83ec26f0d1762088 assets/eternalores/models/item/gear_steel.json
+051b6ae4b6bb0b515cab77d7ae9087bbb7fb6ea4 assets/eternalores/models/item/gear_tin.json
 e6313c92c81f19f076e300b24096c827a0f647db assets/eternalores/models/item/gem_amber.json
 26ee5c191f9b8cf5cb0f131437f37ae6200c69be assets/eternalores/models/item/gem_apatite.json
 9ae24ab207e40fd7c7f7bc26752f9ac63d52690e assets/eternalores/models/item/gem_cinnabar.json

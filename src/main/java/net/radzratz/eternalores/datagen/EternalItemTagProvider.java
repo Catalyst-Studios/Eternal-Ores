@@ -22,6 +22,9 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
+
+        System.out.println("Loading Custom Tool Tags");
+
                 tag(ModTags.Items.HAMMERS)
                         .add(Moditems.COPPER_HAMMER.get())
                         .add(Moditems.STONE_HAMMER.get())

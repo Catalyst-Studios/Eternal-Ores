@@ -21,6 +21,7 @@ public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event) {
 
+        System.out.println("Loading Data Generators");
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
@@ -38,5 +39,4 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new EternalWorldGenProvider(packOutput, lookupProvider));
     }
-
 }

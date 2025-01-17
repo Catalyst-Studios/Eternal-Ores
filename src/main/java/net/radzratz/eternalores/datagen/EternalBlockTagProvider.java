@@ -19,6 +19,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider) {
+
+        System.out.println("Loading Block Tags");
+
             //PICKAXE
             tag(BlockTags.MINEABLE_WITH_PICKAXE)
                     //ORE BLOCKS

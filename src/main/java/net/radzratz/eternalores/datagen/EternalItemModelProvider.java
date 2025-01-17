@@ -15,6 +15,9 @@ public class EternalItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+        System.out.println("Loading Item Model Provider");
+
         //HAMMERS
         basicItem(Moditems.COBALT_HAMMER.get());
         basicItem(Moditems.COPPER_HAMMER.get());
@@ -227,6 +230,17 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(Moditems.PLATE_ROSE_GOLD.get());
 
         //GEARS
+        basicItem(Moditems.GEAR_ALUMINUM.get());
+        basicItem(Moditems.GEAR_BRONZE.get());
+        basicItem(Moditems.GEAR_COPPER.get());
+        basicItem(Moditems.GEAR_DIAMOND.get());
+        basicItem(Moditems.GEAR_ENDERIUM.get());
+        basicItem(Moditems.GEAR_GOLD.get());
+        basicItem(Moditems.GEAR_IRON.get());
+        basicItem(Moditems.GEAR_LEAD.get());
+        basicItem(Moditems.GEAR_OSMIUM.get());
+        basicItem(Moditems.GEAR_STEEL.get());
+        basicItem(Moditems.GEAR_TIN.get());
         basicItem(Moditems.ULTIMATE_GEAR.get());
 
         //GEMS

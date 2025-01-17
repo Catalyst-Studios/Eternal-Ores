@@ -14,6 +14,9 @@ public class EternalBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+
+        System.out.println("Loading Block State");
+
         //METAL BLOCKS
         blockWithItem(ModBlocks.ALUMINUM_BLOCK);
         blockWithItem(ModBlocks.BRONZE_BLOCK);

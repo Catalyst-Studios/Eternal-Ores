@@ -22,5 +22,6 @@ public class EternalWorldGenProvider extends DatapackBuiltinEntriesProvider {
 
     public EternalWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(EternalOres.MOD_ID));
+        System.out.println("Finished Loading DataPackEntries");
     }
 }

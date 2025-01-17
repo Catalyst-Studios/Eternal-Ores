@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "eternalores:gear_aluminum",
+    "eternalores:gear_bronze",
+    "eternalores:gear_copper",
+    "eternalores:gear_diamond",
+    "eternalores:gear_enderium",
+    "eternalores:gear_gold",
+    "eternalores:gear_iron",
+    "eternalores:gear_lead",
+    "eternalores:gear_osmium",
+    "eternalores:gear_steel",
+    "eternalores:gear_tin"
+  ]
+}

@@ -27,6 +27,9 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+
+        System.out.println("Loading Loot Table Provider");
+
         //METAL BLOCKS
         dropSelf(ModBlocks.ALUMINUM_BLOCK.get());
         dropSelf(ModBlocks.BRONZE_BLOCK.get());

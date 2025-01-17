@@ -22,6 +22,9 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                 .withTabsBefore(ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, "eternal_ores"))
                 .title(Component.translatable("creativetab.eternalores.eternal_ores"))
                 .displayItems((itemDisplayParameters, output) -> {
+
+                    System.out.println("Loading Custom Creative Tab");
+
                     //STONE ORES
                     output.accept(ModBlocks.ALUMINUM_ORE_BLOCK);
                     output.accept(ModBlocks.AMBER_ORE_BLOCK);
@@ -329,7 +332,18 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(Moditems.ROD_ULTIMATITANIUM);
                     output.accept(Moditems.ROD_URANIUM);
                     output.accept(Moditems.ROD_ZINC);
-                    //GEARS W.I.P
+                    //GEARS
+                    output.accept(Moditems.GEAR_ALUMINUM);
+                    output.accept(Moditems.GEAR_BRONZE);
+                    output.accept(Moditems.GEAR_COPPER);
+                    output.accept(Moditems.GEAR_DIAMOND);
+                    output.accept(Moditems.GEAR_ENDERIUM);
+                    output.accept(Moditems.GEAR_GOLD);
+                    output.accept(Moditems.GEAR_IRON);
+                    output.accept(Moditems.GEAR_LEAD);
+                    output.accept(Moditems.GEAR_OSMIUM);
+                    output.accept(Moditems.GEAR_STEEL);
+                    output.accept(Moditems.GEAR_TIN);
                     output.accept(Moditems.ULTIMATE_GEAR);
                     //TOOLS
                     output.accept(Moditems.COBALT_HAMMER);

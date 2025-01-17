@@ -12,7 +12,6 @@ public class ModCompatibility {
             registerDummyItemMekanismItems();
         }
     }
-
     public static void registerRealItemMekanismItems() {
         System.out.println("Mekanism Loaded. Registering Real Items.");
         //Moditems.MULTIPRESS.get();
