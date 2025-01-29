@@ -1,4 +1,9 @@
-// 1.21.1	2024-12-07T10:25:27.1696247	Tags for minecraft:block mod id eternalores
+// 1.21.1	2025-01-27T05:21:50.5734175	Tags for minecraft:block mod id eternalores
+2111ec0d8763c17e09fea00783b29008d536cfa8 data/c/tags/block/ores.json
+adca4e1dec004c60f3c6f5edef9b3cdb3ef41dae data/c/tags/block/ores_in_ground/deepslate.json
+fcbc57ac2517c206f3673d1a0a216f9be85a5adc data/c/tags/block/ores_in_ground/netherrack.json
+13ab2d681ce47155e24debfa6738abcdda7079be data/c/tags/block/ores_in_ground/stone.json
+e8f53e26154c048d5552e1368013d115344abd48 data/c/tags/block/storage_blocks.json
 ced3233662f4ce0e6fb448bed11b449eb1591228 data/minecraft/tags/block/mineable/pickaxe.json
 4081791f23372bf0be1492ac3ed65b7f894d2f59 data/minecraft/tags/block/needs_diamond_tool.json
 93f0d638d0837972d43cd98ac81e24fa411ae58b data/minecraft/tags/block/needs_iron_tool.json

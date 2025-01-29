@@ -1,0 +1,26 @@
+{
+  "values": [
+    "eternalores:aluminum_ore_block",
+    "eternalores:amber_ore_block",
+    "eternalores:apatite_ore_block",
+    "eternalores:cinnabar_ore_block",
+    "eternalores:cobalt_ore_block",
+    "eternalores:fluorite_ore_block",
+    "eternalores:lead_ore_block",
+    "eternalores:nickel_ore_block",
+    "eternalores:niter_ore_block",
+    "eternalores:onyx_ore_block",
+    "eternalores:osmium_ore_block",
+    "eternalores:platinum_ore_block",
+    "eternalores:plutonium_ore_block",
+    "eternalores:ruby_ore_block",
+    "eternalores:sapphire_ore_block",
+    "eternalores:sulfur_ore_block",
+    "eternalores:tin_ore_block",
+    "eternalores:uranium_ore_block",
+    "eternalores:silver_ore_block",
+    "eternalores:zinc_ore_block",
+    "eternalores:gallium_ore_block",
+    "eternalores:peridot_ore_block"
+  ]
+}
