@@ -1,4 +1,4 @@
-// 1.21.1	2025-01-13T17:45:06.3367631	Item Models: eternalores
+// 1.21.1	2025-02-03T01:34:30.3673845	Item Models: eternalores
 293fcce73e4be1f592385efaa6d0112679efe58f assets/eternalores/models/item/aluminum_dust.json
 8b7b671749e69be15657d4376b2dfd82dbd96d8d assets/eternalores/models/item/aluminum_ingot.json
 ce97247738e758b17ab7f3a0a4665e7b0401f443 assets/eternalores/models/item/aluminum_nugget.json
@@ -159,6 +159,7 @@ c36ed3e745a9bc041f34b496de31ce041b3639f2 assets/eternalores/models/item/rod_bron
 ab8930e03b9b96b9239af95e762cf415249b482c assets/eternalores/models/item/rod_cobalt.json
 76023a24b9067f71a6c5d03abdca0d6458a00b61 assets/eternalores/models/item/rod_constantan.json
 e77346cf2c6d2df039321d55aa82b65706636741 assets/eternalores/models/item/rod_copper.json
+5191da5c2395447f4d6b4e25aea3668880271e6f assets/eternalores/models/item/rod_diamond.json
 ed48253366117be75d5f2e525149b90873ab2b8c assets/eternalores/models/item/rod_electrum.json
 20c9a6bf39332e82c8f2d80e6c1c253e0fb78c73 assets/eternalores/models/item/rod_enderium.json
 cd6b92b600ae3f4f5b5108f9dec1425f6c3e4076 assets/eternalores/models/item/rod_gallium.json

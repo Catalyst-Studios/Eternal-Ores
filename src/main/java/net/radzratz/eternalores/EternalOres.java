@@ -1,9 +1,9 @@
 package net.radzratz.eternalores;
 
-import net.radzratz.eternalores.block.ModBlocks;
-import net.radzratz.eternalores.item.ModCreativeModeTabs;
-import net.radzratz.eternalores.item.Moditems;
-import net.radzratz.eternalores.util.ModCompatibility;
+import net.radzratz.eternalores.block.EternalGeneralBlocks;
+import net.radzratz.eternalores.item.EternalCreativeModeTabs;
+import net.radzratz.eternalores.item.EternalGeneralItems;
+import net.radzratz.eternalores.util.compat.EternalCompatibility;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -31,11 +31,11 @@ public class EternalOres
         modEventBus.addListener(this::commonSetup);
 
         System.out.println("Registering Blocks and Items");
-        Moditems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        EternalGeneralItems.register(modEventBus);
+        EternalGeneralBlocks.register(modEventBus);
 
-        System.out.println("ModCreativeModeTabs Register Initialized.");
-        ModCreativeModeTabs.register(modEventBus);
+        System.out.println("EternalCreativeModeTab Register Initialized.");
+        EternalCreativeModeTabs.register(modEventBus);
     }
 
     @SubscribeEvent
@@ -43,7 +43,7 @@ public class EternalOres
     {
         System.out.println("Common setup is running.");
         System.out.println("Checking on ModCompat class");
-        ModCompatibility.checkOtherModsMekanism();
+        EternalCompatibility.checkOtherModsMekanism();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
