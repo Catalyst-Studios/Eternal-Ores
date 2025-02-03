@@ -221,8 +221,10 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.GEAR_COPPER.get())
                         .add(EternalGeneralItems.GEAR_DIAMOND.get())
                         .add(EternalGeneralItems.GEAR_ENDERIUM.get())
+                        .add(EternalGeneralItems.GEAR_GOLD.get())
                         .add(EternalGeneralItems.GEAR_IRON.get())
                         .add(EternalGeneralItems.GEAR_LEAD.get())
+                        .add(EternalGeneralItems.GEAR_OSMIUM.get())
                         .add(EternalGeneralItems.GEAR_STEEL.get())
                         .add(EternalGeneralItems.GEAR_TIN.get());
 
@@ -233,7 +235,9 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.GEAR_COPPER.get())
                         .add(EternalGeneralItems.GEAR_ENDERIUM.get())
                         .add(EternalGeneralItems.GEAR_IRON.get())
+                        .add(EternalGeneralItems.GEAR_GOLD.get())
                         .add(EternalGeneralItems.GEAR_LEAD.get())
+                        .add(EternalGeneralItems.GEAR_OSMIUM.get())
                         .add(EternalGeneralItems.GEAR_STEEL.get())
                         .add(EternalGeneralItems.GEAR_TIN.get());
 
@@ -247,9 +251,11 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalMetalGearTags.Items.GEAR_COPPER).add(EternalGeneralItems.GEAR_COPPER.get());
                 tag(EternalMetalGearTags.Items.GEAR_ENDERIUM).add(EternalGeneralItems.GEAR_ENDERIUM.get());
                 tag(EternalMetalGearTags.Items.GEAR_IRON).add(EternalGeneralItems.GEAR_IRON.get());
+                tag(EternalMetalGearTags.Items.GEAR_GOLD).add(EternalGeneralItems.GEAR_GOLD.get());
                 tag(EternalMetalGearTags.Items.GEAR_LEAD).add(EternalGeneralItems.GEAR_LEAD.get());
+                tag(EternalMetalGearTags.Items.GEAR_OSMIUM).add(EternalGeneralItems.GEAR_LEAD.get());
                 tag(EternalMetalGearTags.Items.GEAR_STEEL).add(EternalGeneralItems.GEAR_STEEL.get());
-                tag(EternalMetalGearTags.Items.GEAR_LEAD).add(EternalGeneralItems.GEAR_LEAD.get());
+                tag(EternalMetalGearTags.Items.GEAR_TIN).add(EternalGeneralItems.GEAR_TIN.get());
 
                 tag(EternalGemGearTags.Items.GEAR_DIAMOND).add(EternalGeneralItems.GEAR_DIAMOND.get());
 
