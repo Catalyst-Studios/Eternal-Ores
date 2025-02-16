@@ -34,7 +34,7 @@ public class EternalMetalGearTags {
         public static final TagKey<Item> GEAR_INVAR = createMetalGearTag("gears/invar");
         //Iron
         public static final TagKey<Item> GEAR_IRON = createMetalGearTag("gears/iron");
-        //
+        //Gold
         public static final TagKey<Item> GEAR_GOLD = createMetalGearTag("gears/gold");
         //Lead
         public static final TagKey<Item> GEAR_LEAD = createMetalGearTag("gears/lead");

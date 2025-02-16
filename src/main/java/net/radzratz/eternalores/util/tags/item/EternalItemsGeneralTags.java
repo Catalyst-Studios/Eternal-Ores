@@ -38,7 +38,7 @@ public class EternalItemsGeneralTags {
         public static final TagKey<Item> GEM_PLATES = createGeneralItemTags("c","gem_plates");
 
         public static TagKey<Item> createGeneralItemTags(String namespace, String path) {
-            System.out.println("Loading Custom mod tags");
+            System.out.println("Loading Custom Item tags");
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(namespace, path));
         }
     }

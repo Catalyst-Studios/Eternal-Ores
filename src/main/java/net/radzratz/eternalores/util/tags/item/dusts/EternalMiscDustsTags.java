@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 public class EternalMiscDustsTags {
     public static class Items {
 
-        public static final TagKey<Item> DUST_ENDER = createMiscDustTag("dusts/ender");
+        public static final TagKey<Item> DUST_ENDER = createMiscDustTag("dusts/ender_pearl");
 
         public static final TagKey<Item> DUST_GLASS = createMiscDustTag("dusts/glass");
 

@@ -3,11 +3,17 @@ package net.radzratz.eternalores.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalores.EternalOres;
+import net.radzratz.eternalores.block.EternalGeneralBlocks;
 import net.radzratz.eternalores.item.EternalGeneralItems;
+import net.radzratz.eternalores.util.tags.block.ores.EternalOreBlockTags;
+import net.radzratz.eternalores.util.tags.block.storage_blocks.EternalStorageGemBlockTags;
+import net.radzratz.eternalores.util.tags.block.storage_blocks.EternalStorageMetalBlockTags;
+import net.radzratz.eternalores.util.tags.block.storage_blocks.EternalStorageRawOreBlockTags;
 import net.radzratz.eternalores.util.tags.item.EternalItemsGeneralTags;
 import net.radzratz.eternalores.util.tags.item.dusts.EternalGemDustsTags;
 import net.radzratz.eternalores.util.tags.item.dusts.EternalMetalDustsTags;
@@ -16,9 +22,13 @@ import net.radzratz.eternalores.util.tags.item.dusts.EternalStoneDustsTags;
 import net.radzratz.eternalores.util.tags.item.gears.EternalGemGearTags;
 import net.radzratz.eternalores.util.tags.item.gears.EternalMetalGearTags;
 import net.radzratz.eternalores.util.tags.item.nuggets.EternalNuggetsTags;
+import net.radzratz.eternalores.util.tags.item.ores.EternalOreBlockItemTags;
 import net.radzratz.eternalores.util.tags.item.rods.EternalGemRodsTags;
 import net.radzratz.eternalores.util.tags.item.rods.EternalMetalRodsTags;
 import net.radzratz.eternalores.util.tags.item.rods.EternalMiscRodsTags;
+import net.radzratz.eternalores.util.tags.item.storage_blocks.EternalStorageGemBlockItemTags;
+import net.radzratz.eternalores.util.tags.item.storage_blocks.EternalStorageMetalBlockItemTags;
+import net.radzratz.eternalores.util.tags.item.storage_blocks.EternalStorageRawOreBlockItemTags;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -47,6 +57,197 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
 
                 tag(EternalItemsGeneralTags.Items.GEM_CUTTER).add(EternalGeneralItems.IRON_GEM_CUTTER.get());
+
+                tag(Tags.Items.ORES)
+                        .add(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.AMBER_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.APATITE_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.CINNABAR_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.COBALT_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.NITER_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.ONYX_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_ONYX_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.OSMIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.PERIDOT_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.PLATINUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.PLUTONIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RUBY_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.SILVER_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.SULFUR_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.TIN_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.URANIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.ZINC_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem());
+
+                //Individual Ores (Item Tag)
+                tag(EternalOreBlockItemTags.Items.ITEM_ALUMINUM_ORE_OW).add(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_ALUMINUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_AMBER_ORE_OW).add(EternalGeneralBlocks.AMBER_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_AMBER_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_APATITE_ORE_OW).add(EternalGeneralBlocks.APATITE_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_APATITE_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_CINNABAR_ORE_OW).add(EternalGeneralBlocks.CINNABAR_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_CINNABAR_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_COBALT_ORE_OW).add(EternalGeneralBlocks.COBALT_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_COBALT_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_FLUORITE_ORE_OW).add(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_FLUORITE_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_GALLIUM_ORE_OW).add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_GALLIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_LEAD_ORE_OW).add(EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_LEAD_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_NICKEL_ORE_OW).add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_NICKEL_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_NITER_ORE_OW).add(EternalGeneralBlocks.NITER_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_NITER_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_OBSIDIAN_ORE_NETHER).add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_ONYX_ORE_OW).add(EternalGeneralBlocks.ONYX_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_ONYX_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_ONYX_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_OSMIUM_ORE_OW).add(EternalGeneralBlocks.OSMIUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_OSMIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_PLATINUM_ORE_OW).add(EternalGeneralBlocks.PLATINUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_PLATINUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_RUBY_ORE_OW).add(EternalGeneralBlocks.RUBY_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_RUBY_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_SAPPHIRE_ORE_OW).add(EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_SAPPHIRE_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_SILVER_ORE_OW).add(EternalGeneralBlocks.SILVER_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_SILVER_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_SULFUR_ORE_OW).add(EternalGeneralBlocks.SULFUR_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_SULFUR_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_TIN_ORE_OW).add(EternalGeneralBlocks.TIN_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_TIN_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_URANIUM_ORE_OW).add(EternalGeneralBlocks.URANIUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_URANIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_ZINC_ORE_OW).add(EternalGeneralBlocks.ZINC_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_ZINC_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem());
+
+                //General Storage Blocks (Item Tag)
+                tag(Tags.Items.STORAGE_BLOCKS)
+                        .add(EternalGeneralBlocks.ALUMINUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.AMBER_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.APATITE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.BLUE_STEEL_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.BRASS_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.BRONZE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.CINNABAR_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.COBALT_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.CONSTANTAN_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.ELECTRUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.ENDERIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.FLUORITE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.GALLIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.GRAPHITE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.INVAR_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.LEAD_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.LUMIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.NICKEL_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.NITER_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.ONYX_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.OSMIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.PERIDOT_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.PEWTER_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.PLATINUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.PLUTONIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RUBY_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.SAPPHIRE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.SIGNALUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.SILVER_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.STEEL_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.SULFUR_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.TIN_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.TITANIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.URANIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.ZINC_BLOCK.asItem())
+
+                        .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_LEAD_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_PLATINUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_PLUTONIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_SILVER_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_TIN_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem());
+
+            //Individual Storage Blocks (Item Tag)
+            tag(EternalStorageMetalBlockItemTags.Blocks.ALUMINUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ALUMINUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.BLUE_STEEL_BLOCK_ST_ITEM).add(EternalGeneralBlocks.BLUE_STEEL_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.BRASS_BLOCK_ST_ITEM).add(EternalGeneralBlocks.BRASS_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.BRITANNIA_BLOCK_ST_ITEM).add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.BRONZE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.BRONZE_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.COBALT_BLOCK_ST_ITEM).add(EternalGeneralBlocks.COBALT_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.CONSTANTAN_BLOCK_ST_ITEM).add(EternalGeneralBlocks.CONSTANTAN_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.ELECTRUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ELECTRUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.ENDERIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ENDERIUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.GALLIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.GALLIUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.INVAR_BLOCK_ST_ITEM).add(EternalGeneralBlocks.INVAR_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.LEAD_BLOCK_ST_ITEM).add(EternalGeneralBlocks.LEAD_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.LUMIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.LUMIUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.NICKEL_BLOCK_ST_ITEM).add(EternalGeneralBlocks.NICKEL_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.OSMIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.OSMIUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.PEWTER_BLOCK_ST_ITEM).add(EternalGeneralBlocks.PEWTER_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.PLATINUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.PLATINUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.ROSE_GOLD_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.SIGNALUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.SIGNALUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.SILVER_BLOCK_ST_ITEM).add(EternalGeneralBlocks.SILVER_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.STEEL_BLOCK_ST_ITEM).add(EternalGeneralBlocks.STEEL_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.TIN_BLOCK_ST_ITEM).add(EternalGeneralBlocks.TIN_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.TITANIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.TITANIUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.URANIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.URANIUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.ZINC_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ZINC_BLOCK.asItem());
+
+            tag(EternalStorageGemBlockItemTags.Items.AMBER_BLOCK_ST_ITEM).add(EternalGeneralBlocks.AMBER_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.APATITE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.APATITE_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.CINNABAR_BLOCK_ST_ITEM).add(EternalGeneralBlocks.CINNABAR_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.FLUORITE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.FLUORITE_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.NITER_BLOCK_ST_ITEM).add(EternalGeneralBlocks.NITER_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.ONYX_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ONYX_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.PERIDOT_BLOCK_ST_ITEM).add(EternalGeneralBlocks.PERIDOT_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.RUBY_BLOCK_ST_ITEM).add(EternalGeneralBlocks.RUBY_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.SAPPHIRE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.SAPPHIRE_BLOCK.asItem());
+
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_ALUMINUM_ST_ITEM).add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_COBALT_ST_ITEM).add(EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_LEAD_ST_ITEM).add(EternalGeneralBlocks.RAW_LEAD_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_NICKEL_ST_ITEM).add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_OSMIUM_ST_ITEM).add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_PLATINUM_ST_ITEM).add(EternalGeneralBlocks.RAW_PLATINUM_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_SILVER_ST_ITEM).add(EternalGeneralBlocks.RAW_SILVER_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.SULFUR_ST_ITEM).add(EternalGeneralBlocks.SULFUR_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_TIN_ST_ITEM).add(EternalGeneralBlocks.RAW_TIN_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_URANIUM_ST_ITEM).add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_ZINC_ST_ITEM).add(EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem());
 
                 //General Nuggets
                 tag(Tags.Items.NUGGETS)
@@ -85,6 +286,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalNuggetsTags.Items.NUGGET_BLUE_STEEL).add(EternalGeneralItems.BLUE_STEEL_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_BRASS).add(EternalGeneralItems.BRASS_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_BRITANNIA_SILVER).add(EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get());
+                tag(EternalNuggetsTags.Items.NUGGET_BRONZE).add(EternalGeneralItems.BRONZE_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_COBALT).add(EternalGeneralItems.COBALT_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_CONSTANTAN).add(EternalGeneralItems.CONSTANTAN_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_COPPER).add(EternalGeneralItems.COPPER_NUGGET.get());
