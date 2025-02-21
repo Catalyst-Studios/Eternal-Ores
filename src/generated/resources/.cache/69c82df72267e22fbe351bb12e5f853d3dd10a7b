@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-03T01:34:30.3673845	Item Models: eternalores
+// 1.21.1	2025-02-16T09:43:48.4597091	Item Models: eternalores
 293fcce73e4be1f592385efaa6d0112679efe58f assets/eternalores/models/item/aluminum_dust.json
 8b7b671749e69be15657d4376b2dfd82dbd96d8d assets/eternalores/models/item/aluminum_ingot.json
 ce97247738e758b17ab7f3a0a4665e7b0401f443 assets/eternalores/models/item/aluminum_nugget.json
@@ -192,6 +192,7 @@ ab18cf2f98b6029765b6cd0ca41c5810be14220c assets/eternalores/models/item/rose_gol
 7b94e2706fcbd8c9873527db7170f3ee300f4f80 assets/eternalores/models/item/signalum_dust.json
 c555ba3e59f9aecd46d8de960efcb66ef94d104b assets/eternalores/models/item/signalum_ingot.json
 03e8354bcd602fa46e4671f34f9c096fe8570e1c assets/eternalores/models/item/signalum_nugget.json
+6f1c6c3262abf862fa329b4559269b626abc5c2a assets/eternalores/models/item/silicon.json
 690235ac8637ae301b7293edd72a99200f29b631 assets/eternalores/models/item/silver_dust.json
 aa498b6435438767204861372941b1ce42c7976a assets/eternalores/models/item/silver_ingot.json
 7c85697e9ff112bc09108d02a6294d77e7e040c8 assets/eternalores/models/item/silver_nugget.json

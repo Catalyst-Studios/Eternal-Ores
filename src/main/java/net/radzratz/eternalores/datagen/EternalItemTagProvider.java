@@ -21,8 +21,10 @@ import net.radzratz.eternalores.util.tags.item.dusts.EternalMiscDustsTags;
 import net.radzratz.eternalores.util.tags.item.dusts.EternalStoneDustsTags;
 import net.radzratz.eternalores.util.tags.item.gears.EternalGemGearTags;
 import net.radzratz.eternalores.util.tags.item.gears.EternalMetalGearTags;
+import net.radzratz.eternalores.util.tags.item.ingots.EternalIngotTags;
 import net.radzratz.eternalores.util.tags.item.nuggets.EternalNuggetsTags;
 import net.radzratz.eternalores.util.tags.item.ores.EternalOreBlockItemTags;
+import net.radzratz.eternalores.util.tags.item.plates.EternalPlates;
 import net.radzratz.eternalores.util.tags.item.rods.EternalGemRodsTags;
 import net.radzratz.eternalores.util.tags.item.rods.EternalMetalRodsTags;
 import net.radzratz.eternalores.util.tags.item.rods.EternalMiscRodsTags;
@@ -57,6 +59,181 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
 
                 tag(EternalItemsGeneralTags.Items.GEM_CUTTER).add(EternalGeneralItems.IRON_GEM_CUTTER.get());
+
+                //Plates
+                tag(EternalItemsGeneralTags.Items.PLATES)
+                        .add(EternalGeneralItems.PLATE_ALUMINUM.get())
+                        .add(EternalGeneralItems.PLATE_BLUE_STEEL.get())
+                        .add(EternalGeneralItems.PLATE_BRASS.get())
+                        .add(EternalGeneralItems.PLATE_BRONZE.get())
+                        .add(EternalGeneralItems.PLATE_COBALT.get())
+                        .add(EternalGeneralItems.PLATE_CONSTANTAN.get())
+                        .add(EternalGeneralItems.PLATE_COPPER.get())
+                        .add(EternalGeneralItems.PLATE_ELECTRUM.get())
+                        .add(EternalGeneralItems.PLATE_ENDERIUM.get())
+                        .add(EternalGeneralItems.PLATE_GALLIUM.get())
+                        .add(EternalGeneralItems.PLATE_GOLD.get())
+                        .add(EternalGeneralItems.PLATE_GRAPHITE.get())
+                        .add(EternalGeneralItems.PLATE_INVAR.get())
+                        .add(EternalGeneralItems.PLATE_IRON.get())
+                        .add(EternalGeneralItems.PLATE_LEAD.get())
+                        .add(EternalGeneralItems.PLATE_LUMIUM.get())
+                        .add(EternalGeneralItems.PLATE_NETHERITE.get())
+                        .add(EternalGeneralItems.PLATE_NICKEL.get())
+                        .add(EternalGeneralItems.PLATE_OSMIUM.get())
+                        .add(EternalGeneralItems.PLATE_PLATINUM.get())
+                        .add(EternalGeneralItems.PLATE_PLUTONIUM.get())
+                        .add(EternalGeneralItems.PLATE_ROSE_GOLD.get())
+                        .add(EternalGeneralItems.PLATE_SAPPHIRE.get())
+                        .add(EternalGeneralItems.PLATE_SIGNALUM.get())
+                        .add(EternalGeneralItems.PLATE_SILVER.get())
+                        .add(EternalGeneralItems.PLATE_STEEL.get())
+                        .add(EternalGeneralItems.PLATE_TIN.get())
+                        .add(EternalGeneralItems.PLATE_TITANIUM.get())
+                        .add(EternalGeneralItems.PLATE_ULTIMATITANIUM.get())
+                        .add(EternalGeneralItems.PLATE_URANIUM.get())
+                        .add(EternalGeneralItems.PLATE_ZINC.get());
+
+                //Metal Plates
+                tag(EternalItemsGeneralTags.Items.METAL_PLATES)
+                        .add(EternalGeneralItems.PLATE_ALUMINUM.get())
+                        .add(EternalGeneralItems.PLATE_BLUE_STEEL.get())
+                        .add(EternalGeneralItems.PLATE_BRASS.get())
+                        .add(EternalGeneralItems.PLATE_BRONZE.get())
+                        .add(EternalGeneralItems.PLATE_COBALT.get())
+                        .add(EternalGeneralItems.PLATE_CONSTANTAN.get())
+                        .add(EternalGeneralItems.PLATE_COPPER.get())
+                        .add(EternalGeneralItems.PLATE_ELECTRUM.get())
+                        .add(EternalGeneralItems.PLATE_ENDERIUM.get())
+                        .add(EternalGeneralItems.PLATE_GALLIUM.get())
+                        .add(EternalGeneralItems.PLATE_GOLD.get())
+                        .add(EternalGeneralItems.PLATE_INVAR.get())
+                        .add(EternalGeneralItems.PLATE_IRON.get())
+                        .add(EternalGeneralItems.PLATE_LEAD.get())
+                        .add(EternalGeneralItems.PLATE_LUMIUM.get())
+                        .add(EternalGeneralItems.PLATE_NETHERITE.get())
+                        .add(EternalGeneralItems.PLATE_NICKEL.get())
+                        .add(EternalGeneralItems.PLATE_OSMIUM.get())
+                        .add(EternalGeneralItems.PLATE_PLATINUM.get())
+                        .add(EternalGeneralItems.PLATE_ROSE_GOLD.get())
+                        .add(EternalGeneralItems.PLATE_SIGNALUM.get())
+                        .add(EternalGeneralItems.PLATE_SILVER.get())
+                        .add(EternalGeneralItems.PLATE_STEEL.get())
+                        .add(EternalGeneralItems.PLATE_TIN.get())
+                        .add(EternalGeneralItems.PLATE_TITANIUM.get())
+                        .add(EternalGeneralItems.PLATE_ULTIMATITANIUM.get())
+                        .add(EternalGeneralItems.PLATE_URANIUM.get())
+                        .add(EternalGeneralItems.PLATE_ZINC.get());
+
+                //Gem Plates
+                tag(EternalItemsGeneralTags.Items.GEM_PLATES)
+                        .add(EternalGeneralItems.PLATE_SAPPHIRE.get());
+
+                //Individual Plates
+
+                tag(EternalPlates.Items.ALUMINUM_PLATE).add(EternalGeneralItems.PLATE_ALUMINUM.get());
+                tag(EternalPlates.Items.ALUMINIUM_PLATE).add(EternalGeneralItems.PLATE_ALUMINUM.get());
+                tag(EternalPlates.Items.BLUE_STEEL_PLATE).add(EternalGeneralItems.PLATE_BLUE_STEEL.get());
+                tag(EternalPlates.Items.BRASS_PLATE).add(EternalGeneralItems.PLATE_BRASS.get());
+                tag(EternalPlates.Items.BRONZE_PLATE).add(EternalGeneralItems.PLATE_BRONZE.get());
+                tag(EternalPlates.Items.COBALT_PLATE).add(EternalGeneralItems.PLATE_COBALT.get());
+                tag(EternalPlates.Items.CONSTANTAN_PLATE).add(EternalGeneralItems.PLATE_CONSTANTAN.get());
+                tag(EternalPlates.Items.COPPER_PLATE).add(EternalGeneralItems.PLATE_COPPER.get());
+                tag(EternalPlates.Items.ELECTRUM_PLATE).add(EternalGeneralItems.PLATE_ELECTRUM.get());
+                tag(EternalPlates.Items.ENDERIUM_PLATE) .add(EternalGeneralItems.PLATE_ENDERIUM.get());
+                tag(EternalPlates.Items.GALLIUM_PLATE).add(EternalGeneralItems.PLATE_GALLIUM.get());
+                tag(EternalPlates.Items.GOLD_PLATE).add(EternalGeneralItems.PLATE_GOLD.get());
+                tag(EternalPlates.Items.GRAPHITE_PLATE).add(EternalGeneralItems.PLATE_GRAPHITE.get());
+                tag(EternalPlates.Items.INVAR_PLATE).add(EternalGeneralItems.PLATE_INVAR.get());
+                tag(EternalPlates.Items.IRON_PLATE).add(EternalGeneralItems.PLATE_IRON.get());
+                tag(EternalPlates.Items.LEAD_PLATE).add(EternalGeneralItems.PLATE_LEAD.get());
+                tag(EternalPlates.Items.LUMIUM_PLATE).add(EternalGeneralItems.PLATE_LUMIUM.get());
+                tag(EternalPlates.Items.NETHERITE_PLATE).add(EternalGeneralItems.PLATE_NETHERITE.get());
+                tag(EternalPlates.Items.NICKEL_PLATE).add(EternalGeneralItems.PLATE_NICKEL.get());
+                tag(EternalPlates.Items.OSMIUM_PLATE).add(EternalGeneralItems.PLATE_OSMIUM.get());
+                tag(EternalPlates.Items.PLATINUM_PLATE).add(EternalGeneralItems.PLATE_PLATINUM.get());
+                tag(EternalPlates.Items.PLUTONIUM_PLATE).add(EternalGeneralItems.PLATE_PLUTONIUM.get());
+                tag(EternalPlates.Items.ROSE_GOLD_PLATE).add(EternalGeneralItems.PLATE_ROSE_GOLD.get());
+                tag(EternalPlates.Items.SAPPHIRE_PLATE).add(EternalGeneralItems.PLATE_SAPPHIRE.get());
+                tag(EternalPlates.Items.SIGNALUM_PLATE).add(EternalGeneralItems.PLATE_SIGNALUM.get());
+                tag(EternalPlates.Items.SILVER_PLATE).add(EternalGeneralItems.PLATE_SILVER.get());
+                tag(EternalPlates.Items.STEEL_PLATE).add(EternalGeneralItems.PLATE_STEEL.get());
+                tag(EternalPlates.Items.TIN_PLATE).add(EternalGeneralItems.PLATE_TIN.get());
+                tag(EternalPlates.Items.TITANIUM_PLATE).add(EternalGeneralItems.PLATE_TITANIUM.get());
+                tag(EternalPlates.Items.ULTIMATITANIUM_PLATE).add(EternalGeneralItems.PLATE_ULTIMATITANIUM.get());
+                tag(EternalPlates.Items.URANIUM_PLATE).add(EternalGeneralItems.PLATE_URANIUM.get());
+                tag(EternalPlates.Items.ZINC_PLATE).add(EternalGeneralItems.PLATE_ZINC.get());
+
+                //Misc
+                tag(EternalItemsGeneralTags.Items.SILICON).add(EternalGeneralItems.SILICON.get());
+
+                //Ingots
+                tag(Tags.Items.INGOTS)
+                        .add(EternalGeneralItems.ALUMINUM_INGOT.get())
+                        .add(EternalGeneralItems.BLUE_STEEL_INGOT.get())
+                        .add(EternalGeneralItems.BRASS_INGOT.get())
+                        .add(EternalGeneralItems.BRITANNIA_SILVER_INGOT.get())
+                        .add(EternalGeneralItems.BRONZE_INGOT.get())
+                        .add(EternalGeneralItems.COBALT_INGOT.get())
+                        .add(EternalGeneralItems.CONSTANTAN_INGOT.get())
+                        .add(EternalGeneralItems.ELECTRUM_INGOT.get())
+                        .add(EternalGeneralItems.ENDERIUM_INGOT.get())
+                        .add(EternalGeneralItems.ETERNAL_DARK_INGOT.get())
+                        .add(EternalGeneralItems.ETERNAL_LIGHT_INGOT.get())
+                        .add(EternalGeneralItems.GALLIUM_INGOT.get())
+                        .add(EternalGeneralItems.GRAPHITE_INGOT.get())
+                        .add(EternalGeneralItems.INVAR_INGOT.get())
+                        .add(EternalGeneralItems.LEAD_INGOT.get())
+                        .add(EternalGeneralItems.LUMIUM_INGOT.get())
+                        .add(EternalGeneralItems.NICKEL_INGOT.get())
+                        .add(EternalGeneralItems.OSMIUM_INGOT.get())
+                        .add(EternalGeneralItems.PEWTER_INGOT.get())
+                        .add(EternalGeneralItems.PLATINUM_INGOT.get())
+                        .add(EternalGeneralItems.PLUTONIUM_INGOT.get())
+                        .add(EternalGeneralItems.REDSTONE_INGOT.get())
+                        .add(EternalGeneralItems.ROSE_GOLD_INGOT.get())
+                        .add(EternalGeneralItems.SIGNALUM_INGOT.get())
+                        .add(EternalGeneralItems.SILVER_INGOT.get())
+                        .add(EternalGeneralItems.STEEL_INGOT.get())
+                        .add(EternalGeneralItems.TIN_INGOT.get())
+                        .add(EternalGeneralItems.TITANIUM_INGOT.get())
+                        .add(EternalGeneralItems.ULTIMATITANIUM_INGOT.get())
+                        .add(EternalGeneralItems.URANIUM_INGOT.get())
+                        .add(EternalGeneralItems.ZINC_INGOT.get());
+
+                //Individual Ingots
+                tag(EternalIngotTags.Items.ALUMINUM_INGOT).add(EternalGeneralItems.ALUMINUM_INGOT.get());
+                tag(EternalIngotTags.Items.ALUMINIUM_INGOT).add(EternalGeneralItems.ALUMINUM_INGOT.get());
+                tag(EternalIngotTags.Items.BLUE_STEEL_INGOT).add(EternalGeneralItems.BLUE_STEEL_INGOT.get());
+                tag(EternalIngotTags.Items.BRASS_INGOT).add(EternalGeneralItems.BRASS_INGOT.get());
+                tag(EternalIngotTags.Items.BRITANNIA_INGOT).add(EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
+                tag(EternalIngotTags.Items.BRONZE_INGOT).add(EternalGeneralItems.BRONZE_INGOT.get());
+                tag(EternalIngotTags.Items.COBALT_INGOT).add(EternalGeneralItems.COBALT_INGOT.get());
+                tag(EternalIngotTags.Items.CONSTANTAN_INGOT).add(EternalGeneralItems.CONSTANTAN_INGOT.get());
+                tag(EternalIngotTags.Items.ELECTRUM_INGOT).add(EternalGeneralItems.ELECTRUM_INGOT.get());
+                tag(EternalIngotTags.Items.ENDERIUM_INGOT).add(EternalGeneralItems.ENDERIUM_INGOT.get());
+                tag(EternalIngotTags.Items.ETERNAL_DARK_INGOT).add(EternalGeneralItems.ETERNAL_DARK_INGOT.get());
+                tag(EternalIngotTags.Items.ETERNAL_LIGHT_INGOT).add(EternalGeneralItems.ETERNAL_LIGHT_INGOT.get());
+                tag(EternalIngotTags.Items.GALLIUM_INGOT).add(EternalGeneralItems.GALLIUM_INGOT.get());
+                tag(EternalIngotTags.Items.GRAPHITE_INGOT).add(EternalGeneralItems.GRAPHITE_INGOT.get());
+                tag(EternalIngotTags.Items.INVAR_INGOT).add(EternalGeneralItems.INVAR_INGOT.get());
+                tag(EternalIngotTags.Items.LEAD_INGOT).add(EternalGeneralItems.LEAD_INGOT.get());
+                tag(EternalIngotTags.Items.LUMIUM_INGOT).add(EternalGeneralItems.LUMIUM_INGOT.get());
+                tag(EternalIngotTags.Items.NICKEL_INGOT).add(EternalGeneralItems.NICKEL_INGOT.get());
+                tag(EternalIngotTags.Items.OSMIUM_INGOT).add(EternalGeneralItems.OSMIUM_INGOT.get());
+                tag(EternalIngotTags.Items.PEWTER_INGOT).add(EternalGeneralItems.PEWTER_INGOT.get());
+                tag(EternalIngotTags.Items.PLATINUM_INGOT).add(EternalGeneralItems.PLATINUM_INGOT.get());
+                tag(EternalIngotTags.Items.PLUTONIUM_INGOT).add(EternalGeneralItems.PLUTONIUM_INGOT.get());
+                tag(EternalIngotTags.Items.REDSTONE_INGOT).add(EternalGeneralItems.REDSTONE_INGOT.get());
+                tag(EternalIngotTags.Items.ROSE_GOLD_INGOT).add(EternalGeneralItems.ROSE_GOLD_INGOT.get());
+                tag(EternalIngotTags.Items.SIGNALUM_INGOT).add(EternalGeneralItems.SIGNALUM_INGOT.get());
+                tag(EternalIngotTags.Items.SILVER_INGOT).add(EternalGeneralItems.SILVER_INGOT.get());
+                tag(EternalIngotTags.Items.STEEL_INGOT).add(EternalGeneralItems.STEEL_INGOT.get());
+                tag(EternalIngotTags.Items.TIN_INGOT).add(EternalGeneralItems.TIN_INGOT.get());
+                tag(EternalIngotTags.Items.TITANIUM_INGOT).add(EternalGeneralItems.TITANIUM_INGOT.get());
+                tag(EternalIngotTags.Items.ULTIMATITANIUM_INGOT).add(EternalGeneralItems.ULTIMATITANIUM_INGOT.get());
+                tag(EternalIngotTags.Items.URANIUM_INGOT).add(EternalGeneralItems.URANIUM_INGOT.get());
+                tag(EternalIngotTags.Items.ZINC_INGOT).add(EternalGeneralItems.ZINC_INGOT.get());
 
                 tag(Tags.Items.ORES)
                         .add(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem())
@@ -643,6 +820,8 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.RAW_ULTIMATITANIUM.get())
                         .add(EternalGeneralItems.RAW_URANIUM.get())
                         .add(EternalGeneralItems.RAW_ZINC.get());
+
+                //Individual Raw Mats
 
                 System.out.println("Finished Loading Tools and Item Tags");
     }

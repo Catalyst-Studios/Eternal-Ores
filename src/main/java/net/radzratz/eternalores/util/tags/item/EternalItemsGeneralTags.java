@@ -14,6 +14,9 @@ public class EternalItemsGeneralTags {
         public static final TagKey<Item> HAMMERS = createGeneralItemTags("eternalores","tools/hammers");
         public static final TagKey<Item> GEM_CUTTER = createGeneralItemTags("eternalores","tools/gem_cutter");
 
+        //Misc
+        public static final TagKey<Item> SILICON = createGeneralItemTags("c","silicon");
+
         //Stone, Metal & Gem Dust
         public static final TagKey<Item> METAL_DUSTS = createGeneralItemTags("c", "metal_dust");
         public static final TagKey<Item> GEM_DUSTS = createGeneralItemTags("c","gem_dust");

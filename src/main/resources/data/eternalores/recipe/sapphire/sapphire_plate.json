@@ -6,7 +6,7 @@
       "tag": "c:gems/sapphire"
    },
     "B": {
-      "tag": "gemcutter:gemcutter"
+      "tag": "eternalores:gem_cutter"
     }
   },
   "pattern": [

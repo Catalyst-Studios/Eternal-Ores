@@ -6,7 +6,7 @@
       "item": "minecraft:iron_ingot"
    },
     "B": {
-      "tag": "hammers:hammers"
+      "tag": "eternalores:hammers"
     }
   },
   "pattern": [

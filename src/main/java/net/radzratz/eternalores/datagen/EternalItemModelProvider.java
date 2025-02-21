@@ -258,6 +258,9 @@ public class EternalItemModelProvider extends ItemModelProvider {
 
         //GEM SHARDS
         basicItem(EternalGeneralItems.GEM_SAPPHIRE_SHARD.get());
+
+        //Misc
+        basicItem(EternalGeneralItems.SILICON.get());
     }
 
     private void handheldItem(DeferredItem<?> item) {
