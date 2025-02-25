@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_osmium_raw_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:raw_osmium_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:osmium_raw_block_to_material_furnace"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_osmium_raw_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:osmium_raw_block_to_material_furnace"
+    ]
+  }
+}

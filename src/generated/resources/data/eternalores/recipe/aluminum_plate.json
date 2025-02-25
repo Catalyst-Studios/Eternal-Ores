@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "tag": "eternalores:tools/hammers"
+    },
+    "I": {
+      "tag": "c:ingots/aluminum"
+    }
+  },
+  "pattern": [
+    " H ",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:plate_aluminum"
+  }
+}

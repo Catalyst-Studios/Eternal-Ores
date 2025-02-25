@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/lumium_ingot"
+    "layer0": "eternalores:item/ingots/lumium_ingot"
   }
 }

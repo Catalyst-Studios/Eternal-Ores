@@ -44,6 +44,10 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> GALLIUM_ORE_PLACED_KEY = registerKey("gallium_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_GALLIUM_ORE_PLACED_KEY = registerKey("nether_gallium_ore_placed");
     public static final ResourceKey<PlacedFeature> END_GALLIUM_ORE_PLACED_KEY = registerKey("end_gallium_ore_placed");
+    //Iridium
+    public static final ResourceKey<PlacedFeature> IRIDIUM_ORE_PLACED_KEY = registerKey("iridium_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_IRIDIUM_ORE_PLACED_KEY = registerKey("nether_iridium_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_IRIDIUM_ORE_PLACED_KEY = registerKey("end_iridium_ore_placed");
     //Lead
     public static final ResourceKey<PlacedFeature> LEAD_ORE_PLACED_KEY = registerKey("lead_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_LEAD_ORE_PLACED_KEY = registerKey("nether_lead_ore_placed");
@@ -184,6 +188,17 @@ public class EternalPlacedFeatures {
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, END_GALLIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_GALLIUM_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+    //IRIDIUM
+    register(context, IRIDIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_IRIDIUM_ORE_KEY),
+             EternalOrePlacement.commonOrePlacement(10,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+    //register(context, NETHER_IRIDIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_IRIDIUM_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+    //register(context, END_IRIDIUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_IRIDIUM_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 

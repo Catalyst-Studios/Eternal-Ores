@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_amber_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:amber_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:amber_dust_to_material_furnace"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_amber_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:amber_dust_to_material_furnace"
+    ]
+  }
+}

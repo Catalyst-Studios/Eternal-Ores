@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "tag": "eternalores:tools/gem_cutter"
+    },
+    "I": {
+      "tag": "c:gems/diamond"
+    }
+  },
+  "pattern": [
+    "H  ",
+    " I ",
+    "  I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:rod_diamond"
+  }
+}

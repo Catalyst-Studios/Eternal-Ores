@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/brass_ingot"
+    "layer0": "eternalores:item/ingots/brass_ingot"
   }
 }

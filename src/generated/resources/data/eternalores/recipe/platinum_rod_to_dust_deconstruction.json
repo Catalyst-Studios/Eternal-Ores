@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:plate_platinum"
+    },
+    {
+      "tag": "eternalores:tools/hammers"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "eternalores:platinum_dust"
+  }
+}

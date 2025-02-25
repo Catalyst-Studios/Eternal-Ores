@@ -30,6 +30,8 @@ public class EternalStorageMetalBlockTags {
         public static final TagKey<Block> GALLIUM_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/gallium");
         //Invar
         public static final TagKey<Block> INVAR_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/invar");
+        //Iridium
+        public static final TagKey<Block> IRIDIUM_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/iridium");
         //Lead
         public static final TagKey<Block> LEAD_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/lead");
         //Lumium

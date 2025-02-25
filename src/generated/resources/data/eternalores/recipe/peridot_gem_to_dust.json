@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:gem_peridot"
+    },
+    {
+      "tag": "eternalores:tools/hammers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:peridot_dust"
+  }
+}

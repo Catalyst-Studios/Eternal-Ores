@@ -39,6 +39,7 @@
   "item.eternalores.pewter_ingot": "Pewter Ingot",
   "item.eternalores.rose_gold_ingot": "Rose Gold Ingot",
   "item.eternalores.britannia_silver_ingot": "Britannia Silver Ingot",
+  "item.eternalores.iridium_ingot": "Iridium Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -72,6 +73,7 @@
   "item.eternalores.pewter_nugget": "Pewter Nugget",
   "item.eternalores.rose_gold_nugget": "Rose Gold Nugget",
   "item.eternalores.britannia_silver_nugget": "Britannia Silver Nugget",
+  "item.eternalores.iridium_nugget": "Iridium Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -104,6 +106,8 @@
   "item.eternalores.rod_gallium": "Gallium Rod",
   "item.eternalores.rod_titanium": "Titanium Rod",
   "item.eternalores.rod_rose_gold": "Rose Gold Rod",
+  "item.eternalores.rod_iridium": "Iridium Rod",
+  "item.eternalores.rod_diamond": "Diamond Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -136,6 +140,8 @@
   "item.eternalores.plate_gallium": "Gallium Plate",
   "item.eternalores.plate_titanium": "Titanium Plate",
   "item.eternalores.plate_rose_gold": "Rose Gold Plate",
+  "item.eternalores.plate_iridium": "Iridium Plate",
+  "item.eternalores.plate_diamond": "Diamond Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -163,6 +169,7 @@
   "item.eternalores.raw_ultimatitanium": "Raw Ultimatitanium",
   "item.eternalores.raw_plutonium": "Raw Plutonium",
   "item.eternalores.raw_gallium": "Raw Gallium",
+  "item.eternalores.raw_iridium": "Raw Iridium",
 
   "item.eternalores.aluminum_dust": "Aluminum Dust",
   "item.eternalores.cobalt_dust": "Cobalt Dust",
@@ -215,6 +222,7 @@
   "item.eternalores.pewter_dust": "Pewter Dust",
   "item.eternalores.rose_gold_dust": "Rose Gold Dust",
   "item.eternalores.britannia_silver_dust": "Britannia Silver Dust",
+  "item.eternalores.iridium_dust": "Iridium Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -252,6 +260,7 @@
   "block.eternalores.ruby_ore_block": "Ruby Ore",
   "block.eternalores.gallium_ore_block": "Gallium Ore",
   "block.eternalores.peridot_ore_block": "Peridot Ore",
+  "block.eternalores.iridium_ore_block": "Iridium Ore",
 
   "block.eternalores.deepslate_cobalt_ore_block": "Deepslate Cobalt Ore",
   "block.eternalores.deepslate_fluorite_ore_block": "Deepslate Fluorite Ore",
@@ -275,6 +284,7 @@
   "block.eternalores.deepslate_ruby_ore_block": "Deepslate Ruby Ore",
   "block.eternalores.deepslate_gallium_ore_block": "Deepslate Gallium Ore",
   "block.eternalores.deepslate_peridot_ore_block": "Deepslate Peridot Ore",
+  "block.eternalores.deepslate_iridium_ore_block": "Deepslate Iridium Ore",
 
   "block.eternalores.obsidian_ore_block": "Obsidian Ore",
 
@@ -291,6 +301,7 @@
   "block.eternalores.raw_silver_block": "Block of Raw Silver",
   "block.eternalores.raw_zinc_block": "Block of Raw Zinc",
   "block.eternalores.raw_gallium_block": "Block of Raw Gallium",
+  "block.eternalores.raw_iridium_block": "Block of Raw Iridium",
 
   "block.eternalores.aluminum_block": "Aluminum Block",
   "block.eternalores.cobalt_block": "Cobalt Block",
@@ -329,6 +340,7 @@
   "block.eternalores.pewter_block": "Pewter Block",
   "block.eternalores.rose_gold_block": "Rose Gold Block",
   "block.eternalores.britannia_silver_block": "Britannia Silver Block",
+  "block.eternalores.iridium_block": "Iridium Block",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/gallium_dust"
+    "layer0": "eternalores:item/dusts/gallium_dust"
   }
 }

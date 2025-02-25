@@ -34,6 +34,8 @@ public class EternalNuggetsTags {
         public static final TagKey<Item> NUGGET_GRAPHITE = createNuggetsTags("nuggets/graphite");
         //Invar
         public static final TagKey<Item> NUGGET_INVAR = createNuggetsTags("nuggets/invar");
+        //Iridium
+        public static final TagKey<Item> NUGGET_IRIDIUM = createNuggetsTags("nuggets/iridium");
         //Lead
         public static final TagKey<Item> NUGGET_LEAD = createNuggetsTags("nuggets/lead");
         //Lumium

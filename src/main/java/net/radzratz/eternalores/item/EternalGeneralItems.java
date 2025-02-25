@@ -53,6 +53,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> GALLIUM_INGOT = registerIngotItem("gallium_ingot");
     public static final DeferredItem<Item> GRAPHITE_INGOT = registerIngotItem("graphite_ingot");
     public static final DeferredItem<Item> INVAR_INGOT = registerIngotItem("invar_ingot");
+    public static final DeferredItem<Item> IRIDIUM_INGOT = registerIngotItem("iridium_ingot");
     public static final DeferredItem<Item> LEAD_INGOT = registerIngotItem("lead_ingot");
     public static final DeferredItem<Item> LUMIUM_INGOT = registerIngotItem("lumium_ingot");
     public static final DeferredItem<Item> NICKEL_INGOT = registerIngotItem("nickel_ingot");
@@ -88,6 +89,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> GALLIUM_NUGGET = registerNuggetItem("gallium_nugget");
     public static final DeferredItem<Item> GRAPHITE_NUGGET = registerNuggetItem("graphite_nugget");
     public static final DeferredItem<Item> INVAR_NUGGET = registerNuggetItem("invar_nugget");
+    public static final DeferredItem<Item> IRIDIUM_NUGGET = registerNuggetItem("iridium_nugget");
     public static final DeferredItem<Item> LEAD_NUGGET = registerNuggetItem("lead_nugget");
     public static final DeferredItem<Item> LUMIUM_NUGGET = registerNuggetItem("lumium_nugget");
     public static final DeferredItem<Item> NETHERITE_NUGGET = registerNuggetItem("netherite_nugget");
@@ -124,6 +126,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> ROD_GOLD = registerRodItem("rod_gold");
     public static final DeferredItem<Item> ROD_GRAPHITE = registerRodItem("rod_graphite");
     public static final DeferredItem<Item> ROD_INVAR = registerRodItem("rod_invar");
+    public static final DeferredItem<Item> ROD_IRIDIUM = registerRodItem("rod_iridium");
     public static final DeferredItem<Item> ROD_IRON = registerRodItem("rod_iron");
     public static final DeferredItem<Item> ROD_LEAD = registerRodItem("rod_lead");
     public static final DeferredItem<Item> ROD_LUMIUM = registerRodItem("rod_lumium");
@@ -154,12 +157,14 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> PLATE_COBALT = registerPlateItem("plate_cobalt");
     public static final DeferredItem<Item> PLATE_CONSTANTAN = registerPlateItem("plate_constantan");
     public static final DeferredItem<Item> PLATE_COPPER = registerPlateItem("plate_copper");
+    public static final DeferredItem<Item> PLATE_DIAMOND = registerPlateItem("plate_diamond");
     public static final DeferredItem<Item> PLATE_ELECTRUM = registerPlateItem("plate_electrum");
     public static final DeferredItem<Item> PLATE_ENDERIUM = registerPlateItem("plate_enderium");
     public static final DeferredItem<Item> PLATE_GALLIUM = registerPlateItem("plate_gallium");
     public static final DeferredItem<Item> PLATE_GOLD = registerPlateItem("plate_gold");
     public static final DeferredItem<Item> PLATE_GRAPHITE = registerPlateItem("plate_graphite");
     public static final DeferredItem<Item> PLATE_INVAR = registerPlateItem("plate_invar");
+    public static final DeferredItem<Item> PLATE_IRIDIUM = registerPlateItem("plate_iridium");
     public static final DeferredItem<Item> PLATE_IRON = registerPlateItem("plate_iron");
     public static final DeferredItem<Item> PLATE_LEAD = registerPlateItem("plate_lead");
     public static final DeferredItem<Item> PLATE_LUMIUM = registerPlateItem("plate_lumium");
@@ -203,6 +208,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> RAW_ALUMINUM = registerRawItem("raw_aluminum");
     public static final DeferredItem<Item> RAW_COBALT = registerRawItem("raw_cobalt");
     public static final DeferredItem<Item> RAW_GALLIUM = registerRawItem("raw_gallium");
+    public static final DeferredItem<Item> RAW_IRIDIUM = registerRawItem("raw_iridium");
     public static final DeferredItem<Item> RAW_LEAD = registerRawItem("raw_lead");
     public static final DeferredItem<Item> RAW_NICKEL = registerRawItem("raw_nickel");
     public static final DeferredItem<Item> RAW_OSMIUM = registerRawItem("raw_osmium");
@@ -242,6 +248,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> GOLD_DUST = registerDustItem("gold_dust");
     public static final DeferredItem<Item> GRAPHITE_DUST = registerDustItem("graphite_dust");
     public static final DeferredItem<Item> INVAR_DUST = registerDustItem("invar_dust");
+    public static final DeferredItem<Item> IRIDIUM_DUST = registerDustItem("iridium_dust");
     public static final DeferredItem<Item> IRON_DUST = registerDustItem("iron_dust");
     public static final DeferredItem<Item> LAPIS_LAZULI_DUST = registerDustItem("lapis_lazuli_dust");
     public static final DeferredItem<Item> LEAD_DUST = registerDustItem("lead_dust");

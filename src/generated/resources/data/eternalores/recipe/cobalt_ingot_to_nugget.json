@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:cobalt_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:cobalt_nugget"
+  }
+}

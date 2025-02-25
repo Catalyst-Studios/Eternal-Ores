@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "eternalores:item/rod_sapphire"
+    "layer0": "eternalores:item/rods/rod_sapphire"
   }
 }

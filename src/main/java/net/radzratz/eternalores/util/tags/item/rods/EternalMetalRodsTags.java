@@ -32,6 +32,8 @@ public class EternalMetalRodsTags {
         public static final TagKey<Item> ROD_GOLD = createMetalRodTag("rods/gold");
         //Invar
         public static final TagKey<Item> ROD_INVAR = createMetalRodTag("rods/invar");
+        //Iridium
+        public static final TagKey<Item> ROD_IRIDIUM = createMetalRodTag("rods/iridium");
         //Iron
         public static final TagKey<Item> ROD_IRON = createMetalRodTag("rods/iron");
         //Lead

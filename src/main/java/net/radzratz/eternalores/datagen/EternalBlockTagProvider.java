@@ -40,6 +40,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalStorageMetalBlockTags.Blocks.ENDERIUM_BLOCK_ST).add(EternalGeneralBlocks.ENDERIUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.GALLIUM_BLOCK_ST).add(EternalGeneralBlocks.GALLIUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.INVAR_BLOCK_ST).add(EternalGeneralBlocks.INVAR_BLOCK.get());
+            tag(EternalStorageMetalBlockTags.Blocks.IRIDIUM_BLOCK_ST).add(EternalGeneralBlocks.IRIDIUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.LEAD_BLOCK_ST).add(EternalGeneralBlocks.LEAD_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.LUMIUM_BLOCK_ST).add(EternalGeneralBlocks.LUMIUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.NICKEL_BLOCK_ST).add(EternalGeneralBlocks.NICKEL_BLOCK.get());
@@ -67,6 +68,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
 
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_ALUMINUM_ST).add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_COBALT_ST).add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get());
+            tag(EternalStorageRawOreBlockTags.Blocks.RAW_GALLIUM_ST).add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get());
+            tag(EternalStorageRawOreBlockTags.Blocks.RAW_IRIDIUM_ST).add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_LEAD_ST).add(EternalGeneralBlocks.RAW_LEAD_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_NICKEL_ST).add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_OSMIUM_ST).add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.get());
@@ -103,6 +106,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.GALLIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.GRAPHITE_BLOCK.get())
                     .add(EternalGeneralBlocks.INVAR_BLOCK.get())
+                    .add(EternalGeneralBlocks.IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.LUMIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_BLOCK.get())
@@ -124,6 +128,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalGeneralBlockTags.Blocks.RAW_ORE_BLOCK)
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.get())
@@ -151,6 +156,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalOreBlockTags.Blocks.FLUORITE_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.GALLIUM_ORE_OW).add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.GALLIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get());
+            tag(EternalOreBlockTags.Blocks.IRIDIUM_ORE_OW).add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get());
+            tag(EternalOreBlockTags.Blocks.IRIDIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.LEAD_ORE_OW).add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.LEAD_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.NICKEL_ORE_OW).add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get());
@@ -195,6 +202,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get())
@@ -235,6 +244,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.CINNABAR_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.COBALT_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NITER_ORE_BLOCK.get())
@@ -249,7 +260,6 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.URANIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.SILVER_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.ZINC_ORE_BLOCK.get())
-                    .add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.PERIDOT_ORE_BLOCK.get());
 
             //Ores in Ground Deepslate
@@ -260,6 +270,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.get())
@@ -299,6 +310,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.GALLIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.GRAPHITE_BLOCK.get())
                     .add(EternalGeneralBlocks.INVAR_BLOCK.get())
+                    .add(EternalGeneralBlocks.IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.LUMIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_BLOCK.get())
@@ -323,6 +335,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
 
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.get())
@@ -348,6 +362,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get())
@@ -395,6 +411,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.GALLIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.GRAPHITE_BLOCK.get())
                     .add(EternalGeneralBlocks.INVAR_BLOCK.get())
+                    .add(EternalGeneralBlocks.IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.LUMIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_BLOCK.get())
@@ -426,6 +443,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     //RAW ORE BLOCKS
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.get())
@@ -456,6 +474,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get())
@@ -490,6 +510,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.ELECTRUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ENDERIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.INVAR_BLOCK.get())
+                    .add(EternalGeneralBlocks.IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.LUMIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_BLOCK.get())
@@ -527,6 +548,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     //RAW ORE BLOCKS
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.get())

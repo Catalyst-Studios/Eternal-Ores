@@ -46,6 +46,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.PEWTER_BLOCK);
         blockWithItem(EternalGeneralBlocks.ROSE_GOLD_BLOCK);
         blockWithItem(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK);
+        blockWithItem(EternalGeneralBlocks.IRIDIUM_BLOCK);
 
         //GEM BLOCKS
         blockWithItem(EternalGeneralBlocks.SAPPHIRE_BLOCK);
@@ -72,6 +73,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.RAW_URANIUM_BLOCK);
         blockWithItem(EternalGeneralBlocks.RAW_ZINC_BLOCK);
         blockWithItem(EternalGeneralBlocks.RAW_GALLIUM_BLOCK);
+        blockWithItem(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK);
 
         //ORE BLOCKS
         //ALUMINUM
@@ -113,6 +115,9 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         //GALLIUM
         blockWithItem(EternalGeneralBlocks.GALLIUM_ORE_BLOCK);
         blockWithItem(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK);
+        //IRIDIUM
+        blockWithItem(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK);
+        blockWithItem(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK);
 
         //GEMS
         //FLUORITE

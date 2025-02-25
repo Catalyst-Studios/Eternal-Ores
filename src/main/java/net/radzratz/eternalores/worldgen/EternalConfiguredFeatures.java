@@ -47,6 +47,10 @@ public class EternalConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GALLIUM_ORE_KEY = registerKey("gallium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_GALLIUM_ORE_KEY = registerKey("nether_gallium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_GALLIUM_ORE_KEY = registerKey("end_gallium_ore");
+    //Iridium
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_IRIDIUM_ORE_KEY = registerKey("iridium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_IRIDIUM_ORE_KEY = registerKey("nether_iridium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_IRIDIUM_ORE_KEY = registerKey("end_iridium_ore");
     //Lead
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LEAD_ORE_KEY = registerKey("lead_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_LEAD_ORE_KEY = registerKey("nether_lead_ore");
@@ -199,6 +203,18 @@ public class EternalConfiguredFeatures {
             //        EternalGeneralBlocks.NETHER_GALLIUM_ORE_BLOCK.get().defaultBlockState(9)));
             //register(context, END_GALLIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
             //        EternalGeneralBlocks.END_GALLIUM_ORE_BLOCK.get().defaultBlockState(9)));
+
+        //Iridium
+        //Lead
+        List<OreConfiguration.TargetBlockState> overworldIridiumOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables,
+                        EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get().defaultBlockState()));
+        register(context, OVERWORLD_IRIDIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldIridiumOres, 9));
+        //register(context, NETHER_IRIDIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
+        //        EternalGeneralBlocks.NETHER_IRIDIUM_ORE_BLOCK.get().defaultBlockState(9)));
+        //register(context, END_IRIDIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
+        //        EternalGeneralBlocks.END_IRIDIUM_ORE_BLOCK.get().defaultBlockState(9)));
 
         //Lead
             List<OreConfiguration.TargetBlockState> overworldLeadOres = List.of(OreConfiguration.target(stoneReplaceable,

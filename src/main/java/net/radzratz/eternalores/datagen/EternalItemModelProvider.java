@@ -2,11 +2,13 @@ package net.radzratz.eternalores.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.neoforged.neoforge.registries.DeferredItem;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.item.EternalGeneralItems;
+import org.jetbrains.annotations.NotNull;
 
 public class EternalItemModelProvider extends ItemModelProvider {
     public EternalItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -33,6 +35,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.SULFUR.get());
         basicItem(EternalGeneralItems.RAW_ALUMINUM.get());
         basicItem(EternalGeneralItems.RAW_COBALT.get());
+        basicItem(EternalGeneralItems.RAW_IRIDIUM.get());
         basicItem(EternalGeneralItems.RAW_LEAD.get());
         basicItem(EternalGeneralItems.RAW_NICKEL.get());
         basicItem(EternalGeneralItems.RAW_OSMIUM.get());
@@ -56,6 +59,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.ETERNAL_LIGHT_INGOT.get());
         basicItem(EternalGeneralItems.GRAPHITE_INGOT.get());
         basicItem(EternalGeneralItems.INVAR_INGOT.get());
+        basicItem(EternalGeneralItems.IRIDIUM_INGOT.get());
         basicItem(EternalGeneralItems.LEAD_INGOT.get());
         basicItem(EternalGeneralItems.LUMIUM_INGOT.get());
         basicItem(EternalGeneralItems.NICKEL_INGOT.get());
@@ -109,6 +113,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.PEWTER_NUGGET.get());
         basicItem(EternalGeneralItems.ROSE_GOLD_NUGGET.get());
         basicItem(EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get());
+        basicItem(EternalGeneralItems.IRIDIUM_NUGGET.get());
 
         //DUSTS
         basicItem(EternalGeneralItems.ALUMINUM_DUST.get());
@@ -162,40 +167,42 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.PEWTER_DUST.get());
         basicItem(EternalGeneralItems.ROSE_GOLD_DUST.get());
         basicItem(EternalGeneralItems.BRITANNIA_SILVER_DUST.get());
+        basicItem(EternalGeneralItems.IRIDIUM_DUST.get());
 
         //RODS
-        handheldItem(EternalGeneralItems.ROD_ALUMINUM);
-        handheldItem(EternalGeneralItems.ROD_BRONZE);
-        handheldItem(EternalGeneralItems.ROD_COBALT);
-        handheldItem(EternalGeneralItems.ROD_CONSTANTAN);
-        handheldItem(EternalGeneralItems.ROD_COPPER);
-        handheldItem(EternalGeneralItems.ROD_ELECTRUM);
-        handheldItem(EternalGeneralItems.ROD_ENDERIUM);
-        handheldItem(EternalGeneralItems.ROD_GOLD);
-        handheldItem(EternalGeneralItems.ROD_INVAR);
-        handheldItem(EternalGeneralItems.ROD_IRON);
-        handheldItem(EternalGeneralItems.ROD_LEAD);
-        handheldItem(EternalGeneralItems.ROD_LUMIUM);
-        handheldItem(EternalGeneralItems.ROD_NICKEL);
-        handheldItem(EternalGeneralItems.ROD_OSMIUM);
-        handheldItem(EternalGeneralItems.ROD_PLATINUM);
-        handheldItem(EternalGeneralItems.ROD_PLUTONIUM);
-        handheldItem(EternalGeneralItems.ROD_TIN);
-        handheldItem(EternalGeneralItems.ROD_SILVER);
-        handheldItem(EternalGeneralItems.ROD_SIGNALUM);
-        handheldItem(EternalGeneralItems.ROD_ULTIMATITANIUM);
-        handheldItem(EternalGeneralItems.ROD_URANIUM);
-        handheldItem(EternalGeneralItems.ROD_ZINC);
-        handheldItem(EternalGeneralItems.ROD_GRAPHITE);
-        handheldItem(EternalGeneralItems.ROD_BRASS);
-        handheldItem(EternalGeneralItems.ROD_NETHERITE);
-        handheldItem(EternalGeneralItems.ROD_STEEL);
-        handheldItem(EternalGeneralItems.ROD_SAPPHIRE);
-        handheldItem(EternalGeneralItems.ROD_BLUE_STEEL);
-        handheldItem(EternalGeneralItems.ROD_GALLIUM);
-        handheldItem(EternalGeneralItems.ROD_TITANIUM);
-        handheldItem(EternalGeneralItems.ROD_ROSE_GOLD);
-        handheldItem(EternalGeneralItems.ROD_DIAMOND);
+        basicItem(EternalGeneralItems.ROD_ALUMINUM.get());
+        basicItem(EternalGeneralItems.ROD_BRONZE.get());
+        basicItem(EternalGeneralItems.ROD_COBALT.get());
+        basicItem(EternalGeneralItems.ROD_CONSTANTAN.get());
+        basicItem(EternalGeneralItems.ROD_COPPER.get());
+        basicItem(EternalGeneralItems.ROD_ELECTRUM.get());
+        basicItem(EternalGeneralItems.ROD_ENDERIUM.get());
+        basicItem(EternalGeneralItems.ROD_GOLD.get());
+        basicItem(EternalGeneralItems.ROD_INVAR.get());
+        basicItem(EternalGeneralItems.ROD_IRON.get());
+        basicItem(EternalGeneralItems.ROD_LEAD.get());
+        basicItem(EternalGeneralItems.ROD_LUMIUM.get());
+        basicItem(EternalGeneralItems.ROD_NICKEL.get());
+        basicItem(EternalGeneralItems.ROD_OSMIUM.get());
+        basicItem(EternalGeneralItems.ROD_PLATINUM.get());
+        basicItem(EternalGeneralItems.ROD_PLUTONIUM.get());
+        basicItem(EternalGeneralItems.ROD_TIN.get());
+        basicItem(EternalGeneralItems.ROD_SILVER.get());
+        basicItem(EternalGeneralItems.ROD_SIGNALUM.get());
+        basicItem(EternalGeneralItems.ROD_ULTIMATITANIUM.get());
+        basicItem(EternalGeneralItems.ROD_URANIUM.get());
+        basicItem(EternalGeneralItems.ROD_ZINC.get());
+        basicItem(EternalGeneralItems.ROD_GRAPHITE.get());
+        basicItem(EternalGeneralItems.ROD_BRASS.get());
+        basicItem(EternalGeneralItems.ROD_NETHERITE.get());
+        basicItem(EternalGeneralItems.ROD_STEEL.get());
+        basicItem(EternalGeneralItems.ROD_SAPPHIRE.get());
+        basicItem(EternalGeneralItems.ROD_BLUE_STEEL.get());
+        basicItem(EternalGeneralItems.ROD_GALLIUM.get());
+        basicItem(EternalGeneralItems.ROD_TITANIUM.get());
+        basicItem(EternalGeneralItems.ROD_ROSE_GOLD.get());
+        basicItem(EternalGeneralItems.ROD_DIAMOND.get());
+        basicItem(EternalGeneralItems.ROD_IRIDIUM.get());
 
         //PLATES
         basicItem(EternalGeneralItems.PLATE_ALUMINUM.get());
@@ -229,6 +236,8 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.PLATE_GALLIUM.get());
         basicItem(EternalGeneralItems.PLATE_TITANIUM.get());
         basicItem(EternalGeneralItems.PLATE_ROSE_GOLD.get());
+        basicItem(EternalGeneralItems.PLATE_IRIDIUM.get());
+        basicItem(EternalGeneralItems.PLATE_DIAMOND.get());
 
         //GEARS
         basicItem(EternalGeneralItems.GEAR_ALUMINUM.get());
@@ -263,9 +272,46 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.SILICON.get());
     }
 
-    private void handheldItem(DeferredItem<?> item) {
-        withExistingParent(item.getId().getPath(),
-                ResourceLocation.parse("item/handheld")).texture("layer0",
-                ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, "item/" + item.getId().getPath()));
+    public @NotNull ItemModelBuilder basicItem(ResourceLocation item) {
+        String itemName = item.getPath();
+        String basePath = "item/";
+
+        String[] possiblePaths = {
+                basePath + itemName,
+                basePath + "hammers/" + itemName,
+                basePath + "ingots/" + itemName,
+                basePath + "rods/" + itemName,
+                basePath + "nuggets/" + itemName,
+                basePath + "gems/" + itemName,
+                basePath + "gears/" + itemName,
+                basePath + "raw_materials/" + itemName,
+                basePath + "gem_cutters/" + itemName,
+                basePath + "misc/" + itemName,
+                basePath + "dusts/" + itemName,
+                basePath + "plates/" + itemName
+        };
+
+        ItemModelBuilder builder = null;
+
+        for(String path : possiblePaths) {
+            if(existingFileHelper.exists(ResourceLocation.fromNamespaceAndPath(item.getNamespace(), path), TEXTURE)) {
+                if(path.contains("rods/") || path.contains("hammers/")) {
+                    builder = this.getBuilder(item.toString())
+                            .parent(new ModelFile.UncheckedModelFile("item/handheld"))
+                            .texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), path));
+                } else {
+                    builder = this.getBuilder(item.toString())
+                            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                            .texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), path));
+                }
+                break;
+            }
+        }
+        if(builder == null) {
+            builder = this.getBuilder(item.toString())
+                    .parent(new ModelFile.UncheckedModelFile("item/generated"))
+                    .texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), basePath + itemName));
+        }
+        return builder;
     }
 }

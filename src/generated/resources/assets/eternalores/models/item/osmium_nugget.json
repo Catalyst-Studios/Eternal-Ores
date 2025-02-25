@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/osmium_nugget"
+    "layer0": "eternalores:item/nuggets/osmium_nugget"
   }
 }

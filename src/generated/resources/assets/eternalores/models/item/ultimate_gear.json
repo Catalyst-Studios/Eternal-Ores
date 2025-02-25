@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/ultimate_gear"
+    "layer0": "eternalores:item/gears/ultimate_gear"
   }
 }

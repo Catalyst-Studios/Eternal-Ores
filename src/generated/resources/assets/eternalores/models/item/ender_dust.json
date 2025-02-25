@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/ender_dust"
+    "layer0": "eternalores:item/dusts/ender_dust"
   }
 }

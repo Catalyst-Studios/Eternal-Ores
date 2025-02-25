@@ -37,6 +37,8 @@ public class EternalIngotTags {
         public static final TagKey<Item> GRAPHITE_INGOT = createIngotTags("ingots/graphite");
         //Invar
         public static final TagKey<Item> INVAR_INGOT = createIngotTags("ingots/invar");
+        //Iridium
+        public static final TagKey<Item> IRIDIUM_INGOT = createIngotTags("ingots/iridium");
         //Lead
         public static final TagKey<Item> LEAD_INGOT = createIngotTags("ingots/lead");
         //Lumium

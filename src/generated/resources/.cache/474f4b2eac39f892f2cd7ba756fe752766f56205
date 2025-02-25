@@ -1,7 +1,7 @@
-// 1.21.1	2025-02-16T04:54:07.4063973	Tags for minecraft:block mod id eternalores
+// 1.21.1	2025-02-23T15:18:37.1361398	Tags for minecraft:block mod id eternalores
 d8e3838f471e065337c0b410f1079d7ca76be4da data/c/tags/block/gem_block.json
-1246c4e1632a36943cbb0bfdd6988cc5458bcc99 data/c/tags/block/metal_block.json
-9decc633454cc14e556cbc95a6d32cbf79b7caee data/c/tags/block/ores.json
+73ad2d1581f38afef1e03ff0daa23478c505f32e data/c/tags/block/metal_block.json
+aaf0e97c7330b271b9b373456a558c0180216a28 data/c/tags/block/ores.json
 d441da36269b359d947d3b29803cff420f1a7f55 data/c/tags/block/ores/aluminum.json
 07b1e4061c240eeb93106c910ef5fa13446261a0 data/c/tags/block/ores/amber.json
 1631f4aa1b3059968aa832c6a8bec9acefdc082f data/c/tags/block/ores/apatite.json
@@ -9,6 +9,7 @@ a46ba16eb03d4cd2db306cf54ab5fcc2dd11c759 data/c/tags/block/ores/cinnabar.json
 3f2ff54c830594bc54d7db3754232bd4c895bf7b data/c/tags/block/ores/cobalt.json
 78f31a3b1340c435ea1c3ae1090fc3d869171f78 data/c/tags/block/ores/fluorite.json
 5e3eaaab588bf09d93a0b3929187e502a862fedd data/c/tags/block/ores/gallium.json
+f6ca164993c86a165b0592d81352245024d09d46 data/c/tags/block/ores/iridium.json
 1631134f5cb0ad2739cb3af03572dd6cc91dfcce data/c/tags/block/ores/lead.json
 448ee63e90736e3734e09299e3f48ecf7166a459 data/c/tags/block/ores/nickel.json
 ffaaac7669551836293bc887e81a2fb7802ba168 data/c/tags/block/ores/niter.json
@@ -23,11 +24,11 @@ c037abcec606ef702a6a76c08677044a0e88907a data/c/tags/block/ores/silver.json
 80c46bc9902db9fa0c0e7199a21c03c53c03be07 data/c/tags/block/ores/tin.json
 c62a72aa4e14c09654da8e37447a1ebd03b38364 data/c/tags/block/ores/uranium.json
 e6eaa377c359e283bf04b3d345f44fdb6171399a data/c/tags/block/ores/zinc.json
-adca4e1dec004c60f3c6f5edef9b3cdb3ef41dae data/c/tags/block/ores_in_ground/deepslate.json
+6ebbaa4e1c527972924f10f31dcffed77e940390 data/c/tags/block/ores_in_ground/deepslate.json
 fcbc57ac2517c206f3673d1a0a216f9be85a5adc data/c/tags/block/ores_in_ground/netherrack.json
-13ab2d681ce47155e24debfa6738abcdda7079be data/c/tags/block/ores_in_ground/stone.json
-e3b000a9254429c15c8eb83ae3b3a3fc05465002 data/c/tags/block/raw_ore_block.json
-cb1ba85b26baa48baf423ac2891d787ac9f54875 data/c/tags/block/storage_blocks.json
+3260d87f8b019db8cc63b9766987fd6dba90d8e0 data/c/tags/block/ores_in_ground/stone.json
+777a614e60ae151dbee62002159a0a909f37a810 data/c/tags/block/raw_ore_block.json
+34e44d4ac1b2d9fb56e95a8fa2adaec8137bc45c data/c/tags/block/storage_blocks.json
 c4dc97a723d06ee8d352a8c633fb1c9421895a4d data/c/tags/block/storage_blocks/aluminum.json
 4d4e1deb96f454ef5548503771c2f30393d28239 data/c/tags/block/storage_blocks/amber.json
 c8307384879dc69ebf2239a2180f3bf65bb9c243 data/c/tags/block/storage_blocks/apatite.json
@@ -43,6 +44,7 @@ f2bd24e2904060d71797e305fcd568ee5b549ce7 data/c/tags/block/storage_blocks/enderi
 eebcf4984d1c2b4ace4128ac82b67cc90edd7d31 data/c/tags/block/storage_blocks/fluorite.json
 58ea60c6311c5233116263befd201c10e615fac5 data/c/tags/block/storage_blocks/gallium.json
 6a4b88b8be8afdee309bbe2af4f25ac9a00fc0a9 data/c/tags/block/storage_blocks/invar.json
+4a179c739145a8983cb61dcc9df6f4be74b5d6bc data/c/tags/block/storage_blocks/iridium.json
 7084557ce7674fd183dfc0bf03c20a8a14d228d4 data/c/tags/block/storage_blocks/lead.json
 6f0cd63d5875f7585f55295cd764082fb63435d6 data/c/tags/block/storage_blocks/lumium.json
 3641f42cd2e3cb5fab9b3822dc213efb83dced00 data/c/tags/block/storage_blocks/nickel.json
@@ -54,6 +56,8 @@ f209e8d119cc7cbd6d04ff8813735683a820d708 data/c/tags/block/storage_blocks/osmium
 f60687bde95d14fbaab1852fa5a23962d42ed980 data/c/tags/block/storage_blocks/platinum.json
 5077bc62932519dce0cd251f24f99cd305c5c6c9 data/c/tags/block/storage_blocks/raw_aluminum.json
 b41fb33240e44b5282f0190a040c6be1721975ad data/c/tags/block/storage_blocks/raw_cobalt.json
+00d401a7edeab70152ca4e5a3a1927bc51357d5c data/c/tags/block/storage_blocks/raw_gallium.json
+249eac856f6652db3b635106ea3782eb48071ac1 data/c/tags/block/storage_blocks/raw_iridium.json
 bf488cbadbcf845b563211ef5f1179bc59e3af3d data/c/tags/block/storage_blocks/raw_lead.json
 af157e1ed8132234efc7f035fdf12e3784e12b48 data/c/tags/block/storage_blocks/raw_nickel.json
 8c7b995daee5afeb347d9e9fca437855c6bbb908 data/c/tags/block/storage_blocks/raw_osmium.json
@@ -73,7 +77,7 @@ b72d2374bcde3317b869d5d4657eecb6bc7e84f8 data/c/tags/block/storage_blocks/sulfur
 bccbf12c44ab74cf5e86ef719ed4d42f49a2b532 data/c/tags/block/storage_blocks/titanium.json
 a9490d7e842d03664401a1fb03e81a7bd0fb3f9b data/c/tags/block/storage_blocks/uranium.json
 5ab33792050e192ba5ee82bc3a7c27dadec09742 data/c/tags/block/storage_blocks/zinc.json
-a3c3320b67f5750addaf80ec72fb7e9b21fa714a data/minecraft/tags/block/mineable/pickaxe.json
+ed41032a977b265c7150e9c925a88d7d89872b01 data/minecraft/tags/block/mineable/pickaxe.json
 4081791f23372bf0be1492ac3ed65b7f894d2f59 data/minecraft/tags/block/needs_diamond_tool.json
-df792bf4f90d6715badfff28ca4eaed2ac0a7fa4 data/minecraft/tags/block/needs_iron_tool.json
+fd075e5a403a688dbe8b3d9192115c96d390eadb data/minecraft/tags/block/needs_iron_tool.json
 37ecc7c3d0bad87b4d47d2bf363e8a46900ee7fa data/minecraft/tags/block/needs_stone_tool.json

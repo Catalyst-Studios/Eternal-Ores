@@ -41,6 +41,10 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_GALLIUM_ORE = registerKey("add_gallium_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_GALLIUM_ORE = registerKey("add_nether_gallium_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_GALLIUM_ORE = registerKey("add_end_gallium_ore");
+    //Iridium
+    public static final ResourceKey<BiomeModifier> ADD_IRIDIUM_ORE = registerKey("add_iridium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_IRIDIUM_ORE = registerKey("add_nether_iridium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_IRIDIUM_ORE = registerKey("add_end_iridium_ore");
     //Lead
     public static final ResourceKey<BiomeModifier> ADD_LEAD_ORE = registerKey("add_lead_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_LEAD_ORE = registerKey("add_nether_lead_ore");
@@ -148,6 +152,12 @@ public class EternalBiomeModifier {
         context.register(ADD_GALLIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.GALLIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Iridium
+        context.register(ADD_IRIDIUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.IRIDIUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Lead

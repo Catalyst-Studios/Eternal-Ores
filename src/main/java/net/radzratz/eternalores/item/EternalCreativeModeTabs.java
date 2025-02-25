@@ -33,6 +33,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.COBALT_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.FLUORITE_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.GALLIUM_ORE_BLOCK);
+                    output.accept(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.LEAD_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.NICKEL_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.NITER_ORE_BLOCK);
@@ -56,6 +57,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK);
+                    output.accept(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK);
@@ -78,6 +80,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_COBALT_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_GALLIUM_BLOCK);
+                    output.accept(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_LEAD_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_NICKEL_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_OSMIUM_BLOCK);
@@ -105,6 +108,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.GALLIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.GRAPHITE_BLOCK);
                     output.accept(EternalGeneralBlocks.INVAR_BLOCK);
+                    output.accept(EternalGeneralBlocks.IRIDIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.LEAD_BLOCK);
                     output.accept(EternalGeneralBlocks.LUMIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.NICKEL_BLOCK);
@@ -130,6 +134,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.RAW_ALUMINUM);
                     output.accept(EternalGeneralItems.RAW_COBALT);
                     output.accept(EternalGeneralItems.RAW_GALLIUM);
+                    output.accept(EternalGeneralItems.RAW_IRIDIUM);
                     output.accept(EternalGeneralItems.RAW_LEAD);
                     output.accept(EternalGeneralItems.RAW_NICKEL);
                     output.accept(EternalGeneralItems.RAW_OSMIUM);
@@ -156,6 +161,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.GALLIUM_INGOT);
                     output.accept(EternalGeneralItems.GRAPHITE_INGOT);
                     output.accept(EternalGeneralItems.INVAR_INGOT);
+                    output.accept(EternalGeneralItems.IRIDIUM_INGOT);
                     output.accept(EternalGeneralItems.LEAD_INGOT);
                     output.accept(EternalGeneralItems.LUMIUM_INGOT);
                     output.accept(EternalGeneralItems.NICKEL_INGOT);
@@ -187,6 +193,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.GALLIUM_NUGGET);
                     output.accept(EternalGeneralItems.GRAPHITE_NUGGET);
                     output.accept(EternalGeneralItems.INVAR_NUGGET);
+                    output.accept(EternalGeneralItems.IRIDIUM_NUGGET);
                     output.accept(EternalGeneralItems.LEAD_NUGGET);
                     output.accept(EternalGeneralItems.LUMIUM_NUGGET);
                     output.accept(EternalGeneralItems.NETHERITE_NUGGET);
@@ -240,6 +247,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.GOLD_DUST);
                     output.accept(EternalGeneralItems.GRAPHITE_DUST);
                     output.accept(EternalGeneralItems.INVAR_DUST);
+                    output.accept(EternalGeneralItems.IRIDIUM_DUST);
                     output.accept(EternalGeneralItems.IRON_DUST);
                     output.accept(EternalGeneralItems.LAPIS_LAZULI_DUST);
                     output.accept(EternalGeneralItems.LEAD_DUST);
@@ -276,12 +284,14 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.PLATE_COBALT);
                     output.accept(EternalGeneralItems.PLATE_CONSTANTAN);
                     output.accept(EternalGeneralItems.PLATE_COPPER);
+                    output.accept(EternalGeneralItems.PLATE_DIAMOND);
                     output.accept(EternalGeneralItems.PLATE_ELECTRUM);
                     output.accept(EternalGeneralItems.PLATE_ENDERIUM);
                     output.accept(EternalGeneralItems.PLATE_GALLIUM);
                     output.accept(EternalGeneralItems.PLATE_GOLD);
                     output.accept(EternalGeneralItems.PLATE_GRAPHITE);
                     output.accept(EternalGeneralItems.PLATE_INVAR);
+                    output.accept(EternalGeneralItems.PLATE_IRIDIUM);
                     output.accept(EternalGeneralItems.PLATE_IRON);
                     output.accept(EternalGeneralItems.PLATE_LEAD);
                     output.accept(EternalGeneralItems.PLATE_LUMIUM);
@@ -315,6 +325,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.ROD_GOLD);
                     output.accept(EternalGeneralItems.ROD_GRAPHITE);
                     output.accept(EternalGeneralItems.ROD_INVAR);
+                    output.accept(EternalGeneralItems.ROD_IRIDIUM);
                     output.accept(EternalGeneralItems.ROD_IRON);
                     output.accept(EternalGeneralItems.ROD_LEAD);
                     output.accept(EternalGeneralItems.ROD_LUMIUM);

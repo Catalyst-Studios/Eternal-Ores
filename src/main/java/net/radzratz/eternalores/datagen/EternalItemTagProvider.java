@@ -69,6 +69,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.PLATE_COBALT.get())
                         .add(EternalGeneralItems.PLATE_CONSTANTAN.get())
                         .add(EternalGeneralItems.PLATE_COPPER.get())
+                        .add(EternalGeneralItems.PLATE_DIAMOND.get())
                         .add(EternalGeneralItems.PLATE_ELECTRUM.get())
                         .add(EternalGeneralItems.PLATE_ENDERIUM.get())
                         .add(EternalGeneralItems.PLATE_GALLIUM.get())
@@ -108,6 +109,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.PLATE_GALLIUM.get())
                         .add(EternalGeneralItems.PLATE_GOLD.get())
                         .add(EternalGeneralItems.PLATE_INVAR.get())
+                        .add(EternalGeneralItems.PLATE_IRIDIUM.get())
                         .add(EternalGeneralItems.PLATE_IRON.get())
                         .add(EternalGeneralItems.PLATE_LEAD.get())
                         .add(EternalGeneralItems.PLATE_LUMIUM.get())
@@ -127,6 +129,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
                 //Gem Plates
                 tag(EternalItemsGeneralTags.Items.GEM_PLATES)
+                        .add(EternalGeneralItems.PLATE_DIAMOND.get())
                         .add(EternalGeneralItems.PLATE_SAPPHIRE.get());
 
                 //Individual Plates
@@ -139,12 +142,14 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalPlates.Items.COBALT_PLATE).add(EternalGeneralItems.PLATE_COBALT.get());
                 tag(EternalPlates.Items.CONSTANTAN_PLATE).add(EternalGeneralItems.PLATE_CONSTANTAN.get());
                 tag(EternalPlates.Items.COPPER_PLATE).add(EternalGeneralItems.PLATE_COPPER.get());
+                tag(EternalPlates.Items.DIAMOND_PLATE).add(EternalGeneralItems.PLATE_DIAMOND.get());
                 tag(EternalPlates.Items.ELECTRUM_PLATE).add(EternalGeneralItems.PLATE_ELECTRUM.get());
                 tag(EternalPlates.Items.ENDERIUM_PLATE) .add(EternalGeneralItems.PLATE_ENDERIUM.get());
                 tag(EternalPlates.Items.GALLIUM_PLATE).add(EternalGeneralItems.PLATE_GALLIUM.get());
                 tag(EternalPlates.Items.GOLD_PLATE).add(EternalGeneralItems.PLATE_GOLD.get());
                 tag(EternalPlates.Items.GRAPHITE_PLATE).add(EternalGeneralItems.PLATE_GRAPHITE.get());
                 tag(EternalPlates.Items.INVAR_PLATE).add(EternalGeneralItems.PLATE_INVAR.get());
+                tag(EternalPlates.Items.IRIDIUM_PLATE).add(EternalGeneralItems.PLATE_IRIDIUM.get());
                 tag(EternalPlates.Items.IRON_PLATE).add(EternalGeneralItems.PLATE_IRON.get());
                 tag(EternalPlates.Items.LEAD_PLATE).add(EternalGeneralItems.PLATE_LEAD.get());
                 tag(EternalPlates.Items.LUMIUM_PLATE).add(EternalGeneralItems.PLATE_LUMIUM.get());
@@ -183,6 +188,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.GALLIUM_INGOT.get())
                         .add(EternalGeneralItems.GRAPHITE_INGOT.get())
                         .add(EternalGeneralItems.INVAR_INGOT.get())
+                        .add(EternalGeneralItems.IRIDIUM_INGOT.get())
                         .add(EternalGeneralItems.LEAD_INGOT.get())
                         .add(EternalGeneralItems.LUMIUM_INGOT.get())
                         .add(EternalGeneralItems.NICKEL_INGOT.get())
@@ -217,6 +223,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalIngotTags.Items.GALLIUM_INGOT).add(EternalGeneralItems.GALLIUM_INGOT.get());
                 tag(EternalIngotTags.Items.GRAPHITE_INGOT).add(EternalGeneralItems.GRAPHITE_INGOT.get());
                 tag(EternalIngotTags.Items.INVAR_INGOT).add(EternalGeneralItems.INVAR_INGOT.get());
+                tag(EternalIngotTags.Items.IRIDIUM_INGOT).add(EternalGeneralItems.IRIDIUM_INGOT.get());
                 tag(EternalIngotTags.Items.LEAD_INGOT).add(EternalGeneralItems.LEAD_INGOT.get());
                 tag(EternalIngotTags.Items.LUMIUM_INGOT).add(EternalGeneralItems.LUMIUM_INGOT.get());
                 tag(EternalIngotTags.Items.NICKEL_INGOT).add(EternalGeneralItems.NICKEL_INGOT.get());
@@ -250,6 +257,8 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem())
@@ -297,6 +306,8 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalOreBlockItemTags.Items.ITEM_FLUORITE_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_GALLIUM_ORE_OW).add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_GALLIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_IRIDIUM_ORE_OW).add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_IRIDIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_LEAD_ORE_OW).add(EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_LEAD_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_NICKEL_ORE_OW).add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem());
@@ -343,6 +354,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralBlocks.GALLIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.GRAPHITE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.INVAR_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.IRIDIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.LEAD_BLOCK.asItem())
                         .add(EternalGeneralBlocks.LUMIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.NICKEL_BLOCK.asItem())
@@ -367,6 +379,8 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
                         .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.RAW_LEAD_BLOCK.asItem())
                         .add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.asItem())
                         .add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.asItem())
@@ -389,6 +403,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
             tag(EternalStorageMetalBlockItemTags.Blocks.ENDERIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ENDERIUM_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Blocks.GALLIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.GALLIUM_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Blocks.INVAR_BLOCK_ST_ITEM).add(EternalGeneralBlocks.INVAR_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.IRIDIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.IRIDIUM_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Blocks.LEAD_BLOCK_ST_ITEM).add(EternalGeneralBlocks.LEAD_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Blocks.LUMIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.LUMIUM_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Blocks.NICKEL_BLOCK_ST_ITEM).add(EternalGeneralBlocks.NICKEL_BLOCK.asItem());
@@ -416,6 +431,8 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
             tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_ALUMINUM_ST_ITEM).add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem());
             tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_COBALT_ST_ITEM).add(EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_GALLIUM_ST_ITEM).add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_IRIDIUM_ST_ITEM).add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.asItem());
             tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_LEAD_ST_ITEM).add(EternalGeneralBlocks.RAW_LEAD_BLOCK.asItem());
             tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_NICKEL_ST_ITEM).add(EternalGeneralBlocks.RAW_NICKEL_BLOCK.asItem());
             tag(EternalStorageRawOreBlockItemTags.Blocks.RAW_OSMIUM_ST_ITEM).add(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.asItem());
@@ -441,6 +458,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.GALLIUM_NUGGET.get())
                         .add(EternalGeneralItems.GRAPHITE_NUGGET.get())
                         .add(EternalGeneralItems.INVAR_NUGGET.get())
+                        .add(EternalGeneralItems.IRIDIUM_NUGGET.get())
                         .add(EternalGeneralItems.LEAD_NUGGET.get())
                         .add(EternalGeneralItems.LUMIUM_NUGGET.get())
                         .add(EternalGeneralItems.NETHERITE_NUGGET.get())
@@ -472,6 +490,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalNuggetsTags.Items.NUGGET_GALLIUM).add(EternalGeneralItems.GALLIUM_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_GRAPHITE).add(EternalGeneralItems.GRAPHITE_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_INVAR).add(EternalGeneralItems.INVAR_NUGGET.get());
+                tag(EternalNuggetsTags.Items.NUGGET_IRIDIUM).add(EternalGeneralItems.IRIDIUM_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_LEAD).add(EternalGeneralItems.LEAD_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_LUMIUM).add(EternalGeneralItems.LUMIUM_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_NETHERITE).add(EternalGeneralItems.NETHERITE_NUGGET.get());
@@ -504,6 +523,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ROD_GOLD.get())
                         .add(EternalGeneralItems.ROD_GRAPHITE.get())
                         .add(EternalGeneralItems.ROD_INVAR.get())
+                        .add(EternalGeneralItems.ROD_IRIDIUM.get())
                         .add(EternalGeneralItems.ROD_IRON.get())
                         .add(EternalGeneralItems.ROD_LEAD.get())
                         .add(EternalGeneralItems.ROD_LUMIUM.get())
@@ -537,6 +557,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ROD_GALLIUM.get())
                         .add(EternalGeneralItems.ROD_GOLD.get())
                         .add(EternalGeneralItems.ROD_INVAR.get())
+                        .add(EternalGeneralItems.ROD_IRIDIUM.get())
                         .add(EternalGeneralItems.ROD_IRON.get())
                         .add(EternalGeneralItems.ROD_LEAD.get())
                         .add(EternalGeneralItems.ROD_LUMIUM.get())
@@ -571,6 +592,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalMetalRodsTags.Items.ROD_GALLIUM).add(EternalGeneralItems.ROD_GALLIUM.get());
                 tag(EternalMetalRodsTags.Items.ROD_GOLD).add(EternalGeneralItems.ROD_GOLD.get());
                 tag(EternalMetalRodsTags.Items.ROD_INVAR).add(EternalGeneralItems.ROD_INVAR.get());
+                tag(EternalMetalRodsTags.Items.ROD_IRIDIUM).add(EternalGeneralItems.ROD_IRIDIUM.get());
                 tag(EternalMetalRodsTags.Items.ROD_IRON).add(EternalGeneralItems.ROD_IRON.get());
                 tag(EternalMetalRodsTags.Items.ROD_LEAD).add(EternalGeneralItems.ROD_LEAD.get());
                 tag(EternalMetalRodsTags.Items.ROD_LUMIUM).add(EternalGeneralItems.ROD_LUMIUM.get());
@@ -663,6 +685,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.GOLD_DUST.get())
                         .add(EternalGeneralItems.GRAPHITE_DUST.get())
                         .add(EternalGeneralItems.INVAR_DUST.get())
+                        .add(EternalGeneralItems.IRIDIUM_DUST.get())
                         .add(EternalGeneralItems.IRON_DUST.get())
                         .add(EternalGeneralItems.LAPIS_LAZULI_DUST.get())
                         .add(EternalGeneralItems.LEAD_DUST.get())
@@ -708,6 +731,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.GOLD_DUST.get())
                         .add(EternalGeneralItems.GRAPHITE_DUST.get())
                         .add(EternalGeneralItems.INVAR_DUST.get())
+                        .add(EternalGeneralItems.IRIDIUM_DUST.get())
                         .add(EternalGeneralItems.IRON_DUST.get())
                         .add(EternalGeneralItems.LEAD_DUST.get())
                         .add(EternalGeneralItems.LUMIUM_DUST.get())
@@ -765,6 +789,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalMetalDustsTags.Items.DUST_GALLIUM).add(EternalGeneralItems.GALLIUM_DUST.get());
                 tag(EternalMetalDustsTags.Items.DUST_GOLD).add(EternalGeneralItems.GOLD_DUST.get());
                 tag(EternalMetalDustsTags.Items.DUST_INVAR).add(EternalGeneralItems.INVAR_DUST.get());
+                tag(EternalMetalDustsTags.Items.DUST_IRIDIUM).add(EternalGeneralItems.IRIDIUM_DUST.get());
                 tag(EternalMetalDustsTags.Items.DUST_IRON).add(EternalGeneralItems.IRON_DUST.get());
                 tag(EternalMetalDustsTags.Items.DUST_LEAD).add(EternalGeneralItems.LEAD_DUST.get());
                 tag(EternalMetalDustsTags.Items.DUST_LUMIUM).add(EternalGeneralItems.LUMIUM_DUST.get());
@@ -789,6 +814,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalGemDustsTags.Items.DUST_COAL).add(EternalGeneralItems.COAL_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_DIAMOND).add(EternalGeneralItems.DIAMOND_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_EMERALD).add(EternalGeneralItems.EMERALD_DUST.get());
+                tag(EternalGemDustsTags.Items.DUST_FLUORITE).add(EternalGeneralItems.FLUORITE_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_LAPIS).add(EternalGeneralItems.LAPIS_LAZULI_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_NITER).add(EternalGeneralItems.NITER_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_OBSIDIAN).add(EternalGeneralItems.OBSIDIAN_DUST.get());
@@ -809,6 +835,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.RAW_ALUMINUM.get())
                         .add(EternalGeneralItems.RAW_COBALT.get())
                         .add(EternalGeneralItems.RAW_GALLIUM.get())
+                        .add(EternalGeneralItems.RAW_IRIDIUM.get())
                         .add(EternalGeneralItems.RAW_LEAD.get())
                         .add(EternalGeneralItems.RAW_NICKEL.get())
                         .add(EternalGeneralItems.RAW_OSMIUM.get())

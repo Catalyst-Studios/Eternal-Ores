@@ -34,6 +34,8 @@ public class EternalMetalDustsTags {
         public static final TagKey<Item> DUST_GOLD = createMetalDustTag("dusts/gold");
         //Invar
         public static final TagKey<Item> DUST_INVAR = createMetalDustTag("dusts/invar");
+        //Iridium
+        public static final TagKey<Item> DUST_IRIDIUM = createMetalDustTag("dusts/iridium");
         //Iron
         public static final TagKey<Item> DUST_IRON = createMetalDustTag("dusts/iron");
         //Lead

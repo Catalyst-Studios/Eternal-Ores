@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/lead"
+    },
+    {
+      "tag": "c:dusts/lead"
+    },
+    {
+      "tag": "c:dusts/lead"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "tag": "c:dusts/ender_pearl"
+    },
+    {
+      "tag": "c:dusts/ender_pearl"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:enderium_dust"
+  }
+}

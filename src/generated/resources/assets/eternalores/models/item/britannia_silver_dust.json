@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/britannia_silver_dust"
+    "layer0": "eternalores:item/dusts/britannia_silver_dust"
   }
 }

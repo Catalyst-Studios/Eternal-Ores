@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "eternalores:item/copper_hammer"
+    "layer0": "eternalores:item/hammers/copper_hammer"
   }
 }

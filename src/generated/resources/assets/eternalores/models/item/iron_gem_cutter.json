@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/iron_gem_cutter"
+    "layer0": "eternalores:item/gem_cutters/iron_gem_cutter"
   }
 }

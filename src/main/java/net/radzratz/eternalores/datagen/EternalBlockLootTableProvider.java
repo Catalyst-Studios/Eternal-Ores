@@ -37,6 +37,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.ELECTRUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.ENDERIUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.INVAR_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.IRIDIUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.LEAD_BLOCK.get());
         dropSelf(EternalGeneralBlocks.LUMIUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.OSMIUM_BLOCK.get());
@@ -74,6 +75,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //RAW ORE BLOCKS
         dropSelf(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_COBALT_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_LEAD_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_NICKEL_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_OSMIUM_BLOCK.get());
@@ -88,94 +90,97 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
 
         //ORE BLOCK TO RAW ORE/GEM
         //ALUMINUM ORE BLOCKS
-        add(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_ALUMINUM.get(),2,5));
-        add(EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_ALUMINUM.get(),2,5));
+        add(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_ALUMINUM.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_ALUMINUM.get(),1,2));
 
         //COBALT ORE BLOCKS
         add(EternalGeneralBlocks.COBALT_ORE_BLOCK.get(), block -> createOreDrop(EternalGeneralBlocks.COBALT_ORE_BLOCK.get(), EternalGeneralItems.RAW_COBALT.get()));
         add(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get(), block -> createOreDrop(EternalGeneralBlocks.COBALT_ORE_BLOCK.get(), EternalGeneralItems.RAW_COBALT.get()));
 
         //LEAD ORE BLOCKS
-        add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.LEAD_ORE_BLOCK.get(), EternalGeneralItems.RAW_LEAD.get(),1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get(), EternalGeneralItems.RAW_LEAD.get(),1,3));
+        add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.LEAD_ORE_BLOCK.get(), EternalGeneralItems.RAW_LEAD.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get(), EternalGeneralItems.RAW_LEAD.get(),1,2));
 
         //NICKEL ORE BLOCKS
-        add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get(), EternalGeneralItems.RAW_NICKEL.get(),2,5));
-        add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get(), EternalGeneralItems.RAW_NICKEL.get(),2,5));
+        add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get(), EternalGeneralItems.RAW_NICKEL.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get(), EternalGeneralItems.RAW_NICKEL.get(),1,2));
 
         //OSMIUM ORE BLOCKS
-        add(EternalGeneralBlocks.OSMIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.OSMIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_OSMIUM.get(), 2, 4));
-        add(EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_OSMIUM.get(), 2,4));
+        add(EternalGeneralBlocks.OSMIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.OSMIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_OSMIUM.get(), 1, 2));
+        add(EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_OSMIUM.get(), 1,2));
 
         //PLATINUM ORE BLOCKS
-        add(EternalGeneralBlocks.PLATINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.PLATINUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_PLATINUM.get(),1,5));
-        add(EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_PLATINUM.get(),1,5));
+        add(EternalGeneralBlocks.PLATINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.PLATINUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_PLATINUM.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_PLATINUM.get(),1,2));
 
         //PLUTONIUM ORE BLOCKS
-        add(EternalGeneralBlocks.PLUTONIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.PLUTONIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_PLUTONIUM.get(),1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_PLUTONIUM.get(),1,3));
+        add(EternalGeneralBlocks.PLUTONIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.PLUTONIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_PLUTONIUM.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_PLUTONIUM.get(),1,2));
 
         //SULFUR ORE BLOCKS
-        add(EternalGeneralBlocks.SULFUR_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.SULFUR_ORE_BLOCK.get(), EternalGeneralItems.SULFUR.get(),3,7));
-        add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get(), EternalGeneralItems.SULFUR.get(),3,7));
+        add(EternalGeneralBlocks.SULFUR_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.SULFUR_ORE_BLOCK.get(), EternalGeneralItems.SULFUR.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get(), EternalGeneralItems.SULFUR.get(),1,2));
 
         //TIN ORE BLOCKS
-        add(EternalGeneralBlocks.TIN_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.TIN_ORE_BLOCK.get(), EternalGeneralItems.RAW_TIN.get(),2,6));
-        add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get(), EternalGeneralItems.RAW_TIN.get(),2,6));
+        add(EternalGeneralBlocks.TIN_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.TIN_ORE_BLOCK.get(), EternalGeneralItems.RAW_TIN.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get(), EternalGeneralItems.RAW_TIN.get(),1,2));
 
         //URANIUM ORE BLOCKS
         add(EternalGeneralBlocks.URANIUM_ORE_BLOCK.get(), block -> createOreDrop(EternalGeneralBlocks.URANIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_URANIUM.get()));
         add(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get(), block -> createOreDrop(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_URANIUM.get()));
 
         //SILVER ORE BLOCKS
-        add(EternalGeneralBlocks.SILVER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.SILVER_ORE_BLOCK.get(), EternalGeneralItems.RAW_SILVER.get(),2,4));
-        add(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get(), EternalGeneralItems.RAW_SILVER.get(),2,4));
+        add(EternalGeneralBlocks.SILVER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.SILVER_ORE_BLOCK.get(), EternalGeneralItems.RAW_SILVER.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get(), EternalGeneralItems.RAW_SILVER.get(),1,2));
 
         //ZINC ORE BLOCKS
-        add(EternalGeneralBlocks.ZINC_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.ZINC_ORE_BLOCK.get(), EternalGeneralItems.RAW_ZINC.get(),1,5));
-        add(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get(), EternalGeneralItems.RAW_ZINC.get(),1,5));
+        add(EternalGeneralBlocks.ZINC_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.ZINC_ORE_BLOCK.get(), EternalGeneralItems.RAW_ZINC.get(),1,3));
+        add(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get(), EternalGeneralItems.RAW_ZINC.get(),1,3));
 
         //GALLIUM ORE BLOCKS
-        add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_GALLIUM.get(),1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_GALLIUM.get(),1,3));
+        add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_GALLIUM.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_GALLIUM.get(),1,2));
+
+        //IRIDIUM TO RAW ORE
+        add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_IRIDIUM.get(),1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_IRIDIUM.get(),1,2));
 
         //GEMS
         //FLUORITE TO GEM
-        add(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.get(), EternalGeneralItems.FLUORITE.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get(), EternalGeneralItems.FLUORITE.get(),1,3));
+        add(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.get(), EternalGeneralItems.FLUORITE.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.get(), EternalGeneralItems.FLUORITE.get(),1,2));
 
         //SAPPHIRE TO GEM
-        add(EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.get(), EternalGeneralItems.GEM_SAPPHIRE.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get(), EternalGeneralItems.GEM_SAPPHIRE.get(),1,3));
+        add(EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.get(), EternalGeneralItems.GEM_SAPPHIRE.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get(), EternalGeneralItems.GEM_SAPPHIRE.get(),1,2));
 
         //APATITE TO GEM
-        add(EternalGeneralBlocks.APATITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.APATITE_ORE_BLOCK.get(), EternalGeneralItems.GEM_APATITE.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get(), EternalGeneralItems.GEM_APATITE.get(),1,3));
+        add(EternalGeneralBlocks.APATITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.APATITE_ORE_BLOCK.get(), EternalGeneralItems.GEM_APATITE.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.get(), EternalGeneralItems.GEM_APATITE.get(),1,2));
 
         //CINNABAR TO GEM
-        add(EternalGeneralBlocks.CINNABAR_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.CINNABAR_ORE_BLOCK.get(), EternalGeneralItems.GEM_CINNABAR.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get(), EternalGeneralItems.GEM_CINNABAR.get(),1,3));
+        add(EternalGeneralBlocks.CINNABAR_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.CINNABAR_ORE_BLOCK.get(), EternalGeneralItems.GEM_CINNABAR.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.get(), EternalGeneralItems.GEM_CINNABAR.get(),1,2));
 
         //ONYX TO GEM
-        add(EternalGeneralBlocks.ONYX_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.ONYX_ORE_BLOCK.get(), EternalGeneralItems.GEM_ONYX.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_ONYX_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_ONYX_ORE_BLOCK.get(), EternalGeneralItems.GEM_ONYX.get(),1,3));
+        add(EternalGeneralBlocks.ONYX_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.ONYX_ORE_BLOCK.get(), EternalGeneralItems.GEM_ONYX.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_ONYX_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_ONYX_ORE_BLOCK.get(), EternalGeneralItems.GEM_ONYX.get(),1,2));
 
         //AMBER TO GEM
-        add(EternalGeneralBlocks.AMBER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.AMBER_ORE_BLOCK.get(), EternalGeneralItems.GEM_AMBER.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.get(), EternalGeneralItems.GEM_AMBER.get(),1,3));
+        add(EternalGeneralBlocks.AMBER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.AMBER_ORE_BLOCK.get(), EternalGeneralItems.GEM_AMBER.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.get(), EternalGeneralItems.GEM_AMBER.get(),1,2));
 
         //NITER TO GEM
-        add(EternalGeneralBlocks.NITER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.NITER_ORE_BLOCK.get(), EternalGeneralItems.GEM_NITER.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.get(), EternalGeneralItems.GEM_NITER.get(),1,3));
+        add(EternalGeneralBlocks.NITER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.NITER_ORE_BLOCK.get(), EternalGeneralItems.GEM_NITER.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.get(), EternalGeneralItems.GEM_NITER.get(),1,2));
 
         //RUBY TO GEM
-        add(EternalGeneralBlocks.RUBY_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.RUBY_ORE_BLOCK.get(), EternalGeneralItems.GEM_RUBY.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get(), EternalGeneralItems.GEM_RUBY.get(),1,3));
+        add(EternalGeneralBlocks.RUBY_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.RUBY_ORE_BLOCK.get(), EternalGeneralItems.GEM_RUBY.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.get(), EternalGeneralItems.GEM_RUBY.get(),1,2));
 
         //PERIDOT TO GEM
-        add(EternalGeneralBlocks.PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.PERIDOT_ORE_BLOCK.get(), EternalGeneralItems.GEM_PERIDOT.get(), 1,3));
-        add(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), EternalGeneralItems.GEM_PERIDOT.get(),1,3));
-
+        add(EternalGeneralBlocks.PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.PERIDOT_ORE_BLOCK.get(), EternalGeneralItems.GEM_PERIDOT.get(), 1,2));
+        add(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), EternalGeneralItems.GEM_PERIDOT.get(),1,2));
         //OBSIDIAN ORE TO GEM
         add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get(), EternalGeneralItems.GEM_OBSIDIAN_SHARD.get(),1,2));
     }

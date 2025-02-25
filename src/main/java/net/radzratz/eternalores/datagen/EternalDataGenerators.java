@@ -30,6 +30,8 @@ public class EternalDataGenerators {
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(new LootTableProvider.SubProviderEntry(EternalBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 
+        generator.addProvider(event.includeServer(), new EternalRecipeProvider(packOutput, lookupProvider));
+
         BlockTagsProvider blockTagsProvider = new EternalBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
         generator.addProvider(event.includeServer(), blockTagsProvider);
         generator.addProvider(event.includeServer(), new EternalItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));

@@ -25,6 +25,8 @@ public class EternalOreBlockItemTags {
         public static final TagKey<Item> ITEM_FLUORITE_ORE_OW = createOreBlockTags("ores/fluorite");
         //Gallium
         public static final TagKey<Item> ITEM_GALLIUM_ORE_OW = createOreBlockTags("ores/gallium");
+        //Iridium
+        public static final TagKey<Item> ITEM_IRIDIUM_ORE_OW = createOreBlockTags("ores/iridium");
         //Lead
         public static final TagKey<Item> ITEM_LEAD_ORE_OW = createOreBlockTags("ores/lead");
         //Nickel

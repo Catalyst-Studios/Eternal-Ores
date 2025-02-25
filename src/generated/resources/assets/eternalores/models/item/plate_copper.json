@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/plate_copper"
+    "layer0": "eternalores:item/plates/plate_copper"
   }
 }

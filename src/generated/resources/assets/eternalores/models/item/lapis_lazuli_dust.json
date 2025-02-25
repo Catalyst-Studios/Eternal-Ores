@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/lapis_lazuli_dust"
+    "layer0": "eternalores:item/dusts/lapis_lazuli_dust"
   }
 }

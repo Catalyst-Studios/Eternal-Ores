@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:britannia_silver_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:britannia_silver_ingot"
+  }
+}

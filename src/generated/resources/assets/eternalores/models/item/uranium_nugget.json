@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "eternalores:item/uranium_nugget"
+    "layer0": "eternalores:item/nuggets/uranium_nugget"
   }
 }

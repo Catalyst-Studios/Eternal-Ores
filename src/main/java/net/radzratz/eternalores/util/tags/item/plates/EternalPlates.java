@@ -25,6 +25,8 @@ public class EternalPlates {
         public static final TagKey<Item> CONSTANTAN_PLATE = createPlateTag("plates/constantan");
         //Copper
         public static final TagKey<Item> COPPER_PLATE = createPlateTag("plates/copper");
+        //Diamond
+        public static final TagKey<Item> DIAMOND_PLATE = createPlateTag("plates/diamond");
         //Electrum
         public static final TagKey<Item> ELECTRUM_PLATE = createPlateTag("plates/electrum");
         //Enderium
@@ -41,6 +43,8 @@ public class EternalPlates {
         public static final TagKey<Item> GOLD_PLATE = createPlateTag("plates/gold");
         //Invar
         public static final TagKey<Item> INVAR_PLATE = createPlateTag("plates/invar");
+        //Iridium
+        public static final TagKey<Item> IRIDIUM_PLATE = createPlateTag("plates/iridium");
         //Iron
         public static final TagKey<Item> IRON_PLATE = createPlateTag("plates/iron");
         //Lead

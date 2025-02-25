@@ -20,6 +20,8 @@ public class EternalGemDustsTags {
         public static final TagKey<Item> DUST_DIAMOND = createGemDustTag("dusts/diamond");
         //Emerald
         public static final TagKey<Item> DUST_EMERALD = createGemDustTag("dusts/emerald");
+        //Fluorite
+        public static final TagKey<Item> DUST_FLUORITE = createGemDustTag("dusts/fluorite");
         //Lapis
         public static final TagKey<Item> DUST_LAPIS = createGemDustTag("dusts/lapis");
         //Niter

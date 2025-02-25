@@ -6,6 +6,8 @@
     "eternalores:cinnabar_ore_block",
     "eternalores:cobalt_ore_block",
     "eternalores:fluorite_ore_block",
+    "eternalores:gallium_ore_block",
+    "eternalores:iridium_ore_block",
     "eternalores:lead_ore_block",
     "eternalores:nickel_ore_block",
     "eternalores:niter_ore_block",
@@ -20,7 +22,6 @@
     "eternalores:uranium_ore_block",
     "eternalores:silver_ore_block",
     "eternalores:zinc_ore_block",
-    "eternalores:gallium_ore_block",
     "eternalores:peridot_ore_block"
   ]
 }
