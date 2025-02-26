@@ -19,6 +19,8 @@ public class EternalPlates {
         public static final TagKey<Item> BRITANNIA_PLATE = createPlateTag("plates/britannia_silver");
         //Bronze
         public static final TagKey<Item> BRONZE_PLATE = createPlateTag("plates/bronze");
+        //Cast Iron
+        public static final TagKey<Item> CAST_IRON_PLATE = createPlateTag("plates/cast_iron");
         //Cobalt
         public static final TagKey<Item> COBALT_PLATE = createPlateTag("plates/cobalt");
         //Constantan

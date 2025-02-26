@@ -154,6 +154,7 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> ROSE_GOLD_BLOCK = registerMetalBlock("rose_gold_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> BRITANNIA_SILVER_BLOCK = registerMetalBlock("britannia_silver_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> IRIDIUM_BLOCK = registerMetalBlock("iridium_block", 3f, SoundType.METAL);
+    public static final DeferredBlock<Block> CAST_IRON_BLOCK = registerMetalBlock("cast_iron_block", 3f, SoundType.METAL);
 
     //Gem Blocks
     private static DeferredBlock<Block> registerGemBlock(String name, float hardness, SoundType sound) {

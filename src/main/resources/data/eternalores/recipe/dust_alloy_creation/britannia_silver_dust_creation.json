@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/silver"
+    },
+    {
+      "tag": "c:dusts/silver"
+    },
+    {
+      "tag": "c:dusts/copper"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:britannia_silver_dust"
+  }
+}

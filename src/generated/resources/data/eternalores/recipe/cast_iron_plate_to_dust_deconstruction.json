@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:rod_cast_iron"
+    },
+    {
+      "tag": "eternalores:tools/hammers"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "eternalores:cast_iron_dust"
+  }
+}

@@ -19,6 +19,8 @@ public class EternalIngotTags {
         public static final TagKey<Item> BRITANNIA_INGOT = createIngotTags("ingots/britannia_silver");
         //Bronze
         public static final TagKey<Item> BRONZE_INGOT = createIngotTags("ingots/bronze");
+        //Cast Iron
+        public static final TagKey<Item> CAST_IRON_INGOT = createIngotTags("ingots/cast_iron");
         //Cobalt
         public static final TagKey<Item> COBALT_INGOT = createIngotTags("ingots/cobalt");
         //Constantan

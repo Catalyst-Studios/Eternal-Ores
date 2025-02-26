@@ -60,6 +60,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.PEWTER_BLOCK.get());
         dropSelf(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get());
         dropSelf(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.CAST_IRON_BLOCK.get());
 
         //GEM BLOCKS
         dropSelf(EternalGeneralBlocks.SAPPHIRE_BLOCK.get());

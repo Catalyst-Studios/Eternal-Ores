@@ -16,6 +16,8 @@ public class EternalMetalRodsTags {
         public static final TagKey<Item> ROD_BRASS = createMetalRodTag("rods/brass");
         //Bronze
         public static final TagKey<Item> ROD_BRONZE = createMetalRodTag("rods/bronze");
+        //Cast Iron
+        public static final TagKey<Item> ROD_CAST_IRON = createMetalRodTag("rods/cast_iron");
         //Cobalt
         public static final TagKey<Item> ROD_COBALT = createMetalRodTag("rods/cobalt");
         //Constantan

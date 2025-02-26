@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-23T15:32:07.7325883	Block States: eternalores
+// 1.21.1	2025-02-26T14:39:16.9980383	Block States: eternalores
 b6b9c6647989b7f9e5a630a3b54ebeeb48d5e923 assets/eternalores/blockstates/aluminum_block.json
 53b119ec7b481084821223847767537173db8789 assets/eternalores/blockstates/aluminum_ore_block.json
 c0182d0bd8baae3e50001c8cb01182f701b062ab assets/eternalores/blockstates/amber_block.json
@@ -9,6 +9,7 @@ cf3c0a40baadf0443efdaf5583517e5a53e990bf assets/eternalores/blockstates/blue_ste
 46280c2a98bf85ae8dccf2f861615deb1a3a0197 assets/eternalores/blockstates/brass_block.json
 587380845c556685e0cda4195a3f6e6a54e94cc7 assets/eternalores/blockstates/britannia_silver_block.json
 f7985e6850b27d8b793bba9fd0c3bd0598d9687c assets/eternalores/blockstates/bronze_block.json
+1288e15484ba5c04c0873b344e55860c4af158ab assets/eternalores/blockstates/cast_iron_block.json
 ace4bec70cb4e8be970736d7dd7d8735dd5947f2 assets/eternalores/blockstates/cinnabar_block.json
 9ded705c2d8510db8121195013d62a3e6a7e3ad7 assets/eternalores/blockstates/cinnabar_ore_block.json
 359d818c361252b8aeefc85abf35ca3f70c2f5c6 assets/eternalores/blockstates/cobalt_block.json
@@ -108,6 +109,7 @@ fa6111093a098cfc1460c2429af38a22415f4458 assets/eternalores/models/block/apatite
 77a5e9bd1415f45bdc6891d47b0256b5bd6b09e8 assets/eternalores/models/block/brass_block.json
 f8adf299d4820264cd45df2f5bc5557ea59197d9 assets/eternalores/models/block/britannia_silver_block.json
 ab92d3e2dde01bc77c0477dc0368c4e78389ab1a assets/eternalores/models/block/bronze_block.json
+ccd460b3ce8f9f12142a2a52257989afeb3c10ea assets/eternalores/models/block/cast_iron_block.json
 8a6b7dc3988ed4379ceab2f5eace7462ca45650f assets/eternalores/models/block/cinnabar_block.json
 bb3f7f3589d4081b5a60cd9bad2bdd4da5c36b99 assets/eternalores/models/block/cinnabar_ore_block.json
 962e74f1809e8913543825e0f28684fd06181bc0 assets/eternalores/models/block/cobalt_block.json
@@ -207,6 +209,7 @@ b00111728dc887af5a0fdc6462a373e54952c294 assets/eternalores/models/item/blue_ste
 cd58e0355dcda360e756b654f0423113dd5d8561 assets/eternalores/models/item/brass_block.json
 ed33a3b5ecf4d5a051169ec9be1b5d62ed5479ae assets/eternalores/models/item/britannia_silver_block.json
 0cd1d1645a147cf5624832ff50db633059abeb1e assets/eternalores/models/item/bronze_block.json
+c6143312e0eb9f1f1928049ffa639a93e292b586 assets/eternalores/models/item/cast_iron_block.json
 1b19b5638804600a9aab11023045c7ceb0006c26 assets/eternalores/models/item/cinnabar_block.json
 2faa64395dcdccfb0bf4d5502e1ca75f6d5c15dd assets/eternalores/models/item/cinnabar_ore_block.json
 8feb7a4cec2ba5d0bfb13bf4276f0b302a77a04a assets/eternalores/models/item/cobalt_block.json

@@ -81,6 +81,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.PEWTER_INGOT.get());
         basicItem(EternalGeneralItems.ROSE_GOLD_INGOT.get());
         basicItem(EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
+        basicItem(EternalGeneralItems.CAST_IRON_INGOT.get());
 
         //NUGGETS
         basicItem(EternalGeneralItems.ALUMINUM_NUGGET.get());
@@ -114,6 +115,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.ROSE_GOLD_NUGGET.get());
         basicItem(EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get());
         basicItem(EternalGeneralItems.IRIDIUM_NUGGET.get());
+        basicItem(EternalGeneralItems.CAST_IRON_NUGGET.get());
 
         //DUSTS
         basicItem(EternalGeneralItems.ALUMINUM_DUST.get());
@@ -168,6 +170,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.ROSE_GOLD_DUST.get());
         basicItem(EternalGeneralItems.BRITANNIA_SILVER_DUST.get());
         basicItem(EternalGeneralItems.IRIDIUM_DUST.get());
+        basicItem(EternalGeneralItems.CAST_IRON_DUST.get());
 
         //RODS
         basicItem(EternalGeneralItems.ROD_ALUMINUM.get());
@@ -203,6 +206,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.ROD_ROSE_GOLD.get());
         basicItem(EternalGeneralItems.ROD_DIAMOND.get());
         basicItem(EternalGeneralItems.ROD_IRIDIUM.get());
+        basicItem(EternalGeneralItems.ROD_CAST_IRON.get());
 
         //PLATES
         basicItem(EternalGeneralItems.PLATE_ALUMINUM.get());
@@ -238,6 +242,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.PLATE_ROSE_GOLD.get());
         basicItem(EternalGeneralItems.PLATE_IRIDIUM.get());
         basicItem(EternalGeneralItems.PLATE_DIAMOND.get());
+        basicItem(EternalGeneralItems.PLATE_CAST_IRON.get());
 
         //GEARS
         basicItem(EternalGeneralItems.GEAR_ALUMINUM.get());

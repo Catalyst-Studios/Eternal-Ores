@@ -18,6 +18,8 @@ public class EternalStorageMetalBlockTags {
         public static final TagKey<Block> BRITANNIA_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/britannia_silver");
         //Bronze
         public static final TagKey<Block> BRONZE_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/bronze");
+        //Cast Iron
+        public static final TagKey<Block> CAST_IRON_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/cast_iron");
         //Cobalt
         public static final TagKey<Block> COBALT_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/cobalt");
         //Constantan

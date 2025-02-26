@@ -40,6 +40,7 @@
   "item.eternalores.rose_gold_ingot": "Rose Gold Ingot",
   "item.eternalores.britannia_silver_ingot": "Britannia Silver Ingot",
   "item.eternalores.iridium_ingot": "Iridium Ingot",
+  "item.eternalores.cast_iron_ingot": "Cast Iron Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -74,6 +75,7 @@
   "item.eternalores.rose_gold_nugget": "Rose Gold Nugget",
   "item.eternalores.britannia_silver_nugget": "Britannia Silver Nugget",
   "item.eternalores.iridium_nugget": "Iridium Nugget",
+  "item.eternalores.cast_iron_nugget": "Cast Iron Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -108,6 +110,7 @@
   "item.eternalores.rod_rose_gold": "Rose Gold Rod",
   "item.eternalores.rod_iridium": "Iridium Rod",
   "item.eternalores.rod_diamond": "Diamond Rod",
+  "item.eternalores.rod_cast_iron": "Cast Iron Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -142,6 +145,7 @@
   "item.eternalores.plate_rose_gold": "Rose Gold Plate",
   "item.eternalores.plate_iridium": "Iridium Plate",
   "item.eternalores.plate_diamond": "Diamond Plate",
+  "item.eternalores.plate_cast_iron": "Cast Iron Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -223,6 +227,7 @@
   "item.eternalores.rose_gold_dust": "Rose Gold Dust",
   "item.eternalores.britannia_silver_dust": "Britannia Silver Dust",
   "item.eternalores.iridium_dust": "Iridium Dust",
+  "item.eternalores.cast_iron_dust": "Cast Iron Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -341,6 +346,7 @@
   "block.eternalores.rose_gold_block": "Rose Gold Block",
   "block.eternalores.britannia_silver_block": "Britannia Silver Block",
   "block.eternalores.iridium_block": "Iridium Block",
+  "block.eternalores.cast_iron_block": "Cast Iron Block",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }

@@ -20,39 +20,11 @@ import java.util.concurrent.CompletableFuture;
 public class EternalRecipeProvider extends RecipeProvider implements IConditionBuilder {
 
     private static final Set<String> EXCLUDED_MAT_DUPE_RECIPES = Set.of(
-            "netherite",
-            "apatite",
-            "fluorite",
-            "amber",
-            "diamond",
-            "emerald",
-            "brass",
-            "blue_steel",
-            "britannia",
-            "bronze",
-            "constantan",
-            "electrum",
-            "coal",
-            "ender",
-            "endstone",
-            "netherrack",
-            "invar",
-            "lapis",
-            "cinnabar",
-            "lumium",
-            "niter",
-            "obsidian",
-            "peridot",
-            "pewter",
-            "plutonium",
-            "quartz",
-            "rose_gold",
-            "ruby",
-            "sapphire",
-            "signalum",
-            "steel",
-            "titanium",
-            "enderium"
+            "netherite", "apatite", "fluorite", "amber", "diamond", "emerald", "brass", "blue_steel",
+            "britannia", "bronze", "constantan", "electrum", "coal", "ender", "endstone", "netherrack",
+            "invar", "lapis", "cinnabar", "lumium", "niter", "obsidian", "peridot", "pewter", "plutonium",
+            "quartz", "rose_gold", "ruby", "sapphire", "signalum", "steel", "titanium", "enderium",
+            "cast_iron"
     );
 
     public EternalRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -83,6 +55,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateHammerRecipes(recipeOutput, "brass_ingot", EternalGeneralItems.BRASS_INGOT.get(), EternalGeneralItems.BRASS_DUST.get());
         generateHammerRecipes(recipeOutput, "britannia_ingot", EternalGeneralItems.BRITANNIA_SILVER_INGOT.get(), EternalGeneralItems.BRITANNIA_SILVER_DUST.get());
         generateHammerRecipes(recipeOutput, "bronze_ingot", EternalGeneralItems.BRONZE_INGOT.get(), EternalGeneralItems.BRONZE_DUST.get());
+        generateHammerRecipes(recipeOutput, "cast_iron_ingot", EternalGeneralItems.CAST_IRON_INGOT.get(), EternalGeneralItems.CAST_IRON_DUST.get());
         generateHammerRecipes(recipeOutput, "cobalt_ingot", EternalGeneralItems.COBALT_INGOT.get(), EternalGeneralItems.COBALT_DUST.get());
         generateHammerRecipes(recipeOutput, "constantan_ingot", EternalGeneralItems.CONSTANTAN_INGOT.get(), EternalGeneralItems.CONSTANTAN_DUST.get());
         generateHammerRecipes(recipeOutput, "electrum_ingot", EternalGeneralItems.ELECTRUM_INGOT.get(), EternalGeneralItems.ELECTRUM_DUST.get());
@@ -140,6 +113,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotPlateRecipe(recipeOutput, "blue_steel", EternalGeneralItems.PLATE_BLUE_STEEL.get());
         generateIngotPlateRecipe(recipeOutput, "brass", EternalGeneralItems.PLATE_BRASS.get());
         generateIngotPlateRecipe(recipeOutput, "bronze", EternalGeneralItems.PLATE_BRONZE.get());
+        generateIngotPlateRecipe(recipeOutput, "cast_iron", EternalGeneralItems.PLATE_CAST_IRON.get());
         generateIngotPlateRecipe(recipeOutput, "cobalt", EternalGeneralItems.PLATE_COBALT.get());
         generateIngotPlateRecipe(recipeOutput, "constantan", EternalGeneralItems.PLATE_CONSTANTAN.get());
         generateIngotPlateRecipe(recipeOutput, "electrum", EternalGeneralItems.PLATE_ELECTRUM.get());
@@ -180,6 +154,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotRodsRecipe(recipeOutput, "blue_steel", EternalGeneralItems.ROD_BLUE_STEEL.get());
         generateIngotRodsRecipe(recipeOutput, "brass", EternalGeneralItems.ROD_BRASS.get());
         generateIngotRodsRecipe(recipeOutput, "bronze", EternalGeneralItems.ROD_BRONZE.get());
+        generateIngotRodsRecipe(recipeOutput, "cast_iron", EternalGeneralItems.ROD_CAST_IRON.get());
         generateIngotRodsRecipe(recipeOutput, "cobalt", EternalGeneralItems.ROD_COBALT.get());
         generateIngotRodsRecipe(recipeOutput, "constantan", EternalGeneralItems.ROD_CONSTANTAN.get());
         generateIngotRodsRecipe(recipeOutput, "electrum", EternalGeneralItems.ROD_ELECTRUM.get());
@@ -214,6 +189,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToIngotMaterialRecipe(recipeOutput, "brass", EternalGeneralBlocks.BRASS_BLOCK.asItem(), EternalGeneralItems.BRASS_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "britannia", EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "bronze", EternalGeneralBlocks.BRONZE_BLOCK.asItem(), EternalGeneralItems.BRONZE_INGOT.get());
+        generateBlockToIngotMaterialRecipe(recipeOutput, "cast_iron", EternalGeneralBlocks.CAST_IRON_BLOCK.asItem(), EternalGeneralItems.CAST_IRON_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "cobalt", EternalGeneralBlocks.COBALT_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "constantan", EternalGeneralBlocks.CONSTANTAN_BLOCK.asItem(), EternalGeneralItems.CONSTANTAN_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "electrum", EternalGeneralBlocks.ELECTRUM_BLOCK.asItem(), EternalGeneralItems.ELECTRUM_INGOT.get());
@@ -293,6 +269,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToBlockRecipe(recipeOutput, "brass", EternalGeneralItems.BRASS_INGOT.get(), EternalGeneralBlocks.BRASS_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_INGOT.get(), EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_INGOT.get(), EternalGeneralBlocks.BRONZE_BLOCK.asItem());
+        generateIngotToBlockRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_INGOT.get(), EternalGeneralBlocks.CAST_IRON_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_INGOT.get(), EternalGeneralBlocks.COBALT_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_INGOT.get(), EternalGeneralBlocks.CONSTANTAN_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_INGOT.get(), EternalGeneralBlocks.ELECTRUM_BLOCK.asItem());
@@ -340,6 +317,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToNuggetRecipe(recipeOutput, "brass", EternalGeneralItems.BRASS_INGOT.get(), EternalGeneralItems.BRASS_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_INGOT.get(), EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_INGOT.get(), EternalGeneralItems.BRONZE_NUGGET.get());
+        generateIngotToNuggetRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_INGOT.get(), EternalGeneralItems.CAST_IRON_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_INGOT.get(), EternalGeneralItems.COBALT_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_INGOT.get(), EternalGeneralItems.CONSTANTAN_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_INGOT.get(), EternalGeneralItems.ELECTRUM_NUGGET.get());
@@ -377,6 +355,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateNuggetToIngotRecipe(recipeOutput, "brass", EternalGeneralItems.BRASS_NUGGET.get(), EternalGeneralItems.BRASS_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_NUGGET.get(), EternalGeneralItems.BRONZE_INGOT.get());
+        generateNuggetToIngotRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_NUGGET.get(), EternalGeneralItems.CAST_IRON_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_NUGGET.get(), EternalGeneralItems.COBALT_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_NUGGET.get(), EternalGeneralItems.CONSTANTAN_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_NUGGET.get(), EternalGeneralItems.ELECTRUM_INGOT.get());
@@ -417,6 +396,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRodPlateToDustRecipe(recipeOutput, "blue_steel", EternalGeneralItems.PLATE_BLUE_STEEL.get(), EternalGeneralItems.ROD_BLUE_STEEL.get(), EternalGeneralItems.BLUE_STEEL_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "brass", EternalGeneralItems.PLATE_BRASS.get(), EternalGeneralItems.ROD_BRASS.get(), EternalGeneralItems.BRASS_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "bronze", EternalGeneralItems.PLATE_BRONZE.get(), EternalGeneralItems.ROD_BRONZE.get(), EternalGeneralItems.BRONZE_DUST.get());
+        generateRodPlateToDustRecipe(recipeOutput, "cast_iron", EternalGeneralItems.PLATE_CAST_IRON.get(), EternalGeneralItems.ROD_CAST_IRON.get(), EternalGeneralItems.CAST_IRON_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "cobalt", EternalGeneralItems.PLATE_COBALT.get(), EternalGeneralItems.ROD_COBALT.get(), EternalGeneralItems.COBALT_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "constantan", EternalGeneralItems.PLATE_CONSTANTAN.get(), EternalGeneralItems.ROD_CONSTANTAN.get(), EternalGeneralItems.CONSTANTAN_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "electrum", EternalGeneralItems.PLATE_ELECTRUM.get(), EternalGeneralItems.ROD_ELECTRUM.get(), EternalGeneralItems.ELECTRUM_DUST.get());
@@ -493,6 +473,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialFurnace(recipeOutput, "brass", EternalGeneralItems.BRASS_DUST.get(), EternalGeneralItems.BRASS_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "britannia_silver", EternalGeneralItems.BRITANNIA_SILVER_DUST.get(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "bronze", EternalGeneralItems.BRONZE_DUST.get(), EternalGeneralItems.BRONZE_INGOT.get());
+        generateDustToMaterialFurnace(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_DUST.get(), EternalGeneralItems.CAST_IRON_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "cobalt", EternalGeneralItems.COBALT_DUST.get(), EternalGeneralItems.COBALT_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_DUST.get(), EternalGeneralItems.CONSTANTAN_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_DUST.get(), EternalGeneralItems.ELECTRUM_INGOT.get());
@@ -543,6 +524,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialBlasting(recipeOutput, "brass", EternalGeneralItems.BRASS_DUST.get(), EternalGeneralItems.BRASS_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "britannia_silver", EternalGeneralItems.BRITANNIA_SILVER_DUST.get(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "bronze", EternalGeneralItems.BRONZE_DUST.get(), EternalGeneralItems.BRONZE_INGOT.get());
+        generateDustToMaterialBlasting(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_DUST.get(), EternalGeneralItems.CAST_IRON_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "cobalt", EternalGeneralItems.COBALT_DUST.get(), EternalGeneralItems.COBALT_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_DUST.get(), EternalGeneralItems.CONSTANTAN_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_DUST.get(), EternalGeneralItems.ELECTRUM_INGOT.get());
@@ -619,6 +601,96 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         //generateRawBlockToMaterialBlasting(recipeOutput, "ultimatitanium", EternalGeneralBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem(), EternalGeneralBlocks.ULTIMATITANIUM_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "uranium", EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem(), EternalGeneralBlocks.URANIUM_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "zinc", EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem(), EternalGeneralBlocks.ZINC_BLOCK.asItem());
+
+        ///Ore Block to Material Furnace/Blasting
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_aluminum", EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_aluminum", EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_cobalt", EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_cobalt", EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_gallium", EternalGeneralBlocks.GALLIUM_ORE_BLOCK.asItem(), EternalGeneralItems.GALLIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_gallium", EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.asItem(), EternalGeneralItems.GALLIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_iridium", EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.asItem(), EternalGeneralItems.IRIDIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_iridium", EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.asItem(), EternalGeneralItems.IRIDIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_lead", EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem(), EternalGeneralItems.LEAD_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_lead", EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem(), EternalGeneralItems.LEAD_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_nickel", EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem(), EternalGeneralItems.NICKEL_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_nickel", EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.asItem(), EternalGeneralItems.NICKEL_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_osmium", EternalGeneralBlocks.OSMIUM_ORE_BLOCK.asItem(), EternalGeneralItems.OSMIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_osmium", EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.asItem(), EternalGeneralItems.OSMIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_platinum", EternalGeneralBlocks.PLATINUM_ORE_BLOCK.asItem(), EternalGeneralItems.PLATINUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_platinum", EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.asItem(), EternalGeneralItems.PLATINUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_silver", EternalGeneralBlocks.SILVER_ORE_BLOCK.asItem(), EternalGeneralItems.SILVER_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_silver", EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.asItem(), EternalGeneralItems.SILVER_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_tin", EternalGeneralBlocks.TIN_ORE_BLOCK.asItem(), EternalGeneralItems.TIN_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_tin", EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem(), EternalGeneralItems.TIN_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_uranium", EternalGeneralBlocks.URANIUM_ORE_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_uranium", EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_zinc", EternalGeneralBlocks.ZINC_ORE_BLOCK.asItem(), EternalGeneralItems.ZINC_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_zinc", EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem(), EternalGeneralItems.ZINC_INGOT.get());
+
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_sulfur", EternalGeneralBlocks.SULFUR_ORE_BLOCK.asItem(), EternalGeneralItems.SULFUR.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_sulfur", EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem(), EternalGeneralItems.SULFUR.get());
+
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_amber", EternalGeneralBlocks.AMBER_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_AMBER.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_amber", EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_AMBER.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_apatite", EternalGeneralBlocks.APATITE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_APATITE.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_apatite", EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_APATITE.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_cinnabar", EternalGeneralBlocks.CINNABAR_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_CINNABAR.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_cinnabar", EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_CINNABAR.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_fluorite", EternalGeneralBlocks.FLUORITE_ORE_BLOCK.asItem(), EternalGeneralItems.FLUORITE.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_fluorite", EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.asItem(), EternalGeneralItems.FLUORITE.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_niter", EternalGeneralBlocks.NITER_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_NITER.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_niter", EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_NITER.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "nether_obsidian", EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_OBSIDIAN_SHARD.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_ruby", EternalGeneralBlocks.RUBY_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_RUBY.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_ruby", EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_RUBY.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_sapphire", EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_sapphire", EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
+
+        //Blasting var
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_aluminum", EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_aluminum", EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_cobalt", EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_cobalt", EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_gallium", EternalGeneralBlocks.GALLIUM_ORE_BLOCK.asItem(), EternalGeneralItems.GALLIUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_gallium", EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.asItem(), EternalGeneralItems.GALLIUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_iridium", EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.asItem(), EternalGeneralItems.IRIDIUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_iridium", EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.asItem(), EternalGeneralItems.IRIDIUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_lead", EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem(), EternalGeneralItems.LEAD_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_lead", EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem(), EternalGeneralItems.LEAD_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_nickel", EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem(), EternalGeneralItems.NICKEL_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_nickel", EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.asItem(), EternalGeneralItems.NICKEL_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_osmium", EternalGeneralBlocks.OSMIUM_ORE_BLOCK.asItem(), EternalGeneralItems.OSMIUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_osmium", EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.asItem(), EternalGeneralItems.OSMIUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_platinum", EternalGeneralBlocks.PLATINUM_ORE_BLOCK.asItem(), EternalGeneralItems.PLATINUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_platinum", EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.asItem(), EternalGeneralItems.PLATINUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_silver", EternalGeneralBlocks.SILVER_ORE_BLOCK.asItem(), EternalGeneralItems.SILVER_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_silver", EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.asItem(), EternalGeneralItems.SILVER_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_tin", EternalGeneralBlocks.TIN_ORE_BLOCK.asItem(), EternalGeneralItems.TIN_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_tin", EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem(), EternalGeneralItems.TIN_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_uranium", EternalGeneralBlocks.URANIUM_ORE_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_uranium", EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_zinc", EternalGeneralBlocks.ZINC_ORE_BLOCK.asItem(), EternalGeneralItems.ZINC_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_zinc", EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem(), EternalGeneralItems.ZINC_INGOT.get());
+
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_sulfur", EternalGeneralBlocks.SULFUR_ORE_BLOCK.asItem(), EternalGeneralItems.SULFUR.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_sulfur", EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem(), EternalGeneralItems.SULFUR.get());
+
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_amber", EternalGeneralBlocks.AMBER_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_AMBER.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_amber", EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_AMBER.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_apatite", EternalGeneralBlocks.APATITE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_APATITE.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_apatite", EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_APATITE.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_cinnabar", EternalGeneralBlocks.CINNABAR_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_CINNABAR.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_cinnabar", EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_CINNABAR.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_fluorite", EternalGeneralBlocks.FLUORITE_ORE_BLOCK.asItem(), EternalGeneralItems.FLUORITE.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_fluorite", EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.asItem(), EternalGeneralItems.FLUORITE.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_niter", EternalGeneralBlocks.NITER_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_NITER.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_niter", EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_NITER.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "nether_obsidian", EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_OBSIDIAN_SHARD.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_ruby", EternalGeneralBlocks.RUBY_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_RUBY.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_ruby", EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_RUBY.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_sapphire", EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_sapphire", EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
     }
 
     ///Materials to Dusts
@@ -822,5 +894,17 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(rawBlock), RecipeCategory.MISC, output, 0.7f, 100)
                 .unlockedBy("has_" + material + "_raw_block", has(rawBlock))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_block_to_material_blasting"));
+    }
+
+    ///Ore Block to Material
+    private void generateOreBlockToMaterialFurnace(@NotNull RecipeOutput recipeOutput, String material, Item oreBlock, Item output) {
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(oreBlock), RecipeCategory.MISC, output, 0.7f, 200)
+                .unlockedBy("has_" + material + "_ore_block", has(oreBlock))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_ore_block_to_material_furnace"));
+    }
+    private void generateOreBlockToMaterialBlasting(@NotNull RecipeOutput recipeOutput, String material, Item oreBlock, Item output) {
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(oreBlock), RecipeCategory.MISC, output, 0.7f, 100)
+                .unlockedBy("has_" + material + "_ore_block", has(oreBlock))
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_ore_block_to_material_blasting"));
     }
 }

@@ -18,6 +18,8 @@ public class EternalNuggetsTags {
         public static final TagKey<Item> NUGGET_BRITANNIA_SILVER = createNuggetsTags("nuggets/britannia_silver");
         //Bronze
         public static final TagKey<Item> NUGGET_BRONZE = createNuggetsTags("nuggets/bronze");
+        //Cast Iron
+        public static final TagKey<Item> NUGGET_CAST_IRON = createNuggetsTags("nuggets/cast_iron");
         //Cobalt
         public static final TagKey<Item> NUGGET_COBALT = createNuggetsTags("nuggets/cobalt");
         //Constantan
