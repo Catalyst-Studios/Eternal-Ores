@@ -64,6 +64,8 @@ public class EternalStorageMetalBlockTags {
         public static final TagKey<Block> URANINITE_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/uraninite");
         //Uranium
         public static final TagKey<Block> URANIUM_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/uranium");
+        //Wrought Iron
+        public static final TagKey<Block> WROUGHT_IRON_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/wrought_iron");
         //Zinc
         public static final TagKey<Block> ZINC_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/zinc");
 

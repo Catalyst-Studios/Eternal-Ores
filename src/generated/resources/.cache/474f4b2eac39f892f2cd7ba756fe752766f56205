@@ -1,6 +1,6 @@
-// 1.21.1	2025-02-27T00:05:28.021393	Tags for minecraft:block mod id eternalores
+// 1.21.1	2025-02-27T12:16:16.9055897	Tags for minecraft:block mod id eternalores
 d8e3838f471e065337c0b410f1079d7ca76be4da data/c/tags/block/gem_block.json
-22fb9f1db87b69b7314e5a5031faecec667e71d6 data/c/tags/block/metal_block.json
+7fde3e2fe76f2d587253f4bda1eb2f3743fe78b5 data/c/tags/block/metal_block.json
 0f323e06cfe6e8e9f47ef2ec151c60e9bf3c45dc data/c/tags/block/ores.json
 d441da36269b359d947d3b29803cff420f1a7f55 data/c/tags/block/ores/aluminum.json
 07b1e4061c240eeb93106c910ef5fa13446261a0 data/c/tags/block/ores/amber.json
@@ -29,7 +29,7 @@ e6eaa377c359e283bf04b3d345f44fdb6171399a data/c/tags/block/ores/zinc.json
 fcbc57ac2517c206f3673d1a0a216f9be85a5adc data/c/tags/block/ores_in_ground/netherrack.json
 0ded36ab9ace2a4e23887d818794110ea4d1e06b data/c/tags/block/ores_in_ground/stone.json
 b0b2a1279209e359e343b432f207fef1aa1d2a99 data/c/tags/block/raw_ore_block.json
-039c1661c6af09e37d4b64893c7ef653a7f09be3 data/c/tags/block/storage_blocks.json
+95f7709b4b2f640671019e03ee1930d27b6b8681 data/c/tags/block/storage_blocks.json
 c4dc97a723d06ee8d352a8c633fb1c9421895a4d data/c/tags/block/storage_blocks/aluminum.json
 4d4e1deb96f454ef5548503771c2f30393d28239 data/c/tags/block/storage_blocks/amber.json
 c8307384879dc69ebf2239a2180f3bf65bb9c243 data/c/tags/block/storage_blocks/apatite.json
@@ -81,8 +81,9 @@ b72d2374bcde3317b869d5d4657eecb6bc7e84f8 data/c/tags/block/storage_blocks/sulfur
 bccbf12c44ab74cf5e86ef719ed4d42f49a2b532 data/c/tags/block/storage_blocks/titanium.json
 c3e03fb67ef5d94472444da30787d5a38c09e876 data/c/tags/block/storage_blocks/uraninite.json
 a9490d7e842d03664401a1fb03e81a7bd0fb3f9b data/c/tags/block/storage_blocks/uranium.json
+11332b66f439caa16583f51f3717d8537d3288d1 data/c/tags/block/storage_blocks/wrought_iron.json
 5ab33792050e192ba5ee82bc3a7c27dadec09742 data/c/tags/block/storage_blocks/zinc.json
-84c59848087774811800f2612162168934a3dce3 data/minecraft/tags/block/mineable/pickaxe.json
+846479aef07d52a48e715dfd2eb7412d9fece361 data/minecraft/tags/block/mineable/pickaxe.json
 4081791f23372bf0be1492ac3ed65b7f894d2f59 data/minecraft/tags/block/needs_diamond_tool.json
-81bff231902e22205e71a716fd69f75f59fa3069 data/minecraft/tags/block/needs_iron_tool.json
+747f6dec0ffd0961c88c8756d3f8072c9eb5fc8e data/minecraft/tags/block/needs_iron_tool.json
 37ecc7c3d0bad87b4d47d2bf363e8a46900ee7fa data/minecraft/tags/block/needs_stone_tool.json

@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-27T00:05:28.0193923	Item Models: eternalores
+// 1.21.1	2025-02-27T12:16:16.9035896	Item Models: eternalores
 9e05334480af20ceab69aef0763cd4b91d3bbcf2 assets/eternalores/models/item/aluminum_dust.json
 4b7887baa0ed619598cb92d338659f9a6f47c089 assets/eternalores/models/item/aluminum_ingot.json
 65a0f5c74fe48204c9487943f882e7c21a3c1cc1 assets/eternalores/models/item/aluminum_nugget.json
@@ -143,6 +143,7 @@ d0021a843cec3a135abacbfdada4f2615d33b040 assets/eternalores/models/item/plate_ti
 6cfb9f5230c81f02daa9fda9e92c70a6a5e2ccf5 assets/eternalores/models/item/plate_titanium.json
 a1d8bef0433633d5cf58132594ffa8444b599b83 assets/eternalores/models/item/plate_ultimatitanium.json
 8914b12d1e598870bef82a4d5b2b1a857425d226 assets/eternalores/models/item/plate_uranium.json
+fb358f244112b365727ba614e1fa84ef22a72189 assets/eternalores/models/item/plate_wrought_iron.json
 82b31a38866d342a1faebeda849498b6919cf3a5 assets/eternalores/models/item/plate_zinc.json
 c7038e991353e86361b688c8a017b05c85cad620 assets/eternalores/models/item/platinum_dust.json
 51392dbb7e22dad4db04a4e7ebecc4314d4e5fac assets/eternalores/models/item/platinum_ingot.json
@@ -201,6 +202,7 @@ c635b1a2a634a749085cbac96ca73a92f14c7745 assets/eternalores/models/item/rod_stee
 b59181c10a287012fe103e332334be067b764a97 assets/eternalores/models/item/rod_titanium.json
 1d935f822a6c4b7adb3f35cbd1867fc5686c4687 assets/eternalores/models/item/rod_ultimatitanium.json
 ed53aa23aea3cf1a99c6be76a576fa7cb58a8e2e assets/eternalores/models/item/rod_uranium.json
+78cb437dec628799b08cbe669506bedbd4331328 assets/eternalores/models/item/rod_wrought_iron.json
 b24e89763c24772b03226df09fa5cbadef48ccca assets/eternalores/models/item/rod_zinc.json
 adc9e0d03137161b24c10c0c65f71bbfd80d8829 assets/eternalores/models/item/rose_gold_dust.json
 96cd015cb3a4199726751766da743db5b5088c10 assets/eternalores/models/item/rose_gold_ingot.json
@@ -236,6 +238,9 @@ b24fd90f403eb5745cbf889075b58d77c8abc23b assets/eternalores/models/item/uraninit
 36ed55fc8655d9a99edef96b344a95f526d0b855 assets/eternalores/models/item/uranium_dust.json
 68b4772bddd9d9bf7835f8c2ba04c5e2555a4b15 assets/eternalores/models/item/uranium_ingot.json
 0e8ad5e9de50d258f593830fe8dace8f8abce39e assets/eternalores/models/item/uranium_nugget.json
+2e6a1551543b8d03161f3855cb8bd516f0515732 assets/eternalores/models/item/wrought_iron_dust.json
+fa6bc94c0a6b1b3b5c11f5367f2dc26932fe0de8 assets/eternalores/models/item/wrought_iron_ingot.json
+74eed5a7fa554c670fcb223bc9e94dd10e834977 assets/eternalores/models/item/wrought_iron_nugget.json
 d52c987d67615dabee3e22361f2f416d096d8c0f assets/eternalores/models/item/zinc_dust.json
 c6caa19971a406fe7e7bc8301d19d4e369b41205 assets/eternalores/models/item/zinc_ingot.json
 c69dc5ae5a09756e14642c69e621bcbd46de7ca5 assets/eternalores/models/item/zinc_nugget.json

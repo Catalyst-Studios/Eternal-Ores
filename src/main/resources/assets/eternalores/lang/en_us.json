@@ -43,6 +43,7 @@
   "item.eternalores.cast_iron_ingot": "Cast Iron Ingot",
   "item.eternalores.uraninite_ingot": "Uraninite Ingot",
   "item.eternalores.cast_steel_ingot": "Cast Steel Ingot",
+  "item.eternalores.wrought_iron_ingot": "Wrought Iron Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -80,6 +81,7 @@
   "item.eternalores.cast_iron_nugget": "Cast Iron Nugget",
   "item.eternalores.uraninite_nugget": "Uraninite Nugget",
   "item.eternalores.cast_steel_nugget": "Cast Steel Nugget",
+  "item.eternalores.wrought_iron_nugget": "Wrought Iron Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -116,6 +118,7 @@
   "item.eternalores.rod_diamond": "Diamond Rod",
   "item.eternalores.rod_cast_iron": "Cast Iron Rod",
   "item.eternalores.rod_cast_steel": "Cast Steel Rod",
+  "item.eternalores.rod_wrought_iron": "Wrought Iron Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -152,6 +155,7 @@
   "item.eternalores.plate_diamond": "Diamond Plate",
   "item.eternalores.plate_cast_iron": "Cast Iron Plate",
   "item.eternalores.plate_cast_steel": "Cast Steel Plate",
+  "item.eternalores.plate_wrought_iron": "Wrought Iron Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -237,6 +241,7 @@
   "item.eternalores.cast_iron_dust": "Cast Iron Dust",
   "item.eternalores.uraninite_dust": "Uraninite Dust",
   "item.eternalores.cast_steel_dust": "Cast Steel Dust",
+  "item.eternalores.wrought_iron_dust": "Wrought Iron Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -361,6 +366,7 @@
   "block.eternalores.cast_iron_block": "Cast Iron Block",
   "block.eternalores.uraninite_block": "Uraninite Block",
   "block.eternalores.cast_steel_block": "Cast Steel Block",
+  "block.eternalores.wrought_iron_block": "Wrought Iron Block",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }

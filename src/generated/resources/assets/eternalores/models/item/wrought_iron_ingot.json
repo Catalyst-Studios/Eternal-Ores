@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eternalores:item/ingots/wrought_iron_ingot"
+  }
+}

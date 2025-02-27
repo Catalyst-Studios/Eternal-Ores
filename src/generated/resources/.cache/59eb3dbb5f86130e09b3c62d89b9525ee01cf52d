@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-27T00:05:28.0053896	Loot Tables
+// 1.21.1	2025-02-27T12:16:16.8845852	Loot Tables
 7c29615ef61bc39400d3ae8fac7e6ce7a52c3073 data/eternalores/loot_table/blocks/aluminum_block.json
 2d5bc4fb8e87061d36390888ab1e41cd21cb37c8 data/eternalores/loot_table/blocks/aluminum_ore_block.json
 351caea42c6ba11c95dedb2047634525696cb814 data/eternalores/loot_table/blocks/amber_block.json
@@ -102,5 +102,6 @@ f31846a744c292c830f5a79c48eaf76316ea1bdf data/eternalores/loot_table/blocks/tin_
 ab9b0ad2205bdaa8edfc88f8f9263f7d5244bb94 data/eternalores/loot_table/blocks/uraninite_ore_block.json
 1ad6118d45b6a1c4ed5e2757c570cda766a1a078 data/eternalores/loot_table/blocks/uranium_block.json
 30ec2617681b575db56edaf1e09bd4d161acf1f9 data/eternalores/loot_table/blocks/uranium_ore_block.json
+c283661485dfc12416fb9d72690eeac408231f28 data/eternalores/loot_table/blocks/wrought_iron_block.json
 a0fcb8f40090e27a297ad4cd2a1be6512f49896e data/eternalores/loot_table/blocks/zinc_block.json
 07dd66e20a43a56d57d50e994eb0d4e89eb75639 data/eternalores/loot_table/blocks/zinc_ore_block.json

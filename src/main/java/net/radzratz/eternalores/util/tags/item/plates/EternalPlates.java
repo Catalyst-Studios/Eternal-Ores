@@ -87,6 +87,8 @@ public class EternalPlates {
         public static final TagKey<Item> ULTIMATITANIUM_PLATE = createPlateTag("plates/ultimatitanium");
         //Uranium
         public static final TagKey<Item> URANIUM_PLATE = createPlateTag("plates/uranium");
+        //Wrought Iron
+        public static final TagKey<Item> WROUGHT_IRON_PLATE = createPlateTag("plates/wrought_iron");
         //Zinc
         public static final TagKey<Item> ZINC_PLATE = createPlateTag("plates/zinc");
 

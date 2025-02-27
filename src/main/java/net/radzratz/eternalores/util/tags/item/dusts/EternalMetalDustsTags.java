@@ -74,6 +74,8 @@ public class EternalMetalDustsTags {
         public static final TagKey<Item> DUST_URANINITE = createMetalDustTag("dusts/uraninite");
         //Uranium
         public static final TagKey<Item> DUST_URANIUM = createMetalDustTag("dusts/uranium");
+        //Wrought
+        public static final TagKey<Item> DUST_WROUGHT_IRON = createMetalDustTag("dusts/wrought_iron");
         //Zinc
         public static final TagKey<Item> DUST_ZINC = createMetalDustTag("dusts/zinc");
 

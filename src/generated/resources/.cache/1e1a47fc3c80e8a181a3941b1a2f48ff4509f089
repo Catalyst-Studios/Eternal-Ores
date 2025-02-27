@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-27T00:05:28.0003886	Block States: eternalores
+// 1.21.1	2025-02-27T12:16:16.8765835	Block States: eternalores
 b6b9c6647989b7f9e5a630a3b54ebeeb48d5e923 assets/eternalores/blockstates/aluminum_block.json
 53b119ec7b481084821223847767537173db8789 assets/eternalores/blockstates/aluminum_ore_block.json
 c0182d0bd8baae3e50001c8cb01182f701b062ab assets/eternalores/blockstates/amber_block.json
@@ -102,6 +102,7 @@ b71497ede34a334e979af307d8f4d901c36a6beb assets/eternalores/blockstates/sulfur_o
 2fd21e4eb18720719d60fb24f67d0da47ee36fdc assets/eternalores/blockstates/uraninite_ore_block.json
 9fe8f4a61e4c3263f56364edfb583054d16374af assets/eternalores/blockstates/uranium_block.json
 c3f9373edf30203b0387f3a10e9f9ebe4a0881fe assets/eternalores/blockstates/uranium_ore_block.json
+d0157ebabd4c1adeef674b83bd2855e49d0eb478 assets/eternalores/blockstates/wrought_iron_block.json
 a1ef26520a0828172e7cdd1e91526242ab5ac241 assets/eternalores/blockstates/zinc_block.json
 8cb522e79c3e0e521fb721aa1024051c30350dd0 assets/eternalores/blockstates/zinc_ore_block.json
 c7bfe1d217e56cc17f90aa84571f6f136d98e629 assets/eternalores/models/block/aluminum_block.json
@@ -207,6 +208,7 @@ c011cafd173a1690fa19c8cd750c340290be072b assets/eternalores/models/block/ultimat
 ecae12422d9344c730025efae2f2ec976ac0c382 assets/eternalores/models/block/uraninite_ore_block.json
 cd35d5578dba6c3e06859e99506c6a082db19bc4 assets/eternalores/models/block/uranium_block.json
 1cdc0a6da87cebe88ddde43548bfd106b67c96a1 assets/eternalores/models/block/uranium_ore_block.json
+f9cb125d62380a7d305ede5792a1265ca9fb75e0 assets/eternalores/models/block/wrought_iron_block.json
 f1e7d8faec3e77abc5c0330166ad7e5900883c3b assets/eternalores/models/block/zinc_block.json
 2f62294412eb1fedfe9976f9cfe815ad6228764f assets/eternalores/models/block/zinc_ore_block.json
 87963d654a696d8601cc399ab56b645ce5b3edb8 assets/eternalores/models/item/aluminum_block.json
@@ -312,5 +314,6 @@ e14cdf32a0529bcf0d60b19c1ee87a6bdf3ea7fc assets/eternalores/models/item/ultimati
 edb30a0ea4e9d7a03a97933ddd1a5a5162169449 assets/eternalores/models/item/uraninite_ore_block.json
 d7127d00e4b14877b5634fc7d0e394310cc1f6c4 assets/eternalores/models/item/uranium_block.json
 fe0de7a977078511f1f7944099e4e2fe1681404a assets/eternalores/models/item/uranium_ore_block.json
+e324151c9b0c2d025fd139169f7ef574ea965f27 assets/eternalores/models/item/wrought_iron_block.json
 8b5364a16ebd12b5c40c4dd77a2cc80b56fef376 assets/eternalores/models/item/zinc_block.json
 0e88317eb1a0e7fe72eecf6d72368acd95bc20c3 assets/eternalores/models/item/zinc_ore_block.json

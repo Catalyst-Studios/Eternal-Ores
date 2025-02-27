@@ -68,6 +68,8 @@ public class EternalMetalRodsTags {
         public static final TagKey<Item> ROD_ULTIMATITANIUM = createMetalRodTag("rods/ultimatitanium");
         //Uranium
         public static final TagKey<Item> ROD_URANIUM = createMetalRodTag("rods/uranium");
+        //Wrought Iron
+        public static final TagKey<Item> ROD_WROUGHT_IRON = createMetalRodTag("rods/wrought_iron");
         //Zinc
         public static final TagKey<Item> ROD_ZINC = createMetalRodTag("rods/zinc");
 

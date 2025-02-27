@@ -96,6 +96,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.PLATE_TITANIUM.get())
                         .add(EternalGeneralItems.PLATE_ULTIMATITANIUM.get())
                         .add(EternalGeneralItems.PLATE_URANIUM.get())
+                        .add(EternalGeneralItems.PLATE_WROUGHT_IRON.get())
                         .add(EternalGeneralItems.PLATE_ZINC.get());
 
                 //Metal Plates
@@ -130,6 +131,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.PLATE_TITANIUM.get())
                         .add(EternalGeneralItems.PLATE_ULTIMATITANIUM.get())
                         .add(EternalGeneralItems.PLATE_URANIUM.get())
+                        .add(EternalGeneralItems.PLATE_WROUGHT_IRON.get())
                         .add(EternalGeneralItems.PLATE_ZINC.get());
 
                 //Gem Plates
@@ -174,6 +176,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalPlates.Items.TITANIUM_PLATE).add(EternalGeneralItems.PLATE_TITANIUM.get());
                 tag(EternalPlates.Items.ULTIMATITANIUM_PLATE).add(EternalGeneralItems.PLATE_ULTIMATITANIUM.get());
                 tag(EternalPlates.Items.URANIUM_PLATE).add(EternalGeneralItems.PLATE_URANIUM.get());
+                tag(EternalPlates.Items.WROUGHT_IRON_PLATE).add(EternalGeneralItems.PLATE_WROUGHT_IRON.get());
                 tag(EternalPlates.Items.ZINC_PLATE).add(EternalGeneralItems.PLATE_ZINC.get());
 
                 //Misc
@@ -215,6 +218,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ULTIMATITANIUM_INGOT.get())
                         .add(EternalGeneralItems.URANINITE_INGOT.get())
                         .add(EternalGeneralItems.URANIUM_INGOT.get())
+                        .add(EternalGeneralItems.WROUGHT_IRON_INGOT.get())
                         .add(EternalGeneralItems.ZINC_INGOT.get());
 
                 //Individual Ingots
@@ -253,6 +257,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalIngotTags.Items.ULTIMATITANIUM_INGOT).add(EternalGeneralItems.ULTIMATITANIUM_INGOT.get());
                 tag(EternalIngotTags.Items.URANINITE_INGOT).add(EternalGeneralItems.URANINITE_INGOT.get());
                 tag(EternalIngotTags.Items.URANIUM_INGOT).add(EternalGeneralItems.URANIUM_INGOT.get());
+                tag(EternalIngotTags.Items.WROUGHT_IRON_INGOT).add(EternalGeneralItems.WROUGHT_IRON_INGOT.get());
                 tag(EternalIngotTags.Items.ZINC_INGOT).add(EternalGeneralItems.ZINC_INGOT.get());
 
                 tag(Tags.Items.ORES)
@@ -395,6 +400,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralBlocks.TITANIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.URANINITE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.URANIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.WROUGHT_IRON_BLOCK.asItem())
                         .add(EternalGeneralBlocks.ZINC_BLOCK.asItem())
 
                         .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem())
@@ -441,6 +447,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
             tag(EternalStorageMetalBlockItemTags.Blocks.TITANIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.TITANIUM_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Blocks.URANINITE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.URANINITE_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Blocks.URANIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.URANIUM_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Blocks.WROUGHT_IRON_BLOCK_ST_ITEM).add(EternalGeneralBlocks.WROUGHT_IRON_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Blocks.ZINC_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ZINC_BLOCK.asItem());
 
             tag(EternalStorageGemBlockItemTags.Items.AMBER_BLOCK_ST_ITEM).add(EternalGeneralBlocks.AMBER_BLOCK.asItem());
@@ -502,6 +509,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ULTIMATITANIUM_NUGGET.get())
                         .add(EternalGeneralItems.URANINITE_NUGGET.get())
                         .add(EternalGeneralItems.URANIUM_NUGGET.get())
+                        .add(EternalGeneralItems.WROUGHT_IRON_NUGGET.get())
                         .add(EternalGeneralItems.ZINC_NUGGET.get());
 
                 //Individual Nuggets
@@ -537,6 +545,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalNuggetsTags.Items.NUGGET_ULTIMATITANIUM).add(EternalGeneralItems.ULTIMATITANIUM_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_URANINITE).add(EternalGeneralItems.URANINITE_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_URANIUM).add(EternalGeneralItems.URANIUM_NUGGET.get());
+                tag(EternalNuggetsTags.Items.NUGGET_WROUGHT_IRON).add(EternalGeneralItems.WROUGHT_IRON_NUGGET.get());
                 tag(EternalNuggetsTags.Items.NUGGET_ZINC).add(EternalGeneralItems.ZINC_NUGGET.get());
 
                 //General Rods
@@ -574,6 +583,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ROD_TITANIUM.get())
                         .add(EternalGeneralItems.ROD_ULTIMATITANIUM.get())
                         .add(EternalGeneralItems.ROD_URANIUM.get())
+                        .add(EternalGeneralItems.ROD_WROUGHT_IRON.get())
                         .add(EternalGeneralItems.ROD_ZINC.get());
 
                 //Metal Rods
@@ -608,6 +618,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ROD_TITANIUM.get())
                         .add(EternalGeneralItems.ROD_ULTIMATITANIUM.get())
                         .add(EternalGeneralItems.ROD_URANIUM.get())
+                        .add(EternalGeneralItems.ROD_WROUGHT_IRON.get())
                         .add(EternalGeneralItems.ROD_ZINC.get());
 
                 //Gem Rods
@@ -645,6 +656,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalMetalRodsTags.Items.ROD_TITANIUM).add(EternalGeneralItems.ROD_TITANIUM.get());
                 tag(EternalMetalRodsTags.Items.ROD_ULTIMATITANIUM).add(EternalGeneralItems.ROD_ULTIMATITANIUM.get());
                 tag(EternalMetalRodsTags.Items.ROD_URANIUM).add(EternalGeneralItems.ROD_URANIUM.get());
+                tag(EternalMetalRodsTags.Items.ROD_WROUGHT_IRON).add(EternalGeneralItems.ROD_WROUGHT_IRON.get());
                 tag(EternalMetalRodsTags.Items.ROD_ZINC).add(EternalGeneralItems.ROD_ZINC.get());
 
                 tag(EternalGemRodsTags.Items.ROD_DIAMOND).add(EternalGeneralItems.ROD_DIAMOND.get());
@@ -753,6 +765,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ULTIMATITANIUM_DUST.get())
                         .add(EternalGeneralItems.URANINITE_DUST.get())
                         .add(EternalGeneralItems.URANIUM_DUST.get())
+                        .add(EternalGeneralItems.WROUGHT_IRON_DUST.get())
                         .add(EternalGeneralItems.ZINC_DUST.get());
 
                 //Metal Dusts
@@ -792,6 +805,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ULTIMATITANIUM_DUST.get())
                         .add(EternalGeneralItems.URANINITE_DUST.get())
                         .add(EternalGeneralItems.URANIUM_DUST.get())
+                        .add(EternalGeneralItems.WROUGHT_IRON_DUST.get())
                         .add(EternalGeneralItems.ZINC_DUST.get());
 
                 //Gem Dusts
@@ -852,6 +866,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalMetalDustsTags.Items.DUST_ULTIMATITANIUM).add(EternalGeneralItems.ULTIMATITANIUM_DUST.get());
                 tag(EternalMetalDustsTags.Items.DUST_URANINITE).add(EternalGeneralItems.URANINITE_DUST.get());
                 tag(EternalMetalDustsTags.Items.DUST_URANIUM).add(EternalGeneralItems.URANIUM_DUST.get());
+                tag(EternalMetalDustsTags.Items.DUST_WROUGHT_IRON).add(EternalGeneralItems.WROUGHT_IRON_DUST.get());
                 tag(EternalMetalDustsTags.Items.DUST_ZINC).add(EternalGeneralItems.ZINC_DUST.get());
 
                 tag(EternalGemDustsTags.Items.DUST_AMBER).add(EternalGeneralItems.AMBER_DUST.get());

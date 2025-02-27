@@ -77,6 +77,8 @@ public class EternalIngotTags {
         public static final TagKey<Item> URANINITE_INGOT = createIngotTags("ingots/uraninite");
         //Uranium
         public static final TagKey<Item> URANIUM_INGOT = createIngotTags("ingots/uranium");
+        //Wrought Iron
+        public static final TagKey<Item> WROUGHT_IRON_INGOT = createIngotTags("ingots/wrought_iron");
         //Zinc
         public static final TagKey<Item> ZINC_INGOT = createIngotTags("ingots/zinc");
 
