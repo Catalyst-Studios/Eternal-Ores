@@ -73,6 +73,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> ZINC_INGOT = registerIngotItem("zinc_ingot");
     public static final DeferredItem<Item> CAST_IRON_INGOT = registerIngotItem("cast_iron_ingot");
     public static final DeferredItem<Item> URANINITE_INGOT = registerIngotItem("uraninite_ingot");
+    public static final DeferredItem<Item> CAST_STEEL_INGOT = registerIngotItem("cast_steel_ingot");
 
     //Nuggets
     private static DeferredItem<Item> registerNuggetItem(String name) {
@@ -111,6 +112,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> ZINC_NUGGET = registerNuggetItem("zinc_nugget");
     public static final DeferredItem<Item> CAST_IRON_NUGGET = registerNuggetItem("cast_iron_nugget");
     public static final DeferredItem<Item> URANINITE_NUGGET = registerNuggetItem("uraninite_nugget");
+    public static final DeferredItem<Item> CAST_STEEL_NUGGET = registerNuggetItem("cast_steel_nugget");
 
     //Rods
     private static DeferredItem<Item> registerRodItem(String name) {
@@ -150,6 +152,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> ROD_URANIUM = registerRodItem("rod_uranium");
     public static final DeferredItem<Item> ROD_ZINC = registerRodItem("rod_zinc");
     public static final DeferredItem<Item> ROD_CAST_IRON = registerRodItem("rod_cast_iron");
+    public static final DeferredItem<Item> ROD_CAST_STEEL = registerRodItem("rod_cast_steel");
 
     //Plates
     private static DeferredItem<Item> registerPlateItem(String name) {
@@ -189,6 +192,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> PLATE_URANIUM = registerPlateItem("plate_uranium");
     public static final DeferredItem<Item> PLATE_ZINC = registerPlateItem("plate_zinc");
     public static final DeferredItem<Item> PLATE_CAST_IRON = registerPlateItem("plate_cast_iron");
+    public static final DeferredItem<Item> PLATE_CAST_STEEL = registerPlateItem("plate_cast_steel");
 
     //Gears
     private static DeferredItem<Item> registerGearItem(String name) {
@@ -286,6 +290,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> ZINC_DUST = registerDustItem("zinc_dust");
     public static final DeferredItem<Item> CAST_IRON_DUST = registerDustItem("cast_iron_dust");
     public static final DeferredItem<Item> URANINITE_DUST = registerDustItem("uraninite_dust");
+    public static final DeferredItem<Item> CAST_STEEL_DUST = registerDustItem("cast_steel_dust");
 
     //Gems
     private static DeferredItem<Item> registerGemItem(String name) {

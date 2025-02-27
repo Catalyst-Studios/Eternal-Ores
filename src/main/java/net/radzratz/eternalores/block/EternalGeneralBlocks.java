@@ -160,6 +160,7 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> IRIDIUM_BLOCK = registerMetalBlock("iridium_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> CAST_IRON_BLOCK = registerMetalBlock("cast_iron_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> URANINITE_BLOCK = registerMetalBlock("uraninite_block", 3f, SoundType.METAL);
+    public static final DeferredBlock<Block> CAST_STEEL_BLOCK = registerMetalBlock("cast_steel_block", 3f, SoundType.METAL);
 
     //Gem Blocks
     private static DeferredBlock<Block> registerGemBlock(String name, float hardness, SoundType sound) {

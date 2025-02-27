@@ -103,6 +103,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK);
                     output.accept(EternalGeneralBlocks.BRONZE_BLOCK);
                     output.accept(EternalGeneralBlocks.CAST_IRON_BLOCK);
+                    output.accept(EternalGeneralBlocks.CAST_STEEL_BLOCK);
                     output.accept(EternalGeneralBlocks.CINNABAR_BLOCK);
                     output.accept(EternalGeneralBlocks.COBALT_BLOCK);
                     output.accept(EternalGeneralBlocks.CONSTANTAN_BLOCK);
@@ -159,6 +160,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.BRITANNIA_SILVER_INGOT);
                     output.accept(EternalGeneralItems.BRONZE_INGOT);
                     output.accept(EternalGeneralItems.CAST_IRON_INGOT);
+                    output.accept(EternalGeneralItems.CAST_STEEL_INGOT);
                     output.accept(EternalGeneralItems.COBALT_INGOT);
                     output.accept(EternalGeneralItems.CONSTANTAN_INGOT);
                     output.accept(EternalGeneralItems.ELECTRUM_INGOT);
@@ -194,6 +196,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.BRITANNIA_SILVER_NUGGET);
                     output.accept(EternalGeneralItems.BRONZE_NUGGET);
                     output.accept(EternalGeneralItems.CAST_IRON_NUGGET);
+                    output.accept(EternalGeneralItems.CAST_STEEL_NUGGET);
                     output.accept(EternalGeneralItems.COBALT_NUGGET);
                     output.accept(EternalGeneralItems.CONSTANTAN_NUGGET);
                     output.accept(EternalGeneralItems.COPPER_NUGGET);
@@ -242,6 +245,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.BRASS_DUST);
                     output.accept(EternalGeneralItems.BRITANNIA_SILVER_DUST);
                     output.accept(EternalGeneralItems.CAST_IRON_DUST);
+                    output.accept(EternalGeneralItems.CAST_STEEL_DUST);
                     output.accept(EternalGeneralItems.BRONZE_DUST);
                     output.accept(EternalGeneralItems.COAL_DUST);
                     output.accept(EternalGeneralItems.COBALT_DUST);
@@ -294,6 +298,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.PLATE_BRASS);
                     output.accept(EternalGeneralItems.PLATE_BRONZE);
                     output.accept(EternalGeneralItems.PLATE_CAST_IRON);
+                    output.accept(EternalGeneralItems.PLATE_CAST_STEEL);
                     output.accept(EternalGeneralItems.PLATE_COBALT);
                     output.accept(EternalGeneralItems.PLATE_CONSTANTAN);
                     output.accept(EternalGeneralItems.PLATE_COPPER);
@@ -329,6 +334,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.ROD_BRASS);
                     output.accept(EternalGeneralItems.ROD_BRONZE);
                     output.accept(EternalGeneralItems.ROD_CAST_IRON);
+                    output.accept(EternalGeneralItems.ROD_CAST_STEEL);
                     output.accept(EternalGeneralItems.ROD_COBALT);
                     output.accept(EternalGeneralItems.ROD_CONSTANTAN);
                     output.accept(EternalGeneralItems.ROD_COPPER);

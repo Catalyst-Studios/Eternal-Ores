@@ -22,6 +22,8 @@ public class EternalStorageMetalBlockItemTags {
         public static final TagKey<Item> BRONZE_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/bronze");
         //Cast Iron
         public static final TagKey<Item> CAST_IRON_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/cast_iron");
+        //Cast Steel
+        public static final TagKey<Item> CAST_STEEL_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/cast_steel");
         //Cobalt
         public static final TagKey<Item> COBALT_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/cobalt");
         //Constantan

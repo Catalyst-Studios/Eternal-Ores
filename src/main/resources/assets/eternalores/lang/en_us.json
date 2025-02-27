@@ -42,6 +42,7 @@
   "item.eternalores.iridium_ingot": "Iridium Ingot",
   "item.eternalores.cast_iron_ingot": "Cast Iron Ingot",
   "item.eternalores.uraninite_ingot": "Uraninite Ingot",
+  "item.eternalores.cast_steel_ingot": "Cast Steel Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -78,6 +79,7 @@
   "item.eternalores.iridium_nugget": "Iridium Nugget",
   "item.eternalores.cast_iron_nugget": "Cast Iron Nugget",
   "item.eternalores.uraninite_nugget": "Uraninite Nugget",
+  "item.eternalores.cast_steel_nugget": "Cast Steel Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -113,6 +115,7 @@
   "item.eternalores.rod_iridium": "Iridium Rod",
   "item.eternalores.rod_diamond": "Diamond Rod",
   "item.eternalores.rod_cast_iron": "Cast Iron Rod",
+  "item.eternalores.rod_cast_steel": "Cast Steel Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -148,6 +151,7 @@
   "item.eternalores.plate_iridium": "Iridium Plate",
   "item.eternalores.plate_diamond": "Diamond Plate",
   "item.eternalores.plate_cast_iron": "Cast Iron Plate",
+  "item.eternalores.plate_cast_steel": "Cast Steel Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -232,6 +236,7 @@
   "item.eternalores.iridium_dust": "Iridium Dust",
   "item.eternalores.cast_iron_dust": "Cast Iron Dust",
   "item.eternalores.uraninite_dust": "Uraninite Dust",
+  "item.eternalores.cast_steel_dust": "Cast Steel Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -355,6 +360,7 @@
   "block.eternalores.iridium_block": "Iridium Block",
   "block.eternalores.cast_iron_block": "Cast Iron Block",
   "block.eternalores.uraninite_block": "Uraninite Block",
+  "block.eternalores.cast_steel_block": "Cast Steel Block",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }

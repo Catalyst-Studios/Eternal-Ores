@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-26T18:25:53.4154329	Loot Tables
+// 1.21.1	2025-02-27T00:05:28.0053896	Loot Tables
 7c29615ef61bc39400d3ae8fac7e6ce7a52c3073 data/eternalores/loot_table/blocks/aluminum_block.json
 2d5bc4fb8e87061d36390888ab1e41cd21cb37c8 data/eternalores/loot_table/blocks/aluminum_ore_block.json
 351caea42c6ba11c95dedb2047634525696cb814 data/eternalores/loot_table/blocks/amber_block.json
@@ -10,6 +10,7 @@ aab2635f51e358c9a052fadff1e6cdf6f12d9272 data/eternalores/loot_table/blocks/bras
 8c28315cb634139fd46584d527922038efcf983a data/eternalores/loot_table/blocks/britannia_silver_block.json
 6cd66acad66276528ed3e849d4eebade3585a3d8 data/eternalores/loot_table/blocks/bronze_block.json
 3cd22f1440a7dbdb2728d8b5008fcaedc1665fb7 data/eternalores/loot_table/blocks/cast_iron_block.json
+56b3106f0131e1c9529017ea6be29e48c2fb00f3 data/eternalores/loot_table/blocks/cast_steel_block.json
 d9747c8bd5da7596edbdde18cbc571fe45c45c3a data/eternalores/loot_table/blocks/cinnabar_block.json
 c34c113c976fa47fa935289b70b854b0fb7bb961 data/eternalores/loot_table/blocks/cinnabar_ore_block.json
 ec3981cc86f2b8c7aa1211228ca6607067559223 data/eternalores/loot_table/blocks/cobalt_block.json

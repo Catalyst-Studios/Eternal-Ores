@@ -20,6 +20,8 @@ public class EternalMetalDustsTags {
         public static final TagKey<Item> DUST_BRONZE = createMetalDustTag("dusts/bronze");
         //Cast Iron
         public static final TagKey<Item> DUST_CAST_IRON = createMetalDustTag("dusts/cast_iron");
+        //Cast Steel
+        public static final TagKey<Item> DUST_CAST_STEEL = createMetalDustTag("dusts/cast_steel");
         //Cobalt
         public static final TagKey<Item> DUST_COBALT = createMetalDustTag("dusts/cobalt");
         //Constantan

@@ -1,11 +1,9 @@
 package net.radzratz.eternalores.util.tags.item.ores;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 
 public class EternalOreBlockItemTags {
     public static class Items {

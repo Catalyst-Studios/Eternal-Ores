@@ -24,7 +24,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
             "britannia", "bronze", "constantan", "electrum", "coal", "ender", "endstone", "netherrack",
             "invar", "lapis", "cinnabar", "lumium", "niter", "obsidian", "peridot", "pewter", "plutonium",
             "quartz", "rose_gold", "ruby", "sapphire", "signalum", "steel", "titanium", "enderium",
-            "cast_iron"
+            "cast_iron", "cast_steel"
     );
 
     public EternalRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -34,6 +34,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput)
     {
+        ///
         ///Materials to Dusts
         //Vanilla Ingots
         generateHammerRecipes(recipeOutput, "iron_ingot", Items.IRON_INGOT, EternalGeneralItems.IRON_DUST.get());
@@ -56,6 +57,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateHammerRecipes(recipeOutput, "britannia_ingot", EternalGeneralItems.BRITANNIA_SILVER_INGOT.get(), EternalGeneralItems.BRITANNIA_SILVER_DUST.get());
         generateHammerRecipes(recipeOutput, "bronze_ingot", EternalGeneralItems.BRONZE_INGOT.get(), EternalGeneralItems.BRONZE_DUST.get());
         generateHammerRecipes(recipeOutput, "cast_iron_ingot", EternalGeneralItems.CAST_IRON_INGOT.get(), EternalGeneralItems.CAST_IRON_DUST.get());
+        generateHammerRecipes(recipeOutput, "cast_steel_ingot", EternalGeneralItems.CAST_STEEL_INGOT.get(), EternalGeneralItems.CAST_STEEL_DUST.get());
         generateHammerRecipes(recipeOutput, "cobalt_ingot", EternalGeneralItems.COBALT_INGOT.get(), EternalGeneralItems.COBALT_DUST.get());
         generateHammerRecipes(recipeOutput, "constantan_ingot", EternalGeneralItems.CONSTANTAN_INGOT.get(), EternalGeneralItems.CONSTANTAN_DUST.get());
         generateHammerRecipes(recipeOutput, "electrum_ingot", EternalGeneralItems.ELECTRUM_INGOT.get(), EternalGeneralItems.ELECTRUM_DUST.get());
@@ -101,6 +103,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateHammerRecipes(recipeOutput, "sapphire_gem", EternalGeneralItems.GEM_SAPPHIRE.get(), EternalGeneralItems.SAPPHIRE_DUST.get());
         generateHammerRecipes(recipeOutput, "sulfur_gem", EternalGeneralItems.SULFUR.get(), EternalGeneralItems.SULFUR_DUST.get());
 
+        ///
         ///Materials to Plates
         generateIngotPlateRecipe(recipeOutput, "iron", EternalGeneralItems.PLATE_IRON.get());
         generateIngotPlateRecipe(recipeOutput, "gold", EternalGeneralItems.PLATE_GOLD.get());
@@ -115,6 +118,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotPlateRecipe(recipeOutput, "brass", EternalGeneralItems.PLATE_BRASS.get());
         generateIngotPlateRecipe(recipeOutput, "bronze", EternalGeneralItems.PLATE_BRONZE.get());
         generateIngotPlateRecipe(recipeOutput, "cast_iron", EternalGeneralItems.PLATE_CAST_IRON.get());
+        generateIngotPlateRecipe(recipeOutput, "cast_steel", EternalGeneralItems.PLATE_CAST_STEEL.get());
         generateIngotPlateRecipe(recipeOutput, "cobalt", EternalGeneralItems.PLATE_COBALT.get());
         generateIngotPlateRecipe(recipeOutput, "constantan", EternalGeneralItems.PLATE_CONSTANTAN.get());
         generateIngotPlateRecipe(recipeOutput, "electrum", EternalGeneralItems.PLATE_ELECTRUM.get());
@@ -142,6 +146,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
 
         generateGemPlateRecipe(recipeOutput, "sapphire", EternalGeneralItems.PLATE_SAPPHIRE.get());
 
+        ///
         ///Materials to Rods
         generateIngotRodsRecipe(recipeOutput, "iron", EternalGeneralItems.ROD_IRON.get());
         generateIngotRodsRecipe(recipeOutput, "gold", EternalGeneralItems.ROD_GOLD.get());
@@ -156,6 +161,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotRodsRecipe(recipeOutput, "brass", EternalGeneralItems.ROD_BRASS.get());
         generateIngotRodsRecipe(recipeOutput, "bronze", EternalGeneralItems.ROD_BRONZE.get());
         generateIngotRodsRecipe(recipeOutput, "cast_iron", EternalGeneralItems.ROD_CAST_IRON.get());
+        generateIngotRodsRecipe(recipeOutput, "cast_steel", EternalGeneralItems.ROD_CAST_STEEL.get());
         generateIngotRodsRecipe(recipeOutput, "cobalt", EternalGeneralItems.ROD_COBALT.get());
         generateIngotRodsRecipe(recipeOutput, "constantan", EternalGeneralItems.ROD_CONSTANTAN.get());
         generateIngotRodsRecipe(recipeOutput, "electrum", EternalGeneralItems.ROD_ELECTRUM.get());
@@ -183,6 +189,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
 
         generateGemRodsRecipe(recipeOutput, "sapphire", EternalGeneralItems.ROD_SAPPHIRE.get());
 
+        ///
         ///Blocks to Materials
         //Block to Ingot/Gem
         generateBlockToIngotMaterialRecipe(recipeOutput, "aluminum", EternalGeneralBlocks.ALUMINUM_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
@@ -191,6 +198,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToIngotMaterialRecipe(recipeOutput, "britannia", EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "bronze", EternalGeneralBlocks.BRONZE_BLOCK.asItem(), EternalGeneralItems.BRONZE_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "cast_iron", EternalGeneralBlocks.CAST_IRON_BLOCK.asItem(), EternalGeneralItems.CAST_IRON_INGOT.get());
+        generateBlockToIngotMaterialRecipe(recipeOutput, "cast_steel", EternalGeneralBlocks.CAST_STEEL_BLOCK.asItem(), EternalGeneralItems.CAST_STEEL_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "cobalt", EternalGeneralBlocks.COBALT_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "constantan", EternalGeneralBlocks.CONSTANTAN_BLOCK.asItem(), EternalGeneralItems.CONSTANTAN_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "electrum", EternalGeneralBlocks.ELECTRUM_BLOCK.asItem(), EternalGeneralItems.ELECTRUM_INGOT.get());
@@ -247,6 +255,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToRawMaterialRecipe(recipeOutput, "uranium", EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem(), EternalGeneralItems.RAW_URANIUM.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "zinc", EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem(), EternalGeneralItems.RAW_ZINC.get());
 
+        ///
         ///Materials to Block
         //Raw Ore to Block
         generateRawMaterialToBlockRecipe(recipeOutput, "aluminum", EternalGeneralItems.RAW_ALUMINUM.get(), EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem());
@@ -274,6 +283,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToBlockRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_INGOT.get(), EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_INGOT.get(), EternalGeneralBlocks.BRONZE_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_INGOT.get(), EternalGeneralBlocks.CAST_IRON_BLOCK.asItem());
+        generateIngotToBlockRecipe(recipeOutput, "cast_steel", EternalGeneralItems.CAST_STEEL_INGOT.get(), EternalGeneralBlocks.CAST_STEEL_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_INGOT.get(), EternalGeneralBlocks.COBALT_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_INGOT.get(), EternalGeneralBlocks.CONSTANTAN_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_INGOT.get(), EternalGeneralBlocks.ELECTRUM_BLOCK.asItem());
@@ -310,6 +320,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateGemToBlockRecipe(recipeOutput, "ruby", EternalGeneralItems.GEM_RUBY.get(), EternalGeneralBlocks.RUBY_BLOCK.asItem());
         generateGemToBlockRecipe(recipeOutput, "sapphire", EternalGeneralItems.GEM_SAPPHIRE.get(), EternalGeneralBlocks.SAPPHIRE_BLOCK.asItem());
 
+        ///
         ///Materials to Nuggets
         //Vanilla Mats
         generateIngotToNuggetRecipe(recipeOutput, "copper", Items.COPPER_INGOT, EternalGeneralItems.COPPER_NUGGET.get());
@@ -322,6 +333,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToNuggetRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_INGOT.get(), EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_INGOT.get(), EternalGeneralItems.BRONZE_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_INGOT.get(), EternalGeneralItems.CAST_IRON_NUGGET.get());
+        generateIngotToNuggetRecipe(recipeOutput, "cast_steel", EternalGeneralItems.CAST_STEEL_INGOT.get(), EternalGeneralItems.CAST_STEEL_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_INGOT.get(), EternalGeneralItems.COBALT_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_INGOT.get(), EternalGeneralItems.CONSTANTAN_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_INGOT.get(), EternalGeneralItems.ELECTRUM_NUGGET.get());
@@ -349,6 +361,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToNuggetRecipe(recipeOutput, "uranium", EternalGeneralItems.URANIUM_INGOT.get(), EternalGeneralItems.URANIUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "zinc", EternalGeneralItems.ZINC_INGOT.get(), EternalGeneralItems.ZINC_NUGGET.get());
 
+        ///
         ///Materials to Ingots
         //Vanilla Mats
         generateNuggetToIngotRecipe(recipeOutput, "copper", EternalGeneralItems.COPPER_NUGGET.get(), Items.COPPER_INGOT);
@@ -361,6 +374,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateNuggetToIngotRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_NUGGET.get(), EternalGeneralItems.BRONZE_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_NUGGET.get(), EternalGeneralItems.CAST_IRON_INGOT.get());
+        generateNuggetToIngotRecipe(recipeOutput, "cast_steel", EternalGeneralItems.CAST_STEEL_NUGGET.get(), EternalGeneralItems.CAST_STEEL_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_NUGGET.get(), EternalGeneralItems.COBALT_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_NUGGET.get(), EternalGeneralItems.CONSTANTAN_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_NUGGET.get(), EternalGeneralItems.ELECTRUM_INGOT.get());
@@ -388,6 +402,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateNuggetToIngotRecipe(recipeOutput, "uranium", EternalGeneralItems.URANIUM_NUGGET.get(), EternalGeneralItems.URANIUM_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "zinc", EternalGeneralItems.ZINC_NUGGET.get(), EternalGeneralItems.ZINC_INGOT.get());
 
+        ///
         ///Plates/Rods to Dust
         //Vanilla Mats
         generateRodPlateToDustRecipe(recipeOutput, "iron", EternalGeneralItems.PLATE_IRON.get(), EternalGeneralItems.ROD_IRON.get(), EternalGeneralItems.IRON_DUST.get());
@@ -403,6 +418,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRodPlateToDustRecipe(recipeOutput, "brass", EternalGeneralItems.PLATE_BRASS.get(), EternalGeneralItems.ROD_BRASS.get(), EternalGeneralItems.BRASS_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "bronze", EternalGeneralItems.PLATE_BRONZE.get(), EternalGeneralItems.ROD_BRONZE.get(), EternalGeneralItems.BRONZE_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "cast_iron", EternalGeneralItems.PLATE_CAST_IRON.get(), EternalGeneralItems.ROD_CAST_IRON.get(), EternalGeneralItems.CAST_IRON_DUST.get());
+        generateRodPlateToDustRecipe(recipeOutput, "cast_steel", EternalGeneralItems.PLATE_CAST_STEEL.get(), EternalGeneralItems.ROD_CAST_STEEL.get(), EternalGeneralItems.CAST_STEEL_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "cobalt", EternalGeneralItems.PLATE_COBALT.get(), EternalGeneralItems.ROD_COBALT.get(), EternalGeneralItems.COBALT_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "constantan", EternalGeneralItems.PLATE_CONSTANTAN.get(), EternalGeneralItems.ROD_CONSTANTAN.get(), EternalGeneralItems.CONSTANTAN_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "electrum", EternalGeneralItems.PLATE_ELECTRUM.get(), EternalGeneralItems.ROD_ELECTRUM.get(), EternalGeneralItems.ELECTRUM_DUST.get());
@@ -430,6 +446,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
 
         generateRodPlateToDustRecipe(recipeOutput, "sapphire", EternalGeneralItems.PLATE_SAPPHIRE.get(), EternalGeneralItems.ROD_SAPPHIRE.get(), EternalGeneralItems.SAPPHIRE_DUST.get());
 
+        ///
         ///Raw Material to Ingot Furnace/Blasting
         generateRawOreToIngotFurnace(recipeOutput, "aluminum", EternalGeneralItems.RAW_ALUMINUM.get(), EternalGeneralItems.ALUMINUM_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "cobalt", EternalGeneralItems.RAW_COBALT.get(), EternalGeneralItems.COBALT_INGOT.get());
@@ -464,6 +481,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRawOreToIngotBlasting(recipeOutput, "uranium", EternalGeneralItems.RAW_URANIUM.get(), EternalGeneralItems.URANIUM_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "zinc", EternalGeneralItems.RAW_ZINC.get(), EternalGeneralItems.ZINC_INGOT.get());
 
+        ///
         ///Dust to Material Furnace/Blasting
         //Vanilla Materials
         generateDustToMaterialFurnace(recipeOutput, "copper", EternalGeneralItems.COPPER_DUST.get(), Items.COPPER_INGOT);
@@ -482,6 +500,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialFurnace(recipeOutput, "britannia_silver", EternalGeneralItems.BRITANNIA_SILVER_DUST.get(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "bronze", EternalGeneralItems.BRONZE_DUST.get(), EternalGeneralItems.BRONZE_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_DUST.get(), EternalGeneralItems.CAST_IRON_INGOT.get());
+        generateDustToMaterialFurnace(recipeOutput, "cast_steel", EternalGeneralItems.CAST_STEEL_DUST.get(), EternalGeneralItems.CAST_STEEL_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "cobalt", EternalGeneralItems.COBALT_DUST.get(), EternalGeneralItems.COBALT_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_DUST.get(), EternalGeneralItems.CONSTANTAN_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_DUST.get(), EternalGeneralItems.ELECTRUM_INGOT.get());
@@ -534,6 +553,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialBlasting(recipeOutput, "britannia_silver", EternalGeneralItems.BRITANNIA_SILVER_DUST.get(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "bronze", EternalGeneralItems.BRONZE_DUST.get(), EternalGeneralItems.BRONZE_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_DUST.get(), EternalGeneralItems.CAST_IRON_INGOT.get());
+        generateDustToMaterialBlasting(recipeOutput, "cast_steel", EternalGeneralItems.CAST_STEEL_DUST.get(), EternalGeneralItems.CAST_STEEL_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "cobalt", EternalGeneralItems.COBALT_DUST.get(), EternalGeneralItems.COBALT_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "constantan", EternalGeneralItems.CONSTANTAN_DUST.get(), EternalGeneralItems.CONSTANTAN_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "electrum", EternalGeneralItems.ELECTRUM_DUST.get(), EternalGeneralItems.ELECTRUM_INGOT.get());
@@ -569,6 +589,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialBlasting(recipeOutput, "ruby", EternalGeneralItems.RUBY_DUST.get(), EternalGeneralItems.GEM_RUBY.get());
         generateDustToMaterialBlasting(recipeOutput, "sapphire", EternalGeneralItems.SAPPHIRE_DUST.get(), EternalGeneralItems.GEM_SAPPHIRE.get());
 
+        ///
         ///Raw Ore Block to Block Furnace/Blasting
         //Vanilla Materials
         generateRawBlockToMaterialFurnace(recipeOutput, "copper", Items.RAW_COPPER_BLOCK, Items.COPPER_BLOCK);
@@ -614,6 +635,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRawBlockToMaterialBlasting(recipeOutput, "uranium", EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem(), EternalGeneralBlocks.URANIUM_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "zinc", EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem(), EternalGeneralBlocks.ZINC_BLOCK.asItem());
 
+        ///
         ///Ore Block to Material Furnace/Blasting
         generateOreBlockToMaterialFurnace(recipeOutput, "stone_aluminum", EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_aluminum", EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());

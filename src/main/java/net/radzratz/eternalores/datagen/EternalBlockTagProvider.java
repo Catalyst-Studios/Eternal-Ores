@@ -35,6 +35,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalStorageMetalBlockTags.Blocks.BRITANNIA_BLOCK_ST).add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.BRONZE_BLOCK_ST).add(EternalGeneralBlocks.BRONZE_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.CAST_IRON_BLOCK_ST).add(EternalGeneralBlocks.CAST_IRON_BLOCK.get());
+            tag(EternalStorageMetalBlockTags.Blocks.CAST_STEEL_BLOCK_ST).add(EternalGeneralBlocks.CAST_STEEL_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.COBALT_BLOCK_ST).add(EternalGeneralBlocks.COBALT_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.CONSTANTAN_BLOCK_ST).add(EternalGeneralBlocks.CONSTANTAN_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.ELECTRUM_BLOCK_ST).add(EternalGeneralBlocks.ELECTRUM_BLOCK.get());
@@ -314,6 +315,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.BRONZE_BLOCK.get())
                     .add(EternalGeneralBlocks.CAST_IRON_BLOCK.get())
+                    .add(EternalGeneralBlocks.CAST_STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.CINNABAR_BLOCK.get())
                     .add(EternalGeneralBlocks.COBALT_BLOCK.get())
                     .add(EternalGeneralBlocks.CONSTANTAN_BLOCK.get())
@@ -422,6 +424,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.BLUE_STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.CAST_IRON_BLOCK.get())
+                    .add(EternalGeneralBlocks.CAST_STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.COBALT_BLOCK.get())
                     .add(EternalGeneralBlocks.CONSTANTAN_BLOCK.get())
                     .add(EternalGeneralBlocks.ELECTRUM_BLOCK.get())
@@ -529,6 +532,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.ALUMINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.BRONZE_BLOCK.get())
                     .add(EternalGeneralBlocks.CAST_IRON_BLOCK.get())
+                    .add(EternalGeneralBlocks.CAST_STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.COBALT_BLOCK.get())
                     .add(EternalGeneralBlocks.ELECTRUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ENDERIUM_BLOCK.get())
