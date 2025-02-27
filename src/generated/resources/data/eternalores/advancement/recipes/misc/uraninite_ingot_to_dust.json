@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:uraninite_ingot_to_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uraninite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:uraninite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_uraninite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:uraninite_ingot_to_dust"
+    ]
+  }
+}

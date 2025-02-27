@@ -30,6 +30,8 @@ public class EternalStorageRawOreBlockTags {
         public static final TagKey<Block> SULFUR_ST = createRawOreBlockTags("storage_blocks/sulfur");
         //Tin
         public static final TagKey<Block> RAW_TIN_ST = createRawOreBlockTags("storage_blocks/raw_tin");
+        //Uraninite
+        public static final TagKey<Block> RAW_URANINITE_ST = createRawOreBlockTags("storage_blocks/raw_uraninite");
         //Uranium
         public static final TagKey<Block> RAW_URANIUM_ST = createRawOreBlockTags("storage_blocks/raw_uranium");
         //Zinc

@@ -95,6 +95,10 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_TIN_ORE = registerKey("add_tin_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_TIN_ORE = registerKey("add_nether_tin_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_TIN_ORE = registerKey("add_end_tin_ore");
+    //Uraninite
+    public static final ResourceKey<BiomeModifier> ADD_URANINITE_ORE = registerKey("add_uraninite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_URANINITE_ORE = registerKey("add_nether_uraninite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_URANINITE_ORE = registerKey("add_end_uraninite_ore");
     //Uranium
     public static final ResourceKey<BiomeModifier> ADD_URANIUM_ORE = registerKey("add_uranium_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_URANIUM_ORE = registerKey("add_nether_uranium_ore");
@@ -236,6 +240,12 @@ public class EternalBiomeModifier {
         context.register(ADD_TIN_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.TIN_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Uraninite
+        context.register(ADD_URANINITE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.URANINITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Uranium

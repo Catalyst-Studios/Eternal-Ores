@@ -1,5 +1,5 @@
-// 1.21.1	2025-02-26T14:39:17.0060394	Tags for minecraft:item mod id eternalores
-e171b663c0a094bacc086b88f5957acfaf8fb23a data/c/tags/item/dusts.json
+// 1.21.1	2025-02-26T18:25:53.4184341	Tags for minecraft:item mod id eternalores
+5b14884937a27edcacd58773fdf7003224b16892 data/c/tags/item/dusts.json
 a0f4982b67bd99a844350693498b221b1d1c8051 data/c/tags/item/dusts/aluminum.json
 0ea2276a5689e3a3b0b5ef83cbef89e3a838ed73 data/c/tags/item/dusts/amber.json
 7cf27deceb388b045c418411440bb150ed57c568 data/c/tags/item/dusts/apatite.json
@@ -49,6 +49,7 @@ a2c94b262e84622f5d75d35f39a8e69cade9f7ba data/c/tags/item/dusts/steel.json
 1dcc3f99352d49294e5bf060a4f08f70ab3e4fd9 data/c/tags/item/dusts/tin.json
 2a414ca5814b28e7f1eb8810271cf2c3b492f013 data/c/tags/item/dusts/titanium.json
 b857cbef3ced39f2740523183c7fd1d88e2d3cd2 data/c/tags/item/dusts/ultimatitanium.json
+49337eba8456d31f8b5e82e55985e66a3074c87a data/c/tags/item/dusts/uraninite.json
 f8612a23105e8e6b748908424b816612dc50149f data/c/tags/item/dusts/uranium.json
 ac0846b783bdabc214e3ca0b0ed25a086061414c data/c/tags/item/dusts/zinc.json
 4201efa20353b3fa8ec2f941c028bb6ca1de4140 data/c/tags/item/gears.json
@@ -67,7 +68,7 @@ b5365bf82dfee1eb9d5bcec0564b5ec24b9be685 data/c/tags/item/gears/enderium.json
 a348803400d5bc81aab9ee54c66e4fbeb385fb1b data/c/tags/item/gem_gears.json
 aa3ec990b90bdd3a46baaea0e8b705a34263b918 data/c/tags/item/gem_plates.json
 5767955f883c8b4cc3bce11afb85c4591eabc036 data/c/tags/item/gem_rods.json
-fb0c95ad661309c8ad7261db0a04593beee28386 data/c/tags/item/ingots.json
+b507d1c31f5b67519a3eace5c59deb84ff602fed data/c/tags/item/ingots.json
 a662e5e3ad3f9e5e0ce4697c875655cdc90fcef4 data/c/tags/item/ingots/aluminium.json
 a662e5e3ad3f9e5e0ce4697c875655cdc90fcef4 data/c/tags/item/ingots/aluminum.json
 fc5116855cc4bba0558f57f7e1d93823f20967c6 data/c/tags/item/ingots/blue_steel.json
@@ -100,13 +101,14 @@ e555f7b910677af70f81498f2d1a11625312abad data/c/tags/item/ingots/plutonium.json
 96284868fa2011a6b9889f9197e28311e6a26649 data/c/tags/item/ingots/tin.json
 e9aec7dc8c4f9fa96c6a6bedf2fa1aed5708b6fe data/c/tags/item/ingots/titanium.json
 006ab954ed02b9d6a6cde99f1709d273edca0fcc data/c/tags/item/ingots/ultimatitanium.json
+5c504c1542dce6f94ccbab75f70e6716cce6f76a data/c/tags/item/ingots/uraninite.json
 a11767c8be06dbdc1923559fdf867a722caa2cb7 data/c/tags/item/ingots/uranium.json
 e721477849a9c86f29f584c93d039815b6221f11 data/c/tags/item/ingots/zinc.json
-0e51f583a509f8e5ff142e0c23d16af427b457a5 data/c/tags/item/metal_dust.json
+3e420bbd074ec10e3d9271abde3086faf3e48952 data/c/tags/item/metal_dust.json
 f008fd8ac641f5edde78be97d9bb9b5edeb813b2 data/c/tags/item/metal_gears.json
 132dc257ba01127f180a380d9d6430a64f081c9f data/c/tags/item/metal_plates.json
 6fdeb9a1829c2d3d6a73d0a1c2b2974c9e7b7f28 data/c/tags/item/metal_rods.json
-a572ead184f6717af8efb48145b633503b3a5811 data/c/tags/item/nuggets.json
+e69fe585cedfb810539131916a611e7c25c53541 data/c/tags/item/nuggets.json
 881b0f7ee90e5abde2e2fb562e42ca8a90c3c64a data/c/tags/item/nuggets/aluminum.json
 6f67f58edafd2bbb3263fdfa56605c112c08165e data/c/tags/item/nuggets/blue_steel.json
 19549c60a38698953e7598801f73338ac8ab66eb data/c/tags/item/nuggets/brass.json
@@ -136,9 +138,10 @@ dda267385ba576334d4195300c60eac4bd73e911 data/c/tags/item/nuggets/steel.json
 3bf25e8f16092a915dc9e7a96e9df3c42fe78850 data/c/tags/item/nuggets/tin.json
 3b9342a01d0743444551728f44038bc645a22684 data/c/tags/item/nuggets/titanium.json
 b1b301643663cc8a524b0af5448417e3ee5336ac data/c/tags/item/nuggets/ultimatitanium.json
+7e885652f8c6c1dbd3c9fb80e8484fb0d27556c5 data/c/tags/item/nuggets/uraninite.json
 991878b5930f67707d0590e01054f7b8a9b2f8c3 data/c/tags/item/nuggets/uranium.json
 1fdb0352655ed8ce1e9fd11320279b3bd6815211 data/c/tags/item/nuggets/zinc.json
-aaf0e97c7330b271b9b373456a558c0180216a28 data/c/tags/item/ores.json
+0f323e06cfe6e8e9f47ef2ec151c60e9bf3c45dc data/c/tags/item/ores.json
 d441da36269b359d947d3b29803cff420f1a7f55 data/c/tags/item/ores/aluminum.json
 07b1e4061c240eeb93106c910ef5fa13446261a0 data/c/tags/item/ores/amber.json
 1631f4aa1b3059968aa832c6a8bec9acefdc082f data/c/tags/item/ores/apatite.json
@@ -159,6 +162,7 @@ c09037ed90bf9490aaca300bb5cb734adc7d067f data/c/tags/item/ores/sapphire.json
 c037abcec606ef702a6a76c08677044a0e88907a data/c/tags/item/ores/silver.json
 2247a5f72608fb490779a59d4582d60bf51545a2 data/c/tags/item/ores/sulfur.json
 80c46bc9902db9fa0c0e7199a21c03c53c03be07 data/c/tags/item/ores/tin.json
+25e9b59917f193c29a444108b76d33cac7a9eebd data/c/tags/item/ores/uraninite.json
 c62a72aa4e14c09654da8e37447a1ebd03b38364 data/c/tags/item/ores/uranium.json
 e6eaa377c359e283bf04b3d345f44fdb6171399a data/c/tags/item/ores/zinc.json
 c3a05be1a363d61095036a93e8cccb190e286ad2 data/c/tags/item/plates.json
@@ -197,7 +201,24 @@ de3509609b5a24e792edc69561f2291f1539899b data/c/tags/item/plates/titanium.json
 6760748162ecd525f693b3d825895b77193afd9b data/c/tags/item/plates/ultimatitanium.json
 bc4860f6c2d881d7512c7310ba29bad0b96d5cc0 data/c/tags/item/plates/uranium.json
 8724eec38f882f1d92c6d5517bbea7bf0d6239e7 data/c/tags/item/plates/zinc.json
-8d777f19bdbb15e086c8df81cf53b80046914cb8 data/c/tags/item/raw_materials.json
+f09a7717ba5d8802f82a0596d7c084a9d4deafb9 data/c/tags/item/raw_materials.json
+ef6d5f88a72694b9791af052b05d19abbe94a171 data/c/tags/item/raw_materials/aluminium.json
+ef6d5f88a72694b9791af052b05d19abbe94a171 data/c/tags/item/raw_materials/aluminum.json
+3116b58498179a16307213a4f56a19cf12eb805f data/c/tags/item/raw_materials/cobalt.json
+955784090e3c7a177e773019fba7bc4d92b42c42 data/c/tags/item/raw_materials/gallium.json
+91f78ec938e643df5f52da742042ba2d3f867d4f data/c/tags/item/raw_materials/iridium.json
+1fda4d522bfa90258dab026b16ddc4c99679b86d data/c/tags/item/raw_materials/lead.json
+211e2e02af4d766e4628f1f9d1d7642f7cca17bc data/c/tags/item/raw_materials/nickel.json
+12ac97150113cf629d0822844fb2d3bf5f486dbb data/c/tags/item/raw_materials/osmium.json
+570e20a497f520292371824acb49d3d8b6519670 data/c/tags/item/raw_materials/platinum.json
+9a7460178ab2dac3709cf4748e5d7ea486a5890b data/c/tags/item/raw_materials/plutonium.json
+5ca8937c279c98dc5499fd8d5943df3ed673a872 data/c/tags/item/raw_materials/silver.json
+0415c7c492fdb795912620f87d03e01b498ae6d4 data/c/tags/item/raw_materials/sulfur.json
+7561a9d1195d7bc0b646aa693225823e0e2e7869 data/c/tags/item/raw_materials/tin.json
+87f3f72099ba934316d9c03897f1626d503bf27f data/c/tags/item/raw_materials/ultimatitanium.json
+3ec145ad4b593df9db106f2887562dffa236eaa3 data/c/tags/item/raw_materials/uraninite.json
+271cc1c7557e7438c9bfe6ad1b00f82870e0cd92 data/c/tags/item/raw_materials/uranium.json
+3532f59553ce97015664600aa771d5e89e13a3a8 data/c/tags/item/raw_materials/zinc.json
 37ca2f9120713e258bbaa3817badbe9e2a39a399 data/c/tags/item/rods.json
 a758f2c64b63852c40e975906d3ddc59e5629b89 data/c/tags/item/rods/aluminum.json
 85368ab6b80192701cf24ac8bb57bd304c0fe883 data/c/tags/item/rods/blue_steel.json
@@ -234,7 +255,7 @@ da21446879dc8261d4690182c6de7ff2324545e7 data/c/tags/item/rods/uranium.json
 7bf0c5fe85fca3db0520be2e3c1089ec61d5dc69 data/c/tags/item/rods/zinc.json
 8b775d2666d86568093847d29dd59b6367717a82 data/c/tags/item/silicon.json
 a35e6d35b50eda3d7623174500ee1d9d4788c4d3 data/c/tags/item/stone_dust.json
-4540ead147860db418c6398c5baefe5633015ce8 data/c/tags/item/storage_blocks.json
+7b5b8dadfffff8d90b3a42396f7835d64d295cce data/c/tags/item/storage_blocks.json
 c4dc97a723d06ee8d352a8c633fb1c9421895a4d data/c/tags/item/storage_blocks/aluminum.json
 4d4e1deb96f454ef5548503771c2f30393d28239 data/c/tags/item/storage_blocks/amber.json
 c8307384879dc69ebf2239a2180f3bf65bb9c243 data/c/tags/item/storage_blocks/apatite.json
@@ -271,6 +292,7 @@ af157e1ed8132234efc7f035fdf12e3784e12b48 data/c/tags/item/storage_blocks/raw_nic
 6cd5c238087296642c56c32125094745a555e232 data/c/tags/item/storage_blocks/raw_platinum.json
 01da2cfed34eb9f3b234c733ff6d5a15e6efdcc1 data/c/tags/item/storage_blocks/raw_silver.json
 a74e949cb005dfd86eb7f79400c3a0e848c0e902 data/c/tags/item/storage_blocks/raw_tin.json
+7d8e6014f06cb443bf1c6d7bb7df4bf00ff651a8 data/c/tags/item/storage_blocks/raw_uraninite.json
 0849384fb6f2d3053401f8a37c16e7fff048b52e data/c/tags/item/storage_blocks/raw_uranium.json
 fedaa0dd439588b32790d2eb953f3cf746fa6d7a data/c/tags/item/storage_blocks/raw_zinc.json
 b90634a012f5321207a496922f7d357f254ecff0 data/c/tags/item/storage_blocks/rose_gold.json
@@ -282,6 +304,7 @@ ab3951f34a469a6ff9a4e524a64d1694830402a7 data/c/tags/item/storage_blocks/signalu
 b72d2374bcde3317b869d5d4657eecb6bc7e84f8 data/c/tags/item/storage_blocks/sulfur.json
 75f2cc78f63454fcb8e190f9a1212f314c80e2c6 data/c/tags/item/storage_blocks/tin.json
 bccbf12c44ab74cf5e86ef719ed4d42f49a2b532 data/c/tags/item/storage_blocks/titanium.json
+c3e03fb67ef5d94472444da30787d5a38c09e876 data/c/tags/item/storage_blocks/uraninite.json
 a9490d7e842d03664401a1fb03e81a7bd0fb3f9b data/c/tags/item/storage_blocks/uranium.json
 5ab33792050e192ba5ee82bc3a7c27dadec09742 data/c/tags/item/storage_blocks/zinc.json
 bb4b7ae81525abd8fb557900ab809d970dbff342 data/eternalores/tags/item/tools/gem_cutter.json

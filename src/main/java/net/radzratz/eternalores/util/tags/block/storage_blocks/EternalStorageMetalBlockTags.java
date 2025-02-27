@@ -58,6 +58,8 @@ public class EternalStorageMetalBlockTags {
         public static final TagKey<Block> TIN_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/tin");
         //Titanium
         public static final TagKey<Block> TITANIUM_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/titanium");
+        //Uraninite
+        public static final TagKey<Block> URANINITE_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/uraninite");
         //Uranium
         public static final TagKey<Block> URANIUM_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/uranium");
         //Zinc

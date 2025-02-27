@@ -66,6 +66,8 @@ public class EternalNuggetsTags {
         public static final TagKey<Item> NUGGET_TITANIUM = createNuggetsTags("nuggets/titanium");
         //Ultimatitanium
         public static final TagKey<Item> NUGGET_ULTIMATITANIUM = createNuggetsTags("nuggets/ultimatitanium");
+        //Uraninite
+        public static final TagKey<Item> NUGGET_URANINITE = createNuggetsTags("nuggets/uraninite");
         //Uranium
         public static final TagKey<Item> NUGGET_URANIUM = createNuggetsTags("nuggets/uranium");
         //Zinc

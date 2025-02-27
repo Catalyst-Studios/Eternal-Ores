@@ -101,6 +101,10 @@ public class EternalConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_TIN_ORE_KEY = registerKey("tin_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_TIN_ORE_KEY = registerKey("nether_tin_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_TIN_ORE_KEY = registerKey("end_tin_ore");
+    //Uraninite
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_URANINITE_ORE_KEY = registerKey("uraninite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_URANINITE_ORE_KEY = registerKey("nether_uraninite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_URANINITE_ORE_KEY = registerKey("end_uraninite_ore");
     //Uranium
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_URANIUM_ORE_KEY = registerKey("uranium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_URANIUM_ORE_KEY = registerKey("nether_uranium_ore");
@@ -351,6 +355,17 @@ public class EternalConfiguredFeatures {
         //        EternalGeneralBlocks.NETHER_TIN_ORE_BLOCK.get().defaultBlockState(9)));
         //register(context, END_TIN_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
         //        EternalGeneralBlocks.END_TIN_ORE_BLOCK.get().defaultBlockState(9)));
+
+        //Uraninite
+        List<OreConfiguration.TargetBlockState> overworldUraniniteOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        EternalGeneralBlocks.URANINITE_ORE_BLOCK.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables,
+                        EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get().defaultBlockState()));
+        register(context, OVERWORLD_URANINITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldUraniniteOres,9));
+        //register(context, NETHER_URANINITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
+        //        EternalGeneralBlocks.NETHER_URANINITE_ORE_BLOCK.get().defaultBlockState(9)));
+        //register(context, END_URANINITE_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
+        //        EternalGeneralBlocks.END_URANINITE_ORE_BLOCK.get().defaultBlockState(9)));
 
         //Uranium
         List<OreConfiguration.TargetBlockState> overworldUraniumOres = List.of(OreConfiguration.target(stoneReplaceable,

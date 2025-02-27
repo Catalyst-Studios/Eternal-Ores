@@ -98,6 +98,10 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> TIN_ORE_PLACED_KEY = registerKey("tin_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_TIN_ORE_PLACED_KEY = registerKey("nether_tin_ore_placed");
     public static final ResourceKey<PlacedFeature> END_TIN_ORE_PLACED_KEY = registerKey("end_tin_ore_placed");
+    //Uraninite
+    public static final ResourceKey<PlacedFeature> URANINITE_ORE_PLACED_KEY = registerKey("uraninite_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_URANINITE_ORE_PLACED_KEY = registerKey("nether_uraninite_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_URANINITE_ORE_PLACED_KEY = registerKey("end_uraninite_ore_placed");
     //Uranium
     public static final ResourceKey<PlacedFeature> URANIUM_ORE_PLACED_KEY = registerKey("uranium_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_URANIUM_ORE_PLACED_KEY = registerKey("nether_uranium_ore_placed");
@@ -336,6 +340,17 @@ public class EternalPlacedFeatures {
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     //register(context, END_TIN_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_TIN_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+    //Uraninite
+    register(context, URANINITE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_URANINITE_ORE_KEY),
+            EternalOrePlacement.commonOrePlacement(10,
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(40))));
+    //register(context, NETHER_URANINITE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_URANINITE_ORE_KEY),
+    //        EternalOrePlacement.commonOrePlacement(12,
+    //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+    //register(context, END_URANINITE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_URANINITE_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 

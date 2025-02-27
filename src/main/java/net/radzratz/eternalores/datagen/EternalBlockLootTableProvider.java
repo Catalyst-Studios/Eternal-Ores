@@ -61,6 +61,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get());
         dropSelf(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get());
         dropSelf(EternalGeneralBlocks.CAST_IRON_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.URANINITE_BLOCK.get());
 
         //GEM BLOCKS
         dropSelf(EternalGeneralBlocks.SAPPHIRE_BLOCK.get());
@@ -88,6 +89,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.RAW_URANIUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_ZINC_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.RAW_URANINITE_BLOCK.get());
 
         //ORE BLOCK TO RAW ORE/GEM
         //ALUMINUM ORE BLOCKS
@@ -145,6 +147,10 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         //IRIDIUM TO RAW ORE
         add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_IRIDIUM.get(),1,2));
         add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get(), EternalGeneralItems.RAW_IRIDIUM.get(),1,2));
+
+        //URANINITE TO RAW ORE
+        add(EternalGeneralBlocks.URANINITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.URANINITE_ORE_BLOCK.get(), EternalGeneralItems.RAW_URANINITE.get(),1,3));
+        add(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get(), EternalGeneralItems.RAW_URANINITE.get(),1,3));
 
         //GEMS
         //FLUORITE TO GEM

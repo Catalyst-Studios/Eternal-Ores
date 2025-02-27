@@ -47,6 +47,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.RAW_URANIUM.get());
         basicItem(EternalGeneralItems.RAW_ZINC.get());
         basicItem(EternalGeneralItems.RAW_GALLIUM.get());
+        basicItem(EternalGeneralItems.RAW_URANINITE.get());
 
         //INGOTS
         basicItem(EternalGeneralItems.ALUMINUM_INGOT.get());
@@ -82,6 +83,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.ROSE_GOLD_INGOT.get());
         basicItem(EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         basicItem(EternalGeneralItems.CAST_IRON_INGOT.get());
+        basicItem(EternalGeneralItems.URANINITE_INGOT.get());
 
         //NUGGETS
         basicItem(EternalGeneralItems.ALUMINUM_NUGGET.get());
@@ -116,6 +118,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get());
         basicItem(EternalGeneralItems.IRIDIUM_NUGGET.get());
         basicItem(EternalGeneralItems.CAST_IRON_NUGGET.get());
+        basicItem(EternalGeneralItems.URANINITE_NUGGET.get());
 
         //DUSTS
         basicItem(EternalGeneralItems.ALUMINUM_DUST.get());
@@ -171,6 +174,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.BRITANNIA_SILVER_DUST.get());
         basicItem(EternalGeneralItems.IRIDIUM_DUST.get());
         basicItem(EternalGeneralItems.CAST_IRON_DUST.get());
+        basicItem(EternalGeneralItems.URANINITE_DUST.get());
 
         //RODS
         basicItem(EternalGeneralItems.ROD_ALUMINUM.get());

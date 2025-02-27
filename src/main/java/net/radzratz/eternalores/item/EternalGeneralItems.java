@@ -72,6 +72,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> URANIUM_INGOT = registerIngotItem("uranium_ingot");
     public static final DeferredItem<Item> ZINC_INGOT = registerIngotItem("zinc_ingot");
     public static final DeferredItem<Item> CAST_IRON_INGOT = registerIngotItem("cast_iron_ingot");
+    public static final DeferredItem<Item> URANINITE_INGOT = registerIngotItem("uraninite_ingot");
 
     //Nuggets
     private static DeferredItem<Item> registerNuggetItem(String name) {
@@ -109,6 +110,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> URANIUM_NUGGET = registerNuggetItem("uranium_nugget");
     public static final DeferredItem<Item> ZINC_NUGGET = registerNuggetItem("zinc_nugget");
     public static final DeferredItem<Item> CAST_IRON_NUGGET = registerNuggetItem("cast_iron_nugget");
+    public static final DeferredItem<Item> URANINITE_NUGGET = registerNuggetItem("uraninite_nugget");
 
     //Rods
     private static DeferredItem<Item> registerRodItem(String name) {
@@ -224,6 +226,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> RAW_URANIUM = registerRawItem("raw_uranium");
     public static final DeferredItem<Item> RAW_ZINC = registerRawItem("raw_zinc");
     public static final DeferredItem<Item> SULFUR = registerRawItem("sulfur");
+    public static final DeferredItem<Item> RAW_URANINITE = registerRawItem("raw_uraninite");
 
     //Ore Dust
     private static DeferredItem<Item> registerDustItem(String name) {
@@ -282,6 +285,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> URANIUM_DUST = registerDustItem("uranium_dust");
     public static final DeferredItem<Item> ZINC_DUST = registerDustItem("zinc_dust");
     public static final DeferredItem<Item> CAST_IRON_DUST = registerDustItem("cast_iron_dust");
+    public static final DeferredItem<Item> URANINITE_DUST = registerDustItem("uraninite_dust");
 
     //Gems
     private static DeferredItem<Item> registerGemItem(String name) {

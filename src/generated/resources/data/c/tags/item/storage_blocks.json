@@ -37,6 +37,7 @@
     "eternalores:sulfur_block",
     "eternalores:tin_block",
     "eternalores:titanium_block",
+    "eternalores:uraninite_block",
     "eternalores:uranium_block",
     "eternalores:zinc_block",
     "eternalores:raw_aluminum_block",
@@ -50,6 +51,7 @@
     "eternalores:raw_plutonium_block",
     "eternalores:raw_silver_block",
     "eternalores:raw_tin_block",
+    "eternalores:raw_uraninite_block",
     "eternalores:raw_uranium_block",
     "eternalores:raw_zinc_block"
   ]

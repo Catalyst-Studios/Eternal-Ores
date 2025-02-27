@@ -47,6 +47,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.SILVER_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.SULFUR_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.TIN_ORE_BLOCK);
+                    output.accept(EternalGeneralBlocks.URANINITE_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.URANIUM_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.ZINC_ORE_BLOCK);
                     //DEEPSLATE ORES
@@ -71,6 +72,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK);
+                    output.accept(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK);
                     //NETHER ORES W.I.P
@@ -89,6 +91,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.RAW_SILVER_BLOCK);
                     output.accept(EternalGeneralBlocks.SULFUR_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_TIN_BLOCK);
+                    output.accept(EternalGeneralBlocks.RAW_URANINITE_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_URANIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_ZINC_BLOCK);
                     //METAL AND GEM BLOCKS
@@ -129,6 +132,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.TIN_BLOCK);
                     output.accept(EternalGeneralBlocks.TITANIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.ULTIMATITANIUM_BLOCK);
+                    output.accept(EternalGeneralBlocks.URANINITE_BLOCK);
                     output.accept(EternalGeneralBlocks.URANIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.ZINC_BLOCK);
                     //RAW ORES
@@ -145,6 +149,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.SULFUR);
                     output.accept(EternalGeneralItems.RAW_TIN);
                     output.accept(EternalGeneralItems.RAW_ULTIMATITANIUM);
+                    output.accept(EternalGeneralItems.RAW_URANINITE);
                     output.accept(EternalGeneralItems.RAW_URANIUM);
                     output.accept(EternalGeneralItems.RAW_ZINC);
                     //INGOTS
@@ -179,6 +184,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.TIN_INGOT);
                     output.accept(EternalGeneralItems.TITANIUM_INGOT);
                     output.accept(EternalGeneralItems.ULTIMATITANIUM_INGOT);
+                    output.accept(EternalGeneralItems.URANINITE_INGOT);
                     output.accept(EternalGeneralItems.URANIUM_INGOT);
                     output.accept(EternalGeneralItems.ZINC_INGOT);
                     //NUGGETS
@@ -212,6 +218,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.TIN_NUGGET);
                     output.accept(EternalGeneralItems.TITANIUM_NUGGET);
                     output.accept(EternalGeneralItems.ULTIMATITANIUM_NUGGET);
+                    output.accept(EternalGeneralItems.URANINITE_NUGGET);
                     output.accept(EternalGeneralItems.URANIUM_NUGGET);
                     output.accept(EternalGeneralItems.ZINC_NUGGET);
                     //GEMS
@@ -278,6 +285,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.TIN_DUST);
                     output.accept(EternalGeneralItems.TITANIUM_DUST);
                     output.accept(EternalGeneralItems.ULTIMATITANIUM_DUST);
+                    output.accept(EternalGeneralItems.URANINITE_DUST);
                     output.accept(EternalGeneralItems.URANIUM_DUST);
                     output.accept(EternalGeneralItems.ZINC_DUST);
                     //PLATES
@@ -370,6 +378,8 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.IRON_HAMMER);
                     output.accept(EternalGeneralItems.STONE_HAMMER);
                     output.accept(EternalGeneralItems.IRON_GEM_CUTTER);
+                    //MISC
+                    output.accept(EternalGeneralItems.SILICON);
                     //CREATE COMPAT ITEMS W.I.P
                     //MEK COMPAT ITEMS W.I.P
                 }).build());

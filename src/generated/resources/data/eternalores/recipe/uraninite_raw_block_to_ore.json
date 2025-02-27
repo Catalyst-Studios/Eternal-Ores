@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:raw_uraninite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:raw_uraninite"
+  }
+}

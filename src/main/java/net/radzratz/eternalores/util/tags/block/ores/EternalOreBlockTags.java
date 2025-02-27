@@ -47,6 +47,8 @@ public class EternalOreBlockTags {
         public static final TagKey<Block> SULFUR_ORE_OW = createOreBlockTags("ores/sulfur");
         //Tin
         public static final TagKey<Block> TIN_ORE_OW = createOreBlockTags("ores/tin");
+        //Uraninite
+        public static final TagKey<Block> URANINITE_ORE_OW = createOreBlockTags("ores/uraninite");
         //Uranium
         public static final TagKey<Block> URANIUM_ORE_OW = createOreBlockTags("ores/uranium");
         //Zinc

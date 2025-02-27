@@ -78,6 +78,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateHammerRecipes(recipeOutput, "titanium_ingot", EternalGeneralItems.TITANIUM_INGOT.get(), EternalGeneralItems.TITANIUM_DUST.get());
         //generateHammerRecipes(recipeOutput, "tungsten_ingot", EternalGeneralItems.TUNGSTEN_INGOT.get(), EternalGeneralItems.TUNGSTEN_DUST.get());
         generateHammerRecipes(recipeOutput, "ultimatitanium_ingot", EternalGeneralItems.ULTIMATITANIUM_INGOT.get(), EternalGeneralItems.ULTIMATITANIUM_DUST.get());
+        generateHammerRecipes(recipeOutput, "uraninite_ingot", EternalGeneralItems.URANINITE_INGOT.get(), EternalGeneralItems.URANINITE_DUST.get());
         generateHammerRecipes(recipeOutput, "uranium_ingot", EternalGeneralItems.URANIUM_INGOT.get(), EternalGeneralItems.URANIUM_DUST.get());
         generateHammerRecipes(recipeOutput, "zinc_ingot", EternalGeneralItems.ZINC_INGOT.get(), EternalGeneralItems.ZINC_DUST.get());
 
@@ -213,6 +214,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToIngotMaterialRecipe(recipeOutput, "titanium", EternalGeneralBlocks.TITANIUM_BLOCK.asItem(), EternalGeneralItems.TITANIUM_INGOT.get());
         //generateBlockToIngotMaterialRecipe(recipeOutput, "tungsten", EternalGeneralBlocks.TUNGSTEN_BLOCK.asItem(), EternalGeneralItems.TUNGSTEN_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "ultimatitanium", EternalGeneralBlocks.ULTIMATITANIUM_BLOCK.asItem(), EternalGeneralItems.ULTIMATITANIUM_INGOT.get());
+        generateBlockToIngotMaterialRecipe(recipeOutput, "uraninite", EternalGeneralBlocks.URANINITE_BLOCK.asItem(), EternalGeneralItems.URANINITE_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "uranium", EternalGeneralBlocks.URANIUM_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "zinc", EternalGeneralBlocks.ZINC_BLOCK.asItem(), EternalGeneralItems.ZINC_INGOT.get());
 
@@ -241,6 +243,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToRawMaterialRecipe(recipeOutput, "tin", EternalGeneralBlocks.RAW_TIN_BLOCK.asItem(), EternalGeneralItems.RAW_TIN.get());
         //generateBlockToRawMaterialRecipe(recipeOutput, "tungsten", EternalGeneralBlocks.RAW_TUNGSTEN_BLOCK.asItem(), EternalGeneralItems.RAW_TUNGSTEN.get());
         //generateBlockToRawMaterialRecipe(recipeOutput, "ultimatitanium", EternalGeneralBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem(), EternalGeneralItems.RAW_ULTIMATITANIUM.get());
+        generateBlockToRawMaterialRecipe(recipeOutput, "uraninite", EternalGeneralBlocks.RAW_URANINITE_BLOCK.asItem(), EternalGeneralItems.RAW_URANINITE.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "uranium", EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem(), EternalGeneralItems.RAW_URANIUM.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "zinc", EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem(), EternalGeneralItems.RAW_ZINC.get());
 
@@ -260,6 +263,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRawMaterialToBlockRecipe(recipeOutput, "tin", EternalGeneralItems.RAW_TIN.get(), EternalGeneralBlocks.RAW_TIN_BLOCK.asItem());
         //generateRawMaterialToBlockRecipe(recipeOutput, "tungsten", EternalGeneralItems.RAW_TUNGSTEN.get(), EternalGeneralBlocks.RAW_TUNGSTEN_BLOCK.asItem());
         //generateRawMaterialToBlockRecipe(recipeOutput, "ultimatitanium", EternalGeneralItems.RAW_ULTIMATITANIUM.get(), EternalGeneralBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem());
+        generateRawMaterialToBlockRecipe(recipeOutput, "uraninite", EternalGeneralItems.RAW_URANINITE.get(), EternalGeneralBlocks.RAW_URANINITE_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "uranium", EternalGeneralItems.RAW_URANIUM.get(), EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "zinc", EternalGeneralItems.RAW_ZINC.get(), EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem());
 
@@ -341,6 +345,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToNuggetRecipe(recipeOutput, "titanium", EternalGeneralItems.TITANIUM_INGOT.get(), EternalGeneralItems.TITANIUM_NUGGET.get());
         //generateIngotToNuggetRecipe(recipeOutput, "tungsten", EternalGeneralItems.TUNGSTEN_INGOT.get(), EternalGeneralItems.TUNGSTEN_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "ultimatitanium", EternalGeneralItems.ULTIMATITANIUM_INGOT.get(), EternalGeneralItems.ULTIMATITANIUM_NUGGET.get());
+        generateIngotToNuggetRecipe(recipeOutput, "uraninite", EternalGeneralItems.URANINITE_INGOT.get(), EternalGeneralItems.URANINITE_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "uranium", EternalGeneralItems.URANIUM_INGOT.get(), EternalGeneralItems.URANIUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "zinc", EternalGeneralItems.ZINC_INGOT.get(), EternalGeneralItems.ZINC_NUGGET.get());
 
@@ -379,6 +384,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateNuggetToIngotRecipe(recipeOutput, "titanium", EternalGeneralItems.TITANIUM_NUGGET.get(), EternalGeneralItems.TITANIUM_INGOT.get());
         //generateNuggetToIngotRecipe(recipeOutput, "tungsten", EternalGeneralItems.TUNGSTEN_NUGGET.get(), EternalGeneralItems.TUNGSTEN_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "ultimatitanium", EternalGeneralItems.ULTIMATITANIUM_NUGGET.get(), EternalGeneralItems.ULTIMATITANIUM_INGOT.get());
+        generateNuggetToIngotRecipe(recipeOutput, "uraninite", EternalGeneralItems.URANINITE_NUGGET.get(), EternalGeneralItems.URANINITE_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "uranium", EternalGeneralItems.URANIUM_NUGGET.get(), EternalGeneralItems.URANIUM_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "zinc", EternalGeneralItems.ZINC_NUGGET.get(), EternalGeneralItems.ZINC_INGOT.get());
 
@@ -437,6 +443,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRawOreToIngotFurnace(recipeOutput, "silver", EternalGeneralItems.RAW_SILVER.get(), EternalGeneralItems.SILVER_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "tin", EternalGeneralItems.RAW_TIN.get(), EternalGeneralItems.TIN_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "ultimatitanium", EternalGeneralItems.RAW_ULTIMATITANIUM.get(), EternalGeneralItems.ULTIMATITANIUM_INGOT.get());
+        generateRawOreToIngotFurnace(recipeOutput, "uraninite", EternalGeneralItems.RAW_URANINITE.get(), EternalGeneralItems.URANINITE_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "uranium", EternalGeneralItems.RAW_URANIUM.get(), EternalGeneralItems.URANIUM_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "zinc", EternalGeneralItems.RAW_ZINC.get(), EternalGeneralItems.ZINC_INGOT.get());
 
@@ -453,6 +460,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRawOreToIngotBlasting(recipeOutput, "silver", EternalGeneralItems.RAW_SILVER.get(), EternalGeneralItems.SILVER_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "tin", EternalGeneralItems.RAW_TIN.get(), EternalGeneralItems.TIN_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "ultimatitanium", EternalGeneralItems.RAW_ULTIMATITANIUM.get(), EternalGeneralItems.ULTIMATITANIUM_INGOT.get());
+        generateRawOreToIngotBlasting(recipeOutput, "uraninite", EternalGeneralItems.RAW_URANINITE.get(), EternalGeneralItems.URANINITE_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "uranium", EternalGeneralItems.RAW_URANIUM.get(), EternalGeneralItems.URANIUM_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "zinc", EternalGeneralItems.RAW_ZINC.get(), EternalGeneralItems.ZINC_INGOT.get());
 
@@ -496,6 +504,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialFurnace(recipeOutput, "tin", EternalGeneralItems.TIN_DUST.get(), EternalGeneralItems.TIN_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "titanium", EternalGeneralItems.TITANIUM_DUST.get(), EternalGeneralItems.TITANIUM_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "ultimatitanium", EternalGeneralItems.ULTIMATITANIUM_DUST.get(), EternalGeneralItems.ULTIMATITANIUM_INGOT.get());
+        generateDustToMaterialFurnace(recipeOutput, "uraninite", EternalGeneralItems.URANINITE_DUST.get(), EternalGeneralItems.URANINITE_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "uranium", EternalGeneralItems.URANIUM_DUST.get(), EternalGeneralItems.URANIUM_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "zinc", EternalGeneralItems.ZINC_DUST.get(), EternalGeneralItems.ZINC_INGOT.get());
 
@@ -547,6 +556,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialBlasting(recipeOutput, "tin", EternalGeneralItems.TIN_DUST.get(), EternalGeneralItems.TIN_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "titanium", EternalGeneralItems.TITANIUM_DUST.get(), EternalGeneralItems.TITANIUM_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "ultimatitanium", EternalGeneralItems.ULTIMATITANIUM_DUST.get(), EternalGeneralItems.ULTIMATITANIUM_INGOT.get());
+        generateDustToMaterialBlasting(recipeOutput, "uraninite", EternalGeneralItems.URANINITE_DUST.get(), EternalGeneralItems.URANINITE_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "uranium", EternalGeneralItems.URANIUM_DUST.get(), EternalGeneralItems.URANIUM_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "zinc", EternalGeneralItems.ZINC_DUST.get(), EternalGeneralItems.ZINC_INGOT.get());
 
@@ -578,6 +588,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRawBlockToMaterialFurnace(recipeOutput, "silver", EternalGeneralBlocks.RAW_SILVER_BLOCK.asItem(), EternalGeneralBlocks.SILVER_BLOCK.asItem());
         generateRawBlockToMaterialFurnace(recipeOutput, "tin", EternalGeneralBlocks.RAW_TIN_BLOCK.asItem(), EternalGeneralBlocks.TIN_BLOCK.asItem());
         //generateRawBlockToMaterialFurnace(recipeOutput, "ultimatitanium", EternalGeneralBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem(), EternalGeneralBlocks.ULTIMATITANIUM_BLOCK.asItem());
+        generateRawBlockToMaterialFurnace(recipeOutput, "uraninite", EternalGeneralBlocks.RAW_URANINITE_BLOCK.asItem(), EternalGeneralBlocks.URANINITE_BLOCK.asItem());
         generateRawBlockToMaterialFurnace(recipeOutput, "uranium", EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem(), EternalGeneralBlocks.URANIUM_BLOCK.asItem());
         generateRawBlockToMaterialFurnace(recipeOutput, "zinc", EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem(), EternalGeneralBlocks.ZINC_BLOCK.asItem());
 
@@ -599,6 +610,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRawBlockToMaterialBlasting(recipeOutput, "silver", EternalGeneralBlocks.RAW_SILVER_BLOCK.asItem(), EternalGeneralBlocks.SILVER_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "tin", EternalGeneralBlocks.RAW_TIN_BLOCK.asItem(), EternalGeneralBlocks.TIN_BLOCK.asItem());
         //generateRawBlockToMaterialBlasting(recipeOutput, "ultimatitanium", EternalGeneralBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem(), EternalGeneralBlocks.ULTIMATITANIUM_BLOCK.asItem());
+        generateRawBlockToMaterialBlasting(recipeOutput, "uraninite", EternalGeneralBlocks.RAW_URANINITE_BLOCK.asItem(), EternalGeneralBlocks.URANINITE_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "uranium", EternalGeneralBlocks.RAW_URANIUM_BLOCK.asItem(), EternalGeneralBlocks.URANIUM_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "zinc", EternalGeneralBlocks.RAW_ZINC_BLOCK.asItem(), EternalGeneralBlocks.ZINC_BLOCK.asItem());
 
@@ -625,6 +637,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_tin", EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem(), EternalGeneralItems.TIN_INGOT.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "stone_uranium", EternalGeneralBlocks.URANIUM_ORE_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_uranium", EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "stone_uraninite", EternalGeneralBlocks.URANINITE_ORE_BLOCK.asItem(), EternalGeneralItems.URANINITE_INGOT.get());
+        generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_uraninite", EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.asItem(), EternalGeneralItems.URANINITE_INGOT.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "stone_zinc", EternalGeneralBlocks.ZINC_ORE_BLOCK.asItem(), EternalGeneralItems.ZINC_INGOT.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_zinc", EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem(), EternalGeneralItems.ZINC_INGOT.get());
 
@@ -668,6 +682,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_silver", EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.asItem(), EternalGeneralItems.SILVER_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_tin", EternalGeneralBlocks.TIN_ORE_BLOCK.asItem(), EternalGeneralItems.TIN_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_tin", EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem(), EternalGeneralItems.TIN_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_uraninite", EternalGeneralBlocks.URANINITE_ORE_BLOCK.asItem(), EternalGeneralItems.URANINITE_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_uraninite", EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.asItem(), EternalGeneralItems.URANINITE_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_uranium", EternalGeneralBlocks.URANIUM_ORE_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_uranium", EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem(), EternalGeneralItems.URANIUM_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_zinc", EternalGeneralBlocks.ZINC_ORE_BLOCK.asItem(), EternalGeneralItems.ZINC_INGOT.get());

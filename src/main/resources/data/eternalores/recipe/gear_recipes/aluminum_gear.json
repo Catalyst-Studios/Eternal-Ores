@@ -6,7 +6,7 @@
       "tag": "c:ingots/aluminum"
    },
     "B": {
-      "tag": "eternalores:hammers"
+      "tag": "eternalores:tools/hammers"
     }
   },
   "pattern": [

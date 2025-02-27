@@ -54,6 +54,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalStorageMetalBlockTags.Blocks.STEEL_BLOCK_ST).add(EternalGeneralBlocks.STEEL_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.TIN_BLOCK_ST).add(EternalGeneralBlocks.TIN_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.TITANIUM_BLOCK_ST).add(EternalGeneralBlocks.TITANIUM_BLOCK.get());
+            tag(EternalStorageMetalBlockTags.Blocks.URANINITE_BLOCK_ST).add(EternalGeneralBlocks.URANINITE_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.URANIUM_BLOCK_ST).add(EternalGeneralBlocks.URANIUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.ZINC_BLOCK_ST).add(EternalGeneralBlocks.ZINC_BLOCK.get());
 
@@ -78,6 +79,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_SILVER_ST).add(EternalGeneralBlocks.RAW_SILVER_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.SULFUR_ST).add(EternalGeneralBlocks.SULFUR_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_TIN_ST).add(EternalGeneralBlocks.RAW_TIN_BLOCK.get());
+            tag(EternalStorageRawOreBlockTags.Blocks.RAW_URANINITE_ST).add(EternalGeneralBlocks.RAW_URANINITE_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_URANIUM_ST).add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_ZINC_ST).add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get());
 
@@ -123,6 +125,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.TIN_BLOCK.get())
                     .add(EternalGeneralBlocks.TITANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ULTIMATITANIUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.URANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ZINC_BLOCK.get());
 
@@ -139,6 +142,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RAW_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.SULFUR_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_TIN_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get());
@@ -183,6 +187,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalOreBlockTags.Blocks.SULFUR_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.TIN_ORE_OW).add(EternalGeneralBlocks.TIN_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.TIN_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get());
+            tag(EternalOreBlockTags.Blocks.URANINITE_ORE_OW).add(EternalGeneralBlocks.URANINITE_ORE_BLOCK.get());
+            tag(EternalOreBlockTags.Blocks.URANINITE_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.URANIUM_ORE_OW).add(EternalGeneralBlocks.URANIUM_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.URANIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.ZINC_ORE_OW).add(EternalGeneralBlocks.ZINC_ORE_BLOCK.get());
@@ -233,6 +239,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.TIN_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.URANINITE_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.URANIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.ZINC_ORE_BLOCK.get())
@@ -259,6 +267,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.SULFUR_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.TIN_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.URANINITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.URANIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.SILVER_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.ZINC_ORE_BLOCK.get())
@@ -284,6 +293,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.get())
@@ -333,6 +343,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.SULFUR_BLOCK.get())
                     .add(EternalGeneralBlocks.TIN_BLOCK.get())
                     .add(EternalGeneralBlocks.TITANIUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.URANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ZINC_BLOCK.get())
 
@@ -348,6 +359,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RAW_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_TIN_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get());
 
             //PICKAXE TAGS
@@ -400,6 +412,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.PERIDOT_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.URANINITE_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get())
 
                     //METAL BLOCKS
                     .add(EternalGeneralBlocks.ALUMINUM_BLOCK.get())
@@ -430,6 +444,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.TIN_BLOCK.get())
                     .add(EternalGeneralBlocks.TITANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ULTIMATITANIUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.URANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ZINC_BLOCK.get())
 
@@ -456,6 +471,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RAW_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.SULFUR_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_TIN_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get());
@@ -506,6 +522,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.PLATINUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.URANINITE_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get())
 
                     //METAL BLOCKS
                     .add(EternalGeneralBlocks.ALUMINUM_BLOCK.get())
@@ -538,6 +556,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.PEWTER_BLOCK.get())
                     .add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get())
                     .add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get())
+                    .add(EternalGeneralBlocks.CAST_IRON_BLOCK.get())
+                    .add(EternalGeneralBlocks.URANINITE_BLOCK.get())
 
                     //GEM BLOCKS
                     .add(EternalGeneralBlocks.AMBER_BLOCK.get())
@@ -562,6 +582,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RAW_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.SULFUR_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_TIN_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get());

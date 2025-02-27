@@ -41,6 +41,7 @@
   "item.eternalores.britannia_silver_ingot": "Britannia Silver Ingot",
   "item.eternalores.iridium_ingot": "Iridium Ingot",
   "item.eternalores.cast_iron_ingot": "Cast Iron Ingot",
+  "item.eternalores.uraninite_ingot": "Uraninite Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -76,6 +77,7 @@
   "item.eternalores.britannia_silver_nugget": "Britannia Silver Nugget",
   "item.eternalores.iridium_nugget": "Iridium Nugget",
   "item.eternalores.cast_iron_nugget": "Cast Iron Nugget",
+  "item.eternalores.uraninite_nugget": "Uraninite Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -174,6 +176,7 @@
   "item.eternalores.raw_plutonium": "Raw Plutonium",
   "item.eternalores.raw_gallium": "Raw Gallium",
   "item.eternalores.raw_iridium": "Raw Iridium",
+  "item.eternalores.raw_uraninite": "Raw Uraninite",
 
   "item.eternalores.aluminum_dust": "Aluminum Dust",
   "item.eternalores.cobalt_dust": "Cobalt Dust",
@@ -228,6 +231,7 @@
   "item.eternalores.britannia_silver_dust": "Britannia Silver Dust",
   "item.eternalores.iridium_dust": "Iridium Dust",
   "item.eternalores.cast_iron_dust": "Cast Iron Dust",
+  "item.eternalores.uraninite_dust": "Uraninite Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -266,6 +270,7 @@
   "block.eternalores.gallium_ore_block": "Gallium Ore",
   "block.eternalores.peridot_ore_block": "Peridot Ore",
   "block.eternalores.iridium_ore_block": "Iridium Ore",
+  "block.eternalores.uraninite_ore_block": "Uraninite Ore",
 
   "block.eternalores.deepslate_cobalt_ore_block": "Deepslate Cobalt Ore",
   "block.eternalores.deepslate_fluorite_ore_block": "Deepslate Fluorite Ore",
@@ -290,6 +295,7 @@
   "block.eternalores.deepslate_gallium_ore_block": "Deepslate Gallium Ore",
   "block.eternalores.deepslate_peridot_ore_block": "Deepslate Peridot Ore",
   "block.eternalores.deepslate_iridium_ore_block": "Deepslate Iridium Ore",
+  "block.eternalores.deepslate_uraninite_ore_block": "Deepslate Uraninite Ore",
 
   "block.eternalores.obsidian_ore_block": "Obsidian Ore",
 
@@ -307,6 +313,7 @@
   "block.eternalores.raw_zinc_block": "Block of Raw Zinc",
   "block.eternalores.raw_gallium_block": "Block of Raw Gallium",
   "block.eternalores.raw_iridium_block": "Block of Raw Iridium",
+  "block.eternalores.raw_uraninite_block": "Block of Raw Uraninite",
 
   "block.eternalores.aluminum_block": "Aluminum Block",
   "block.eternalores.cobalt_block": "Cobalt Block",
@@ -347,6 +354,7 @@
   "block.eternalores.britannia_silver_block": "Britannia Silver Block",
   "block.eternalores.iridium_block": "Iridium Block",
   "block.eternalores.cast_iron_block": "Cast Iron Block",
+  "block.eternalores.uraninite_block": "Uraninite Block",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }
