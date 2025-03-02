@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:nethersteel_ingot"
+    },
+    {
+      "tag": "eternalores:tools/hammers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:nethersteel_dust"
+  }
+}

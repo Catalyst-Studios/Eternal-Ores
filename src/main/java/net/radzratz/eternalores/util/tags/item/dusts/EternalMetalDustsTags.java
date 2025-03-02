@@ -48,6 +48,8 @@ public class EternalMetalDustsTags {
         public static final TagKey<Item> DUST_LUMIUM = createMetalDustTag("dusts/lumium");
         //Netherite
         public static final TagKey<Item> DUST_NETHERITE = createMetalDustTag("dusts/netherite");
+        //Nethersteel
+        public static final TagKey<Item> DUST_NETHERSTEEL = createMetalDustTag("dusts/nethersteel");
         //Nickel
         public static final TagKey<Item> DUST_NICKEL = createMetalDustTag("dusts/nickel");
         //Osmium

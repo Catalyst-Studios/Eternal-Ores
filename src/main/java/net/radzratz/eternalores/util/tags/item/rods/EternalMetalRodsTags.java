@@ -46,6 +46,8 @@ public class EternalMetalRodsTags {
         public static final TagKey<Item> ROD_LUMIUM = createMetalRodTag("rods/lumium");
         //Netherite
         public static final TagKey<Item> ROD_NETHERITE = createMetalRodTag("rods/netherite");
+        //Nethersteel
+        public static final TagKey<Item> ROD_NETHERSTEEL = createMetalRodTag("rods/nethersteel");
         //Nickel
         public static final TagKey<Item> ROD_NICKEL = createMetalRodTag("rods/nickel");
         //Osmium

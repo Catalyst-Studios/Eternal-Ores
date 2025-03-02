@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-27T12:16:16.8765835	Block States: eternalores
+// 1.21.1	2025-03-02T01:48:20.4275867	Block States: eternalores
 b6b9c6647989b7f9e5a630a3b54ebeeb48d5e923 assets/eternalores/blockstates/aluminum_block.json
 53b119ec7b481084821223847767537173db8789 assets/eternalores/blockstates/aluminum_ore_block.json
 c0182d0bd8baae3e50001c8cb01182f701b062ab assets/eternalores/blockstates/amber_block.json
@@ -53,6 +53,7 @@ f20259c8cfe73bcd1ccf905d8d78b3fcd21765a9 assets/eternalores/blockstates/iridium_
 4deeefdd25154a3c6041d56873702ef4d76a976e assets/eternalores/blockstates/lead_block.json
 4baec08611009b5859c5923c5eec84c4cbea483d assets/eternalores/blockstates/lead_ore_block.json
 7d8c5eed89ba0c59d4b76adc0d58303269d5bd9d assets/eternalores/blockstates/lumium_block.json
+f821999bf038c17fc2b3a167a058364644f93eb1 assets/eternalores/blockstates/nethersteel_block.json
 4084149549de0c85678e442cd389aa066d0e5ca6 assets/eternalores/blockstates/nickel_block.json
 a34375547285bd6813512a2114a62382edf2ddc9 assets/eternalores/blockstates/nickel_ore_block.json
 4dc6c287b89979c6469a3ece8957081a53a077bf assets/eternalores/blockstates/niter_block.json
@@ -159,6 +160,7 @@ d197f840113932603693663df061361b2203a4e4 assets/eternalores/models/block/gallium
 e3a035fd6d0f46e5ee42a9a24531595e8c229b7e assets/eternalores/models/block/lead_block.json
 f23686946ded342460b69eaed9bbca56ae3a275b assets/eternalores/models/block/lead_ore_block.json
 939fd464bf436209252960518f7b8c201058c7be assets/eternalores/models/block/lumium_block.json
+1c2bc0dc6ec0f375c24207f81d7104b2b57b563c assets/eternalores/models/block/nethersteel_block.json
 d57e6ba5e68c2c0e9d29b1ebe76c3e01430954eb assets/eternalores/models/block/nickel_block.json
 7e31240bd26c02dc918343ea735b25a4d74ee5e1 assets/eternalores/models/block/nickel_ore_block.json
 df0e3a22d807db492f06cab773720d05665ca52a assets/eternalores/models/block/niter_block.json
@@ -265,6 +267,7 @@ e99fad0507f879087faddf597b7fd95a4f9c6520 assets/eternalores/models/item/iridium_
 be860dd4c003d240adfdc27cba63967551ee7847 assets/eternalores/models/item/lead_block.json
 dadbcca1184029a4b47edc2677b9d499224100f9 assets/eternalores/models/item/lead_ore_block.json
 59fbb671857269b3ba2823986a5c39a122457bf6 assets/eternalores/models/item/lumium_block.json
+437e30de819e7aaa1de2817b6cfe180d61f6b940 assets/eternalores/models/item/nethersteel_block.json
 a9f7a50161f31fb45ef0b6ce0953ee8c31dd0d46 assets/eternalores/models/item/nickel_block.json
 d63baeeea10dc31e45bd1d208d832b349306acc0 assets/eternalores/models/item/nickel_ore_block.json
 dd3bbd80e04fc7e69655ff3dc198d483e20493af assets/eternalores/models/item/niter_block.json

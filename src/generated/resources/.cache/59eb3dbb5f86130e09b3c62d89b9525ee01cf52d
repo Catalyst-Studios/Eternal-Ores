@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-27T12:16:16.8845852	Loot Tables
+// 1.21.1	2025-03-02T01:48:20.433587	Loot Tables
 7c29615ef61bc39400d3ae8fac7e6ce7a52c3073 data/eternalores/loot_table/blocks/aluminum_block.json
 2d5bc4fb8e87061d36390888ab1e41cd21cb37c8 data/eternalores/loot_table/blocks/aluminum_ore_block.json
 351caea42c6ba11c95dedb2047634525696cb814 data/eternalores/loot_table/blocks/amber_block.json
@@ -53,6 +53,7 @@ dd81bcf1227160410b4246f3a8ec69e6518fe0cf data/eternalores/loot_table/blocks/gall
 a83399b3c189fdc61c4c2b69bc8f2c4dd28ba226 data/eternalores/loot_table/blocks/lead_block.json
 897d1a80666b31e6dc782f6cad611548567bc5bf data/eternalores/loot_table/blocks/lead_ore_block.json
 7f5b471825fb3c23b680db2257e2a66495180cff data/eternalores/loot_table/blocks/lumium_block.json
+50f00a16c85a463d8009c9bfc306c59eff15e086 data/eternalores/loot_table/blocks/nethersteel_block.json
 58486f76b6fe7d7899c066c3b0fedb532cbfe1a1 data/eternalores/loot_table/blocks/nickel_block.json
 887ca45bdfa4ee74f99e27e418f0f372d87430bc data/eternalores/loot_table/blocks/nickel_ore_block.json
 1bb2b03e8be5559a5655b2f9d2b12b208b61d862 data/eternalores/loot_table/blocks/niter_block.json

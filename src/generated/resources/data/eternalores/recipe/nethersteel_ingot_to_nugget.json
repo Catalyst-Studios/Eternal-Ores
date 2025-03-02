@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:nethersteel_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:nethersteel_nugget"
+  }
+}

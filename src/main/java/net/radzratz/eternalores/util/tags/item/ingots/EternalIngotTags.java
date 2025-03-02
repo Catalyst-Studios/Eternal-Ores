@@ -47,6 +47,8 @@ public class EternalIngotTags {
         public static final TagKey<Item> LEAD_INGOT = createIngotTags("ingots/lead");
         //Lumium
         public static final TagKey<Item> LUMIUM_INGOT = createIngotTags("ingots/lumium");
+        //Nethersteel
+        public static final TagKey<Item> NETHERSTEEL_INGOT = createIngotTags("ingots/nethersteel");
         //Nickel
         public static final TagKey<Item> NICKEL_INGOT = createIngotTags("ingots/nickel");
         //Osmium

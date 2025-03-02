@@ -51,6 +51,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.URANINITE_BLOCK);
         blockWithItem(EternalGeneralBlocks.CAST_STEEL_BLOCK);
         blockWithItem(EternalGeneralBlocks.WROUGHT_IRON_BLOCK);
+        blockWithItem(EternalGeneralBlocks.NETHERSTEEL_BLOCK);
 
         //GEM BLOCKS
         blockWithItem(EternalGeneralBlocks.SAPPHIRE_BLOCK);

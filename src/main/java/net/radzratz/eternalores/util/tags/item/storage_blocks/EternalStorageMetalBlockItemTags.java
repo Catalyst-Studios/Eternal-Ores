@@ -44,6 +44,8 @@ public class EternalStorageMetalBlockItemTags {
         public static final TagKey<Item> LUMIUM_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/lumium");
         //Nickel
         public static final TagKey<Item> NICKEL_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/nickel");
+        //Nethersteel
+        public static final TagKey<Item> NETHERSTEEL_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/nethersteel");
         //Osmium
         public static final TagKey<Item> OSMIUM_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/osmium");
         //Pewter

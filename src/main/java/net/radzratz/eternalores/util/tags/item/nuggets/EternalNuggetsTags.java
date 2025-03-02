@@ -46,6 +46,8 @@ public class EternalNuggetsTags {
         public static final TagKey<Item> NUGGET_LUMIUM = createNuggetsTags("nuggets/lumium");
         //Netherite
         public static final TagKey<Item> NUGGET_NETHERITE = createNuggetsTags("nuggets/netherite");
+        //Nethersteel
+        public static final TagKey<Item> NUGGET_NETHERSTEEL = createNuggetsTags("nuggets/nethersteel");
         //Nickel
         public static final TagKey<Item> NUGGET_NICKEL = createNuggetsTags("nuggets/nickel");
         //Osmium

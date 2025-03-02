@@ -24,7 +24,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
             "britannia", "bronze", "constantan", "electrum", "coal", "ender", "endstone", "netherrack",
             "invar", "lapis", "cinnabar", "lumium", "niter", "obsidian", "peridot", "pewter", "plutonium",
             "quartz", "rose_gold", "ruby", "sapphire", "signalum", "steel", "titanium", "enderium",
-            "cast_iron", "cast_steel", "wrought_iron"
+            "cast_iron", "cast_steel", "wrought_iron", "nethersteel"
     );
 
     public EternalRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -67,6 +67,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateHammerRecipes(recipeOutput, "iridium_ingot", EternalGeneralItems.IRIDIUM_INGOT.get(), EternalGeneralItems.IRIDIUM_DUST.get());
         generateHammerRecipes(recipeOutput, "lead_ingot", EternalGeneralItems.LEAD_INGOT.get(), EternalGeneralItems.LEAD_DUST.get());
         generateHammerRecipes(recipeOutput, "lumium_ingot", EternalGeneralItems.LUMIUM_INGOT.get(), EternalGeneralItems.LUMIUM_DUST.get());
+        generateHammerRecipes(recipeOutput, "nethersteel_ingot", EternalGeneralItems.NETHERSTEEL_INGOT.get(), EternalGeneralItems.NETHERSTEEL_DUST.get());
         generateHammerRecipes(recipeOutput, "nickel_ingot", EternalGeneralItems.NICKEL_INGOT.get(), EternalGeneralItems.NICKEL_DUST.get());
         generateHammerRecipes(recipeOutput, "osmium_ingot", EternalGeneralItems.OSMIUM_INGOT.get(), EternalGeneralItems.OSMIUM_DUST.get());
         generateHammerRecipes(recipeOutput, "pewter_ingot", EternalGeneralItems.PEWTER_INGOT.get(), EternalGeneralItems.PEWTER_DUST.get());
@@ -130,6 +131,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotPlateRecipe(recipeOutput, "iridium", EternalGeneralItems.PLATE_IRIDIUM.get());
         generateIngotPlateRecipe(recipeOutput, "lead", EternalGeneralItems.PLATE_LEAD.get());
         generateIngotPlateRecipe(recipeOutput, "lumium", EternalGeneralItems.PLATE_LUMIUM.get());
+        generateIngotPlateRecipe(recipeOutput, "nethersteel", EternalGeneralItems.PLATE_NETHERSTEEL.get());
         generateIngotPlateRecipe(recipeOutput, "nickel", EternalGeneralItems.PLATE_NICKEL.get());
         generateIngotPlateRecipe(recipeOutput, "osmium", EternalGeneralItems.PLATE_OSMIUM.get());
         generateIngotPlateRecipe(recipeOutput, "platinum", EternalGeneralItems.PLATE_PLATINUM.get());
@@ -174,6 +176,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotRodsRecipe(recipeOutput, "iridium", EternalGeneralItems.ROD_IRIDIUM.get());
         generateIngotRodsRecipe(recipeOutput, "lead", EternalGeneralItems.ROD_LEAD.get());
         generateIngotRodsRecipe(recipeOutput, "lumium", EternalGeneralItems.ROD_LUMIUM.get());
+        generateIngotRodsRecipe(recipeOutput, "nethersteel", EternalGeneralItems.ROD_NETHERSTEEL.get());
         generateIngotRodsRecipe(recipeOutput, "nickel", EternalGeneralItems.ROD_NICKEL.get());
         generateIngotRodsRecipe(recipeOutput, "osmium", EternalGeneralItems.ROD_OSMIUM.get());
         generateIngotRodsRecipe(recipeOutput, "platinum", EternalGeneralItems.ROD_PLATINUM.get());
@@ -212,6 +215,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToIngotMaterialRecipe(recipeOutput, "iridium", EternalGeneralBlocks.IRIDIUM_BLOCK.asItem(), EternalGeneralItems.IRIDIUM_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "lead", EternalGeneralBlocks.LEAD_BLOCK.asItem(), EternalGeneralItems.LEAD_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "lumium", EternalGeneralBlocks.LUMIUM_BLOCK.asItem(), EternalGeneralItems.LUMIUM_INGOT.get());
+        generateBlockToIngotMaterialRecipe(recipeOutput, "nethersteel", EternalGeneralBlocks.NETHERSTEEL_BLOCK.asItem(), EternalGeneralItems.NETHERSTEEL_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "nickel", EternalGeneralBlocks.NICKEL_BLOCK.asItem(), EternalGeneralItems.NICKEL_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "osmium", EternalGeneralBlocks.OSMIUM_BLOCK.asItem(), EternalGeneralItems.OSMIUM_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "pewter", EternalGeneralBlocks.PEWTER_BLOCK.asItem(), EternalGeneralItems.PEWTER_INGOT.get());
@@ -298,6 +302,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToBlockRecipe(recipeOutput, "iridium", EternalGeneralItems.IRIDIUM_INGOT.get(), EternalGeneralBlocks.IRIDIUM_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "lead", EternalGeneralItems.LEAD_INGOT.get(), EternalGeneralBlocks.LEAD_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "lumium", EternalGeneralItems.LUMIUM_INGOT.get(), EternalGeneralBlocks.LUMIUM_BLOCK.asItem());
+        generateIngotToBlockRecipe(recipeOutput, "nethersteel", EternalGeneralItems.NETHERSTEEL_INGOT.get(), EternalGeneralBlocks.NETHERSTEEL_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "nickel", EternalGeneralItems.NICKEL_INGOT.get(), EternalGeneralBlocks.NICKEL_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_INGOT.get(), EternalGeneralBlocks.OSMIUM_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "pewter", EternalGeneralItems.PEWTER_INGOT.get(), EternalGeneralBlocks.PEWTER_BLOCK.asItem());
@@ -350,6 +355,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToNuggetRecipe(recipeOutput, "iridium", EternalGeneralItems.IRIDIUM_INGOT.get(), EternalGeneralItems.IRIDIUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "lead", EternalGeneralItems.LEAD_INGOT.get(), EternalGeneralItems.LEAD_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "lumium", EternalGeneralItems.LUMIUM_INGOT.get(), EternalGeneralItems.LUMIUM_NUGGET.get());
+        generateIngotToNuggetRecipe(recipeOutput, "nethersteel", EternalGeneralItems.NETHERSTEEL_INGOT.get(), EternalGeneralItems.NETHERSTEEL_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "nickel", EternalGeneralItems.NICKEL_INGOT.get(), EternalGeneralItems.NICKEL_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_INGOT.get(), EternalGeneralItems.OSMIUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "pewter", EternalGeneralItems.PEWTER_INGOT.get(), EternalGeneralItems.PEWTER_NUGGET.get());
@@ -392,6 +398,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateNuggetToIngotRecipe(recipeOutput, "iridium", EternalGeneralItems.IRIDIUM_NUGGET.get(), EternalGeneralItems.IRIDIUM_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "lead", EternalGeneralItems.LEAD_NUGGET.get(), EternalGeneralItems.LEAD_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "lumium", EternalGeneralItems.LUMIUM_NUGGET.get(), EternalGeneralItems.LUMIUM_INGOT.get());
+        generateNuggetToIngotRecipe(recipeOutput, "nethersteel", EternalGeneralItems.NETHERSTEEL_NUGGET.get(), EternalGeneralItems.NETHERSTEEL_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "nickel", EternalGeneralItems.NICKEL_NUGGET.get(), EternalGeneralItems.NICKEL_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_NUGGET.get(), EternalGeneralItems.OSMIUM_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "pewter", EternalGeneralItems.PEWTER_NUGGET.get(), EternalGeneralItems.PEWTER_INGOT.get());
@@ -437,6 +444,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRodPlateToDustRecipe(recipeOutput, "iridium", EternalGeneralItems.ROD_IRIDIUM.get(), EternalGeneralItems.PLATE_IRIDIUM.get(), EternalGeneralItems.IRIDIUM_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "lead", EternalGeneralItems.PLATE_LEAD.get(), EternalGeneralItems.ROD_LEAD.get(), EternalGeneralItems.LEAD_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "lumium", EternalGeneralItems.PLATE_LUMIUM.get(), EternalGeneralItems.ROD_LUMIUM.get(), EternalGeneralItems.LUMIUM_DUST.get());
+        generateRodPlateToDustRecipe(recipeOutput, "nethersteel", EternalGeneralItems.PLATE_NETHERSTEEL.get(), EternalGeneralItems.ROD_NETHERSTEEL.get(), EternalGeneralItems.NETHERSTEEL_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "nickel", EternalGeneralItems.PLATE_NICKEL.get(), EternalGeneralItems.ROD_NICKEL.get(), EternalGeneralItems.NICKEL_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "osmium", EternalGeneralItems.PLATE_OSMIUM.get(), EternalGeneralItems.ROD_OSMIUM.get(), EternalGeneralItems.OSMIUM_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "platinum", EternalGeneralItems.PLATE_PLATINUM.get(), EternalGeneralItems.ROD_PLATINUM.get(), EternalGeneralItems.PLATINUM_DUST.get());
@@ -520,6 +528,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialFurnace(recipeOutput, "iridium", EternalGeneralItems.IRIDIUM_DUST.get(), EternalGeneralItems.IRIDIUM_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "lead", EternalGeneralItems.LEAD_DUST.get(), EternalGeneralItems.LEAD_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "lumium", EternalGeneralItems.LUMIUM_DUST.get(), EternalGeneralItems.LUMIUM_INGOT.get());
+        generateDustToMaterialFurnace(recipeOutput, "nethersteel", EternalGeneralItems.NETHERSTEEL_DUST.get(), EternalGeneralItems.NETHERSTEEL_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "nickel", EternalGeneralItems.NICKEL_DUST.get(), EternalGeneralItems.NICKEL_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_DUST.get(), EternalGeneralItems.OSMIUM_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "pewter", EternalGeneralItems.PEWTER_DUST.get(), EternalGeneralItems.PEWTER_INGOT.get());
@@ -574,6 +583,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialBlasting(recipeOutput, "iridium", EternalGeneralItems.IRIDIUM_DUST.get(), EternalGeneralItems.IRIDIUM_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "lead", EternalGeneralItems.LEAD_DUST.get(), EternalGeneralItems.LEAD_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "lumium", EternalGeneralItems.LUMIUM_DUST.get(), EternalGeneralItems.LUMIUM_INGOT.get());
+        generateDustToMaterialBlasting(recipeOutput, "nethersteel", EternalGeneralItems.NETHERSTEEL_DUST.get(), EternalGeneralItems.NETHERSTEEL_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "nickel", EternalGeneralItems.NICKEL_DUST.get(), EternalGeneralItems.NICKEL_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_DUST.get(), EternalGeneralItems.OSMIUM_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "pewter", EternalGeneralItems.PEWTER_DUST.get(), EternalGeneralItems.PEWTER_INGOT.get());

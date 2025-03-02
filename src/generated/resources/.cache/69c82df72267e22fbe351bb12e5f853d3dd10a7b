@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-27T12:16:16.9035896	Item Models: eternalores
+// 1.21.1	2025-03-02T01:06:43.4273973	Item Models: eternalores
 9e05334480af20ceab69aef0763cd4b91d3bbcf2 assets/eternalores/models/item/aluminum_dust.json
 4b7887baa0ed619598cb92d338659f9a6f47c089 assets/eternalores/models/item/aluminum_ingot.json
 65a0f5c74fe48204c9487943f882e7c21a3c1cc1 assets/eternalores/models/item/aluminum_nugget.json
@@ -96,6 +96,9 @@ fe543fbcd3ee88c7295525179d4599d8fa688300 assets/eternalores/models/item/lumium_i
 f7914f41ac2cc94b4ac93f0d673fc073b5ac40f7 assets/eternalores/models/item/netherite_dust.json
 664736e9cb2429d9478b8bd859a35f14192f8551 assets/eternalores/models/item/netherite_nugget.json
 bd6f45e27ff56db9c85cbc0ab5fb50d40e52df85 assets/eternalores/models/item/netherrack_dust.json
+7778e12d859d9c142ff302619ae34df1a03a9bfd assets/eternalores/models/item/nethersteel_dust.json
+f23f803e4660ea39ceebd56ab7a4eeaf30696ecf assets/eternalores/models/item/nethersteel_ingot.json
+fe45da414601dee378201575b101f268a7af16aa assets/eternalores/models/item/nethersteel_nugget.json
 c24cd40ea152286064b9ecff5626f179fd74488c assets/eternalores/models/item/nickel_dust.json
 7c2a29f2d5ca10d486de10f0cd9c7a6d4135cff0 assets/eternalores/models/item/nickel_ingot.json
 f77fe092eaed31e567f6e413580785bd893cf771 assets/eternalores/models/item/nickel_nugget.json
@@ -130,6 +133,7 @@ bd0d2f488e896dedf0f4fadb924a34b41db7cf3d assets/eternalores/models/item/plate_go
 acae9be3e81bd33e0d3d483e4c10b65d30365d6a assets/eternalores/models/item/plate_lead.json
 8088c0d763f2d30aa3f36a9681348670b2d061d1 assets/eternalores/models/item/plate_lumium.json
 f907ec1ff04be01b947ca3387d3f291823441b14 assets/eternalores/models/item/plate_netherite.json
+0205b51612e0b9c383da0ab207162c8b58e4043b assets/eternalores/models/item/plate_nethersteel.json
 c95e5fa2cc4c155c7c1739e8956c74a9bd5aba45 assets/eternalores/models/item/plate_nickel.json
 d2b5b44790459d8786b9a3fbefc2f8b4a1ee6f0d assets/eternalores/models/item/plate_osmium.json
 cc65e49021ee32ba44a83d50cff645001175b204 assets/eternalores/models/item/plate_platinum.json
@@ -189,6 +193,7 @@ bed58bc7e160cabe0bf52041997aca3c5f4f2cc8 assets/eternalores/models/item/rod_irid
 1ed85ff85cf825154555d8f614d6ee9e15ddf6d5 assets/eternalores/models/item/rod_lead.json
 c71d8b32e069a6c1cb33bcc24b472c8e790b67f6 assets/eternalores/models/item/rod_lumium.json
 57409a381109d91fc4645550b9a01f2e36d96508 assets/eternalores/models/item/rod_netherite.json
+d8e19f05fdd8907d6eab8230e0033ec64b1fce1e assets/eternalores/models/item/rod_nethersteel.json
 a5f854a9d3d95bd4d1a2fe1dd6d7c1ffb97f3c1a assets/eternalores/models/item/rod_nickel.json
 2c717d56b9c71129146a4e331e93c0b7c96c58f0 assets/eternalores/models/item/rod_osmium.json
 c6078e20f891acce42112ddf15a6427a92b148e8 assets/eternalores/models/item/rod_platinum.json

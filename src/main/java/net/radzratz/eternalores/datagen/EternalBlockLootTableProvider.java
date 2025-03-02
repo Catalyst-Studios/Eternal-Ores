@@ -64,6 +64,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.URANINITE_BLOCK.get());
         dropSelf(EternalGeneralBlocks.CAST_STEEL_BLOCK.get());
         dropSelf(EternalGeneralBlocks.WROUGHT_IRON_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.NETHERSTEEL_BLOCK.get());
 
         //GEM BLOCKS
         dropSelf(EternalGeneralBlocks.SAPPHIRE_BLOCK.get());
