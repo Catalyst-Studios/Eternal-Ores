@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-02T01:06:43.4273973	Item Models: eternalores
+// 1.21.1	2025-03-04T00:50:12.5611687	Item Models: eternalores
 9e05334480af20ceab69aef0763cd4b91d3bbcf2 assets/eternalores/models/item/aluminum_dust.json
 4b7887baa0ed619598cb92d338659f9a6f47c089 assets/eternalores/models/item/aluminum_ingot.json
 65a0f5c74fe48204c9487943f882e7c21a3c1cc1 assets/eternalores/models/item/aluminum_nugget.json
@@ -140,6 +140,7 @@ cc65e49021ee32ba44a83d50cff645001175b204 assets/eternalores/models/item/plate_pl
 a10fabce56bb0aefb9891b44a9e784106e3b30f3 assets/eternalores/models/item/plate_plutonium.json
 6cbca9986900880c233e1047f9f64579fdf0af47 assets/eternalores/models/item/plate_rose_gold.json
 d52ada7b44b19bc94d82b1486e4f2ff46bb50960 assets/eternalores/models/item/plate_sapphire.json
+fb837376f88841d8569bc69d5ae3dc2f1c4b5ced assets/eternalores/models/item/plate_shadowsteel.json
 4593cd1286ffec62254026bc1aa264d51a1e93af assets/eternalores/models/item/plate_signalum.json
 4c338a7d60598728202fd80b0a901fc5087f1c7a assets/eternalores/models/item/plate_silver.json
 c49b3c845ae06267770c7d9ed59a7de2c4c7268d assets/eternalores/models/item/plate_steel.json
@@ -200,6 +201,7 @@ c6078e20f891acce42112ddf15a6427a92b148e8 assets/eternalores/models/item/rod_plat
 089555d03aeb2e4402bfce4387ef55a89bd9d8cb assets/eternalores/models/item/rod_plutonium.json
 f924b45efdddb1b4b3a11d055ff3dc537e8305a1 assets/eternalores/models/item/rod_rose_gold.json
 f9b17213f6f45529b3486eca362ec15a55a8cf74 assets/eternalores/models/item/rod_sapphire.json
+623947d2a973d2864215e5cdd44f6d697ac55efb assets/eternalores/models/item/rod_shadowsteel.json
 72849e009d7050381c11d60692a2cc8fa0593a4b assets/eternalores/models/item/rod_signalum.json
 331c50368bf4ae3f74ce3b5cbcb933542b709cc4 assets/eternalores/models/item/rod_silver.json
 c635b1a2a634a749085cbac96ca73a92f14c7745 assets/eternalores/models/item/rod_steel.json
@@ -214,6 +216,9 @@ adc9e0d03137161b24c10c0c65f71bbfd80d8829 assets/eternalores/models/item/rose_gol
 4fd26e13d02eafa56be9d9b28c14d96f6ed4187e assets/eternalores/models/item/rose_gold_nugget.json
 1e317bbf21d556fb212ea8add7bd651fce8b3b15 assets/eternalores/models/item/ruby_dust.json
 9514f48ab8c1632c2018530a8ff459e4956098f2 assets/eternalores/models/item/sapphire_dust.json
+1c7e2eca7876a471f5af9c1ba865b7b67fd0c7a6 assets/eternalores/models/item/shadowsteel_dust.json
+7567a840e3f49fabf919d3784140326f501dacc5 assets/eternalores/models/item/shadowsteel_ingot.json
+1e692749845b0dcbab373e86ad7c66b9a658d6e3 assets/eternalores/models/item/shadowsteel_nugget.json
 f06a20f7b2e63aba28a0444c94dcd6b742631ec1 assets/eternalores/models/item/signalum_dust.json
 303311928400c83b3205d77e1214d773c16d9bb5 assets/eternalores/models/item/signalum_ingot.json
 3f1d0adb8c0b8f7b74e6223f9f695568e7e5394a assets/eternalores/models/item/signalum_nugget.json

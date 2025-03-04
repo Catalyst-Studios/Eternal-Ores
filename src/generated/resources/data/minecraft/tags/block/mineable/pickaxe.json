@@ -75,6 +75,7 @@
     "eternalores:rose_gold_block",
     "eternalores:silver_block",
     "eternalores:signalum_block",
+    "eternalores:shadowsteel_block",
     "eternalores:steel_block",
     "eternalores:tin_block",
     "eternalores:titanium_block",
@@ -106,6 +107,15 @@
     "eternalores:raw_uraninite_block",
     "eternalores:raw_uranium_block",
     "eternalores:raw_zinc_block",
-    "eternalores:raw_gallium_block"
+    "eternalores:raw_gallium_block",
+    "eternalores:compressed_cobble_1x",
+    "eternalores:compressed_cobble_2x",
+    "eternalores:compressed_cobble_3x",
+    "eternalores:compressed_cobble_4x",
+    "eternalores:compressed_cobble_5x",
+    "eternalores:compressed_cobble_6x",
+    "eternalores:compressed_cobble_7x",
+    "eternalores:compressed_cobble_8x",
+    "eternalores:compressed_cobble_9x"
   ]
 }

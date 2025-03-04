@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:compressed_cobble_1x"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:cobblestone"
+  }
+}

@@ -3,7 +3,7 @@ English Section
 About
 =======
 
-The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, and ore blocks!
+The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, ore blocks and some compressed blocks!
 
 Based on FTB Materials, AllTheOres, and Emendatus Enigmatica, Eternal Ores is compatible with these mods, using the correct tags 
 for proper integration while adding new materials and ores for Catalyst Studios Modpacks. It also adds ore 

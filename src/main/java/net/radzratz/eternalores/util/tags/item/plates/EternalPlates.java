@@ -79,6 +79,8 @@ public class EternalPlates {
         public static final TagKey<Item> SIGNALUM_PLATE = createPlateTag("plates/signalum");
         //Silver
         public static final TagKey<Item> SILVER_PLATE = createPlateTag("plates/silver");
+        //Shadowsteel
+        public static final TagKey<Item> SHADOWSTEEL_PLATE = createPlateTag("plates/shadowsteel");
         //Steel
         public static final TagKey<Item> STEEL_PLATE = createPlateTag("plates/steel");
         //Tin

@@ -163,6 +163,7 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> CAST_STEEL_BLOCK = registerMetalBlock("cast_steel_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> WROUGHT_IRON_BLOCK = registerMetalBlock("wrought_iron_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> NETHERSTEEL_BLOCK = registerMetalBlock("nethersteel_block", 4f, SoundType.NETHERITE_BLOCK);
+    public static final DeferredBlock<Block> SHADOWSTEEL_BLOCK = registerMetalBlock("shadowsteel_block", 4f, SoundType.NETHERITE_BLOCK);
 
     //Gem Blocks
     private static DeferredBlock<Block> registerGemBlock(String name, float hardness, SoundType sound) {
@@ -180,6 +181,24 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> NITER_BLOCK = registerGemBlock("niter_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> RUBY_BLOCK = registerGemBlock("ruby_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> PERIDOT_BLOCK = registerGemBlock("peridot_block", 3f, SoundType.METAL);
+
+    //Compressed Blocks
+    private static DeferredBlock<Block> registerCompressedBlockItem(String name, float hardness, SoundType sound) {
+        return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
+                .strength(hardness)
+                .requiresCorrectToolForDrops()
+                .sound(sound)));
+    }
+    ///Cobblestone
+    public static final DeferredBlock<Block> COBBLE_1 = registerCompressedBlockItem("compressed_cobble_1x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> COBBLE_2 = registerCompressedBlockItem("compressed_cobble_2x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> COBBLE_3 = registerCompressedBlockItem("compressed_cobble_3x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> COBBLE_4 = registerCompressedBlockItem("compressed_cobble_4x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> COBBLE_5 = registerCompressedBlockItem("compressed_cobble_5x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> COBBLE_6 = registerCompressedBlockItem("compressed_cobble_6x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> COBBLE_7 = registerCompressedBlockItem("compressed_cobble_7x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> COBBLE_8 = registerCompressedBlockItem("compressed_cobble_8x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> COBBLE_9 = registerCompressedBlockItem("compressed_cobble_9x", 2f, SoundType.STONE);
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

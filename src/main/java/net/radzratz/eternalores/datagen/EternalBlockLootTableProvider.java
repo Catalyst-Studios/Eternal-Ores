@@ -65,6 +65,18 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.CAST_STEEL_BLOCK.get());
         dropSelf(EternalGeneralBlocks.WROUGHT_IRON_BLOCK.get());
         dropSelf(EternalGeneralBlocks.NETHERSTEEL_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.SHADOWSTEEL_BLOCK.get());
+
+        //COMPRESSED BLOCKS
+        dropSelf(EternalGeneralBlocks.COBBLE_1.get());
+        dropSelf(EternalGeneralBlocks.COBBLE_2.get());
+        dropSelf(EternalGeneralBlocks.COBBLE_3.get());
+        dropSelf(EternalGeneralBlocks.COBBLE_4.get());
+        dropSelf(EternalGeneralBlocks.COBBLE_5.get());
+        dropSelf(EternalGeneralBlocks.COBBLE_6.get());
+        dropSelf(EternalGeneralBlocks.COBBLE_7.get());
+        dropSelf(EternalGeneralBlocks.COBBLE_8.get());
+        dropSelf(EternalGeneralBlocks.COBBLE_9.get());
 
         //GEM BLOCKS
         dropSelf(EternalGeneralBlocks.SAPPHIRE_BLOCK.get());

@@ -8,6 +8,7 @@ import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
+import net.radzratz.eternalores.util.tags.EternalCompressedBlockTags;
 import net.radzratz.eternalores.util.tags.block.EternalGeneralBlockTags;
 import net.radzratz.eternalores.util.tags.block.ores.EternalOreBlockTags;
 import net.radzratz.eternalores.util.tags.block.storage_blocks.EternalStorageGemBlockTags;
@@ -53,6 +54,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalStorageMetalBlockTags.Blocks.ROSE_GOLD_BLOCK_ST).add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.SIGNALUM_BLOCK_ST).add(EternalGeneralBlocks.SIGNALUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.SILVER_BLOCK_ST).add(EternalGeneralBlocks.SILVER_BLOCK.get());
+            tag(EternalStorageMetalBlockTags.Blocks.SHADOWSTEEL_BLOCK_ST).add(EternalGeneralBlocks.SHADOWSTEEL_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.STEEL_BLOCK_ST).add(EternalGeneralBlocks.STEEL_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.TIN_BLOCK_ST).add(EternalGeneralBlocks.TIN_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.TITANIUM_BLOCK_ST).add(EternalGeneralBlocks.TITANIUM_BLOCK.get());
@@ -125,6 +127,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get())
                     .add(EternalGeneralBlocks.SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.SIGNALUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.SHADOWSTEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.TIN_BLOCK.get())
                     .add(EternalGeneralBlocks.TITANIUM_BLOCK.get())
@@ -346,6 +349,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.SAPPHIRE_BLOCK.get())
                     .add(EternalGeneralBlocks.SIGNALUM_BLOCK.get())
                     .add(EternalGeneralBlocks.SILVER_BLOCK.get())
+                    .add(EternalGeneralBlocks.SHADOWSTEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.SULFUR_BLOCK.get())
                     .add(EternalGeneralBlocks.TIN_BLOCK.get())
@@ -368,7 +372,18 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RAW_TIN_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_URANINITE_BLOCK.get())
-                    .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get());
+                    .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get())
+
+                    //COMPRESSED BLOCKS
+                    .add(EternalGeneralBlocks.COBBLE_1.get())
+                    .add(EternalGeneralBlocks.COBBLE_2.get())
+                    .add(EternalGeneralBlocks.COBBLE_3.get())
+                    .add(EternalGeneralBlocks.COBBLE_4.get())
+                    .add(EternalGeneralBlocks.COBBLE_5.get())
+                    .add(EternalGeneralBlocks.COBBLE_6.get())
+                    .add(EternalGeneralBlocks.COBBLE_7.get())
+                    .add(EternalGeneralBlocks.COBBLE_8.get())
+                    .add(EternalGeneralBlocks.COBBLE_9.get());
 
             //PICKAXE TAGS
             tag(BlockTags.MINEABLE_WITH_PICKAXE)
@@ -450,6 +465,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get())
                     .add(EternalGeneralBlocks.SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.SIGNALUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.SHADOWSTEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.TIN_BLOCK.get())
                     .add(EternalGeneralBlocks.TITANIUM_BLOCK.get())
@@ -485,7 +501,18 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RAW_URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_URANIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get())
-                    .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get());
+                    .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get())
+
+                    //COMPRESSED BLOCKS
+                    .add(EternalGeneralBlocks.COBBLE_1.get())
+                    .add(EternalGeneralBlocks.COBBLE_2.get())
+                    .add(EternalGeneralBlocks.COBBLE_3.get())
+                    .add(EternalGeneralBlocks.COBBLE_4.get())
+                    .add(EternalGeneralBlocks.COBBLE_5.get())
+                    .add(EternalGeneralBlocks.COBBLE_6.get())
+                    .add(EternalGeneralBlocks.COBBLE_7.get())
+                    .add(EternalGeneralBlocks.COBBLE_8.get())
+                    .add(EternalGeneralBlocks.COBBLE_9.get());
 
             tag(BlockTags.NEEDS_STONE_TOOL)
                     .add(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.get())
@@ -493,7 +520,18 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.TIN_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.SULFUR_ORE_BLOCK.get())
-                    .add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get());
+                    .add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
+
+                    //COMPRESSED BLOCKS
+                    .add(EternalGeneralBlocks.COBBLE_1.get())
+                    .add(EternalGeneralBlocks.COBBLE_2.get())
+                    .add(EternalGeneralBlocks.COBBLE_3.get())
+                    .add(EternalGeneralBlocks.COBBLE_4.get())
+                    .add(EternalGeneralBlocks.COBBLE_5.get())
+                    .add(EternalGeneralBlocks.COBBLE_6.get())
+                    .add(EternalGeneralBlocks.COBBLE_7.get())
+                    .add(EternalGeneralBlocks.COBBLE_8.get())
+                    .add(EternalGeneralBlocks.COBBLE_9.get());
 
             tag(BlockTags.NEEDS_IRON_TOOL)
                     //ORE BLOCKS
@@ -607,7 +645,18 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get())
 
-                    .add(EternalGeneralBlocks.NETHERSTEEL_BLOCK.get());
+                    .add(EternalGeneralBlocks.NETHERSTEEL_BLOCK.get())
+                    .add(EternalGeneralBlocks.SHADOWSTEEL_BLOCK.get());
 
+            //Individual Compressed Tags
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_1.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_2.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_3.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_4.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_5.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_6.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_7.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_8.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_9.get());
     }
 }

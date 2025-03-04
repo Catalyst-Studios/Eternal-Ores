@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobble-4_compressed_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:compressed_cobble_4x"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:compressed/cobble-4_compressed_block_to_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cobble-4_compressed_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:compressed/cobble-4_compressed_block_to_block"
+    ]
+  }
+}

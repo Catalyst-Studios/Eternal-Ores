@@ -45,6 +45,7 @@
   "item.eternalores.cast_steel_ingot": "Cast Steel Ingot",
   "item.eternalores.wrought_iron_ingot": "Wrought Iron Ingot",
   "item.eternalores.nethersteel_ingot": "Nethersteel Ingot",
+  "item.eternalores.shadowsteel_ingot": "Shadowsteel Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -84,6 +85,7 @@
   "item.eternalores.cast_steel_nugget": "Cast Steel Nugget",
   "item.eternalores.wrought_iron_nugget": "Wrought Iron Nugget",
   "item.eternalores.nethersteel_nugget": "Nethersteel Nugget",
+  "item.eternalores.shadowsteel_nugget": "Shadowsteel Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -122,6 +124,7 @@
   "item.eternalores.rod_cast_steel": "Cast Steel Rod",
   "item.eternalores.rod_wrought_iron": "Wrought Iron Rod",
   "item.eternalores.rod_nethersteel": "Nethersteel Rod",
+  "item.eternalores.rod_shadowsteel": "Shadowsteel Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -160,6 +163,7 @@
   "item.eternalores.plate_cast_steel": "Cast Steel Plate",
   "item.eternalores.plate_wrought_iron": "Wrought Iron Plate",
   "item.eternalores.plate_nethersteel": "Nethersteel Plate",
+  "item.eternalores.plate_shadowsteel": "Shadowsteel Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -247,6 +251,7 @@
   "item.eternalores.cast_steel_dust": "Cast Steel Dust",
   "item.eternalores.wrought_iron_dust": "Wrought Iron Dust",
   "item.eternalores.nethersteel_dust": "Nethersteel Dust",
+  "item.eternalores.shadowsteel_dust": "Shadowsteel Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -373,6 +378,17 @@
   "block.eternalores.cast_steel_block": "Cast Steel Block",
   "block.eternalores.wrought_iron_block": "Wrought Iron Block",
   "block.eternalores.nethersteel_block": "Nethersteel Block",
+  "block.eternalores.shadowsteel_block": "Shadowsteel Block",
+
+  "block.eternalores.compressed_cobble_1x": "Compressed Cobblestone 1x",
+  "block.eternalores.compressed_cobble_2x": "Compressed Cobblestone 2x",
+  "block.eternalores.compressed_cobble_3x": "Compressed Cobblestone 3x",
+  "block.eternalores.compressed_cobble_4x": "Compressed Cobblestone 4x",
+  "block.eternalores.compressed_cobble_5x": "Compressed Cobblestone 5x",
+  "block.eternalores.compressed_cobble_6x": "Compressed Cobblestone 6x",
+  "block.eternalores.compressed_cobble_7x": "Compressed Cobblestone 7x",
+  "block.eternalores.compressed_cobble_8x": "Compressed Cobblestone 8x",
+  "block.eternalores.compressed_cobble_9x": "Compressed Cobblestone 9x",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }

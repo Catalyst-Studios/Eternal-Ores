@@ -56,6 +56,8 @@ public class EternalStorageMetalBlockTags {
         public static final TagKey<Block> SIGNALUM_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/signalum");
         //Silver
         public static final TagKey<Block> SILVER_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/silver");
+        //Shadowsteel
+        public static final TagKey<Block> SHADOWSTEEL_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/shadowsteel");
         //Steel
         public static final TagKey<Block> STEEL_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/steel");
         //Tin

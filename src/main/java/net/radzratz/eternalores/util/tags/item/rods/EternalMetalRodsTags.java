@@ -60,6 +60,8 @@ public class EternalMetalRodsTags {
         public static final TagKey<Item> ROD_SIGNALUM = createMetalRodTag("rods/signalum");
         //Silver
         public static final TagKey<Item> ROD_SILVER = createMetalRodTag("rods/silver");
+        //Shadowsteel
+        public static final TagKey<Item> ROD_SHADOWSTEEL = createMetalRodTag("rods/shadowsteel");
         //Steel
         public static final TagKey<Item> ROD_STEEL = createMetalRodTag("rods/steel");
         //Tin

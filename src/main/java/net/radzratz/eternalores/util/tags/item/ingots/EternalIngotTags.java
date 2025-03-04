@@ -67,6 +67,8 @@ public class EternalIngotTags {
         public static final TagKey<Item> SIGNALUM_INGOT = createIngotTags("ingots/signalum");
         //Silver
         public static final TagKey<Item> SILVER_INGOT = createIngotTags("ingots/silver");
+        //Shadowsteel
+        public static final TagKey<Item> SHADOWSTEEL_INGOT = createIngotTags("ingots/shadowsteel");
         //Steel
         public static final TagKey<Item> STEEL_INGOT = createIngotTags("ingots/steel");
         //Tin

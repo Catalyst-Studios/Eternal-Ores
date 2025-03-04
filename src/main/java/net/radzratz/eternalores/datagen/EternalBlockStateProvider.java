@@ -17,6 +17,17 @@ public class EternalBlockStateProvider extends BlockStateProvider {
 
         System.out.println("Loading Block State");
 
+        //COMPRESSED BLOCKS
+        blockWithItem(EternalGeneralBlocks.COBBLE_1);
+        blockWithItem(EternalGeneralBlocks.COBBLE_2);
+        blockWithItem(EternalGeneralBlocks.COBBLE_3);
+        blockWithItem(EternalGeneralBlocks.COBBLE_4);
+        blockWithItem(EternalGeneralBlocks.COBBLE_5);
+        blockWithItem(EternalGeneralBlocks.COBBLE_6);
+        blockWithItem(EternalGeneralBlocks.COBBLE_7);
+        blockWithItem(EternalGeneralBlocks.COBBLE_8);
+        blockWithItem(EternalGeneralBlocks.COBBLE_9);
+
         //METAL BLOCKS
         blockWithItem(EternalGeneralBlocks.ALUMINUM_BLOCK);
         blockWithItem(EternalGeneralBlocks.BRONZE_BLOCK);
@@ -52,6 +63,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.CAST_STEEL_BLOCK);
         blockWithItem(EternalGeneralBlocks.WROUGHT_IRON_BLOCK);
         blockWithItem(EternalGeneralBlocks.NETHERSTEEL_BLOCK);
+        blockWithItem(EternalGeneralBlocks.SHADOWSTEEL_BLOCK);
 
         //GEM BLOCKS
         blockWithItem(EternalGeneralBlocks.SAPPHIRE_BLOCK);

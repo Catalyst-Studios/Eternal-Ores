@@ -76,6 +76,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> CAST_STEEL_INGOT = registerIngotItem("cast_steel_ingot");
     public static final DeferredItem<Item> WROUGHT_IRON_INGOT = registerIngotItem("wrought_iron_ingot");
     public static final DeferredItem<Item> NETHERSTEEL_INGOT = registerIngotItem("nethersteel_ingot");
+    public static final DeferredItem<Item> SHADOWSTEEL_INGOT = registerIngotItem("shadowsteel_ingot");
 
     //Nuggets
     private static DeferredItem<Item> registerNuggetItem(String name) {
@@ -117,6 +118,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> CAST_STEEL_NUGGET = registerNuggetItem("cast_steel_nugget");
     public static final DeferredItem<Item> WROUGHT_IRON_NUGGET = registerNuggetItem("wrought_iron_nugget");
     public static final DeferredItem<Item> NETHERSTEEL_NUGGET = registerNuggetItem("nethersteel_nugget");
+    public static final DeferredItem<Item> SHADOWSTEEL_NUGGET = registerNuggetItem("shadowsteel_nugget");
 
     //Rods
     private static DeferredItem<Item> registerRodItem(String name) {
@@ -159,6 +161,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> ROD_CAST_STEEL = registerRodItem("rod_cast_steel");
     public static final DeferredItem<Item> ROD_WROUGHT_IRON = registerRodItem("rod_wrought_iron");
     public static final DeferredItem<Item> ROD_NETHERSTEEL = registerRodItem("rod_nethersteel");
+    public static final DeferredItem<Item> ROD_SHADOWSTEEL = registerRodItem("rod_shadowsteel");
 
     //Plates
     private static DeferredItem<Item> registerPlateItem(String name) {
@@ -201,6 +204,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> PLATE_CAST_STEEL = registerPlateItem("plate_cast_steel");
     public static final DeferredItem<Item> PLATE_WROUGHT_IRON = registerPlateItem("plate_wrought_iron");
     public static final DeferredItem<Item> PLATE_NETHERSTEEL = registerPlateItem("plate_nethersteel");
+    public static final DeferredItem<Item> PLATE_SHADOWSTEEL = registerPlateItem("plate_shadowsteel");
 
     //Gears
     private static DeferredItem<Item> registerGearItem(String name) {
@@ -272,8 +276,8 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> LAPIS_LAZULI_DUST = registerDustItem("lapis_lazuli_dust");
     public static final DeferredItem<Item> LEAD_DUST = registerDustItem("lead_dust");
     public static final DeferredItem<Item> LUMIUM_DUST = registerDustItem("lumium_dust");
-    //public static final DeferredItem<Item> NETHERITE_DUST = registerDustItem("netherite_dust");
-    //public static final DeferredItem<Item> NETHERRACK_DUST = registerDustItem("netherrack_dust");
+    public static final DeferredItem<Item> NETHERITE_DUST = registerDustItem("netherite_dust");
+    public static final DeferredItem<Item> NETHERRACK_DUST = registerDustItem("netherrack_dust");
     public static final DeferredItem<Item> NICKEL_DUST = registerDustItem("nickel_dust");
     public static final DeferredItem<Item> NITER_DUST = registerDustItem("niter_dust");
     public static final DeferredItem<Item> OBSIDIAN_DUST = registerDustItem("obsidian_dust");
@@ -289,7 +293,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> SAPPHIRE_DUST = registerDustItem("sapphire_dust");
     public static final DeferredItem<Item> SILVER_DUST = registerDustItem("silver_dust");
     public static final DeferredItem<Item> SIGNALUM_DUST = registerDustItem("signalum_dust");
-    //public static final DeferredItem<Item> STEEL_DUST = registerDustItem("steel_dust");
+    public static final DeferredItem<Item> STEEL_DUST = registerDustItem("steel_dust");
     public static final DeferredItem<Item> SULFUR_DUST = registerDustItem("sulfur_dust");
     public static final DeferredItem<Item> TIN_DUST = registerDustItem("tin_dust");
     public static final DeferredItem<Item> TITANIUM_DUST = registerDustItem("titanium_dust");
@@ -301,13 +305,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> CAST_STEEL_DUST = registerDustItem("cast_steel_dust");
     public static final DeferredItem<Item> WROUGHT_IRON_DUST = registerDustItem("wrought_iron_dust");
     public static final DeferredItem<Item> NETHERSTEEL_DUST = registerDustItem("nethersteel_dust");
-
-    public static final DeferredItem<Item> NETHERITE_DUST = ITEMS.register("netherite_dust",
-            ()-> new Item(new Item.Properties().fireResistant()));
-    public static final DeferredItem<Item> STEEL_DUST = ITEMS.register("steel_dust",
-            ()-> new Item(new Item.Properties().fireResistant()));
-    public static final DeferredItem<Item> NETHERRACK_DUST = ITEMS.register("netherrack_dust",
-            ()-> new Item(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> SHADOWSTEEL_DUST = registerDustItem("shadowsteel_dust");
 
     //Gems
     private static DeferredItem<Item> registerGemItem(String name) {
@@ -328,7 +326,6 @@ public class EternalGeneralItems {
             ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> GEM_OBSIDIAN_SHARD = ITEMS.register("gem_obsidian_shard",
             ()-> new Item(new Item.Properties()));
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

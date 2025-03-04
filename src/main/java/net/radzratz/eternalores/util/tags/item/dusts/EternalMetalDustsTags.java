@@ -64,6 +64,8 @@ public class EternalMetalDustsTags {
         public static final TagKey<Item> DUST_SIGNALUM = createMetalDustTag("dusts/signalum");
         //Silver
         public static final TagKey<Item> DUST_SILVER = createMetalDustTag("dusts/silver");
+        //Shadowsteel
+        public static final TagKey<Item> DUST_SHADOWSTEEL = createMetalDustTag("dusts/shadowsteel");
         //Steel
         public static final TagKey<Item> DUST_STEEL = createMetalDustTag("dusts/steel");
         //Tin

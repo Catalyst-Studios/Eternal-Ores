@@ -62,6 +62,8 @@ public class EternalNuggetsTags {
         public static final TagKey<Item> NUGGET_ROSE_GOLD = createNuggetsTags("nuggets/rose_gold");
         //Signalum
         public static final TagKey<Item> NUGGET_SIGNALUM = createNuggetsTags("nuggets/signalum");
+        //Shadowsteel
+        public static final TagKey<Item> NUGGET_SHADOWSTEEL = createNuggetsTags("nuggets/shadowsteel");
         //Steel
         public static final TagKey<Item> NUGGET_STEEL = createNuggetsTags("nuggets/steel");
         //Tin

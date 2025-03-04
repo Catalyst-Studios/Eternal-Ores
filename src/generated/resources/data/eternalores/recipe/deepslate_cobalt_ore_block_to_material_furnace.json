@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 0.7,
   "ingredient": {
-    "item": "eternalores:deepslate_aluminum_ore_block"
+    "item": "eternalores:deepslate_cobalt_ore_block"
   },
   "result": {
     "count": 1,
