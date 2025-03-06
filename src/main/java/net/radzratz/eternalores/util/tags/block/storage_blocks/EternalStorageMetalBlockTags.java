@@ -48,6 +48,8 @@ public class EternalStorageMetalBlockTags {
         public static final TagKey<Block> OSMIUM_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/osmium");
         //Pewter
         public static final TagKey<Block> PEWTER_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/pewter");
+        //Pig Iron
+        public static final TagKey<Block> PIG_IRON_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/pig_iron");
         //Platinum
         public static final TagKey<Block> PLATINUM_BLOCK_ST = createMetalStorageBlockTags("storage_blocks/platinum");
         //Rose Gold

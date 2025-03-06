@@ -77,6 +77,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> WROUGHT_IRON_INGOT = registerIngotItem("wrought_iron_ingot");
     public static final DeferredItem<Item> NETHERSTEEL_INGOT = registerIngotItem("nethersteel_ingot");
     public static final DeferredItem<Item> SHADOWSTEEL_INGOT = registerIngotItem("shadowsteel_ingot");
+    public static final DeferredItem<Item> PIG_IRON_INGOT = registerIngotItem("pig_iron_ingot");
 
     //Nuggets
     private static DeferredItem<Item> registerNuggetItem(String name) {
@@ -119,6 +120,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> WROUGHT_IRON_NUGGET = registerNuggetItem("wrought_iron_nugget");
     public static final DeferredItem<Item> NETHERSTEEL_NUGGET = registerNuggetItem("nethersteel_nugget");
     public static final DeferredItem<Item> SHADOWSTEEL_NUGGET = registerNuggetItem("shadowsteel_nugget");
+    public static final DeferredItem<Item> PIG_IRON_NUGGET = registerNuggetItem("pig_iron_nugget");
 
     //Rods
     private static DeferredItem<Item> registerRodItem(String name) {
@@ -162,6 +164,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> ROD_WROUGHT_IRON = registerRodItem("rod_wrought_iron");
     public static final DeferredItem<Item> ROD_NETHERSTEEL = registerRodItem("rod_nethersteel");
     public static final DeferredItem<Item> ROD_SHADOWSTEEL = registerRodItem("rod_shadowsteel");
+    public static final DeferredItem<Item> ROD_PIG_IRON = registerRodItem("rod_pig_iron");
 
     //Plates
     private static DeferredItem<Item> registerPlateItem(String name) {
@@ -205,6 +208,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> PLATE_WROUGHT_IRON = registerPlateItem("plate_wrought_iron");
     public static final DeferredItem<Item> PLATE_NETHERSTEEL = registerPlateItem("plate_nethersteel");
     public static final DeferredItem<Item> PLATE_SHADOWSTEEL = registerPlateItem("plate_shadowsteel");
+    public static final DeferredItem<Item> PLATE_PIG_IRON = registerPlateItem("plate_pig_iron");
 
     //Gears
     private static DeferredItem<Item> registerGearItem(String name) {
@@ -306,6 +310,7 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> WROUGHT_IRON_DUST = registerDustItem("wrought_iron_dust");
     public static final DeferredItem<Item> NETHERSTEEL_DUST = registerDustItem("nethersteel_dust");
     public static final DeferredItem<Item> SHADOWSTEEL_DUST = registerDustItem("shadowsteel_dust");
+    public static final DeferredItem<Item> PIG_IRON_DUST = registerDustItem("pig_iron_dust");
 
     //Gems
     private static DeferredItem<Item> registerGemItem(String name) {

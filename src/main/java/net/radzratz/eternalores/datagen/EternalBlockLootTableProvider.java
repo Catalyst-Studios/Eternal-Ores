@@ -66,6 +66,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.WROUGHT_IRON_BLOCK.get());
         dropSelf(EternalGeneralBlocks.NETHERSTEEL_BLOCK.get());
         dropSelf(EternalGeneralBlocks.SHADOWSTEEL_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.PIG_IRON_BLOCK.get());
 
         //COMPRESSED BLOCKS
         dropSelf(EternalGeneralBlocks.COBBLE_1.get());
@@ -77,6 +78,26 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.COBBLE_7.get());
         dropSelf(EternalGeneralBlocks.COBBLE_8.get());
         dropSelf(EternalGeneralBlocks.COBBLE_9.get());
+
+        dropSelf(EternalGeneralBlocks.SAND_1.get());
+        dropSelf(EternalGeneralBlocks.SAND_2.get());
+        dropSelf(EternalGeneralBlocks.SAND_3.get());
+        dropSelf(EternalGeneralBlocks.SAND_4.get());
+        dropSelf(EternalGeneralBlocks.SAND_5.get());
+        dropSelf(EternalGeneralBlocks.SAND_6.get());
+        dropSelf(EternalGeneralBlocks.SAND_7.get());
+        dropSelf(EternalGeneralBlocks.SAND_8.get());
+        dropSelf(EternalGeneralBlocks.SAND_9.get());
+
+        dropSelf(EternalGeneralBlocks.DIRT_1.get());
+        dropSelf(EternalGeneralBlocks.DIRT_2.get());
+        dropSelf(EternalGeneralBlocks.DIRT_3.get());
+        dropSelf(EternalGeneralBlocks.DIRT_4.get());
+        dropSelf(EternalGeneralBlocks.DIRT_5.get());
+        dropSelf(EternalGeneralBlocks.DIRT_6.get());
+        dropSelf(EternalGeneralBlocks.DIRT_7.get());
+        dropSelf(EternalGeneralBlocks.DIRT_8.get());
+        dropSelf(EternalGeneralBlocks.DIRT_9.get());
 
         //GEM BLOCKS
         dropSelf(EternalGeneralBlocks.SAPPHIRE_BLOCK.get());

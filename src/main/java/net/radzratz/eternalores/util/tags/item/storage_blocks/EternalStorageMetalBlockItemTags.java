@@ -1,11 +1,9 @@
 package net.radzratz.eternalores.util.tags.item.storage_blocks;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 
 public class EternalStorageMetalBlockItemTags {
     public static class Blocks{
@@ -48,6 +46,8 @@ public class EternalStorageMetalBlockItemTags {
         public static final TagKey<Item> NETHERSTEEL_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/nethersteel");
         //Osmium
         public static final TagKey<Item> OSMIUM_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/osmium");
+        //Pig Iron
+        public static final TagKey<Item> PIG_IRON_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/pig_iron");
         //Pewter
         public static final TagKey<Item> PEWTER_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/pewter");
         //Platinum

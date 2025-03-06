@@ -1,11 +1,15 @@
 package net.radzratz.eternalores.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
+
 
 public class EternalBlockStateProvider extends BlockStateProvider {
     public EternalBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -27,6 +31,26 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.COBBLE_7);
         blockWithItem(EternalGeneralBlocks.COBBLE_8);
         blockWithItem(EternalGeneralBlocks.COBBLE_9);
+
+        blockWithItem(EternalGeneralBlocks.SAND_1);
+        blockWithItem(EternalGeneralBlocks.SAND_2);
+        blockWithItem(EternalGeneralBlocks.SAND_3);
+        blockWithItem(EternalGeneralBlocks.SAND_4);
+        blockWithItem(EternalGeneralBlocks.SAND_5);
+        blockWithItem(EternalGeneralBlocks.SAND_6);
+        blockWithItem(EternalGeneralBlocks.SAND_7);
+        blockWithItem(EternalGeneralBlocks.SAND_8);
+        blockWithItem(EternalGeneralBlocks.SAND_9);
+
+        blockWithItem(EternalGeneralBlocks.DIRT_1);
+        blockWithItem(EternalGeneralBlocks.DIRT_2);
+        blockWithItem(EternalGeneralBlocks.DIRT_3);
+        blockWithItem(EternalGeneralBlocks.DIRT_4);
+        blockWithItem(EternalGeneralBlocks.DIRT_5);
+        blockWithItem(EternalGeneralBlocks.DIRT_6);
+        blockWithItem(EternalGeneralBlocks.DIRT_7);
+        blockWithItem(EternalGeneralBlocks.DIRT_8);
+        blockWithItem(EternalGeneralBlocks.DIRT_9);
 
         //METAL BLOCKS
         blockWithItem(EternalGeneralBlocks.ALUMINUM_BLOCK);
@@ -64,6 +88,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.WROUGHT_IRON_BLOCK);
         blockWithItem(EternalGeneralBlocks.NETHERSTEEL_BLOCK);
         blockWithItem(EternalGeneralBlocks.SHADOWSTEEL_BLOCK);
+        blockWithItem(EternalGeneralBlocks.PIG_IRON_BLOCK);
 
         //GEM BLOCKS
         blockWithItem(EternalGeneralBlocks.SAPPHIRE_BLOCK);

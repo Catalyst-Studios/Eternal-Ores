@@ -50,6 +50,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalStorageMetalBlockTags.Blocks.NICKEL_BLOCK_ST).add(EternalGeneralBlocks.NICKEL_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.OSMIUM_BLOCK_ST).add(EternalGeneralBlocks.OSMIUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.PEWTER_BLOCK_ST).add(EternalGeneralBlocks.PEWTER_BLOCK.get());
+            tag(EternalStorageMetalBlockTags.Blocks.PIG_IRON_BLOCK_ST).add(EternalGeneralBlocks.PIG_IRON_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.PLATINUM_BLOCK_ST).add(EternalGeneralBlocks.PLATINUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.ROSE_GOLD_BLOCK_ST).add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.SIGNALUM_BLOCK_ST).add(EternalGeneralBlocks.SIGNALUM_BLOCK.get());
@@ -122,6 +123,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.NICKEL_BLOCK.get())
                     .add(EternalGeneralBlocks.OSMIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.PEWTER_BLOCK.get())
+                    .add(EternalGeneralBlocks.PIG_IRON_BLOCK.get())
                     .add(EternalGeneralBlocks.PLATINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.PLUTONIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get())
@@ -342,6 +344,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.OSMIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.PERIDOT_BLOCK.get())
                     .add(EternalGeneralBlocks.PEWTER_BLOCK.get())
+                    .add(EternalGeneralBlocks.PIG_IRON_BLOCK.get())
                     .add(EternalGeneralBlocks.PLATINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.PLUTONIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get())
@@ -383,7 +386,47 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.COBBLE_6.get())
                     .add(EternalGeneralBlocks.COBBLE_7.get())
                     .add(EternalGeneralBlocks.COBBLE_8.get())
-                    .add(EternalGeneralBlocks.COBBLE_9.get());
+                    .add(EternalGeneralBlocks.COBBLE_9.get())
+                    .add(EternalGeneralBlocks.SAND_1.get())
+                    .add(EternalGeneralBlocks.SAND_2.get())
+                    .add(EternalGeneralBlocks.SAND_3.get())
+                    .add(EternalGeneralBlocks.SAND_4.get())
+                    .add(EternalGeneralBlocks.SAND_5.get())
+                    .add(EternalGeneralBlocks.SAND_6.get())
+                    .add(EternalGeneralBlocks.SAND_7.get())
+                    .add(EternalGeneralBlocks.SAND_8.get())
+                    .add(EternalGeneralBlocks.SAND_9.get())
+                    .add(EternalGeneralBlocks.DIRT_1.get())
+                    .add(EternalGeneralBlocks.DIRT_2.get())
+                    .add(EternalGeneralBlocks.DIRT_3.get())
+                    .add(EternalGeneralBlocks.DIRT_4.get())
+                    .add(EternalGeneralBlocks.DIRT_5.get())
+                    .add(EternalGeneralBlocks.DIRT_6.get())
+                    .add(EternalGeneralBlocks.DIRT_7.get())
+                    .add(EternalGeneralBlocks.DIRT_8.get())
+                    .add(EternalGeneralBlocks.DIRT_9.get());
+
+            //SHOVEL TAGS
+            tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                    .add(EternalGeneralBlocks.SAND_1.get())
+                    .add(EternalGeneralBlocks.SAND_2.get())
+                    .add(EternalGeneralBlocks.SAND_3.get())
+                    .add(EternalGeneralBlocks.SAND_4.get())
+                    .add(EternalGeneralBlocks.SAND_5.get())
+                    .add(EternalGeneralBlocks.SAND_6.get())
+                    .add(EternalGeneralBlocks.SAND_7.get())
+                    .add(EternalGeneralBlocks.SAND_8.get())
+                    .add(EternalGeneralBlocks.SAND_9.get())
+
+                    .add(EternalGeneralBlocks.DIRT_1.get())
+                    .add(EternalGeneralBlocks.DIRT_2.get())
+                    .add(EternalGeneralBlocks.DIRT_3.get())
+                    .add(EternalGeneralBlocks.DIRT_4.get())
+                    .add(EternalGeneralBlocks.DIRT_5.get())
+                    .add(EternalGeneralBlocks.DIRT_6.get())
+                    .add(EternalGeneralBlocks.DIRT_7.get())
+                    .add(EternalGeneralBlocks.DIRT_8.get())
+                    .add(EternalGeneralBlocks.DIRT_9.get());
 
             //PICKAXE TAGS
             tag(BlockTags.MINEABLE_WITH_PICKAXE)
@@ -460,6 +503,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.NICKEL_BLOCK.get())
                     .add(EternalGeneralBlocks.OSMIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.PEWTER_BLOCK.get())
+                    .add(EternalGeneralBlocks.PIG_IRON_BLOCK.get())
                     .add(EternalGeneralBlocks.PLATINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.PLUTONIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.ROSE_GOLD_BLOCK.get())
@@ -520,18 +564,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.TIN_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.SULFUR_ORE_BLOCK.get())
-                    .add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
-
-                    //COMPRESSED BLOCKS
-                    .add(EternalGeneralBlocks.COBBLE_1.get())
-                    .add(EternalGeneralBlocks.COBBLE_2.get())
-                    .add(EternalGeneralBlocks.COBBLE_3.get())
-                    .add(EternalGeneralBlocks.COBBLE_4.get())
-                    .add(EternalGeneralBlocks.COBBLE_5.get())
-                    .add(EternalGeneralBlocks.COBBLE_6.get())
-                    .add(EternalGeneralBlocks.COBBLE_7.get())
-                    .add(EternalGeneralBlocks.COBBLE_8.get())
-                    .add(EternalGeneralBlocks.COBBLE_9.get());
+                    .add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get());
 
             tag(BlockTags.NEEDS_IRON_TOOL)
                     //ORE BLOCKS
@@ -609,6 +642,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.CAST_IRON_BLOCK.get())
                     .add(EternalGeneralBlocks.URANINITE_BLOCK.get())
                     .add(EternalGeneralBlocks.WROUGHT_IRON_BLOCK.get())
+                    .add(EternalGeneralBlocks.PIG_IRON_BLOCK.get())
 
                     //GEM BLOCKS
                     .add(EternalGeneralBlocks.AMBER_BLOCK.get())
@@ -658,5 +692,25 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_7.get());
             tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_8.get());
             tag(EternalCompressedBlockTags.Blocks.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_9.get());
+
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_1.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_2.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_3.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_4.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_5.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_6.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_7.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_8.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_SAND).add(EternalGeneralBlocks.SAND_9.get());
+
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_1.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_2.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_3.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_4.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_5.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_6.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_7.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_8.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_9.get());
     }
 }

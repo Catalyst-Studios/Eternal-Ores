@@ -52,6 +52,8 @@ public class EternalMetalRodsTags {
         public static final TagKey<Item> ROD_NICKEL = createMetalRodTag("rods/nickel");
         //Osmium
         public static final TagKey<Item> ROD_OSMIUM = createMetalRodTag("rods/osmium");
+        //Pig Iron
+        public static final TagKey<Item> ROD_PIG_IRON = createMetalRodTag("rods/pig_iron");
         //Platinum
         public static final TagKey<Item> ROD_PLATINUM = createMetalRodTag("rods/platinum");
         //Rose Gold

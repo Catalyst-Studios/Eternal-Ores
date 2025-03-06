@@ -46,6 +46,7 @@
   "item.eternalores.wrought_iron_ingot": "Wrought Iron Ingot",
   "item.eternalores.nethersteel_ingot": "Nethersteel Ingot",
   "item.eternalores.shadowsteel_ingot": "Shadowsteel Ingot",
+  "item.eternalores.pig_iron_ingot": "Pig Iron Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -86,6 +87,7 @@
   "item.eternalores.wrought_iron_nugget": "Wrought Iron Nugget",
   "item.eternalores.nethersteel_nugget": "Nethersteel Nugget",
   "item.eternalores.shadowsteel_nugget": "Shadowsteel Nugget",
+  "item.eternalores.pig_iron_nugget": "Pig Iron Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -125,6 +127,7 @@
   "item.eternalores.rod_wrought_iron": "Wrought Iron Rod",
   "item.eternalores.rod_nethersteel": "Nethersteel Rod",
   "item.eternalores.rod_shadowsteel": "Shadowsteel Rod",
+  "item.eternalores.rod_pig_iron": "Pig Iron Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -164,6 +167,7 @@
   "item.eternalores.plate_wrought_iron": "Wrought Iron Plate",
   "item.eternalores.plate_nethersteel": "Nethersteel Plate",
   "item.eternalores.plate_shadowsteel": "Shadowsteel Plate",
+  "item.eternalores.plate_pig_iron": "Pig Iron Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -252,6 +256,7 @@
   "item.eternalores.wrought_iron_dust": "Wrought Iron Dust",
   "item.eternalores.nethersteel_dust": "Nethersteel Dust",
   "item.eternalores.shadowsteel_dust": "Shadowsteel Dust",
+  "item.eternalores.pig_iron_dust": "Pig Iron Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -379,6 +384,7 @@
   "block.eternalores.wrought_iron_block": "Wrought Iron Block",
   "block.eternalores.nethersteel_block": "Nethersteel Block",
   "block.eternalores.shadowsteel_block": "Shadowsteel Block",
+  "block.eternalores.pig_iron_block": "Pig Iron Block",
 
   "block.eternalores.compressed_cobble_1x": "Compressed Cobblestone 1x",
   "block.eternalores.compressed_cobble_2x": "Compressed Cobblestone 2x",
@@ -389,6 +395,24 @@
   "block.eternalores.compressed_cobble_7x": "Compressed Cobblestone 7x",
   "block.eternalores.compressed_cobble_8x": "Compressed Cobblestone 8x",
   "block.eternalores.compressed_cobble_9x": "Compressed Cobblestone 9x",
+  "block.eternalores.compressed_sand_1x": "Compressed Sand 1x",
+  "block.eternalores.compressed_sand_2x": "Compressed Sand 2x",
+  "block.eternalores.compressed_sand_3x": "Compressed Sand 3x",
+  "block.eternalores.compressed_sand_4x": "Compressed Sand 4x",
+  "block.eternalores.compressed_sand_5x": "Compressed Sand 5x",
+  "block.eternalores.compressed_sand_6x": "Compressed Sand 6x",
+  "block.eternalores.compressed_sand_7x": "Compressed Sand 7x",
+  "block.eternalores.compressed_sand_8x": "Compressed Sand 8x",
+  "block.eternalores.compressed_sand_9x": "Compressed Sand 9x",
+  "block.eternalores.compressed_dirt_1x": "Compressed Dirt 1x",
+  "block.eternalores.compressed_dirt_2x": "Compressed Dirt 2x",
+  "block.eternalores.compressed_dirt_3x": "Compressed Dirt 3x",
+  "block.eternalores.compressed_dirt_4x": "Compressed Dirt 4x",
+  "block.eternalores.compressed_dirt_5x": "Compressed Dirt 5x",
+  "block.eternalores.compressed_dirt_6x": "Compressed Dirt 6x",
+  "block.eternalores.compressed_dirt_7x": "Compressed Dirt 7x",
+  "block.eternalores.compressed_dirt_8x": "Compressed Dirt 8x",
+  "block.eternalores.compressed_dirt_9x": "Compressed Dirt 9x",
 
   "creativetab.eternalores.eternal_ores": "Eternal Ores"
 }

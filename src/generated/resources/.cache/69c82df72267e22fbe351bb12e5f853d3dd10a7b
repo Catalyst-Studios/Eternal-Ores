@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-04T00:50:12.5611687	Item Models: eternalores
+// 1.21.1	2025-03-04T18:06:40.6679904	Item Models: eternalores
 9e05334480af20ceab69aef0763cd4b91d3bbcf2 assets/eternalores/models/item/aluminum_dust.json
 4b7887baa0ed619598cb92d338659f9a6f47c089 assets/eternalores/models/item/aluminum_ingot.json
 65a0f5c74fe48204c9487943f882e7c21a3c1cc1 assets/eternalores/models/item/aluminum_nugget.json
@@ -112,6 +112,9 @@ c314e024328a8f787af67d879f4013bcd6dffabd assets/eternalores/models/item/osmium_d
 56bb8f2ed7f986f20320767cec7984cfbcc2e9db assets/eternalores/models/item/pewter_dust.json
 ca8ec24037609e0539eb44d70e0448946382c123 assets/eternalores/models/item/pewter_ingot.json
 ded917b63f550dbb289474339d93ff65482416b8 assets/eternalores/models/item/pewter_nugget.json
+68af02f23952601b3b3efccd7c95b81fdc6ead24 assets/eternalores/models/item/pig_iron_dust.json
+0f7da1dcf0a31b3f1f6bf5a493b8962d3232a1fe assets/eternalores/models/item/pig_iron_ingot.json
+35f8c29787a4473b2ae7f64a4332fef3aad996fa assets/eternalores/models/item/pig_iron_nugget.json
 766609616cb277fac5b4f3a32d2bac0f788ebc9b assets/eternalores/models/item/plate_aluminum.json
 b6979b30a9cae91ed692f4641293d12ea16b9657 assets/eternalores/models/item/plate_blue_steel.json
 3f8fcd905c28c05387dbf12cea76ac4c97ca2208 assets/eternalores/models/item/plate_brass.json
@@ -136,6 +139,7 @@ f907ec1ff04be01b947ca3387d3f291823441b14 assets/eternalores/models/item/plate_ne
 0205b51612e0b9c383da0ab207162c8b58e4043b assets/eternalores/models/item/plate_nethersteel.json
 c95e5fa2cc4c155c7c1739e8956c74a9bd5aba45 assets/eternalores/models/item/plate_nickel.json
 d2b5b44790459d8786b9a3fbefc2f8b4a1ee6f0d assets/eternalores/models/item/plate_osmium.json
+2807e2b0f8ac919a3efe23c950b40244a1350510 assets/eternalores/models/item/plate_pig_iron.json
 cc65e49021ee32ba44a83d50cff645001175b204 assets/eternalores/models/item/plate_platinum.json
 a10fabce56bb0aefb9891b44a9e784106e3b30f3 assets/eternalores/models/item/plate_plutonium.json
 6cbca9986900880c233e1047f9f64579fdf0af47 assets/eternalores/models/item/plate_rose_gold.json
@@ -197,6 +201,7 @@ c71d8b32e069a6c1cb33bcc24b472c8e790b67f6 assets/eternalores/models/item/rod_lumi
 d8e19f05fdd8907d6eab8230e0033ec64b1fce1e assets/eternalores/models/item/rod_nethersteel.json
 a5f854a9d3d95bd4d1a2fe1dd6d7c1ffb97f3c1a assets/eternalores/models/item/rod_nickel.json
 2c717d56b9c71129146a4e331e93c0b7c96c58f0 assets/eternalores/models/item/rod_osmium.json
+22e0d65d25fdb3cb204aa90dbdfe5e117dbf82e7 assets/eternalores/models/item/rod_pig_iron.json
 c6078e20f891acce42112ddf15a6427a92b148e8 assets/eternalores/models/item/rod_platinum.json
 089555d03aeb2e4402bfce4387ef55a89bd9d8cb assets/eternalores/models/item/rod_plutonium.json
 f924b45efdddb1b4b3a11d055ff3dc537e8305a1 assets/eternalores/models/item/rod_rose_gold.json

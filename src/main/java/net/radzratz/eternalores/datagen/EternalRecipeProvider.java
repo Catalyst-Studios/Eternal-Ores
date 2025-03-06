@@ -24,7 +24,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
             "britannia", "bronze", "constantan", "electrum", "coal", "ender", "endstone", "netherrack",
             "invar", "lapis", "cinnabar", "lumium", "niter", "obsidian", "peridot", "pewter", "plutonium",
             "quartz", "rose_gold", "ruby", "sapphire", "signalum", "steel", "titanium", "enderium",
-            "cast_iron", "cast_steel", "wrought_iron", "nethersteel", "shadowsteel"
+            "cast_iron", "cast_steel", "wrought_iron", "nethersteel", "shadowsteel", "pig_iron"
     );
 
     public EternalRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -71,6 +71,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateHammerRecipes(recipeOutput, "nickel_ingot", EternalGeneralItems.NICKEL_INGOT.get(), EternalGeneralItems.NICKEL_DUST.get());
         generateHammerRecipes(recipeOutput, "osmium_ingot", EternalGeneralItems.OSMIUM_INGOT.get(), EternalGeneralItems.OSMIUM_DUST.get());
         generateHammerRecipes(recipeOutput, "pewter_ingot", EternalGeneralItems.PEWTER_INGOT.get(), EternalGeneralItems.PEWTER_DUST.get());
+        generateHammerRecipes(recipeOutput, "pig_iron_ingot", EternalGeneralItems.PIG_IRON_INGOT.get(), EternalGeneralItems.PIG_IRON_DUST.get());
         generateHammerRecipes(recipeOutput, "platinum_ingot", EternalGeneralItems.PLATINUM_INGOT.get(), EternalGeneralItems.PLATINUM_DUST.get());
         generateHammerRecipes(recipeOutput, "plutonium_ingot", EternalGeneralItems.PLUTONIUM_INGOT.get(), EternalGeneralItems.PLUTONIUM_DUST.get());
         generateHammerRecipes(recipeOutput, "rose_gold_ingot", EternalGeneralItems.ROSE_GOLD_INGOT.get(), EternalGeneralItems.ROSE_GOLD_DUST.get());
@@ -135,6 +136,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotPlateRecipe(recipeOutput, "nethersteel", EternalGeneralItems.PLATE_NETHERSTEEL.get());
         generateIngotPlateRecipe(recipeOutput, "nickel", EternalGeneralItems.PLATE_NICKEL.get());
         generateIngotPlateRecipe(recipeOutput, "osmium", EternalGeneralItems.PLATE_OSMIUM.get());
+        generateIngotPlateRecipe(recipeOutput, "pig_iron", EternalGeneralItems.PLATE_PIG_IRON.get());
         generateIngotPlateRecipe(recipeOutput, "platinum", EternalGeneralItems.PLATE_PLATINUM.get());
         generateIngotPlateRecipe(recipeOutput, "plutonium", EternalGeneralItems.PLATE_PLUTONIUM.get());
         generateIngotPlateRecipe(recipeOutput, "rose_gold", EternalGeneralItems.PLATE_ROSE_GOLD.get());
@@ -181,6 +183,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotRodsRecipe(recipeOutput, "nethersteel", EternalGeneralItems.ROD_NETHERSTEEL.get());
         generateIngotRodsRecipe(recipeOutput, "nickel", EternalGeneralItems.ROD_NICKEL.get());
         generateIngotRodsRecipe(recipeOutput, "osmium", EternalGeneralItems.ROD_OSMIUM.get());
+        generateIngotRodsRecipe(recipeOutput, "pig_iron", EternalGeneralItems.ROD_PIG_IRON.get());
         generateIngotRodsRecipe(recipeOutput, "platinum", EternalGeneralItems.ROD_PLATINUM.get());
         generateIngotRodsRecipe(recipeOutput, "plutonium", EternalGeneralItems.ROD_PLUTONIUM.get());
         generateIngotRodsRecipe(recipeOutput, "rose_gold", EternalGeneralItems.ROD_ROSE_GOLD.get());
@@ -222,6 +225,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToIngotMaterialRecipe(recipeOutput, "nickel", EternalGeneralBlocks.NICKEL_BLOCK.asItem(), EternalGeneralItems.NICKEL_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "osmium", EternalGeneralBlocks.OSMIUM_BLOCK.asItem(), EternalGeneralItems.OSMIUM_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "pewter", EternalGeneralBlocks.PEWTER_BLOCK.asItem(), EternalGeneralItems.PEWTER_INGOT.get());
+        generateBlockToIngotMaterialRecipe(recipeOutput, "pig_iron", EternalGeneralBlocks.PIG_IRON_BLOCK.asItem(), EternalGeneralItems.PIG_IRON_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "platinum", EternalGeneralBlocks.PLATINUM_BLOCK.asItem(), EternalGeneralItems.PLATINUM_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "plutonium", EternalGeneralBlocks.PLUTONIUM_BLOCK.asItem(), EternalGeneralItems.PLUTONIUM_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "rose_gold", EternalGeneralBlocks.ROSE_GOLD_BLOCK.asItem(), EternalGeneralItems.ROSE_GOLD_INGOT.get());
@@ -310,6 +314,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToBlockRecipe(recipeOutput, "nickel", EternalGeneralItems.NICKEL_INGOT.get(), EternalGeneralBlocks.NICKEL_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_INGOT.get(), EternalGeneralBlocks.OSMIUM_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "pewter", EternalGeneralItems.PEWTER_INGOT.get(), EternalGeneralBlocks.PEWTER_BLOCK.asItem());
+        generateIngotToBlockRecipe(recipeOutput, "pig_iron", EternalGeneralItems.PIG_IRON_INGOT.get(), EternalGeneralBlocks.PIG_IRON_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "platinum", EternalGeneralItems.PLATINUM_INGOT.get(), EternalGeneralBlocks.PLATINUM_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "plutonium", EternalGeneralItems.PLUTONIUM_INGOT.get(), EternalGeneralBlocks.PLUTONIUM_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "rose_gold", EternalGeneralItems.ROSE_GOLD_INGOT.get(), EternalGeneralBlocks.ROSE_GOLD_BLOCK.asItem());
@@ -364,6 +369,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToNuggetRecipe(recipeOutput, "nickel", EternalGeneralItems.NICKEL_INGOT.get(), EternalGeneralItems.NICKEL_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_INGOT.get(), EternalGeneralItems.OSMIUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "pewter", EternalGeneralItems.PEWTER_INGOT.get(), EternalGeneralItems.PEWTER_NUGGET.get());
+        generateIngotToNuggetRecipe(recipeOutput, "pig_iron", EternalGeneralItems.PIG_IRON_INGOT.get(), EternalGeneralItems.PIG_IRON_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "platinum", EternalGeneralItems.PLATINUM_INGOT.get(), EternalGeneralItems.PLATINUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "plutonium", EternalGeneralItems.PLUTONIUM_INGOT.get(), EternalGeneralItems.PLUTONIUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "rose_gold", EternalGeneralItems.ROSE_GOLD_INGOT.get(), EternalGeneralItems.ROSE_GOLD_NUGGET.get());
@@ -408,6 +414,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateNuggetToIngotRecipe(recipeOutput, "nickel", EternalGeneralItems.NICKEL_NUGGET.get(), EternalGeneralItems.NICKEL_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_NUGGET.get(), EternalGeneralItems.OSMIUM_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "pewter", EternalGeneralItems.PEWTER_NUGGET.get(), EternalGeneralItems.PEWTER_INGOT.get());
+        generateNuggetToIngotRecipe(recipeOutput, "pig_iron", EternalGeneralItems.PIG_IRON_NUGGET.get(), EternalGeneralItems.PIG_IRON_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "platinum", EternalGeneralItems.PLATINUM_NUGGET.get(), EternalGeneralItems.PLATINUM_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "plutonium", EternalGeneralItems.PLUTONIUM_NUGGET.get(), EternalGeneralItems.PLUTONIUM_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "rose_gold", EternalGeneralItems.ROSE_GOLD_NUGGET.get(), EternalGeneralItems.ROSE_GOLD_INGOT.get());
@@ -454,6 +461,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRodPlateToDustRecipe(recipeOutput, "nethersteel", EternalGeneralItems.PLATE_NETHERSTEEL.get(), EternalGeneralItems.ROD_NETHERSTEEL.get(), EternalGeneralItems.NETHERSTEEL_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "nickel", EternalGeneralItems.PLATE_NICKEL.get(), EternalGeneralItems.ROD_NICKEL.get(), EternalGeneralItems.NICKEL_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "osmium", EternalGeneralItems.PLATE_OSMIUM.get(), EternalGeneralItems.ROD_OSMIUM.get(), EternalGeneralItems.OSMIUM_DUST.get());
+        generateRodPlateToDustRecipe(recipeOutput, "pig_iron", EternalGeneralItems.PLATE_PIG_IRON.get(), EternalGeneralItems.ROD_PIG_IRON.get(), EternalGeneralItems.PIG_IRON_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "platinum", EternalGeneralItems.PLATE_PLATINUM.get(), EternalGeneralItems.ROD_PLATINUM.get(), EternalGeneralItems.PLATINUM_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "plutonium", EternalGeneralItems.PLATE_PLUTONIUM.get(), EternalGeneralItems.ROD_PLUTONIUM.get(), EternalGeneralItems.PLUTONIUM_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "rose_gold", EternalGeneralItems.PLATE_ROSE_GOLD.get(), EternalGeneralItems.ROD_ROSE_GOLD.get(), EternalGeneralItems.ROSE_GOLD_DUST.get());
@@ -540,6 +548,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialFurnace(recipeOutput, "nickel", EternalGeneralItems.NICKEL_DUST.get(), EternalGeneralItems.NICKEL_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_DUST.get(), EternalGeneralItems.OSMIUM_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "pewter", EternalGeneralItems.PEWTER_DUST.get(), EternalGeneralItems.PEWTER_INGOT.get());
+        generateDustToMaterialFurnace(recipeOutput, "pig_iron", EternalGeneralItems.PIG_IRON_DUST.get(), EternalGeneralItems.PIG_IRON_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "platinum", EternalGeneralItems.PLATINUM_DUST.get(), EternalGeneralItems.PLATINUM_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "plutonium", EternalGeneralItems.PLUTONIUM_DUST.get(), EternalGeneralItems.PLUTONIUM_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "rose_gold", EternalGeneralItems.ROSE_GOLD_DUST.get(), EternalGeneralItems.ROSE_GOLD_INGOT.get());
@@ -596,6 +605,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialBlasting(recipeOutput, "nickel", EternalGeneralItems.NICKEL_DUST.get(), EternalGeneralItems.NICKEL_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "osmium", EternalGeneralItems.OSMIUM_DUST.get(), EternalGeneralItems.OSMIUM_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "pewter", EternalGeneralItems.PEWTER_DUST.get(), EternalGeneralItems.PEWTER_INGOT.get());
+        generateDustToMaterialBlasting(recipeOutput, "pig_iron", EternalGeneralItems.PIG_IRON_DUST.get(), EternalGeneralItems.PIG_IRON_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "platinum", EternalGeneralItems.PLATINUM_DUST.get(), EternalGeneralItems.PLATINUM_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "plutonium", EternalGeneralItems.PLUTONIUM_DUST.get(), EternalGeneralItems.PLUTONIUM_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "rose_gold", EternalGeneralItems.ROSE_GOLD_DUST.get(), EternalGeneralItems.ROSE_GOLD_INGOT.get());
@@ -772,6 +782,26 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateCompressedBlockRecipe(recipeOutput, "cobble_7x", EternalGeneralBlocks.COBBLE_6.asItem(), EternalGeneralBlocks.COBBLE_7.asItem());
         generateCompressedBlockRecipe(recipeOutput, "cobble_8x", EternalGeneralBlocks.COBBLE_7.asItem(), EternalGeneralBlocks.COBBLE_8.asItem());
         generateCompressedBlockRecipe(recipeOutput, "cobble_9x", EternalGeneralBlocks.COBBLE_8.asItem(), EternalGeneralBlocks.COBBLE_9.asItem());
+        //Sand
+        generateCompressedBlockRecipe(recipeOutput, "sand_1x", Blocks.SAND.asItem(), EternalGeneralBlocks.SAND_1.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "sand_2x", EternalGeneralBlocks.SAND_1.asItem(), EternalGeneralBlocks.SAND_2.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "sand_3x", EternalGeneralBlocks.SAND_2.asItem(), EternalGeneralBlocks.SAND_3.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "sand_4x", EternalGeneralBlocks.SAND_3.asItem(), EternalGeneralBlocks.SAND_4.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "sand_5x", EternalGeneralBlocks.SAND_4.asItem(), EternalGeneralBlocks.SAND_5.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "sand_6x", EternalGeneralBlocks.SAND_5.asItem(), EternalGeneralBlocks.SAND_6.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "sand_7x", EternalGeneralBlocks.SAND_6.asItem(), EternalGeneralBlocks.SAND_7.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "sand_8x", EternalGeneralBlocks.SAND_7.asItem(), EternalGeneralBlocks.SAND_8.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "sand_9x", EternalGeneralBlocks.SAND_8.asItem(), EternalGeneralBlocks.SAND_9.asItem());
+
+        generateCompressedBlockRecipe(recipeOutput, "dirt_1x", Blocks.DIRT.asItem(), EternalGeneralBlocks.DIRT_1.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "dirt_2x", EternalGeneralBlocks.DIRT_1.asItem(), EternalGeneralBlocks.DIRT_2.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "dirt_3x", EternalGeneralBlocks.DIRT_2.asItem(), EternalGeneralBlocks.DIRT_3.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "dirt_4x", EternalGeneralBlocks.DIRT_3.asItem(), EternalGeneralBlocks.DIRT_4.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "dirt_5x", EternalGeneralBlocks.DIRT_4.asItem(), EternalGeneralBlocks.DIRT_5.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "dirt_6x", EternalGeneralBlocks.DIRT_5.asItem(), EternalGeneralBlocks.DIRT_6.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "dirt_7x", EternalGeneralBlocks.DIRT_6.asItem(), EternalGeneralBlocks.DIRT_7.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "dirt_8x", EternalGeneralBlocks.DIRT_7.asItem(), EternalGeneralBlocks.DIRT_8.asItem());
+        generateCompressedBlockRecipe(recipeOutput, "dirt_9x", EternalGeneralBlocks.DIRT_8.asItem(), EternalGeneralBlocks.DIRT_9.asItem());
 
         //Compressed Block to Uncompressed block? rat is confused
         generateCompressedToMaterialShapeless(recipeOutput, "cobble-1", EternalGeneralBlocks.COBBLE_1.asItem(), Blocks.COBBLESTONE.asItem());
@@ -783,6 +813,26 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateCompressedToMaterialShapeless(recipeOutput, "cobble-7", EternalGeneralBlocks.COBBLE_7.asItem(), EternalGeneralBlocks.COBBLE_6.asItem());
         generateCompressedToMaterialShapeless(recipeOutput, "cobble-8", EternalGeneralBlocks.COBBLE_8.asItem(), EternalGeneralBlocks.COBBLE_7.asItem());
         generateCompressedToMaterialShapeless(recipeOutput, "cobble-9", EternalGeneralBlocks.COBBLE_9.asItem(), EternalGeneralBlocks.COBBLE_8.asItem());
+
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-1", EternalGeneralBlocks.SAND_1.asItem(), Blocks.SAND.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-2", EternalGeneralBlocks.SAND_2.asItem(), EternalGeneralBlocks.SAND_1.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-3", EternalGeneralBlocks.SAND_3.asItem(), EternalGeneralBlocks.SAND_2.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-4", EternalGeneralBlocks.SAND_4.asItem(), EternalGeneralBlocks.SAND_3.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-5", EternalGeneralBlocks.SAND_5.asItem(), EternalGeneralBlocks.SAND_4.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-6", EternalGeneralBlocks.SAND_6.asItem(), EternalGeneralBlocks.SAND_5.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-7", EternalGeneralBlocks.SAND_7.asItem(), EternalGeneralBlocks.SAND_6.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-8", EternalGeneralBlocks.SAND_8.asItem(), EternalGeneralBlocks.SAND_7.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "sand-9", EternalGeneralBlocks.SAND_9.asItem(), EternalGeneralBlocks.SAND_8.asItem());
+
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-1", EternalGeneralBlocks.DIRT_1.asItem(), Blocks.DIRT.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-2", EternalGeneralBlocks.DIRT_2.asItem(), EternalGeneralBlocks.DIRT_1.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-3", EternalGeneralBlocks.DIRT_3.asItem(), EternalGeneralBlocks.DIRT_2.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-4", EternalGeneralBlocks.DIRT_4.asItem(), EternalGeneralBlocks.DIRT_3.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-5", EternalGeneralBlocks.DIRT_5.asItem(), EternalGeneralBlocks.DIRT_4.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-6", EternalGeneralBlocks.DIRT_6.asItem(), EternalGeneralBlocks.DIRT_5.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-7", EternalGeneralBlocks.DIRT_7.asItem(), EternalGeneralBlocks.DIRT_6.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-8", EternalGeneralBlocks.DIRT_8.asItem(), EternalGeneralBlocks.DIRT_7.asItem());
+        generateCompressedToMaterialShapeless(recipeOutput, "dirt-9", EternalGeneralBlocks.DIRT_9.asItem(), EternalGeneralBlocks.DIRT_8.asItem());
     }
 
     ///Materials to Dusts

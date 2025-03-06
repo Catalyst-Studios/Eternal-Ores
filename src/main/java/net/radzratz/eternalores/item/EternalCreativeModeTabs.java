@@ -88,6 +88,24 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.COBBLE_7);
                     output.accept(EternalGeneralBlocks.COBBLE_8);
                     output.accept(EternalGeneralBlocks.COBBLE_9);
+                    output.accept(EternalGeneralBlocks.DIRT_1);
+                    output.accept(EternalGeneralBlocks.DIRT_2);
+                    output.accept(EternalGeneralBlocks.DIRT_3);
+                    output.accept(EternalGeneralBlocks.DIRT_4);
+                    output.accept(EternalGeneralBlocks.DIRT_5);
+                    output.accept(EternalGeneralBlocks.DIRT_6);
+                    output.accept(EternalGeneralBlocks.DIRT_7);
+                    output.accept(EternalGeneralBlocks.DIRT_8);
+                    output.accept(EternalGeneralBlocks.DIRT_9);
+                    output.accept(EternalGeneralBlocks.SAND_1);
+                    output.accept(EternalGeneralBlocks.SAND_2);
+                    output.accept(EternalGeneralBlocks.SAND_3);
+                    output.accept(EternalGeneralBlocks.SAND_4);
+                    output.accept(EternalGeneralBlocks.SAND_5);
+                    output.accept(EternalGeneralBlocks.SAND_6);
+                    output.accept(EternalGeneralBlocks.SAND_7);
+                    output.accept(EternalGeneralBlocks.SAND_8);
+                    output.accept(EternalGeneralBlocks.SAND_9);
                     //RAW ORE BLOCKS
                     output.accept(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_COBALT_BLOCK);
@@ -133,6 +151,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.OSMIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.PERIDOT_BLOCK);
                     output.accept(EternalGeneralBlocks.PEWTER_BLOCK);
+                    output.accept(EternalGeneralBlocks.PIG_IRON_BLOCK);
                     output.accept(EternalGeneralBlocks.PLATINUM_BLOCK);
                     output.accept(EternalGeneralBlocks.PLUTONIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.ROSE_GOLD_BLOCK);
@@ -190,6 +209,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.NICKEL_INGOT);
                     output.accept(EternalGeneralItems.OSMIUM_INGOT);
                     output.accept(EternalGeneralItems.PEWTER_INGOT);
+                    output.accept(EternalGeneralItems.PIG_IRON_INGOT);
                     output.accept(EternalGeneralItems.PLATINUM_INGOT);
                     output.accept(EternalGeneralItems.PLUTONIUM_INGOT);
                     output.accept(EternalGeneralItems.REDSTONE_INGOT);
@@ -229,6 +249,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.NICKEL_NUGGET);
                     output.accept(EternalGeneralItems.OSMIUM_NUGGET);
                     output.accept(EternalGeneralItems.PEWTER_NUGGET);
+                    output.accept(EternalGeneralItems.PIG_IRON_NUGGET);
                     output.accept(EternalGeneralItems.PLATINUM_NUGGET);
                     output.accept(EternalGeneralItems.PLUTONIUM_NUGGET);
                     output.accept(EternalGeneralItems.ROSE_GOLD_NUGGET);
@@ -296,6 +317,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.OSMIUM_DUST);
                     output.accept(EternalGeneralItems.PERIDOT_DUST);
                     output.accept(EternalGeneralItems.PEWTER_DUST);
+                    output.accept(EternalGeneralItems.PIG_IRON_DUST);
                     output.accept(EternalGeneralItems.PLATINUM_DUST);
                     output.accept(EternalGeneralItems.PLUTONIUM_DUST);
                     output.accept(EternalGeneralItems.QUARTZ_DUST);
@@ -339,6 +361,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.PLATE_NETHERSTEEL);
                     output.accept(EternalGeneralItems.PLATE_NICKEL);
                     output.accept(EternalGeneralItems.PLATE_OSMIUM);
+                    output.accept(EternalGeneralItems.PLATE_PIG_IRON);
                     output.accept(EternalGeneralItems.PLATE_PLATINUM);
                     output.accept(EternalGeneralItems.PLATE_PLUTONIUM);
                     output.accept(EternalGeneralItems.PLATE_ROSE_GOLD);
@@ -378,6 +401,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.ROD_NETHERSTEEL);
                     output.accept(EternalGeneralItems.ROD_NICKEL);
                     output.accept(EternalGeneralItems.ROD_OSMIUM);
+                    output.accept(EternalGeneralItems.ROD_PIG_IRON);
                     output.accept(EternalGeneralItems.ROD_PLATINUM);
                     output.accept(EternalGeneralItems.ROD_PLUTONIUM);
                     output.accept(EternalGeneralItems.ROD_ROSE_GOLD);

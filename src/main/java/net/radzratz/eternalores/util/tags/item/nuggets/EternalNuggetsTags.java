@@ -54,6 +54,8 @@ public class EternalNuggetsTags {
         public static final TagKey<Item> NUGGET_OSMIUM = createNuggetsTags("nuggets/osmium");
         //Pewter
         public static final TagKey<Item> NUGGET_PEWTER = createNuggetsTags("nuggets/pewter");
+        //Pig Iron
+        public static final TagKey<Item> NUGGET_PIG_IRON = createNuggetsTags("nuggets/pig_iron");
         //Platinum
         public static final TagKey<Item> NUGGET_PLATINUM = createNuggetsTags("nuggets/platinum");
         //Plutonium

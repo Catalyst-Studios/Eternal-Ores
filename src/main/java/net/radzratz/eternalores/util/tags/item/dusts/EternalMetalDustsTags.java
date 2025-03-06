@@ -54,6 +54,8 @@ public class EternalMetalDustsTags {
         public static final TagKey<Item> DUST_NICKEL = createMetalDustTag("dusts/nickel");
         //Osmium
         public static final TagKey<Item> DUST_OSMIUM = createMetalDustTag("dusts/osmium");
+        //Pig Iron
+        public static final TagKey<Item> DUST_PIG_IRON = createMetalDustTag("dusts/pig_iron");
         //Pewter
         public static final TagKey<Item> DUST_PEWTER = createMetalDustTag("dusts/pewter");
         //Platinum

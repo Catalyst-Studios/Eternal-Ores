@@ -65,6 +65,8 @@ public class EternalPlates {
         public static final TagKey<Item> OSMIUM_PLATE = createPlateTag("plates/osmium");
         //Pewter
         public static final TagKey<Item> PEWTER_PLATE = createPlateTag("plates/pewter");
+        //Pig Iron
+        public static final TagKey<Item> PIG_IRON_PLATE = createPlateTag("plates/pig_iron");
         //Platinum
         public static final TagKey<Item> PLATINUM_PLATE = createPlateTag("plates/platinum");
         //Plutonium

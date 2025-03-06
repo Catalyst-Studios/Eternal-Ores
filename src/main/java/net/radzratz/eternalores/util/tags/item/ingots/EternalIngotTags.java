@@ -55,6 +55,8 @@ public class EternalIngotTags {
         public static final TagKey<Item> OSMIUM_INGOT = createIngotTags("ingots/osmium");
         //Pewter
         public static final TagKey<Item> PEWTER_INGOT = createIngotTags("ingots/pewter");
+        //Pig Iron
+        public static final TagKey<Item> PIG_IRON_INGOT = createIngotTags("ingots/pig_iron");
         //Platinum
         public static final TagKey<Item> PLATINUM_INGOT = createIngotTags("ingots/platinum");
         //Plutonium
