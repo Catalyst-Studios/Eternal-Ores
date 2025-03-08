@@ -79,6 +79,15 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK);
                     //END ORES W.I.P
                     //COMPRESSED BLOCKS
+                    output.accept(EternalGeneralBlocks.ANDESITE_1);
+                    output.accept(EternalGeneralBlocks.ANDESITE_2);
+                    output.accept(EternalGeneralBlocks.ANDESITE_3);
+                    output.accept(EternalGeneralBlocks.ANDESITE_4);
+                    output.accept(EternalGeneralBlocks.ANDESITE_5);
+                    output.accept(EternalGeneralBlocks.ANDESITE_6);
+                    output.accept(EternalGeneralBlocks.ANDESITE_7);
+                    output.accept(EternalGeneralBlocks.ANDESITE_8);
+                    output.accept(EternalGeneralBlocks.ANDESITE_9);
                     output.accept(EternalGeneralBlocks.COBBLE_1);
                     output.accept(EternalGeneralBlocks.COBBLE_2);
                     output.accept(EternalGeneralBlocks.COBBLE_3);
@@ -88,6 +97,15 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.COBBLE_7);
                     output.accept(EternalGeneralBlocks.COBBLE_8);
                     output.accept(EternalGeneralBlocks.COBBLE_9);
+                    output.accept(EternalGeneralBlocks.DIORITE_1);
+                    output.accept(EternalGeneralBlocks.DIORITE_2);
+                    output.accept(EternalGeneralBlocks.DIORITE_3);
+                    output.accept(EternalGeneralBlocks.DIORITE_4);
+                    output.accept(EternalGeneralBlocks.DIORITE_5);
+                    output.accept(EternalGeneralBlocks.DIORITE_6);
+                    output.accept(EternalGeneralBlocks.DIORITE_7);
+                    output.accept(EternalGeneralBlocks.DIORITE_8);
+                    output.accept(EternalGeneralBlocks.DIORITE_9);
                     output.accept(EternalGeneralBlocks.DIRT_1);
                     output.accept(EternalGeneralBlocks.DIRT_2);
                     output.accept(EternalGeneralBlocks.DIRT_3);
@@ -97,6 +115,24 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.DIRT_7);
                     output.accept(EternalGeneralBlocks.DIRT_8);
                     output.accept(EternalGeneralBlocks.DIRT_9);
+                    output.accept(EternalGeneralBlocks.GRANITE_1);
+                    output.accept(EternalGeneralBlocks.GRANITE_2);
+                    output.accept(EternalGeneralBlocks.GRANITE_3);
+                    output.accept(EternalGeneralBlocks.GRANITE_4);
+                    output.accept(EternalGeneralBlocks.GRANITE_5);
+                    output.accept(EternalGeneralBlocks.GRANITE_6);
+                    output.accept(EternalGeneralBlocks.GRANITE_7);
+                    output.accept(EternalGeneralBlocks.GRANITE_8);
+                    output.accept(EternalGeneralBlocks.GRANITE_9);
+                    output.accept(EternalGeneralBlocks.GRAVEL_1);
+                    output.accept(EternalGeneralBlocks.GRAVEL_2);
+                    output.accept(EternalGeneralBlocks.GRAVEL_3);
+                    output.accept(EternalGeneralBlocks.GRAVEL_4);
+                    output.accept(EternalGeneralBlocks.GRAVEL_5);
+                    output.accept(EternalGeneralBlocks.GRAVEL_6);
+                    output.accept(EternalGeneralBlocks.GRAVEL_7);
+                    output.accept(EternalGeneralBlocks.GRAVEL_8);
+                    output.accept(EternalGeneralBlocks.GRAVEL_9);
                     output.accept(EternalGeneralBlocks.SAND_1);
                     output.accept(EternalGeneralBlocks.SAND_2);
                     output.accept(EternalGeneralBlocks.SAND_3);

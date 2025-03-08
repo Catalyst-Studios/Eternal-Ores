@@ -378,6 +378,15 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get())
 
                     //COMPRESSED BLOCKS
+                    .add(EternalGeneralBlocks.ANDESITE_1.get())
+                    .add(EternalGeneralBlocks.ANDESITE_2.get())
+                    .add(EternalGeneralBlocks.ANDESITE_3.get())
+                    .add(EternalGeneralBlocks.ANDESITE_4.get())
+                    .add(EternalGeneralBlocks.ANDESITE_5.get())
+                    .add(EternalGeneralBlocks.ANDESITE_6.get())
+                    .add(EternalGeneralBlocks.ANDESITE_7.get())
+                    .add(EternalGeneralBlocks.ANDESITE_8.get())
+                    .add(EternalGeneralBlocks.ANDESITE_9.get())
                     .add(EternalGeneralBlocks.COBBLE_1.get())
                     .add(EternalGeneralBlocks.COBBLE_2.get())
                     .add(EternalGeneralBlocks.COBBLE_3.get())
@@ -387,15 +396,15 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.COBBLE_7.get())
                     .add(EternalGeneralBlocks.COBBLE_8.get())
                     .add(EternalGeneralBlocks.COBBLE_9.get())
-                    .add(EternalGeneralBlocks.SAND_1.get())
-                    .add(EternalGeneralBlocks.SAND_2.get())
-                    .add(EternalGeneralBlocks.SAND_3.get())
-                    .add(EternalGeneralBlocks.SAND_4.get())
-                    .add(EternalGeneralBlocks.SAND_5.get())
-                    .add(EternalGeneralBlocks.SAND_6.get())
-                    .add(EternalGeneralBlocks.SAND_7.get())
-                    .add(EternalGeneralBlocks.SAND_8.get())
-                    .add(EternalGeneralBlocks.SAND_9.get())
+                    .add(EternalGeneralBlocks.DIORITE_1.get())
+                    .add(EternalGeneralBlocks.DIORITE_2.get())
+                    .add(EternalGeneralBlocks.DIORITE_3.get())
+                    .add(EternalGeneralBlocks.DIORITE_4.get())
+                    .add(EternalGeneralBlocks.DIORITE_5.get())
+                    .add(EternalGeneralBlocks.DIORITE_6.get())
+                    .add(EternalGeneralBlocks.DIORITE_7.get())
+                    .add(EternalGeneralBlocks.DIORITE_8.get())
+                    .add(EternalGeneralBlocks.DIORITE_9.get())
                     .add(EternalGeneralBlocks.DIRT_1.get())
                     .add(EternalGeneralBlocks.DIRT_2.get())
                     .add(EternalGeneralBlocks.DIRT_3.get())
@@ -404,7 +413,34 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DIRT_6.get())
                     .add(EternalGeneralBlocks.DIRT_7.get())
                     .add(EternalGeneralBlocks.DIRT_8.get())
-                    .add(EternalGeneralBlocks.DIRT_9.get());
+                    .add(EternalGeneralBlocks.DIRT_9.get())
+                    .add(EternalGeneralBlocks.GRANITE_1.get())
+                    .add(EternalGeneralBlocks.GRANITE_2.get())
+                    .add(EternalGeneralBlocks.GRANITE_3.get())
+                    .add(EternalGeneralBlocks.GRANITE_4.get())
+                    .add(EternalGeneralBlocks.GRANITE_5.get())
+                    .add(EternalGeneralBlocks.GRANITE_6.get())
+                    .add(EternalGeneralBlocks.GRANITE_7.get())
+                    .add(EternalGeneralBlocks.GRANITE_8.get())
+                    .add(EternalGeneralBlocks.GRANITE_9.get())
+                    .add(EternalGeneralBlocks.GRAVEL_1.get())
+                    .add(EternalGeneralBlocks.GRAVEL_2.get())
+                    .add(EternalGeneralBlocks.GRAVEL_3.get())
+                    .add(EternalGeneralBlocks.GRAVEL_4.get())
+                    .add(EternalGeneralBlocks.GRAVEL_5.get())
+                    .add(EternalGeneralBlocks.GRAVEL_6.get())
+                    .add(EternalGeneralBlocks.GRAVEL_7.get())
+                    .add(EternalGeneralBlocks.GRAVEL_8.get())
+                    .add(EternalGeneralBlocks.GRAVEL_9.get())
+                    .add(EternalGeneralBlocks.SAND_1.get())
+                    .add(EternalGeneralBlocks.SAND_2.get())
+                    .add(EternalGeneralBlocks.SAND_3.get())
+                    .add(EternalGeneralBlocks.SAND_4.get())
+                    .add(EternalGeneralBlocks.SAND_5.get())
+                    .add(EternalGeneralBlocks.SAND_6.get())
+                    .add(EternalGeneralBlocks.SAND_7.get())
+                    .add(EternalGeneralBlocks.SAND_8.get())
+                    .add(EternalGeneralBlocks.SAND_9.get());
 
             //SHOVEL TAGS
             tag(BlockTags.MINEABLE_WITH_SHOVEL)
@@ -417,6 +453,16 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.SAND_7.get())
                     .add(EternalGeneralBlocks.SAND_8.get())
                     .add(EternalGeneralBlocks.SAND_9.get())
+
+                    .add(EternalGeneralBlocks.GRAVEL_1.get())
+                    .add(EternalGeneralBlocks.GRAVEL_2.get())
+                    .add(EternalGeneralBlocks.GRAVEL_3.get())
+                    .add(EternalGeneralBlocks.GRAVEL_4.get())
+                    .add(EternalGeneralBlocks.GRAVEL_5.get())
+                    .add(EternalGeneralBlocks.GRAVEL_6.get())
+                    .add(EternalGeneralBlocks.GRAVEL_7.get())
+                    .add(EternalGeneralBlocks.GRAVEL_8.get())
+                    .add(EternalGeneralBlocks.GRAVEL_9.get())
 
                     .add(EternalGeneralBlocks.DIRT_1.get())
                     .add(EternalGeneralBlocks.DIRT_2.get())
@@ -556,7 +602,37 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.COBBLE_6.get())
                     .add(EternalGeneralBlocks.COBBLE_7.get())
                     .add(EternalGeneralBlocks.COBBLE_8.get())
-                    .add(EternalGeneralBlocks.COBBLE_9.get());
+                    .add(EternalGeneralBlocks.COBBLE_9.get())
+
+                    .add(EternalGeneralBlocks.GRANITE_1.get())
+                    .add(EternalGeneralBlocks.GRANITE_2.get())
+                    .add(EternalGeneralBlocks.GRANITE_3.get())
+                    .add(EternalGeneralBlocks.GRANITE_4.get())
+                    .add(EternalGeneralBlocks.GRANITE_5.get())
+                    .add(EternalGeneralBlocks.GRANITE_6.get())
+                    .add(EternalGeneralBlocks.GRANITE_7.get())
+                    .add(EternalGeneralBlocks.GRANITE_8.get())
+                    .add(EternalGeneralBlocks.GRANITE_9.get())
+
+                    .add(EternalGeneralBlocks.DIORITE_1.get())
+                    .add(EternalGeneralBlocks.DIORITE_2.get())
+                    .add(EternalGeneralBlocks.DIORITE_3.get())
+                    .add(EternalGeneralBlocks.DIORITE_4.get())
+                    .add(EternalGeneralBlocks.DIORITE_5.get())
+                    .add(EternalGeneralBlocks.DIORITE_6.get())
+                    .add(EternalGeneralBlocks.DIORITE_7.get())
+                    .add(EternalGeneralBlocks.DIORITE_8.get())
+                    .add(EternalGeneralBlocks.DIORITE_9.get())
+
+                    .add(EternalGeneralBlocks.ANDESITE_1.get())
+                    .add(EternalGeneralBlocks.ANDESITE_2.get())
+                    .add(EternalGeneralBlocks.ANDESITE_3.get())
+                    .add(EternalGeneralBlocks.ANDESITE_4.get())
+                    .add(EternalGeneralBlocks.ANDESITE_5.get())
+                    .add(EternalGeneralBlocks.ANDESITE_6.get())
+                    .add(EternalGeneralBlocks.ANDESITE_7.get())
+                    .add(EternalGeneralBlocks.ANDESITE_8.get())
+                    .add(EternalGeneralBlocks.ANDESITE_9.get());
 
             tag(BlockTags.NEEDS_STONE_TOOL)
                     .add(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.get())
@@ -712,5 +788,45 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_7.get());
             tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_8.get());
             tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_9.get());
+
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_1.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_2.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_3.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_4.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_5.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_6.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_7.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_8.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_9.get());
+
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_1.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_2.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_3.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_4.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_5.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_6.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_7.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_8.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_9.get());
+
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_1.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_2.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_3.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_4.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_5.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_6.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_7.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_8.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_9.get());
+
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_1.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_2.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_3.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_4.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_5.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_6.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_7.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_8.get());
+            tag(EternalCompressedBlockTags.Blocks.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_9.get());
     }
 }

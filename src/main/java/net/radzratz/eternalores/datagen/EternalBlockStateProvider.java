@@ -52,6 +52,46 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.DIRT_8);
         blockWithItem(EternalGeneralBlocks.DIRT_9);
 
+        blockWithItem(EternalGeneralBlocks.ANDESITE_1);
+        blockWithItem(EternalGeneralBlocks.ANDESITE_2);
+        blockWithItem(EternalGeneralBlocks.ANDESITE_3);
+        blockWithItem(EternalGeneralBlocks.ANDESITE_4);
+        blockWithItem(EternalGeneralBlocks.ANDESITE_5);
+        blockWithItem(EternalGeneralBlocks.ANDESITE_6);
+        blockWithItem(EternalGeneralBlocks.ANDESITE_7);
+        blockWithItem(EternalGeneralBlocks.ANDESITE_8);
+        blockWithItem(EternalGeneralBlocks.ANDESITE_9);
+
+        blockWithItem(EternalGeneralBlocks.GRAVEL_1);
+        blockWithItem(EternalGeneralBlocks.GRAVEL_2);
+        blockWithItem(EternalGeneralBlocks.GRAVEL_3);
+        blockWithItem(EternalGeneralBlocks.GRAVEL_4);
+        blockWithItem(EternalGeneralBlocks.GRAVEL_5);
+        blockWithItem(EternalGeneralBlocks.GRAVEL_6);
+        blockWithItem(EternalGeneralBlocks.GRAVEL_7);
+        blockWithItem(EternalGeneralBlocks.GRAVEL_8);
+        blockWithItem(EternalGeneralBlocks.GRAVEL_9);
+
+        blockWithItem(EternalGeneralBlocks.GRANITE_1);
+        blockWithItem(EternalGeneralBlocks.GRANITE_2);
+        blockWithItem(EternalGeneralBlocks.GRANITE_3);
+        blockWithItem(EternalGeneralBlocks.GRANITE_4);
+        blockWithItem(EternalGeneralBlocks.GRANITE_5);
+        blockWithItem(EternalGeneralBlocks.GRANITE_6);
+        blockWithItem(EternalGeneralBlocks.GRANITE_7);
+        blockWithItem(EternalGeneralBlocks.GRANITE_8);
+        blockWithItem(EternalGeneralBlocks.GRANITE_9);
+
+        blockWithItem(EternalGeneralBlocks.DIORITE_1);
+        blockWithItem(EternalGeneralBlocks.DIORITE_2);
+        blockWithItem(EternalGeneralBlocks.DIORITE_3);
+        blockWithItem(EternalGeneralBlocks.DIORITE_4);
+        blockWithItem(EternalGeneralBlocks.DIORITE_5);
+        blockWithItem(EternalGeneralBlocks.DIORITE_6);
+        blockWithItem(EternalGeneralBlocks.DIORITE_7);
+        blockWithItem(EternalGeneralBlocks.DIORITE_8);
+        blockWithItem(EternalGeneralBlocks.DIORITE_9);
+
         //METAL BLOCKS
         blockWithItem(EternalGeneralBlocks.ALUMINUM_BLOCK);
         blockWithItem(EternalGeneralBlocks.BRONZE_BLOCK);

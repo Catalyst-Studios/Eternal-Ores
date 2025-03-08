@@ -18,27 +18,27 @@ public class EternalItemsGeneralTags {
         public static final TagKey<Item> SILICON = createGeneralItemTags("c","silicon");
 
         //Stone, Metal & Gem Dust
-        public static final TagKey<Item> METAL_DUSTS = createGeneralItemTags("c", "metal_dust");
-        public static final TagKey<Item> GEM_DUSTS = createGeneralItemTags("c","gem_dust");
-        public static final TagKey<Item> STONE_DUSTS = createGeneralItemTags("c","stone_dust");
+        public static final TagKey<Item> METAL_DUSTS = createGeneralItemTags("c", "dusts/metal");
+        public static final TagKey<Item> GEM_DUSTS = createGeneralItemTags("c","dusts/gem");
+        public static final TagKey<Item> STONE_DUSTS = createGeneralItemTags("c","dusts/stone");
 
         //Gears
         public static final TagKey<Item> GEARS = createGeneralItemTags("c","gears");
-        public static final TagKey<Item> METAL_GEARS = createGeneralItemTags("c","metal_gears");
-        public static final TagKey<Item> GEM_GEARS = createGeneralItemTags("c","gem_gears");
+        public static final TagKey<Item> METAL_GEARS = createGeneralItemTags("c","gears/metal");
+        public static final TagKey<Item> GEM_GEARS = createGeneralItemTags("c","gears/gem");
 
-        public static final TagKey<Item> SMALL_GEARS = createGeneralItemTags("c","small_gears");
-        public static final TagKey<Item> SMALL_METAL_GEARS = createGeneralItemTags("c","small_metal_gears");
-        public static final TagKey<Item> SMALL_GEM_GEARS = createGeneralItemTags("c","small_gem_gears");
+        public static final TagKey<Item> SMALL_GEARS = createGeneralItemTags("c","gears/small");
+        public static final TagKey<Item> SMALL_METAL_GEARS = createGeneralItemTags("c","gears/small_metal");
+        public static final TagKey<Item> SMALL_GEM_GEARS = createGeneralItemTags("c","gears/small_gem");
 
         //Rods
-        public static final TagKey<Item> METAL_RODS = createGeneralItemTags("c","metal_rods");
-        public static final TagKey<Item> GEM_RODS = createGeneralItemTags("c","gem_rods");
+        public static final TagKey<Item> METAL_RODS = createGeneralItemTags("c","rods/metal");
+        public static final TagKey<Item> GEM_RODS = createGeneralItemTags("c","rods/gem");
 
         //Plates
         public static final TagKey<Item> PLATES = createGeneralItemTags("c","plates");
-        public static final TagKey<Item> METAL_PLATES = createGeneralItemTags("c","metal_plates");
-        public static final TagKey<Item> GEM_PLATES = createGeneralItemTags("c","gem_plates");
+        public static final TagKey<Item> METAL_PLATES = createGeneralItemTags("c","plates/metal");
+        public static final TagKey<Item> GEM_PLATES = createGeneralItemTags("c","plates/gem");
 
         public static TagKey<Item> createGeneralItemTags(String namespace, String path) {
             System.out.println("Loading Custom Item tags");

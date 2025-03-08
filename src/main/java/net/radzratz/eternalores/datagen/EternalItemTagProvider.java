@@ -443,6 +443,26 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralBlocks.COBBLE_8.get().asItem())
                         .add(EternalGeneralBlocks.COBBLE_9.get().asItem())
 
+                        .add(EternalGeneralBlocks.GRANITE_1.get().asItem())
+                        .add(EternalGeneralBlocks.GRANITE_2.get().asItem())
+                        .add(EternalGeneralBlocks.GRANITE_3.get().asItem())
+                        .add(EternalGeneralBlocks.GRANITE_4.get().asItem())
+                        .add(EternalGeneralBlocks.GRANITE_5.get().asItem())
+                        .add(EternalGeneralBlocks.GRANITE_6.get().asItem())
+                        .add(EternalGeneralBlocks.GRANITE_7.get().asItem())
+                        .add(EternalGeneralBlocks.GRANITE_8.get().asItem())
+                        .add(EternalGeneralBlocks.GRANITE_9.get().asItem())
+
+                        .add(EternalGeneralBlocks.GRAVEL_1.get().asItem())
+                        .add(EternalGeneralBlocks.GRAVEL_2.get().asItem())
+                        .add(EternalGeneralBlocks.GRAVEL_3.get().asItem())
+                        .add(EternalGeneralBlocks.GRAVEL_4.get().asItem())
+                        .add(EternalGeneralBlocks.GRAVEL_5.get().asItem())
+                        .add(EternalGeneralBlocks.GRAVEL_6.get().asItem())
+                        .add(EternalGeneralBlocks.GRAVEL_7.get().asItem())
+                        .add(EternalGeneralBlocks.GRAVEL_8.get().asItem())
+                        .add(EternalGeneralBlocks.GRAVEL_9.get().asItem())
+
                         .add(EternalGeneralBlocks.SAND_1.get().asItem())
                         .add(EternalGeneralBlocks.SAND_2.get().asItem())
                         .add(EternalGeneralBlocks.SAND_3.get().asItem())
@@ -453,6 +473,16 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralBlocks.SAND_8.get().asItem())
                         .add(EternalGeneralBlocks.SAND_9.get().asItem())
 
+                        .add(EternalGeneralBlocks.DIORITE_1.get().asItem())
+                        .add(EternalGeneralBlocks.DIORITE_2.get().asItem())
+                        .add(EternalGeneralBlocks.DIORITE_3.get().asItem())
+                        .add(EternalGeneralBlocks.DIORITE_4.get().asItem())
+                        .add(EternalGeneralBlocks.DIORITE_5.get().asItem())
+                        .add(EternalGeneralBlocks.DIORITE_6.get().asItem())
+                        .add(EternalGeneralBlocks.DIORITE_7.get().asItem())
+                        .add(EternalGeneralBlocks.DIORITE_8.get().asItem())
+                        .add(EternalGeneralBlocks.DIORITE_9.get().asItem())
+
                         .add(EternalGeneralBlocks.DIRT_1.get().asItem())
                         .add(EternalGeneralBlocks.DIRT_2.get().asItem())
                         .add(EternalGeneralBlocks.DIRT_3.get().asItem())
@@ -461,7 +491,17 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralBlocks.DIRT_6.get().asItem())
                         .add(EternalGeneralBlocks.DIRT_7.get().asItem())
                         .add(EternalGeneralBlocks.DIRT_8.get().asItem())
-                        .add(EternalGeneralBlocks.DIRT_9.get().asItem());
+                        .add(EternalGeneralBlocks.DIRT_9.get().asItem())
+
+                        .add(EternalGeneralBlocks.ANDESITE_1.get().asItem())
+                        .add(EternalGeneralBlocks.ANDESITE_2.get().asItem())
+                        .add(EternalGeneralBlocks.ANDESITE_3.get().asItem())
+                        .add(EternalGeneralBlocks.ANDESITE_4.get().asItem())
+                        .add(EternalGeneralBlocks.ANDESITE_5.get().asItem())
+                        .add(EternalGeneralBlocks.ANDESITE_6.get().asItem())
+                        .add(EternalGeneralBlocks.ANDESITE_7.get().asItem())
+                        .add(EternalGeneralBlocks.ANDESITE_8.get().asItem())
+                        .add(EternalGeneralBlocks.ANDESITE_9.get().asItem());
 
             //Individual Storage Blocks (Item Tag)
             tag(EternalStorageMetalBlockItemTags.Blocks.ALUMINUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ALUMINUM_BLOCK.asItem());
@@ -1001,6 +1041,8 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalRawMaterialTags.RAW_URANIUM).add(EternalGeneralItems.RAW_URANIUM.get());
                 tag(EternalRawMaterialTags.RAW_ZINC).add(EternalGeneralItems.RAW_ZINC.get());
 
+
+                //Compressed Blocks Storage Blocks (Item tags)
                 tag(EternalCompressedBlockTags.Items.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_1.get().asItem());
                 tag(EternalCompressedBlockTags.Items.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_2.get().asItem());
                 tag(EternalCompressedBlockTags.Items.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_3.get().asItem());
@@ -1030,6 +1072,46 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalCompressedBlockTags.Items.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_7.get().asItem());
                 tag(EternalCompressedBlockTags.Items.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_8.get().asItem());
                 tag(EternalCompressedBlockTags.Items.COMPRESSED_DIRT).add(EternalGeneralBlocks.DIRT_9.get().asItem());
+
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_1.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_2.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_3.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_4.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_5.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_6.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_7.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_8.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_ANDESITE).add(EternalGeneralBlocks.ANDESITE_9.get().asItem());
+
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_1.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_2.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_3.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_4.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_5.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_6.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_7.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_8.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRAVEL).add(EternalGeneralBlocks.GRAVEL_9.get().asItem());
+
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_1.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_2.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_3.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_4.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_5.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_6.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_7.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_8.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_GRANITE).add(EternalGeneralBlocks.GRANITE_9.get().asItem());
+
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_1.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_2.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_3.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_4.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_5.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_6.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_7.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_8.get().asItem());
+                tag(EternalCompressedBlockTags.Items.COMPRESSED_DIORITE).add(EternalGeneralBlocks.DIORITE_9.get().asItem());
 
                 System.out.println("Finished Loading Tools and Item Tags");
     }

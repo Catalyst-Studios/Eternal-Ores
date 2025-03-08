@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:compressed_gravel_5x"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:compressed_gravel_4x"
+  }
+}

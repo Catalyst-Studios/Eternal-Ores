@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_granite_1x_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:granite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:compressed/granite_1x_compressed_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_granite_1x_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:compressed/granite_1x_compressed_block"
+    ]
+  }
+}

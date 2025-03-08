@@ -220,6 +220,46 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> DIRT_7 = registerCompressedBlockItem("compressed_dirt_7x", 2f, SoundType.GRAVEL);
     public static final DeferredBlock<Block> DIRT_8 = registerCompressedBlockItem("compressed_dirt_8x", 2f, SoundType.GRAVEL);
     public static final DeferredBlock<Block> DIRT_9 = registerCompressedBlockItem("compressed_dirt_9x", 2f, SoundType.GRAVEL);
+    ///Andesite
+    public static final DeferredBlock<Block> ANDESITE_1 = registerCompressedBlockItem("compressed_andesite_1x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> ANDESITE_2 = registerCompressedBlockItem("compressed_andesite_2x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> ANDESITE_3 = registerCompressedBlockItem("compressed_andesite_3x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> ANDESITE_4 = registerCompressedBlockItem("compressed_andesite_4x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> ANDESITE_5 = registerCompressedBlockItem("compressed_andesite_5x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> ANDESITE_6 = registerCompressedBlockItem("compressed_andesite_6x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> ANDESITE_7 = registerCompressedBlockItem("compressed_andesite_7x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> ANDESITE_8 = registerCompressedBlockItem("compressed_andesite_8x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> ANDESITE_9 = registerCompressedBlockItem("compressed_andesite_9x", 2f, SoundType.STONE);
+    ///Gravel
+    public static final DeferredBlock<Block> GRAVEL_1 = registerCompressedBlockItem("compressed_gravel_1x", 2f, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> GRAVEL_2 = registerCompressedBlockItem("compressed_gravel_2x", 2f, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> GRAVEL_3 = registerCompressedBlockItem("compressed_gravel_3x", 2f, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> GRAVEL_4 = registerCompressedBlockItem("compressed_gravel_4x", 2f, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> GRAVEL_5 = registerCompressedBlockItem("compressed_gravel_5x", 2f, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> GRAVEL_6 = registerCompressedBlockItem("compressed_gravel_6x", 2f, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> GRAVEL_7 = registerCompressedBlockItem("compressed_gravel_7x", 2f, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> GRAVEL_8 = registerCompressedBlockItem("compressed_gravel_8x", 2f, SoundType.GRAVEL);
+    public static final DeferredBlock<Block> GRAVEL_9 = registerCompressedBlockItem("compressed_gravel_9x", 2f, SoundType.GRAVEL);
+    ///Granite
+    public static final DeferredBlock<Block> GRANITE_1 = registerCompressedBlockItem("compressed_granite_1x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> GRANITE_2 = registerCompressedBlockItem("compressed_granite_2x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> GRANITE_3 = registerCompressedBlockItem("compressed_granite_3x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> GRANITE_4 = registerCompressedBlockItem("compressed_granite_4x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> GRANITE_5 = registerCompressedBlockItem("compressed_granite_5x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> GRANITE_6 = registerCompressedBlockItem("compressed_granite_6x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> GRANITE_7 = registerCompressedBlockItem("compressed_granite_7x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> GRANITE_8 = registerCompressedBlockItem("compressed_granite_8x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> GRANITE_9 = registerCompressedBlockItem("compressed_granite_9x", 2f, SoundType.STONE);
+    ///Diorite
+    public static final DeferredBlock<Block> DIORITE_1 = registerCompressedBlockItem("compressed_diorite_1x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> DIORITE_2 = registerCompressedBlockItem("compressed_diorite_2x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> DIORITE_3 = registerCompressedBlockItem("compressed_diorite_3x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> DIORITE_4 = registerCompressedBlockItem("compressed_diorite_4x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> DIORITE_5 = registerCompressedBlockItem("compressed_diorite_5x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> DIORITE_6 = registerCompressedBlockItem("compressed_diorite_6x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> DIORITE_7 = registerCompressedBlockItem("compressed_diorite_7x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> DIORITE_8 = registerCompressedBlockItem("compressed_diorite_8x", 2f, SoundType.STONE);
+    public static final DeferredBlock<Block> DIORITE_9 = registerCompressedBlockItem("compressed_diorite_9x", 2f, SoundType.STONE);
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

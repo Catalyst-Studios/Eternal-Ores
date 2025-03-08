@@ -1,6 +1,10 @@
-// 1.21.1	2025-03-06T00:06:49.3541429	Tags for minecraft:item mod id eternalores
+// 1.21.1	2025-03-08T04:51:16.0100235	Tags for minecraft:item mod id eternalores
+7151926595186cd4ef3e6c601f1c49ed25176364 data/c/tags/item/compressed/blocks/andesite.json
 4e6c9034d70176d7bbf3577191be87225f86bc12 data/c/tags/item/compressed/blocks/cobble.json
+f6140f3c5c384218e1d4d8a4e84951f99ccf3b2d data/c/tags/item/compressed/blocks/diorite.json
 be41d5a0c0e5e182f54f46e080d54a06b2ce57af data/c/tags/item/compressed/blocks/dirt.json
+e7c6963d71c3e1ade9381057f1338fdb2729c469 data/c/tags/item/compressed/blocks/granite.json
+6cbc78c3d960156c19ee3e1e0351dcf0f66ecde1 data/c/tags/item/compressed/blocks/gravel.json
 455defe02067960c7bbbe0060bd4619b0de35667 data/c/tags/item/compressed/blocks/sand.json
 6348e001889288d2ab0de2eef3266f9b6ee60f43 data/c/tags/item/dusts.json
 a0f4982b67bd99a844350693498b221b1d1c8051 data/c/tags/item/dusts/aluminum.json
@@ -25,6 +29,7 @@ f971ca489648aea3f7f25c3dd0052c3e1aef6999 data/c/tags/item/dusts/diamond.json
 f83f3303d018f9a23b7669f8990ee9e3c0efbdde data/c/tags/item/dusts/endstone.json
 c02cca11b29ba58c368b07787daddbb9833765ab data/c/tags/item/dusts/fluorite.json
 65842a524e5de647e78c126cb0fb6ac1077b8ac0 data/c/tags/item/dusts/gallium.json
+5e88e0ece2bc1dff3015046edbb9d516e0003853 data/c/tags/item/dusts/gem.json
 009e2829a944c070401bc2b6ff76bad40ffc9ddc data/c/tags/item/dusts/gold.json
 1ee179dc0e575c22f8b95de9f3ee20aa4520f39f data/c/tags/item/dusts/invar.json
 67b39a458e7bd36fde28bd65121384475d37bdc2 data/c/tags/item/dusts/iridium.json
@@ -32,6 +37,7 @@ c02cca11b29ba58c368b07787daddbb9833765ab data/c/tags/item/dusts/fluorite.json
 ebcd04fde396dd7b592bd6746e93ec575c5ec9e7 data/c/tags/item/dusts/lapis.json
 a7ad59c456e041985cc1cb5ac38b9eca826b2841 data/c/tags/item/dusts/lead.json
 48a43e17cfac8155e92e46672ab2b6c2c3fbe166 data/c/tags/item/dusts/lumium.json
+eb13def6a861d9b65b8e52e085cf51f3de92158f data/c/tags/item/dusts/metal.json
 5a8e4115c026288e383ddd2cefa9d487274b469b data/c/tags/item/dusts/netherite.json
 244effd6fdc152a0fea6629aa0e5b6fb1dbb7926 data/c/tags/item/dusts/netherrack.json
 a4ac9fe073007cd67b89625e15ac7309319ac93d data/c/tags/item/dusts/nethersteel.json
@@ -52,6 +58,7 @@ a2c94b262e84622f5d75d35f39a8e69cade9f7ba data/c/tags/item/dusts/shadowsteel.json
 bb384fa642a7cde34c1a38875c2c877b7eff1357 data/c/tags/item/dusts/signalum.json
 274216e2479079b1a05873df0f3673d33edd13ec data/c/tags/item/dusts/silver.json
 a2c94b262e84622f5d75d35f39a8e69cade9f7ba data/c/tags/item/dusts/steel.json
+a35e6d35b50eda3d7623174500ee1d9d4788c4d3 data/c/tags/item/dusts/stone.json
 0febe6d574bf89bc0bf67e8c36a72f51b9e154a6 data/c/tags/item/dusts/sulfur.json
 1dcc3f99352d49294e5bf060a4f08f70ab3e4fd9 data/c/tags/item/dusts/tin.json
 2a414ca5814b28e7f1eb8810271cf2c3b492f013 data/c/tags/item/dusts/titanium.json
@@ -66,16 +73,14 @@ bb2a108472956bb20fb27666c5b275faf8578523 data/c/tags/item/gears/bronze.json
 7ff510f21ba25d7e244bf437c44451860733cbb8 data/c/tags/item/gears/copper.json
 a348803400d5bc81aab9ee54c66e4fbeb385fb1b data/c/tags/item/gears/diamond.json
 b5365bf82dfee1eb9d5bcec0564b5ec24b9be685 data/c/tags/item/gears/enderium.json
+a348803400d5bc81aab9ee54c66e4fbeb385fb1b data/c/tags/item/gears/gem.json
 016aa7b44e66e355eecef0f552c04e54f4478516 data/c/tags/item/gears/gold.json
 3ca5002e35100960fb9ebcc648b2f33a99ae688c data/c/tags/item/gears/iron.json
 5a76e07e9a1d308c0a7cad317b68f2a9c7141e49 data/c/tags/item/gears/lead.json
+f008fd8ac641f5edde78be97d9bb9b5edeb813b2 data/c/tags/item/gears/metal.json
 5a76e07e9a1d308c0a7cad317b68f2a9c7141e49 data/c/tags/item/gears/osmium.json
 5a44e77815d472df74c9a15ade83299b12696a44 data/c/tags/item/gears/steel.json
 056f2cd120a5df0bfbe7361af24cad0d6ce0aef8 data/c/tags/item/gears/tin.json
-5e88e0ece2bc1dff3015046edbb9d516e0003853 data/c/tags/item/gem_dust.json
-a348803400d5bc81aab9ee54c66e4fbeb385fb1b data/c/tags/item/gem_gears.json
-aa3ec990b90bdd3a46baaea0e8b705a34263b918 data/c/tags/item/gem_plates.json
-5767955f883c8b4cc3bce11afb85c4591eabc036 data/c/tags/item/gem_rods.json
 70e582f66e9c7d9dc86d07107abb71fe2a4d1182 data/c/tags/item/ingots.json
 a662e5e3ad3f9e5e0ce4697c875655cdc90fcef4 data/c/tags/item/ingots/aluminium.json
 a662e5e3ad3f9e5e0ce4697c875655cdc90fcef4 data/c/tags/item/ingots/aluminum.json
@@ -117,10 +122,6 @@ e9aec7dc8c4f9fa96c6a6bedf2fa1aed5708b6fe data/c/tags/item/ingots/titanium.json
 a11767c8be06dbdc1923559fdf867a722caa2cb7 data/c/tags/item/ingots/uranium.json
 9d16c3c1d68030fa5c0d1d242b8bc45fc970d3cb data/c/tags/item/ingots/wrought_iron.json
 e721477849a9c86f29f584c93d039815b6221f11 data/c/tags/item/ingots/zinc.json
-eb13def6a861d9b65b8e52e085cf51f3de92158f data/c/tags/item/metal_dust.json
-f008fd8ac641f5edde78be97d9bb9b5edeb813b2 data/c/tags/item/metal_gears.json
-cca7d7899e3280d5bd1681f6597fc33224b79bf2 data/c/tags/item/metal_plates.json
-5015adb99754c72b765499749c7da8e90d676e24 data/c/tags/item/metal_rods.json
 bd12f17c24b581f78e49c53be81a2114081f2ff2 data/c/tags/item/nuggets.json
 881b0f7ee90e5abde2e2fb562e42ca8a90c3c64a data/c/tags/item/nuggets/aluminum.json
 6f67f58edafd2bbb3263fdfa56605c112c08165e data/c/tags/item/nuggets/blue_steel.json
@@ -198,6 +199,7 @@ d8ddffc4c1e07de6628d63850936482912a5de61 data/c/tags/item/plates/cobalt.json
 9e0ff5da7cdf923a8b37b3f631abca82c6d117f7 data/c/tags/item/plates/electrum.json
 22ae1ef4a489eeabd41182679810678dc91f5bed data/c/tags/item/plates/enderium.json
 87773f1ac077fb9a0aaf5bb8e362469a7941f4a2 data/c/tags/item/plates/gallium.json
+aa3ec990b90bdd3a46baaea0e8b705a34263b918 data/c/tags/item/plates/gem.json
 afda5d1f0b116e8d093940b1336d6f89afde57b3 data/c/tags/item/plates/gold.json
 56ba27e739cb19202cfa9c9990562fe4ffcad83b data/c/tags/item/plates/graphite.json
 c8d7da373acd21f56d6e6295a9365b2c9e25f5e1 data/c/tags/item/plates/invar.json
@@ -205,6 +207,7 @@ bed397138c33a55f1d5ca5520854d249fb50d245 data/c/tags/item/plates/iridium.json
 eb12136afc04624eac7b198bbbdb7d5882a576b9 data/c/tags/item/plates/iron.json
 22b1032bd095fb12d666289dd9bdc3cf67a52c29 data/c/tags/item/plates/lead.json
 c6407e44f949dffa60d806d9d7ae647df3c04851 data/c/tags/item/plates/lumium.json
+cca7d7899e3280d5bd1681f6597fc33224b79bf2 data/c/tags/item/plates/metal.json
 80ab679056c657888e2226529c58b6a1b6ad5d9c data/c/tags/item/plates/netherite.json
 5d9aea4f63d0a7f2e81991358648fa4d9814ea60 data/c/tags/item/plates/nethersteel.json
 8101242db517ed50b64d30d9317201f3f7ec812f data/c/tags/item/plates/nickel.json
@@ -256,6 +259,7 @@ bd98f131ecc6e810d5827fea8d58d3e440708cda data/c/tags/item/rods/diamond.json
 719b5a97016d3c7edb91f67948052f34398d68b7 data/c/tags/item/rods/electrum.json
 e7891cf0c10ef2c9ac682f7a63e063b1be8a32c9 data/c/tags/item/rods/enderium.json
 e494419353f08510dc29a7e92939b179a35ee3aa data/c/tags/item/rods/gallium.json
+5767955f883c8b4cc3bce11afb85c4591eabc036 data/c/tags/item/rods/gem.json
 b3657edc4b175b741a6a1ad36cd66aef157fe6bf data/c/tags/item/rods/gold.json
 89a4021e95a5e7ebfa7f91a41bddc671bf1c41f7 data/c/tags/item/rods/graphite.json
 79850fb8969e7e4cfb2634f93ad2e2894525164e data/c/tags/item/rods/invar.json
@@ -263,6 +267,7 @@ b3657edc4b175b741a6a1ad36cd66aef157fe6bf data/c/tags/item/rods/gold.json
 bf8dab97c41c965ef57edddfa093b03db1063a74 data/c/tags/item/rods/iron.json
 b695f51896852431a0cc8be8f06843ba0d2c0950 data/c/tags/item/rods/lead.json
 783fd2e23d62ac881d0bec624bdbab7f1eabcb75 data/c/tags/item/rods/lumium.json
+5015adb99754c72b765499749c7da8e90d676e24 data/c/tags/item/rods/metal.json
 5d78bb5e30e4122ebdf043be4ef5ffa83023d435 data/c/tags/item/rods/netherite.json
 ae42eeee311e17c076ab7a27b9fba37431360171 data/c/tags/item/rods/nethersteel.json
 81e2b487776fb2f380cf8b004ebfbbe7a187f8c3 data/c/tags/item/rods/nickel.json
@@ -282,8 +287,7 @@ da21446879dc8261d4690182c6de7ff2324545e7 data/c/tags/item/rods/uranium.json
 f77dda45584b7bfc16dd0b4b4dc0f9ba3d2ae207 data/c/tags/item/rods/wrought_iron.json
 7bf0c5fe85fca3db0520be2e3c1089ec61d5dc69 data/c/tags/item/rods/zinc.json
 8b775d2666d86568093847d29dd59b6367717a82 data/c/tags/item/silicon.json
-a35e6d35b50eda3d7623174500ee1d9d4788c4d3 data/c/tags/item/stone_dust.json
-f38cc1c7498b5f0b92a2908439116e2563a2363d data/c/tags/item/storage_blocks.json
+9c39c5704858b8c0fcdcb805ea2c0e8681fdfb5a data/c/tags/item/storage_blocks.json
 c4dc97a723d06ee8d352a8c633fb1c9421895a4d data/c/tags/item/storage_blocks/aluminum.json
 4d4e1deb96f454ef5548503771c2f30393d28239 data/c/tags/item/storage_blocks/amber.json
 c8307384879dc69ebf2239a2180f3bf65bb9c243 data/c/tags/item/storage_blocks/apatite.json

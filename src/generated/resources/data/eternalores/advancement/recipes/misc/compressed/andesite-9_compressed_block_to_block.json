@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_andesite-9_compressed_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:compressed_andesite_9x"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:compressed/andesite-9_compressed_block_to_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_andesite-9_compressed_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:compressed/andesite-9_compressed_block_to_block"
+    ]
+  }
+}

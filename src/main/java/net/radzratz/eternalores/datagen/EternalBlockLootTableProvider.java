@@ -99,6 +99,46 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.DIRT_8.get());
         dropSelf(EternalGeneralBlocks.DIRT_9.get());
 
+        dropSelf(EternalGeneralBlocks.ANDESITE_1.get());
+        dropSelf(EternalGeneralBlocks.ANDESITE_2.get());
+        dropSelf(EternalGeneralBlocks.ANDESITE_3.get());
+        dropSelf(EternalGeneralBlocks.ANDESITE_4.get());
+        dropSelf(EternalGeneralBlocks.ANDESITE_5.get());
+        dropSelf(EternalGeneralBlocks.ANDESITE_6.get());
+        dropSelf(EternalGeneralBlocks.ANDESITE_7.get());
+        dropSelf(EternalGeneralBlocks.ANDESITE_8.get());
+        dropSelf(EternalGeneralBlocks.ANDESITE_9.get());
+
+        dropSelf(EternalGeneralBlocks.GRAVEL_1.get());
+        dropSelf(EternalGeneralBlocks.GRAVEL_2.get());
+        dropSelf(EternalGeneralBlocks.GRAVEL_3.get());
+        dropSelf(EternalGeneralBlocks.GRAVEL_4.get());
+        dropSelf(EternalGeneralBlocks.GRAVEL_5.get());
+        dropSelf(EternalGeneralBlocks.GRAVEL_6.get());
+        dropSelf(EternalGeneralBlocks.GRAVEL_7.get());
+        dropSelf(EternalGeneralBlocks.GRAVEL_8.get());
+        dropSelf(EternalGeneralBlocks.GRAVEL_9.get());
+
+        dropSelf(EternalGeneralBlocks.GRANITE_1.get());
+        dropSelf(EternalGeneralBlocks.GRANITE_2.get());
+        dropSelf(EternalGeneralBlocks.GRANITE_3.get());
+        dropSelf(EternalGeneralBlocks.GRANITE_4.get());
+        dropSelf(EternalGeneralBlocks.GRANITE_5.get());
+        dropSelf(EternalGeneralBlocks.GRANITE_6.get());
+        dropSelf(EternalGeneralBlocks.GRANITE_7.get());
+        dropSelf(EternalGeneralBlocks.GRANITE_8.get());
+        dropSelf(EternalGeneralBlocks.GRANITE_9.get());
+
+        dropSelf(EternalGeneralBlocks.DIORITE_1.get());
+        dropSelf(EternalGeneralBlocks.DIORITE_2.get());
+        dropSelf(EternalGeneralBlocks.DIORITE_3.get());
+        dropSelf(EternalGeneralBlocks.DIORITE_4.get());
+        dropSelf(EternalGeneralBlocks.DIORITE_5.get());
+        dropSelf(EternalGeneralBlocks.DIORITE_6.get());
+        dropSelf(EternalGeneralBlocks.DIORITE_7.get());
+        dropSelf(EternalGeneralBlocks.DIORITE_8.get());
+        dropSelf(EternalGeneralBlocks.DIORITE_9.get());
+
         //GEM BLOCKS
         dropSelf(EternalGeneralBlocks.SAPPHIRE_BLOCK.get());
         dropSelf(EternalGeneralBlocks.FLUORITE_BLOCK.get());
