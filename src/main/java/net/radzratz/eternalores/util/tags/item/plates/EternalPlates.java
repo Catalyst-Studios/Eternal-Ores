@@ -55,6 +55,8 @@ public class EternalPlates {
         public static final TagKey<Item> LEAD_PLATE = createPlateTag("plates/lead");
         //Lumium
         public static final TagKey<Item> LUMIUM_PLATE = createPlateTag("plates/lumium");
+        //Necroticarite
+        public static final TagKey<Item> NECROTICARITE_PLATE = createPlateTag("plates/necroticarite");
         //Netherite
         public static final TagKey<Item> NETHERITE_PLATE = createPlateTag("plates/netherite");
         //Nethersteel

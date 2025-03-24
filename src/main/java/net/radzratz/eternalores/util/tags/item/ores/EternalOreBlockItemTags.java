@@ -55,6 +55,7 @@ public class EternalOreBlockItemTags {
         public static final TagKey<Item> ITEM_ZINC_ORE_OW = createOreBlockTags("ores/zinc");
         ///Nether
         public static final TagKey<Item> ITEM_OBSIDIAN_ORE_NETHER = createOreBlockTags("ores/obsidian");
+        public static final TagKey<Item> ITEM_NECROTICARITE_ORE_NETHER = createOreBlockTags("ores/necroticarite");
         ///End
 
         private static TagKey<Item> createOreBlockTags(String path) {

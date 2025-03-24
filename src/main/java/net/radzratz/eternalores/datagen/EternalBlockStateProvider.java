@@ -140,6 +140,7 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.RUBY_BLOCK);
         blockWithItem(EternalGeneralBlocks.ONYX_BLOCK);
         blockWithItem(EternalGeneralBlocks.PERIDOT_BLOCK);
+        blockWithItem(EternalGeneralBlocks.NECROTICARITE_BLOCK);
 
         //RAW BLOCKS
         blockWithItem(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK);
@@ -233,8 +234,10 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         //PERIDOT
         blockWithItem(EternalGeneralBlocks.PERIDOT_ORE_BLOCK);
         blockWithItem(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK);
-        //
+        //OBSIDIAN
         blockWithItem(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK);
+        //NECROTICARITE
+        blockWithItem(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

@@ -89,6 +89,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.NETHERSTEEL_INGOT.get());
         basicItem(EternalGeneralItems.SHADOWSTEEL_INGOT.get());
         basicItem(EternalGeneralItems.PIG_IRON_INGOT.get());
+        basicItem(EternalGeneralItems.MISSING_INGOT.get());
 
         //NUGGETS
         basicItem(EternalGeneralItems.ALUMINUM_NUGGET.get());
@@ -190,6 +191,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.NETHERSTEEL_DUST.get());
         basicItem(EternalGeneralItems.SHADOWSTEEL_DUST.get());
         basicItem(EternalGeneralItems.PIG_IRON_DUST.get());
+        basicItem(EternalGeneralItems.NECROTICARITE_DUST.get());
 
         //RODS
         basicItem(EternalGeneralItems.ROD_ALUMINUM.get());
@@ -231,6 +233,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.ROD_NETHERSTEEL.get());
         basicItem(EternalGeneralItems.ROD_SHADOWSTEEL.get());
         basicItem(EternalGeneralItems.ROD_PIG_IRON.get());
+        basicItem(EternalGeneralItems.ROD_NECROTICARITE.get());
 
         //PLATES
         basicItem(EternalGeneralItems.PLATE_ALUMINUM.get());
@@ -272,6 +275,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.PLATE_NETHERSTEEL.get());
         basicItem(EternalGeneralItems.PLATE_SHADOWSTEEL.get());
         basicItem(EternalGeneralItems.PLATE_PIG_IRON.get());
+        basicItem(EternalGeneralItems.PLATE_NECROTICARITE.get());
 
         //GEARS
         basicItem(EternalGeneralItems.GEAR_ALUMINUM.get());
@@ -286,6 +290,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.GEAR_STEEL.get());
         basicItem(EternalGeneralItems.GEAR_TIN.get());
         basicItem(EternalGeneralItems.ULTIMATE_GEAR.get());
+        basicItem(EternalGeneralItems.GEAR_NECROTICARITE.get());
 
         //GEMS
         basicItem(EternalGeneralItems.FLUORITE.get());
@@ -298,6 +303,10 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.GEM_CINNABAR.get());
         basicItem(EternalGeneralItems.GEM_AMBER.get());
         basicItem(EternalGeneralItems.GEM_NITER.get());
+        basicItem(EternalGeneralItems.GEM_TACHYARITE.get());
+        basicItem(EternalGeneralItems.GEM_VOIDERITE.get());
+        basicItem(EternalGeneralItems.GEM_QUANTIQUARITE.get());
+        basicItem(EternalGeneralItems.GEM_NECROTICARITE.get());
 
         //GEM SHARDS
         basicItem(EternalGeneralItems.GEM_SAPPHIRE_SHARD.get());
@@ -305,6 +314,34 @@ public class EternalItemModelProvider extends ItemModelProvider {
         //Misc
         basicItem(EternalGeneralItems.SILICON.get());
     }
+
+    //This modifies the behavior of "basicItem" in ItemModelProvider by changing how it searches for item textures.
+    //Instead of only looking in textures/item/, it now checks multiple possible paths dynamically.
+    //
+    //To add more custom texture paths, simply add a new path inside `possiblePaths` (e.g., basePath + "your_new_folder/" + itemName).
+    //
+    //If no specific texture is found, it defaults to textures/item/.
+    //
+    //Special case: If the texture is inside "rods/" or "hammers/", it applies the "handheld" parent model instead of "generated".
+    //
+    // If you want to add more item categories to use the "handheld" model,
+    // simply add `|| path.contains("your_folder/")` right before the builder.
+    //
+    // Example:
+    // if(path.contains("rods/") || path.contains("hammers/") || path.contains("your_folder/")) {
+    //     builder = this.getBuilder(item.toString())
+    //             .parent(new ModelFile.UncheckedModelFile("item/handheld"))
+    //             .texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), path));
+    // }
+    //
+    // This ensures that any new item category added will automatically use the "handheld" model
+    // instead of the default "generated" model.
+    //
+    //If no matching texture is found, it will use textures/item/item_name.png as a fallback.
+    //
+    //Why was this done?
+    //
+    //Simply because my adhd won this time
 
     public @NotNull ItemModelBuilder basicItem(ResourceLocation item) {
         String itemName = item.getPath();

@@ -27,6 +27,8 @@ public class EternalOreBlockTags {
         public static final TagKey<Block> IRIDIUM_ORE_OW = createOreBlockTags("ores/iridium");
         //Lead
         public static final TagKey<Block> LEAD_ORE_OW = createOreBlockTags("ores/lead");
+        //Necroticarite
+        public static final TagKey<Block> NECROTICARITE_ORE_OW = createOreBlockTags("ores/necroticarite");
         //Nickel
         public static final TagKey<Block> NICKEL_ORE_OW = createOreBlockTags("ores/nickel");
         //Niter

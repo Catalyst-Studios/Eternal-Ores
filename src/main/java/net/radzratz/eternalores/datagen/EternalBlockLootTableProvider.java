@@ -149,6 +149,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.NITER_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RUBY_BLOCK.get());
         dropSelf(EternalGeneralBlocks.PERIDOT_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.NECROTICARITE_BLOCK.get());
 
         //RAW ORE BLOCKS
         dropSelf(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get());
@@ -266,6 +267,8 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         add(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), EternalGeneralItems.GEM_PERIDOT.get(),1,2));
         //OBSIDIAN ORE TO GEM
         add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get(), EternalGeneralItems.GEM_OBSIDIAN_SHARD.get(),1,2));
+        //NECROTICARITE TO GEM
+        add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get(), EternalGeneralItems.GEM_NECROTICARITE.get(),1,2));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

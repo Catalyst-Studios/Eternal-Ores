@@ -23,6 +23,7 @@ We also plan to add compatibility for other mods!
 
 - Create (NYI)
 - Mekanism (NYI)
+- Oritech (NYI)
 
 Catalyst Team
 ==========

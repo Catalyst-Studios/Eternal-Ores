@@ -128,6 +128,7 @@
   "item.eternalores.rod_nethersteel": "Nethersteel Rod",
   "item.eternalores.rod_shadowsteel": "Shadowsteel Rod",
   "item.eternalores.rod_pig_iron": "Pig Iron Rod",
+  "item.eternalores.rod_necroticarite": "Necroticarite Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -168,6 +169,7 @@
   "item.eternalores.plate_nethersteel": "Nethersteel Plate",
   "item.eternalores.plate_shadowsteel": "Shadowsteel Plate",
   "item.eternalores.plate_pig_iron": "Pig Iron Plate",
+  "item.eternalores.plate_necroticarite": "Necroticarite Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -181,6 +183,7 @@
   "item.eternalores.gear_osmium": "Osmium Gear",
   "item.eternalores.gear_diamond": "Diamond Gear",
   "item.eternalores.gear_aluminum": "Aluminum Gear",
+  "item.eternalores.gear_necroticarite": "Necroticarite Gear",
 
   "item.eternalores.raw_uranium": "Raw Uranium",
   "item.eternalores.raw_osmium": "Raw Osmium",
@@ -257,6 +260,7 @@
   "item.eternalores.nethersteel_dust": "Nethersteel Dust",
   "item.eternalores.shadowsteel_dust": "Shadowsteel Dust",
   "item.eternalores.pig_iron_dust": "Pig Iron Dust",
+  "item.eternalores.necroticarite_dust": "Necroticarite Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
   "item.eternalores.gem_onyx": "Onyx",
@@ -269,6 +273,7 @@
   "item.eternalores.gem_niter": "Niter",
   "item.eternalores.gem_amber": "Amber",
   "item.eternalores.gem_cinnabar": "Cinnabar",
+  "item.eternalores.gem_necroticarite": "Necroticarite",
 
   "item.eternalores.gem_sapphire_shard": "Sapphire Shard",
 
@@ -323,6 +328,7 @@
   "block.eternalores.deepslate_uraninite_ore_block": "Deepslate Uraninite Ore",
 
   "block.eternalores.obsidian_ore_block": "Obsidian Ore",
+  "block.eternalores.necroticarite_ore_block": "Necroticarite Ore",
 
   "block.eternalores.raw_aluminum_block": "Block of Raw Aluminum",
   "block.eternalores.raw_cobalt_block": "Block of Raw Cobalt",
@@ -385,6 +391,7 @@
   "block.eternalores.nethersteel_block": "Nethersteel Block",
   "block.eternalores.shadowsteel_block": "Shadowsteel Block",
   "block.eternalores.pig_iron_block": "Pig Iron Block",
+  "block.eternalores.necroticarite_block": "Necroticarite Block",
 
   "block.eternalores.compressed_cobble_1x": "Compressed Cobblestone 1x",
   "block.eternalores.compressed_cobble_2x": "Compressed Cobblestone 2x",

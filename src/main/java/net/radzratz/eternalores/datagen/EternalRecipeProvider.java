@@ -24,7 +24,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
             "britannia", "bronze", "constantan", "electrum", "coal", "ender", "endstone", "netherrack",
             "invar", "lapis", "cinnabar", "lumium", "niter", "obsidian", "peridot", "pewter", "plutonium",
             "quartz", "rose_gold", "ruby", "sapphire", "signalum", "steel", "titanium", "enderium",
-            "cast_iron", "cast_steel", "wrought_iron", "nethersteel", "shadowsteel", "pig_iron"
+            "cast_iron", "cast_steel", "wrought_iron", "nethersteel", "shadowsteel", "pig_iron",
+            "necroticarite"
     );
 
     public EternalRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -100,6 +101,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateHammerRecipes(recipeOutput, "apatite_gem", EternalGeneralItems.GEM_APATITE.get(), EternalGeneralItems.APATITE_DUST.get());
         generateHammerRecipes(recipeOutput, "cinnabar_gem", EternalGeneralItems.GEM_CINNABAR.get(), EternalGeneralItems.CINNABAR_DUST.get());
         generateHammerRecipes(recipeOutput, "fluorite_gem", EternalGeneralItems.FLUORITE.get(), EternalGeneralItems.FLUORITE_DUST.get());
+        generateHammerRecipes(recipeOutput, "necroticarite_gem", EternalGeneralItems.GEM_NECROTICARITE.get(), EternalGeneralItems.NECROTICARITE_DUST.get());
         generateHammerRecipes(recipeOutput, "niter_gem", EternalGeneralItems.GEM_NITER.get(), EternalGeneralItems.NITER_DUST.get());
         generateHammerRecipes(recipeOutput, "onyx_gem", EternalGeneralItems.GEM_ONYX.get(), EternalGeneralItems.ONYX_DUST.get());
         generateHammerRecipes(recipeOutput, "peridot_gem", EternalGeneralItems.GEM_PERIDOT.get(), EternalGeneralItems.PERIDOT_DUST.get());
@@ -152,6 +154,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotPlateRecipe(recipeOutput, "wrought_iron", EternalGeneralItems.PLATE_WROUGHT_IRON.get());
         generateIngotPlateRecipe(recipeOutput, "zinc", EternalGeneralItems.PLATE_ZINC.get());
 
+        generateGemPlateRecipe(recipeOutput, "necroticarite", EternalGeneralItems.PLATE_NECROTICARITE.get());
         generateGemPlateRecipe(recipeOutput, "sapphire", EternalGeneralItems.PLATE_SAPPHIRE.get());
 
         ///
@@ -199,6 +202,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotRodsRecipe(recipeOutput, "wrought_iron", EternalGeneralItems.ROD_WROUGHT_IRON.get());
         generateIngotRodsRecipe(recipeOutput, "zinc", EternalGeneralItems.ROD_ZINC.get());
 
+        generateGemRodsRecipe(recipeOutput, "necroticarite", EternalGeneralItems.ROD_NECROTICARITE.get());
         generateGemRodsRecipe(recipeOutput, "sapphire", EternalGeneralItems.ROD_SAPPHIRE.get());
 
         ///
@@ -246,6 +250,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToGemMaterialRecipe(recipeOutput, "apatite", EternalGeneralBlocks.APATITE_BLOCK.asItem(), EternalGeneralItems.GEM_APATITE.get());
         generateBlockToGemMaterialRecipe(recipeOutput, "cinnabar", EternalGeneralBlocks.CINNABAR_BLOCK.asItem(), EternalGeneralItems.GEM_CINNABAR.get());
         generateBlockToGemMaterialRecipe(recipeOutput, "fluorite", EternalGeneralBlocks.FLUORITE_BLOCK.asItem(), EternalGeneralItems.FLUORITE.get());
+        generateBlockToGemMaterialRecipe(recipeOutput, "necroticarite", EternalGeneralBlocks.NECROTICARITE_BLOCK.asItem(), EternalGeneralItems.GEM_NECROTICARITE.get());
         generateBlockToGemMaterialRecipe(recipeOutput, "niter", EternalGeneralBlocks.NITER_BLOCK.asItem(), EternalGeneralItems.GEM_NITER.get());
         generateBlockToGemMaterialRecipe(recipeOutput, "onyx", EternalGeneralBlocks.ONYX_BLOCK.asItem(), EternalGeneralItems.GEM_ONYX.get());
         generateBlockToGemMaterialRecipe(recipeOutput, "peridot", EternalGeneralBlocks.PERIDOT_BLOCK.asItem(), EternalGeneralItems.GEM_PERIDOT.get());
@@ -335,6 +340,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateGemToBlockRecipe(recipeOutput, "apatite", EternalGeneralItems.GEM_APATITE.get(), EternalGeneralBlocks.APATITE_BLOCK.asItem());
         generateGemToBlockRecipe(recipeOutput, "cinnabar", EternalGeneralItems.GEM_CINNABAR.get(), EternalGeneralBlocks.CINNABAR_BLOCK.asItem());
         generateGemToBlockRecipe(recipeOutput, "fluorite", EternalGeneralItems.FLUORITE.get(), EternalGeneralBlocks.FLUORITE_BLOCK.asItem());
+        generateGemToBlockRecipe(recipeOutput, "necroticarite", EternalGeneralItems.GEM_NECROTICARITE.get(), EternalGeneralBlocks.NECROTICARITE_BLOCK.asItem());
         generateGemToBlockRecipe(recipeOutput, "niter", EternalGeneralItems.GEM_NITER.get(), EternalGeneralBlocks.NITER_BLOCK.asItem());
         generateGemToBlockRecipe(recipeOutput, "onyx", EternalGeneralItems.GEM_ONYX.get(), EternalGeneralBlocks.ONYX_BLOCK.asItem());
         generateGemToBlockRecipe(recipeOutput, "peridot", EternalGeneralItems.GEM_PERIDOT.get(), EternalGeneralBlocks.PERIDOT_BLOCK.asItem());
@@ -477,6 +483,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateRodPlateToDustRecipe(recipeOutput, "wrought_iron", EternalGeneralItems.PLATE_WROUGHT_IRON.get(), EternalGeneralItems.ROD_WROUGHT_IRON.get(),EternalGeneralItems.WROUGHT_IRON_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "zinc", EternalGeneralItems.PLATE_ZINC.get(), EternalGeneralItems.ROD_ZINC.get(), EternalGeneralItems.ZINC_DUST.get());
 
+        generateRodPlateToDustRecipe(recipeOutput, "necroticarite", EternalGeneralItems.PLATE_NECROTICARITE.get(), EternalGeneralItems.ROD_NECROTICARITE.get(), EternalGeneralItems.NECROTICARITE_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "sapphire", EternalGeneralItems.PLATE_SAPPHIRE.get(), EternalGeneralItems.ROD_SAPPHIRE.get(), EternalGeneralItems.SAPPHIRE_DUST.get());
 
         ///
@@ -567,6 +574,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialFurnace(recipeOutput, "amber", EternalGeneralItems.AMBER_DUST.get(), EternalGeneralItems.GEM_AMBER.get());
         generateDustToMaterialFurnace(recipeOutput, "apatite", EternalGeneralItems.APATITE_DUST.get(), EternalGeneralItems.GEM_APATITE.get());
         generateDustToMaterialFurnace(recipeOutput, "cinnabar", EternalGeneralItems.CINNABAR_DUST.get(), EternalGeneralItems.GEM_CINNABAR.get());
+        generateDustToMaterialFurnace(recipeOutput, "necroticarite", EternalGeneralItems.NECROTICARITE_DUST.get(), EternalGeneralItems.GEM_NECROTICARITE.get());
         generateDustToMaterialFurnace(recipeOutput, "niter", EternalGeneralItems.NITER_DUST.get(), EternalGeneralItems.GEM_NITER.get());
         generateDustToMaterialFurnace(recipeOutput, "onyx", EternalGeneralItems.ONYX_DUST.get(), EternalGeneralItems.GEM_ONYX.get());
         generateDustToMaterialFurnace(recipeOutput, "peridot", EternalGeneralItems.PERIDOT_DUST.get(), EternalGeneralItems.GEM_PERIDOT.get());
@@ -624,6 +632,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateDustToMaterialBlasting(recipeOutput, "amber", EternalGeneralItems.AMBER_DUST.get(), EternalGeneralItems.GEM_AMBER.get());
         generateDustToMaterialBlasting(recipeOutput, "apatite", EternalGeneralItems.APATITE_DUST.get(), EternalGeneralItems.GEM_APATITE.get());
         generateDustToMaterialBlasting(recipeOutput, "cinnabar", EternalGeneralItems.CINNABAR_DUST.get(), EternalGeneralItems.GEM_CINNABAR.get());
+        generateDustToMaterialBlasting(recipeOutput, "necroticarite", EternalGeneralItems.NECROTICARITE_DUST.get(), EternalGeneralItems.GEM_NECROTICARITE.get());
         generateDustToMaterialBlasting(recipeOutput, "niter", EternalGeneralItems.NITER_DUST.get(), EternalGeneralItems.GEM_NITER.get());
         generateDustToMaterialBlasting(recipeOutput, "onyx", EternalGeneralItems.ONYX_DUST.get(), EternalGeneralItems.GEM_ONYX.get());
         generateDustToMaterialBlasting(recipeOutput, "peridot", EternalGeneralItems.PERIDOT_DUST.get(), EternalGeneralItems.GEM_PERIDOT.get());
@@ -724,6 +733,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateOreBlockToMaterialFurnace(recipeOutput, "stone_sapphire", EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_sapphire", EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
 
+        generateOreBlockToMaterialFurnace(recipeOutput, "nether_necroticarite", EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_NECROTICARITE.get());
+
         //Blasting var
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_aluminum", EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_aluminum", EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
@@ -770,6 +781,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_ruby", EternalGeneralBlocks.DEEPSLATE_RUBY_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_RUBY.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_sapphire", EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_sapphire", EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
+
+        generateOreBlockToMaterialBlasting(recipeOutput, "nether_necroticarite", EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.asItem(), EternalGeneralItems.GEM_NECROTICARITE.get());
 
         ///Compressed Blocks
         //Cobblestone
@@ -932,7 +945,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_to_dust"));
 
         //Raw Materials -> Dust (2x)
-        if(isIngot && !EXCLUDED_MAT_DUPE_RECIPES.contains(baseMaterial)) {
+        if(isIngot && !EXCLUDED_MAT_DUPE_RECIPES.contains(baseMaterial))
+        {
             ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, dust, 2)
                     .requires(ItemTags.create(ResourceLocation.parse("c:raw_materials/" + baseMaterial)))
                     .requires(ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/hammers")))

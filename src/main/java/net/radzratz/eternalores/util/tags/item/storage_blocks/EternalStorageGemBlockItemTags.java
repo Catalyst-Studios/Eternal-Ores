@@ -16,6 +16,8 @@ public class EternalStorageGemBlockItemTags {
         public static final TagKey<Item> CINNABAR_BLOCK_ST_ITEM = createGemStorageBlockItemTags("storage_blocks/cinnabar");
         //Fluorite
         public static final TagKey<Item> FLUORITE_BLOCK_ST_ITEM = createGemStorageBlockItemTags("storage_blocks/fluorite");
+        //Necroticarite
+        public static final TagKey<Item> NECROTICARITE_BLOCK_ST_ITEM = createGemStorageBlockItemTags("storage_blocks/necroticarite");
         //Niter
         public static final TagKey<Item> NITER_BLOCK_ST_ITEM = createGemStorageBlockItemTags("storage_blocks/niter");
         //Onxy

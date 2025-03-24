@@ -14,6 +14,8 @@ public class EternalGemGearTags {
         public static final TagKey<Item> GEAR_CINNABAR = createGemGearTag("gears/cinnabar");
         //Diamond
         public static final TagKey<Item> GEAR_DIAMOND = createGemGearTag("gears/diamond");
+        //Necroticarite
+        public static final TagKey<Item> GEAR_NECROTICARITE = createGemGearTag("gears/necroticarite");
         //Obsidian
         public static final TagKey<Item> GEAR_OBSIDIAN = createGemGearTag("gears/obsidian");
         //Peridot

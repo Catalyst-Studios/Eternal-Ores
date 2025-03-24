@@ -10,6 +10,8 @@ public class EternalGemRodsTags {
 
         //Diamond
         public static final TagKey<Item> ROD_DIAMOND = createGemRodTag("rods/diamond");
+        //Necroticarite
+        public static final TagKey<Item> ROD_NECROTICARITE = createGemRodTag("rods/necroticarite");
         //Sapphire
         public static final TagKey<Item> ROD_SAPPHIRE = createGemRodTag("rods/sapphire");
 

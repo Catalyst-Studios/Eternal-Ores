@@ -24,6 +24,8 @@ public class EternalGemDustsTags {
         public static final TagKey<Item> DUST_FLUORITE = createGemDustTag("dusts/fluorite");
         //Lapis
         public static final TagKey<Item> DUST_LAPIS = createGemDustTag("dusts/lapis");
+        //Necroticarite
+        public static final TagKey<Item> DUST_NECROTICARITE = createGemDustTag("dusts/necroticarite");
         //Niter
         public static final TagKey<Item> DUST_NITER = createGemDustTag("dusts/niter");
         //Obsidian

@@ -91,13 +91,15 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> PERIDOT_ORE_BLOCK = registerOreBlock("peridot_ore_block", 3f, SoundType.STONE);
     public static final DeferredBlock<Block> DEEPSLATE_PERIDOT_ORE_BLOCK = registerOreBlock("deepslate_peridot_ore_block", 3f, SoundType.DEEPSLATE);
     //Obsidian
-    public static final DeferredBlock<Block> OBSIDIAN_ORE_BLOCK = registerOreBlock("obsidian_ore_block", 4f, SoundType.STONE);
+    public static final DeferredBlock<Block> OBSIDIAN_ORE_BLOCK = registerOreBlock("obsidian_ore_block", 4f, SoundType.NETHERRACK);
     //Iridium
     public static final DeferredBlock<Block> IRIDIUM_ORE_BLOCK = registerOreBlock("iridium_ore_block", 4f, SoundType.STONE);
     public static final DeferredBlock<Block> DEEPSLATE_IRIDIUM_ORE_BLOCK = registerOreBlock("deepslate_iridium_ore_block", 4f, SoundType.DEEPSLATE);
     //Uraninite
     public static final DeferredBlock<Block> URANINITE_ORE_BLOCK = registerOreBlock("uraninite_ore_block", 3f, SoundType.STONE);
     public static final DeferredBlock<Block> DEEPSLATE_URANINITE_ORE_BLOCK = registerOreBlock("deepslate_uraninite_ore_block", 3f, SoundType.DEEPSLATE);
+    //Necroticarite
+    public static final DeferredBlock<Block> NECROTICARITE_ORE_BLOCK = registerOreBlock("necroticarite_ore_block", 4f, SoundType.NETHERRACK);
 
     //RAW ORE BLOCKS
     private static DeferredBlock<Block> registerRawOreBlock(String name, float hardness, SoundType sound) {
@@ -182,6 +184,7 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> NITER_BLOCK = registerGemBlock("niter_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> RUBY_BLOCK = registerGemBlock("ruby_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> PERIDOT_BLOCK = registerGemBlock("peridot_block", 3f, SoundType.METAL);
+    public static final DeferredBlock<Block> NECROTICARITE_BLOCK = registerGemBlock("necroticarite_block", 4f, SoundType.METAL);
 
     //Compressed Blocks
     private static DeferredBlock<Block> registerCompressedBlockItem(String name, float hardness, SoundType sound) {

@@ -73,6 +73,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalStorageGemBlockTags.Blocks.PERIDOT_BLOCK_ST).add(EternalGeneralBlocks.PERIDOT_BLOCK.get());
             tag(EternalStorageGemBlockTags.Blocks.RUBY_BLOCK_ST).add(EternalGeneralBlocks.RUBY_BLOCK.get());
             tag(EternalStorageGemBlockTags.Blocks.SAPPHIRE_BLOCK_ST).add(EternalGeneralBlocks.SAPPHIRE_BLOCK.get());
+            tag(EternalStorageGemBlockTags.Blocks.NECROTICARITE_BLOCK_ST).add(EternalGeneralBlocks.NECROTICARITE_BLOCK.get());
 
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_ALUMINUM_ST).add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_COBALT_ST).add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get());
@@ -95,6 +96,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.APATITE_BLOCK.get())
                     .add(EternalGeneralBlocks.CINNABAR_BLOCK.get())
                     .add(EternalGeneralBlocks.FLUORITE_BLOCK.get())
+                    .add(EternalGeneralBlocks.NECROTICARITE_BLOCK.get())
                     .add(EternalGeneralBlocks.NITER_BLOCK.get())
                     .add(EternalGeneralBlocks.ONYX_BLOCK.get())
                     .add(EternalGeneralBlocks.PERIDOT_BLOCK.get())
@@ -176,6 +178,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalOreBlockTags.Blocks.IRIDIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.LEAD_ORE_OW).add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.LEAD_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get());
+            tag(EternalOreBlockTags.Blocks.NECROTICARITE_ORE_OW).add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.NICKEL_ORE_OW).add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.NICKEL_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get());
             tag(EternalOreBlockTags.Blocks.NITER_ORE_OW).add(EternalGeneralBlocks.NITER_ORE_BLOCK.get());
@@ -224,6 +227,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NITER_ORE_BLOCK.get())
@@ -312,6 +316,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
 
             //Ores in Ground Netherrack
             tag(Tags.Blocks.ORES_IN_GROUND_NETHERRACK)
+                    .add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get());
 
             //Storage Blocks
@@ -337,6 +342,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_BLOCK.get())
                     .add(EternalGeneralBlocks.LUMIUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.NECROTICARITE_BLOCK.get())
                     .add(EternalGeneralBlocks.NETHERSTEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_BLOCK.get())
                     .add(EternalGeneralBlocks.NITER_BLOCK.get())
@@ -493,6 +499,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.NITER_ORE_BLOCK.get())
@@ -570,6 +577,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.APATITE_BLOCK.get())
                     .add(EternalGeneralBlocks.CINNABAR_BLOCK.get())
                     .add(EternalGeneralBlocks.FLUORITE_BLOCK.get())
+                    .add(EternalGeneralBlocks.NECROTICARITE_BLOCK.get())
                     .add(EternalGeneralBlocks.NITER_BLOCK.get())
                     .add(EternalGeneralBlocks.ONYX_BLOCK.get())
                     .add(EternalGeneralBlocks.PERIDOT_BLOCK.get())
@@ -749,10 +757,13 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get());
 
             tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                    .add(EternalGeneralBlocks.NECROTICARITE_BLOCK.get())
+
                     .add(EternalGeneralBlocks.COBALT_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.PLUTONIUM_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get())
+                    .add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get())
 
                     .add(EternalGeneralBlocks.NETHERSTEEL_BLOCK.get())

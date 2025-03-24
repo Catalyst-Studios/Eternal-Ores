@@ -17,6 +17,7 @@ import net.radzratz.eternalores.util.tags.item.dusts.EternalMiscDustsTags;
 import net.radzratz.eternalores.util.tags.item.dusts.EternalStoneDustsTags;
 import net.radzratz.eternalores.util.tags.item.gears.EternalGemGearTags;
 import net.radzratz.eternalores.util.tags.item.gears.EternalMetalGearTags;
+import net.radzratz.eternalores.util.tags.item.gems.EternalGemTags;
 import net.radzratz.eternalores.util.tags.item.ingots.EternalIngotTags;
 import net.radzratz.eternalores.util.tags.item.nuggets.EternalNuggetsTags;
 import net.radzratz.eternalores.util.tags.item.ores.EternalOreBlockItemTags;
@@ -78,6 +79,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.PLATE_IRON.get())
                         .add(EternalGeneralItems.PLATE_LEAD.get())
                         .add(EternalGeneralItems.PLATE_LUMIUM.get())
+                        .add(EternalGeneralItems.PLATE_NECROTICARITE.get())
                         .add(EternalGeneralItems.PLATE_NETHERITE.get())
                         .add(EternalGeneralItems.PLATE_NETHERSTEEL.get())
                         .add(EternalGeneralItems.PLATE_NICKEL.get())
@@ -139,6 +141,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 //Gem Plates
                 tag(EternalItemsGeneralTags.Items.GEM_PLATES)
                         .add(EternalGeneralItems.PLATE_DIAMOND.get())
+                        .add(EternalGeneralItems.PLATE_NECROTICARITE.get())
                         .add(EternalGeneralItems.PLATE_SAPPHIRE.get());
 
                 //Individual Plates
@@ -164,6 +167,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalPlates.Items.IRON_PLATE).add(EternalGeneralItems.PLATE_IRON.get());
                 tag(EternalPlates.Items.LEAD_PLATE).add(EternalGeneralItems.PLATE_LEAD.get());
                 tag(EternalPlates.Items.LUMIUM_PLATE).add(EternalGeneralItems.PLATE_LUMIUM.get());
+                tag(EternalPlates.Items.NECROTICARITE_PLATE).add(EternalGeneralItems.PLATE_NECROTICARITE.get());
                 tag(EternalPlates.Items.NETHERITE_PLATE).add(EternalGeneralItems.PLATE_NETHERITE.get());
                 tag(EternalPlates.Items.NETHERSTEEL_PLATE).add(EternalGeneralItems.PLATE_NETHERSTEEL.get());
                 tag(EternalPlates.Items.NICKEL_PLATE).add(EternalGeneralItems.PLATE_NICKEL.get());
@@ -208,6 +212,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.IRIDIUM_INGOT.get())
                         .add(EternalGeneralItems.LEAD_INGOT.get())
                         .add(EternalGeneralItems.LUMIUM_INGOT.get())
+                        .add(EternalGeneralItems.MISSING_INGOT.get())
                         .add(EternalGeneralItems.NETHERSTEEL_INGOT.get())
                         .add(EternalGeneralItems.NICKEL_INGOT.get())
                         .add(EternalGeneralItems.OSMIUM_INGOT.get())
@@ -290,6 +295,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.NITER_ORE_BLOCK.asItem())
@@ -341,6 +347,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalOreBlockItemTags.Items.ITEM_IRIDIUM_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_LEAD_ORE_OW).add(EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_LEAD_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem());
+                tag(EternalOreBlockItemTags.Items.ITEM_NECROTICARITE_ORE_NETHER).add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_NICKEL_ORE_OW).add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_NICKEL_ORE_OW).add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.asItem());
                 tag(EternalOreBlockItemTags.Items.ITEM_NITER_ORE_OW).add(EternalGeneralBlocks.NITER_ORE_BLOCK.asItem());
@@ -392,6 +399,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralBlocks.IRIDIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.LEAD_BLOCK.asItem())
                         .add(EternalGeneralBlocks.LUMIUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.NECROTICARITE_BLOCK.asItem())
                         .add(EternalGeneralBlocks.NETHERSTEEL_BLOCK.asItem())
                         .add(EternalGeneralBlocks.NICKEL_BLOCK.asItem())
                         .add(EternalGeneralBlocks.NITER_BLOCK.asItem())
@@ -542,6 +550,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
             tag(EternalStorageGemBlockItemTags.Items.APATITE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.APATITE_BLOCK.asItem());
             tag(EternalStorageGemBlockItemTags.Items.CINNABAR_BLOCK_ST_ITEM).add(EternalGeneralBlocks.CINNABAR_BLOCK.asItem());
             tag(EternalStorageGemBlockItemTags.Items.FLUORITE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.FLUORITE_BLOCK.asItem());
+            tag(EternalStorageGemBlockItemTags.Items.NECROTICARITE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.NECROTICARITE_BLOCK.asItem());
             tag(EternalStorageGemBlockItemTags.Items.NITER_BLOCK_ST_ITEM).add(EternalGeneralBlocks.NITER_BLOCK.asItem());
             tag(EternalStorageGemBlockItemTags.Items.ONYX_BLOCK_ST_ITEM).add(EternalGeneralBlocks.ONYX_BLOCK.asItem());
             tag(EternalStorageGemBlockItemTags.Items.PERIDOT_BLOCK_ST_ITEM).add(EternalGeneralBlocks.PERIDOT_BLOCK.asItem());
@@ -663,6 +672,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.ROD_IRON.get())
                         .add(EternalGeneralItems.ROD_LEAD.get())
                         .add(EternalGeneralItems.ROD_LUMIUM.get())
+                        .add(EternalGeneralItems.ROD_NECROTICARITE.get())
                         .add(EternalGeneralItems.ROD_NETHERITE.get())
                         .add(EternalGeneralItems.ROD_NETHERSTEEL.get())
                         .add(EternalGeneralItems.ROD_NICKEL.get())
@@ -723,6 +733,8 @@ public class EternalItemTagProvider extends ItemTagsProvider {
 
                 //Gem Rods
                 tag(EternalItemsGeneralTags.Items.GEM_RODS)
+                        .add(EternalGeneralItems.ROD_DIAMOND.get())
+                        .add(EternalGeneralItems.ROD_NECROTICARITE.get())
                         .add(EternalGeneralItems.ROD_SAPPHIRE.get());
 
                 //Individual Rods
@@ -763,6 +775,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalMetalRodsTags.Items.ROD_ZINC).add(EternalGeneralItems.ROD_ZINC.get());
 
                 tag(EternalGemRodsTags.Items.ROD_DIAMOND).add(EternalGeneralItems.ROD_DIAMOND.get());
+                tag(EternalGemRodsTags.Items.ROD_NECROTICARITE).add(EternalGeneralItems.ROD_NECROTICARITE.get());
                 tag(EternalGemRodsTags.Items.ROD_SAPPHIRE).add(EternalGeneralItems.ROD_SAPPHIRE.get());
 
                 tag(EternalMiscRodsTags.Items.ROD_GRAPHITE).add(EternalGeneralItems.ROD_GRAPHITE.get());
@@ -777,6 +790,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.GEAR_GOLD.get())
                         .add(EternalGeneralItems.GEAR_IRON.get())
                         .add(EternalGeneralItems.GEAR_LEAD.get())
+                        .add(EternalGeneralItems.GEAR_NECROTICARITE.get())
                         .add(EternalGeneralItems.GEAR_OSMIUM.get())
                         .add(EternalGeneralItems.GEAR_STEEL.get())
                         .add(EternalGeneralItems.GEAR_TIN.get());
@@ -811,6 +825,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalMetalGearTags.Items.GEAR_TIN).add(EternalGeneralItems.GEAR_TIN.get());
 
                 tag(EternalGemGearTags.Items.GEAR_DIAMOND).add(EternalGeneralItems.GEAR_DIAMOND.get());
+                tag(EternalGemGearTags.Items.GEAR_NECROTICARITE).add(EternalGeneralItems.GEAR_NECROTICARITE.get());
 
                 //General Dusts
                 tag(Tags.Items.DUSTS)
@@ -844,6 +859,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.LAPIS_LAZULI_DUST.get())
                         .add(EternalGeneralItems.LEAD_DUST.get())
                         .add(EternalGeneralItems.LUMIUM_DUST.get())
+                        .add(EternalGeneralItems.NECROTICARITE_DUST.get())
                         .add(EternalGeneralItems.NETHERITE_DUST.get())
                         .add(EternalGeneralItems.NETHERRACK_DUST.get())
                         .add(EternalGeneralItems.NETHERSTEEL_DUST.get())
@@ -927,6 +943,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                         .add(EternalGeneralItems.EMERALD_DUST.get())
                         .add(EternalGeneralItems.FLUORITE_DUST.get())
                         .add(EternalGeneralItems.LAPIS_LAZULI_DUST.get())
+                        .add(EternalGeneralItems.NECROTICARITE_DUST.get())
                         .add(EternalGeneralItems.NITER_DUST.get())
                         .add(EternalGeneralItems.OBSIDIAN_DUST.get())
                         .add(EternalGeneralItems.ONYX_DUST.get())
@@ -989,6 +1006,7 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalGemDustsTags.Items.DUST_EMERALD).add(EternalGeneralItems.EMERALD_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_FLUORITE).add(EternalGeneralItems.FLUORITE_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_LAPIS).add(EternalGeneralItems.LAPIS_LAZULI_DUST.get());
+                tag(EternalGemDustsTags.Items.DUST_NECROTICARITE).add(EternalGeneralItems.NECROTICARITE_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_NITER).add(EternalGeneralItems.NITER_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_OBSIDIAN).add(EternalGeneralItems.OBSIDIAN_DUST.get());
                 tag(EternalGemDustsTags.Items.DUST_ONYX).add(EternalGeneralItems.ONYX_DUST.get());
@@ -1002,6 +1020,83 @@ public class EternalItemTagProvider extends ItemTagsProvider {
                 tag(EternalStoneDustsTags.Items.DUST_ENDSTONE).add(EternalGeneralItems.ENDSTONE_DUST.get());
 
                 tag(EternalMiscDustsTags.Items.DUST_ENDER).add(EternalGeneralItems.ENDER_DUST.get());
+
+                //Gems
+                tag(Tags.Items.GEMS)
+                        .add(EternalGeneralItems.GEM_AMBER.get())
+                        .add(EternalGeneralItems.GEM_APATITE.get())
+                        .add(EternalGeneralItems.GEM_CINNABAR.get())
+                        .add(EternalGeneralItems.FLUORITE.get())
+                        .add(EternalGeneralItems.GEM_NECROTICARITE.get())
+                        .add(EternalGeneralItems.GEM_NITER.get())
+                        .add(EternalGeneralItems.GEM_ONYX.get())
+                        .add(EternalGeneralItems.GEM_PERIDOT.get())
+                        .add(EternalGeneralItems.GEM_RUBY.get())
+                        .add(EternalGeneralItems.GEM_SAPPHIRE.get());
+
+                //Individual Gem Tags
+                tag(EternalGemTags.Items.GEM_AMBER).add(EternalGeneralItems.GEM_AMBER.get());
+                tag(EternalGemTags.Items.GEM_APATITE).add(EternalGeneralItems.GEM_APATITE.get());
+                tag(EternalGemTags.Items.GEM_CINNABAR).add(EternalGeneralItems.GEM_CINNABAR.get());
+                tag(EternalGemTags.Items.GEM_FLUORITE).add(EternalGeneralItems.FLUORITE.get());
+                tag(EternalGemTags.Items.GEM_NECROTICARITE).add(EternalGeneralItems.GEM_NECROTICARITE.get());
+                tag(EternalGemTags.Items.GEM_NITER).add(EternalGeneralItems.GEM_NITER.get());
+                tag(EternalGemTags.Items.GEM_ONYX).add(EternalGeneralItems.GEM_ONYX.get());
+                tag(EternalGemTags.Items.GEM_PERIDOT).add(EternalGeneralItems.GEM_PERIDOT.get());
+                tag(EternalGemTags.Items.GEM_RUBY).add(EternalGeneralItems.GEM_RUBY.get());
+                tag(EternalGemTags.Items.GEM_SAPPHIRE).add(EternalGeneralItems.GEM_SAPPHIRE.get());
+
+                //Ores In Ground Item Tags
+                //Stone
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.AMBER_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.APATITE_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.CINNABAR_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.COBALT_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.FLUORITE_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.GALLIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.LEAD_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.NICKEL_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.NITER_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.ONYX_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.OSMIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.PERIDOT_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.PLATINUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.PLUTONIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.SAPPHIRE_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.SILVER_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.SULFUR_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.TIN_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.URANINITE_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.URANIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_STONE).add(EternalGeneralBlocks.ZINC_ORE_BLOCK.asItem());
+                //Deepslate
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_AMBER_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_APATITE_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_LEAD_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_NICKEL_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_NITER_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_ONYX_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_SILVER_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EternalGeneralBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem());
+                //Netherrack
+                tag(Tags.Items.ORES_IN_GROUND_NETHERRACK).add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.asItem());
 
                 //Raw Ores
                 tag(Tags.Items.RAW_MATERIALS)

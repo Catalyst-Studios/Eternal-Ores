@@ -1,9 +1,11 @@
 {
   "values": [
+    "eternalores:necroticarite_block",
     "eternalores:cobalt_ore_block",
     "eternalores:deepslate_cobalt_ore_block",
     "eternalores:plutonium_ore_block",
     "eternalores:deepslate_plutonium_ore_block",
+    "eternalores:necroticarite_ore_block",
     "eternalores:obsidian_ore_block",
     "eternalores:nethersteel_block",
     "eternalores:shadowsteel_block"
