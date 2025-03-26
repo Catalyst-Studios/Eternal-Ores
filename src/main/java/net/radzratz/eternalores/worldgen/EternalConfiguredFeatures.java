@@ -55,6 +55,8 @@ public class EternalConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_LEAD_ORE_KEY = registerKey("lead_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_LEAD_ORE_KEY = registerKey("nether_lead_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_LEAD_ORE_KEY = registerKey("end_lead_ore");
+    //Necroticarite
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_NECROTICARITE_ORE_KEY = registerKey("nether_necroticarite_ore");
     //Nickel
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_NICKEL_ORE_KEY = registerKey("nickel_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_NICKEL_ORE_KEY = registerKey("nether_nickel_ore");
@@ -230,6 +232,10 @@ public class EternalConfiguredFeatures {
             //        EternalGeneralBlocks.NETHER_LEAD_ORE_BLOCK.get().defaultBlockState(9)));
             //register(context, END_LEAD_ORE_KEY, Feature.ORE, new OreConfiguration(endReplaceables,
             //        EternalGeneralBlocks.END_LEAD_ORE_BLOCK.get().defaultBlockState(9)));
+
+        //Necroticarite
+        register(context, NETHER_NECROTICARITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherReplaceables,
+                EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get().defaultBlockState(), 4));
 
         //Nickel
         List<OreConfiguration.TargetBlockState> overworldNickelOres = List.of(OreConfiguration.target(stoneReplaceable,

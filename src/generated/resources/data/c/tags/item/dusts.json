@@ -2,6 +2,7 @@
   "values": [
     "eternalores:aluminum_dust",
     "eternalores:amber_dust",
+    "eternalores:amethyst_dust",
     "eternalores:apatite_dust",
     "eternalores:blue_steel_dust",
     "eternalores:brass_dust",
@@ -31,6 +32,7 @@
     "eternalores:lead_dust",
     "eternalores:lumium_dust",
     "eternalores:necroticarite_dust",
+    "eternalores:nether_star_dust",
     "eternalores:netherite_dust",
     "eternalores:netherrack_dust",
     "eternalores:nethersteel_dust",
@@ -48,6 +50,7 @@
     "eternalores:rose_gold_dust",
     "eternalores:ruby_dust",
     "eternalores:sapphire_dust",
+    "eternalores:sculk_dust",
     "eternalores:signalum_dust",
     "eternalores:silver_dust",
     "eternalores:shadowsteel_dust",

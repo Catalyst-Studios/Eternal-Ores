@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/steel"
+    },
+    {
+      "tag": "c:dusts/steel"
+    },
+    {
+      "tag": "c:dusts/sculk"
+    },
+    {
+      "tag": "c:dusts/sculk"
+    },
+    {
+      "tag": "c:dusts/sculk"
+    },
+    {
+      "tag": "c:dusts/necroticarite"
+    },
+    {
+      "tag": "c:dusts/necroticarite"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "eternalores:shadowsteel_dust"
+  }
+}

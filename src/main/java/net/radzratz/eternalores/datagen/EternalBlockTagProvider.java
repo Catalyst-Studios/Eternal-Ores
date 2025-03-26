@@ -13,6 +13,7 @@ import net.radzratz.eternalores.util.tags.block.EternalGeneralBlockTags;
 import net.radzratz.eternalores.util.tags.block.ores.EternalOreBlockTags;
 import net.radzratz.eternalores.util.tags.block.storage_blocks.EternalStorageGemBlockTags;
 import net.radzratz.eternalores.util.tags.block.storage_blocks.EternalStorageMetalBlockTags;
+import net.radzratz.eternalores.util.tags.block.storage_blocks.EternalStorageMiscBlockTags;
 import net.radzratz.eternalores.util.tags.block.storage_blocks.EternalStorageRawOreBlockTags;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -74,6 +75,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
             tag(EternalStorageGemBlockTags.Blocks.RUBY_BLOCK_ST).add(EternalGeneralBlocks.RUBY_BLOCK.get());
             tag(EternalStorageGemBlockTags.Blocks.SAPPHIRE_BLOCK_ST).add(EternalGeneralBlocks.SAPPHIRE_BLOCK.get());
             tag(EternalStorageGemBlockTags.Blocks.NECROTICARITE_BLOCK_ST).add(EternalGeneralBlocks.NECROTICARITE_BLOCK.get());
+
+            tag(EternalStorageMiscBlockTags.Blocks.NETHER_STAR_BLOCK_ST).add(EternalGeneralBlocks.NETHER_STAR_BLOCK.get());
 
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_ALUMINUM_ST).add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_COBALT_ST).add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get());
@@ -368,6 +371,8 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.WROUGHT_IRON_BLOCK.get())
                     .add(EternalGeneralBlocks.ZINC_BLOCK.get())
 
+                    .add(EternalGeneralBlocks.NETHER_STAR_BLOCK.get())
+
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get())
@@ -584,6 +589,9 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.RUBY_BLOCK.get())
                     .add(EternalGeneralBlocks.SAPPHIRE_BLOCK.get())
 
+                    //MISC BLOCKS
+                    .add(EternalGeneralBlocks.NETHER_STAR_BLOCK.get())
+
                     //RAW ORE BLOCKS
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
@@ -766,6 +774,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider {
                     .add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.OBSIDIAN_ORE_BLOCK.get())
 
+                    .add(EternalGeneralBlocks.NETHER_STAR_BLOCK.get())
                     .add(EternalGeneralBlocks.NETHERSTEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.SHADOWSTEEL_BLOCK.get());
 

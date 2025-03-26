@@ -316,6 +316,9 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> SHADOWSTEEL_DUST = registerDustItem("shadowsteel_dust");
     public static final DeferredItem<Item> PIG_IRON_DUST = registerDustItem("pig_iron_dust");
     public static final DeferredItem<Item> NECROTICARITE_DUST = registerDustItem("necroticarite_dust");
+    public static final DeferredItem<Item> SCULK_DUST = registerDustItem("sculk_dust");
+    public static final DeferredItem<Item> AMETHYST_DUST = registerDustItem("amethyst_dust");
+    public static final DeferredItem<Item> NETHER_STAR_DUST = registerDustItem("nether_star_dust");
 
     //Gems
     private static DeferredItem<Item> registerGemItem(String name) {

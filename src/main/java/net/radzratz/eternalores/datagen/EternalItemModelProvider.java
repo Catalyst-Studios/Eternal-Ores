@@ -192,6 +192,9 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.SHADOWSTEEL_DUST.get());
         basicItem(EternalGeneralItems.PIG_IRON_DUST.get());
         basicItem(EternalGeneralItems.NECROTICARITE_DUST.get());
+        basicItem(EternalGeneralItems.SCULK_DUST.get());
+        basicItem(EternalGeneralItems.AMETHYST_DUST.get());
+        basicItem(EternalGeneralItems.NETHER_STAR_DUST.get());
 
         //RODS
         basicItem(EternalGeneralItems.ROD_ALUMINUM.get());

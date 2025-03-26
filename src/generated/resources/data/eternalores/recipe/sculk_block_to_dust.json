@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:sculk"
+    },
+    {
+      "tag": "eternalores:tools/hammers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:sculk_dust"
+  }
+}

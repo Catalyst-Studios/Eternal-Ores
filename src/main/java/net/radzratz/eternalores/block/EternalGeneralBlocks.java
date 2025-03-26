@@ -186,6 +186,15 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> PERIDOT_BLOCK = registerGemBlock("peridot_block", 3f, SoundType.METAL);
     public static final DeferredBlock<Block> NECROTICARITE_BLOCK = registerGemBlock("necroticarite_block", 4f, SoundType.METAL);
 
+    //Misc Blocks
+    private static DeferredBlock<Block> registerMiscBlock(String name, float hardness, SoundType sound) {
+        return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
+                .strength(hardness)
+                .requiresCorrectToolForDrops()
+                .sound(sound)));
+    }
+    public static final DeferredBlock<Block> NETHER_STAR_BLOCK = registerMiscBlock("nether_star_block", 4, SoundType.METAL);
+
     //Compressed Blocks
     private static DeferredBlock<Block> registerCompressedBlockItem(String name, float hardness, SoundType sound) {
         return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()

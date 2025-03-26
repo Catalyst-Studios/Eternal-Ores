@@ -49,6 +49,8 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_LEAD_ORE = registerKey("add_lead_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_LEAD_ORE = registerKey("add_nether_lead_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_LEAD_ORE = registerKey("add_end_lead_ore");
+    //Necroticarite
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_NECROTICARITE_ORE = registerKey("add_nether_necroticarite_ore");
     //Nickel
     public static final ResourceKey<BiomeModifier> ADD_NICKEL_ORE = registerKey("add_nickel_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_NICKEL_ORE = registerKey("add_nether_nickel_ore");
@@ -168,6 +170,12 @@ public class EternalBiomeModifier {
         context.register(ADD_LEAD_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.LEAD_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        //Necroticarite
+        context.register(ADD_NETHER_NECROTICARITE_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(EternalPlacedFeatures.NECROTICARITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
         //Niter

@@ -10,6 +10,8 @@ public class EternalGemDustsTags {
 
         //Amber
         public static final TagKey<Item> DUST_AMBER = createGemDustTag("dusts/amber");
+        //Amethyst
+        public static final TagKey<Item> DUST_AMETHYST = createGemDustTag("dusts/amethyst");
         //Apatite
         public static final TagKey<Item> DUST_APATITE = createGemDustTag("dusts/apatite");
         //Cinnabar

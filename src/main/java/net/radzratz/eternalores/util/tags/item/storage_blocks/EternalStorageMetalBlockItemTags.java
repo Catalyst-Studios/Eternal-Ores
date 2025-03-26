@@ -6,7 +6,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
 public class EternalStorageMetalBlockItemTags {
-    public static class Blocks{
+    public static class Items{
 
         //Aluminum
         public static final TagKey<Item> ALUMINUM_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/aluminum");

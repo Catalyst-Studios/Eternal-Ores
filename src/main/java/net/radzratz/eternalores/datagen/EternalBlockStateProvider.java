@@ -142,6 +142,9 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.PERIDOT_BLOCK);
         blockWithItem(EternalGeneralBlocks.NECROTICARITE_BLOCK);
 
+        //MISC BLOCKS
+        blockWithItem(EternalGeneralBlocks.NETHER_STAR_BLOCK);
+
         //RAW BLOCKS
         blockWithItem(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK);
         blockWithItem(EternalGeneralBlocks.RAW_COBALT_BLOCK);

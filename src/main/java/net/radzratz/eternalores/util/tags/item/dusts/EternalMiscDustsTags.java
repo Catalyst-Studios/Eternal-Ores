@@ -20,6 +20,10 @@ public class EternalMiscDustsTags {
 
         public static final TagKey<Item> DUST_BLAZE = createMiscDustTag("dusts/blaze");
 
+        public static final TagKey<Item> DUST_SCULK = createMiscDustTag("dusts/sculk");
+
+        public static final TagKey<Item> DUST_NETHER_STAR = createMiscDustTag("dusts/nether_star");
+
         private static TagKey<Item> createMiscDustTag(String path) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }

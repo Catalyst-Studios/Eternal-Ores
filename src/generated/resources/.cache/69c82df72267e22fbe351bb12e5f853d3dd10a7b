@@ -1,8 +1,9 @@
-// 1.21.1	2025-03-24T08:24:07.1221106	Item Models: eternalores
+// 1.21.1	2025-03-24T23:57:18.6316068	Item Models: eternalores
 9e05334480af20ceab69aef0763cd4b91d3bbcf2 assets/eternalores/models/item/aluminum_dust.json
 4b7887baa0ed619598cb92d338659f9a6f47c089 assets/eternalores/models/item/aluminum_ingot.json
 65a0f5c74fe48204c9487943f882e7c21a3c1cc1 assets/eternalores/models/item/aluminum_nugget.json
 a62828f896866f46d7bd98228aa39202cfa91bb8 assets/eternalores/models/item/amber_dust.json
+88ebb7b8e0070d0d725d3e61edbdaeaeae539e45 assets/eternalores/models/item/amethyst_dust.json
 a1dd8cfbc163b8cb9e5ae63d193b7f714fd0d41d assets/eternalores/models/item/apatite_dust.json
 b92a48c02dd101da356330dab91d3f66041503bd assets/eternalores/models/item/blue_steel_dust.json
 d19d1f3bb264f3d436318fb0f4d5d1e1d6521e2d assets/eternalores/models/item/blue_steel_ingot.json
@@ -106,6 +107,7 @@ bd6f45e27ff56db9c85cbc0ab5fb50d40e52df85 assets/eternalores/models/item/netherra
 7778e12d859d9c142ff302619ae34df1a03a9bfd assets/eternalores/models/item/nethersteel_dust.json
 f23f803e4660ea39ceebd56ab7a4eeaf30696ecf assets/eternalores/models/item/nethersteel_ingot.json
 fe45da414601dee378201575b101f268a7af16aa assets/eternalores/models/item/nethersteel_nugget.json
+40ca54a23bbd86bd531fd555b5ce171a65f668bf assets/eternalores/models/item/nether_star_dust.json
 c24cd40ea152286064b9ecff5626f179fd74488c assets/eternalores/models/item/nickel_dust.json
 7c2a29f2d5ca10d486de10f0cd9c7a6d4135cff0 assets/eternalores/models/item/nickel_ingot.json
 f77fe092eaed31e567f6e413580785bd893cf771 assets/eternalores/models/item/nickel_nugget.json
@@ -230,6 +232,7 @@ adc9e0d03137161b24c10c0c65f71bbfd80d8829 assets/eternalores/models/item/rose_gol
 4fd26e13d02eafa56be9d9b28c14d96f6ed4187e assets/eternalores/models/item/rose_gold_nugget.json
 1e317bbf21d556fb212ea8add7bd651fce8b3b15 assets/eternalores/models/item/ruby_dust.json
 9514f48ab8c1632c2018530a8ff459e4956098f2 assets/eternalores/models/item/sapphire_dust.json
+3064400b490be015fcdafbb5142251580fa63b2c assets/eternalores/models/item/sculk_dust.json
 1c7e2eca7876a471f5af9c1ba865b7b67fd0c7a6 assets/eternalores/models/item/shadowsteel_dust.json
 7567a840e3f49fabf919d3784140326f501dacc5 assets/eternalores/models/item/shadowsteel_ingot.json
 1e692749845b0dcbab373e86ad7c66b9a658d6e3 assets/eternalores/models/item/shadowsteel_nugget.json

@@ -151,6 +151,9 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(EternalGeneralBlocks.PERIDOT_BLOCK.get());
         dropSelf(EternalGeneralBlocks.NECROTICARITE_BLOCK.get());
 
+        //MISC BLOCKS
+        dropSelf(EternalGeneralBlocks.NETHER_STAR_BLOCK.get());
+
         //RAW ORE BLOCKS
         dropSelf(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_COBALT_BLOCK.get());

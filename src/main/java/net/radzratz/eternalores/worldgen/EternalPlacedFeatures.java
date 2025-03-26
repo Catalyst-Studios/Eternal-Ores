@@ -52,6 +52,8 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> LEAD_ORE_PLACED_KEY = registerKey("lead_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_LEAD_ORE_PLACED_KEY = registerKey("nether_lead_ore_placed");
     public static final ResourceKey<PlacedFeature> END_LEAD_ORE_PLACED_KEY = registerKey("end_lead_ore_placed");
+    //Necroticarite
+    public static final ResourceKey<PlacedFeature> NECROTICARITE_ORE_PLACED_KEY = registerKey("necroticarite_ore_placed");
     //Nickel
     public static final ResourceKey<PlacedFeature> NICKEL_ORE_PLACED_KEY = registerKey("nickel_ore_placed");
     public static final ResourceKey<PlacedFeature> NETHER_NICKEL_ORE_PLACED_KEY = registerKey("nether_nickel_ore_placed");
@@ -216,6 +218,11 @@ public class EternalPlacedFeatures {
     //register(context, END_LEAD_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.END_LEAD_ORE_KEY),
     //        EternalOrePlacement.commonOrePlacement(12,
     //                HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+    //NECROTICARITE
+    register(context, NECROTICARITE_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.NETHER_NECROTICARITE_ORE_KEY),
+            EternalOrePlacement.commonOrePlacement(10,
+                    HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(128))));
 
     //NITER
     register(context, NITER_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_NITER_ORE_KEY),

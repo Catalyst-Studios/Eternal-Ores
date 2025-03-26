@@ -25,7 +25,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
             "invar", "lapis", "cinnabar", "lumium", "niter", "obsidian", "peridot", "pewter", "plutonium",
             "quartz", "rose_gold", "ruby", "sapphire", "signalum", "steel", "titanium", "enderium",
             "cast_iron", "cast_steel", "wrought_iron", "nethersteel", "shadowsteel", "pig_iron",
-            "necroticarite"
+            "necroticarite", "sculk", "amethyst", "nether_star"
     );
 
     public EternalRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
@@ -44,12 +44,18 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateHammerRecipes(recipeOutput, "netherite_ingot", Items.NETHERITE_INGOT, EternalGeneralItems.NETHERITE_DUST.get());
 
         //Vanilla Gems
+        generateHammerRecipes(recipeOutput, "amethyst_gem", Items.AMETHYST_SHARD, EternalGeneralItems.AMETHYST_DUST.get());
+        generateHammerRecipes(recipeOutput, "amethyst_gem_block", Blocks.AMETHYST_BLOCK.asItem(), EternalGeneralItems.AMETHYST_DUST.get());
         generateHammerRecipes(recipeOutput, "diamond_gem", Items.DIAMOND, EternalGeneralItems.DIAMOND_DUST.get());
         generateHammerRecipes(recipeOutput, "emerald_gem", Items.EMERALD, EternalGeneralItems.EMERALD_DUST.get());
         //coal is not a gem but close lel
         generateHammerRecipes(recipeOutput, "coal_gem", Items.COAL, EternalGeneralItems.COAL_DUST.get());
         generateHammerRecipes(recipeOutput, "lapis_gem", Items.LAPIS_LAZULI, EternalGeneralItems.LAPIS_LAZULI_DUST.get());
         generateHammerRecipes(recipeOutput, "quartz_gem", Items.QUARTZ, EternalGeneralItems.QUARTZ_DUST.get());
+
+        //Misc Vanilla
+        generateHammerRecipes(recipeOutput, "sculk_block", Blocks.SCULK.asItem(), EternalGeneralItems.SCULK_DUST.get());
+        generateHammerRecipes(recipeOutput, "nether_star", Items.NETHER_STAR, EternalGeneralItems.NETHER_STAR_DUST.get());
 
         //EO Ingots
         generateHammerRecipes(recipeOutput, "aluminum_ingot", EternalGeneralItems.ALUMINUM_INGOT.get(), EternalGeneralItems.ALUMINUM_DUST.get());
@@ -257,6 +263,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToGemMaterialRecipe(recipeOutput, "ruby", EternalGeneralBlocks.RUBY_BLOCK.asItem(), EternalGeneralItems.GEM_RUBY.get());
         generateBlockToGemMaterialRecipe(recipeOutput, "sapphire", EternalGeneralBlocks.SAPPHIRE_BLOCK.asItem(), EternalGeneralItems.GEM_SAPPHIRE.get());
 
+        generateBlockToGemMaterialRecipe(recipeOutput, "nether_star", EternalGeneralBlocks.NETHER_STAR_BLOCK.asItem(), Items.NETHER_STAR);
+
         //Raw Ore Block to Raw Material
         generateBlockToRawMaterialRecipe(recipeOutput, "aluminum", EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem(), EternalGeneralItems.RAW_ALUMINUM.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "cobalt", EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem(), EternalGeneralItems.RAW_COBALT.get());
@@ -346,6 +354,9 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateGemToBlockRecipe(recipeOutput, "peridot", EternalGeneralItems.GEM_PERIDOT.get(), EternalGeneralBlocks.PERIDOT_BLOCK.asItem());
         generateGemToBlockRecipe(recipeOutput, "ruby", EternalGeneralItems.GEM_RUBY.get(), EternalGeneralBlocks.RUBY_BLOCK.asItem());
         generateGemToBlockRecipe(recipeOutput, "sapphire", EternalGeneralItems.GEM_SAPPHIRE.get(), EternalGeneralBlocks.SAPPHIRE_BLOCK.asItem());
+
+        //not a gem but m'kay
+        generateGemToBlockRecipe(recipeOutput, "nether_star", Items.NETHER_STAR, EternalGeneralBlocks.NETHER_STAR_BLOCK.asItem());
 
         ///
         ///Materials to Nuggets
