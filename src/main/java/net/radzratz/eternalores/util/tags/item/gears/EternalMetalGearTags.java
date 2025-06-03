@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalMetalGearTags {
-    public static class Items {
+public class EternalMetalGearTags
+{
+    public static class Items
+    {
 
         //Aluminum
         public static final TagKey<Item> GEAR_ALUMINUM = createMetalGearTag("gears/aluminum");
@@ -16,6 +18,8 @@ public class EternalMetalGearTags {
         public static final TagKey<Item> GEAR_BRASS = createMetalGearTag("gears/brass");
         //Bronze
         public static final TagKey<Item> GEAR_BRONZE = createMetalGearTag("gears/bronze");
+        //Catalyrium
+        public static final TagKey<Item> GEAR_CATALYRIUM = createMetalGearTag("gears/catalyrium");
         //Cobalt
         public static final TagKey<Item> GEAR_COBALT = createMetalGearTag("gears/cobalt");
         //Constantan
@@ -63,7 +67,8 @@ public class EternalMetalGearTags {
         //Zinc
         public static final TagKey<Item> GEAR_ZINC = createMetalGearTag("gears/zinc");
 
-        private static TagKey<Item> createMetalGearTag(String path) {
+        private static TagKey<Item> createMetalGearTag(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalStorageGemBlockItemTags {
-    public static class Items {
+public class EternalStorageGemBlockItemTags
+{
+    public static class Items
+    {
 
         //Amber
         public static final TagKey<Item> AMBER_BLOCK_ST_ITEM = createGemStorageBlockItemTags("storage_blocks/amber");
@@ -29,7 +31,8 @@ public class EternalStorageGemBlockItemTags {
         //Sapphire
         public static final TagKey<Item> SAPPHIRE_BLOCK_ST_ITEM = createGemStorageBlockItemTags("storage_blocks/sapphire");
 
-        private static TagKey<Item> createGemStorageBlockItemTags(String path) {
+        private static TagKey<Item> createGemStorageBlockItemTags(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

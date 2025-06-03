@@ -1,4 +1,4 @@
-// 1.21.1	2025-03-24T23:57:18.6316068	Item Models: eternalores
+// 1.21.1	2025-06-02T18:28:52.4037618	Item Models: eternalores
 9e05334480af20ceab69aef0763cd4b91d3bbcf2 assets/eternalores/models/item/aluminum_dust.json
 4b7887baa0ed619598cb92d338659f9a6f47c089 assets/eternalores/models/item/aluminum_ingot.json
 65a0f5c74fe48204c9487943f882e7c21a3c1cc1 assets/eternalores/models/item/aluminum_nugget.json
@@ -23,6 +23,9 @@ a0ed7d5529ad4cb51b5a27b1e63ada0d072bcbcd assets/eternalores/models/item/cast_iro
 b864cb4132125a39723dd2de8e5e145f8d661759 assets/eternalores/models/item/cast_steel_dust.json
 97298108b6e8bdb96a84b7dc57e03ff7bd76996a assets/eternalores/models/item/cast_steel_ingot.json
 6029060af519637d0cf61b829f847be4ba967485 assets/eternalores/models/item/cast_steel_nugget.json
+dde9d127c6521fb357234f631776e529b004c404 assets/eternalores/models/item/catalyrium_dust.json
+798069c6c628cffe70fe6dd41ac50c87a1735291 assets/eternalores/models/item/catalyrium_ingot.json
+e9bb96df3bd6806174be5ede999e7c0b5d588d41 assets/eternalores/models/item/catalyrium_nugget.json
 0e7bd476d0b47762b5eb8c8de4bc112faff813ed assets/eternalores/models/item/cinnabar_dust.json
 89ff8ccd7c455a06716956a489cf99616d8981c3 assets/eternalores/models/item/coal_dust.json
 d4d32c5d2620a5a54b3f10411f0e181a3864d16a assets/eternalores/models/item/cobalt_dust.json
@@ -55,6 +58,7 @@ ef9250c2401459eb96667743f120228e7b991364 assets/eternalores/models/item/gallium_
 f273361caab74f42edae5f5261dd501c00360090 assets/eternalores/models/item/gallium_nugget.json
 13908409b8ce5ff0992a2ff05aa7fa12e2e9fae1 assets/eternalores/models/item/gear_aluminum.json
 61835474c947e324a561807ba4a05cbc1b5c5344 assets/eternalores/models/item/gear_bronze.json
+637605dc995f1e2ca4724f4456c2fd8facfb4461 assets/eternalores/models/item/gear_catalyrium.json
 bc04a111e22a954b57d94b20aea8b95169e9f625 assets/eternalores/models/item/gear_copper.json
 96625ff88a7f778424b80e0d6eb0734a31f2c52e assets/eternalores/models/item/gear_diamond.json
 86bd29398fc32a8149e8b40bc1763114532f86d1 assets/eternalores/models/item/gear_enderium.json
@@ -130,6 +134,7 @@ b6979b30a9cae91ed692f4641293d12ea16b9657 assets/eternalores/models/item/plate_bl
 51d348b69355d46e9891e569a9c007c18fa04353 assets/eternalores/models/item/plate_bronze.json
 885181aaadf9996a9e4fa0c72268346f6893b0a9 assets/eternalores/models/item/plate_cast_iron.json
 9860a705399c0e2b902180fc851e38635b26cd42 assets/eternalores/models/item/plate_cast_steel.json
+edbc6c6e25030c776457b6e5a6ac1fa430fc1e8c assets/eternalores/models/item/plate_catalyrium.json
 cb1591d46fff27a7314e0424284cc10c59fb9376 assets/eternalores/models/item/plate_cobalt.json
 c2baa876057bece09eb4acfff7399fe3e862d56b assets/eternalores/models/item/plate_constantan.json
 4cf18c9f95c178a5a3a2b7834745dfdd363882b4 assets/eternalores/models/item/plate_copper.json
@@ -172,6 +177,7 @@ a79105f2ab82cce82f86a0140c7a8d249c8615d5 assets/eternalores/models/item/plutoniu
 1ee3d068cee5b3548652915a281770a1a2c5434e assets/eternalores/models/item/plutonium_nugget.json
 1df572516caf6a705f0e6b581057f6b650716426 assets/eternalores/models/item/quartz_dust.json
 7897861ae1c976ee667e786e269eb9bb5b0e017f assets/eternalores/models/item/raw_aluminum.json
+72d64cc2b9621520207aca93556c2645f944d280 assets/eternalores/models/item/raw_catalyrium.json
 506955bb563ae93d874d1d3a894d6bc8a69eaa2e assets/eternalores/models/item/raw_cobalt.json
 b2f288a762c4766083c6fc3c35e01b1c4066304f assets/eternalores/models/item/raw_gallium.json
 f7865ddbb664c42fb67b75ffd057d0e8d05f3b75 assets/eternalores/models/item/raw_iridium.json
@@ -193,6 +199,7 @@ d0fbb5a6568a8673cc3a304c0aed0a73504df0b5 assets/eternalores/models/item/redstone
 6bd3c51ca2f7280ec2fa72234ff6414a5ca5014d assets/eternalores/models/item/rod_bronze.json
 6f2beaf46547f0b3006f7edb5161c0c71a2a4390 assets/eternalores/models/item/rod_cast_iron.json
 6ea0b48208b5986689a38a440e0cb1f43c814146 assets/eternalores/models/item/rod_cast_steel.json
+8c412e247fe32b7018a870116a5e9458f8b9aeb5 assets/eternalores/models/item/rod_catalyrium.json
 7604d8d13ee2d108ec372d1159ec5112413996d5 assets/eternalores/models/item/rod_cobalt.json
 87af9af15b4dfba7920b5355c2ce5389bd7829a5 assets/eternalores/models/item/rod_constantan.json
 af562434a15151ba03cac7763a77825026685993 assets/eternalores/models/item/rod_copper.json

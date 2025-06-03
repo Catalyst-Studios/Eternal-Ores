@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalGemDustsTags {
-    public static class Items {
+public class EternalGemDustsTags
+{
+    public static class Items
+    {
 
         //Amber
         public static final TagKey<Item> DUST_AMBER = createGemDustTag("dusts/amber");
@@ -45,7 +47,8 @@ public class EternalGemDustsTags {
         //Sulfur
         public static final TagKey<Item> DUST_SULFUR = createGemDustTag("dusts/sulfur");
 
-        private static TagKey<Item> createGemDustTag(String path) {
+        private static TagKey<Item> createGemDustTag(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

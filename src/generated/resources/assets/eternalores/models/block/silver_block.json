@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/silver_block"
+    "all": "eternalores:block/metal/silver_block"
   }
 }

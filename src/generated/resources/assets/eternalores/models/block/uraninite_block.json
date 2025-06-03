@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/uraninite_block"
+    "all": "eternalores:block/metal/uraninite_block"
   }
 }

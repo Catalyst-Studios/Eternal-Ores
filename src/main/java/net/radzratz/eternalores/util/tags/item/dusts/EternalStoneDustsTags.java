@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalStoneDustsTags {
-    public static class Items {
+public class EternalStoneDustsTags
+{
+    public static class Items
+    {
 
         //Overworld Dimension
         //Stone/Cobblestone/Stone Brick
@@ -48,7 +50,8 @@ public class EternalStoneDustsTags {
         //Purpur
         public static final TagKey<Item> DUST_PURPUR = createStoneDustTag("dusts/purpur");
 
-        private static TagKey<Item> createStoneDustTag(String path) {
+        private static TagKey<Item> createStoneDustTag(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

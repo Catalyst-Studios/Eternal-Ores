@@ -5,9 +5,10 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
-public class EternalStorageRawOreBlockTags {
-    public static class Blocks {
-
+public class EternalStorageRawOreBlockTags
+{
+    public static class Blocks
+    {
         //Aluminum
         public static final TagKey<Block> RAW_ALUMINUM_ST = createRawOreBlockTags("storage_blocks/raw_aluminum");
         //Cobalt
@@ -37,7 +38,8 @@ public class EternalStorageRawOreBlockTags {
         //Zinc
         public static final TagKey<Block> RAW_ZINC_ST = createRawOreBlockTags("storage_blocks/raw_zinc");
 
-        private static TagKey<Block> createRawOreBlockTags(String path) {
+        private static TagKey<Block> createRawOreBlockTags(String path)
+        {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

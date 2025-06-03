@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/ultimatitanium_block"
+    "all": "eternalores:block/metal/ultimatitanium_block"
   }
 }

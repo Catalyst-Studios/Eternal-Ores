@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/necroticarite_ore_block"
+    "all": "eternalores:block/ore_nether/necroticarite_ore_block"
   }
 }

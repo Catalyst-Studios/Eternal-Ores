@@ -2,7 +2,6 @@ package net.radzratz.eternalores.item;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
@@ -12,19 +11,19 @@ import net.radzratz.eternalores.block.EternalGeneralBlocks;
 
 import java.util.function.Supplier;
 
-public class EternalCreativeModeTabs {
+@SuppressWarnings("all")
+public class EternalCreativeModeTabs
+{
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EternalOres.MOD_ID);
 
 //Eternal Items Tab
 public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.register("eternal_ores_tab",
-        ()-> CreativeModeTab.builder().icon(()-> new ItemStack(EternalGeneralItems.ETERNAL_DARK_INGOT.get()))
-                .withTabsBefore(ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, "eternal_ores"))
+        ()-> CreativeModeTab.builder()
+                .icon(()-> new ItemStack(EternalGeneralItems.ETERNAL_DARK_INGOT.get()))
                 .title(Component.translatable("creativetab.eternalores.eternal_ores"))
-                .displayItems((itemDisplayParameters, output) -> {
-
-                    System.out.println("Loading Custom Creative Tab");
-
+                .displayItems((itemDisplayParameters, output) ->
+                {
                     ///STONE ORES
                     output.accept(EternalGeneralBlocks.ALUMINUM_ORE_BLOCK);
                     output.accept(EternalGeneralBlocks.AMBER_ORE_BLOCK);
@@ -209,6 +208,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.ZINC_BLOCK);
                     ///RAW ORES
                     output.accept(EternalGeneralItems.RAW_ALUMINUM);
+                    output.accept(EternalGeneralItems.RAW_CATALYRIUM);
                     output.accept(EternalGeneralItems.RAW_COBALT);
                     output.accept(EternalGeneralItems.RAW_GALLIUM);
                     output.accept(EternalGeneralItems.RAW_IRIDIUM);
@@ -230,6 +230,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.BRASS_INGOT);
                     output.accept(EternalGeneralItems.BRITANNIA_SILVER_INGOT);
                     output.accept(EternalGeneralItems.BRONZE_INGOT);
+                    output.accept(EternalGeneralItems.CATALYRIUM_INGOT);
                     output.accept(EternalGeneralItems.CAST_IRON_INGOT);
                     output.accept(EternalGeneralItems.CAST_STEEL_INGOT);
                     output.accept(EternalGeneralItems.COBALT_INGOT);
@@ -271,6 +272,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.BRASS_NUGGET);
                     output.accept(EternalGeneralItems.BRITANNIA_SILVER_NUGGET);
                     output.accept(EternalGeneralItems.BRONZE_NUGGET);
+                    output.accept(EternalGeneralItems.CATALYRIUM_NUGGET);
                     output.accept(EternalGeneralItems.CAST_IRON_NUGGET);
                     output.accept(EternalGeneralItems.CAST_STEEL_NUGGET);
                     output.accept(EternalGeneralItems.COBALT_NUGGET);
@@ -329,6 +331,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.BLUE_STEEL_DUST);
                     output.accept(EternalGeneralItems.BRASS_DUST);
                     output.accept(EternalGeneralItems.BRITANNIA_SILVER_DUST);
+                    output.accept(EternalGeneralItems.CATALYRIUM_DUST);
                     output.accept(EternalGeneralItems.CAST_IRON_DUST);
                     output.accept(EternalGeneralItems.CAST_STEEL_DUST);
                     output.accept(EternalGeneralItems.BRONZE_DUST);
@@ -389,6 +392,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.PLATE_BLUE_STEEL);
                     output.accept(EternalGeneralItems.PLATE_BRASS);
                     output.accept(EternalGeneralItems.PLATE_BRONZE);
+                    output.accept(EternalGeneralItems.PLATE_CATALYRIUM);
                     output.accept(EternalGeneralItems.PLATE_CAST_IRON);
                     output.accept(EternalGeneralItems.PLATE_CAST_STEEL);
                     output.accept(EternalGeneralItems.PLATE_COBALT);
@@ -430,6 +434,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.ROD_BLUE_STEEL);
                     output.accept(EternalGeneralItems.ROD_BRASS);
                     output.accept(EternalGeneralItems.ROD_BRONZE);
+                    output.accept(EternalGeneralItems.ROD_CATALYRIUM);
                     output.accept(EternalGeneralItems.ROD_CAST_IRON);
                     output.accept(EternalGeneralItems.ROD_CAST_STEEL);
                     output.accept(EternalGeneralItems.ROD_COBALT);
@@ -469,6 +474,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     ///GEARS
                     output.accept(EternalGeneralItems.GEAR_ALUMINUM);
                     output.accept(EternalGeneralItems.GEAR_BRONZE);
+                    output.accept(EternalGeneralItems.GEAR_CATALYRIUM);
                     output.accept(EternalGeneralItems.GEAR_COPPER);
                     output.accept(EternalGeneralItems.GEAR_DIAMOND);
                     output.accept(EternalGeneralItems.GEAR_ENDERIUM);
@@ -494,7 +500,8 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     //ORITECH COMPAT ITEMS W.I.P
                 }).build());
 
-    public static void register(IEventBus eventBus) {
+    public static void register(IEventBus eventBus)
+    {
         CREATIVE_MODE_TAB.register(eventBus);
     }
 }

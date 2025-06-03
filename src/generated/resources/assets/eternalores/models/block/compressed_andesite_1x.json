@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/compressed_andesite_1x"
+    "all": "eternalores:block/compressed/compressed_andesite_1x"
   }
 }

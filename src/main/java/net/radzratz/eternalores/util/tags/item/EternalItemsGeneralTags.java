@@ -7,8 +7,10 @@ import net.minecraft.world.item.Item;
 
 
 
-public class EternalItemsGeneralTags {
-    public static class Items {
+public class EternalItemsGeneralTags
+{
+    public static class Items
+    {
 
         //Tools
         public static final TagKey<Item> HAMMERS = createGeneralItemTags("eternalores","tools/hammers");
@@ -40,8 +42,8 @@ public class EternalItemsGeneralTags {
         public static final TagKey<Item> METAL_PLATES = createGeneralItemTags("c","plates/metal");
         public static final TagKey<Item> GEM_PLATES = createGeneralItemTags("c","plates/gem");
 
-        public static TagKey<Item> createGeneralItemTags(String namespace, String path) {
-            System.out.println("Loading Custom Item tags");
+        public static TagKey<Item> createGeneralItemTags(String namespace, String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(namespace, path));
         }
     }

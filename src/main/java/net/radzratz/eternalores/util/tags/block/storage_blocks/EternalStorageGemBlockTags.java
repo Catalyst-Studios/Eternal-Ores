@@ -5,8 +5,10 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
-public class EternalStorageGemBlockTags {
-    public static class Blocks {
+public class EternalStorageGemBlockTags
+{
+    public static class Blocks
+    {
 
         //Amber
         public static final TagKey<Block> AMBER_BLOCK_ST = createGemStorageBlockTags("storage_blocks/amber");
@@ -29,7 +31,8 @@ public class EternalStorageGemBlockTags {
         //Sapphire
         public static final TagKey<Block> SAPPHIRE_BLOCK_ST = createGemStorageBlockTags("storage_blocks/sapphire");
 
-        private static TagKey<Block> createGemStorageBlockTags(String path) {
+        private static TagKey<Block> createGemStorageBlockTags(String path)
+        {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

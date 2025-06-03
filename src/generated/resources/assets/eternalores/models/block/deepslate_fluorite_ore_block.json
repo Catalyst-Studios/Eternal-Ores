@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/deepslate_fluorite_ore_block"
+    "all": "eternalores:block/ore_deepslate/deepslate_fluorite_ore_block"
   }
 }

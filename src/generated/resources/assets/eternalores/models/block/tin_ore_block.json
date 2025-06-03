@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/tin_ore_block"
+    "all": "eternalores:block/ore_stone/tin_ore_block"
   }
 }

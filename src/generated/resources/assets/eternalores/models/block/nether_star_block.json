@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/nether_star_block"
+    "all": "eternalores:block/misc/nether_star_block"
   }
 }

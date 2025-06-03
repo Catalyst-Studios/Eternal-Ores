@@ -18,7 +18,8 @@ import net.radzratz.eternalores.block.EternalGeneralBlocks;
 
 import java.util.List;
 
-public class EternalConfiguredFeatures {
+public class EternalConfiguredFeatures
+{
     //Aluminum
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_ALUMINUM_ORE_KEY = registerKey("aluminum_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_ALUMINUM_ORE_KEY = registerKey("nether_aluminum_ore");
@@ -397,15 +398,15 @@ public class EternalConfiguredFeatures {
     }
 
 
-    public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
-        System.out.println("Loading Register Key of Configured Feature");
+    public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name)
+    {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, name));
     }
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register
             (BootstrapContext<ConfiguredFeature<?, ?>> context,
-             ResourceKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
-        System.out.println("Loading Feature Configuration of Configured Feature");
+             ResourceKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration)
+    {
         context.register(key, new ConfiguredFeature<>(feature, configuration));
     }
 

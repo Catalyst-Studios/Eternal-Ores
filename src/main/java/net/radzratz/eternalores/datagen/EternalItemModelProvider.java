@@ -10,21 +10,20 @@ import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.item.EternalGeneralItems;
 import org.jetbrains.annotations.NotNull;
 
-public class EternalItemModelProvider extends ItemModelProvider {
-    public EternalItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
+public class EternalItemModelProvider extends ItemModelProvider
+{
+    public EternalItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper)
+    {
         super(output, EternalOres.MOD_ID, existingFileHelper);
     }
 
     @Override
-    protected void registerModels() {
-
-        System.out.println("Loading Item Model Provider");
-
+    protected void registerModels()
+    {
         //HAMMERS
         basicItem(EternalGeneralItems.COBALT_HAMMER.get());
         basicItem(EternalGeneralItems.COPPER_HAMMER.get());
         basicItem(EternalGeneralItems.DIAMOND_HAMMER.get());
-        //basicItem(EternalGeneralItems.ETERNAL_DARK_HAMMER.get());
         basicItem(EternalGeneralItems.IRON_HAMMER.get());
         basicItem(EternalGeneralItems.STONE_HAMMER.get());
 
@@ -48,6 +47,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.RAW_ZINC.get());
         basicItem(EternalGeneralItems.RAW_GALLIUM.get());
         basicItem(EternalGeneralItems.RAW_URANINITE.get());
+        basicItem(EternalGeneralItems.RAW_CATALYRIUM.get());
 
         //INGOTS
         basicItem(EternalGeneralItems.ALUMINUM_INGOT.get());
@@ -90,6 +90,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.SHADOWSTEEL_INGOT.get());
         basicItem(EternalGeneralItems.PIG_IRON_INGOT.get());
         basicItem(EternalGeneralItems.MISSING_INGOT.get());
+        basicItem(EternalGeneralItems.CATALYRIUM_INGOT.get());
 
         //NUGGETS
         basicItem(EternalGeneralItems.ALUMINUM_NUGGET.get());
@@ -130,6 +131,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.NETHERSTEEL_NUGGET.get());
         basicItem(EternalGeneralItems.SHADOWSTEEL_NUGGET.get());
         basicItem(EternalGeneralItems.PIG_IRON_NUGGET.get());
+        basicItem(EternalGeneralItems.CATALYRIUM_NUGGET.get());
 
         //DUSTS
         basicItem(EternalGeneralItems.ALUMINUM_DUST.get());
@@ -195,6 +197,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.SCULK_DUST.get());
         basicItem(EternalGeneralItems.AMETHYST_DUST.get());
         basicItem(EternalGeneralItems.NETHER_STAR_DUST.get());
+        basicItem(EternalGeneralItems.CATALYRIUM_DUST.get());
 
         //RODS
         basicItem(EternalGeneralItems.ROD_ALUMINUM.get());
@@ -237,6 +240,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.ROD_SHADOWSTEEL.get());
         basicItem(EternalGeneralItems.ROD_PIG_IRON.get());
         basicItem(EternalGeneralItems.ROD_NECROTICARITE.get());
+        basicItem(EternalGeneralItems.ROD_CATALYRIUM.get());
 
         //PLATES
         basicItem(EternalGeneralItems.PLATE_ALUMINUM.get());
@@ -279,6 +283,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.PLATE_SHADOWSTEEL.get());
         basicItem(EternalGeneralItems.PLATE_PIG_IRON.get());
         basicItem(EternalGeneralItems.PLATE_NECROTICARITE.get());
+        basicItem(EternalGeneralItems.PLATE_CATALYRIUM.get());
 
         //GEARS
         basicItem(EternalGeneralItems.GEAR_ALUMINUM.get());
@@ -294,6 +299,7 @@ public class EternalItemModelProvider extends ItemModelProvider {
         basicItem(EternalGeneralItems.GEAR_TIN.get());
         basicItem(EternalGeneralItems.ULTIMATE_GEAR.get());
         basicItem(EternalGeneralItems.GEAR_NECROTICARITE.get());
+        basicItem(EternalGeneralItems.GEAR_CATALYRIUM.get());
 
         //GEMS
         basicItem(EternalGeneralItems.FLUORITE.get());
@@ -346,11 +352,13 @@ public class EternalItemModelProvider extends ItemModelProvider {
     //
     //Simply because my adhd won this time
 
-    public @NotNull ItemModelBuilder basicItem(ResourceLocation item) {
+    public @NotNull ItemModelBuilder basicItem(ResourceLocation item)
+    {
         String itemName = item.getPath();
         String basePath = "item/";
 
-        String[] possiblePaths = {
+        String[] possiblePaths =
+                {
                 basePath + itemName,
                 basePath + "hammers/" + itemName,
                 basePath + "ingots/" + itemName,
@@ -367,13 +375,18 @@ public class EternalItemModelProvider extends ItemModelProvider {
 
         ItemModelBuilder builder = null;
 
-        for(String path : possiblePaths) {
-            if(existingFileHelper.exists(ResourceLocation.fromNamespaceAndPath(item.getNamespace(), path), TEXTURE)) {
-                if(path.contains("rods/") || path.contains("hammers/")) {
+        for(String path : possiblePaths)
+        {
+            if(existingFileHelper.exists(ResourceLocation.fromNamespaceAndPath(item.getNamespace(), path), TEXTURE))
+            {
+                if(path.contains("rods/") || path.contains("hammers/"))
+                {
                     builder = this.getBuilder(item.toString())
                             .parent(new ModelFile.UncheckedModelFile("item/handheld"))
                             .texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), path));
-                } else {
+                }
+                else
+                {
                     builder = this.getBuilder(item.toString())
                             .parent(new ModelFile.UncheckedModelFile("item/generated"))
                             .texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), path));
@@ -381,7 +394,8 @@ public class EternalItemModelProvider extends ItemModelProvider {
                 break;
             }
         }
-        if(builder == null) {
+        if(builder == null)
+        {
             builder = this.getBuilder(item.toString())
                     .parent(new ModelFile.UncheckedModelFile("item/generated"))
                     .texture("layer0", ResourceLocation.fromNamespaceAndPath(item.getNamespace(), basePath + itemName));

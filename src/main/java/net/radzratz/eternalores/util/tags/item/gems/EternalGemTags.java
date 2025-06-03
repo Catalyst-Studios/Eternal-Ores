@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalGemTags {
-    public static class Items {
+public class EternalGemTags
+{
+    public static class Items
+    {
 
         //Amber
         public static final TagKey<Item> GEM_AMBER = createGemTags("gems/amber");
@@ -29,7 +31,8 @@ public class EternalGemTags {
         //Sapphire
         public static final TagKey<Item> GEM_SAPPHIRE = createGemTags("gems/sapphire");
 
-        private static TagKey<Item> createGemTags(String path) {
+        private static TagKey<Item> createGemTags(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

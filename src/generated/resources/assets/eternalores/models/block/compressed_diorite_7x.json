@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/compressed_diorite_7x"
+    "all": "eternalores:block/compressed/compressed_diorite_7x"
   }
 }

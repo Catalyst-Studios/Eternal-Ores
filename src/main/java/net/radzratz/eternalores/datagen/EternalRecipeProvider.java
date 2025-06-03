@@ -17,7 +17,9 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-public class EternalRecipeProvider extends RecipeProvider implements IConditionBuilder {
+@SuppressWarnings("all")
+public class EternalRecipeProvider extends RecipeProvider implements IConditionBuilder
+{
 
     private static final Set<String> EXCLUDED_MAT_DUPE_RECIPES = Set.of(
             "netherite", "apatite", "fluorite", "amber", "diamond", "emerald", "brass", "blue_steel",
@@ -28,7 +30,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
             "necroticarite", "sculk", "amethyst", "nether_star"
     );
 
-    public EternalRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
+    public EternalRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries)
+    {
         super(output, registries);
     }
 
@@ -370,6 +373,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToNuggetRecipe(recipeOutput, "brass", EternalGeneralItems.BRASS_INGOT.get(), EternalGeneralItems.BRASS_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_INGOT.get(), EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_INGOT.get(), EternalGeneralItems.BRONZE_NUGGET.get());
+        generateIngotToNuggetRecipe(recipeOutput, "catalyrium", EternalGeneralItems.CATALYRIUM_INGOT.get(), EternalGeneralItems.CATALYRIUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_INGOT.get(), EternalGeneralItems.CAST_IRON_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "cast_steel", EternalGeneralItems.CAST_STEEL_INGOT.get(), EternalGeneralItems.CAST_STEEL_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_INGOT.get(), EternalGeneralItems.COBALT_NUGGET.get());
@@ -415,6 +419,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateNuggetToIngotRecipe(recipeOutput, "brass", EternalGeneralItems.BRASS_NUGGET.get(), EternalGeneralItems.BRASS_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_NUGGET.get(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_NUGGET.get(), EternalGeneralItems.BRONZE_INGOT.get());
+        generateNuggetToIngotRecipe(recipeOutput, "catalyrium", EternalGeneralItems.CATALYRIUM_NUGGET.get(), EternalGeneralItems.CATALYRIUM_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_NUGGET.get(), EternalGeneralItems.CAST_IRON_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "cast_steel", EternalGeneralItems.CAST_STEEL_NUGGET.get(), EternalGeneralItems.CAST_STEEL_INGOT.get());
         generateNuggetToIngotRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_NUGGET.get(), EternalGeneralItems.COBALT_INGOT.get());
@@ -1024,6 +1029,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy("has_" + material + "_block", has(block))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_block_to_ingot"));
     }
+
     private void generateBlockToGemMaterialRecipe(@NotNull RecipeOutput recipeOutput, String material, Item block, Item gem)
     {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, gem, 9)
@@ -1031,6 +1037,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy("has_" + material + "_block", has(block))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_block_to_gem"));
     }
+
     private void generateBlockToRawMaterialRecipe(@NotNull RecipeOutput recipeOutput, String material, Item block, Item raw)
     {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, raw, 9)
@@ -1050,6 +1057,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy("has_" + material + "_ingot", has(ingot))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_ingot_to_block"));
     }
+
     private void generateGemToBlockRecipe(@NotNull RecipeOutput recipeOutput, String material, Item gem, Item block)
     {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, block, 1)
@@ -1060,6 +1068,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy("has_" + material + "_ingot", has(gem))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_gem_to_block"));
     }
+
     private void generateRawMaterialToBlockRecipe(@NotNull RecipeOutput recipeOutput, String material, Item raw, Item block)
     {
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, block, 1)
@@ -1117,6 +1126,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy("has_" + material + "_raw", has(rawOre))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_to_ingot_furnace"));
     }
+
     private void generateRawOreToIngotBlasting(@NotNull RecipeOutput recipeOutput, String material, Item rawOre, Item ingot)
     {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(rawOre), RecipeCategory.MISC, ingot, 0.7f, 100)
@@ -1131,6 +1141,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy("has_" + material + "_dust", has(dust))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_dust_to_material_furnace"));
     }
+
     private void generateDustToMaterialBlasting(@NotNull RecipeOutput recipeOutput, String material, Item dust, Item output)
     {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(dust), RecipeCategory.MISC, output, 0.7f, 100)
@@ -1145,6 +1156,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy("has_" + material + "_raw_block", has(rawBlock))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_block_to_material_furnace"));
     }
+
     private void generateRawBlockToMaterialBlasting(@NotNull RecipeOutput recipeOutput, String material, Item rawBlock, Item output)
     {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(rawBlock), RecipeCategory.MISC, output, 0.7f, 100)
@@ -1159,6 +1171,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .unlockedBy("has_" + material + "_ore_block", has(oreBlock))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_ore_block_to_material_furnace"));
     }
+
     private void generateOreBlockToMaterialBlasting(@NotNull RecipeOutput recipeOutput, String material, Item oreBlock, Item output)
     {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(oreBlock), RecipeCategory.MISC, output, 0.7f, 100)

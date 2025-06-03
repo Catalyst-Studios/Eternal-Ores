@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/rose_gold_block"
+    "all": "eternalores:block/metal/rose_gold_block"
   }
 }

@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalOreBlockItemTags {
-    public static class Items {
+public class EternalOreBlockItemTags
+{
+    public static class Items
+    {
 
         ///OverWorld
         //Aluminum
@@ -58,7 +60,8 @@ public class EternalOreBlockItemTags {
         public static final TagKey<Item> ITEM_NECROTICARITE_ORE_NETHER = createOreBlockTags("ores/necroticarite");
         ///End
 
-        private static TagKey<Item> createOreBlockTags(String path) {
+        private static TagKey<Item> createOreBlockTags(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

@@ -13,12 +13,14 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
-public class EternalGeneralBlocks {
-    public static final DeferredRegister.Blocks BLOCKS =
-            DeferredRegister.createBlocks(EternalOres.MOD_ID);
+@SuppressWarnings("all")
+public class EternalGeneralBlocks
+{
+    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(EternalOres.MOD_ID);
 
     //ORE BLOCKS
-    private static DeferredBlock<Block> registerOreBlock(String name, float hardness, SoundType sound) {
+    private static DeferredBlock<Block> registerOreBlock(String name, float hardness, SoundType sound)
+    {
         return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
                 .strength(hardness)
                 .requiresCorrectToolForDrops()
@@ -102,7 +104,8 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> NECROTICARITE_ORE_BLOCK = registerOreBlock("necroticarite_ore_block", 4f, SoundType.NETHERRACK);
 
     //RAW ORE BLOCKS
-    private static DeferredBlock<Block> registerRawOreBlock(String name, float hardness, SoundType sound) {
+    private static DeferredBlock<Block> registerRawOreBlock(String name, float hardness, SoundType sound)
+    {
         return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
                 .strength(hardness)
                 .requiresCorrectToolForDrops()
@@ -125,7 +128,8 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> RAW_URANINITE_BLOCK = registerRawOreBlock("raw_uraninite_block", 3f, SoundType.STONE);
 
     //METAL BLOCK
-    private static DeferredBlock<Block> registerMetalBlock(String name, float hardness, SoundType sound) {
+    private static DeferredBlock<Block> registerMetalBlock(String name, float hardness, SoundType sound)
+    {
         return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
                 .strength(hardness)
                 .requiresCorrectToolForDrops()
@@ -169,7 +173,8 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> PIG_IRON_BLOCK = registerMetalBlock("pig_iron_block", 4f, SoundType.METAL);
 
     //Gem Blocks
-    private static DeferredBlock<Block> registerGemBlock(String name, float hardness, SoundType sound) {
+    private static DeferredBlock<Block> registerGemBlock(String name, float hardness, SoundType sound)
+    {
         return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
                 .strength(hardness)
                 .requiresCorrectToolForDrops()
@@ -187,7 +192,8 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> NECROTICARITE_BLOCK = registerGemBlock("necroticarite_block", 4f, SoundType.METAL);
 
     //Misc Blocks
-    private static DeferredBlock<Block> registerMiscBlock(String name, float hardness, SoundType sound) {
+    private static DeferredBlock<Block> registerMiscBlock(String name, float hardness, SoundType sound)
+    {
         return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
                 .strength(hardness)
                 .requiresCorrectToolForDrops()
@@ -196,7 +202,8 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> NETHER_STAR_BLOCK = registerMiscBlock("nether_star_block", 4, SoundType.METAL);
 
     //Compressed Blocks
-    private static DeferredBlock<Block> registerCompressedBlockItem(String name, float hardness, SoundType sound) {
+    private static DeferredBlock<Block> registerCompressedBlockItem(String name, float hardness, SoundType sound)
+    {
         return registerBlock(name, () -> new Block(BlockBehaviour.Properties.of()
                 .strength(hardness)
                 .requiresCorrectToolForDrops()
@@ -273,17 +280,20 @@ public class EternalGeneralBlocks {
     public static final DeferredBlock<Block> DIORITE_8 = registerCompressedBlockItem("compressed_diorite_8x", 2f, SoundType.STONE);
     public static final DeferredBlock<Block> DIORITE_9 = registerCompressedBlockItem("compressed_diorite_9x", 2f, SoundType.STONE);
 
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
+    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
+    {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
-    public static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
+    public static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block)
+    {
         EternalGeneralItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
-    public static void register(IEventBus eventBus) {
+    public static void register(IEventBus eventBus)
+    {
         BLOCKS.register(eventBus);
     }
 }

@@ -14,7 +14,8 @@ import net.radzratz.eternalores.EternalOres;
 
 import java.util.List;
 
-public class EternalPlacedFeatures {
+public class EternalPlacedFeatures
+{
 
     //Aluminum
     public static final ResourceKey<PlacedFeature> ALUMINUM_ORE_PLACED_KEY = registerKey("aluminum_ore_placed");
@@ -113,11 +114,9 @@ public class EternalPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NETHER_ZINC_ORE_PLACED_KEY = registerKey("nether_zinc_ore_placed");
     public static final ResourceKey<PlacedFeature> END_ZINC_ORE_PLACED_KEY = registerKey("end_zinc_ore_placed");
 
-    public static void bootstrap(BootstrapContext<PlacedFeature> context) {
-        System.out.println("Bootstrap of PlacedFeature is Loading");
+    public static void bootstrap(BootstrapContext<PlacedFeature> context)
+    {
         var ConfiguredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
-
-        System.out.println("Loading Placed Features");
 
     //ALUMINUM
     register(context, ALUMINUM_ORE_PLACED_KEY, ConfiguredFeatures.getOrThrow(EternalConfiguredFeatures.OVERWORLD_ALUMINUM_ORE_KEY),
@@ -385,15 +384,16 @@ public class EternalPlacedFeatures {
     }
 
 
-    private static ResourceKey<PlacedFeature> registerKey(String name) {
-        System.out.println("Loading Register Key of Placed Features");
+    private static ResourceKey<PlacedFeature> registerKey(String name)
+    {
         return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, name));
     }
 
-    private static void register(BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key,
+    private static void register(BootstrapContext<PlacedFeature> context,
+                                 ResourceKey<PlacedFeature> key,
                                  Holder<ConfiguredFeature<?, ?>> configuration,
-                                 List<PlacementModifier> modifiers) {
-        System.out.println("Loading Bootstrap Context of Placed Features");
+                                 List<PlacementModifier> modifiers)
+    {
         context.register(key, new PlacedFeature(configuration, List.copyOf(modifiers)));
     }
 }

@@ -8,11 +8,14 @@ import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.item.tools.EternalGemCutter;
 import net.radzratz.eternalores.item.tools.EternalHammers;
 
-public class EternalGeneralItems {
+@SuppressWarnings("all")
+public class EternalGeneralItems
+{
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(EternalOres.MOD_ID);
 
     //Hammers
-    private static DeferredItem<Item> registerHammer(String name, int durability) {
+    private static DeferredItem<Item> registerHammer(String name, int durability)
+    {
         return ITEMS.register(name, () -> new EternalHammers(new Item.Properties(), durability));
     }
     public static final DeferredItem<Item> COBALT_HAMMER = registerHammer("cobalt_hammer", 1024);
@@ -20,23 +23,24 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> STONE_HAMMER = registerHammer("stone_hammer",64);
     public static final DeferredItem<Item> DIAMOND_HAMMER = registerHammer("diamond_hammer",512);
     public static final DeferredItem<Item> IRON_HAMMER = registerHammer("iron_hammer",256);
-    //public static final DeferredItem<Item> ETERNAL_DARK_HAMMER = ITEMS.register("eternal_dark_hammer",
-    //        ()-> new EternalHammers(new Item.Properties(),2048));
 
     //Gem Cutter
-    private static DeferredItem<Item> registerGemCutter(String name, int durability) {
+    private static DeferredItem<Item> registerGemCutter(String name, int durability)
+    {
         return ITEMS.register(name, () -> new EternalGemCutter(new Item.Properties(), durability));
     }
     public static final DeferredItem<Item> IRON_GEM_CUTTER = registerGemCutter("iron_gem_cutter",256);
 
     //Misc Items
-    private static DeferredItem<Item> registerMiscItem(String name) {
+    private static DeferredItem<Item> registerMiscItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> SILICON = registerMiscItem("silicon");
 
     //Ingots
-    private static DeferredItem<Item> registerIngotItem(String name) {
+    private static DeferredItem<Item> registerIngotItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> ALUMINUM_INGOT = registerIngotItem("aluminum_ingot");
@@ -79,9 +83,11 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> SHADOWSTEEL_INGOT = registerIngotItem("shadowsteel_ingot");
     public static final DeferredItem<Item> PIG_IRON_INGOT = registerIngotItem("pig_iron_ingot");
     public static final DeferredItem<Item> MISSING_INGOT = registerIngotItem("missing_ingot");
+    public static final DeferredItem<Item> CATALYRIUM_INGOT = registerIngotItem("catalyrium_ingot");
 
     //Nuggets
-    private static DeferredItem<Item> registerNuggetItem(String name) {
+    private static DeferredItem<Item> registerNuggetItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> ALUMINUM_NUGGET = registerNuggetItem("aluminum_nugget");
@@ -122,9 +128,11 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> NETHERSTEEL_NUGGET = registerNuggetItem("nethersteel_nugget");
     public static final DeferredItem<Item> SHADOWSTEEL_NUGGET = registerNuggetItem("shadowsteel_nugget");
     public static final DeferredItem<Item> PIG_IRON_NUGGET = registerNuggetItem("pig_iron_nugget");
+    public static final DeferredItem<Item> CATALYRIUM_NUGGET = registerNuggetItem("catalyrium_nugget");
 
     //Rods
-    private static DeferredItem<Item> registerRodItem(String name) {
+    private static DeferredItem<Item> registerRodItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> ROD_ALUMINUM = registerRodItem("rod_aluminum");
@@ -167,9 +175,11 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> ROD_SHADOWSTEEL = registerRodItem("rod_shadowsteel");
     public static final DeferredItem<Item> ROD_PIG_IRON = registerRodItem("rod_pig_iron");
     public static final DeferredItem<Item> ROD_NECROTICARITE = registerRodItem("rod_necroticarite");
+    public static final DeferredItem<Item> ROD_CATALYRIUM = registerRodItem("rod_catalyrium");
 
     //Plates
-    private static DeferredItem<Item> registerPlateItem(String name) {
+    private static DeferredItem<Item> registerPlateItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> PLATE_ALUMINUM = registerPlateItem("plate_aluminum");
@@ -212,9 +222,11 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> PLATE_SHADOWSTEEL = registerPlateItem("plate_shadowsteel");
     public static final DeferredItem<Item> PLATE_PIG_IRON = registerPlateItem("plate_pig_iron");
     public static final DeferredItem<Item> PLATE_NECROTICARITE = registerPlateItem("plate_necroticarite");
+    public static final DeferredItem<Item> PLATE_CATALYRIUM = registerPlateItem("plate_catalyrium");
 
     //Gears
-    private static DeferredItem<Item> registerGearItem(String name) {
+    private static DeferredItem<Item> registerGearItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> ULTIMATE_GEAR = registerGearItem("ultimate_gear");
@@ -230,9 +242,11 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> GEAR_DIAMOND = registerGearItem("gear_diamond");
     public static final DeferredItem<Item> GEAR_ALUMINUM = registerGearItem("gear_aluminum");
     public static final DeferredItem<Item> GEAR_NECROTICARITE = registerGearItem("gear_necroticarite");
+    public static final DeferredItem<Item> GEAR_CATALYRIUM = registerGearItem("gear_catalyrium");
 
     //Raw Ores
-    private static DeferredItem<Item> registerRawItem(String name) {
+    private static DeferredItem<Item> registerRawItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> RAW_ALUMINUM = registerRawItem("raw_aluminum");
@@ -251,9 +265,11 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> RAW_ZINC = registerRawItem("raw_zinc");
     public static final DeferredItem<Item> SULFUR = registerRawItem("sulfur");
     public static final DeferredItem<Item> RAW_URANINITE = registerRawItem("raw_uraninite");
+    public static final DeferredItem<Item> RAW_CATALYRIUM = registerRawItem("raw_catalyrium");
 
     //Ore Dust
-    private static DeferredItem<Item> registerDustItem(String name) {
+    private static DeferredItem<Item> registerDustItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> ALUMINUM_DUST = registerDustItem("aluminum_dust");
@@ -319,9 +335,11 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> SCULK_DUST = registerDustItem("sculk_dust");
     public static final DeferredItem<Item> AMETHYST_DUST = registerDustItem("amethyst_dust");
     public static final DeferredItem<Item> NETHER_STAR_DUST = registerDustItem("nether_star_dust");
+    public static final DeferredItem<Item> CATALYRIUM_DUST = registerDustItem("catalyrium_dust");
 
     //Gems
-    private static DeferredItem<Item> registerGemItem(String name) {
+    private static DeferredItem<Item> registerGemItem(String name)
+    {
         return ITEMS.register(name, () -> new Item(new Item.Properties()));
     }
     public static final DeferredItem<Item> GEM_ONYX = registerGemItem("gem_onyx");
@@ -344,7 +362,8 @@ public class EternalGeneralItems {
     public static final DeferredItem<Item> GEM_OBSIDIAN_SHARD = ITEMS.register("gem_obsidian_shard",
             ()-> new Item(new Item.Properties()));
 
-    public static void register(IEventBus eventBus) {
+    public static void register(IEventBus eventBus)
+    {
         ITEMS.register(eventBus);
     }
 }

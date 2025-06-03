@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/amber_ore_block"
+    "all": "eternalores:block/ore_stone/amber_ore_block"
   }
 }

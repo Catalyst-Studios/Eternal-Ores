@@ -5,8 +5,10 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 
-public class EternalOreBlockTags {
-    public static class Blocks {
+public class EternalOreBlockTags
+{
+    public static class Blocks
+    {
 
         ///OverWorld
         //Aluminum
@@ -59,7 +61,8 @@ public class EternalOreBlockTags {
         public static final TagKey<Block> OBSIDIAN_ORE_NETHER = createOreBlockTags("ores/obsidian");
         ///End
 
-        private static TagKey<net.minecraft.world.level.block.Block> createOreBlockTags(String path) {
+        private static TagKey<net.minecraft.world.level.block.Block> createOreBlockTags(String path)
+        {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

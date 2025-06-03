@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/sulfur_block"
+    "all": "eternalores:block/raw_ore_block/sulfur_block"
   }
 }

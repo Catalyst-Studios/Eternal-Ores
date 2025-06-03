@@ -5,11 +5,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalRawMaterialTags {
+public class EternalRawMaterialTags
+{
 
     //Aluminum
     public static final TagKey<Item> RAW_ALUMINUM = createRawMaterialsTag("raw_materials/aluminum");
     public static final TagKey<Item> RAW_ALUMINIUM = createRawMaterialsTag("raw_materials/aluminium");
+    //Catalyrium
+    public static final TagKey<Item> RAW_CATALYRIUM = createRawMaterialsTag("raw_materials/catalyrium");
     //Cobalt
     public static final TagKey<Item> RAW_COBALT = createRawMaterialsTag("raw_materials/cobalt");
     //Gallium
@@ -41,7 +44,8 @@ public class EternalRawMaterialTags {
     //Zinc
     public static final TagKey<Item> RAW_ZINC = createRawMaterialsTag("raw_materials/zinc");
 
-    private static TagKey<Item> createRawMaterialsTag(String path) {
+    private static TagKey<Item> createRawMaterialsTag(String path)
+    {
         return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
     }
 }

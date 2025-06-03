@@ -1,0 +1,38 @@
+modLoader="javafml"
+
+loaderVersion="${loader_version_range}"
+
+license="All Rights Reserved"
+
+[[mods]]
+
+modId="eternalores"
+
+version="0.12"
+
+displayName="Eternal Ores"
+
+authors="RadzRatz"
+
+description="The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, ore blocks and some compressed blocks!"
+
+[[dependencies.eternalores]]
+modId="neoforge"
+type="optional"
+versionRange="21.1.160"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.eternalores]]
+modId="catalystcore"
+type="optional"
+versionRange="0.0.1"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.eternalores]]
+modId="minecraft"
+type="required"
+versionRange="1.21.1"
+ordering="NONE"
+side="BOTH"

@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalMetalDustsTags {
-    public static class Items {
+public class EternalMetalDustsTags
+{
+    public static class Items
+    {
 
         //Aluminum
         public static final TagKey<Item> DUST_ALUMINUM = createMetalDustTag("dusts/aluminum");
@@ -18,6 +20,8 @@ public class EternalMetalDustsTags {
         public static final TagKey<Item> DUST_BRITANNIA_SILVER = createMetalDustTag("dusts/britannia_silver");
         //Bronze
         public static final TagKey<Item> DUST_BRONZE = createMetalDustTag("dusts/bronze");
+        //Catalyrium
+        public static final TagKey<Item> DUST_CATALYRIUM = createMetalDustTag("dusts/catalyrium");
         //Cast Iron
         public static final TagKey<Item> DUST_CAST_IRON = createMetalDustTag("dusts/cast_iron");
         //Cast Steel
@@ -85,7 +89,8 @@ public class EternalMetalDustsTags {
         //Zinc
         public static final TagKey<Item> DUST_ZINC = createMetalDustTag("dusts/zinc");
 
-        private static TagKey<Item> createMetalDustTag(String path) {
+        private static TagKey<Item> createMetalDustTag(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

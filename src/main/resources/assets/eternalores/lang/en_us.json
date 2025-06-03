@@ -47,6 +47,7 @@
   "item.eternalores.nethersteel_ingot": "Nethersteel Ingot",
   "item.eternalores.shadowsteel_ingot": "Shadowsteel Ingot",
   "item.eternalores.pig_iron_ingot": "Pig Iron Ingot",
+  "item.eternalores.catalyrium_ingot": "Catalyrium Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -88,6 +89,7 @@
   "item.eternalores.nethersteel_nugget": "Nethersteel Nugget",
   "item.eternalores.shadowsteel_nugget": "Shadowsteel Nugget",
   "item.eternalores.pig_iron_nugget": "Pig Iron Nugget",
+  "item.eternalores.catalyrium_nugget": "Catalyrium Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
@@ -129,6 +131,7 @@
   "item.eternalores.rod_shadowsteel": "Shadowsteel Rod",
   "item.eternalores.rod_pig_iron": "Pig Iron Rod",
   "item.eternalores.rod_necroticarite": "Necroticarite Rod",
+  "item.eternalores.rod_catalyrium": "Catalyrium Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -170,6 +173,7 @@
   "item.eternalores.plate_shadowsteel": "Shadowsteel Plate",
   "item.eternalores.plate_pig_iron": "Pig Iron Plate",
   "item.eternalores.plate_necroticarite": "Necroticarite Plate",
+  "item.eternalores.plate_catalyrium": "Catalyrium Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -184,6 +188,7 @@
   "item.eternalores.gear_diamond": "Diamond Gear",
   "item.eternalores.gear_aluminum": "Aluminum Gear",
   "item.eternalores.gear_necroticarite": "Necroticarite Gear",
+  "item.eternalores.gear_catalyrium": "Catalyrium Gear",
 
   "item.eternalores.raw_uranium": "Raw Uranium",
   "item.eternalores.raw_osmium": "Raw Osmium",
@@ -200,6 +205,7 @@
   "item.eternalores.raw_gallium": "Raw Gallium",
   "item.eternalores.raw_iridium": "Raw Iridium",
   "item.eternalores.raw_uraninite": "Raw Uraninite",
+  "item.eternalores.raw_catalyrium": "Raw Catalyrium",
 
   "item.eternalores.aluminum_dust": "Aluminum Dust",
   "item.eternalores.cobalt_dust": "Cobalt Dust",
@@ -264,8 +270,9 @@
   "item.eternalores.amethyst_dust": "Amethyst Dust",
   "item.eternalores.sculk_dust": "Sculk Dust",
   "item.eternalores.nether_star_dust": "Nether Star Dust",
+  "item.eternalores.catalyrium_dust": "Catalyrium Dust",
 
-  "item.eternalores.gem_obsidian_shard": "Obsidian Shard",
+  "item.eternalores.gem_obsidian_shard": "Obsidian Gem",
   "item.eternalores.gem_onyx": "Onyx",
   "item.eternalores.gem_ruby": "Ruby",
   "item.eternalores.gem_peridot": "Peridot",
@@ -277,6 +284,8 @@
   "item.eternalores.gem_amber": "Amber",
   "item.eternalores.gem_cinnabar": "Cinnabar",
   "item.eternalores.gem_necroticarite": "Necroticarite",
+  "item.eternalores.gem_tachyarite": "Tachyarite",
+  "item.eternalores.gem_voiderite": "Voiderite",
 
   "item.eternalores.gem_sapphire_shard": "Sapphire Shard",
 

@@ -16,12 +16,13 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("all")
 @EventBusSubscriber(modid = EternalOres.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
-public class EternalDataGenerators {
+public class EternalDataGenerators
+{
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent event) {
-
-        System.out.println("Loading Data Generators");
+    public static void gatherData(GatherDataEvent event)
+    {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();

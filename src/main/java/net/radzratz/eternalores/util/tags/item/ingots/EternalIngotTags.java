@@ -5,9 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalIngotTags {
-    public static class Items {
-
+public class EternalIngotTags
+{
+    public static class Items
+    {
         //Aluminum / Aluminium
         public static final TagKey<Item> ALUMINUM_INGOT = createIngotTags("ingots/aluminum");
         public static final TagKey<Item> ALUMINIUM_INGOT = createIngotTags("ingots/aluminium");
@@ -19,6 +20,8 @@ public class EternalIngotTags {
         public static final TagKey<Item> BRITANNIA_INGOT = createIngotTags("ingots/britannia_silver");
         //Bronze
         public static final TagKey<Item> BRONZE_INGOT = createIngotTags("ingots/bronze");
+        //Catalyrium
+        public static final TagKey<Item> CATALYRIUM_INGOT = createIngotTags("ingots/catalyrium");
         //Cast Iron
         public static final TagKey<Item> CAST_IRON_INGOT = createIngotTags("ingots/cast_iron");
         //Cast Steel
@@ -88,7 +91,8 @@ public class EternalIngotTags {
         //Zinc
         public static final TagKey<Item> ZINC_INGOT = createIngotTags("ingots/zinc");
 
-        private static TagKey<Item> createIngotTags(String path) {
+        private static TagKey<Item> createIngotTags(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

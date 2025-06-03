@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/fluorite_block"
+    "all": "eternalores:block/gem/fluorite_block"
   }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/niter_block"
+    "all": "eternalores:block/gem/niter_block"
   }
 }

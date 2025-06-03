@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/deepslate_ruby_ore_block"
+    "all": "eternalores:block/ore_deepslate/deepslate_ruby_ore_block"
   }
 }

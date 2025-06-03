@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalMiscDustsTags {
-    public static class Items {
+public class EternalMiscDustsTags
+{
+    public static class Items
+    {
 
         public static final TagKey<Item> DUST_ENDER = createMiscDustTag("dusts/ender_pearl");
 
@@ -24,7 +26,8 @@ public class EternalMiscDustsTags {
 
         public static final TagKey<Item> DUST_NETHER_STAR = createMiscDustTag("dusts/nether_star");
 
-        private static TagKey<Item> createMiscDustTag(String path) {
+        private static TagKey<Item> createMiscDustTag(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

@@ -20,16 +20,19 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
-public class EternalBlockTagProvider extends BlockTagsProvider {
-    public EternalBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, @Nullable ExistingFileHelper existingFileHelper) {
+@SuppressWarnings("all")
+public class EternalBlockTagProvider extends BlockTagsProvider
+{
+    public EternalBlockTagProvider(PackOutput output,
+                                   CompletableFuture<HolderLookup.Provider> lookupProvider,
+                                   @Nullable ExistingFileHelper existingFileHelper)
+    {
         super(output, lookupProvider, EternalOres.MOD_ID, existingFileHelper);
     }
 
     @Override
-    protected void addTags(HolderLookup.@NotNull Provider provider) {
-
-        System.out.println("Loading Block Tags");
-
+    protected void addTags(HolderLookup.@NotNull Provider provider)
+    {
             //Individual Storage Blocks
             tag(EternalStorageMetalBlockTags.Blocks.ALUMINUM_BLOCK_ST).add(EternalGeneralBlocks.ALUMINUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.BLUE_STEEL_BLOCK_ST).add(EternalGeneralBlocks.BLUE_STEEL_BLOCK.get());

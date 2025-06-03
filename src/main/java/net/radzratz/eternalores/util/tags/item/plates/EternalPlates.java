@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalPlates {
-    public static class Items {
+public class EternalPlates
+{
+    public static class Items
+    {
 
         //Aluminum / Aluminium
         public static final TagKey<Item> ALUMINUM_PLATE = createPlateTag("plates/aluminum");
@@ -19,6 +21,8 @@ public class EternalPlates {
         public static final TagKey<Item> BRITANNIA_PLATE = createPlateTag("plates/britannia_silver");
         //Bronze
         public static final TagKey<Item> BRONZE_PLATE = createPlateTag("plates/bronze");
+        //Catalyrium
+        public static final TagKey<Item> CATALYRIUM_PLATE = createPlateTag("plates/catalyrium");
         //Cast Iron
         public static final TagKey<Item> CAST_IRON_PLATE = createPlateTag("plates/cast_iron");
         //Cast Steel
@@ -100,7 +104,8 @@ public class EternalPlates {
         //Zinc
         public static final TagKey<Item> ZINC_PLATE = createPlateTag("plates/zinc");
 
-        private static TagKey<Item> createPlateTag(String path) {
+        private static TagKey<Item> createPlateTag(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

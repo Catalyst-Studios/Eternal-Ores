@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalNuggetsTags {
-    public static class Items {
+public class EternalNuggetsTags
+{
+    public static class Items
+    {
 
         //Aluminum
         public static final TagKey<Item> NUGGET_ALUMINUM = createNuggetsTags("nuggets/aluminum");
@@ -18,6 +20,8 @@ public class EternalNuggetsTags {
         public static final TagKey<Item> NUGGET_BRITANNIA_SILVER = createNuggetsTags("nuggets/britannia_silver");
         //Bronze
         public static final TagKey<Item> NUGGET_BRONZE = createNuggetsTags("nuggets/bronze");
+        //Catalyrium
+        public static final TagKey<Item> NUGGET_CATALYRIUM = createNuggetsTags("nuggets/catalyrium");
         //Cast Iron
         public static final TagKey<Item> NUGGET_CAST_IRON = createNuggetsTags("nuggets/cast_iron");
         //Cast Steel
@@ -83,7 +87,8 @@ public class EternalNuggetsTags {
         //Zinc
         public static final TagKey<Item> NUGGET_ZINC = createNuggetsTags("nuggets/zinc");
 
-        private static TagKey<Item> createNuggetsTags(String path) {
+        private static TagKey<Item> createNuggetsTags(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

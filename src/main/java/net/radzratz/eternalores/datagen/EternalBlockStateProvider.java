@@ -1,26 +1,34 @@
 package net.radzratz.eternalores.datagen;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.neoforged.neoforge.client.model.generators.BlockModelBuilder;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
+import org.jetbrains.annotations.NotNull;
 
+import static net.neoforged.neoforge.client.model.generators.ModelProvider.TEXTURE;
 
-public class EternalBlockStateProvider extends BlockStateProvider {
-    public EternalBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
+@SuppressWarnings("all")
+public class EternalBlockStateProvider extends BlockStateProvider
+{
+    private final ExistingFileHelper exFileHelper;
+
+    public EternalBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper)
+    {
         super(output, EternalOres.MOD_ID, exFileHelper);
+        this.exFileHelper = exFileHelper;
     }
 
     @Override
-    protected void registerStatesAndModels() {
-
-        System.out.println("Loading Block State");
-
+    protected void registerStatesAndModels()
+    {
         //COMPRESSED BLOCKS
         blockWithItem(EternalGeneralBlocks.COBBLE_1);
         blockWithItem(EternalGeneralBlocks.COBBLE_2);
@@ -243,7 +251,76 @@ public class EternalBlockStateProvider extends BlockStateProvider {
         blockWithItem(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK);
     }
 
-    private void blockWithItem(DeferredBlock<?> deferredBlock) {
-        simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
+    private void blockWithItem(DeferredBlock<?> deferredBlock)
+    {
+        Block block = deferredBlock.get();
+        ResourceLocation id = BuiltInRegistries.BLOCK.getKey(block);
+        BlockModelBuilder model = basicBlock(id);
+        simpleBlockWithItem(block, model);
+    }
+
+    public @NotNull BlockModelBuilder basicBlock(ResourceLocation block)
+    {
+        String blockName = block.getPath();
+        String basePath = "block/";
+
+        String[] possiblePaths =
+                {
+                basePath + blockName,
+                basePath + "metal/" + blockName,
+                basePath + "gem/" + blockName,
+                basePath + "compressed/" + blockName,
+                basePath + "ore_stone/" + blockName,
+                basePath + "ore_deepslate/" + blockName,
+                basePath + "ore_nether/" + blockName,
+                basePath + "ore_end/" + blockName,
+                basePath + "raw_ore_block/" + blockName,
+                basePath + "misc/" + blockName,
+                basePath + "blast_furnace/" + blockName,
+                basePath + "smoker/" + blockName,
+                basePath + "furnace/" + blockName
+        };
+
+        BlockModelBuilder builder = null;
+
+        for(String path : possiblePaths)
+        {
+            if(     blockName.contains("furnace") ||
+                    blockName.contains("smoker") ||
+                    blockName.contains("blast_furnace")
+              )
+            {
+                return createFurnaceModel(block);
+            }
+
+            ResourceLocation texture = ResourceLocation.fromNamespaceAndPath(block.getNamespace(), path);
+            if(exFileHelper.exists(texture, TEXTURE))
+            {
+                builder = this.models().getBuilder(block.toString())
+                        .parent(new ModelFile.UncheckedModelFile("block/cube_all"))
+                        .texture("all", texture);
+                break;
+            }
+        }
+
+        if(builder == null)
+        {
+            ResourceLocation fallback = ResourceLocation.fromNamespaceAndPath(block.getNamespace(), basePath + blockName);
+            builder = this.models().getBuilder(block.toString())
+                    .parent(new ModelFile.UncheckedModelFile("block/cube_all"))
+                    .texture("all", fallback);
+        }
+
+        return builder;
+    }
+
+    private BlockModelBuilder createFurnaceModel(ResourceLocation block)
+    {
+        String blockName = block.getPath();
+        return models().getBuilder(block.toString())
+                .parent(new ModelFile.UncheckedModelFile("block/orientable"))
+                .texture("front", ResourceLocation.fromNamespaceAndPath(block.getNamespace(), "block/" + blockName + "_front"))
+                .texture("side", ResourceLocation.fromNamespaceAndPath(block.getNamespace(), "block/" + blockName + "_side"))
+                .texture("top", ResourceLocation.fromNamespaceAndPath(block.getNamespace(), "block/" + blockName + "_top"));
     }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/cast_iron_block"
+    "all": "eternalores:block/metal/cast_iron_block"
   }
 }

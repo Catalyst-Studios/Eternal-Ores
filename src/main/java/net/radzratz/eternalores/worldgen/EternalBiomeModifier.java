@@ -12,7 +12,8 @@ import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.radzratz.eternalores.EternalOres;
 
-public class EternalBiomeModifier {
+public class EternalBiomeModifier
+{
     //Aluminum
     public static final ResourceKey<BiomeModifier> ADD_ALUMINUM_ORE = registerKey("add_aluminum_ore");
     public static final ResourceKey<BiomeModifier> ADD_NETHER_ALUMINUM_ORE = registerKey("add_nether_aluminum_ore");
@@ -110,13 +111,12 @@ public class EternalBiomeModifier {
     public static final ResourceKey<BiomeModifier> ADD_NETHER_ZINC_ORE = registerKey("add_nether_zinc_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_ZINC_ORE = registerKey("add_end_zinc_ore");
 
-    public static void bootstrap(BootstrapContext<BiomeModifier> context) {
-        System.out.println("Bootstrap of BiomeModifier is Loading");
+    public static void bootstrap(BootstrapContext<BiomeModifier> context)
+    {
 
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
 
-        System.out.println("Loading Biome Modifiers");
 
         //Aluminum
             context.register(ADD_ALUMINUM_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
@@ -270,8 +270,8 @@ public class EternalBiomeModifier {
     }
 
 
-    private static ResourceKey<BiomeModifier> registerKey(String name) {
-        System.out.println("Loading Register Key of Biome Modifier");
+    private static ResourceKey<BiomeModifier> registerKey(String name)
+    {
         return ResourceKey.create(
                 NeoForgeRegistries.Keys.BIOME_MODIFIERS,
                 ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, name));

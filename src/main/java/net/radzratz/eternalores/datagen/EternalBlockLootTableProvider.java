@@ -20,16 +20,17 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
 
-public class EternalBlockLootTableProvider extends BlockLootSubProvider {
-    protected EternalBlockLootTableProvider(HolderLookup.Provider registries) {
+@SuppressWarnings("all")
+public class EternalBlockLootTableProvider extends BlockLootSubProvider
+{
+    protected EternalBlockLootTableProvider(HolderLookup.Provider registries)
+    {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags(), registries);
     }
 
     @Override
-    protected void generate() {
-
-        System.out.println("Loading Loot Table Provider");
-
+    protected void generate()
+    {
         //METAL BLOCKS
         dropSelf(EternalGeneralBlocks.ALUMINUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.BRONZE_BLOCK.get());
@@ -274,7 +275,8 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
         add(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EternalGeneralBlocks.NECROTICARITE_ORE_BLOCK.get(), EternalGeneralItems.GEM_NECROTICARITE.get(),1,2));
     }
 
-    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
+    protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops)
+    {
         HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(pBlock, LootItem.lootTableItem(item)
                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops, maxDrops)))
@@ -282,7 +284,8 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider {
     }
 
     @Override
-    protected @NotNull Iterable<Block> getKnownBlocks() {
+    protected @NotNull Iterable<Block> getKnownBlocks()
+    {
         return EternalGeneralBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
     }
 }
