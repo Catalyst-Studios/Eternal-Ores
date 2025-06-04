@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_enderium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/enderium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:rods/enderium_rod"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_enderium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:rods/enderium_rod"
+    ]
+  }
+}

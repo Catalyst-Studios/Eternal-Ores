@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_gold_rod": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:plate_rose_gold"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:deconstruction/rose_gold_rod_to_dust_deconstruction"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_rose_gold_rod"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:deconstruction/rose_gold_rod_to_dust_deconstruction"
+    ]
+  }
+}

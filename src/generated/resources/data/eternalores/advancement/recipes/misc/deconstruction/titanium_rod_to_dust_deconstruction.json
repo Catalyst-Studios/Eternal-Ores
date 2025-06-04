@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:deconstruction/titanium_rod_to_dust_deconstruction"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanium_rod": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:plate_titanium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanium_rod"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:deconstruction/titanium_rod_to_dust_deconstruction"
+    ]
+  }
+}

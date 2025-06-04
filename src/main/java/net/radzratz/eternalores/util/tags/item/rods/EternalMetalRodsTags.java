@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalMetalRodsTags {
-    public static class Items {
+public class EternalMetalRodsTags
+{
+    public static class Items
+    {
 
         //Aluminum
         public static final TagKey<Item> ROD_ALUMINUM = createMetalRodTag("rods/aluminum");
@@ -58,6 +60,8 @@ public class EternalMetalRodsTags {
         public static final TagKey<Item> ROD_PIG_IRON = createMetalRodTag("rods/pig_iron");
         //Platinum
         public static final TagKey<Item> ROD_PLATINUM = createMetalRodTag("rods/platinum");
+        //Plutonium
+        public static final TagKey<Item> ROD_PLUTONIUM = createMetalRodTag("rods/plutonium");
         //Rose Gold
         public static final TagKey<Item> ROD_ROSE_GOLD = createMetalRodTag("rods/rose_gold");
         //Signalum
@@ -81,7 +85,8 @@ public class EternalMetalRodsTags {
         //Zinc
         public static final TagKey<Item> ROD_ZINC = createMetalRodTag("rods/zinc");
 
-        private static TagKey<Item> createMetalRodTag(String path) {
+        private static TagKey<Item> createMetalRodTag(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

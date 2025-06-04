@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aluminum_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:raw_aluminum"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:raw_ore_smelting/aluminum_raw_to_ingot_furnace"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aluminum_raw"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:raw_ore_smelting/aluminum_raw_to_ingot_furnace"
+    ]
+  }
+}

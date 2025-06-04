@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:rods/rose_gold"
+  },
+  "output": {
+    "count": 2,
+    "id": "eternalores:rose_gold_dust"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:dust_smelting/titanium_dust_to_material_blasting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_titanium_dust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:titanium_dust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_titanium_dust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:dust_smelting/titanium_dust_to_material_blasting"
+    ]
+  }
+}

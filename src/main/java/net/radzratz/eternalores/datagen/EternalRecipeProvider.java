@@ -754,8 +754,8 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         //Blasting var
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_aluminum", EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_aluminum", EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.ALUMINUM_INGOT.get());
-        generateOreBlockToMaterialBlasting(recipeOutput, "stone_cobalt", EternalGeneralBlocks.ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
-        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_cobalt", EternalGeneralBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "stone_cobalt", EternalGeneralBlocks.COBALT_ORE_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
+        generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_cobalt", EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_gallium", EternalGeneralBlocks.GALLIUM_ORE_BLOCK.asItem(), EternalGeneralItems.GALLIUM_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_gallium", EternalGeneralBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK.asItem(), EternalGeneralItems.GALLIUM_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_iridium", EternalGeneralBlocks.IRIDIUM_ORE_BLOCK.asItem(), EternalGeneralItems.IRIDIUM_INGOT.get());
@@ -958,7 +958,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .requires(input)
                 .requires(ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/hammers")))
                 .unlockedBy("has_" + material, has(input))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_to_dust"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "dust_dupe/" + material + "_to_dust"));
 
         //Raw Materials -> Dust (2x)
         if(isIngot && !EXCLUDED_MAT_DUPE_RECIPES.contains(baseMaterial))
@@ -967,7 +967,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                     .requires(ItemTags.create(ResourceLocation.parse("c:raw_materials/" + baseMaterial)))
                     .requires(ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/hammers")))
                     .unlockedBy("has_" + baseMaterial + "_raw", has(ItemTags.create(ResourceLocation.parse("c:raw_materials/" + baseMaterial))))
-                    .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", baseMaterial + "_raw_to_dust"));
+                    .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "dust_dupe/" + baseMaterial + "_raw_to_dust"));
         }
     }
 
@@ -981,7 +981,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .define('I', ItemTags.create(ResourceLocation.parse("c:ingots/" + material)))
                 .define('H', ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/hammers")))
                 .unlockedBy("has_" + material + "_ingot", has(ItemTags.create(ResourceLocation.parse("c:ingots/" + material))))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_plate"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "plates/" + material + "_plate"));
     }
 
     private void generateGemPlateRecipe(@NotNull RecipeOutput recipeOutput, String material, Item plate)
@@ -993,7 +993,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .define('I', ItemTags.create(ResourceLocation.parse("c:gems/" + material)))
                 .define('H', ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/gem_cutter")))
                 .unlockedBy("has_" + material + "_ingot", has(ItemTags.create(ResourceLocation.parse("c:gems/" + material))))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_plate"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "plates/" + material + "_plate"));
     }
 
     ///Materials to Rods
@@ -1006,7 +1006,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .define('I', ItemTags.create(ResourceLocation.parse("c:ingots/" + material)))
                 .define('H', ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/hammers")))
                 .unlockedBy("has_" + material + "_ingot", has(ItemTags.create(ResourceLocation.parse("c:ingots/" + material))))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_rod"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "rods/" + material + "_rod"));
     }
 
     private void generateGemRodsRecipe(@NotNull RecipeOutput recipeOutput, String material, Item rod)
@@ -1018,7 +1018,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .define('I', ItemTags.create(ResourceLocation.parse("c:gems/" + material)))
                 .define('H', ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/gem_cutter")))
                 .unlockedBy("has_" + material + "_ingot", has(ItemTags.create(ResourceLocation.parse("c:gems/" + material))))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_rod"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "rods/" + material + "_rod"));
     }
 
     ///Blocks to Materials
@@ -1027,7 +1027,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ingot, 9)
                 .requires(block)
                 .unlockedBy("has_" + material + "_block", has(block))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_block_to_ingot"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "block_deconstruction/" + material + "_block_to_ingot"));
     }
 
     private void generateBlockToGemMaterialRecipe(@NotNull RecipeOutput recipeOutput, String material, Item block, Item gem)
@@ -1035,7 +1035,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, gem, 9)
                 .requires(block)
                 .unlockedBy("has_" + material + "_block", has(block))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_block_to_gem"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "block_deconstruction/" + material + "_block_to_gem"));
     }
 
     private void generateBlockToRawMaterialRecipe(@NotNull RecipeOutput recipeOutput, String material, Item block, Item raw)
@@ -1043,7 +1043,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, raw, 9)
                 .requires(block)
                 .unlockedBy("has_" + material + "_block", has(block))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_block_to_ore"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "block_deconstruction/" + material + "_raw_block_to_ore"));
     }
 
     ///Materials to Blocks
@@ -1055,7 +1055,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .pattern("AAA")
                 .define('A', ingot)
                 .unlockedBy("has_" + material + "_ingot", has(ingot))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_ingot_to_block"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "blocks/" + material + "_ingot_to_block"));
     }
 
     private void generateGemToBlockRecipe(@NotNull RecipeOutput recipeOutput, String material, Item gem, Item block)
@@ -1066,7 +1066,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .pattern("AAA")
                 .define('A', gem)
                 .unlockedBy("has_" + material + "_ingot", has(gem))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_gem_to_block"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "blocks/" + material + "_gem_to_block"));
     }
 
     private void generateRawMaterialToBlockRecipe(@NotNull RecipeOutput recipeOutput, String material, Item raw, Item block)
@@ -1077,7 +1077,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .pattern("AAA")
                 .define('A', raw)
                 .unlockedBy("has_" + material + "_ingot", has(raw))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_to_block"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "blocks/" + material + "_raw_to_block"));
     }
 
     ///Materials to Nuggets
@@ -1086,7 +1086,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, nugget, 9)
                 .requires(ingot)
                 .unlockedBy("has_" + material + "_ingot", has(ingot))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_ingot_to_nugget"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "nuggets/" + material + "_ingot_to_nugget"));
     }
 
     ///Material to Ingot
@@ -1098,7 +1098,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .pattern("BBB")
                 .define('B', nugget)
                 .unlockedBy("has_" + material + "_nugget", has(nugget))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_nugget_to_ingot"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "ingots/" + material + "_nugget_to_ingot"));
     }
 
     ///Rod/Plate to Material
@@ -1109,14 +1109,14 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
                 .requires(rod)
                 .requires(ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/hammers")))
                 .unlockedBy("has_" + material + "_rod", has(rod))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_rod_to_dust_deconstruction"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "deconstruction/" + material + "_rod_to_dust_deconstruction"));
 
         // Plate -> 2 Dusts
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, dust, 2)
                 .requires(plate)
                 .requires(ItemTags.create(ResourceLocation.fromNamespaceAndPath("eternalores","tools/hammers")))
                 .unlockedBy("has_" + material + "_plate", has(plate))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_plate_to_dust_deconstruction"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "deconstruction/" + material + "_plate_to_dust_deconstruction"));
     }
 
     ///Raw Material to Ingot Furnace/Blasting
@@ -1124,14 +1124,14 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
     {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(rawOre), RecipeCategory.MISC, ingot, 0.7f, 200)
                 .unlockedBy("has_" + material + "_raw", has(rawOre))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_to_ingot_furnace"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "raw_ore_smelting/" + material + "_raw_to_ingot_furnace"));
     }
 
     private void generateRawOreToIngotBlasting(@NotNull RecipeOutput recipeOutput, String material, Item rawOre, Item ingot)
     {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(rawOre), RecipeCategory.MISC, ingot, 0.7f, 100)
                 .unlockedBy("has_" + material + "_raw", has(rawOre))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_to_ingot_blasting"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "raw_ore_smelting/" + material + "_raw_to_ingot_blasting"));
     }
 
     ///Dust to Material Furnace/Blasting
@@ -1139,14 +1139,14 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
     {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(dust), RecipeCategory.MISC, output, 0.7f, 200)
                 .unlockedBy("has_" + material + "_dust", has(dust))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_dust_to_material_furnace"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "dust_smelting/" + material + "_dust_to_material_furnace"));
     }
 
     private void generateDustToMaterialBlasting(@NotNull RecipeOutput recipeOutput, String material, Item dust, Item output)
     {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(dust), RecipeCategory.MISC, output, 0.7f, 100)
                 .unlockedBy("has_" + material + "_dust", has(dust))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_dust_to_material_blasting"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "dust_smelting/" + material + "_dust_to_material_blasting"));
     }
 
     ///Raw Ore Block to Block Furnace/Blasting
@@ -1154,14 +1154,14 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
     {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(rawBlock), RecipeCategory.MISC, output, 0.7f, 200)
                 .unlockedBy("has_" + material + "_raw_block", has(rawBlock))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_block_to_material_furnace"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "raw_ore_block_smelting/" + material + "_raw_block_to_material_furnace"));
     }
 
     private void generateRawBlockToMaterialBlasting(@NotNull RecipeOutput recipeOutput, String material, Item rawBlock, Item output)
     {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(rawBlock), RecipeCategory.MISC, output, 0.7f, 100)
                 .unlockedBy("has_" + material + "_raw_block", has(rawBlock))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_raw_block_to_material_blasting"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "raw_ore_block_smelting/" + material + "_raw_block_to_material_blasting"));
     }
 
     ///Ore Block to Material
@@ -1169,14 +1169,14 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
     {
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(oreBlock), RecipeCategory.MISC, output, 0.7f, 200)
                 .unlockedBy("has_" + material + "_ore_block", has(oreBlock))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_ore_block_to_material_furnace"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "ore_block_smelting/" + material + "_ore_block_to_material_furnace"));
     }
 
     private void generateOreBlockToMaterialBlasting(@NotNull RecipeOutput recipeOutput, String material, Item oreBlock, Item output)
     {
         SimpleCookingRecipeBuilder.blasting(Ingredient.of(oreBlock), RecipeCategory.MISC, output, 0.7f, 100)
                 .unlockedBy("has_" + material + "_ore_block", has(oreBlock))
-                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", material + "_ore_block_to_material_blasting"));
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath("eternalores", "ore_block_smelting/" + material + "_ore_block_to_material_blasting"));
     }
 
     ///Compressed Blocks

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:deconstruction/uranium_plate_to_dust_deconstruction"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uranium_plate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "eternalores:rod_uranium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_uranium_plate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:deconstruction/uranium_plate_to_dust_deconstruction"
+    ]
+  }
+}

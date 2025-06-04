@@ -8,6 +8,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.item.EternalGeneralItems;
+import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompat;
 import org.jetbrains.annotations.NotNull;
 
 public class EternalItemModelProvider extends ItemModelProvider
@@ -322,6 +323,12 @@ public class EternalItemModelProvider extends ItemModelProvider
 
         //Misc
         basicItem(EternalGeneralItems.SILICON.get());
+
+        ///MekCompat
+        basicItem(EternalOresMekanismCompat.ALUMINUM_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompat.ALUMINUM_CLUMP.get());
+        basicItem(EternalOresMekanismCompat.ALUMINUM_SHARD.get());
+        basicItem(EternalOresMekanismCompat.ALUMINUM_CRYSTAL.get());
     }
 
     //This modifies the behavior of "basicItem" in ItemModelProvider by changing how it searches for item textures.
@@ -370,7 +377,11 @@ public class EternalItemModelProvider extends ItemModelProvider
                 basePath + "gem_cutters/" + itemName,
                 basePath + "misc/" + itemName,
                 basePath + "dusts/" + itemName,
-                basePath + "plates/" + itemName
+                basePath + "plates/" + itemName,
+                basePath + "dirty_dusts/" + itemName,
+                basePath + "clumps/" + itemName,
+                basePath + "shards/" + itemName,
+                basePath + "crystals/" + itemName
         };
 
         ItemModelBuilder builder = null;

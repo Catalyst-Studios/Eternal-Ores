@@ -3,10 +3,7 @@ package net.radzratz.eternalores;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
 import net.radzratz.eternalores.item.EternalCreativeModeTabs;
 import net.radzratz.eternalores.item.EternalGeneralItems;
-import net.radzratz.eternalores.util.compat.EternalCompatibility;
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
+import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompat;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -32,12 +29,13 @@ public class EternalOres
         EternalGeneralBlocks.register(modEventBus);
 
         EternalCreativeModeTabs.register(modEventBus);
+
+        EternalOresMekanismCompat.registerMekCompatItems(modEventBus);
     }
 
     @SubscribeEvent
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        EternalCompatibility.checkOtherModsMekanism();
     }
 
     @SubscribeEvent

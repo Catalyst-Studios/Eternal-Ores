@@ -8,6 +8,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
+import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompat;
 
 import java.util.function.Supplier;
 
@@ -497,6 +498,10 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.SILICON);
                     //CREATE COMPAT ITEMS W.I.P
                     //MEK COMPAT ITEMS W.I.P
+                    output.accept(EternalOresMekanismCompat.ALUMINUM_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompat.ALUMINUM_CLUMP);
+                    output.accept(EternalOresMekanismCompat.ALUMINUM_SHARD);
+                    output.accept(EternalOresMekanismCompat.ALUMINUM_CRYSTAL);
                     //ORITECH COMPAT ITEMS W.I.P
                 }).build());
 

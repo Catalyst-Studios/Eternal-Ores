@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:dust_dupe/uraninite_raw_to_dust"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uraninite_raw": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:raw_materials/uraninite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_uraninite_raw"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:dust_dupe/uraninite_raw_to_dust"
+    ]
+  }
+}

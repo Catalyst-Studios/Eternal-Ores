@@ -732,6 +732,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
                         .add(EternalGeneralItems.ROD_OSMIUM.get())
                         .add(EternalGeneralItems.ROD_PIG_IRON.get())
                         .add(EternalGeneralItems.ROD_PLATINUM.get())
+                        .add(EternalGeneralItems.ROD_PLUTONIUM.get())
                         .add(EternalGeneralItems.ROD_ROSE_GOLD.get())
                         .add(EternalGeneralItems.ROD_SIGNALUM.get())
                         .add(EternalGeneralItems.ROD_SILVER.get())
@@ -776,6 +777,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
                 tag(EternalMetalRodsTags.Items.ROD_OSMIUM).add(EternalGeneralItems.ROD_OSMIUM.get());
                 tag(EternalMetalRodsTags.Items.ROD_PIG_IRON).add(EternalGeneralItems.ROD_PIG_IRON.get());
                 tag(EternalMetalRodsTags.Items.ROD_PLATINUM).add(EternalGeneralItems.ROD_PLATINUM.get());
+                tag(EternalMetalRodsTags.Items.ROD_PLUTONIUM).add(EternalGeneralItems.ROD_PLUTONIUM.get());
                 tag(EternalMetalRodsTags.Items.ROD_ROSE_GOLD).add(EternalGeneralItems.ROD_ROSE_GOLD.get());
                 tag(EternalMetalRodsTags.Items.ROD_SIGNALUM).add(EternalGeneralItems.ROD_SIGNALUM.get());
                 tag(EternalMetalRodsTags.Items.ROD_SILVER).add(EternalGeneralItems.ROD_SILVER.get());

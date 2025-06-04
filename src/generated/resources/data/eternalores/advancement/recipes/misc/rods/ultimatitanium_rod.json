@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "eternalores:rods/ultimatitanium_rod"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ultimatitanium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#c:ingots/ultimatitanium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ultimatitanium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "eternalores:rods/ultimatitanium_rod"
+    ]
+  }
+}

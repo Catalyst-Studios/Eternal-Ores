@@ -19,7 +19,7 @@ description="The Eternal Ores mod adds many well-known items into a single mod, 
 [[dependencies.eternalores]]
 modId="neoforge"
 type="optional"
-versionRange="21.1.160"
+versionRange="21.1.170"
 ordering="NONE"
 side="BOTH"
 
@@ -27,6 +27,13 @@ side="BOTH"
 modId="catalystcore"
 type="optional"
 versionRange="0.0.1"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.eternalores]]
+modId="mekanism"
+type="optional"
+versionRange="1.21.1-10.7.9.72"
 ordering="NONE"
 side="BOTH"
 
