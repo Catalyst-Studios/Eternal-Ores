@@ -1,5 +1,6 @@
 English Section
 ======
+___
 About
 =======
 
@@ -13,7 +14,7 @@ The use of Almost Unified is highly recommended to unify Eternal Items ores and 
 Additionally, KubeJS is recommended if you want to avoid duplicate recipes for a single item or specific types of ores and materials.
 
 This mod can be used in any modpack!
-
+___
 Mod Compat
 ===================
 
@@ -22,33 +23,43 @@ We also plan to add compatibility for other mods!
 **Like**;
 
 - Create (NYI)
-- Mekanism (NYI)
+- Mekanism (Implemented)
 - Oritech (NYI)
-
+___
 Catalyst Team
 ==========
 
 Discord Server Link: https://discord.gg/FAvjyGtDbf
-
+___
 Translation to other Languages
 =============
 
 This mod ships in with English & Spanish translations by default!
 
-With the Translations you are free to contribute without asking me, simply create a PR over Github and we'll gladly look at it.
+With the Translations you are free to contribute without asking me, simply create a PR over GitHub, and we'll gladly look at it.
 
 However, make sure to **NOT USE ANY TYPE OF AI ON IT**!!!
 
 We are looking for people that actually speak that language. We love machine, but not that kind of machine!
+___
+**For PackDevs**
+=
 
+That look to disable some of Eternal Ores ore generation
+
+Make sure to check out packdevs/PackDevs.md file within our GitHub repository.
+
+___
 Credits
 ============
 
 This section is still in a W.I.P state!
 
-- RadzRatz - Mod Author/Owner - Base Items/Blocks Creator
-- 
-
+- RadzRatz - Mod Author/Owner/Artist - Base Items/Blocks Creator
+- BillBertKing1 - Mastermind behind Eternal Ores Creation
+- ApexSlayer - On suggesting new Custom Material Sets
+- PatrioticCross - On suggesting new Custom Material Sets
+___
 Licence
 =======
 
@@ -60,9 +71,10 @@ Have fun and I hope you enjoy the Mod!
 Also, **I do not allow the distribution of Eternal Ores mod outside CurseForge or Modrinth Websites.**
 
 *atte RadzRatz*
-
+___
 Sección en Español
 =======
+___
 Acerca
 =======
 
@@ -77,7 +89,7 @@ Se recomienda encarecidamente el uso de Almost Unified para unificar los mineral
 Además, se recomienda KubeJS si deseas evitar recetas duplicadas para un mismo ítem o tipos específicos de minerales y materiales.
 
 ¡Este mod se puede utilizar en cualquier modpack!
-
+___
 Compatibilidad con Mods (T.E.P)
 ===================
 
@@ -86,13 +98,13 @@ Tambien planeamos agregar compatibilidad con otros mods!
 **Como**;
 
 - Create (No Implementado)
-- Mekanism (No Implementado)
-
+- Mekanism (Implementado)
+___
 Equipo de Catalyst
 ==========
 
 Discord: https://discord.gg/FAvjyGtDbf
-
+___
 Traducción a otros idiomas
 =============
 
@@ -104,15 +116,17 @@ Github y con gusto lo revisaremos.
 Sin embargo, asegúrate de **NO USAR NINGÚN TIPO DE IA PARA LAS TRADUCCIONES**.
 
 Buscamos personas que realmente hablen el idioma. ¡Amamos la tecnología, pero no ese tipo de tecnología!
-
+___
 Créditos
 ============
 
 Esta sección aún está en desarrollo.
 
 - RadzRatz - Autor del Mod - Creador de Ítems y Bloques Base
-- 
-
+- Billbertking1 - Mente Maestra detras de la creación de Eternal Ores
+- ApexSlayer - Por sugerir nuevos sets de materiales custom
+- PatrioticCross - Por sugerir nuevos sets de materiales custom
+___
 Licencia
 =======
 
