@@ -1,5 +1,14 @@
 {
   "values": [
-    "eternalores:shard_aluminum"
+    "eternalores:shard_aluminum",
+    "eternalores:shard_catalyrium",
+    "eternalores:shard_cobalt",
+    "eternalores:shard_gallium",
+    "eternalores:shard_iridium",
+    "eternalores:shard_nickel",
+    "eternalores:shard_platinum",
+    "eternalores:shard_silver",
+    "eternalores:shard_uraninite",
+    "eternalores:shard_zinc"
   ]
 }

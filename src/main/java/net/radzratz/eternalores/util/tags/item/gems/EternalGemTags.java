@@ -22,6 +22,8 @@ public class EternalGemTags
         public static final TagKey<Item> GEM_NECROTICARITE = createGemTags("gems/necroticarite");
         //Niter
         public static final TagKey<Item> GEM_NITER = createGemTags("gems/niter");
+        //Obsidian
+        public static final TagKey<Item> GEM_OBSIDIAN = createGemTags("gems/obsidian");
         //Onyx
         public static final TagKey<Item> GEM_ONYX = createGemTags("gems/onyx");
         //Peridot

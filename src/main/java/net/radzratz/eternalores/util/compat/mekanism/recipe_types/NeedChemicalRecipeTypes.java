@@ -1,6 +1,12 @@
 package net.radzratz.eternalores.util.compat.mekanism.recipe_types;
 
+import mekanism.api.chemical.Chemical;
+import mekanism.api.chemical.ChemicalStack;
+import mekanism.api.datagen.recipe.builder.ChemicalCrystallizerRecipeBuilder;
+import mekanism.api.datagen.recipe.builder.ChemicalDissolutionRecipeBuilder;
 import mekanism.api.datagen.recipe.builder.ItemStackChemicalToItemStackRecipeBuilder;
+import mekanism.api.providers.IChemicalProvider;
+import mekanism.api.recipes.ingredients.ChemicalStackIngredient;
 import mekanism.api.recipes.ingredients.ItemStackIngredient;
 import mekanism.api.recipes.ingredients.creator.IngredientCreatorAccess;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -9,6 +15,8 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
+import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.CrystallizingRecipeType;
+import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.DissolutionRecipeType;
 import net.radzratz.eternalores.util.compat.mekanism.recipe_types.interfaces.MekanismChemicalRecipeType;
 
 public class NeedChemicalRecipeTypes
@@ -19,8 +27,9 @@ public class NeedChemicalRecipeTypes
     ///
     /// Simply because EternalOresMekanismRecipes.java wasn't clean enough
     ///
-    /// This class handles Injecting and Purifying Recipes registry at the same time
+    /// This class handles Injecting, Purifying, Crystallizing and Dissolution Recipes registry at the same time
     ///
+    /// Purifying and Injector Recipes
     public static void generateMekanismProcessingWithChemicalRecipe(RecipeOutput output,
                                                                     String materialName,
                                                                     Item input,
@@ -72,5 +81,40 @@ public class NeedChemicalRecipeTypes
                     .addCondition(new ModLoadedCondition("mekanism"))
                     .build(output, ResourceLocation.fromNamespaceAndPath("eternalores", folder + materialName + "_" + recipeType.suffix()));
         }
+    }
+
+    /// Dissolution Recipe
+    public static void generateMekanismDissolutionRecipe(RecipeOutput output,
+                                                         String materialName,
+                                                         TagKey<Item> itemTag,
+                                                         Chemical outputSlurry,
+                                                         DissolutionRecipeType recipeType)
+    {
+        ItemStackIngredient inputItem = IngredientCreatorAccess.item().from(itemTag, recipeType.inputCount());
+        ChemicalStackIngredient acid = IngredientCreatorAccess.chemicalStack().from(recipeType.chemical(), recipeType.chemicalAmount());
+        ChemicalStack result = new ChemicalStack(outputSlurry, recipeType.outputCount());
+
+        String folder = "mekanism_compat/" + materialName + "/" + recipeType.folder() + "/";
+
+        ChemicalDissolutionRecipeBuilder.dissolution(inputItem, acid, result, true)
+                .addCondition(new ModLoadedCondition("mekanism"))
+                .build(output, ResourceLocation.fromNamespaceAndPath("eternalores", folder + materialName + "_" + recipeType.suffix()));
+    }
+
+    /// Crystallization
+    public static void generateMekanismCrystallizingRecipe(RecipeOutput output,
+                                                           String materialName,
+                                                           Chemical slurryInput,
+                                                           Item outputCrystal,
+                                                           CrystallizingRecipeType recipeType)
+    {
+        ChemicalStackIngredient inputChemical = IngredientCreatorAccess.chemicalStack().from((IChemicalProvider) slurryInput, recipeType.inputSlurry());
+        var result = new ItemStack(outputCrystal, recipeType.outputSlurryClean());
+
+        String folder = "mekanism_compat/" + materialName + "/" + recipeType.folder() + "/";
+
+        ChemicalCrystallizerRecipeBuilder.crystallizing(inputChemical, result)
+                .addCondition(new ModLoadedCondition("mekanism"))
+                .build(output, ResourceLocation.fromNamespaceAndPath("eternalores", folder + materialName + "_" + recipeType.suffix()));
     }
 }

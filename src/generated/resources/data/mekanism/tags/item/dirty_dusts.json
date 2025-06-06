@@ -1,5 +1,14 @@
 {
   "values": [
-    "eternalores:dirty_aluminum_dust"
+    "eternalores:dirty_aluminum_dust",
+    "eternalores:dirty_catalyrium_dust",
+    "eternalores:dirty_cobalt_dust",
+    "eternalores:dirty_gallium_dust",
+    "eternalores:dirty_iridium_dust",
+    "eternalores:dirty_nickel_dust",
+    "eternalores:dirty_platinum_dust",
+    "eternalores:dirty_silver_dust",
+    "eternalores:dirty_uraninite_dust",
+    "eternalores:dirty_zinc_dust"
   ]
 }

@@ -6,14 +6,12 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekEntries;
 import net.radzratz.eternalores.util.compat.mekanism.recipe_types.*;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.PurificationRecipeType;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.CrushingRecipeType;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.EnrichingRecipeType;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.InjectorRecipeType;
+import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
+@SuppressWarnings("all")
 public class EternalOresMekanismRecipes extends RecipeProvider
 {
     public EternalOresMekanismRecipes(PackOutput output,
@@ -30,6 +28,24 @@ public class EternalOresMekanismRecipes extends RecipeProvider
         {
             NoChemicalRecipeTypes.generateMekanismProcessingWithoutChemicalRecipe(
                     output, name, inputs.clumpItem(), inputs.outputDirtyDust(), CrushingRecipeType.CLUMP);
+        });
+
+        /// Dust Recipes 4 (Material Set -> Dust)
+        EternalOresMekEntries.DUST_MATERIAL_ENTRIES.forEach((name, inputs) ->
+        {
+            NoChemicalRecipeTypes.generateMekanismProcessingWithoutChemicalRecipe(
+                    output, name, inputs.material(), inputs.outputDust(), CrushingRecipeType.MATERIAL);
+        });
+
+        /// Dust Recipes 3 (Material Set Oreless -> Dust)
+        EternalOresMekEntries.DUST_WITHOUT_ORE_ENTRIES.forEach((name, inputs) ->
+        {
+            NoChemicalRecipeTypes.generateMekanismProcessingWithoutChemicalRecipe(
+                    output, name, inputs.rawBlock(), inputs.outputDust(), EnrichingRecipeType.RAW_BLOCK);
+            NoChemicalRecipeTypes.generateMekanismProcessingWithoutChemicalRecipe(
+                    output, name, inputs.rawOre(), inputs.outputDust(), EnrichingRecipeType.RAW_ORE);
+            NoChemicalRecipeTypes.generateMekanismProcessingWithoutChemicalRecipe(
+                    output, name, inputs.dirtyDustItem(), inputs.outputDust(), EnrichingRecipeType.DIRTY_DUST);
         });
 
         /// Dust Recipes 2 (Material Set Plate/Rod -> Dust)
@@ -67,6 +83,16 @@ public class EternalOresMekanismRecipes extends RecipeProvider
                     output, name, inputs.oreBlock(), inputs.outputClump(), PurificationRecipeType.ORE_BLOCK);
         });
 
+        EternalOresMekEntries.CLUMP_WITHOUT_ORE_ENTRIES.forEach((name, inputs) ->
+        {
+            NeedChemicalRecipeTypes.generateMekanismProcessingWithChemicalRecipe(
+                    output, name, inputs.rawOre(), inputs.outputClump(), PurificationRecipeType.RAW_ORE);
+            NeedChemicalRecipeTypes.generateMekanismProcessingWithChemicalRecipe(
+                    output, name, inputs.shard(), inputs.outputClump(), PurificationRecipeType.SHARD);
+            NeedChemicalRecipeTypes.generateMekanismProcessingWithChemicalRecipe(
+                    output, name, inputs.rawBlock(), inputs.outputClump(), PurificationRecipeType.RAW_BLOCK);
+        });
+
         /// Shard Recipes (Material Set/Crystal -> Shard)
         EternalOresMekEntries.SHARD_ENTRIES.forEach((name, inputs) ->
         {
@@ -78,6 +104,50 @@ public class EternalOresMekanismRecipes extends RecipeProvider
                     output, name, inputs.rawBlock(), inputs.outputShard(), InjectorRecipeType.RAW_BLOCK);
             NeedChemicalRecipeTypes.generateMekanismProcessingWithChemicalRecipe(
                     output, name, inputs.oreBlock(), inputs.outputShard(), InjectorRecipeType.ORE_BLOCK);
+        });
+
+        EternalOresMekEntries.SHARD_WITHOUT_ORE_ENTRIES.forEach((name, inputs) ->
+        {
+            NeedChemicalRecipeTypes.generateMekanismProcessingWithChemicalRecipe(
+                    output, name, inputs.rawOre(), inputs.outputShard(), InjectorRecipeType.RAW_ORE);
+            NeedChemicalRecipeTypes.generateMekanismProcessingWithChemicalRecipe(
+                    output, name, inputs.crystal(), inputs.outputShard(), InjectorRecipeType.SHARD);
+            NeedChemicalRecipeTypes.generateMekanismProcessingWithChemicalRecipe(
+                    output, name, inputs.rawBlock(), inputs.outputShard(), InjectorRecipeType.RAW_BLOCK);
+        });
+
+        /// Material Dirty Slurry -> Clean Slurry
+        EternalOresMekEntries.DIRTY_SLURRY_TO_CLEAN.forEach((name, inputs) ->
+        {
+            NeedChemicalFluidRecipeType.generateMekanismProcessingWithChemicalAndFluidRecipe(
+                    output, name, inputs.inputDirtySlurry(), inputs.inputWater(), inputs.outputCleanSlurry(), WashingRecipeType.DIRTY_SLURRY
+            );
+        });
+
+        /// Material Set -> Dirty Slurry
+        EternalOresMekEntries.MATERIAL_TO_DIRTY_SLURRY.forEach((name, inputs) ->
+        {
+            NeedChemicalRecipeTypes.generateMekanismDissolutionRecipe(
+                    output, name, inputs.oreBlock(), inputs.outputDirtySlurry(), DissolutionRecipeType.ORE_BLOCK);
+            NeedChemicalRecipeTypes.generateMekanismDissolutionRecipe(
+                    output, name, inputs.rawOre(), inputs.outputDirtySlurry(), DissolutionRecipeType.RAW_ORE);
+            NeedChemicalRecipeTypes.generateMekanismDissolutionRecipe(
+                    output, name, inputs.rawBlock(), inputs.outputDirtySlurry(), DissolutionRecipeType.RAW_BLOCK);
+        });
+
+        EternalOresMekEntries.MATERIAL_WITHOUT_ORES_TO_DIRTY_SLURRY.forEach((name, inputs) ->
+        {
+            NeedChemicalRecipeTypes.generateMekanismDissolutionRecipe(
+                    output, name, inputs.rawBlock(), inputs.outputDirtySlurry(), DissolutionRecipeType.RAW_BLOCK);
+            NeedChemicalRecipeTypes.generateMekanismDissolutionRecipe(
+                    output, name, inputs.rawOre(), inputs.outputDirtySlurry(), DissolutionRecipeType.RAW_ORE);
+        });
+
+        /// Clean Slurry -> Crystal
+        EternalOresMekEntries.CLEAN_SLURRY_TO_CRYSTAL.forEach((name, inputs) ->
+        {
+            NeedChemicalRecipeTypes.generateMekanismCrystallizingRecipe(
+                    output, name, inputs.inputCleanSlurry(), inputs.crystalOutput(), CrystallizingRecipeType.CLEAN_SLURRY);
         });
     }
 }

@@ -8,7 +8,7 @@
   "type": "mekanism:crushing",
   "input": {
     "count": 1,
-    "item": "eternalores:clump_aluminum"
+    "tag": "c:clumps/aluminum"
   },
   "output": {
     "count": 1,

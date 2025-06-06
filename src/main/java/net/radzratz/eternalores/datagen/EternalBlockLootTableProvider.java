@@ -34,6 +34,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider
         //METAL BLOCKS
         dropSelf(EternalGeneralBlocks.ALUMINUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.BRONZE_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.CATALYRIUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.COBALT_BLOCK.get());
         dropSelf(EternalGeneralBlocks.ELECTRUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.ENDERIUM_BLOCK.get());
@@ -157,6 +158,7 @@ public class EternalBlockLootTableProvider extends BlockLootSubProvider
 
         //RAW ORE BLOCKS
         dropSelf(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get());
+        dropSelf(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_COBALT_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get());
         dropSelf(EternalGeneralBlocks.RAW_LEAD_BLOCK.get());

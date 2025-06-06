@@ -69,4 +69,10 @@ public enum InjectorRecipeType implements MekanismChemicalRecipeType
                          TagKey<Item> oreBlock,
                          Item outputShard)
     {}
+
+    public record InputsDiff(TagKey<Item> rawOre,
+                         TagKey<Item> crystal,
+                         TagKey<Item> rawBlock,
+                         Item outputShard)
+    {}
 }

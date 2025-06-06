@@ -42,6 +42,15 @@ public class EternalItemsGeneralTags
         public static final TagKey<Item> METAL_PLATES = createGeneralItemTags("c","plates/metal");
         public static final TagKey<Item> GEM_PLATES = createGeneralItemTags("c","plates/gem");
 
+        /// Apparently there is NO COAL ITEM TAG IN HERE, SEARCHED FOR IT LIKE 30 MINUTES, JUST TO REALIZE THAT I'VE BEEN BAMBOOZLED!!!!
+        ///
+        /// LIKE COME ON, WHY WOULD I NEED STORAGE BLOCKS/ORE BLOCKS OF COAL WHEN I NEED THE SPECIFIC ITEM TAG
+        ///
+        /// BUT RAT THERE ARE ITEM TAGS FOR COAL, WELL GUESS WHAT, THERE AIN'T EXCEPT FOR GOD DARN STORAGE BLOCKS AND ORE BLOCKS NO SWEET LOVELY ITEM
+        ///
+        public static final TagKey<Item> COAL = createGeneralItemTags("c","coal");
+        public static final TagKey<Item> SCULK = createGeneralItemTags("c","sculk");
+
         public static TagKey<Item> createGeneralItemTags(String namespace, String path)
         {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(namespace, path));

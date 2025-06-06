@@ -8,7 +8,8 @@ public enum CrushingRecipeType implements MekanismItemRecipeType
 {
     CLUMP(1, 1, "clump_to_dirty_dust"),
     PLATE(1, 2, "plate_to_dust"),
-    ROD(1, 2, "rod_to_dust");
+    ROD(1, 2, "rod_to_dust"),
+    MATERIAL(1, 1, "material_to_dust");
 
     private final int inputCount, outputCount;
     private final String suffix;
@@ -58,10 +59,13 @@ public enum CrushingRecipeType implements MekanismItemRecipeType
         return false;
     }
 
-    public record Inputs(Item clumpItem, Item outputDirtyDust)
+    public record Inputs(TagKey<Item> clumpItem, Item outputDirtyDust)
     {}
     public record InputsDeconstruction(TagKey<Item> plate,
                                        TagKey<Item> rod,
                                        Item outputDust)
+    {}
+    public record InputsMaterials(TagKey<Item> material,
+                                  Item outputDust)
     {}
 }

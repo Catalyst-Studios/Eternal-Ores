@@ -35,6 +35,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider
     {
             //Individual Storage Blocks
             tag(EternalStorageMetalBlockTags.Blocks.ALUMINUM_BLOCK_ST).add(EternalGeneralBlocks.ALUMINUM_BLOCK.get());
+            tag(EternalStorageMetalBlockTags.Blocks.CATALYRIUM_BLOCK_ST).add(EternalGeneralBlocks.CATALYRIUM_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.BLUE_STEEL_BLOCK_ST).add(EternalGeneralBlocks.BLUE_STEEL_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.BRASS_BLOCK_ST).add(EternalGeneralBlocks.BRASS_BLOCK.get());
             tag(EternalStorageMetalBlockTags.Blocks.BRITANNIA_BLOCK_ST).add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get());
@@ -82,6 +83,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider
             tag(EternalStorageMiscBlockTags.Blocks.NETHER_STAR_BLOCK_ST).add(EternalGeneralBlocks.NETHER_STAR_BLOCK.get());
 
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_ALUMINUM_ST).add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get());
+            tag(EternalStorageRawOreBlockTags.Blocks.RAW_CATALYRIUM_ST).add(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_COBALT_ST).add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_GALLIUM_ST).add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get());
             tag(EternalStorageRawOreBlockTags.Blocks.RAW_IRIDIUM_ST).add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get());
@@ -116,6 +118,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider
                     .add(EternalGeneralBlocks.BRONZE_BLOCK.get())
                     .add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.BLUE_STEEL_BLOCK.get())
+                    .add(EternalGeneralBlocks.CATALYRIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.CAST_IRON_BLOCK.get())
                     .add(EternalGeneralBlocks.COBALT_BLOCK.get())
                     .add(EternalGeneralBlocks.CONSTANTAN_BLOCK.get())
@@ -150,6 +153,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider
             //Raw Ore Blocks
             tag(EternalGeneralBlockTags.Blocks.RAW_ORE_BLOCK)
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_LEAD_BLOCK.get())
@@ -334,6 +338,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider
                     .add(EternalGeneralBlocks.BRASS_BLOCK.get())
                     .add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.BRONZE_BLOCK.get())
+                    .add(EternalGeneralBlocks.CATALYRIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.CAST_IRON_BLOCK.get())
                     .add(EternalGeneralBlocks.CAST_STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.CINNABAR_BLOCK.get())
@@ -377,6 +382,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider
                     .add(EternalGeneralBlocks.NETHER_STAR_BLOCK.get())
 
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get())
@@ -548,6 +554,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider
                     .add(EternalGeneralBlocks.BRONZE_BLOCK.get())
                     .add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.get())
                     .add(EternalGeneralBlocks.BLUE_STEEL_BLOCK.get())
+                    .add(EternalGeneralBlocks.CATALYRIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.CAST_IRON_BLOCK.get())
                     .add(EternalGeneralBlocks.CAST_STEEL_BLOCK.get())
                     .add(EternalGeneralBlocks.COBALT_BLOCK.get())
@@ -597,6 +604,7 @@ public class EternalBlockTagProvider extends BlockTagsProvider
 
                     //RAW ORE BLOCKS
                     .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.get())
+                    .add(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.RAW_LEAD_BLOCK.get())
@@ -768,7 +776,10 @@ public class EternalBlockTagProvider extends BlockTagsProvider
                     .add(EternalGeneralBlocks.RAW_ZINC_BLOCK.get());
 
             tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                    .add(EternalGeneralBlocks.CATALYRIUM_BLOCK.get())
                     .add(EternalGeneralBlocks.NECROTICARITE_BLOCK.get())
+
+                    .add(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.get())
 
                     .add(EternalGeneralBlocks.COBALT_ORE_BLOCK.get())
                     .add(EternalGeneralBlocks.DEEPSLATE_COBALT_ORE_BLOCK.get())

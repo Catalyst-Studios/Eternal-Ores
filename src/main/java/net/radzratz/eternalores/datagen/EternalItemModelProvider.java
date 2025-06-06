@@ -8,7 +8,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.item.EternalGeneralItems;
-import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompat;
+import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompatItems;
 import org.jetbrains.annotations.NotNull;
 
 public class EternalItemModelProvider extends ItemModelProvider
@@ -325,10 +325,55 @@ public class EternalItemModelProvider extends ItemModelProvider
         basicItem(EternalGeneralItems.SILICON.get());
 
         ///MekCompat
-        basicItem(EternalOresMekanismCompat.ALUMINUM_DIRTY_DUST.get());
-        basicItem(EternalOresMekanismCompat.ALUMINUM_CLUMP.get());
-        basicItem(EternalOresMekanismCompat.ALUMINUM_SHARD.get());
-        basicItem(EternalOresMekanismCompat.ALUMINUM_CRYSTAL.get());
+        basicItem(EternalOresMekanismCompatItems.ALUMINUM_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.ALUMINUM_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.ALUMINUM_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.ALUMINUM_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.CATALYRIUM_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.CATALYRIUM_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.CATALYRIUM_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.CATALYRIUM_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.COBALT_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.COBALT_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.COBALT_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.COBALT_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.GALLIUM_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.GALLIUM_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.GALLIUM_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.GALLIUM_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.IRIDIUM_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.IRIDIUM_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.IRIDIUM_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.IRIDIUM_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.NICKEL_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.NICKEL_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.NICKEL_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.NICKEL_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.PLATINUM_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.PLATINUM_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.PLATINUM_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.PLATINUM_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.SILVER_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.SILVER_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.SILVER_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.SILVER_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.URANINITE_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.URANINITE_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.URANINITE_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.URANINITE_CRYSTAL.get());
+
+        basicItem(EternalOresMekanismCompatItems.ZINC_DIRTY_DUST.get());
+        basicItem(EternalOresMekanismCompatItems.ZINC_CLUMP.get());
+        basicItem(EternalOresMekanismCompatItems.ZINC_SHARD.get());
+        basicItem(EternalOresMekanismCompatItems.ZINC_CRYSTAL.get());
     }
 
     //This modifies the behavior of "basicItem" in ItemModelProvider by changing how it searches for item textures.

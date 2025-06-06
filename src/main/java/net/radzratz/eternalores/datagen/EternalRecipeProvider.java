@@ -222,6 +222,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateBlockToIngotMaterialRecipe(recipeOutput, "brass", EternalGeneralBlocks.BRASS_BLOCK.asItem(), EternalGeneralItems.BRASS_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "britannia", EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem(), EternalGeneralItems.BRITANNIA_SILVER_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "bronze", EternalGeneralBlocks.BRONZE_BLOCK.asItem(), EternalGeneralItems.BRONZE_INGOT.get());
+        generateBlockToIngotMaterialRecipe(recipeOutput, "catalyrium", EternalGeneralBlocks.CATALYRIUM_BLOCK.asItem(), EternalGeneralItems.CATALYRIUM_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "cast_iron", EternalGeneralBlocks.CAST_IRON_BLOCK.asItem(), EternalGeneralItems.CAST_IRON_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "cast_steel", EternalGeneralBlocks.CAST_STEEL_BLOCK.asItem(), EternalGeneralItems.CAST_STEEL_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "cobalt", EternalGeneralBlocks.COBALT_BLOCK.asItem(), EternalGeneralItems.COBALT_INGOT.get());
@@ -270,6 +271,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
 
         //Raw Ore Block to Raw Material
         generateBlockToRawMaterialRecipe(recipeOutput, "aluminum", EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem(), EternalGeneralItems.RAW_ALUMINUM.get());
+        generateBlockToRawMaterialRecipe(recipeOutput, "catalyrium", EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.asItem(), EternalGeneralItems.RAW_CATALYRIUM.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "cobalt", EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem(), EternalGeneralItems.RAW_COBALT.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "gallium", EternalGeneralBlocks.RAW_GALLIUM_BLOCK.asItem(), EternalGeneralItems.RAW_GALLIUM.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "iridium", EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.asItem(), EternalGeneralItems.RAW_IRIDIUM.get());
@@ -291,6 +293,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         ///Materials to Block
         //Raw Ore to Block
         generateRawMaterialToBlockRecipe(recipeOutput, "aluminum", EternalGeneralItems.RAW_ALUMINUM.get(), EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem());
+        generateRawMaterialToBlockRecipe(recipeOutput, "catalyrium", EternalGeneralItems.RAW_CATALYRIUM.get(), EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "cobalt", EternalGeneralItems.RAW_COBALT.get(), EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "gallium", EternalGeneralItems.RAW_GALLIUM.get(), EternalGeneralBlocks.RAW_GALLIUM_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "iridium", EternalGeneralItems.RAW_IRIDIUM.get(), EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.asItem());
@@ -314,6 +317,7 @@ public class EternalRecipeProvider extends RecipeProvider implements IConditionB
         generateIngotToBlockRecipe(recipeOutput, "brass", EternalGeneralItems.BRASS_INGOT.get(), EternalGeneralBlocks.BRASS_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "britannia", EternalGeneralItems.BRITANNIA_SILVER_INGOT.get(), EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "bronze", EternalGeneralItems.BRONZE_INGOT.get(), EternalGeneralBlocks.BRONZE_BLOCK.asItem());
+        generateIngotToBlockRecipe(recipeOutput, "catalyrium", EternalGeneralItems.CATALYRIUM_INGOT.get(), EternalGeneralBlocks.CATALYRIUM_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "cast_iron", EternalGeneralItems.CAST_IRON_INGOT.get(), EternalGeneralBlocks.CAST_IRON_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "cast_steel", EternalGeneralItems.CAST_STEEL_INGOT.get(), EternalGeneralBlocks.CAST_STEEL_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "cobalt", EternalGeneralItems.COBALT_INGOT.get(), EternalGeneralBlocks.COBALT_BLOCK.asItem());

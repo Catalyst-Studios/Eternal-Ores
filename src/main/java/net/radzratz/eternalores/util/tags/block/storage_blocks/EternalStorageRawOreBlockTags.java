@@ -11,6 +11,8 @@ public class EternalStorageRawOreBlockTags
     {
         //Aluminum
         public static final TagKey<Block> RAW_ALUMINUM_ST = createRawOreBlockTags("storage_blocks/raw_aluminum");
+        //Catalyrium
+        public static final TagKey<Block> RAW_CATALYRIUM_ST = createRawOreBlockTags("storage_blocks/raw_catalyrium");
         //Cobalt
         public static final TagKey<Block> RAW_COBALT_ST = createRawOreBlockTags("storage_blocks/raw_cobalt");
         //Gallium

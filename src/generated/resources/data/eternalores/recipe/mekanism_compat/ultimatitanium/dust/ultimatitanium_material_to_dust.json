@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:ingots/ultimatitanium"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:ultimatitanium_dust"
+  }
+}

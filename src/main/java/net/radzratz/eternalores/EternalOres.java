@@ -1,9 +1,11 @@
 package net.radzratz.eternalores;
 
+import net.neoforged.fml.ModList;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
 import net.radzratz.eternalores.item.EternalCreativeModeTabs;
 import net.radzratz.eternalores.item.EternalGeneralItems;
-import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompat;
+import net.radzratz.eternalores.util.compat.mekanism.fluids.EternalOresMekFluids;
+import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompatItems;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -30,7 +32,12 @@ public class EternalOres
 
         EternalCreativeModeTabs.register(modEventBus);
 
-        EternalOresMekanismCompat.registerMekCompatItems(modEventBus);
+        EternalOresMekanismCompatItems.registerMekCompatItems(modEventBus);
+
+        if(ModList.get().isLoaded("mekanism"))
+        {
+            EternalOresMekFluids.registerEOMekFluids(modEventBus);
+        }
     }
 
     @SubscribeEvent

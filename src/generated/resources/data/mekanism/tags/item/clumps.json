@@ -1,5 +1,14 @@
 {
   "values": [
-    "eternalores:clump_aluminum"
+    "eternalores:clump_aluminum",
+    "eternalores:clump_catalyrium",
+    "eternalores:clump_cobalt",
+    "eternalores:clump_gallium",
+    "eternalores:clump_iridium",
+    "eternalores:clump_nickel",
+    "eternalores:clump_platinum",
+    "eternalores:clump_silver",
+    "eternalores:clump_uraninite",
+    "eternalores:clump_zinc"
   ]
 }

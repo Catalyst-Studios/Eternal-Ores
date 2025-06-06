@@ -5,10 +5,11 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
-import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompat;
+import net.radzratz.eternalores.util.compat.mekanism.EternalOresMekanismCompatItems;
 
 import java.util.function.Supplier;
 
@@ -145,6 +146,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.SAND_9);
                     ///RAW ORE BLOCKS
                     output.accept(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK);
+                    output.accept(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_COBALT_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_GALLIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK);
@@ -167,6 +169,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralBlocks.BRASS_BLOCK);
                     output.accept(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK);
                     output.accept(EternalGeneralBlocks.BRONZE_BLOCK);
+                    output.accept(EternalGeneralBlocks.CATALYRIUM_BLOCK);
                     output.accept(EternalGeneralBlocks.CAST_IRON_BLOCK);
                     output.accept(EternalGeneralBlocks.CAST_STEEL_BLOCK);
                     output.accept(EternalGeneralBlocks.CINNABAR_BLOCK);
@@ -332,10 +335,10 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.BLUE_STEEL_DUST);
                     output.accept(EternalGeneralItems.BRASS_DUST);
                     output.accept(EternalGeneralItems.BRITANNIA_SILVER_DUST);
+                    output.accept(EternalGeneralItems.BRONZE_DUST);
                     output.accept(EternalGeneralItems.CATALYRIUM_DUST);
                     output.accept(EternalGeneralItems.CAST_IRON_DUST);
                     output.accept(EternalGeneralItems.CAST_STEEL_DUST);
-                    output.accept(EternalGeneralItems.BRONZE_DUST);
                     output.accept(EternalGeneralItems.COAL_DUST);
                     output.accept(EternalGeneralItems.COBALT_DUST);
                     output.accept(EternalGeneralItems.CONSTANTAN_DUST);
@@ -497,11 +500,51 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     ///MISC
                     output.accept(EternalGeneralItems.SILICON);
                     //CREATE COMPAT ITEMS W.I.P
-                    //MEK COMPAT ITEMS W.I.P
-                    output.accept(EternalOresMekanismCompat.ALUMINUM_DIRTY_DUST);
-                    output.accept(EternalOresMekanismCompat.ALUMINUM_CLUMP);
-                    output.accept(EternalOresMekanismCompat.ALUMINUM_SHARD);
-                    output.accept(EternalOresMekanismCompat.ALUMINUM_CRYSTAL);
+                    ///MEK COMPAT ITEMS
+                    //Dirty Dusts
+                    output.accept(EternalOresMekanismCompatItems.ALUMINUM_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.CATALYRIUM_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.COBALT_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.GALLIUM_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.IRIDIUM_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.NICKEL_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.PLATINUM_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.SILVER_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.URANINITE_DIRTY_DUST);
+                    output.accept(EternalOresMekanismCompatItems.ZINC_DIRTY_DUST);
+                    //Clumps
+                    output.accept(EternalOresMekanismCompatItems.ALUMINUM_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.CATALYRIUM_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.COBALT_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.GALLIUM_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.IRIDIUM_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.NICKEL_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.PLATINUM_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.SILVER_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.URANINITE_CLUMP);
+                    output.accept(EternalOresMekanismCompatItems.ZINC_CLUMP);
+                    //Shards
+                    output.accept(EternalOresMekanismCompatItems.ALUMINUM_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.CATALYRIUM_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.COBALT_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.GALLIUM_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.IRIDIUM_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.NICKEL_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.PLATINUM_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.SILVER_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.URANINITE_SHARD);
+                    output.accept(EternalOresMekanismCompatItems.ZINC_SHARD);
+                    //Crystals
+                    output.accept(EternalOresMekanismCompatItems.ALUMINUM_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.CATALYRIUM_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.COBALT_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.GALLIUM_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.IRIDIUM_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.NICKEL_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.PLATINUM_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.SILVER_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.URANINITE_CRYSTAL);
+                    output.accept(EternalOresMekanismCompatItems.ZINC_CRYSTAL);
                     //ORITECH COMPAT ITEMS W.I.P
                 }).build());
 

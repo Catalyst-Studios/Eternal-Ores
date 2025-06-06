@@ -5,11 +5,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalStorageRawOreBlockItemTags {
-    public static class Items {
-
+public class EternalStorageRawOreBlockItemTags
+{
+    public static class Items
+    {
         //Aluminum
         public static final TagKey<Item> RAW_ALUMINUM_ST_ITEM = createRawOreBlockItemTags("storage_blocks/raw_aluminum");
+        //Catalyrium
+        public static final TagKey<Item> RAW_CATALYRIUM_ST_ITEM = createRawOreBlockItemTags("storage_blocks/raw_catalyrium");
         //Cobalt
         public static final TagKey<Item> RAW_COBALT_ST_ITEM = createRawOreBlockItemTags("storage_blocks/raw_cobalt");
         //Gallium

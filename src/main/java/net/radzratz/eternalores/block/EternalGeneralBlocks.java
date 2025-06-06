@@ -126,6 +126,7 @@ public class EternalGeneralBlocks
     public static final DeferredBlock<Block> RAW_GALLIUM_BLOCK = registerRawOreBlock("raw_gallium_block", 3f, SoundType.STONE);
     public static final DeferredBlock<Block> RAW_IRIDIUM_BLOCK = registerRawOreBlock("raw_iridium_block", 4f, SoundType.STONE);
     public static final DeferredBlock<Block> RAW_URANINITE_BLOCK = registerRawOreBlock("raw_uraninite_block", 3f, SoundType.STONE);
+    public static final DeferredBlock<Block> RAW_CATALYRIUM_BLOCK = registerRawOreBlock("raw_catalyrium_block", 7f, SoundType.STONE);
 
     //METAL BLOCK
     private static DeferredBlock<Block> registerMetalBlock(String name, float hardness, SoundType sound)
@@ -171,6 +172,7 @@ public class EternalGeneralBlocks
     public static final DeferredBlock<Block> NETHERSTEEL_BLOCK = registerMetalBlock("nethersteel_block", 4f, SoundType.NETHERITE_BLOCK);
     public static final DeferredBlock<Block> SHADOWSTEEL_BLOCK = registerMetalBlock("shadowsteel_block", 4f, SoundType.NETHERITE_BLOCK);
     public static final DeferredBlock<Block> PIG_IRON_BLOCK = registerMetalBlock("pig_iron_block", 4f, SoundType.METAL);
+    public static final DeferredBlock<Block> CATALYRIUM_BLOCK = registerMetalBlock("catalyrium_block", 7f, SoundType.METAL);
 
     //Gem Blocks
     private static DeferredBlock<Block> registerGemBlock(String name, float hardness, SoundType sound)

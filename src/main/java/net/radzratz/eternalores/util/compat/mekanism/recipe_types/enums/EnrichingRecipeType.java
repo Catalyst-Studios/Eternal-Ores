@@ -65,4 +65,9 @@ public enum EnrichingRecipeType implements MekanismItemRecipeType
                          TagKey<Item> oreBlock,
                          Item outputDust)
     {}
+    public record InputsDiff(TagKey<Item> rawOre,
+                         TagKey<Item> dirtyDustItem,
+                         TagKey<Item> rawBlock,
+                         Item outputDust)
+    {}
 }

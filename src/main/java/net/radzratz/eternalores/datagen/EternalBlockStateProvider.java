@@ -103,6 +103,7 @@ public class EternalBlockStateProvider extends BlockStateProvider
         //METAL BLOCKS
         blockWithItem(EternalGeneralBlocks.ALUMINUM_BLOCK);
         blockWithItem(EternalGeneralBlocks.BRONZE_BLOCK);
+        blockWithItem(EternalGeneralBlocks.CATALYRIUM_BLOCK);
         blockWithItem(EternalGeneralBlocks.COBALT_BLOCK);
         blockWithItem(EternalGeneralBlocks.CONSTANTAN_BLOCK);
         blockWithItem(EternalGeneralBlocks.ELECTRUM_BLOCK);
@@ -155,6 +156,7 @@ public class EternalBlockStateProvider extends BlockStateProvider
 
         //RAW BLOCKS
         blockWithItem(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK);
+        blockWithItem(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK);
         blockWithItem(EternalGeneralBlocks.RAW_COBALT_BLOCK);
         blockWithItem(EternalGeneralBlocks.RAW_LEAD_BLOCK);
         blockWithItem(EternalGeneralBlocks.RAW_NICKEL_BLOCK);

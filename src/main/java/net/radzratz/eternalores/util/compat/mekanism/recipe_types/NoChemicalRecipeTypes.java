@@ -56,7 +56,7 @@ public class NoChemicalRecipeTypes
                     .addCondition(new ModLoadedCondition("mekanism"))
                     .build(output, ResourceLocation.fromNamespaceAndPath("eternalores", folder + materialName + "_" + recipeType.suffix()));
         }
-        if (recipeType.isEnriching())
+        if(recipeType.isEnriching())
         {
             ItemStackToItemStackRecipeBuilder.enriching(inputIngredient, result)
                     .addCondition(new ModLoadedCondition("mekanism"))

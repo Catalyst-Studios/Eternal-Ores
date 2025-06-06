@@ -1,5 +1,14 @@
 {
   "values": [
-    "eternalores:crystal_aluminum"
+    "eternalores:crystal_aluminum",
+    "eternalores:crystal_catalyrium",
+    "eternalores:crystal_cobalt",
+    "eternalores:crystal_gallium",
+    "eternalores:crystal_iridium",
+    "eternalores:crystal_nickel",
+    "eternalores:crystal_platinum",
+    "eternalores:crystal_silver",
+    "eternalores:crystal_uraninite",
+    "eternalores:crystal_zinc"
   ]
 }

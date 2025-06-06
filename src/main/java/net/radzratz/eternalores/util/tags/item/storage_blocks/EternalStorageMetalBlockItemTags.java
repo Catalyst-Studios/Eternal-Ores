@@ -5,8 +5,10 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EternalStorageMetalBlockItemTags {
-    public static class Items{
+public class EternalStorageMetalBlockItemTags
+{
+    public static class Items
+    {
 
         //Aluminum
         public static final TagKey<Item> ALUMINUM_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/aluminum");
@@ -18,6 +20,8 @@ public class EternalStorageMetalBlockItemTags {
         public static final TagKey<Item> BRITANNIA_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/britannia_silver");
         //Bronze
         public static final TagKey<Item> BRONZE_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/bronze");
+        //Catalyrium
+        public static final TagKey<Item> CATALYRIUM_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/catalyrium");
         //Cast Iron
         public static final TagKey<Item> CAST_IRON_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/cast_iron");
         //Cast Steel
@@ -75,7 +79,8 @@ public class EternalStorageMetalBlockItemTags {
         //Zinc
         public static final TagKey<Item> ZINC_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/zinc");
 
-        private static TagKey<Item> createMetalStorageBlockItemTags(String path) {
+        private static TagKey<Item> createMetalStorageBlockItemTags(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

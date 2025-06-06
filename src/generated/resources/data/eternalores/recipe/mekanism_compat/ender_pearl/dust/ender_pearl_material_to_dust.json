@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:ender_pearls"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:ender_dust"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:dissolution",
+  "chemical_input": {
+    "amount": 2,
+    "chemical": "mekanism:sulfuric_acid"
+  },
+  "item_input": {
+    "count": 1,
+    "tag": "c:storage_blocks/raw_nickel"
+  },
+  "output": {
+    "amount": 6000,
+    "id": "eternalores:dirty_nickel"
+  },
+  "per_tick_usage": true
+}

@@ -3,6 +3,7 @@ package net.radzratz.eternalores.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -48,6 +49,8 @@ public class EternalItemTagProvider extends ItemTagsProvider
     @Override
     protected void addTags(HolderLookup.@NotNull Provider provider)
     {
+                tag(EternalItemsGeneralTags.Items.COAL).add(Items.COAL.asItem());
+
                 //Tools
                 tag(EternalItemsGeneralTags.Items.HAMMERS)
                         .add(EternalGeneralItems.COBALT_HAMMER.get())
@@ -391,6 +394,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
                         .add(EternalGeneralBlocks.BRASS_BLOCK.asItem())
                         .add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem())
                         .add(EternalGeneralBlocks.BRONZE_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.CATALYRIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.CAST_IRON_BLOCK.asItem())
                         .add(EternalGeneralBlocks.CAST_STEEL_BLOCK.asItem())
                         .add(EternalGeneralBlocks.CINNABAR_BLOCK.asItem())
@@ -433,6 +437,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
                         .add(EternalGeneralBlocks.ZINC_BLOCK.asItem())
 
                         .add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem())
+                        .add(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem())
                         .add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.asItem())
                         .add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.asItem())
@@ -524,6 +529,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
             tag(EternalStorageMetalBlockItemTags.Items.BRASS_BLOCK_ST_ITEM).add(EternalGeneralBlocks.BRASS_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Items.BRITANNIA_BLOCK_ST_ITEM).add(EternalGeneralBlocks.BRITANNIA_SILVER_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Items.BRONZE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.BRONZE_BLOCK.asItem());
+            tag(EternalStorageMetalBlockItemTags.Items.CATALYRIUM_BLOCK_ST_ITEM).add(EternalGeneralBlocks.CATALYRIUM_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Items.CAST_IRON_BLOCK_ST_ITEM).add(EternalGeneralBlocks.CAST_IRON_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Items.CAST_STEEL_BLOCK_ST_ITEM).add(EternalGeneralBlocks.CAST_STEEL_BLOCK.asItem());
             tag(EternalStorageMetalBlockItemTags.Items.COBALT_BLOCK_ST_ITEM).add(EternalGeneralBlocks.COBALT_BLOCK.asItem());
@@ -565,6 +571,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
             tag(EternalStorageGemBlockItemTags.Items.SAPPHIRE_BLOCK_ST_ITEM).add(EternalGeneralBlocks.SAPPHIRE_BLOCK.asItem());
 
             tag(EternalStorageRawOreBlockItemTags.Items.RAW_ALUMINUM_ST_ITEM).add(EternalGeneralBlocks.RAW_ALUMINUM_BLOCK.asItem());
+            tag(EternalStorageRawOreBlockItemTags.Items.RAW_CATALYRIUM_ST_ITEM).add(EternalGeneralBlocks.RAW_CATALYRIUM_BLOCK.asItem());
             tag(EternalStorageRawOreBlockItemTags.Items.RAW_COBALT_ST_ITEM).add(EternalGeneralBlocks.RAW_COBALT_BLOCK.asItem());
             tag(EternalStorageRawOreBlockItemTags.Items.RAW_GALLIUM_ST_ITEM).add(EternalGeneralBlocks.RAW_GALLIUM_BLOCK.asItem());
             tag(EternalStorageRawOreBlockItemTags.Items.RAW_IRIDIUM_ST_ITEM).add(EternalGeneralBlocks.RAW_IRIDIUM_BLOCK.asItem());
@@ -1058,6 +1065,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
                         .add(EternalGeneralItems.FLUORITE.get())
                         .add(EternalGeneralItems.GEM_NECROTICARITE.get())
                         .add(EternalGeneralItems.GEM_NITER.get())
+                        .add(EternalGeneralItems.GEM_OBSIDIAN_SHARD.get())
                         .add(EternalGeneralItems.GEM_ONYX.get())
                         .add(EternalGeneralItems.GEM_PERIDOT.get())
                         .add(EternalGeneralItems.GEM_RUBY.get())
@@ -1070,6 +1078,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
                 tag(EternalGemTags.Items.GEM_FLUORITE).add(EternalGeneralItems.FLUORITE.get());
                 tag(EternalGemTags.Items.GEM_NECROTICARITE).add(EternalGeneralItems.GEM_NECROTICARITE.get());
                 tag(EternalGemTags.Items.GEM_NITER).add(EternalGeneralItems.GEM_NITER.get());
+                tag(EternalGemTags.Items.GEM_OBSIDIAN).add(EternalGeneralItems.GEM_OBSIDIAN_SHARD.get());
                 tag(EternalGemTags.Items.GEM_ONYX).add(EternalGeneralItems.GEM_ONYX.get());
                 tag(EternalGemTags.Items.GEM_PERIDOT).add(EternalGeneralItems.GEM_PERIDOT.get());
                 tag(EternalGemTags.Items.GEM_RUBY).add(EternalGeneralItems.GEM_RUBY.get());
@@ -1167,6 +1176,7 @@ public class EternalItemTagProvider extends ItemTagsProvider
                 tag(EternalRawMaterialTags.RAW_URANIUM).add(EternalGeneralItems.RAW_URANIUM.get());
                 tag(EternalRawMaterialTags.RAW_ZINC).add(EternalGeneralItems.RAW_ZINC.get());
 
+                tag(EternalItemsGeneralTags.Items.SCULK).add(Items.SCULK);
 
                 //Compressed Blocks Storage Blocks (Item tags)
                 tag(EternalCompressedBlockTags.Items.COMPRESSED_COBBLESTONE).add(EternalGeneralBlocks.COBBLE_1.get().asItem());

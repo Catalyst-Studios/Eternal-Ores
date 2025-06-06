@@ -69,4 +69,10 @@ public enum PurificationRecipeType implements MekanismChemicalRecipeType
                          TagKey<Item> oreBlock,
                          Item outputClump)
     {}
+
+    public record InputsDiff(TagKey<Item> rawOre,
+                         TagKey<Item> shard,
+                         TagKey<Item> rawBlock,
+                         Item outputClump)
+    {}
 }
