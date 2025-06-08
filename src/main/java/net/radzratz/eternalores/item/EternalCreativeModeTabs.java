@@ -5,7 +5,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
-import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
@@ -317,6 +316,7 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.FLUORITE);
                     output.accept(EternalGeneralItems.GEM_NECROTICARITE);
                     output.accept(EternalGeneralItems.GEM_NITER);
+                    output.accept(EternalGeneralItems.GEM_OBSIDIAN_SHARD);
                     output.accept(EternalGeneralItems.GEM_ONYX);
                     output.accept(EternalGeneralItems.GEM_PERIDOT);
                     output.accept(EternalGeneralItems.GEM_QUANTIQUARITE);
@@ -326,7 +326,6 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.GEM_VOIDERITE);
                     ///GEM SHARDS W.I.P
                     output.accept(EternalGeneralItems.GEM_SAPPHIRE_SHARD);
-                    output.accept(EternalGeneralItems.GEM_OBSIDIAN_SHARD);
                     ///DUSTS
                     output.accept(EternalGeneralItems.ALUMINUM_DUST);
                     output.accept(EternalGeneralItems.AMBER_DUST);
@@ -374,21 +373,24 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.PIG_IRON_DUST);
                     output.accept(EternalGeneralItems.PLATINUM_DUST);
                     output.accept(EternalGeneralItems.PLUTONIUM_DUST);
+                    output.accept(EternalGeneralItems.QUANTIQUARITE_DUST);
                     output.accept(EternalGeneralItems.QUARTZ_DUST);
                     output.accept(EternalGeneralItems.ROSE_GOLD_DUST);
                     output.accept(EternalGeneralItems.RUBY_DUST);
                     output.accept(EternalGeneralItems.SAPPHIRE_DUST);
                     output.accept(EternalGeneralItems.SCULK_DUST);
+                    output.accept(EternalGeneralItems.SHADOWSTEEL_DUST);
                     output.accept(EternalGeneralItems.SIGNALUM_DUST);
                     output.accept(EternalGeneralItems.SILVER_DUST);
-                    output.accept(EternalGeneralItems.SULFUR_DUST);
-                    output.accept(EternalGeneralItems.SHADOWSTEEL_DUST);
                     output.accept(EternalGeneralItems.STEEL_DUST);
+                    output.accept(EternalGeneralItems.SULFUR_DUST);
+                    output.accept(EternalGeneralItems.TACHYARITE_DUST);
                     output.accept(EternalGeneralItems.TIN_DUST);
                     output.accept(EternalGeneralItems.TITANIUM_DUST);
                     output.accept(EternalGeneralItems.ULTIMATITANIUM_DUST);
                     output.accept(EternalGeneralItems.URANINITE_DUST);
                     output.accept(EternalGeneralItems.URANIUM_DUST);
+                    output.accept(EternalGeneralItems.VOIDERITE_DUST);
                     output.accept(EternalGeneralItems.WROUGHT_IRON_DUST);
                     output.accept(EternalGeneralItems.ZINC_DUST);
                     ///PLATES
@@ -421,16 +423,19 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.PLATE_PIG_IRON);
                     output.accept(EternalGeneralItems.PLATE_PLATINUM);
                     output.accept(EternalGeneralItems.PLATE_PLUTONIUM);
+                    output.accept(EternalGeneralItems.PLATE_QUANTIQUARITE);
                     output.accept(EternalGeneralItems.PLATE_ROSE_GOLD);
                     output.accept(EternalGeneralItems.PLATE_SAPPHIRE);
+                    output.accept(EternalGeneralItems.PLATE_SHADOWSTEEL);
                     output.accept(EternalGeneralItems.PLATE_SIGNALUM);
                     output.accept(EternalGeneralItems.PLATE_SILVER);
-                    output.accept(EternalGeneralItems.PLATE_SHADOWSTEEL);
                     output.accept(EternalGeneralItems.PLATE_STEEL);
+                    output.accept(EternalGeneralItems.PLATE_TACHYARITE);
                     output.accept(EternalGeneralItems.PLATE_TIN);
                     output.accept(EternalGeneralItems.PLATE_TITANIUM);
                     output.accept(EternalGeneralItems.PLATE_ULTIMATITANIUM);
                     output.accept(EternalGeneralItems.PLATE_URANIUM);
+                    output.accept(EternalGeneralItems.PLATE_VOIDERITE);
                     output.accept(EternalGeneralItems.PLATE_WROUGHT_IRON);
                     output.accept(EternalGeneralItems.PLATE_ZINC);
                     ///RODS
@@ -463,16 +468,19 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.ROD_PIG_IRON);
                     output.accept(EternalGeneralItems.ROD_PLATINUM);
                     output.accept(EternalGeneralItems.ROD_PLUTONIUM);
+                    output.accept(EternalGeneralItems.ROD_QUANTIQUARITE);
                     output.accept(EternalGeneralItems.ROD_ROSE_GOLD);
                     output.accept(EternalGeneralItems.ROD_SAPPHIRE);
+                    output.accept(EternalGeneralItems.ROD_SHADOWSTEEL);
                     output.accept(EternalGeneralItems.ROD_SIGNALUM);
                     output.accept(EternalGeneralItems.ROD_SILVER);
-                    output.accept(EternalGeneralItems.ROD_SHADOWSTEEL);
                     output.accept(EternalGeneralItems.ROD_STEEL);
+                    output.accept(EternalGeneralItems.ROD_TACHYARITE);
                     output.accept(EternalGeneralItems.ROD_TIN);
                     output.accept(EternalGeneralItems.ROD_TITANIUM);
                     output.accept(EternalGeneralItems.ROD_ULTIMATITANIUM);
                     output.accept(EternalGeneralItems.ROD_URANIUM);
+                    output.accept(EternalGeneralItems.ROD_VOIDERITE);
                     output.accept(EternalGeneralItems.ROD_WROUGHT_IRON);
                     output.accept(EternalGeneralItems.ROD_ZINC);
                     ///GEARS
@@ -487,8 +495,11 @@ public static final Supplier<CreativeModeTab> ETERNAL_ORES = CREATIVE_MODE_TAB.r
                     output.accept(EternalGeneralItems.GEAR_LEAD);
                     output.accept(EternalGeneralItems.GEAR_NECROTICARITE);
                     output.accept(EternalGeneralItems.GEAR_OSMIUM);
+                    output.accept(EternalGeneralItems.GEAR_QUANTIQUARITE);
                     output.accept(EternalGeneralItems.GEAR_STEEL);
+                    output.accept(EternalGeneralItems.GEAR_TACHYARITE);
                     output.accept(EternalGeneralItems.GEAR_TIN);
+                    output.accept(EternalGeneralItems.GEAR_VOIDERITE);
                     output.accept(EternalGeneralItems.ULTIMATE_GEAR);
                     ///TOOLS
                     output.accept(EternalGeneralItems.COBALT_HAMMER);

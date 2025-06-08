@@ -9,7 +9,8 @@ public enum EnrichingRecipeType implements MekanismItemRecipeType
     RAW_ORE(3, 4, "raw_ore_to_dust"),
     DIRTY_DUST(1, 1, "dirty_dust_to_dust"),
     RAW_BLOCK(1, 12, "raw_block_to_dust"),
-    ORE_BLOCK(1, 2, "ore_block_to_dust");
+    ORE_BLOCK(1, 2, "ore_block_to_dust"),
+    GEM_ORE_BLOCK(1, 2, "ore_block_to_gem");
 
     private final int inputCount, outputCount;
     private final String suffix;
@@ -69,5 +70,8 @@ public enum EnrichingRecipeType implements MekanismItemRecipeType
                          TagKey<Item> dirtyDustItem,
                          TagKey<Item> rawBlock,
                          Item outputDust)
+    {}
+    public record InputsGem(TagKey<Item> oreBlock,
+                             Item outputGem)
     {}
 }

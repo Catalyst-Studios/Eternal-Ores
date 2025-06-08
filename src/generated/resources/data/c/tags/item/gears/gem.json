@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:gear_diamond"
+    "eternalores:gear_diamond",
+    "eternalores:gear_necroticarite",
+    "eternalores:gear_quantiquarite",
+    "eternalores:gear_tachyarite",
+    "eternalores:gear_voiderite"
   ]
 }

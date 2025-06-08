@@ -24,8 +24,7 @@ import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries
 import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.CrystallizationRecipeEntry.registerCrystallizationRecipes;
 import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.DissolutionRecipeEntry.registerDissolutionRecipes;
 import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.DissolutionRecipeEntry.registerDissolutionTrueRecipes;
-import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.EnrichingRecipeEntry.registerEnrichingDustRecipes;
-import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.EnrichingRecipeEntry.registerEnrichingDustTrueRecipes;
+import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.EnrichingRecipeEntry.*;
 import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.InjectingRecipeEntry.registerInjectingRecipes;
 import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.InjectingRecipeEntry.registerInjectingTrueRecipes;
 import static net.radzratz.eternalores.util.compat.mekanism.recipe_types.entries.PurificationRecipeEntry.registerPurificationRecipes;
@@ -396,6 +395,59 @@ public class EternalOresMekEntries
                 EternalGeneralItems.CATALYRIUM_DUST);
 
         DUST_WITHOUT_ORE_ENTRIES = Map.copyOf(map);
+    }
+
+    /// Ore Block -> Gem
+    public static final Map<String, EnrichingRecipeType.InputsGem> ORE_GEM_ENTRIES;
+    static
+    {
+        Map<String, EnrichingRecipeType.InputsGem> map = new HashMap<>();
+
+        registerEnrichingGemRecipes(map, "amber",
+                EternalOreBlockItemTags.Items.ITEM_AMBER_ORE_OW,
+                EternalGeneralItems.GEM_AMBER);
+
+        registerEnrichingGemRecipes(map, "apatite",
+                EternalOreBlockItemTags.Items.ITEM_APATITE_ORE_OW,
+                EternalGeneralItems.GEM_APATITE);
+
+        registerEnrichingGemRecipes(map, "cinnabar",
+                EternalOreBlockItemTags.Items.ITEM_CINNABAR_ORE_OW,
+                EternalGeneralItems.GEM_CINNABAR);
+
+        registerEnrichingGemRecipes(map, "fluorite",
+                EternalOreBlockItemTags.Items.ITEM_FLUORITE_ORE_OW,
+                EternalGeneralItems.FLUORITE);
+
+        registerEnrichingGemRecipes(map, "necroticarite",
+                EternalOreBlockItemTags.Items.ITEM_NECROTICARITE_ORE_NETHER,
+                EternalGeneralItems.GEM_NECROTICARITE);
+
+        registerEnrichingGemRecipes(map, "niter",
+                EternalOreBlockItemTags.Items.ITEM_NITER_ORE_OW,
+                EternalGeneralItems.GEM_NITER);
+
+        registerEnrichingGemRecipes(map, "onyx",
+                EternalOreBlockItemTags.Items.ITEM_ONYX_ORE_OW,
+                EternalGeneralItems.GEM_ONYX);
+
+        registerEnrichingGemRecipes(map, "peridot",
+                EternalOreBlockItemTags.Items.ITEM_PERIDOT_ORE_OW,
+                EternalGeneralItems.GEM_PERIDOT);
+
+        registerEnrichingGemRecipes(map, "ruby",
+                EternalOreBlockItemTags.Items.ITEM_RUBY_ORE_OW,
+                EternalGeneralItems.GEM_RUBY);
+
+        registerEnrichingGemRecipes(map, "sapphire",
+                EternalOreBlockItemTags.Items.ITEM_SAPPHIRE_ORE_OW,
+                EternalGeneralItems.GEM_SAPPHIRE);
+
+        registerEnrichingGemRecipes(map, "obsidian",
+                EternalOreBlockItemTags.Items.ITEM_OBSIDIAN_ORE_NETHER,
+                EternalGeneralItems.GEM_OBSIDIAN_SHARD);
+
+        ORE_GEM_ENTRIES = Map.copyOf(map);
     }
 
     /// Material -> Dust Only

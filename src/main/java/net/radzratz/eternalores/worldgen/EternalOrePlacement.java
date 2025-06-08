@@ -6,7 +6,6 @@ import java.util.List;
 
 public class EternalOrePlacement
 {
-
     public static List<PlacementModifier> orePlacement(PlacementModifier pCountPlacement, PlacementModifier pHeightRange)
     {
         return List.of(pCountPlacement, InSquarePlacement.spread(), pHeightRange, BiomeFilter.biome());

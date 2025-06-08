@@ -14,9 +14,12 @@
     "eternalores:obsidian_dust",
     "eternalores:onyx_dust",
     "eternalores:peridot_dust",
+    "eternalores:quantiquarite_dust",
     "eternalores:quartz_dust",
     "eternalores:ruby_dust",
     "eternalores:sapphire_dust",
-    "eternalores:sulfur_dust"
+    "eternalores:sulfur_dust",
+    "eternalores:tachyarite_dust",
+    "eternalores:voiderite_dust"
   ]
 }

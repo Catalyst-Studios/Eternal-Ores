@@ -32,6 +32,12 @@ public class EternalGemTags
         public static final TagKey<Item> GEM_RUBY = createGemTags("gems/ruby");
         //Sapphire
         public static final TagKey<Item> GEM_SAPPHIRE = createGemTags("gems/sapphire");
+        //Quantiquarite
+        public static final TagKey<Item> GEM_QUANTIQUARITE = createGemTags("gems/quantiquarite");
+        //Tachyarite
+        public static final TagKey<Item> GEM_TACHYARITE = createGemTags("gems/tachyarite");
+        //Voiderite
+        public static final TagKey<Item> GEM_VOIDERITE = createGemTags("gems/voiderite");
 
         private static TagKey<Item> createGemTags(String path)
         {

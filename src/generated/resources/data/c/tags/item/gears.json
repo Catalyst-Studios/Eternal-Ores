@@ -11,7 +11,10 @@
     "eternalores:gear_lead",
     "eternalores:gear_necroticarite",
     "eternalores:gear_osmium",
+    "eternalores:gear_quantiquarite",
     "eternalores:gear_steel",
-    "eternalores:gear_tin"
+    "eternalores:gear_tachyarite",
+    "eternalores:gear_tin",
+    "eternalores:gear_voiderite"
   ]
 }

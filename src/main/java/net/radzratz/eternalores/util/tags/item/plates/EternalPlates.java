@@ -103,6 +103,12 @@ public class EternalPlates
         public static final TagKey<Item> WROUGHT_IRON_PLATE = createPlateTag("plates/wrought_iron");
         //Zinc
         public static final TagKey<Item> ZINC_PLATE = createPlateTag("plates/zinc");
+        //Quantiquarite
+        public static final TagKey<Item> QUANTIQUARITE_PLATE = createPlateTag("plates/quantiquarite");
+        //Tachyarite
+        public static final TagKey<Item> TACHYARITE_PLATE = createPlateTag("plates/tachyarite");
+        //Voiderite
+        public static final TagKey<Item> VOIDERITE_PLATE = createPlateTag("plates/voiderite");
 
         private static TagKey<Item> createPlateTag(String path)
         {

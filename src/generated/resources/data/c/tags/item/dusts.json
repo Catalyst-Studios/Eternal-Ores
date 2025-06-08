@@ -47,6 +47,7 @@
     "eternalores:pig_iron_dust",
     "eternalores:platinum_dust",
     "eternalores:plutonium_dust",
+    "eternalores:quantiquarite_dust",
     "eternalores:quartz_dust",
     "eternalores:rose_gold_dust",
     "eternalores:ruby_dust",
@@ -57,11 +58,13 @@
     "eternalores:shadowsteel_dust",
     "eternalores:steel_dust",
     "eternalores:sulfur_dust",
+    "eternalores:tachyarite_dust",
     "eternalores:tin_dust",
     "eternalores:titanium_dust",
     "eternalores:ultimatitanium_dust",
     "eternalores:uraninite_dust",
     "eternalores:uranium_dust",
+    "eternalores:voiderite_dust",
     "eternalores:wrought_iron_dust",
     "eternalores:zinc_dust"
   ]

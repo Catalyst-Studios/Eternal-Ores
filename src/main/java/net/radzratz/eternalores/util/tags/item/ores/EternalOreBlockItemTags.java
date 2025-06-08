@@ -39,6 +39,8 @@ public class EternalOreBlockItemTags
         public static final TagKey<Item> ITEM_OSMIUM_ORE_OW = createOreBlockTags("ores/osmium");
         //Platinum
         public static final TagKey<Item> ITEM_PLATINUM_ORE_OW = createOreBlockTags("ores/platinum");
+        //Peridot
+        public static final TagKey<Item> ITEM_PERIDOT_ORE_OW = createOreBlockTags("ores/peridot");
         //Ruby
         public static final TagKey<Item> ITEM_RUBY_ORE_OW = createOreBlockTags("ores/ruby");
         //Sapphire

@@ -9,7 +9,6 @@ public class EternalGemGearTags
 {
     public static class Items
     {
-
         //Amber
         public static final TagKey<Item> GEAR_AMBER = createGemGearTag("gears/amber");
         //Cinnabar
@@ -26,6 +25,12 @@ public class EternalGemGearTags
         public static final TagKey<Item> GEAR_RUBY = createGemGearTag("gears/ruby");
         //Sapphire
         public static final TagKey<Item> GEAR_SAPPHIRE = createGemGearTag("gears/sapphire");
+        //Quantiquarite
+        public static final TagKey<Item> GEAR_QUANTIQUARITE = createGemGearTag("gears/quantiquarite");
+        //Tachyarite
+        public static final TagKey<Item> GEAR_TACHYARITE = createGemGearTag("gears/tachyarite");
+        //Voiderite
+        public static final TagKey<Item> GEAR_VOIDERITE = createGemGearTag("gears/voiderite");
 
         private static TagKey<Item> createGemGearTag(String path)
         {

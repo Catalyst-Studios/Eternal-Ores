@@ -40,4 +40,15 @@ public class EnrichingRecipeEntry
                 dustSupplier.get()
         ));
     }
+
+    public static void registerEnrichingGemRecipes(Map<String, EnrichingRecipeType.InputsGem> map,
+                                                        String name,
+                                                        TagKey<Item> oreBlock,
+                                                        Supplier<Item> gemSupplier)
+    {
+        map.put(name, new EnrichingRecipeType.InputsGem(
+                oreBlock,
+                gemSupplier.get()
+        ));
+    }
 }

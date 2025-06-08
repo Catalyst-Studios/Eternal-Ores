@@ -132,6 +132,9 @@
   "item.eternalores.rod_pig_iron": "Pig Iron Rod",
   "item.eternalores.rod_necroticarite": "Necroticarite Rod",
   "item.eternalores.rod_catalyrium": "Catalyrium Rod",
+  "item.eternalores.rod_voiderite": "Voiderite Rod",
+  "item.eternalores.rod_quantiquarite": "Quantiquarite Rod",
+  "item.eternalores.rod_tachyarite": "Tachyarite Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
@@ -174,6 +177,9 @@
   "item.eternalores.plate_pig_iron": "Pig Iron Plate",
   "item.eternalores.plate_necroticarite": "Necroticarite Plate",
   "item.eternalores.plate_catalyrium": "Catalyrium Plate",
+  "item.eternalores.plate_tachyarite": "Tachyarite Plate",
+  "item.eternalores.plate_quantiquarite": "Quantiquarite Plate",
+  "item.eternalores.plate_voiderite": "Voiderite Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -189,6 +195,9 @@
   "item.eternalores.gear_aluminum": "Aluminum Gear",
   "item.eternalores.gear_necroticarite": "Necroticarite Gear",
   "item.eternalores.gear_catalyrium": "Catalyrium Gear",
+  "item.eternalores.gear_tachyarite": "Tachyarite Gear",
+  "item.eternalores.gear_quantiquarite": "Quantiquarite Gear",
+  "item.eternalores.gear_voiderite": "Voiderite Gear",
 
   "item.eternalores.raw_uranium": "Raw Uranium",
   "item.eternalores.raw_osmium": "Raw Osmium",
@@ -271,6 +280,9 @@
   "item.eternalores.sculk_dust": "Sculk Dust",
   "item.eternalores.nether_star_dust": "Nether Star Dust",
   "item.eternalores.catalyrium_dust": "Catalyrium Dust",
+  "item.eternalores.tachyarite_dust": "Tachyarite Dust",
+  "item.eternalores.quantiquarite_dust": "Quantiquarite Dust",
+  "item.eternalores.voiderite_dust": "Voiderite Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Gem",
   "item.eternalores.gem_onyx": "Onyx",

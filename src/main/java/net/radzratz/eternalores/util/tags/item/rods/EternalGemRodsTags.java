@@ -16,6 +16,12 @@ public class EternalGemRodsTags
         public static final TagKey<Item> ROD_NECROTICARITE = createGemRodTag("rods/necroticarite");
         //Sapphire
         public static final TagKey<Item> ROD_SAPPHIRE = createGemRodTag("rods/sapphire");
+        //Quantiquarite
+        public static final TagKey<Item> ROD_QUANTIQUARITE = createGemRodTag("rods/quantiquarite");
+        //Voiderite
+        public static final TagKey<Item> ROD_TACHYARITE = createGemRodTag("rods/tachyarite");
+        //Tachyarite
+        public static final TagKey<Item> ROD_VOIDERITE = createGemRodTag("rods/voiderite");
 
         private static TagKey<Item> createGemRodTag(String path)
         {

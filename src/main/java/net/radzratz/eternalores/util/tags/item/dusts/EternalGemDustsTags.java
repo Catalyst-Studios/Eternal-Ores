@@ -46,6 +46,12 @@ public class EternalGemDustsTags
         public static final TagKey<Item> DUST_SAPPHIRE = createGemDustTag("dusts/sapphire");
         //Sulfur
         public static final TagKey<Item> DUST_SULFUR = createGemDustTag("dusts/sulfur");
+        //Quantiquarite
+        public static final TagKey<Item> DUST_QUANTIQUARITE = createGemDustTag("dusts/quantiquarite");
+        //Tachyarite
+        public static final TagKey<Item> DUST_TACHYARITE = createGemDustTag("dusts/tachyarite");
+        //Voiderite
+        public static final TagKey<Item> DUST_VOIDERITE = createGemDustTag("dusts/voiderite");
 
         private static TagKey<Item> createGemDustTag(String path)
         {

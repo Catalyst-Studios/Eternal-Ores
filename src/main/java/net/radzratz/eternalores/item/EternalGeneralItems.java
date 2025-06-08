@@ -176,6 +176,9 @@ public class EternalGeneralItems
     public static final DeferredItem<Item> ROD_PIG_IRON = registerRodItem("rod_pig_iron");
     public static final DeferredItem<Item> ROD_NECROTICARITE = registerRodItem("rod_necroticarite");
     public static final DeferredItem<Item> ROD_CATALYRIUM = registerRodItem("rod_catalyrium");
+    public static final DeferredItem<Item> ROD_VOIDERITE = registerRodItem("rod_voiderite");
+    public static final DeferredItem<Item> ROD_QUANTIQUARITE = registerRodItem("rod_quantiquarite");
+    public static final DeferredItem<Item> ROD_TACHYARITE = registerRodItem("rod_tachyarite");
 
     //Plates
     private static DeferredItem<Item> registerPlateItem(String name)
@@ -223,6 +226,9 @@ public class EternalGeneralItems
     public static final DeferredItem<Item> PLATE_PIG_IRON = registerPlateItem("plate_pig_iron");
     public static final DeferredItem<Item> PLATE_NECROTICARITE = registerPlateItem("plate_necroticarite");
     public static final DeferredItem<Item> PLATE_CATALYRIUM = registerPlateItem("plate_catalyrium");
+    public static final DeferredItem<Item> PLATE_VOIDERITE = registerPlateItem("plate_voiderite");
+    public static final DeferredItem<Item> PLATE_QUANTIQUARITE = registerPlateItem("plate_quantiquarite");
+    public static final DeferredItem<Item> PLATE_TACHYARITE = registerPlateItem("plate_tachyarite");
 
     //Gears
     private static DeferredItem<Item> registerGearItem(String name)
@@ -243,6 +249,9 @@ public class EternalGeneralItems
     public static final DeferredItem<Item> GEAR_ALUMINUM = registerGearItem("gear_aluminum");
     public static final DeferredItem<Item> GEAR_NECROTICARITE = registerGearItem("gear_necroticarite");
     public static final DeferredItem<Item> GEAR_CATALYRIUM = registerGearItem("gear_catalyrium");
+    public static final DeferredItem<Item> GEAR_VOIDERITE = registerGearItem("gear_voiderite");
+    public static final DeferredItem<Item> GEAR_QUANTIQUARITE = registerGearItem("gear_quantiquarite");
+    public static final DeferredItem<Item> GEAR_TACHYARITE = registerGearItem("gear_tachyarite");
 
     //Raw Ores
     private static DeferredItem<Item> registerRawItem(String name)
@@ -336,6 +345,9 @@ public class EternalGeneralItems
     public static final DeferredItem<Item> AMETHYST_DUST = registerDustItem("amethyst_dust");
     public static final DeferredItem<Item> NETHER_STAR_DUST = registerDustItem("nether_star_dust");
     public static final DeferredItem<Item> CATALYRIUM_DUST = registerDustItem("catalyrium_dust");
+    public static final DeferredItem<Item> VOIDERITE_DUST = registerDustItem("voiderite_dust");
+    public static final DeferredItem<Item> QUANTIQUARITE_DUST = registerDustItem("quantiquarite_dust");
+    public static final DeferredItem<Item> TACHYARITE_DUST = registerDustItem("tachyarite_dust");
 
     //Gems
     private static DeferredItem<Item> registerGemItem(String name)

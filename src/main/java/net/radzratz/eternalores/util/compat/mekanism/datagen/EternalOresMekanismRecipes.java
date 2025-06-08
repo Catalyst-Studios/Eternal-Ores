@@ -48,6 +48,13 @@ public class EternalOresMekanismRecipes extends RecipeProvider
                     output, name, inputs.dirtyDustItem(), inputs.outputDust(), EnrichingRecipeType.DIRTY_DUST);
         });
 
+        /// Ore Block -> Gem
+        EternalOresMekEntries.ORE_GEM_ENTRIES.forEach((name, inputs) ->
+        {
+            NoChemicalRecipeTypes.generateMekanismProcessingWithoutChemicalRecipe(
+                    output, name, inputs.oreBlock(), inputs.outputGem(), EnrichingRecipeType.GEM_ORE_BLOCK);
+        });
+
         /// Dust Recipes 2 (Material Set Plate/Rod -> Dust)
         EternalOresMekEntries.DUST_DECONSTRUCTION_ENTRIES.forEach((name, inputs) ->
         {

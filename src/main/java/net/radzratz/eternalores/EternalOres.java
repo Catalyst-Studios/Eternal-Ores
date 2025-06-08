@@ -1,6 +1,7 @@
 package net.radzratz.eternalores;
 
 import net.neoforged.fml.ModList;
+import net.neoforged.fml.config.ModConfig;
 import net.radzratz.eternalores.block.EternalGeneralBlocks;
 import net.radzratz.eternalores.item.EternalCreativeModeTabs;
 import net.radzratz.eternalores.item.EternalGeneralItems;
