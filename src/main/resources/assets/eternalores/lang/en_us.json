@@ -8,7 +8,10 @@
 
   "item.eternalores.iron_gem_cutter": "Iron Gem Cutter",
 
+  "item.eternalores.finder": "[DEV TOOL]",
+
   "item.eternalores.aluminum_ingot": "Aluminum Ingot",
+  "item.eternalores.ardite_ingot": "Ardite Ingot",
   "item.eternalores.cobalt_ingot": "Cobalt Ingot",
   "item.eternalores.eternal_dark_ingot": "Eternal Dark Ingot",
   "item.eternalores.eternal_light_ingot": "Eternal Light Ingot",
@@ -52,6 +55,7 @@
   "item.eternalores.silicon": "Silicon",
 
   "item.eternalores.aluminum_nugget": "Aluminum Nugget",
+  "item.eternalores.ardite_nugget": "Ardite Nugget",
   "item.eternalores.cobalt_nugget": "Cobalt Nugget",
   "item.eternalores.copper_nugget": "Copper Nugget",
   "item.eternalores.lead_nugget": "Lead Nugget",
@@ -92,6 +96,7 @@
   "item.eternalores.catalyrium_nugget": "Catalyrium Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
+  "item.eternalores.rod_ardite": "Arite Rod",
   "item.eternalores.rod_cobalt": "Cobalt Rod",
   "item.eternalores.rod_copper": "Copper Rod",
   "item.eternalores.rod_gold": "Gold Rod",
@@ -137,6 +142,7 @@
   "item.eternalores.rod_tachyarite": "Tachyarite Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
+  "item.eternalores.plate_ardite": "Ardite Plate",
   "item.eternalores.plate_cobalt": "Cobalt Plate",
   "item.eternalores.plate_copper": "Copper Plate",
   "item.eternalores.plate_gold": "Gold Plate",
@@ -198,6 +204,7 @@
   "item.eternalores.gear_tachyarite": "Tachyarite Gear",
   "item.eternalores.gear_quantiquarite": "Quantiquarite Gear",
   "item.eternalores.gear_voiderite": "Voiderite Gear",
+  "item.eternalores.gear_ardite": "Ardite Gear",
 
   "item.eternalores.raw_uranium": "Raw Uranium",
   "item.eternalores.raw_osmium": "Raw Osmium",
@@ -215,6 +222,7 @@
   "item.eternalores.raw_iridium": "Raw Iridium",
   "item.eternalores.raw_uraninite": "Raw Uraninite",
   "item.eternalores.raw_catalyrium": "Raw Catalyrium",
+  "item.eternalores.raw_ardite": "Raw Ardite",
 
   "item.eternalores.aluminum_dust": "Aluminum Dust",
   "item.eternalores.cobalt_dust": "Cobalt Dust",
@@ -283,6 +291,7 @@
   "item.eternalores.tachyarite_dust": "Tachyarite Dust",
   "item.eternalores.quantiquarite_dust": "Quantiquarite Dust",
   "item.eternalores.voiderite_dust": "Voiderite Dust",
+  "item.eternalores.ardite_dust": "Ardite Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Gem",
   "item.eternalores.gem_onyx": "Onyx",
@@ -298,6 +307,7 @@
   "item.eternalores.gem_necroticarite": "Necroticarite",
   "item.eternalores.gem_tachyarite": "Tachyarite",
   "item.eternalores.gem_voiderite": "Voiderite",
+  "item.eternalores.gem_quantiquarite": "Quantiquarite",
 
   "item.eternalores.gem_sapphire_shard": "Sapphire Shard",
 
@@ -311,6 +321,7 @@
   "item.eternalores.dirty_silver_dust": "Dirty Silver Dust",
   "item.eternalores.dirty_uraninite_dust": "Dirty Uraninite Dust",
   "item.eternalores.dirty_zinc_dust": "Dirty Zinc Dust",
+  "item.eternalores.dirty_ardite_dust": "Dirty Ardite Dust",
 
   "item.eternalores.clump_aluminum": "Aluminum Clump",
   "item.eternalores.clump_catalyrium": "Catalyrium Clump",
@@ -322,6 +333,7 @@
   "item.eternalores.clump_silver": "Silver Clump",
   "item.eternalores.clump_uraninite": "Uraninite Clump",
   "item.eternalores.clump_zinc": "Zinc Clump",
+  "item.eternalores.clump_ardite": "Ardite Clump",
 
   "item.eternalores.shard_aluminum": "Aluminum Shard",
   "item.eternalores.shard_catalyrium": "Catalyrium Shard",
@@ -333,6 +345,7 @@
   "item.eternalores.shard_silver": "Silver Shard",
   "item.eternalores.shard_uraninite": "Uraninite Shard",
   "item.eternalores.shard_zinc": "Zinc Shard",
+  "item.eternalores.shard_ardite": "Ardite Shard",
 
   "item.eternalores.crystal_aluminum": "Aluminum Crystal",
   "item.eternalores.crystal_catalyrium": "Catalyrium Crystal",
@@ -344,6 +357,7 @@
   "item.eternalores.crystal_silver": "Silver Crystal",
   "item.eternalores.crystal_uraninite": "Uraninite Crystal",
   "item.eternalores.crystal_zinc": "Zinc Crystal",
+  "item.eternalores.crystal_ardite": "Ardite Crystal",
 
   "chemical.eternalores.clean_aluminum": "Clean Aluminum Slurry",
   "chemical.eternalores.clean_catalyrium": "Clean Catalyrium Slurry",
@@ -355,6 +369,7 @@
   "chemical.eternalores.clean_silver": "Clean Silver Slurry",
   "chemical.eternalores.clean_uraninite": "Clean Uraninite Slurry",
   "chemical.eternalores.clean_zinc": "Clean Zinc Slurry",
+  "chemical.eternalores.clean_ardite": "Clean Ardite Slurry",
 
   "chemical.eternalores.dirty_aluminum": "Dirty Aluminum Slurry",
   "chemical.eternalores.dirty_catalyrium": "Dirty catalyrium Slurry",
@@ -366,6 +381,7 @@
   "chemical.eternalores.dirty_silver": "Dirty Silver Slurry",
   "chemical.eternalores.dirty_uraninite": "Dirty Uraninite Slurry",
   "chemical.eternalores.dirty_zinc": "Dirty Zinc Slurry",
+  "chemical.eternalores.dirty_ardite": "Dirty Ardite Slurry",
 
   "block.eternalores.aluminum_ore_block": "Aluminum Ore",
   "block.eternalores.cobalt_ore_block": "Cobalt Ore",
@@ -419,6 +435,7 @@
 
   "block.eternalores.obsidian_ore_block": "Obsidian Ore",
   "block.eternalores.necroticarite_ore_block": "Necroticarite Ore",
+  "block.eternalores.ardite_ore_block": "Ardite Ore",
 
   "block.eternalores.raw_aluminum_block": "Block of Raw Aluminum",
   "block.eternalores.raw_catalyrium_block": "Block of Raw Catalyrium",
@@ -436,6 +453,7 @@
   "block.eternalores.raw_gallium_block": "Block of Raw Gallium",
   "block.eternalores.raw_iridium_block": "Block of Raw Iridium",
   "block.eternalores.raw_uraninite_block": "Block of Raw Uraninite",
+  "block.eternalores.raw_ardite_block": "Block of Raw Ardite",
 
   "block.eternalores.aluminum_block": "Block of Aluminum",
   "block.eternalores.catalyrium_block": "Block of Catalyrium",
@@ -484,6 +502,7 @@
   "block.eternalores.shadowsteel_block": "Block of Shadowsteel",
   "block.eternalores.pig_iron_block": "Block of Pig Iron",
   "block.eternalores.necroticarite_block": "Block of Necroticarite",
+  "block.eternalores.ardite_block": "Block of Ardite",
 
   "block.eternalores.nether_star_block": "Nether Star Block",
 

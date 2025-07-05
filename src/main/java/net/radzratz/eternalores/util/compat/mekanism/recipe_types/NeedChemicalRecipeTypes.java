@@ -15,9 +15,9 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.CrystallizingRecipeType;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.DissolutionRecipeType;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.interfaces.MekanismChemicalRecipeType;
+import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.EOCrystallizationType;
+import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.EODissolutionType;
+import net.radzratz.eternalores.util.compat.mekanism.recipe_types.interfaces.IEOMekChemType;
 
 public class NeedChemicalRecipeTypes
 {
@@ -25,37 +25,18 @@ public class NeedChemicalRecipeTypes
     ///
     /// My adhd won over yet again causing the creation of this
     ///
-    /// Simply because EternalOresMekanismRecipes.java wasn't clean enough
+    /// Simply because EOMekRecipeProvider.java wasn't clean enough
     ///
     /// This class handles Injecting, Purifying, Crystallizing and Dissolution Recipes registry at the same time
     ///
     /// Purifying and Injector Recipes
     public static void generateMekanismProcessingWithChemicalRecipe(RecipeOutput output,
                                                                     String materialName,
-                                                                    Item input,
-                                                                    Item outputItem,
-                                                                    MekanismChemicalRecipeType recipeType)
-    {
-        ItemStackIngredient inputIngredient = IngredientCreatorAccess.item().from(input, recipeType.inputCount());
-        generateMekanismRecipeInternal(output, materialName, inputIngredient, outputItem, recipeType);
-    }
-
-    public static void generateMekanismProcessingWithChemicalRecipe(RecipeOutput output,
-                                                                    String materialName,
                                                                     TagKey<Item> tag,
                                                                     Item outputItem,
-                                                                    MekanismChemicalRecipeType recipeType)
+                                                                    IEOMekChemType recipeType)
     {
         ItemStackIngredient inputIngredient = IngredientCreatorAccess.item().from(tag, recipeType.inputCount());
-        generateMekanismRecipeInternal(output, materialName, inputIngredient, outputItem, recipeType);
-    }
-
-    public static void generateMekanismProcessingWithChemicalRecipe(RecipeOutput output,
-                                                                    String materialName,
-                                                                    ItemStackIngredient inputIngredient,
-                                                                    Item outputItem,
-                                                                    MekanismChemicalRecipeType recipeType)
-    {
         generateMekanismRecipeInternal(output, materialName, inputIngredient, outputItem, recipeType);
     }
 
@@ -63,7 +44,7 @@ public class NeedChemicalRecipeTypes
                                                        String materialName,
                                                        ItemStackIngredient inputIngredient,
                                                        Item outputItem,
-                                                       MekanismChemicalRecipeType recipeType)
+                                                       IEOMekChemType recipeType)
     {
         String folder = "mekanism_compat/" + materialName + "/" + recipeType.folder() + "/";
         var chemicalStack = IngredientCreatorAccess.chemicalStack().from(recipeType.chemical(), recipeType.chemicalAmount());
@@ -88,7 +69,7 @@ public class NeedChemicalRecipeTypes
                                                          String materialName,
                                                          TagKey<Item> itemTag,
                                                          Chemical outputSlurry,
-                                                         DissolutionRecipeType recipeType)
+                                                         EODissolutionType recipeType)
     {
         ItemStackIngredient inputItem = IngredientCreatorAccess.item().from(itemTag, recipeType.inputCount());
         ChemicalStackIngredient acid = IngredientCreatorAccess.chemicalStack().from(recipeType.chemical(), recipeType.chemicalAmount());
@@ -106,7 +87,7 @@ public class NeedChemicalRecipeTypes
                                                            String materialName,
                                                            Chemical slurryInput,
                                                            Item outputCrystal,
-                                                           CrystallizingRecipeType recipeType)
+                                                           EOCrystallizationType recipeType)
     {
         ChemicalStackIngredient inputChemical = IngredientCreatorAccess.chemicalStack().from((IChemicalProvider) slurryInput, recipeType.inputSlurry());
         var result = new ItemStack(outputCrystal, recipeType.outputSlurryClean());

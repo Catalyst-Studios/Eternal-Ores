@@ -8,7 +8,7 @@
   "type": "mekanism:crushing",
   "input": {
     "count": 1,
-    "tag": "c:coal"
+    "tag": "c:frickin_coal"
   },
   "output": {
     "count": 1,

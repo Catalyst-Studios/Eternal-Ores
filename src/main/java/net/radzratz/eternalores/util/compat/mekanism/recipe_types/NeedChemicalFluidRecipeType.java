@@ -12,30 +12,16 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.interfaces.MekanismFluidChemicalRecipeType;
+import net.radzratz.eternalores.util.compat.mekanism.recipe_types.interfaces.IEOMekFluidChemType;
 
 public class NeedChemicalFluidRecipeType
 {
     public static void generateMekanismProcessingWithChemicalAndFluidRecipe(RecipeOutput output,
                                                                             String materialName,
                                                                             Chemical inputDirty,
-                                                                            Fluid water,
-                                                                            Chemical outputClean,
-                                                                            MekanismFluidChemicalRecipeType recipeType)
-    {
-
-        ChemicalStackIngredient inputChemical = IngredientCreatorAccess.chemicalStack().from((IChemicalProvider) inputDirty, recipeType.inputSlurry());
-        FluidStackIngredient inputFluid = IngredientCreatorAccess.fluid().from(water, recipeType.fluidAmount());
-
-        generate(output, materialName, inputChemical, inputFluid, outputClean, recipeType);
-    }
-
-    public static void generateMekanismProcessingWithChemicalAndFluidRecipe(RecipeOutput output,
-                                                                            String materialName,
-                                                                            Chemical inputDirty,
                                                                             TagKey<Fluid> waterTag,
                                                                             Chemical outputClean,
-                                                                            MekanismFluidChemicalRecipeType recipeType)
+                                                                            IEOMekFluidChemType recipeType)
     {
 
         ChemicalStackIngredient inputChemical = IngredientCreatorAccess.chemicalStack().from((IChemicalProvider) inputDirty, recipeType.inputSlurry());
@@ -49,7 +35,7 @@ public class NeedChemicalFluidRecipeType
                                  ChemicalStackIngredient inputChemical,
                                  FluidStackIngredient inputFluid,
                                  Chemical outputChemical,
-                                 MekanismFluidChemicalRecipeType recipeType)
+                                 IEOMekFluidChemType recipeType)
     {
 
         String folder = "mekanism_compat/" + materialName + "/" + recipeType.folder() + "/";

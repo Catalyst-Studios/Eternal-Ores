@@ -9,7 +9,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
-import net.radzratz.eternalores.util.compat.mekanism.recipe_types.interfaces.MekanismItemRecipeType;
+import net.radzratz.eternalores.util.compat.mekanism.recipe_types.interfaces.IEOMekItemType;
 
 public class NoChemicalRecipeTypes
 {
@@ -17,25 +17,15 @@ public class NoChemicalRecipeTypes
     ///
     /// My adhd won over yet again causing the creation of this
     ///
-    /// Simply because EternalOresMekanismRecipes.java wasn't clean enough
+    /// Simply because EOMekRecipeProvider.java wasn't clean enough
     ///
     /// This class handles Enrichment and Crushing Recipes registry at the same time
     ///
     public static void generateMekanismProcessingWithoutChemicalRecipe(RecipeOutput output,
-                                                                String materialName,
-                                                                Item input,
-                                                                Item outputItem,
-                                                                MekanismItemRecipeType recipeType)
-    {
-        ItemStackIngredient inputIngredient = IngredientCreatorAccess.item().from(input, recipeType.inputCount());
-        generateMekanismRecipeInternal(output, materialName, inputIngredient, outputItem, recipeType);
-    }
-
-    public static void generateMekanismProcessingWithoutChemicalRecipe(RecipeOutput output,
                                                                        String materialName,
                                                                        TagKey<Item> tag,
                                                                        Item outputItem,
-                                                                       MekanismItemRecipeType recipeType)
+                                                                       IEOMekItemType recipeType)
     {
         ItemStackIngredient inputIngredient = IngredientCreatorAccess.item().from(tag, recipeType.inputCount());
         generateMekanismRecipeInternal(output, materialName, inputIngredient, outputItem, recipeType);
@@ -45,7 +35,7 @@ public class NoChemicalRecipeTypes
                                                        String materialName,
                                                        ItemStackIngredient inputIngredient,
                                                        Item outputItem,
-                                                       MekanismItemRecipeType recipeType)
+                                                       IEOMekItemType recipeType)
     {
         String folder = "mekanism_compat/" + materialName + "/" + recipeType.folder() + "/";
         var result = new ItemStack(outputItem, recipeType.outputCount());

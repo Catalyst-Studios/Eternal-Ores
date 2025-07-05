@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "fluidInput": {
+    "amount": 0,
+    "fluid": "minecraft:empty"
+  },
+  "fluidOutputs": [],
+  "ingredients": [
+    {
+      "tag": "c:ores/obsidian"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:gem_obsidian_shard"
+    }
+  ],
+  "time": 200
+}

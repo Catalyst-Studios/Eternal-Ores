@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:plates/ardite"
+  },
+  "output": {
+    "count": 2,
+    "id": "eternalores:ardite_dust"
+  }
+}

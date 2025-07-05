@@ -1,8 +1,11 @@
 {
   "values": [
+    "eternalores:ardite_block",
     "eternalores:catalyrium_block",
     "eternalores:necroticarite_block",
+    "eternalores:raw_ardite_block",
     "eternalores:raw_catalyrium_block",
+    "eternalores:ardite_ore_block",
     "eternalores:cobalt_ore_block",
     "eternalores:deepslate_cobalt_ore_block",
     "eternalores:plutonium_ore_block",

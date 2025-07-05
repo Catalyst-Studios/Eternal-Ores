@@ -8,10 +8,10 @@
   "type": "mekanism:crushing",
   "input": {
     "count": 1,
-    "tag": "c:clumps/aluminum"
+    "tag": "c:clumps/ardite"
   },
   "output": {
     "count": 1,
-    "id": "eternalores:dirty_aluminum_dust"
+    "id": "eternalores:dirty_ardite_dust"
   }
 }

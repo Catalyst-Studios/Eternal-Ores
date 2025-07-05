@@ -1,5 +1,7 @@
 {
   "values": [
+    "eternalores:ardite_ore_block",
+    "eternalores:necroticarite_ore_block",
     "eternalores:obsidian_ore_block"
   ]
 }
