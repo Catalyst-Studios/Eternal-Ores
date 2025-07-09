@@ -37,6 +37,7 @@ public class EOSmeltingEntries extends RecipeProvider implements IConditionBuild
         generateRawOreToIngotFurnace(recipeOutput, "plutonium", EOItems.RAW_PLUTONIUM.get(), EOItems.PLUTONIUM_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "silver", EOItems.RAW_SILVER.get(), EOItems.SILVER_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "tin", EOItems.RAW_TIN.get(), EOItems.TIN_INGOT.get());
+        generateRawOreToIngotFurnace(recipeOutput, "tungsten", EOItems.RAW_TUNGSTEN.get(), EOItems.TUNGSTEN_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "ultimatitanium", EOItems.RAW_ULTIMATITANIUM.get(), EOItems.ULTIMATITANIUM_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "uraninite", EOItems.RAW_URANINITE.get(), EOItems.URANINITE_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "uranium", EOItems.RAW_URANIUM.get(), EOItems.URANIUM_INGOT.get());
@@ -85,6 +86,7 @@ public class EOSmeltingEntries extends RecipeProvider implements IConditionBuild
         generateDustToMaterialFurnace(recipeOutput, "steel", EOItems.STEEL_DUST.get(), EOItems.STEEL_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "tin", EOItems.TIN_DUST.get(), EOItems.TIN_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "titanium", EOItems.TITANIUM_DUST.get(), EOItems.TITANIUM_INGOT.get());
+        generateDustToMaterialFurnace(recipeOutput, "tungsten", EOItems.TUNGSTEN_DUST.get(), EOItems.TUNGSTEN_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "ultimatitanium", EOItems.ULTIMATITANIUM_DUST.get(), EOItems.ULTIMATITANIUM_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "uraninite", EOItems.URANINITE_DUST.get(), EOItems.URANINITE_INGOT.get());
         generateDustToMaterialFurnace(recipeOutput, "uranium", EOItems.URANIUM_DUST.get(), EOItems.URANIUM_INGOT.get());
@@ -119,6 +121,7 @@ public class EOSmeltingEntries extends RecipeProvider implements IConditionBuild
         generateRawBlockToMaterialFurnace(recipeOutput, "plutonium", EOBlocks.RAW_PLUTONIUM_BLOCK.asItem(), EOBlocks.PLUTONIUM_BLOCK.asItem());
         generateRawBlockToMaterialFurnace(recipeOutput, "silver", EOBlocks.RAW_SILVER_BLOCK.asItem(), EOBlocks.SILVER_BLOCK.asItem());
         generateRawBlockToMaterialFurnace(recipeOutput, "tin", EOBlocks.RAW_TIN_BLOCK.asItem(), EOBlocks.TIN_BLOCK.asItem());
+        generateRawBlockToMaterialFurnace(recipeOutput, "tungsten", EOBlocks.RAW_TUNGSTEN_BLOCK.asItem(), EOBlocks.TUNGSTEN_BLOCK.asItem());
         //generateRawBlockToMaterialFurnace(recipeOutput, "ultimatitanium", EOBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem(), EOBlocks.ULTIMATITANIUM_BLOCK.asItem());
         generateRawBlockToMaterialFurnace(recipeOutput, "uraninite", EOBlocks.RAW_URANINITE_BLOCK.asItem(), EOBlocks.URANINITE_BLOCK.asItem());
         generateRawBlockToMaterialFurnace(recipeOutput, "uranium", EOBlocks.RAW_URANIUM_BLOCK.asItem(), EOBlocks.URANIUM_BLOCK.asItem());
@@ -151,6 +154,8 @@ public class EOSmeltingEntries extends RecipeProvider implements IConditionBuild
         generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_uraninite", EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.asItem(), EOItems.URANINITE_INGOT.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "stone_zinc", EOBlocks.ZINC_ORE_BLOCK.asItem(), EOItems.ZINC_INGOT.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_zinc", EOBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem(), EOItems.ZINC_INGOT.get());
+
+        generateOreBlockToMaterialFurnace(recipeOutput, "tungsten", EOBlocks.TUNGSTEN_ORE_BLOCK.asItem(), EOItems.TUNGSTEN_INGOT.get());
 
         generateOreBlockToMaterialFurnace(recipeOutput, "stone_sulfur", EOBlocks.SULFUR_ORE_BLOCK.asItem(), EOItems.SULFUR.get());
         generateOreBlockToMaterialFurnace(recipeOutput, "deepslate_sulfur", EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem(), EOItems.SULFUR.get());

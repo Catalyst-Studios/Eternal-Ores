@@ -62,7 +62,7 @@ public class EONuggetEntries extends RecipeProvider implements IConditionBuilder
         generateIngotToNuggetRecipe(recipeOutput, "steel", EOItems.STEEL_INGOT.get(), EOItems.STEEL_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "tin", EOItems.TIN_INGOT.get(), EOItems.TIN_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "titanium", EOItems.TITANIUM_INGOT.get(), EOItems.TITANIUM_NUGGET.get());
-        //generateIngotToNuggetRecipe(recipeOutput, "tungsten", EOItems.TUNGSTEN_INGOT.get(), EOItems.TUNGSTEN_NUGGET.get());
+        generateIngotToNuggetRecipe(recipeOutput, "tungsten", EOItems.TUNGSTEN_INGOT.get(), EOItems.TUNGSTEN_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "ultimatitanium", EOItems.ULTIMATITANIUM_INGOT.get(), EOItems.ULTIMATITANIUM_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "uraninite", EOItems.URANINITE_INGOT.get(), EOItems.URANINITE_NUGGET.get());
         generateIngotToNuggetRecipe(recipeOutput, "uranium", EOItems.URANIUM_INGOT.get(), EOItems.URANIUM_NUGGET.get());

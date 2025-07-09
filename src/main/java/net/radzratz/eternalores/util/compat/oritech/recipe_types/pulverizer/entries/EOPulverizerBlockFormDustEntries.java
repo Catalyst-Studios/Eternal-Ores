@@ -46,7 +46,7 @@ public class EOPulverizerBlockFormDustEntries
         registerBlocksToDustRecipes(map, "osmium", EOStorageMetalBlockItemTags.Items.OSMIUM_BLOCK_ST_ITEM, EOItems.OSMIUM_DUST);
         registerBlocksToDustRecipes(map, "pewter", EOStorageMetalBlockItemTags.Items.PEWTER_BLOCK_ST_ITEM, EOItems.PEWTER_DUST);
         registerBlocksToDustRecipes(map, "pig_iron", EOStorageMetalBlockItemTags.Items.PIG_IRON_BLOCK_ST_ITEM, EOItems.PIG_IRON_DUST);
-        registerBlocksToDustRecipes(map, "platinum", EOStorageMetalBlockItemTags.Items.PLATINUM_BLOCK_ST_ITEM, EOItems.PIG_IRON_DUST);
+        registerBlocksToDustRecipes(map, "platinum", EOStorageMetalBlockItemTags.Items.PLATINUM_BLOCK_ST_ITEM, EOItems.PLATINUM_DUST);
         registerBlocksToDustRecipes(map, "rose_gold", EOStorageMetalBlockItemTags.Items.ROSE_GOLD_BLOCK_ST_ITEM, EOItems.ROSE_GOLD_DUST);
         registerBlocksToDustRecipes(map, "signalum", EOStorageMetalBlockItemTags.Items.SIGNALUM_BLOCK_ST_ITEM, EOItems.SIGNALUM_DUST);
         registerBlocksToDustRecipes(map, "silver", EOStorageMetalBlockItemTags.Items.SILVER_BLOCK_ST_ITEM, EOItems.SILVER_DUST);

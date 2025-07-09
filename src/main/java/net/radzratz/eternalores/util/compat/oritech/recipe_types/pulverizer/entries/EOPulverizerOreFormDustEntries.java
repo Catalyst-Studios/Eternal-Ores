@@ -5,6 +5,7 @@ import net.radzratz.eternalores.item.EOItems;
 import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerOreFormToDustType;
 import net.radzratz.eternalores.util.tags.item.gems.EOGemTags;
 import net.radzratz.eternalores.util.tags.item.ingots.EOIngotTags;
+import net.radzratz.eternalores.util.tags.item.raw_materials.EORawMaterialTags;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -39,6 +40,7 @@ public class EOPulverizerOreFormDustEntries
         registerIngotToDustRecipes(map, "pig_iron", EOIngotTags.Items.PIG_IRON_INGOT, EOItems.PIG_IRON_DUST);
         registerIngotToDustRecipes(map, "rose_gold", EOIngotTags.Items.ROSE_GOLD_INGOT, EOItems.ROSE_GOLD_DUST);
         registerIngotToDustRecipes(map, "shadowsteel", EOIngotTags.Items.SHADOWSTEEL_INGOT, EOItems.SHADOWSTEEL_DUST);
+        registerIngotToDustRecipes(map, "sulfur", EORawMaterialTags.SULFUR, EOItems.SULFUR_DUST);
         registerIngotToDustRecipes(map, "signalum", EOIngotTags.Items.SIGNALUM_INGOT, EOItems.SIGNALUM_DUST);
         registerIngotToDustRecipes(map, "silver", EOIngotTags.Items.SILVER_INGOT, EOItems.SILVER_DUST);
         registerIngotToDustRecipes(map, "tin", EOIngotTags.Items.TIN_INGOT, EOItems.TIN_DUST);

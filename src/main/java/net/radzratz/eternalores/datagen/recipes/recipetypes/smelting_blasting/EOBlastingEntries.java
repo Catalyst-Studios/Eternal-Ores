@@ -38,6 +38,7 @@ public class EOBlastingEntries extends RecipeProvider implements IConditionBuild
         generateRawOreToIngotFurnace(recipeOutput, "plutonium", EOItems.RAW_PLUTONIUM.get(), EOItems.PLUTONIUM_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "silver", EOItems.RAW_SILVER.get(), EOItems.SILVER_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "tin", EOItems.RAW_TIN.get(), EOItems.TIN_INGOT.get());
+        generateRawOreToIngotFurnace(recipeOutput, "tungsten", EOItems.RAW_TUNGSTEN.get(), EOItems.TUNGSTEN_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "ultimatitanium", EOItems.RAW_ULTIMATITANIUM.get(), EOItems.ULTIMATITANIUM_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "uraninite", EOItems.RAW_URANINITE.get(), EOItems.URANINITE_INGOT.get());
         generateRawOreToIngotFurnace(recipeOutput, "uranium", EOItems.RAW_URANIUM.get(), EOItems.URANIUM_INGOT.get());
@@ -55,6 +56,7 @@ public class EOBlastingEntries extends RecipeProvider implements IConditionBuild
         generateRawOreToIngotBlasting(recipeOutput, "plutonium", EOItems.RAW_PLUTONIUM.get(), EOItems.PLUTONIUM_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "silver", EOItems.RAW_SILVER.get(), EOItems.SILVER_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "tin", EOItems.RAW_TIN.get(), EOItems.TIN_INGOT.get());
+        generateRawOreToIngotBlasting(recipeOutput, "tungsten", EOItems.RAW_TUNGSTEN.get(), EOItems.TUNGSTEN_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "ultimatitanium", EOItems.RAW_ULTIMATITANIUM.get(), EOItems.ULTIMATITANIUM_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "uraninite", EOItems.RAW_URANINITE.get(), EOItems.URANINITE_INGOT.get());
         generateRawOreToIngotBlasting(recipeOutput, "uranium", EOItems.RAW_URANIUM.get(), EOItems.URANIUM_INGOT.get());
@@ -103,6 +105,7 @@ public class EOBlastingEntries extends RecipeProvider implements IConditionBuild
         generateDustToMaterialBlasting(recipeOutput, "steel", EOItems.STEEL_DUST.get(), EOItems.STEEL_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "tin", EOItems.TIN_DUST.get(), EOItems.TIN_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "titanium", EOItems.TITANIUM_DUST.get(), EOItems.TITANIUM_INGOT.get());
+        generateDustToMaterialBlasting(recipeOutput, "tungsten", EOItems.TUNGSTEN_DUST.get(), EOItems.TUNGSTEN_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "ultimatitanium", EOItems.ULTIMATITANIUM_DUST.get(), EOItems.ULTIMATITANIUM_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "uraninite", EOItems.URANINITE_DUST.get(), EOItems.URANINITE_INGOT.get());
         generateDustToMaterialBlasting(recipeOutput, "uranium", EOItems.URANIUM_DUST.get(), EOItems.URANIUM_INGOT.get());
@@ -137,6 +140,7 @@ public class EOBlastingEntries extends RecipeProvider implements IConditionBuild
         generateRawBlockToMaterialBlasting(recipeOutput, "plutonium", EOBlocks.RAW_PLUTONIUM_BLOCK.asItem(), EOBlocks.PLUTONIUM_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "silver", EOBlocks.RAW_SILVER_BLOCK.asItem(), EOBlocks.SILVER_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "tin", EOBlocks.RAW_TIN_BLOCK.asItem(), EOBlocks.TIN_BLOCK.asItem());
+        generateRawBlockToMaterialBlasting(recipeOutput, "tungsten", EOBlocks.RAW_TUNGSTEN_BLOCK.asItem(), EOBlocks.TUNGSTEN_BLOCK.asItem());
         //generateRawBlockToMaterialBlasting(recipeOutput, "ultimatitanium", EOBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem(), EOBlocks.ULTIMATITANIUM_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "uraninite", EOBlocks.RAW_URANINITE_BLOCK.asItem(), EOBlocks.URANINITE_BLOCK.asItem());
         generateRawBlockToMaterialBlasting(recipeOutput, "uranium", EOBlocks.RAW_URANIUM_BLOCK.asItem(), EOBlocks.URANIUM_BLOCK.asItem());
@@ -170,6 +174,8 @@ public class EOBlastingEntries extends RecipeProvider implements IConditionBuild
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_uranium", EOBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem(), EOItems.URANIUM_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_zinc", EOBlocks.ZINC_ORE_BLOCK.asItem(), EOItems.ZINC_INGOT.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_zinc", EOBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem(), EOItems.ZINC_INGOT.get());
+
+        generateOreBlockToMaterialBlasting(recipeOutput, "tungsten", EOBlocks.TUNGSTEN_ORE_BLOCK.asItem(), EOItems.TUNGSTEN_INGOT.get());
 
         generateOreBlockToMaterialBlasting(recipeOutput, "stone_sulfur", EOBlocks.SULFUR_ORE_BLOCK.asItem(), EOItems.SULFUR.get());
         generateOreBlockToMaterialBlasting(recipeOutput, "deepslate_sulfur", EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem(), EOItems.SULFUR.get());

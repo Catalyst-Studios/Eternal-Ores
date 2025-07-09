@@ -80,6 +80,7 @@ public class EOItems
     public static final DeferredItem<Item> STEEL_INGOT = registerIngotItem("steel_ingot");
     public static final DeferredItem<Item> TIN_INGOT = registerIngotItem("tin_ingot");
     public static final DeferredItem<Item> TITANIUM_INGOT = registerIngotItem("titanium_ingot");
+    public static final DeferredItem<Item> TUNGSTEN_INGOT = registerIngotItem("tungsten_ingot");
     public static final DeferredItem<Item> ULTIMATITANIUM_INGOT = registerIngotItem("ultimatitanium_ingot");
     public static final DeferredItem<Item> URANIUM_INGOT = registerIngotItem("uranium_ingot");
     public static final DeferredItem<Item> ZINC_INGOT = registerIngotItem("zinc_ingot");
@@ -92,6 +93,7 @@ public class EOItems
     public static final DeferredItem<Item> PIG_IRON_INGOT = registerIngotItem("pig_iron_ingot");
     public static final DeferredItem<Item> MISSING_INGOT = registerIngotItem("missing_ingot");
     public static final DeferredItem<Item> CATALYRIUM_INGOT = registerIngotItem("catalyrium_ingot");
+    public static final DeferredItem<Item> SILICON_INGOT = registerIngotItem("silicon_ingot");
 
     //Nuggets
     private static DeferredItem<Item> registerNuggetItem(String name)
@@ -138,6 +140,7 @@ public class EOItems
     public static final DeferredItem<Item> SHADOWSTEEL_NUGGET = registerNuggetItem("shadowsteel_nugget");
     public static final DeferredItem<Item> PIG_IRON_NUGGET = registerNuggetItem("pig_iron_nugget");
     public static final DeferredItem<Item> CATALYRIUM_NUGGET = registerNuggetItem("catalyrium_nugget");
+    public static final DeferredItem<Item> TUNGSTEN_NUGGET = registerNuggetItem("tungsten_nugget");
 
     //Rods
     private static DeferredItem<Item> registerRodItem(String name)
@@ -189,6 +192,7 @@ public class EOItems
     public static final DeferredItem<Item> ROD_VOIDERITE = registerRodItem("rod_voiderite");
     public static final DeferredItem<Item> ROD_QUANTIQUARITE = registerRodItem("rod_quantiquarite");
     public static final DeferredItem<Item> ROD_TACHYARITE = registerRodItem("rod_tachyarite");
+    public static final DeferredItem<Item> ROD_TUNGSTEN = registerRodItem("rod_tungsten");
 
     //Plates
     private static DeferredItem<Item> registerPlateItem(String name)
@@ -240,6 +244,7 @@ public class EOItems
     public static final DeferredItem<Item> PLATE_VOIDERITE = registerPlateItem("plate_voiderite");
     public static final DeferredItem<Item> PLATE_QUANTIQUARITE = registerPlateItem("plate_quantiquarite");
     public static final DeferredItem<Item> PLATE_TACHYARITE = registerPlateItem("plate_tachyarite");
+    public static final DeferredItem<Item> PLATE_TUNGSTEN = registerPlateItem("plate_tungsten");
 
     //Gears
     private static DeferredItem<Item> registerGearItem(String name)
@@ -264,6 +269,7 @@ public class EOItems
     public static final DeferredItem<Item> GEAR_QUANTIQUARITE = registerGearItem("gear_quantiquarite");
     public static final DeferredItem<Item> GEAR_TACHYARITE = registerGearItem("gear_tachyarite");
     public static final DeferredItem<Item> GEAR_ARDITE = registerGearItem("gear_ardite");
+    public static final DeferredItem<Item> GEAR_TUNGSTEN = registerGearItem("gear_tungsten");
 
     //Raw Ores
     private static DeferredItem<Item> registerRawItem(String name)
@@ -288,6 +294,7 @@ public class EOItems
     public static final DeferredItem<Item> SULFUR = registerRawItem("sulfur");
     public static final DeferredItem<Item> RAW_URANINITE = registerRawItem("raw_uraninite");
     public static final DeferredItem<Item> RAW_CATALYRIUM = registerRawItem("raw_catalyrium");
+    public static final DeferredItem<Item> RAW_TUNGSTEN = registerRawItem("raw_tungsten");
 
     //Ore Dust
     private static DeferredItem<Item> registerDustItem(String name)
@@ -362,6 +369,10 @@ public class EOItems
     public static final DeferredItem<Item> VOIDERITE_DUST = registerDustItem("voiderite_dust");
     public static final DeferredItem<Item> QUANTIQUARITE_DUST = registerDustItem("quantiquarite_dust");
     public static final DeferredItem<Item> TACHYARITE_DUST = registerDustItem("tachyarite_dust");
+    public static final DeferredItem<Item> TUNGSTEN_DUST = registerDustItem("tungsten_dust");
+    public static final DeferredItem<Item> CARBON_BLEND = registerDustItem("carbon_blend");
+    public static final DeferredItem<Item> ENERGETIC_BLEND = registerDustItem("energetic_blend");
+    public static final DeferredItem<Item> ENDERGETIC_BLEND = registerDustItem("endergetic_blend");
 
     //Gems
     private static DeferredItem<Item> registerGemItem(String name)

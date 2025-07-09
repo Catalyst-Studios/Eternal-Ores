@@ -70,6 +70,8 @@ public class EOLootTableProvider extends BlockLootSubProvider
         dropSelf(EOBlocks.NETHERSTEEL_BLOCK.get());
         dropSelf(EOBlocks.SHADOWSTEEL_BLOCK.get());
         dropSelf(EOBlocks.PIG_IRON_BLOCK.get());
+        dropSelf(EOBlocks.TUNGSTEN_BLOCK.get());
+        dropSelf(EOBlocks.SILICON_BLOCK.get());
 
         //COMPRESSED BLOCKS
         dropSelf(EOBlocks.COBBLE_1.get());
@@ -175,6 +177,7 @@ public class EOLootTableProvider extends BlockLootSubProvider
         dropSelf(EOBlocks.RAW_ZINC_BLOCK.get());
         dropSelf(EOBlocks.RAW_GALLIUM_BLOCK.get());
         dropSelf(EOBlocks.RAW_URANINITE_BLOCK.get());
+        dropSelf(EOBlocks.RAW_TUNGSTEN_BLOCK.get());
 
         //ORE BLOCK TO RAW ORE/GEM
         //ALUMINUM ORE BLOCKS
@@ -273,12 +276,18 @@ public class EOLootTableProvider extends BlockLootSubProvider
         //PERIDOT TO GEM
         add(EOBlocks.PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(EOBlocks.PERIDOT_ORE_BLOCK.get(), EOItems.GEM_PERIDOT.get(), 1,2));
         add(EOBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), block -> createMultipleOreDrops(EOBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK.get(), EOItems.GEM_PERIDOT.get(),1,2));
+
         //OBSIDIAN ORE TO GEM
         add(EOBlocks.OBSIDIAN_ORE_BLOCK.get(), block -> createMultipleOreDrops(EOBlocks.OBSIDIAN_ORE_BLOCK.get(), EOItems.GEM_OBSIDIAN_SHARD.get(),1,2));
+
         //NECROTICARITE TO GEM
         add(EOBlocks.NECROTICARITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EOBlocks.NECROTICARITE_ORE_BLOCK.get(), EOItems.GEM_NECROTICARITE.get(),1,2));
+
         //ARDITE TO RAW ORE
         add(EOBlocks.ARDITE_ORE_BLOCK.get(), block -> createMultipleOreDrops(EOBlocks.ARDITE_ORE_BLOCK.get(), EOItems.RAW_ARDITE.get(),1,1));
+
+        //TUNGSTEN TO RAW ORE
+        add(EOBlocks.TUNGSTEN_ORE_BLOCK.get(), block -> createMultipleOreDrops(EOBlocks.TUNGSTEN_ORE_BLOCK.get(), EOItems.RAW_TUNGSTEN.get(),1,3));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops)

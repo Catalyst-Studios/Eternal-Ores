@@ -26,6 +26,10 @@ public class EOMiscDustsTags
 
         public static final TagKey<Item> DUST_NETHER_STAR = createMiscDustTag("dusts/nether_star");
 
+        public static final TagKey<Item> CARBON_BLEND = createMiscDustTag("dusts/carbon_blend");
+        public static final TagKey<Item> ENERGETIC_BLEND = createMiscDustTag("dusts/energetic_blend");
+        public static final TagKey<Item> ENDERGETIC_BLEND = createMiscDustTag("dusts/endergetic_blend");
+
         private static TagKey<Item> createMiscDustTag(String path)
         {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));

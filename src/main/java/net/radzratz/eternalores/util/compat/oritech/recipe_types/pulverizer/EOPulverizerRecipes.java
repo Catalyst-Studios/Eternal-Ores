@@ -4,12 +4,11 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerDustConversionType;
 import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerOreBlockToMaterialType;
 import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerOreFormToDustType;
-import net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.entries.EOPulverizerBlockFormDustEntries;
-import net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.entries.EOPulverizerFormDustEntries;
-import net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.entries.EOPulverizerOreBlockFormEntries;
-import net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.entries.EOPulverizerOreFormDustEntries;
+import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerRawOreByproductType;
+import net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.entries.*;
 
 import static net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.EOPulverizerBlockRecipes.generateOritechPulverizerBlockRecipes;
+import static net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.EOPulverizerByproductRecipes.generateOritechPulverizerByproductRecipes;
 import static net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.EOPulverizerDustRecipes.generateOritechPulverizerRecipe;
 
 @SuppressWarnings("all")
@@ -42,6 +41,11 @@ public class EOPulverizerRecipes
         EOPulverizerOreBlockFormEntries.ORE_BLOCK_FORM_RAW.forEach((name, inputs) ->
         {
             generateOritechPulverizerBlockRecipes(output, name, inputs.oreBlockTag(), inputs.outputRaw(), EOPulverizerOreBlockToMaterialType.ORE_BLOCK);
+        });
+
+        EOPulverizerByProductEntries.BYPRODUCT_FORM_DUST.forEach((name, inputs) ->
+        {
+            generateOritechPulverizerByproductRecipes(output, name, inputs.rawOre(), inputs.outputDust(), inputs.outputByproduct(), EOPulverizerRawOreByproductType.RAW_ORE);
         });
     }
 }

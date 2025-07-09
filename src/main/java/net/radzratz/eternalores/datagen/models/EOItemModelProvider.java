@@ -9,6 +9,7 @@ import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.item.EOItems;
 import net.radzratz.eternalores.util.compat.mekanism.EOMekCompatItems;
+import net.radzratz.eternalores.util.compat.oritech.items.EOritechItemRegistry;
 import org.jetbrains.annotations.NotNull;
 
 public class EOItemModelProvider extends ItemModelProvider
@@ -52,6 +53,7 @@ public class EOItemModelProvider extends ItemModelProvider
         basicItem(EOItems.RAW_GALLIUM.get());
         basicItem(EOItems.RAW_URANINITE.get());
         basicItem(EOItems.RAW_CATALYRIUM.get());
+        basicItem(EOItems.RAW_TUNGSTEN.get());
 
         //INGOTS
         basicItem(EOItems.ALUMINUM_INGOT.get());
@@ -96,6 +98,8 @@ public class EOItemModelProvider extends ItemModelProvider
         basicItem(EOItems.PIG_IRON_INGOT.get());
         basicItem(EOItems.MISSING_INGOT.get());
         basicItem(EOItems.CATALYRIUM_INGOT.get());
+        basicItem(EOItems.TUNGSTEN_INGOT.get());
+        basicItem(EOItems.SILICON_INGOT.get());
 
         //NUGGETS
         basicItem(EOItems.ALUMINUM_NUGGET.get());
@@ -138,6 +142,7 @@ public class EOItemModelProvider extends ItemModelProvider
         basicItem(EOItems.SHADOWSTEEL_NUGGET.get());
         basicItem(EOItems.PIG_IRON_NUGGET.get());
         basicItem(EOItems.CATALYRIUM_NUGGET.get());
+        basicItem(EOItems.TUNGSTEN_NUGGET.get());
 
         //DUSTS
         basicItem(EOItems.ALUMINUM_DUST.get());
@@ -208,6 +213,10 @@ public class EOItemModelProvider extends ItemModelProvider
         basicItem(EOItems.TACHYARITE_DUST.get());
         basicItem(EOItems.QUANTIQUARITE_DUST.get());
         basicItem(EOItems.VOIDERITE_DUST.get());
+        basicItem(EOItems.TUNGSTEN_DUST.get());
+        basicItem(EOItems.CARBON_BLEND.get());
+        basicItem(EOItems.ENERGETIC_BLEND.get());
+        basicItem(EOItems.ENDERGETIC_BLEND.get());
 
         //RODS
         basicItem(EOItems.ROD_ALUMINUM.get());
@@ -255,6 +264,7 @@ public class EOItemModelProvider extends ItemModelProvider
         basicItem(EOItems.ROD_TACHYARITE.get());
         basicItem(EOItems.ROD_QUANTIQUARITE.get());
         basicItem(EOItems.ROD_VOIDERITE.get());
+        basicItem(EOItems.ROD_TUNGSTEN.get());
 
         //PLATES
         basicItem(EOItems.PLATE_ALUMINUM.get());
@@ -302,6 +312,7 @@ public class EOItemModelProvider extends ItemModelProvider
         basicItem(EOItems.PLATE_QUANTIQUARITE.get());
         basicItem(EOItems.PLATE_TACHYARITE.get());
         basicItem(EOItems.PLATE_VOIDERITE.get());
+        basicItem(EOItems.PLATE_TUNGSTEN.get());
 
         //GEARS
         basicItem(EOItems.GEAR_ALUMINUM.get());
@@ -400,6 +411,77 @@ public class EOItemModelProvider extends ItemModelProvider
         basicItem(EOMekCompatItems.ZINC_CLUMP.get());
         basicItem(EOMekCompatItems.ZINC_SHARD.get());
         basicItem(EOMekCompatItems.ZINC_CRYSTAL.get());
+
+        ///OritechCompat
+        basicItem(EOritechItemRegistry.O_ALUMINUM_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_ALUMINUM_GEM.get());
+        basicItem(EOritechItemRegistry.O_ALUMINUM_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_ALUMINUM_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_ARDITE_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_ARDITE_GEM.get());
+        basicItem(EOritechItemRegistry.O_ARDITE_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_ARDITE_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_CATALYRIUM_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_CATALYRIUM_GEM.get());
+        basicItem(EOritechItemRegistry.O_CATALYRIUM_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_CATALYRIUM_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_COBALT_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_COBALT_GEM.get());
+        basicItem(EOritechItemRegistry.O_COBALT_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_COBALT_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_GALLIUM_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_GALLIUM_GEM.get());
+        basicItem(EOritechItemRegistry.O_GALLIUM_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_GALLIUM_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_IRIDIUM_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_IRIDIUM_GEM.get());
+        basicItem(EOritechItemRegistry.O_IRIDIUM_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_IRIDIUM_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_LEAD_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_LEAD_GEM.get());
+        basicItem(EOritechItemRegistry.O_LEAD_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_LEAD_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_OSMIUM_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_OSMIUM_GEM.get());
+        basicItem(EOritechItemRegistry.O_OSMIUM_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_OSMIUM_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_SILVER_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_SILVER_GEM.get());
+        basicItem(EOritechItemRegistry.O_SILVER_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_SILVER_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_TIN_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_TIN_GEM.get());
+        basicItem(EOritechItemRegistry.O_TIN_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_TIN_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_TUNGSTEN_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_TUNGSTEN_GEM.get());
+        basicItem(EOritechItemRegistry.O_TUNGSTEN_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_TUNGSTEN_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_URANINITE_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_URANINITE_GEM.get());
+        basicItem(EOritechItemRegistry.O_URANINITE_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_URANINITE_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_URANIUM_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_URANIUM_GEM.get());
+        basicItem(EOritechItemRegistry.O_URANIUM_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_URANIUM_SMALL_DUST.get());
+
+        basicItem(EOritechItemRegistry.O_ZINC_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_ZINC_GEM.get());
+        basicItem(EOritechItemRegistry.O_ZINC_SMALL_CLUMP.get());
+        basicItem(EOritechItemRegistry.O_ZINC_SMALL_DUST.get());
     }
 
     //This modifies the behavior of "basicItem" in ItemModelProvider by changing how it searches for item textures.

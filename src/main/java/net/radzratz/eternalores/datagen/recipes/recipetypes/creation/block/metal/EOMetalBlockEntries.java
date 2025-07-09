@@ -57,7 +57,7 @@ public class EOMetalBlockEntries extends RecipeProvider implements IConditionBui
         generateIngotToBlockRecipe(recipeOutput, "steel", EOItems.STEEL_INGOT.get(), EOBlocks.STEEL_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "tin", EOItems.TIN_INGOT.get(), EOBlocks.TIN_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "titanium", EOItems.TITANIUM_INGOT.get(), EOBlocks.TITANIUM_BLOCK.asItem());
-        //generateIngotToBlockRecipe(recipeOutput, "tungsten", EOItems.TUNGSTEN_INGOT.get(), EOBlocks.TUNGSTEN_BLOCK.asItem());
+        generateIngotToBlockRecipe(recipeOutput, "tungsten", EOItems.TUNGSTEN_INGOT.get(), EOBlocks.TUNGSTEN_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "ultimatitanium", EOItems.ULTIMATITANIUM_INGOT.get(), EOBlocks.ULTIMATITANIUM_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "uranium", EOItems.URANIUM_INGOT.get(), EOBlocks.URANIUM_BLOCK.asItem());
         generateIngotToBlockRecipe(recipeOutput, "uraninite", EOItems.URANINITE_INGOT.get(), EOBlocks.URANINITE_BLOCK.asItem());

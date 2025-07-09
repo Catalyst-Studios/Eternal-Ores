@@ -63,7 +63,7 @@ public class EORodEntries extends RecipeProvider implements IConditionBuilder
         generateIngotRodsRecipe(recipeOutput, "steel", EOItems.ROD_STEEL.get());
         generateIngotRodsRecipe(recipeOutput, "tin", EOItems.ROD_TIN.get());
         generateIngotRodsRecipe(recipeOutput, "titanium", EOItems.ROD_TITANIUM.get());
-        //generateIngotRodsRecipe(recipeOutput, "tungsten", EOItems.ROD_TUNGSTEN.get());
+        generateIngotRodsRecipe(recipeOutput, "tungsten", EOItems.ROD_TUNGSTEN.get());
         generateIngotRodsRecipe(recipeOutput, "ultimatitanium", EOItems.ROD_ULTIMATITANIUM.get());
         generateIngotRodsRecipe(recipeOutput, "uranium", EOItems.ROD_URANIUM.get());
         generateIngotRodsRecipe(recipeOutput, "wrought_iron", EOItems.ROD_WROUGHT_IRON.get());

@@ -65,6 +65,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
             tag(EOStorageMetalBlockTags.Blocks.STEEL_BLOCK_ST).add(EOBlocks.STEEL_BLOCK.get());
             tag(EOStorageMetalBlockTags.Blocks.TIN_BLOCK_ST).add(EOBlocks.TIN_BLOCK.get());
             tag(EOStorageMetalBlockTags.Blocks.TITANIUM_BLOCK_ST).add(EOBlocks.TITANIUM_BLOCK.get());
+            tag(EOStorageMetalBlockTags.Blocks.TUNGSTEN_BLOCK_ST).add(EOBlocks.TUNGSTEN_BLOCK.get());
             tag(EOStorageMetalBlockTags.Blocks.URANINITE_BLOCK_ST).add(EOBlocks.URANINITE_BLOCK.get());
             tag(EOStorageMetalBlockTags.Blocks.URANIUM_BLOCK_ST).add(EOBlocks.URANIUM_BLOCK.get());
             tag(EOStorageMetalBlockTags.Blocks.WROUGHT_IRON_BLOCK_ST).add(EOBlocks.WROUGHT_IRON_BLOCK.get());
@@ -82,6 +83,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
             tag(EOStorageGemBlockTags.Blocks.NECROTICARITE_BLOCK_ST).add(EOBlocks.NECROTICARITE_BLOCK.get());
 
             tag(EOStorageMiscBlockTags.Blocks.NETHER_STAR_BLOCK_ST).add(EOBlocks.NETHER_STAR_BLOCK.get());
+            tag(EOStorageMiscBlockTags.Blocks.SILICON_BLOCK_ST).add(EOBlocks.SILICON_BLOCK.get());
 
             tag(EOStorageRawOreBlockTags.Blocks.RAW_ALUMINUM_ST).add(EOBlocks.RAW_ALUMINUM_BLOCK.get());
             tag(EOStorageRawOreBlockTags.Blocks.RAW_ARDITE_ST).add(EOBlocks.RAW_ARDITE_BLOCK.get());
@@ -96,6 +98,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
             tag(EOStorageRawOreBlockTags.Blocks.RAW_SILVER_ST).add(EOBlocks.RAW_SILVER_BLOCK.get());
             tag(EOStorageRawOreBlockTags.Blocks.SULFUR_ST).add(EOBlocks.SULFUR_BLOCK.get());
             tag(EOStorageRawOreBlockTags.Blocks.RAW_TIN_ST).add(EOBlocks.RAW_TIN_BLOCK.get());
+            tag(EOStorageRawOreBlockTags.Blocks.RAW_TUNGSTEN_ST).add(EOBlocks.RAW_TUNGSTEN_BLOCK.get());
             tag(EOStorageRawOreBlockTags.Blocks.RAW_URANINITE_ST).add(EOBlocks.RAW_URANINITE_BLOCK.get());
             tag(EOStorageRawOreBlockTags.Blocks.RAW_URANIUM_ST).add(EOBlocks.RAW_URANIUM_BLOCK.get());
             tag(EOStorageRawOreBlockTags.Blocks.RAW_ZINC_ST).add(EOBlocks.RAW_ZINC_BLOCK.get());
@@ -147,6 +150,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.STEEL_BLOCK.get())
                     .add(EOBlocks.TIN_BLOCK.get())
                     .add(EOBlocks.TITANIUM_BLOCK.get())
+                    .add(EOBlocks.TUNGSTEN_BLOCK.get())
                     .add(EOBlocks.ULTIMATITANIUM_BLOCK.get())
                     .add(EOBlocks.URANINITE_BLOCK.get())
                     .add(EOBlocks.URANIUM_BLOCK.get())
@@ -168,6 +172,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.RAW_SILVER_BLOCK.get())
                     .add(EOBlocks.SULFUR_BLOCK.get())
                     .add(EOBlocks.RAW_TIN_BLOCK.get())
+                    .add(EOBlocks.RAW_TUNGSTEN_BLOCK.get())
                     .add(EOBlocks.RAW_URANINITE_BLOCK.get())
                     .add(EOBlocks.RAW_URANIUM_BLOCK.get())
                     .add(EOBlocks.RAW_ZINC_BLOCK.get())
@@ -215,6 +220,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
             tag(EOOreBlockTags.Blocks.SULFUR_ORE_OW).add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get());
             tag(EOOreBlockTags.Blocks.TIN_ORE_OW).add(EOBlocks.TIN_ORE_BLOCK.get());
             tag(EOOreBlockTags.Blocks.TIN_ORE_OW).add(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK.get());
+            tag(EOOreBlockTags.Blocks.TUNGSTEN_ORE_OW).add(EOBlocks.TUNGSTEN_ORE_BLOCK.get());
             tag(EOOreBlockTags.Blocks.URANINITE_ORE_OW).add(EOBlocks.URANINITE_ORE_BLOCK.get());
             tag(EOOreBlockTags.Blocks.URANINITE_ORE_OW).add(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get());
             tag(EOOreBlockTags.Blocks.URANIUM_ORE_OW).add(EOBlocks.URANIUM_ORE_BLOCK.get());
@@ -269,6 +275,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
                     .add(EOBlocks.TIN_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
+                    .add(EOBlocks.TUNGSTEN_ORE_BLOCK.get())
                     .add(EOBlocks.URANINITE_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get())
                     .add(EOBlocks.URANIUM_ORE_BLOCK.get())
@@ -324,6 +331,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
+                    .add(EOBlocks.TUNGSTEN_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_SILVER_ORE_BLOCK.get())
@@ -377,12 +385,14 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.RUBY_BLOCK.get())
                     .add(EOBlocks.SAPPHIRE_BLOCK.get())
                     .add(EOBlocks.SIGNALUM_BLOCK.get())
+                    .add(EOBlocks.SILICON_BLOCK.get())
                     .add(EOBlocks.SILVER_BLOCK.get())
                     .add(EOBlocks.SHADOWSTEEL_BLOCK.get())
                     .add(EOBlocks.STEEL_BLOCK.get())
                     .add(EOBlocks.SULFUR_BLOCK.get())
                     .add(EOBlocks.TIN_BLOCK.get())
                     .add(EOBlocks.TITANIUM_BLOCK.get())
+                    .add(EOBlocks.TUNGSTEN_BLOCK.get())
                     .add(EOBlocks.URANINITE_BLOCK.get())
                     .add(EOBlocks.URANIUM_BLOCK.get())
                     .add(EOBlocks.WROUGHT_IRON_BLOCK.get())
@@ -403,6 +413,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.RAW_PLUTONIUM_BLOCK.get())
                     .add(EOBlocks.RAW_SILVER_BLOCK.get())
                     .add(EOBlocks.RAW_TIN_BLOCK.get())
+                    .add(EOBlocks.RAW_TUNGSTEN_BLOCK.get())
                     .add(EOBlocks.RAW_URANIUM_BLOCK.get())
                     .add(EOBlocks.RAW_URANINITE_BLOCK.get())
                     .add(EOBlocks.RAW_ZINC_BLOCK.get())
@@ -545,6 +556,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
                     .add(EOBlocks.TIN_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
+                    .add(EOBlocks.TUNGSTEN_ORE_BLOCK.get())
                     .add(EOBlocks.URANIUM_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.get())
                     .add(EOBlocks.SILVER_ORE_BLOCK.get())
@@ -587,12 +599,14 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.PLATINUM_BLOCK.get())
                     .add(EOBlocks.PLUTONIUM_BLOCK.get())
                     .add(EOBlocks.ROSE_GOLD_BLOCK.get())
+                    .add(EOBlocks.SILICON_BLOCK.get())
                     .add(EOBlocks.SILVER_BLOCK.get())
                     .add(EOBlocks.SIGNALUM_BLOCK.get())
                     .add(EOBlocks.SHADOWSTEEL_BLOCK.get())
                     .add(EOBlocks.STEEL_BLOCK.get())
                     .add(EOBlocks.TIN_BLOCK.get())
                     .add(EOBlocks.TITANIUM_BLOCK.get())
+                    .add(EOBlocks.TUNGSTEN_BLOCK.get())
                     .add(EOBlocks.ULTIMATITANIUM_BLOCK.get())
                     .add(EOBlocks.URANINITE_BLOCK.get())
                     .add(EOBlocks.URANIUM_BLOCK.get())
@@ -628,6 +642,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.RAW_SILVER_BLOCK.get())
                     .add(EOBlocks.SULFUR_BLOCK.get())
                     .add(EOBlocks.RAW_TIN_BLOCK.get())
+                    .add(EOBlocks.RAW_TUNGSTEN_BLOCK.get())
                     .add(EOBlocks.RAW_URANINITE_BLOCK.get())
                     .add(EOBlocks.RAW_URANIUM_BLOCK.get())
                     .add(EOBlocks.RAW_ZINC_BLOCK.get())
@@ -680,7 +695,9 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.TIN_ORE_BLOCK.get())
                     .add(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK.get())
                     .add(EOBlocks.SULFUR_ORE_BLOCK.get())
-                    .add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get());
+                    .add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.get())
+
+                    .add(EOBlocks.SILICON_BLOCK.get());
 
             tag(BlockTags.NEEDS_IRON_TOOL)
                     //ORE BLOCKS
@@ -792,9 +809,11 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.ARDITE_BLOCK.get())
                     .add(EOBlocks.CATALYRIUM_BLOCK.get())
                     .add(EOBlocks.NECROTICARITE_BLOCK.get())
+                    .add(EOBlocks.TUNGSTEN_BLOCK.get())
 
                     .add(EOBlocks.RAW_ARDITE_BLOCK.get())
                     .add(EOBlocks.RAW_CATALYRIUM_BLOCK.get())
+                    .add(EOBlocks.RAW_TUNGSTEN_BLOCK.get())
 
                     .add(EOBlocks.ARDITE_ORE_BLOCK.get())
                     .add(EOBlocks.COBALT_ORE_BLOCK.get())
@@ -803,6 +822,7 @@ public class EOBlockTagProvider extends BlockTagsProvider
                     .add(EOBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK.get())
                     .add(EOBlocks.NECROTICARITE_ORE_BLOCK.get())
                     .add(EOBlocks.OBSIDIAN_ORE_BLOCK.get())
+                    .add(EOBlocks.TUNGSTEN_ORE_BLOCK.get())
 
                     .add(EOBlocks.NETHER_STAR_BLOCK.get())
                     .add(EOBlocks.NETHERSTEEL_BLOCK.get())

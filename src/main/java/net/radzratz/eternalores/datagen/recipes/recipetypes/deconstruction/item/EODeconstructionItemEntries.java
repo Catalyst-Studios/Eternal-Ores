@@ -61,7 +61,7 @@ public class EODeconstructionItemEntries extends RecipeProvider implements ICond
         generateRodPlateToDustRecipe(recipeOutput, "steel", EOItems.PLATE_STEEL.get(), EOItems.ROD_STEEL.get(), EOItems.STEEL_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "tin", EOItems.PLATE_TIN.get(), EOItems.ROD_TIN.get(), EOItems.TIN_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "titanium", EOItems.PLATE_TITANIUM.get(), EOItems.ROD_TITANIUM.get(), EOItems.TITANIUM_DUST.get());
-        //generateRodPlateToDustRecipe(recipeOutput, "tungsten", EOItems.PLATE_TUNGSTEN.get(), EOItems.ROD_TUNGSTEN.get(), EOItems.TUNGSTEN_DUST.get());
+        generateRodPlateToDustRecipe(recipeOutput, "tungsten", EOItems.PLATE_TUNGSTEN.get(), EOItems.ROD_TUNGSTEN.get(), EOItems.TUNGSTEN_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "ultimatitanium", EOItems.PLATE_ULTIMATITANIUM.get(), EOItems.ROD_ULTIMATITANIUM.get(), EOItems.ULTIMATITANIUM_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "uranium", EOItems.PLATE_URANIUM.get(), EOItems.ROD_URANIUM.get(), EOItems.URANIUM_DUST.get());
         generateRodPlateToDustRecipe(recipeOutput, "wrought_iron", EOItems.PLATE_WROUGHT_IRON.get(), EOItems.ROD_WROUGHT_IRON.get(), EOItems.WROUGHT_IRON_DUST.get());

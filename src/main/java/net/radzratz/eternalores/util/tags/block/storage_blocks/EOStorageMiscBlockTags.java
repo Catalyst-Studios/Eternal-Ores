@@ -12,6 +12,8 @@ public class EOStorageMiscBlockTags
         //Nether Star Block
         public static final TagKey<Block> NETHER_STAR_BLOCK_ST = createMiscStorageBlockTags("storage_blocks/nether_star");
 
+        public static final TagKey<Block> SILICON_BLOCK_ST = createMiscStorageBlockTags("storage_blocks/silicon");
+
         private static TagKey<Block> createMiscStorageBlockTags(String path)
         {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", path));

@@ -103,6 +103,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.PLATE_TACHYARITE.get())
                         .add(EOItems.PLATE_TIN.get())
                         .add(EOItems.PLATE_TITANIUM.get())
+                        .add(EOItems.PLATE_TUNGSTEN.get())
                         .add(EOItems.PLATE_ULTIMATITANIUM.get())
                         .add(EOItems.PLATE_URANIUM.get())
                         .add(EOItems.PLATE_VOIDERITE.get())
@@ -144,6 +145,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.PLATE_STEEL.get())
                         .add(EOItems.PLATE_TIN.get())
                         .add(EOItems.PLATE_TITANIUM.get())
+                        .add(EOItems.PLATE_TUNGSTEN.get())
                         .add(EOItems.PLATE_ULTIMATITANIUM.get())
                         .add(EOItems.PLATE_URANIUM.get())
                         .add(EOItems.PLATE_WROUGHT_IRON.get())
@@ -199,6 +201,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EOPlates.Items.STEEL_PLATE).add(EOItems.PLATE_STEEL.get());
                 tag(EOPlates.Items.TIN_PLATE).add(EOItems.PLATE_TIN.get());
                 tag(EOPlates.Items.TITANIUM_PLATE).add(EOItems.PLATE_TITANIUM.get());
+                tag(EOPlates.Items.TUNGSTEN_PLATE).add(EOItems.PLATE_TUNGSTEN.get());
                 tag(EOPlates.Items.ULTIMATITANIUM_PLATE).add(EOItems.PLATE_ULTIMATITANIUM.get());
                 tag(EOPlates.Items.URANIUM_PLATE).add(EOItems.PLATE_URANIUM.get());
                 tag(EOPlates.Items.WROUGHT_IRON_PLATE).add(EOItems.PLATE_WROUGHT_IRON.get());
@@ -244,11 +247,13 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.REDSTONE_INGOT.get())
                         .add(EOItems.ROSE_GOLD_INGOT.get())
                         .add(EOItems.SIGNALUM_INGOT.get())
+                        .add(EOItems.SILICON_INGOT.get())
                         .add(EOItems.SILVER_INGOT.get())
                         .add(EOItems.SHADOWSTEEL_INGOT.get())
                         .add(EOItems.STEEL_INGOT.get())
                         .add(EOItems.TIN_INGOT.get())
                         .add(EOItems.TITANIUM_INGOT.get())
+                        .add(EOItems.TUNGSTEN_INGOT.get())
                         .add(EOItems.ULTIMATITANIUM_INGOT.get())
                         .add(EOItems.URANINITE_INGOT.get())
                         .add(EOItems.URANIUM_INGOT.get())
@@ -288,11 +293,13 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EOIngotTags.Items.REDSTONE_INGOT).add(EOItems.REDSTONE_INGOT.get());
                 tag(EOIngotTags.Items.ROSE_GOLD_INGOT).add(EOItems.ROSE_GOLD_INGOT.get());
                 tag(EOIngotTags.Items.SIGNALUM_INGOT).add(EOItems.SIGNALUM_INGOT.get());
+                tag(EOIngotTags.Items.SILICON_INGOT).add(EOItems.SILICON_INGOT.get());
                 tag(EOIngotTags.Items.SILVER_INGOT).add(EOItems.SILVER_INGOT.get());
                 tag(EOIngotTags.Items.SHADOWSTEEL_INGOT).add(EOItems.SHADOWSTEEL_INGOT.get());
                 tag(EOIngotTags.Items.STEEL_INGOT).add(EOItems.STEEL_INGOT.get());
                 tag(EOIngotTags.Items.TIN_INGOT).add(EOItems.TIN_INGOT.get());
                 tag(EOIngotTags.Items.TITANIUM_INGOT).add(EOItems.TITANIUM_INGOT.get());
+                tag(EOIngotTags.Items.TUNGSTEN_INGOT).add(EOItems.TUNGSTEN_INGOT.get());
                 tag(EOIngotTags.Items.ULTIMATITANIUM_INGOT).add(EOItems.ULTIMATITANIUM_INGOT.get());
                 tag(EOIngotTags.Items.URANINITE_INGOT).add(EOItems.URANINITE_INGOT.get());
                 tag(EOIngotTags.Items.URANIUM_INGOT).add(EOItems.URANIUM_INGOT.get());
@@ -345,6 +352,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem())
                         .add(EOBlocks.TIN_ORE_BLOCK.asItem())
                         .add(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem())
+                        .add(EOBlocks.TUNGSTEN_ORE_BLOCK.asItem())
                         .add(EOBlocks.URANINITE_ORE_BLOCK.asItem())
                         .add(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.asItem())
                         .add(EOBlocks.URANIUM_ORE_BLOCK.asItem())
@@ -396,6 +404,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EOOreBlockItemTags.Items.ITEM_SULFUR_ORE_OW).add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem());
                 tag(EOOreBlockItemTags.Items.ITEM_TIN_ORE_OW).add(EOBlocks.TIN_ORE_BLOCK.asItem());
                 tag(EOOreBlockItemTags.Items.ITEM_TIN_ORE_OW).add(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem());
+                tag(EOOreBlockItemTags.Items.ITEM_TUNGSTEN_ORE_OW).add(EOBlocks.TUNGSTEN_ORE_BLOCK.asItem());
                 tag(EOOreBlockItemTags.Items.ITEM_URANINITE_ORE_OW).add(EOBlocks.URANINITE_ORE_BLOCK.asItem());
                 tag(EOOreBlockItemTags.Items.ITEM_URANINITE_ORE_OW).add(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.asItem());
                 tag(EOOreBlockItemTags.Items.ITEM_URANIUM_ORE_OW).add(EOBlocks.URANIUM_ORE_BLOCK.asItem());
@@ -444,12 +453,14 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOBlocks.RUBY_BLOCK.asItem())
                         .add(EOBlocks.SAPPHIRE_BLOCK.asItem())
                         .add(EOBlocks.SIGNALUM_BLOCK.asItem())
+                        .add(EOBlocks.SILICON_BLOCK.asItem())
                         .add(EOBlocks.SILVER_BLOCK.asItem())
                         .add(EOBlocks.SHADOWSTEEL_BLOCK.asItem())
                         .add(EOBlocks.STEEL_BLOCK.asItem())
                         .add(EOBlocks.SULFUR_BLOCK.asItem())
                         .add(EOBlocks.TIN_BLOCK.asItem())
                         .add(EOBlocks.TITANIUM_BLOCK.asItem())
+                        .add(EOBlocks.TUNGSTEN_BLOCK.asItem())
                         .add(EOBlocks.URANINITE_BLOCK.asItem())
                         .add(EOBlocks.URANIUM_BLOCK.asItem())
                         .add(EOBlocks.WROUGHT_IRON_BLOCK.asItem())
@@ -468,6 +479,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOBlocks.RAW_PLUTONIUM_BLOCK.asItem())
                         .add(EOBlocks.RAW_SILVER_BLOCK.asItem())
                         .add(EOBlocks.RAW_TIN_BLOCK.asItem())
+                        .add(EOBlocks.RAW_TUNGSTEN_BLOCK.asItem())
                         .add(EOBlocks.RAW_URANINITE_BLOCK.asItem())
                         .add(EOBlocks.RAW_URANIUM_BLOCK.asItem())
                         .add(EOBlocks.RAW_ZINC_BLOCK.asItem())
@@ -575,6 +587,7 @@ public class EOItemTagProvider extends ItemTagsProvider
             tag(EOStorageMetalBlockItemTags.Items.STEEL_BLOCK_ST_ITEM).add(EOBlocks.STEEL_BLOCK.asItem());
             tag(EOStorageMetalBlockItemTags.Items.TIN_BLOCK_ST_ITEM).add(EOBlocks.TIN_BLOCK.asItem());
             tag(EOStorageMetalBlockItemTags.Items.TITANIUM_BLOCK_ST_ITEM).add(EOBlocks.TITANIUM_BLOCK.asItem());
+            tag(EOStorageMetalBlockItemTags.Items.TUNGSTEN_BLOCK_ST_ITEM).add(EOBlocks.TUNGSTEN_BLOCK.asItem());
             tag(EOStorageMetalBlockItemTags.Items.URANINITE_BLOCK_ST_ITEM).add(EOBlocks.URANINITE_BLOCK.asItem());
             tag(EOStorageMetalBlockItemTags.Items.URANIUM_BLOCK_ST_ITEM).add(EOBlocks.URANIUM_BLOCK.asItem());
             tag(EOStorageMetalBlockItemTags.Items.WROUGHT_IRON_BLOCK_ST_ITEM).add(EOBlocks.WROUGHT_IRON_BLOCK.asItem());
@@ -604,11 +617,13 @@ public class EOItemTagProvider extends ItemTagsProvider
             tag(EOStorageRawOreBlockItemTags.Items.RAW_SILVER_ST_ITEM).add(EOBlocks.RAW_SILVER_BLOCK.asItem());
             tag(EOStorageRawOreBlockItemTags.Items.SULFUR_ST_ITEM).add(EOBlocks.SULFUR_BLOCK.asItem());
             tag(EOStorageRawOreBlockItemTags.Items.RAW_TIN_ST_ITEM).add(EOBlocks.RAW_TIN_BLOCK.asItem());
+            tag(EOStorageRawOreBlockItemTags.Items.RAW_TUNGSTEN_ST_ITEM).add(EOBlocks.RAW_TUNGSTEN_BLOCK.asItem());
             tag(EOStorageRawOreBlockItemTags.Items.RAW_URANINITE_ST_ITEM).add(EOBlocks.RAW_URANINITE_BLOCK.asItem());
             tag(EOStorageRawOreBlockItemTags.Items.RAW_URANIUM_ST_ITEM).add(EOBlocks.RAW_URANIUM_BLOCK.asItem());
             tag(EOStorageRawOreBlockItemTags.Items.RAW_ZINC_ST_ITEM).add(EOBlocks.RAW_ZINC_BLOCK.asItem());
 
             tag(EOStorageMiscBlockItemTags.Items.NETHER_STAR_BLOCK_ST_ITEM).add(EOBlocks.NETHER_STAR_BLOCK.asItem());
+            tag(EOStorageMiscBlockItemTags.Items.SILICON_BLOCK_ST_ITEM).add(EOBlocks.SILICON_BLOCK.asItem());
 
                 //General Nuggets
                 tag(Tags.Items.NUGGETS)
@@ -646,6 +661,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.STEEL_NUGGET.get())
                         .add(EOItems.TIN_NUGGET.get())
                         .add(EOItems.TITANIUM_NUGGET.get())
+                        .add(EOItems.TUNGSTEN_NUGGET.get())
                         .add(EOItems.ULTIMATITANIUM_NUGGET.get())
                         .add(EOItems.URANINITE_NUGGET.get())
                         .add(EOItems.URANIUM_NUGGET.get())
@@ -687,6 +703,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EONuggetsTags.Items.NUGGET_STEEL).add(EOItems.STEEL_NUGGET.get());
                 tag(EONuggetsTags.Items.NUGGET_TIN).add(EOItems.TIN_NUGGET.get());
                 tag(EONuggetsTags.Items.NUGGET_TITANIUM).add(EOItems.TITANIUM_NUGGET.get());
+                tag(EONuggetsTags.Items.NUGGET_TUNGSTEN).add(EOItems.TUNGSTEN_NUGGET.get());
                 tag(EONuggetsTags.Items.NUGGET_ULTIMATITANIUM).add(EOItems.ULTIMATITANIUM_NUGGET.get());
                 tag(EONuggetsTags.Items.NUGGET_URANINITE).add(EOItems.URANINITE_NUGGET.get());
                 tag(EONuggetsTags.Items.NUGGET_URANIUM).add(EOItems.URANIUM_NUGGET.get());
@@ -734,6 +751,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.ROD_TACHYARITE.get())
                         .add(EOItems.ROD_TIN.get())
                         .add(EOItems.ROD_TITANIUM.get())
+                        .add(EOItems.ROD_TUNGSTEN.get())
                         .add(EOItems.ROD_ULTIMATITANIUM.get())
                         .add(EOItems.ROD_URANIUM.get())
                         .add(EOItems.ROD_VOIDERITE.get())
@@ -776,6 +794,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.ROD_STEEL.get())
                         .add(EOItems.ROD_TIN.get())
                         .add(EOItems.ROD_TITANIUM.get())
+                        .add(EOItems.ROD_TUNGSTEN.get())
                         .add(EOItems.ROD_ULTIMATITANIUM.get())
                         .add(EOItems.ROD_URANIUM.get())
                         .add(EOItems.ROD_WROUGHT_IRON.get())
@@ -825,6 +844,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EOMetalRodsTags.Items.ROD_STEEL).add(EOItems.ROD_STEEL.get());
                 tag(EOMetalRodsTags.Items.ROD_TIN).add(EOItems.ROD_TIN.get());
                 tag(EOMetalRodsTags.Items.ROD_TITANIUM).add(EOItems.ROD_TITANIUM.get());
+                tag(EOMetalRodsTags.Items.ROD_TUNGSTEN).add(EOItems.ROD_TUNGSTEN.get());
                 tag(EOMetalRodsTags.Items.ROD_ULTIMATITANIUM).add(EOItems.ROD_ULTIMATITANIUM.get());
                 tag(EOMetalRodsTags.Items.ROD_URANIUM).add(EOItems.ROD_URANIUM.get());
                 tag(EOMetalRodsTags.Items.ROD_WROUGHT_IRON).add(EOItems.ROD_WROUGHT_IRON.get());
@@ -857,6 +877,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.GEAR_STEEL.get())
                         .add(EOItems.GEAR_TACHYARITE.get())
                         .add(EOItems.GEAR_TIN.get())
+                        .add(EOItems.GEAR_TUNGSTEN.get())
                         .add(EOItems.GEAR_VOIDERITE.get());
 
                 //Metal Gears
@@ -895,6 +916,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EOMetalGearTags.Items.GEAR_OSMIUM).add(EOItems.GEAR_LEAD.get());
                 tag(EOMetalGearTags.Items.GEAR_STEEL).add(EOItems.GEAR_STEEL.get());
                 tag(EOMetalGearTags.Items.GEAR_TIN).add(EOItems.GEAR_TIN.get());
+                tag(EOMetalGearTags.Items.GEAR_TUNGSTEN).add(EOItems.GEAR_TUNGSTEN.get());
 
                 tag(EOGemGearTags.Items.GEAR_DIAMOND).add(EOItems.GEAR_DIAMOND.get());
                 tag(EOGemGearTags.Items.GEAR_NECROTICARITE).add(EOItems.GEAR_NECROTICARITE.get());
@@ -916,6 +938,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.CATALYRIUM_DUST.get())
                         .add(EOItems.CAST_IRON_DUST.get())
                         .add(EOItems.CAST_STEEL_DUST.get())
+                        .add(EOItems.CARBON_BLEND.get())
                         .add(EOItems.CINNABAR_DUST.get())
                         .add(EOItems.COAL_DUST.get())
                         .add(EOItems.COBALT_DUST.get())
@@ -926,7 +949,9 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.EMERALD_DUST.get())
                         .add(EOItems.ENDER_DUST.get())
                         .add(EOItems.ENDERIUM_DUST.get())
+                        .add(EOItems.ENDERGETIC_BLEND.get())
                         .add(EOItems.ENDSTONE_DUST.get())
+                        .add(EOItems.ENERGETIC_BLEND.get())
                         .add(EOItems.FLUORITE_DUST.get())
                         .add(EOItems.GALLIUM_DUST.get())
                         .add(EOItems.GOLD_DUST.get())
@@ -966,6 +991,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.TACHYARITE_DUST.get())
                         .add(EOItems.TIN_DUST.get())
                         .add(EOItems.TITANIUM_DUST.get())
+                        .add(EOItems.TUNGSTEN_DUST.get())
                         .add(EOItems.ULTIMATITANIUM_DUST.get())
                         .add(EOItems.URANINITE_DUST.get())
                         .add(EOItems.URANIUM_DUST.get())
@@ -1012,6 +1038,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.STEEL_DUST.get())
                         .add(EOItems.TIN_DUST.get())
                         .add(EOItems.TITANIUM_DUST.get())
+                        .add(EOItems.TUNGSTEN_DUST.get())
                         .add(EOItems.ULTIMATITANIUM_DUST.get())
                         .add(EOItems.URANINITE_DUST.get())
                         .add(EOItems.URANIUM_DUST.get())
@@ -1083,6 +1110,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EOMetalDustsTags.Items.DUST_STEEL).add(EOItems.STEEL_DUST.get());
                 tag(EOMetalDustsTags.Items.DUST_TIN).add(EOItems.TIN_DUST.get());
                 tag(EOMetalDustsTags.Items.DUST_TITANIUM).add(EOItems.TITANIUM_DUST.get());
+                tag(EOMetalDustsTags.Items.DUST_TUNGSTEN).add(EOItems.TUNGSTEN_DUST.get());
                 tag(EOMetalDustsTags.Items.DUST_ULTIMATITANIUM).add(EOItems.ULTIMATITANIUM_DUST.get());
                 tag(EOMetalDustsTags.Items.DUST_URANINITE).add(EOItems.URANINITE_DUST.get());
                 tag(EOMetalDustsTags.Items.DUST_URANIUM).add(EOItems.URANIUM_DUST.get());
@@ -1117,6 +1145,9 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EOMiscDustsTags.Items.DUST_ENDER).add(EOItems.ENDER_DUST.get());
                 tag(EOMiscDustsTags.Items.DUST_NETHER_STAR).add(EOItems.NETHER_STAR_DUST.get());
                 tag(EOMiscDustsTags.Items.DUST_SCULK).add(EOItems.SCULK_DUST.get());
+                tag(EOMiscDustsTags.Items.CARBON_BLEND).add(EOItems.CARBON_BLEND.get());
+                tag(EOMiscDustsTags.Items.ENERGETIC_BLEND).add(EOItems.ENERGETIC_BLEND.get());
+                tag(EOMiscDustsTags.Items.ENDERGETIC_BLEND).add(EOItems.ENDERGETIC_BLEND.get());
 
                 //Gems
                 tag(Tags.Items.GEMS)
@@ -1197,6 +1228,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EOBlocks.DEEPSLATE_SILVER_ORE_BLOCK.asItem());
                 tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK.asItem());
                 tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK.asItem());
+                tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EOBlocks.TUNGSTEN_ORE_BLOCK.asItem());
                 tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK.asItem());
                 tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EOBlocks.DEEPSLATE_URANIUM_ORE_BLOCK.asItem());
                 tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE).add(EOBlocks.DEEPSLATE_ZINC_ORE_BLOCK.asItem());
@@ -1221,6 +1253,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                         .add(EOItems.RAW_SILVER.get())
                         .add(EOItems.SULFUR.get())
                         .add(EOItems.RAW_TIN.get())
+                        .add(EOItems.RAW_TUNGSTEN.get())
                         .add(EOItems.RAW_ULTIMATITANIUM.get())
                         .add(EOItems.RAW_URANINITE.get())
                         .add(EOItems.RAW_URANIUM.get())
@@ -1242,6 +1275,7 @@ public class EOItemTagProvider extends ItemTagsProvider
                 tag(EORawMaterialTags.RAW_SILVER).add(EOItems.RAW_SILVER.get());
                 tag(EORawMaterialTags.SULFUR).add(EOItems.SULFUR.get());
                 tag(EORawMaterialTags.RAW_TIN).add(EOItems.RAW_TIN.get());
+                tag(EORawMaterialTags.RAW_TUNGSTEN).add(EOItems.RAW_TUNGSTEN.get());
                 tag(EORawMaterialTags.RAW_ULTIMATITANIUM).add(EOItems.RAW_ULTIMATITANIUM.get());
                 tag(EORawMaterialTags.RAW_URANINITE).add(EOItems.RAW_URANINITE.get());
                 tag(EORawMaterialTags.RAW_URANIUM).add(EOItems.RAW_URANIUM.get());

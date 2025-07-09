@@ -35,6 +35,7 @@ public class EOPulverizerOreBlockFormEntries
         registerOreBlocksToRawRecipes(map, "silver", EOOreBlockItemTags.Items.ITEM_SILVER_ORE_OW, EOItems.RAW_SILVER);
         registerOreBlocksToRawRecipes(map, "sulfur", EOOreBlockItemTags.Items.ITEM_SULFUR_ORE_OW, EOItems.SULFUR);
         registerOreBlocksToRawRecipes(map, "tin", EOOreBlockItemTags.Items.ITEM_TIN_ORE_OW, EOItems.RAW_TIN);
+        registerOreBlocksToRawRecipes(map, "tungsten", EOOreBlockItemTags.Items.ITEM_TUNGSTEN_ORE_OW, EOItems.RAW_TUNGSTEN);
         registerOreBlocksToRawRecipes(map, "uraninite", EOOreBlockItemTags.Items.ITEM_URANINITE_ORE_OW, EOItems.RAW_URANINITE);
         registerOreBlocksToRawRecipes(map, "uranium", EOOreBlockItemTags.Items.ITEM_URANIUM_ORE_OW, EOItems.RAW_URANIUM);
         registerOreBlocksToRawRecipes(map, "zinc", EOOreBlockItemTags.Items.ITEM_ZINC_ORE_OW, EOItems.RAW_ZINC);

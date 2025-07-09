@@ -78,7 +78,7 @@ public class EODustDupeEntries extends RecipeProvider implements IConditionBuild
         generateHammerRecipes(recipeOutput, "steel_ingot", EOItems.STEEL_INGOT.get(), EOItems.STEEL_DUST.get());
         generateHammerRecipes(recipeOutput, "tin_ingot", EOItems.TIN_INGOT.get(), EOItems.TIN_DUST.get());
         generateHammerRecipes(recipeOutput, "titanium_ingot", EOItems.TITANIUM_INGOT.get(), EOItems.TITANIUM_DUST.get());
-        //generateHammerRecipes(recipeOutput, "tungsten_ingot", EOItems.TUNGSTEN_INGOT.get(), EOItems.TUNGSTEN_DUST.get());
+        generateHammerRecipes(recipeOutput, "tungsten_ingot", EOItems.TUNGSTEN_INGOT.get(), EOItems.TUNGSTEN_DUST.get());
         generateHammerRecipes(recipeOutput, "ultimatitanium_ingot", EOItems.ULTIMATITANIUM_INGOT.get(), EOItems.ULTIMATITANIUM_DUST.get());
         generateHammerRecipes(recipeOutput, "uraninite_ingot", EOItems.URANINITE_INGOT.get(), EOItems.URANINITE_DUST.get());
         generateHammerRecipes(recipeOutput, "uranium_ingot", EOItems.URANIUM_INGOT.get(), EOItems.URANIUM_DUST.get());

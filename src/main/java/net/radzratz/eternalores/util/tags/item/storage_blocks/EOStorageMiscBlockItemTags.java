@@ -5,14 +5,17 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
-public class EOStorageMiscBlockItemTags {
-    public static class Items {
-
+public class EOStorageMiscBlockItemTags
+{
+    public static class Items
+    {
         //Nether Star
         public static final TagKey<Item> NETHER_STAR_BLOCK_ST_ITEM = createMiscStorageBlockItemTags("storage_blocks/nether_star");
 
+        public static final TagKey<Item> SILICON_BLOCK_ST_ITEM = createMiscStorageBlockItemTags("storage_blocks/silicon");
 
-        private static TagKey<Item> createMiscStorageBlockItemTags(String path) {
+        private static TagKey<Item> createMiscStorageBlockItemTags(String path)
+        {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }
     }

@@ -72,6 +72,8 @@ public class EOIngotTags
         public static final TagKey<Item> ROSE_GOLD_INGOT = createIngotTags("ingots/rose_gold");
         //Signalum
         public static final TagKey<Item> SIGNALUM_INGOT = createIngotTags("ingots/signalum");
+        //Silicon
+        public static final TagKey<Item> SILICON_INGOT = createIngotTags("ingots/silicon");
         //Silver
         public static final TagKey<Item> SILVER_INGOT = createIngotTags("ingots/silver");
         //Shadowsteel
@@ -82,6 +84,8 @@ public class EOIngotTags
         public static final TagKey<Item> TIN_INGOT = createIngotTags("ingots/tin");
         //Titanium
         public static final TagKey<Item> TITANIUM_INGOT = createIngotTags("ingots/titanium");
+        //Tungsten
+        public static final TagKey<Item> TUNGSTEN_INGOT = createIngotTags("ingots/tungsten");
         //Ultimatitanium
         public static final TagKey<Item> ULTIMATITANIUM_INGOT = createIngotTags("ingots/ultimatitanium");
         //Uraninite

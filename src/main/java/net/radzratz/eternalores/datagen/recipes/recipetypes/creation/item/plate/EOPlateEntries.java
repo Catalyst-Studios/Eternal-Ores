@@ -63,7 +63,7 @@ public class EOPlateEntries extends RecipeProvider implements IConditionBuilder
         generateIngotPlateRecipe(recipeOutput, "steel", EOItems.PLATE_STEEL.get());
         generateIngotPlateRecipe(recipeOutput, "tin", EOItems.PLATE_TIN.get());
         generateIngotPlateRecipe(recipeOutput, "titanium", EOItems.PLATE_TITANIUM.get());
-        //generateIngotPlateRecipe(recipeOutput, "tungsten", EOItems.PLATE_TUNGSTEN.get());
+        generateIngotPlateRecipe(recipeOutput, "tungsten", EOItems.PLATE_TUNGSTEN.get());
         generateIngotPlateRecipe(recipeOutput, "ultimatitanium", EOItems.PLATE_ULTIMATITANIUM.get());
         generateIngotPlateRecipe(recipeOutput, "uranium", EOItems.PLATE_URANIUM.get());
         generateIngotPlateRecipe(recipeOutput, "wrought_iron", EOItems.PLATE_WROUGHT_IRON.get());

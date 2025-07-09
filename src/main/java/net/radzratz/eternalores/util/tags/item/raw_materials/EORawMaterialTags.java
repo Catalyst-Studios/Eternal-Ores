@@ -37,6 +37,8 @@ public class EORawMaterialTags
     public static final TagKey<Item> SULFUR = createRawMaterialsTag("raw_materials/sulfur");
     //Tin
     public static final TagKey<Item> RAW_TIN = createRawMaterialsTag("raw_materials/tin");
+    //Tungsten
+    public static final TagKey<Item> RAW_TUNGSTEN = createRawMaterialsTag("raw_materials/tungsten");
     //Ultimatitanium
     public static final TagKey<Item> RAW_ULTIMATITANIUM = createRawMaterialsTag("raw_materials/ultimatitanium");
     //Uraninite

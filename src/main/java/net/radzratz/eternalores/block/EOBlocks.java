@@ -104,6 +104,8 @@ public class EOBlocks
     public static final DeferredBlock<Block> NECROTICARITE_ORE_BLOCK = registerOreBlock("necroticarite_ore_block", 4f, SoundType.NETHERRACK);
     //Ardite
     public static final DeferredBlock<Block> ARDITE_ORE_BLOCK = registerOreBlock("ardite_ore_block", 7f, SoundType.NETHERRACK);
+    //Tungsten
+    public static final DeferredBlock<Block> TUNGSTEN_ORE_BLOCK = registerOreBlock("tungsten_ore_block", 4f, SoundType.DEEPSLATE);
 
     //RAW ORE BLOCKS
     private static DeferredBlock<Block> registerRawOreBlock(String name, float hardness, SoundType sound)
@@ -130,6 +132,7 @@ public class EOBlocks
     public static final DeferredBlock<Block> RAW_IRIDIUM_BLOCK = registerRawOreBlock("raw_iridium_block", 4f, SoundType.STONE);
     public static final DeferredBlock<Block> RAW_URANINITE_BLOCK = registerRawOreBlock("raw_uraninite_block", 3f, SoundType.STONE);
     public static final DeferredBlock<Block> RAW_CATALYRIUM_BLOCK = registerRawOreBlock("raw_catalyrium_block", 7f, SoundType.STONE);
+    public static final DeferredBlock<Block> RAW_TUNGSTEN_BLOCK = registerRawOreBlock("raw_tungsten_block", 4f, SoundType.STONE);
 
     //METAL BLOCK
     private static DeferredBlock<Block> registerMetalBlock(String name, float hardness, SoundType sound)
@@ -177,6 +180,8 @@ public class EOBlocks
     public static final DeferredBlock<Block> SHADOWSTEEL_BLOCK = registerMetalBlock("shadowsteel_block", 4f, SoundType.NETHERITE_BLOCK);
     public static final DeferredBlock<Block> PIG_IRON_BLOCK = registerMetalBlock("pig_iron_block", 4f, SoundType.METAL);
     public static final DeferredBlock<Block> CATALYRIUM_BLOCK = registerMetalBlock("catalyrium_block", 7f, SoundType.METAL);
+    public static final DeferredBlock<Block> TUNGSTEN_BLOCK = registerMetalBlock("tungsten_block", 4f, SoundType.METAL);
+    public static final DeferredBlock<Block> SILICON_BLOCK = registerMetalBlock("silicon_block", 2f, SoundType.STONE);
 
     //Gem Blocks
     private static DeferredBlock<Block> registerGemBlock(String name, float hardness, SoundType sound)

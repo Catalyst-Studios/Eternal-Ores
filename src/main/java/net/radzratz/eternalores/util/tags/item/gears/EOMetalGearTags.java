@@ -62,6 +62,8 @@ public class EOMetalGearTags
         public static final TagKey<Item> GEAR_TIN = createMetalGearTag("gears/tin");
         //Titanium
         public static final TagKey<Item> GEAR_TITANIUM = createMetalGearTag("gears/titanium");
+        //Tungsten
+        public static final TagKey<Item> GEAR_TUNGSTEN = createMetalGearTag("gears/tungsten");
         //Ultimatitanium
         public static final TagKey<Item> GEAR_ULTIMATITANIUM = createMetalGearTag("gears/ultimatitanium");
         //Uranium

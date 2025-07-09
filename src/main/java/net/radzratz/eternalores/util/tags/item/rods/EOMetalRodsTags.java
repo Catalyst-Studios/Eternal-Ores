@@ -78,6 +78,8 @@ public class EOMetalRodsTags
         public static final TagKey<Item> ROD_TIN = createMetalRodTag("rods/tin");
         //Titanium
         public static final TagKey<Item> ROD_TITANIUM = createMetalRodTag("rods/titanium");
+        //Tungsten
+        public static final TagKey<Item> ROD_TUNGSTEN = createMetalRodTag("rods/tungsten");
         //Ultimatitanium
         public static final TagKey<Item> ROD_ULTIMATITANIUM = createMetalRodTag("rods/ultimatitanium");
         //Uranium

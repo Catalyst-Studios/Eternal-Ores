@@ -97,6 +97,8 @@ public class EOPlates
         public static final TagKey<Item> TIN_PLATE = createPlateTag("plates/tin");
         //Titanium
         public static final TagKey<Item> TITANIUM_PLATE = createPlateTag("plates/titanium");
+        //Tungsten
+        public static final TagKey<Item> TUNGSTEN_PLATE = createPlateTag("plates/tungsten");
         //Ultimatitanium
         public static final TagKey<Item> ULTIMATITANIUM_PLATE = createPlateTag("plates/ultimatitanium");
         //Uranium

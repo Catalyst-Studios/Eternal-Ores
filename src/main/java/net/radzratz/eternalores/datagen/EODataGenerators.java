@@ -34,6 +34,7 @@ import net.radzratz.eternalores.datagen.tags.EOItemTagProvider;
 import net.radzratz.eternalores.datagen.worldgen.EOWorldGenProvider;
 import net.radzratz.eternalores.util.compat.mekanism.datagen.EOMekRecipeProvider;
 import net.radzratz.eternalores.util.compat.mekanism.datagen.EOMekanismTagProvider;
+import net.radzratz.eternalores.util.compat.oritech.datagen.EOritechItemTagProvider;
 import net.radzratz.eternalores.util.compat.oritech.datagen.EOritechRecipeProvider;
 
 import java.util.Collections;
@@ -95,6 +96,7 @@ public class EODataGenerators
 
         /// Oritech Compat
         provider.addSubProvider(event.includeServer(), new EOritechRecipeProvider(packOutput, lookupProvider));
+        provider.addSubProvider(event.includeServer(), new EOritechItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
         generator.addProvider(true, provider);
     }

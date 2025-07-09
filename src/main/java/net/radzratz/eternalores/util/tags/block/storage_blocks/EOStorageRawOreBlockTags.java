@@ -35,6 +35,8 @@ public class EOStorageRawOreBlockTags
         public static final TagKey<Block> SULFUR_ST = createRawOreBlockTags("storage_blocks/sulfur");
         //Tin
         public static final TagKey<Block> RAW_TIN_ST = createRawOreBlockTags("storage_blocks/raw_tin");
+        //Tungsten
+        public static final TagKey<Block> RAW_TUNGSTEN_ST = createRawOreBlockTags("storage_blocks/raw_tungsten");
         //Uraninite
         public static final TagKey<Block> RAW_URANINITE_ST = createRawOreBlockTags("storage_blocks/raw_uraninite");
         //Uranium

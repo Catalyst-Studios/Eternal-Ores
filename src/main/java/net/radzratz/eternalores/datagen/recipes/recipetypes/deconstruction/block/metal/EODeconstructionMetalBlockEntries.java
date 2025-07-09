@@ -57,7 +57,7 @@ public class EODeconstructionMetalBlockEntries extends RecipeProvider implements
         generateBlockToIngotMaterialRecipe(recipeOutput, "steel", EOBlocks.STEEL_BLOCK.asItem(), EOItems.STEEL_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "tin", EOBlocks.TIN_BLOCK.asItem(), EOItems.TIN_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "titanium", EOBlocks.TITANIUM_BLOCK.asItem(), EOItems.TITANIUM_INGOT.get());
-        //generateBlockToIngotMaterialRecipe(recipeOutput, "tungsten", EOBlocks.TUNGSTEN_BLOCK.asItem(), EOItems.TUNGSTEN_INGOT.get());
+        generateBlockToIngotMaterialRecipe(recipeOutput, "tungsten", EOBlocks.TUNGSTEN_BLOCK.asItem(), EOItems.TUNGSTEN_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "ultimatitanium", EOBlocks.ULTIMATITANIUM_BLOCK.asItem(), EOItems.ULTIMATITANIUM_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "uraninite", EOBlocks.URANINITE_BLOCK.asItem(), EOItems.URANINITE_INGOT.get());
         generateBlockToIngotMaterialRecipe(recipeOutput, "uranium", EOBlocks.URANIUM_BLOCK.asItem(), EOItems.URANIUM_INGOT.get());

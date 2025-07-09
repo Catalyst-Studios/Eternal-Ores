@@ -78,6 +78,8 @@ public class EONuggetsTags
         public static final TagKey<Item> NUGGET_TIN = createNuggetsTags("nuggets/tin");
         //Titanium
         public static final TagKey<Item> NUGGET_TITANIUM = createNuggetsTags("nuggets/titanium");
+        //Tungsten
+        public static final TagKey<Item> NUGGET_TUNGSTEN = createNuggetsTags("nuggets/tungsten");
         //Ultimatitanium
         public static final TagKey<Item> NUGGET_ULTIMATITANIUM = createNuggetsTags("nuggets/ultimatitanium");
         //Uraninite

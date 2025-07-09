@@ -72,6 +72,8 @@ public class EOStorageMetalBlockItemTags
         public static final TagKey<Item> TIN_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/tin");
         //Titanium
         public static final TagKey<Item> TITANIUM_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/titanium");
+        //Tungsten
+        public static final TagKey<Item> TUNGSTEN_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/tungsten");
         //Uraninite
         public static final TagKey<Item> URANINITE_BLOCK_ST_ITEM = createMetalStorageBlockItemTags("storage_blocks/uraninite");
         //Uranium

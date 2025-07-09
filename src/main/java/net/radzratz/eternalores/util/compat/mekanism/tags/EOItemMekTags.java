@@ -40,7 +40,7 @@ public class EOItemMekTags
         public static final TagKey<Item> CLUMP_URANINITE_C = createClumpTag("clumps/uraninite");
         public static final TagKey<Item> CLUMP_ZINC_C = createClumpTag("clumps/zinc");
 
-        private static TagKey<Item> createClumpTag(String path)
+        public static TagKey<Item> createClumpTag(String path)
         {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
         }

@@ -5,6 +5,7 @@
     "eternalores:tin_ore_block",
     "eternalores:deepslate_tin_ore_block",
     "eternalores:sulfur_ore_block",
-    "eternalores:deepslate_sulfur_ore_block"
+    "eternalores:deepslate_sulfur_ore_block",
+    "eternalores:silicon_block"
   ]
 }

@@ -80,6 +80,8 @@ public class EOMetalDustsTags
         public static final TagKey<Item> DUST_TIN = createMetalDustTag("dusts/tin");
         //Titanium
         public static final TagKey<Item> DUST_TITANIUM = createMetalDustTag("dusts/titanium");
+        //Tungsten
+        public static final TagKey<Item> DUST_TUNGSTEN = createMetalDustTag("dusts/tungsten");
         //Ultimatitanium
         public static final TagKey<Item> DUST_ULTIMATITANIUM = createMetalDustTag("dusts/ultimatitanium");
         //Uraninite

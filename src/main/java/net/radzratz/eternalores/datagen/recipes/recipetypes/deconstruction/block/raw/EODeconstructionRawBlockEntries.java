@@ -38,7 +38,7 @@ public class EODeconstructionRawBlockEntries extends RecipeProvider implements I
         generateBlockToRawMaterialRecipe(recipeOutput, "silver", EOBlocks.RAW_SILVER_BLOCK.asItem(), EOItems.RAW_SILVER.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "sulfur", EOBlocks.SULFUR_BLOCK.asItem(), EOItems.SULFUR.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "tin", EOBlocks.RAW_TIN_BLOCK.asItem(), EOItems.RAW_TIN.get());
-        //generateBlockToRawMaterialRecipe(recipeOutput, "tungsten", EOBlocks.RAW_TUNGSTEN_BLOCK.asItem(), EOItems.RAW_TUNGSTEN.get());
+        generateBlockToRawMaterialRecipe(recipeOutput, "tungsten", EOBlocks.RAW_TUNGSTEN_BLOCK.asItem(), EOItems.RAW_TUNGSTEN.get());
         //generateBlockToRawMaterialRecipe(recipeOutput, "ultimatitanium", EOBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem(), EOItems.RAW_ULTIMATITANIUM.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "uraninite", EOBlocks.RAW_URANINITE_BLOCK.asItem(), EOItems.RAW_URANINITE.get());
         generateBlockToRawMaterialRecipe(recipeOutput, "uranium", EOBlocks.RAW_URANIUM_BLOCK.asItem(), EOItems.RAW_URANIUM.get());

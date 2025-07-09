@@ -139,6 +139,8 @@ public class EOBlockStateProvider extends BlockStateProvider
         blockWithItem(EOBlocks.NETHERSTEEL_BLOCK);
         blockWithItem(EOBlocks.SHADOWSTEEL_BLOCK);
         blockWithItem(EOBlocks.PIG_IRON_BLOCK);
+        blockWithItem(EOBlocks.TUNGSTEN_BLOCK);
+        blockWithItem(EOBlocks.SILICON_BLOCK);
 
         //GEM BLOCKS
         blockWithItem(EOBlocks.SAPPHIRE_BLOCK);
@@ -173,6 +175,7 @@ public class EOBlockStateProvider extends BlockStateProvider
         blockWithItem(EOBlocks.RAW_GALLIUM_BLOCK);
         blockWithItem(EOBlocks.RAW_IRIDIUM_BLOCK);
         blockWithItem(EOBlocks.RAW_URANINITE_BLOCK);
+        blockWithItem(EOBlocks.RAW_TUNGSTEN_BLOCK);
 
         //ORE BLOCKS
         //ALUMINUM
@@ -220,6 +223,8 @@ public class EOBlockStateProvider extends BlockStateProvider
         //URANINITE
         blockWithItem(EOBlocks.URANINITE_ORE_BLOCK);
         blockWithItem(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK);
+        //TUNGSTEN
+        blockWithItem(EOBlocks.TUNGSTEN_ORE_BLOCK);
 
         //GEMS
         //FLUORITE

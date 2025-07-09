@@ -5,6 +5,7 @@ import net.minecraft.world.item.Item;
 import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerDustConversionType;
 import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerOreBlockToMaterialType;
 import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerOreFormToDustType;
+import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOPulverizerRawOreByproductType;
 
 import java.util.Map;
 import java.util.function.Supplier;
@@ -44,5 +45,12 @@ public class EOPulverizerInputRegistry
                                                    TagKey<Item> oreBlockTag, Supplier<Item> output)
     {
         map.put(name, new EOPulverizerOreBlockToMaterialType.InputsOreBlock(oreBlockTag, output.get()));
+    }
+
+    /// Dust Byproduct
+    public static void registerRawByproductRecipes(Map<String, EOPulverizerRawOreByproductType.InputsByproduct> map, String name,
+                                                   TagKey<Item> rawOreTag, Supplier<Item> outputDust, Supplier<Item> outputByproduct)
+    {
+        map.put(name, new EOPulverizerRawOreByproductType.InputsByproduct(rawOreTag, outputDust.get(), outputByproduct.get()));
     }
 }

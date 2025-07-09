@@ -38,7 +38,7 @@ public class EORawBlockEntries extends RecipeProvider implements IConditionBuild
         generateRawMaterialToBlockRecipe(recipeOutput, "silver", EOItems.RAW_SILVER.get(), EOBlocks.RAW_SILVER_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "sulfur", EOItems.SULFUR.get(), EOBlocks.SULFUR_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "tin", EOItems.RAW_TIN.get(), EOBlocks.RAW_TIN_BLOCK.asItem());
-        //generateRawMaterialToBlockRecipe(recipeOutput, "tungsten", EOItems.RAW_TUNGSTEN.get(), EOBlocks.RAW_TUNGSTEN_BLOCK.asItem());
+        generateRawMaterialToBlockRecipe(recipeOutput, "tungsten", EOItems.RAW_TUNGSTEN.get(), EOBlocks.RAW_TUNGSTEN_BLOCK.asItem());
         //generateRawMaterialToBlockRecipe(recipeOutput, "ultimatitanium", EOItems.RAW_ULTIMATITANIUM.get(), EOBlocks.RAW_ULTIMATITANIUM_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "uraninite", EOItems.RAW_URANINITE.get(), EOBlocks.RAW_URANINITE_BLOCK.asItem());
         generateRawMaterialToBlockRecipe(recipeOutput, "uranium", EOItems.RAW_URANIUM.get(), EOBlocks.RAW_URANIUM_BLOCK.asItem());

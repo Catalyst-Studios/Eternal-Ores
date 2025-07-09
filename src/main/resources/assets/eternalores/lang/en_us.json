@@ -51,6 +51,7 @@
   "item.eternalores.shadowsteel_ingot": "Shadowsteel Ingot",
   "item.eternalores.pig_iron_ingot": "Pig Iron Ingot",
   "item.eternalores.catalyrium_ingot": "Catalyrium Ingot",
+  "item.eternalores.tungsten_ingot": "Tungsten Ingot",
 
   "item.eternalores.silicon": "Silicon",
 
@@ -94,6 +95,7 @@
   "item.eternalores.shadowsteel_nugget": "Shadowsteel Nugget",
   "item.eternalores.pig_iron_nugget": "Pig Iron Nugget",
   "item.eternalores.catalyrium_nugget": "Catalyrium Nugget",
+  "item.eternalores.tungsten_nugget": "Tungsten Nugget",
 
   "item.eternalores.rod_aluminum": "Aluminum Rod",
   "item.eternalores.rod_ardite": "Arite Rod",
@@ -140,6 +142,7 @@
   "item.eternalores.rod_voiderite": "Voiderite Rod",
   "item.eternalores.rod_quantiquarite": "Quantiquarite Rod",
   "item.eternalores.rod_tachyarite": "Tachyarite Rod",
+  "item.eternalores.rod_tungsten": "Tungsten Rod",
 
   "item.eternalores.plate_aluminum": "Aluminum Plate",
   "item.eternalores.plate_ardite": "Ardite Plate",
@@ -186,6 +189,7 @@
   "item.eternalores.plate_tachyarite": "Tachyarite Plate",
   "item.eternalores.plate_quantiquarite": "Quantiquarite Plate",
   "item.eternalores.plate_voiderite": "Voiderite Plate",
+  "item.eternalores.plate_tungsten": "Tungsten Plate",
 
   "item.eternalores.ultimate_gear": "Ultimate Gear",
   "item.eternalores.gear_iron": "Iron Gear",
@@ -205,6 +209,7 @@
   "item.eternalores.gear_quantiquarite": "Quantiquarite Gear",
   "item.eternalores.gear_voiderite": "Voiderite Gear",
   "item.eternalores.gear_ardite": "Ardite Gear",
+  "item.eternalores.gear_tungsten": "Tungsten Gear",
 
   "item.eternalores.raw_uranium": "Raw Uranium",
   "item.eternalores.raw_osmium": "Raw Osmium",
@@ -223,6 +228,7 @@
   "item.eternalores.raw_uraninite": "Raw Uraninite",
   "item.eternalores.raw_catalyrium": "Raw Catalyrium",
   "item.eternalores.raw_ardite": "Raw Ardite",
+  "item.eternalores.raw_tungsten": "Raw Tungsten",
 
   "item.eternalores.aluminum_dust": "Aluminum Dust",
   "item.eternalores.cobalt_dust": "Cobalt Dust",
@@ -292,6 +298,7 @@
   "item.eternalores.quantiquarite_dust": "Quantiquarite Dust",
   "item.eternalores.voiderite_dust": "Voiderite Dust",
   "item.eternalores.ardite_dust": "Ardite Dust",
+  "item.eternalores.tungsten_dust": "Tungsten Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Gem",
   "item.eternalores.gem_onyx": "Onyx",
@@ -322,6 +329,7 @@
   "item.eternalores.dirty_uraninite_dust": "Dirty Uraninite Dust",
   "item.eternalores.dirty_zinc_dust": "Dirty Zinc Dust",
   "item.eternalores.dirty_ardite_dust": "Dirty Ardite Dust",
+  "item.eternalores.dirty_tungsten_dust": "Dirty Tungsten Dust",
 
   "item.eternalores.clump_aluminum": "Aluminum Clump",
   "item.eternalores.clump_catalyrium": "Catalyrium Clump",
@@ -334,6 +342,22 @@
   "item.eternalores.clump_uraninite": "Uraninite Clump",
   "item.eternalores.clump_zinc": "Zinc Clump",
   "item.eternalores.clump_ardite": "Ardite Clump",
+  "item.eternalores.clump_tungsten": "Tungsten Clump",
+
+  "item.eternalores.o_aluminum_clump": "Aluminum Clump",
+  "item.eternalores.o_ardite_clump": "Ardite Clump",
+  "item.eternalores.o_catalyrium_clump": "Catalyrium Clump",
+  "item.eternalores.o_cobalt_clump": "Cobalt Clump",
+  "item.eternalores.o_gallium_clump": "Gallium Clump",
+  "item.eternalores.o_iridium_clump": "Iridium Clump",
+  "item.eternalores.o_lead_clump": "Lead Clump",
+  "item.eternalores.o_osmium_clump": "Osmium Clump",
+  "item.eternalores.o_silver_clump": "Silver Clump",
+  "item.eternalores.o_tin_clump": "Tin Clump",
+  "item.eternalores.o_tungsten_clump": "Tungsten Clump",
+  "item.eternalores.o_uraninite_clump": "Uraninite Clump",
+  "item.eternalores.o_uranium_clump": "Uranium Clump",
+  "item.eternalores.o_zinc_clump": "Zinc Clump",
 
   "item.eternalores.shard_aluminum": "Aluminum Shard",
   "item.eternalores.shard_catalyrium": "Catalyrium Shard",
@@ -346,6 +370,7 @@
   "item.eternalores.shard_uraninite": "Uraninite Shard",
   "item.eternalores.shard_zinc": "Zinc Shard",
   "item.eternalores.shard_ardite": "Ardite Shard",
+  "item.eternalores.shard_tungsten": "Tungsten Shard",
 
   "item.eternalores.crystal_aluminum": "Aluminum Crystal",
   "item.eternalores.crystal_catalyrium": "Catalyrium Crystal",
@@ -358,6 +383,52 @@
   "item.eternalores.crystal_uraninite": "Uraninite Crystal",
   "item.eternalores.crystal_zinc": "Zinc Crystal",
   "item.eternalores.crystal_ardite": "Ardite Crystal",
+  "item.eternalores.crystal_tungsten": "Tungsten Crystal",
+
+  "item.eternalores.o_aluminum_small_clump": "Small Aluminum Clump",
+  "item.eternalores.o_ardite_small_clump": "Small Ardite Clump",
+  "item.eternalores.o_catalyrium_small_clump": "Small Catalyrium Clump",
+  "item.eternalores.o_cobalt_small_clump": "Small Cobalt Clump",
+  "item.eternalores.o_gallium_small_clump": "Small Gallium Clump",
+  "item.eternalores.o_iridium_small_clump": "Small Iridium Clump",
+  "item.eternalores.o_lead_small_clump": "Small Lead Clump",
+  "item.eternalores.o_osmium_small_clump": "Small Osmium Clump",
+  "item.eternalores.o_silver_small_clump": "Small Silver Clump",
+  "item.eternalores.o_tin_small_clump": "Small Tin Clump",
+  "item.eternalores.o_tungsten_small_clump": "Small Tungsten Clump",
+  "item.eternalores.o_uraninite_small_clump": "Small Uraninite Clump",
+  "item.eternalores.o_uranium_small_clump": "Small Uranium Clump",
+  "item.eternalores.o_zinc_small_clump": "Small Zinc Clump",
+
+  "item.eternalores.o_aluminum_small_dust": "Small Aluminum Dust",
+  "item.eternalores.o_ardite_small_dust": "Small Ardite Dust",
+  "item.eternalores.o_catalyrium_small_dust": "Small Catalyrium Dust",
+  "item.eternalores.o_cobalt_small_dust": "Small Cobalt Dust",
+  "item.eternalores.o_gallium_small_dust": "Small Gallium Dust",
+  "item.eternalores.o_iridium_small_dust": "Small Iridium Dust",
+  "item.eternalores.o_lead_small_dust": "Small Lead Dust",
+  "item.eternalores.o_osmium_small_dust": "Small Osmium Dust",
+  "item.eternalores.o_silver_small_dust": "Small Silver Dust",
+  "item.eternalores.o_tin_small_dust": "Small Tin Dust",
+  "item.eternalores.o_tungsten_small_dust": "Small Tungsten Dust",
+  "item.eternalores.o_uraninite_small_dust": "Small Uraninite Dust",
+  "item.eternalores.o_uranium_small_dust": "Small Uranium Dust",
+  "item.eternalores.o_zinc_small_dust": "Small Zinc Dust",
+
+  "item.eternalores.o_aluminum_gem": "Aluminum Gem",
+  "item.eternalores.o_ardite_gem": "Ardite Gem",
+  "item.eternalores.o_catalyrium_gem": "Catalyrium Gem",
+  "item.eternalores.o_cobalt_gem": "Cobalt Gem",
+  "item.eternalores.o_gallium_gem": "Gallium Gem",
+  "item.eternalores.o_iridium_gem": "Iridium Gem",
+  "item.eternalores.o_lead_gem": "Lead Gem",
+  "item.eternalores.o_osmium_gem": "Osmium Gem",
+  "item.eternalores.o_silver_gem": "Silver Gem",
+  "item.eternalores.o_tin_gem": "Tin Gem",
+  "item.eternalores.o_tungsten_gem": "Tungsten Gem",
+  "item.eternalores.o_uraninite_gem": "Uraninite Gem",
+  "item.eternalores.o_uranium_gem": "Uranium Gem",
+  "item.eternalores.o_zinc_gem": "Zinc Gem",
 
   "chemical.eternalores.clean_aluminum": "Clean Aluminum Slurry",
   "chemical.eternalores.clean_catalyrium": "Clean Catalyrium Slurry",
@@ -370,6 +441,7 @@
   "chemical.eternalores.clean_uraninite": "Clean Uraninite Slurry",
   "chemical.eternalores.clean_zinc": "Clean Zinc Slurry",
   "chemical.eternalores.clean_ardite": "Clean Ardite Slurry",
+  "chemical.eternalores.clean_tungsten": "Clean Tungsten Slurry",
 
   "chemical.eternalores.dirty_aluminum": "Dirty Aluminum Slurry",
   "chemical.eternalores.dirty_catalyrium": "Dirty catalyrium Slurry",
@@ -382,6 +454,7 @@
   "chemical.eternalores.dirty_uraninite": "Dirty Uraninite Slurry",
   "chemical.eternalores.dirty_zinc": "Dirty Zinc Slurry",
   "chemical.eternalores.dirty_ardite": "Dirty Ardite Slurry",
+  "chemical.eternalores.dirty_tungsten": "Dirty Tungsten Slurry",
 
   "block.eternalores.aluminum_ore_block": "Aluminum Ore",
   "block.eternalores.cobalt_ore_block": "Cobalt Ore",
@@ -432,6 +505,7 @@
   "block.eternalores.deepslate_peridot_ore_block": "Deepslate Peridot Ore",
   "block.eternalores.deepslate_iridium_ore_block": "Deepslate Iridium Ore",
   "block.eternalores.deepslate_uraninite_ore_block": "Deepslate Uraninite Ore",
+  "block.eternalores.tungsten_ore_block": "Tungsten Ore",
 
   "block.eternalores.obsidian_ore_block": "Obsidian Ore",
   "block.eternalores.necroticarite_ore_block": "Necroticarite Ore",
@@ -454,6 +528,7 @@
   "block.eternalores.raw_iridium_block": "Block of Raw Iridium",
   "block.eternalores.raw_uraninite_block": "Block of Raw Uraninite",
   "block.eternalores.raw_ardite_block": "Block of Raw Ardite",
+  "block.eternalores.raw_tungsten_block": "Block of Raw Tungsten",
 
   "block.eternalores.aluminum_block": "Block of Aluminum",
   "block.eternalores.catalyrium_block": "Block of Catalyrium",
@@ -503,6 +578,7 @@
   "block.eternalores.pig_iron_block": "Block of Pig Iron",
   "block.eternalores.necroticarite_block": "Block of Necroticarite",
   "block.eternalores.ardite_block": "Block of Ardite",
+  "block.eternalores.tungsten_block": "Block of Tungsten",
 
   "block.eternalores.nether_star_block": "Nether Star Block",
 
@@ -570,5 +646,20 @@
   "block.eternalores.compressed_gravel_8x": "Compressed Gravel Block 8x",
   "block.eternalores.compressed_gravel_9x": "Compressed Gravel Block 9x",
 
-  "creativetab.eternalores.eternal_ores": "Eternal Ores"
+  "creativetab.eternalores.stone_ores": "Eternal Stone Ores",
+  "creativetab.eternalores.slate_ores": "Eternal Slate Ores",
+  "creativetab.eternalores.nether_ores": "Eternal Nether Ores",
+  "creativetab.eternalores.raw_blocks": "Eternal Raw Ore Blocks",
+  "creativetab.eternalores.blocks": "Eternal Blocks",
+  "creativetab.eternalores.compressed": "Eternal Compressed Blocks",
+  "creativetab.eternalores.raw_ores": "Eternal Raw Ores",
+  "creativetab.eternalores.materials": "Eternal Materials",
+  "creativetab.eternalores.nuggets": "Eternal Nuggets",
+  "creativetab.eternalores.dusts": "Eternal Dusts",
+  "creativetab.eternalores.plates": "Eternal Plates",
+  "creativetab.eternalores.rods": "Eternal Rods",
+  "creativetab.eternalores.gears": "Eternal Gears",
+  "creativetab.eternalores.tools": "Eternal Tools",
+  "creativetab.eternalores.oritech": "Eternal Oritech Items",
+  "creativetab.eternalores.mekanism": "Eternal Mekanism Items"
 }

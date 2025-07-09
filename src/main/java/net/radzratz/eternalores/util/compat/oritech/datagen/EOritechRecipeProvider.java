@@ -8,6 +8,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.radzratz.eternalores.util.compat.oritech.recipe_types.foundry.EOFoundryRecipes.registerAllFoundryRecipes;
 import static net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.EOPulverizerRecipes.registerAllPulverizerRecipes;
 
 public class EOritechRecipeProvider extends RecipeProvider
@@ -20,5 +21,6 @@ public class EOritechRecipeProvider extends RecipeProvider
     public void buildRecipes(@NotNull RecipeOutput output)
     {
         registerAllPulverizerRecipes(output);
+        registerAllFoundryRecipes(output);
     }
 }

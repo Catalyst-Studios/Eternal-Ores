@@ -51,6 +51,8 @@ public class EOOreBlockItemTags
         public static final TagKey<Item> ITEM_SULFUR_ORE_OW = createOreBlockTags("ores/sulfur");
         //Tin
         public static final TagKey<Item> ITEM_TIN_ORE_OW = createOreBlockTags("ores/tin");
+        //Tungsten
+        public static final TagKey<Item> ITEM_TUNGSTEN_ORE_OW = createOreBlockTags("ores/tungsten");
         //Uraninite
         public static final TagKey<Item> ITEM_URANINITE_ORE_OW = createOreBlockTags("ores/uraninite");
         //Uranium

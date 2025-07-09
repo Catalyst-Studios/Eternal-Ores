@@ -66,10 +66,7 @@ public class EOFinder extends Item
                                 @NotNull List<Component> tooltipComponents,
                                 @NotNull TooltipFlag tooltipFlag)
     {
-        tooltipComponents.add(Component.literal(
-                                            """
-                                                 §7Yeets everything except ores and bedrock! Dev Tool Only.
-                                                 """));
+        tooltipComponents.add(Component.literal("§7Yeets everything except ores and bedrock! Dev Tool Only."));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 
