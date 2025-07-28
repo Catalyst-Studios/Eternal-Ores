@@ -8,8 +8,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.radzratz.eternalores.util.compat.oritech.recipe_types.atomic_forge.EOAtomicForgeRecipes.registerAllAtomicForgeRecipes;
 import static net.radzratz.eternalores.util.compat.oritech.recipe_types.foundry.EOFoundryRecipes.registerAllFoundryRecipes;
-import static net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.EOPulverizerRecipes.registerAllPulverizerRecipes;
+import static net.radzratz.eternalores.util.compat.oritech.recipe_types.laser.EOLaserRecipes.registerAllLaserRecipes;
+import static net.radzratz.eternalores.util.compat.oritech.recipe_types.pulverizer.EOPulverizerRecipeGenerators.registerAllPulverizerRecipes;
 
 public class EOritechRecipeProvider extends RecipeProvider
 {
@@ -22,5 +24,7 @@ public class EOritechRecipeProvider extends RecipeProvider
     {
         registerAllPulverizerRecipes(output);
         registerAllFoundryRecipes(output);
+        registerAllLaserRecipes(output);
+        registerAllAtomicForgeRecipes(output);
     }
 }

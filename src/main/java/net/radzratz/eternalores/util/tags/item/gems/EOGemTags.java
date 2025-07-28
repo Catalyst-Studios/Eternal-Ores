@@ -11,33 +11,33 @@ public class EOGemTags
     {
 
         //Amber
-        public static final TagKey<Item> GEM_AMBER = createGemTags("gems/amber");
+        public static final TagKey<Item> TAG_GEM_AMBER = createGemTags("gems/amber");
         //Apatite
-        public static final TagKey<Item> GEM_APATITE = createGemTags("gems/apatite");
+        public static final TagKey<Item> TAG_GEM_APATITE = createGemTags("gems/apatite");
         //Cinnabar
-        public static final TagKey<Item> GEM_CINNABAR = createGemTags("gems/cinnabar");
+        public static final TagKey<Item> TAG_GEM_CINNABAR = createGemTags("gems/cinnabar");
         //Fluorite
-        public static final TagKey<Item> GEM_FLUORITE = createGemTags("gems/fluorite");
+        public static final TagKey<Item> TAG_GEM_FLUORITE = createGemTags("gems/fluorite");
         //Necroticarite
-        public static final TagKey<Item> GEM_NECROTICARITE = createGemTags("gems/necroticarite");
+        public static final TagKey<Item> TAG_GEM_NECROTICARITE = createGemTags("gems/necroticarite");
         //Niter
-        public static final TagKey<Item> GEM_NITER = createGemTags("gems/niter");
+        public static final TagKey<Item> TAG_GEM_NITER = createGemTags("gems/niter");
         //Obsidian
-        public static final TagKey<Item> GEM_OBSIDIAN = createGemTags("gems/obsidian");
+        public static final TagKey<Item> TAG_GEM_OBSIDIAN = createGemTags("gems/obsidian");
         //Onyx
-        public static final TagKey<Item> GEM_ONYX = createGemTags("gems/onyx");
+        public static final TagKey<Item> TAG_GEM_ONYX = createGemTags("gems/onyx");
         //Peridot
-        public static final TagKey<Item> GEM_PERIDOT = createGemTags("gems/peridot");
+        public static final TagKey<Item> TAG_GEM_PERIDOT = createGemTags("gems/peridot");
         //Ruby
-        public static final TagKey<Item> GEM_RUBY = createGemTags("gems/ruby");
+        public static final TagKey<Item> TAG_GEM_RUBY = createGemTags("gems/ruby");
         //Sapphire
-        public static final TagKey<Item> GEM_SAPPHIRE = createGemTags("gems/sapphire");
+        public static final TagKey<Item> TAG_GEM_SAPPHIRE = createGemTags("gems/sapphire");
         //Quantiquarite
-        public static final TagKey<Item> GEM_QUANTIQUARITE = createGemTags("gems/quantiquarite");
+        public static final TagKey<Item> TAG_GEM_QUANTIQUARITE = createGemTags("gems/quantiquarite");
         //Tachyarite
-        public static final TagKey<Item> GEM_TACHYARITE = createGemTags("gems/tachyarite");
+        public static final TagKey<Item> TAG_GEM_TACHYARITE = createGemTags("gems/tachyarite");
         //Voiderite
-        public static final TagKey<Item> GEM_VOIDERITE = createGemTags("gems/voiderite");
+        public static final TagKey<Item> TAG_GEM_VOIDERITE = createGemTags("gems/voiderite");
 
         private static TagKey<Item> createGemTags(String path)
         {

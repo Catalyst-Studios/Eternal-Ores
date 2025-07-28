@@ -13,10 +13,10 @@
   "fluidOutputs": [],
   "ingredients": [
     {
-      "tag": "c:ore_gem/uraninite"
+      "tag": "c:ore_gem/uranium"
     },
     {
-      "tag": "c:ore_gem/uraninite"
+      "tag": "c:ore_gem/uranium"
     }
   ],
   "results": [

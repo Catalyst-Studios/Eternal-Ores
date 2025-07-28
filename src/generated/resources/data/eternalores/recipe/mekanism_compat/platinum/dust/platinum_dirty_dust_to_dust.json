@@ -8,7 +8,7 @@
   "type": "mekanism:enriching",
   "input": {
     "count": 1,
-    "tag": "c:dirty_dust/platinum"
+    "tag": "c:dirty_dusts/platinum"
   },
   "output": {
     "count": 1,

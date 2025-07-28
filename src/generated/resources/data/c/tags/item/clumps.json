@@ -1,0 +1,29 @@
+{
+  "values": [
+    "eternalores:clump_aluminum",
+    "eternalores:clump_ardite",
+    "eternalores:clump_catalyrium",
+    "eternalores:clump_cobalt",
+    "eternalores:clump_gallium",
+    "eternalores:clump_iridium",
+    "eternalores:clump_nickel",
+    "eternalores:clump_platinum",
+    "eternalores:clump_silver",
+    "eternalores:clump_uraninite",
+    "eternalores:clump_zinc",
+    "eternalores:o_aluminum_clump",
+    "eternalores:o_ardite_clump",
+    "eternalores:o_catalyrium_clump",
+    "eternalores:o_cobalt_clump",
+    "eternalores:o_gallium_clump",
+    "eternalores:o_iridium_clump",
+    "eternalores:o_lead_clump",
+    "eternalores:o_osmium_clump",
+    "eternalores:o_silver_clump",
+    "eternalores:o_tin_clump",
+    "eternalores:o_tungsten_clump",
+    "eternalores:o_uraninite_clump",
+    "eternalores:o_uranium_clump",
+    "eternalores:o_zinc_clump"
+  ]
+}

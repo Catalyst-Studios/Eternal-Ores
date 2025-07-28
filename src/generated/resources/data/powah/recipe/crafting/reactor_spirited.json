@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:ingots/uraninite"
+    },
+    "C": {
+      "item": "powah:capacitor_spirited"
+    },
+    "R": {
+      "item": "powah:reactor_niotic"
+    }
+  },
+  "pattern": [
+    "RCR",
+    "C#C",
+    "RCR"
+  ],
+  "result": {
+    "count": 4,
+    "id": "powah:reactor_spirited"
+  }
+}

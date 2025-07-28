@@ -1,22 +1,24 @@
 {
   "values": [
-    "eternalores:ardite_block",
-    "eternalores:catalyrium_block",
-    "eternalores:necroticarite_block",
-    "eternalores:tungsten_block",
-    "eternalores:raw_ardite_block",
-    "eternalores:raw_catalyrium_block",
-    "eternalores:raw_tungsten_block",
-    "eternalores:ardite_ore_block",
-    "eternalores:cobalt_ore_block",
-    "eternalores:deepslate_cobalt_ore_block",
-    "eternalores:plutonium_ore_block",
+    "eternalores:deepslate_platinum_ore_block",
     "eternalores:deepslate_plutonium_ore_block",
+    "eternalores:deepslate_uranium_ore_block",
+    "eternalores:necroticarite_block",
     "eternalores:necroticarite_ore_block",
     "eternalores:obsidian_ore_block",
+    "eternalores:platinum_block",
+    "eternalores:platinum_ore_block",
+    "eternalores:plutonium_block",
+    "eternalores:plutonium_ore_block",
+    "eternalores:raw_platinum_block",
+    "eternalores:raw_plutonium_block",
+    "eternalores:raw_tungsten_block",
+    "eternalores:raw_uranium_block",
+    "eternalores:titanium_block",
+    "eternalores:tungsten_block",
     "eternalores:tungsten_ore_block",
-    "eternalores:nether_star_block",
-    "eternalores:nethersteel_block",
-    "eternalores:shadowsteel_block"
+    "eternalores:ultimatitanium_block",
+    "eternalores:uranium_block",
+    "eternalores:uranium_ore_block"
   ]
 }

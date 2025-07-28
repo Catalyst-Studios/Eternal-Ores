@@ -10,7 +10,7 @@ import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.radzratz.eternalores.EternalOres;
-import net.radzratz.eternalores.block.EOBlocks;
+import net.radzratz.eternalores.block.EOBlockRegistry;
 import org.jetbrains.annotations.NotNull;
 
 import static net.neoforged.neoforge.client.model.generators.ModelProvider.TEXTURE;
@@ -22,7 +22,7 @@ public class EOBlockStateProvider extends BlockStateProvider
 
     public EOBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper)
     {
-        super(output, EternalOres.MOD_ID, exFileHelper);
+        super(output, EternalOres.id, exFileHelper);
         this.exFileHelper = exFileHelper;
     }
 
@@ -30,236 +30,236 @@ public class EOBlockStateProvider extends BlockStateProvider
     protected void registerStatesAndModels()
     {
         //COMPRESSED BLOCKS
-        blockWithItem(EOBlocks.COBBLE_1);
-        blockWithItem(EOBlocks.COBBLE_2);
-        blockWithItem(EOBlocks.COBBLE_3);
-        blockWithItem(EOBlocks.COBBLE_4);
-        blockWithItem(EOBlocks.COBBLE_5);
-        blockWithItem(EOBlocks.COBBLE_6);
-        blockWithItem(EOBlocks.COBBLE_7);
-        blockWithItem(EOBlocks.COBBLE_8);
-        blockWithItem(EOBlocks.COBBLE_9);
+        blockWithItem(EOBlockRegistry.COBBLE_1);
+        blockWithItem(EOBlockRegistry.COBBLE_2);
+        blockWithItem(EOBlockRegistry.COBBLE_3);
+        blockWithItem(EOBlockRegistry.COBBLE_4);
+        blockWithItem(EOBlockRegistry.COBBLE_5);
+        blockWithItem(EOBlockRegistry.COBBLE_6);
+        blockWithItem(EOBlockRegistry.COBBLE_7);
+        blockWithItem(EOBlockRegistry.COBBLE_8);
+        blockWithItem(EOBlockRegistry.COBBLE_9);
 
-        blockWithItem(EOBlocks.SAND_1);
-        blockWithItem(EOBlocks.SAND_2);
-        blockWithItem(EOBlocks.SAND_3);
-        blockWithItem(EOBlocks.SAND_4);
-        blockWithItem(EOBlocks.SAND_5);
-        blockWithItem(EOBlocks.SAND_6);
-        blockWithItem(EOBlocks.SAND_7);
-        blockWithItem(EOBlocks.SAND_8);
-        blockWithItem(EOBlocks.SAND_9);
+        blockWithItem(EOBlockRegistry.SAND_1);
+        blockWithItem(EOBlockRegistry.SAND_2);
+        blockWithItem(EOBlockRegistry.SAND_3);
+        blockWithItem(EOBlockRegistry.SAND_4);
+        blockWithItem(EOBlockRegistry.SAND_5);
+        blockWithItem(EOBlockRegistry.SAND_6);
+        blockWithItem(EOBlockRegistry.SAND_7);
+        blockWithItem(EOBlockRegistry.SAND_8);
+        blockWithItem(EOBlockRegistry.SAND_9);
 
-        blockWithItem(EOBlocks.DIRT_1);
-        blockWithItem(EOBlocks.DIRT_2);
-        blockWithItem(EOBlocks.DIRT_3);
-        blockWithItem(EOBlocks.DIRT_4);
-        blockWithItem(EOBlocks.DIRT_5);
-        blockWithItem(EOBlocks.DIRT_6);
-        blockWithItem(EOBlocks.DIRT_7);
-        blockWithItem(EOBlocks.DIRT_8);
-        blockWithItem(EOBlocks.DIRT_9);
+        blockWithItem(EOBlockRegistry.DIRT_1);
+        blockWithItem(EOBlockRegistry.DIRT_2);
+        blockWithItem(EOBlockRegistry.DIRT_3);
+        blockWithItem(EOBlockRegistry.DIRT_4);
+        blockWithItem(EOBlockRegistry.DIRT_5);
+        blockWithItem(EOBlockRegistry.DIRT_6);
+        blockWithItem(EOBlockRegistry.DIRT_7);
+        blockWithItem(EOBlockRegistry.DIRT_8);
+        blockWithItem(EOBlockRegistry.DIRT_9);
 
-        blockWithItem(EOBlocks.ANDESITE_1);
-        blockWithItem(EOBlocks.ANDESITE_2);
-        blockWithItem(EOBlocks.ANDESITE_3);
-        blockWithItem(EOBlocks.ANDESITE_4);
-        blockWithItem(EOBlocks.ANDESITE_5);
-        blockWithItem(EOBlocks.ANDESITE_6);
-        blockWithItem(EOBlocks.ANDESITE_7);
-        blockWithItem(EOBlocks.ANDESITE_8);
-        blockWithItem(EOBlocks.ANDESITE_9);
+        blockWithItem(EOBlockRegistry.ANDESITE_1);
+        blockWithItem(EOBlockRegistry.ANDESITE_2);
+        blockWithItem(EOBlockRegistry.ANDESITE_3);
+        blockWithItem(EOBlockRegistry.ANDESITE_4);
+        blockWithItem(EOBlockRegistry.ANDESITE_5);
+        blockWithItem(EOBlockRegistry.ANDESITE_6);
+        blockWithItem(EOBlockRegistry.ANDESITE_7);
+        blockWithItem(EOBlockRegistry.ANDESITE_8);
+        blockWithItem(EOBlockRegistry.ANDESITE_9);
 
-        blockWithItem(EOBlocks.GRAVEL_1);
-        blockWithItem(EOBlocks.GRAVEL_2);
-        blockWithItem(EOBlocks.GRAVEL_3);
-        blockWithItem(EOBlocks.GRAVEL_4);
-        blockWithItem(EOBlocks.GRAVEL_5);
-        blockWithItem(EOBlocks.GRAVEL_6);
-        blockWithItem(EOBlocks.GRAVEL_7);
-        blockWithItem(EOBlocks.GRAVEL_8);
-        blockWithItem(EOBlocks.GRAVEL_9);
+        blockWithItem(EOBlockRegistry.GRAVEL_1);
+        blockWithItem(EOBlockRegistry.GRAVEL_2);
+        blockWithItem(EOBlockRegistry.GRAVEL_3);
+        blockWithItem(EOBlockRegistry.GRAVEL_4);
+        blockWithItem(EOBlockRegistry.GRAVEL_5);
+        blockWithItem(EOBlockRegistry.GRAVEL_6);
+        blockWithItem(EOBlockRegistry.GRAVEL_7);
+        blockWithItem(EOBlockRegistry.GRAVEL_8);
+        blockWithItem(EOBlockRegistry.GRAVEL_9);
 
-        blockWithItem(EOBlocks.GRANITE_1);
-        blockWithItem(EOBlocks.GRANITE_2);
-        blockWithItem(EOBlocks.GRANITE_3);
-        blockWithItem(EOBlocks.GRANITE_4);
-        blockWithItem(EOBlocks.GRANITE_5);
-        blockWithItem(EOBlocks.GRANITE_6);
-        blockWithItem(EOBlocks.GRANITE_7);
-        blockWithItem(EOBlocks.GRANITE_8);
-        blockWithItem(EOBlocks.GRANITE_9);
+        blockWithItem(EOBlockRegistry.GRANITE_1);
+        blockWithItem(EOBlockRegistry.GRANITE_2);
+        blockWithItem(EOBlockRegistry.GRANITE_3);
+        blockWithItem(EOBlockRegistry.GRANITE_4);
+        blockWithItem(EOBlockRegistry.GRANITE_5);
+        blockWithItem(EOBlockRegistry.GRANITE_6);
+        blockWithItem(EOBlockRegistry.GRANITE_7);
+        blockWithItem(EOBlockRegistry.GRANITE_8);
+        blockWithItem(EOBlockRegistry.GRANITE_9);
 
-        blockWithItem(EOBlocks.DIORITE_1);
-        blockWithItem(EOBlocks.DIORITE_2);
-        blockWithItem(EOBlocks.DIORITE_3);
-        blockWithItem(EOBlocks.DIORITE_4);
-        blockWithItem(EOBlocks.DIORITE_5);
-        blockWithItem(EOBlocks.DIORITE_6);
-        blockWithItem(EOBlocks.DIORITE_7);
-        blockWithItem(EOBlocks.DIORITE_8);
-        blockWithItem(EOBlocks.DIORITE_9);
+        blockWithItem(EOBlockRegistry.DIORITE_1);
+        blockWithItem(EOBlockRegistry.DIORITE_2);
+        blockWithItem(EOBlockRegistry.DIORITE_3);
+        blockWithItem(EOBlockRegistry.DIORITE_4);
+        blockWithItem(EOBlockRegistry.DIORITE_5);
+        blockWithItem(EOBlockRegistry.DIORITE_6);
+        blockWithItem(EOBlockRegistry.DIORITE_7);
+        blockWithItem(EOBlockRegistry.DIORITE_8);
+        blockWithItem(EOBlockRegistry.DIORITE_9);
 
         //METAL BLOCKS
-        blockWithItem(EOBlocks.ALUMINUM_BLOCK);
-        blockWithItem(EOBlocks.ARDITE_BLOCK);
-        blockWithItem(EOBlocks.BRONZE_BLOCK);
-        blockWithItem(EOBlocks.CATALYRIUM_BLOCK);
-        blockWithItem(EOBlocks.COBALT_BLOCK);
-        blockWithItem(EOBlocks.CONSTANTAN_BLOCK);
-        blockWithItem(EOBlocks.ELECTRUM_BLOCK);
-        blockWithItem(EOBlocks.ENDERIUM_BLOCK);
-        blockWithItem(EOBlocks.INVAR_BLOCK);
-        blockWithItem(EOBlocks.LEAD_BLOCK);
-        blockWithItem(EOBlocks.LUMIUM_BLOCK);
-        blockWithItem(EOBlocks.NICKEL_BLOCK);
-        blockWithItem(EOBlocks.OSMIUM_BLOCK);
-        blockWithItem(EOBlocks.PLATINUM_BLOCK);
-        blockWithItem(EOBlocks.PLUTONIUM_BLOCK);
-        blockWithItem(EOBlocks.TIN_BLOCK);
-        blockWithItem(EOBlocks.SIGNALUM_BLOCK);
-        blockWithItem(EOBlocks.URANIUM_BLOCK);
-        blockWithItem(EOBlocks.ULTIMATITANIUM_BLOCK);
-        blockWithItem(EOBlocks.SILVER_BLOCK);
-        blockWithItem(EOBlocks.GRAPHITE_BLOCK);
-        blockWithItem(EOBlocks.BRASS_BLOCK);
-        blockWithItem(EOBlocks.ZINC_BLOCK);
-        blockWithItem(EOBlocks.STEEL_BLOCK);
-        blockWithItem(EOBlocks.BLUE_STEEL_BLOCK);
-        blockWithItem(EOBlocks.GALLIUM_BLOCK);
-        blockWithItem(EOBlocks.TITANIUM_BLOCK);
-        blockWithItem(EOBlocks.PEWTER_BLOCK);
-        blockWithItem(EOBlocks.ROSE_GOLD_BLOCK);
-        blockWithItem(EOBlocks.BRITANNIA_SILVER_BLOCK);
-        blockWithItem(EOBlocks.IRIDIUM_BLOCK);
-        blockWithItem(EOBlocks.CAST_IRON_BLOCK);
-        blockWithItem(EOBlocks.URANINITE_BLOCK);
-        blockWithItem(EOBlocks.CAST_STEEL_BLOCK);
-        blockWithItem(EOBlocks.WROUGHT_IRON_BLOCK);
-        blockWithItem(EOBlocks.NETHERSTEEL_BLOCK);
-        blockWithItem(EOBlocks.SHADOWSTEEL_BLOCK);
-        blockWithItem(EOBlocks.PIG_IRON_BLOCK);
-        blockWithItem(EOBlocks.TUNGSTEN_BLOCK);
-        blockWithItem(EOBlocks.SILICON_BLOCK);
+        blockWithItem(EOBlockRegistry.ALUMINUM_BLOCK);
+        blockWithItem(EOBlockRegistry.ARDITE_BLOCK);
+        blockWithItem(EOBlockRegistry.BRONZE_BLOCK);
+        blockWithItem(EOBlockRegistry.CATALYRIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.COBALT_BLOCK);
+        blockWithItem(EOBlockRegistry.CONSTANTAN_BLOCK);
+        blockWithItem(EOBlockRegistry.ELECTRUM_BLOCK);
+        blockWithItem(EOBlockRegistry.ENDERIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.INVAR_BLOCK);
+        blockWithItem(EOBlockRegistry.LEAD_BLOCK);
+        blockWithItem(EOBlockRegistry.LUMIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.NICKEL_BLOCK);
+        blockWithItem(EOBlockRegistry.OSMIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.PLATINUM_BLOCK);
+        blockWithItem(EOBlockRegistry.PLUTONIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.TIN_BLOCK);
+        blockWithItem(EOBlockRegistry.SIGNALUM_BLOCK);
+        blockWithItem(EOBlockRegistry.URANIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.ULTIMATITANIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.SILVER_BLOCK);
+        blockWithItem(EOBlockRegistry.GRAPHITE_BLOCK);
+        blockWithItem(EOBlockRegistry.BRASS_BLOCK);
+        blockWithItem(EOBlockRegistry.ZINC_BLOCK);
+        blockWithItem(EOBlockRegistry.STEEL_BLOCK);
+        blockWithItem(EOBlockRegistry.BLUE_STEEL_BLOCK);
+        blockWithItem(EOBlockRegistry.GALLIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.TITANIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.PEWTER_BLOCK);
+        blockWithItem(EOBlockRegistry.ROSE_GOLD_BLOCK);
+        blockWithItem(EOBlockRegistry.BRITANNIA_SILVER_BLOCK);
+        blockWithItem(EOBlockRegistry.IRIDIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.CAST_IRON_BLOCK);
+        blockWithItem(EOBlockRegistry.URANINITE_BLOCK);
+        blockWithItem(EOBlockRegistry.CAST_STEEL_BLOCK);
+        blockWithItem(EOBlockRegistry.WROUGHT_IRON_BLOCK);
+        blockWithItem(EOBlockRegistry.NETHERSTEEL_BLOCK);
+        blockWithItem(EOBlockRegistry.SHADOWSTEEL_BLOCK);
+        blockWithItem(EOBlockRegistry.PIG_IRON_BLOCK);
+        blockWithItem(EOBlockRegistry.TUNGSTEN_BLOCK);
+        blockWithItem(EOBlockRegistry.SILICON_BLOCK);
 
         //GEM BLOCKS
-        blockWithItem(EOBlocks.SAPPHIRE_BLOCK);
-        blockWithItem(EOBlocks.FLUORITE_BLOCK);
-        blockWithItem(EOBlocks.APATITE_BLOCK);
-        blockWithItem(EOBlocks.CINNABAR_BLOCK);
-        blockWithItem(EOBlocks.AMBER_BLOCK);
-        blockWithItem(EOBlocks.NITER_BLOCK);
-        blockWithItem(EOBlocks.RUBY_BLOCK);
-        blockWithItem(EOBlocks.ONYX_BLOCK);
-        blockWithItem(EOBlocks.PERIDOT_BLOCK);
-        blockWithItem(EOBlocks.NECROTICARITE_BLOCK);
+        blockWithItem(EOBlockRegistry.SAPPHIRE_BLOCK);
+        blockWithItem(EOBlockRegistry.FLUORITE_BLOCK);
+        blockWithItem(EOBlockRegistry.APATITE_BLOCK);
+        blockWithItem(EOBlockRegistry.CINNABAR_BLOCK);
+        blockWithItem(EOBlockRegistry.AMBER_BLOCK);
+        blockWithItem(EOBlockRegistry.NITER_BLOCK);
+        blockWithItem(EOBlockRegistry.RUBY_BLOCK);
+        blockWithItem(EOBlockRegistry.ONYX_BLOCK);
+        blockWithItem(EOBlockRegistry.PERIDOT_BLOCK);
+        blockWithItem(EOBlockRegistry.NECROTICARITE_BLOCK);
 
         //MISC BLOCKS
-        blockWithItem(EOBlocks.NETHER_STAR_BLOCK);
+        blockWithItem(EOBlockRegistry.NETHER_STAR_BLOCK);
 
         //RAW BLOCKS
-        blockWithItem(EOBlocks.RAW_ALUMINUM_BLOCK);
-        blockWithItem(EOBlocks.RAW_ARDITE_BLOCK);
-        blockWithItem(EOBlocks.RAW_CATALYRIUM_BLOCK);
-        blockWithItem(EOBlocks.RAW_COBALT_BLOCK);
-        blockWithItem(EOBlocks.RAW_LEAD_BLOCK);
-        blockWithItem(EOBlocks.RAW_NICKEL_BLOCK);
-        blockWithItem(EOBlocks.RAW_OSMIUM_BLOCK);
-        blockWithItem(EOBlocks.RAW_PLATINUM_BLOCK);
-        blockWithItem(EOBlocks.RAW_PLUTONIUM_BLOCK);
-        blockWithItem(EOBlocks.RAW_SILVER_BLOCK);
-        blockWithItem(EOBlocks.SULFUR_BLOCK);
-        blockWithItem(EOBlocks.RAW_TIN_BLOCK);
-        blockWithItem(EOBlocks.RAW_URANIUM_BLOCK);
-        blockWithItem(EOBlocks.RAW_ZINC_BLOCK);
-        blockWithItem(EOBlocks.RAW_GALLIUM_BLOCK);
-        blockWithItem(EOBlocks.RAW_IRIDIUM_BLOCK);
-        blockWithItem(EOBlocks.RAW_URANINITE_BLOCK);
-        blockWithItem(EOBlocks.RAW_TUNGSTEN_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_ALUMINUM_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_ARDITE_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_CATALYRIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_COBALT_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_LEAD_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_NICKEL_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_OSMIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_PLATINUM_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_PLUTONIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_SILVER_BLOCK);
+        blockWithItem(EOBlockRegistry.SULFUR_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_TIN_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_URANIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_ZINC_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_GALLIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_IRIDIUM_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_URANINITE_BLOCK);
+        blockWithItem(EOBlockRegistry.RAW_TUNGSTEN_BLOCK);
 
         //ORE BLOCKS
         //ALUMINUM
-        blockWithItem(EOBlocks.ALUMINUM_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.ALUMINUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_ALUMINUM_ORE_BLOCK);
         //COBALT
-        blockWithItem(EOBlocks.COBALT_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.COBALT_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_COBALT_ORE_BLOCK);
         //LEAD
-        blockWithItem(EOBlocks.LEAD_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_LEAD_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.LEAD_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_LEAD_ORE_BLOCK);
         //NICKEL
-        blockWithItem(EOBlocks.NICKEL_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_NICKEL_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.NICKEL_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_NICKEL_ORE_BLOCK);
         //OSMIUM
-        blockWithItem(EOBlocks.OSMIUM_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.OSMIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_OSMIUM_ORE_BLOCK);
         //PLATINUM
-        blockWithItem(EOBlocks.PLATINUM_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.PLATINUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_PLATINUM_ORE_BLOCK);
         //PLUTONIUM
-        blockWithItem(EOBlocks.PLUTONIUM_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.PLUTONIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_PLUTONIUM_ORE_BLOCK);
         //SULFUR
-        blockWithItem(EOBlocks.SULFUR_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.SULFUR_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_SULFUR_ORE_BLOCK);
         //TIN
-        blockWithItem(EOBlocks.TIN_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.TIN_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_TIN_ORE_BLOCK);
         //URANIUM
-        blockWithItem(EOBlocks.URANIUM_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.URANIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_URANIUM_ORE_BLOCK);
         //SILVER
-        blockWithItem(EOBlocks.SILVER_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_SILVER_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.SILVER_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_SILVER_ORE_BLOCK);
         //ZINC
-        blockWithItem(EOBlocks.ZINC_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_ZINC_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.ZINC_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_ZINC_ORE_BLOCK);
         //GALLIUM
-        blockWithItem(EOBlocks.GALLIUM_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.GALLIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_GALLIUM_ORE_BLOCK);
         //IRIDIUM
-        blockWithItem(EOBlocks.IRIDIUM_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.IRIDIUM_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_IRIDIUM_ORE_BLOCK);
         //URANINITE
-        blockWithItem(EOBlocks.URANINITE_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.URANINITE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_URANINITE_ORE_BLOCK);
         //TUNGSTEN
-        blockWithItem(EOBlocks.TUNGSTEN_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.TUNGSTEN_ORE_BLOCK);
 
         //GEMS
         //FLUORITE
-        blockWithItem(EOBlocks.FLUORITE_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.FLUORITE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_FLUORITE_ORE_BLOCK);
         //SAPPHIRE
-        blockWithItem(EOBlocks.SAPPHIRE_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.SAPPHIRE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_SAPPHIRE_ORE_BLOCK);
         //APATITE
-        blockWithItem(EOBlocks.APATITE_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_APATITE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.APATITE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_APATITE_ORE_BLOCK);
         //CINNABAR
-        blockWithItem(EOBlocks.CINNABAR_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.CINNABAR_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_CINNABAR_ORE_BLOCK);
         //AMBER
-        blockWithItem(EOBlocks.AMBER_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_AMBER_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.AMBER_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_AMBER_ORE_BLOCK);
         //ONYX
-        blockWithItem(EOBlocks.ONYX_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_ONYX_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.ONYX_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_ONYX_ORE_BLOCK);
         //NITER
-        blockWithItem(EOBlocks.NITER_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_NITER_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.NITER_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_NITER_ORE_BLOCK);
         //RUBY
-        blockWithItem(EOBlocks.RUBY_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_RUBY_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.RUBY_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_RUBY_ORE_BLOCK);
         //PERIDOT
-        blockWithItem(EOBlocks.PERIDOT_ORE_BLOCK);
-        blockWithItem(EOBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.PERIDOT_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.DEEPSLATE_PERIDOT_ORE_BLOCK);
         //OBSIDIAN
-        blockWithItem(EOBlocks.OBSIDIAN_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.OBSIDIAN_ORE_BLOCK);
         //NECROTICARITE
-        blockWithItem(EOBlocks.NECROTICARITE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.NECROTICARITE_ORE_BLOCK);
         //ARDITE
-        blockWithItem(EOBlocks.ARDITE_ORE_BLOCK);
+        blockWithItem(EOBlockRegistry.ARDITE_ORE_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock)

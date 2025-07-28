@@ -37,11 +37,11 @@ public class EOGemCutter extends Item
         ItemStack copy = itemStack.copy();
         copy.setDamageValue(itemStack.getDamageValue() + 1);
 
-        if(copy.getDamageValue() >= copy.getMaxDamage())
+        if (copy.getDamageValue() >= copy.getMaxDamage())
         {
             return ItemStack.EMPTY;
         }
-        else
+            else
         {
             return copy;
         }

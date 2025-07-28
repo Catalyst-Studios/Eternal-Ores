@@ -7,8 +7,8 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalores.EternalOres;
-import net.radzratz.eternalores.block.EOBlocks;
-import net.radzratz.eternalores.util.compat.mekanism.EOMekCompatItems;
+import net.radzratz.eternalores.block.EOBlockRegistry;
+import net.radzratz.eternalores.util.compat.mekanism.item.EOMekCompatItems;
 import net.radzratz.eternalores.util.compat.oritech.items.EOritechItemRegistry;
 
 import java.util.function.Supplier;
@@ -17,611 +17,613 @@ import java.util.function.Supplier;
 public class EOCreativeModeTabs
 {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
-            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EternalOres.MOD_ID);
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, EternalOres.id);
 
 public static final Supplier<CreativeModeTab> EO_STONE_ORES = CREATIVE_MODE_TAB.register("eternal_ores_tab_1",
         ()-> CreativeModeTab.builder()
-                .icon(()-> new ItemStack(EOBlocks.ALUMINUM_ORE_BLOCK.get()))
+                .icon(()-> new ItemStack(EOBlockRegistry.ALUMINUM_ORE_BLOCK.get()))
                 .title(Component.translatable("creativetab.eternalores.stone_ores"))
                 .displayItems((itemDisplayParameters, output) ->
                 {
                     ///STONE ORES
-                    output.accept(EOBlocks.ALUMINUM_ORE_BLOCK);
-                    output.accept(EOBlocks.AMBER_ORE_BLOCK);
-                    output.accept(EOBlocks.APATITE_ORE_BLOCK);
-                    output.accept(EOBlocks.CINNABAR_ORE_BLOCK);
-                    output.accept(EOBlocks.COBALT_ORE_BLOCK);
-                    output.accept(EOBlocks.FLUORITE_ORE_BLOCK);
-                    output.accept(EOBlocks.GALLIUM_ORE_BLOCK);
-                    output.accept(EOBlocks.IRIDIUM_ORE_BLOCK);
-                    output.accept(EOBlocks.LEAD_ORE_BLOCK);
-                    output.accept(EOBlocks.NICKEL_ORE_BLOCK);
-                    output.accept(EOBlocks.NITER_ORE_BLOCK);
-                    output.accept(EOBlocks.ONYX_ORE_BLOCK);
-                    output.accept(EOBlocks.OSMIUM_ORE_BLOCK);
-                    output.accept(EOBlocks.PERIDOT_ORE_BLOCK);
-                    output.accept(EOBlocks.PLATINUM_ORE_BLOCK);
-                    output.accept(EOBlocks.PLUTONIUM_ORE_BLOCK);
-                    output.accept(EOBlocks.RUBY_ORE_BLOCK);
-                    output.accept(EOBlocks.SAPPHIRE_ORE_BLOCK);
-                    output.accept(EOBlocks.SILVER_ORE_BLOCK);
-                    output.accept(EOBlocks.SULFUR_ORE_BLOCK);
-                    output.accept(EOBlocks.TIN_ORE_BLOCK);
-                    output.accept(EOBlocks.URANINITE_ORE_BLOCK);
-                    output.accept(EOBlocks.URANIUM_ORE_BLOCK);
-                    output.accept(EOBlocks.ZINC_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.ALUMINUM_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.AMBER_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.APATITE_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.CINNABAR_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.COBALT_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.FLUORITE_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.GALLIUM_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.IRIDIUM_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.LEAD_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.NICKEL_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.NITER_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.ONYX_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.OSMIUM_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.PERIDOT_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.PLATINUM_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.PLUTONIUM_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.RUBY_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.SAPPHIRE_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.SILVER_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.SULFUR_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.TIN_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.URANINITE_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.URANIUM_ORE_BLOCK);
+                    output.accept(EOBlockRegistry.ZINC_ORE_BLOCK);
                 }).build());
 
     public static final Supplier<CreativeModeTab> EO_SLATE_ORES = CREATIVE_MODE_TAB.register("eternal_ores_tab_2",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK.get()))
+                    .icon(()-> new ItemStack(EOBlockRegistry.DEEPSLATE_ALUMINUM_ORE_BLOCK.get()))
                     .title(Component.translatable("creativetab.eternalores.slate_ores"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOBlocks.DEEPSLATE_ALUMINUM_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_AMBER_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_APATITE_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_CINNABAR_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_COBALT_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_FLUORITE_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_GALLIUM_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_IRIDIUM_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_LEAD_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_NICKEL_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_NITER_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_ONYX_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_OSMIUM_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_PERIDOT_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_PLATINUM_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_PLUTONIUM_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_RUBY_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_SAPPHIRE_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_SILVER_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_SULFUR_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_TIN_ORE_BLOCK);
-                        output.accept(EOBlocks.TUNGSTEN_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_URANINITE_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_URANIUM_ORE_BLOCK);
-                        output.accept(EOBlocks.DEEPSLATE_ZINC_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_ALUMINUM_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_AMBER_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_APATITE_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_CINNABAR_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_COBALT_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_FLUORITE_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_GALLIUM_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_IRIDIUM_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_LEAD_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_NICKEL_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_NITER_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_ONYX_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_OSMIUM_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_PERIDOT_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_PLATINUM_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_PLUTONIUM_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_RUBY_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_SAPPHIRE_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_SILVER_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_SULFUR_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_TIN_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.TUNGSTEN_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_URANINITE_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_URANIUM_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.DEEPSLATE_ZINC_ORE_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_NETHER_ORES = CREATIVE_MODE_TAB.register("eternal_ores_tab_3",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOBlocks.ARDITE_ORE_BLOCK.get()))
+                    .icon(()-> new ItemStack(EOBlockRegistry.ARDITE_ORE_BLOCK.get()))
                     .title(Component.translatable("creativetab.eternalores.nether_ores"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOBlocks.ARDITE_ORE_BLOCK);
-                        output.accept(EOBlocks.NECROTICARITE_ORE_BLOCK);
-                        output.accept(EOBlocks.OBSIDIAN_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.ARDITE_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.NECROTICARITE_ORE_BLOCK);
+                        output.accept(EOBlockRegistry.OBSIDIAN_ORE_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_RAW_BLOCKS = CREATIVE_MODE_TAB.register("eternal_ores_tab_4",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOBlocks.RAW_CATALYRIUM_BLOCK.get()))
+                    .icon(()-> new ItemStack(EOBlockRegistry.RAW_CATALYRIUM_BLOCK.get()))
                     .title(Component.translatable("creativetab.eternalores.raw_blocks"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOBlocks.RAW_ALUMINUM_BLOCK);
-                        output.accept(EOBlocks.RAW_ARDITE_BLOCK);
-                        output.accept(EOBlocks.RAW_CATALYRIUM_BLOCK);
-                        output.accept(EOBlocks.RAW_COBALT_BLOCK);
-                        output.accept(EOBlocks.RAW_GALLIUM_BLOCK);
-                        output.accept(EOBlocks.RAW_IRIDIUM_BLOCK);
-                        output.accept(EOBlocks.RAW_LEAD_BLOCK);
-                        output.accept(EOBlocks.RAW_NICKEL_BLOCK);
-                        output.accept(EOBlocks.RAW_OSMIUM_BLOCK);
-                        output.accept(EOBlocks.RAW_PLATINUM_BLOCK);
-                        output.accept(EOBlocks.RAW_PLUTONIUM_BLOCK);
-                        output.accept(EOBlocks.RAW_SILVER_BLOCK);
-                        output.accept(EOBlocks.SULFUR_BLOCK);
-                        output.accept(EOBlocks.RAW_TIN_BLOCK);
-                        output.accept(EOBlocks.RAW_TUNGSTEN_BLOCK);
-                        output.accept(EOBlocks.RAW_URANINITE_BLOCK);
-                        output.accept(EOBlocks.RAW_URANIUM_BLOCK);
-                        output.accept(EOBlocks.RAW_ZINC_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_ALUMINUM_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_ARDITE_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_CATALYRIUM_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_COBALT_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_GALLIUM_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_IRIDIUM_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_LEAD_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_NICKEL_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_OSMIUM_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_PLATINUM_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_PLUTONIUM_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_SILVER_BLOCK);
+                        output.accept(EOBlockRegistry.SULFUR_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_TIN_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_TUNGSTEN_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_URANINITE_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_URANIUM_BLOCK);
+                        output.accept(EOBlockRegistry.RAW_ZINC_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_BLOCKS = CREATIVE_MODE_TAB.register("eternal_ores_tab_5",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOBlocks.CATALYRIUM_BLOCK.get()))
+                    .icon(()-> new ItemStack(EOBlockRegistry.CATALYRIUM_BLOCK.get()))
                     .title(Component.translatable("creativetab.eternalores.blocks"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOBlocks.ALUMINUM_BLOCK);
-                        output.accept(EOBlocks.AMBER_BLOCK);
-                        output.accept(EOBlocks.APATITE_BLOCK);
-                        output.accept(EOBlocks.ARDITE_BLOCK);
-                        output.accept(EOBlocks.BLUE_STEEL_BLOCK);
-                        output.accept(EOBlocks.BRASS_BLOCK);
-                        output.accept(EOBlocks.BRITANNIA_SILVER_BLOCK);
-                        output.accept(EOBlocks.BRONZE_BLOCK);
-                        output.accept(EOBlocks.CATALYRIUM_BLOCK);
-                        output.accept(EOBlocks.CAST_IRON_BLOCK);
-                        output.accept(EOBlocks.CAST_STEEL_BLOCK);
-                        output.accept(EOBlocks.CINNABAR_BLOCK);
-                        output.accept(EOBlocks.COBALT_BLOCK);
-                        output.accept(EOBlocks.CONSTANTAN_BLOCK);
-                        output.accept(EOBlocks.ELECTRUM_BLOCK);
-                        output.accept(EOBlocks.ENDERIUM_BLOCK);
-                        output.accept(EOBlocks.FLUORITE_BLOCK);
-                        output.accept(EOBlocks.GALLIUM_BLOCK);
-                        output.accept(EOBlocks.GRAPHITE_BLOCK);
-                        output.accept(EOBlocks.INVAR_BLOCK);
-                        output.accept(EOBlocks.IRIDIUM_BLOCK);
-                        output.accept(EOBlocks.LEAD_BLOCK);
-                        output.accept(EOBlocks.LUMIUM_BLOCK);
-                        output.accept(EOBlocks.NETHER_STAR_BLOCK);
-                        output.accept(EOBlocks.NECROTICARITE_BLOCK);
-                        output.accept(EOBlocks.NETHERSTEEL_BLOCK);
-                        output.accept(EOBlocks.NICKEL_BLOCK);
-                        output.accept(EOBlocks.NITER_BLOCK);
-                        output.accept(EOBlocks.ONYX_BLOCK);
-                        output.accept(EOBlocks.OSMIUM_BLOCK);
-                        output.accept(EOBlocks.PERIDOT_BLOCK);
-                        output.accept(EOBlocks.PEWTER_BLOCK);
-                        output.accept(EOBlocks.PIG_IRON_BLOCK);
-                        output.accept(EOBlocks.PLATINUM_BLOCK);
-                        output.accept(EOBlocks.PLUTONIUM_BLOCK);
-                        output.accept(EOBlocks.ROSE_GOLD_BLOCK);
-                        output.accept(EOBlocks.RUBY_BLOCK);
-                        output.accept(EOBlocks.SAPPHIRE_BLOCK);
-                        output.accept(EOBlocks.SIGNALUM_BLOCK);
-                        output.accept(EOBlocks.SILICON_BLOCK);
-                        output.accept(EOBlocks.SILVER_BLOCK);
-                        output.accept(EOBlocks.SHADOWSTEEL_BLOCK);
-                        output.accept(EOBlocks.STEEL_BLOCK);
-                        output.accept(EOBlocks.TIN_BLOCK);
-                        output.accept(EOBlocks.TITANIUM_BLOCK);
-                        output.accept(EOBlocks.TUNGSTEN_BLOCK);
-                        output.accept(EOBlocks.ULTIMATITANIUM_BLOCK);
-                        output.accept(EOBlocks.URANINITE_BLOCK);
-                        output.accept(EOBlocks.URANIUM_BLOCK);
-                        output.accept(EOBlocks.WROUGHT_IRON_BLOCK);
-                        output.accept(EOBlocks.ZINC_BLOCK);
+                        output.accept(EOBlockRegistry.ALUMINUM_BLOCK);
+                        output.accept(EOBlockRegistry.AMBER_BLOCK);
+                        output.accept(EOBlockRegistry.APATITE_BLOCK);
+                        output.accept(EOBlockRegistry.ARDITE_BLOCK);
+                        output.accept(EOBlockRegistry.BLUE_STEEL_BLOCK);
+                        output.accept(EOBlockRegistry.BRASS_BLOCK);
+                        output.accept(EOBlockRegistry.BRITANNIA_SILVER_BLOCK);
+                        output.accept(EOBlockRegistry.BRONZE_BLOCK);
+                        output.accept(EOBlockRegistry.CATALYRIUM_BLOCK);
+                        output.accept(EOBlockRegistry.CAST_IRON_BLOCK);
+                        output.accept(EOBlockRegistry.CAST_STEEL_BLOCK);
+                        output.accept(EOBlockRegistry.CINNABAR_BLOCK);
+                        output.accept(EOBlockRegistry.COBALT_BLOCK);
+                        output.accept(EOBlockRegistry.CONSTANTAN_BLOCK);
+                        output.accept(EOBlockRegistry.ELECTRUM_BLOCK);
+                        output.accept(EOBlockRegistry.ENDERIUM_BLOCK);
+                        output.accept(EOBlockRegistry.FLUORITE_BLOCK);
+                        output.accept(EOBlockRegistry.GALLIUM_BLOCK);
+                        output.accept(EOBlockRegistry.GRAPHITE_BLOCK);
+                        output.accept(EOBlockRegistry.INVAR_BLOCK);
+                        output.accept(EOBlockRegistry.IRIDIUM_BLOCK);
+                        output.accept(EOBlockRegistry.LEAD_BLOCK);
+                        output.accept(EOBlockRegistry.LUMIUM_BLOCK);
+                        output.accept(EOBlockRegistry.NETHER_STAR_BLOCK);
+                        output.accept(EOBlockRegistry.NECROTICARITE_BLOCK);
+                        output.accept(EOBlockRegistry.NETHERSTEEL_BLOCK);
+                        output.accept(EOBlockRegistry.NICKEL_BLOCK);
+                        output.accept(EOBlockRegistry.NITER_BLOCK);
+                        output.accept(EOBlockRegistry.ONYX_BLOCK);
+                        output.accept(EOBlockRegistry.OSMIUM_BLOCK);
+                        output.accept(EOBlockRegistry.PERIDOT_BLOCK);
+                        output.accept(EOBlockRegistry.PEWTER_BLOCK);
+                        output.accept(EOBlockRegistry.PIG_IRON_BLOCK);
+                        output.accept(EOBlockRegistry.PLATINUM_BLOCK);
+                        output.accept(EOBlockRegistry.PLUTONIUM_BLOCK);
+                        output.accept(EOBlockRegistry.ROSE_GOLD_BLOCK);
+                        output.accept(EOBlockRegistry.RUBY_BLOCK);
+                        output.accept(EOBlockRegistry.SAPPHIRE_BLOCK);
+                        output.accept(EOBlockRegistry.SIGNALUM_BLOCK);
+                        output.accept(EOBlockRegistry.SILICON_BLOCK);
+                        output.accept(EOBlockRegistry.SILVER_BLOCK);
+                        output.accept(EOBlockRegistry.SHADOWSTEEL_BLOCK);
+                        output.accept(EOBlockRegistry.STEEL_BLOCK);
+                        output.accept(EOBlockRegistry.TIN_BLOCK);
+                        output.accept(EOBlockRegistry.TITANIUM_BLOCK);
+                        output.accept(EOBlockRegistry.TUNGSTEN_BLOCK);
+                        output.accept(EOBlockRegistry.ULTIMATITANIUM_BLOCK);
+                        output.accept(EOBlockRegistry.URANINITE_BLOCK);
+                        output.accept(EOBlockRegistry.URANIUM_BLOCK);
+                        output.accept(EOBlockRegistry.WROUGHT_IRON_BLOCK);
+                        output.accept(EOBlockRegistry.ZINC_BLOCK);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_COMPRESSED_BLOCKS = CREATIVE_MODE_TAB.register("eternal_ores_tab_6",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOBlocks.COBBLE_9.get()))
+                    .icon(()-> new ItemStack(EOBlockRegistry.COBBLE_9.get()))
                     .title(Component.translatable("creativetab.eternalores.compressed"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOBlocks.ANDESITE_1);
-                        output.accept(EOBlocks.ANDESITE_2);
-                        output.accept(EOBlocks.ANDESITE_3);
-                        output.accept(EOBlocks.ANDESITE_4);
-                        output.accept(EOBlocks.ANDESITE_5);
-                        output.accept(EOBlocks.ANDESITE_6);
-                        output.accept(EOBlocks.ANDESITE_7);
-                        output.accept(EOBlocks.ANDESITE_8);
-                        output.accept(EOBlocks.ANDESITE_9);
-                        output.accept(EOBlocks.COBBLE_1);
-                        output.accept(EOBlocks.COBBLE_2);
-                        output.accept(EOBlocks.COBBLE_3);
-                        output.accept(EOBlocks.COBBLE_4);
-                        output.accept(EOBlocks.COBBLE_5);
-                        output.accept(EOBlocks.COBBLE_6);
-                        output.accept(EOBlocks.COBBLE_7);
-                        output.accept(EOBlocks.COBBLE_8);
-                        output.accept(EOBlocks.COBBLE_9);
-                        output.accept(EOBlocks.DIORITE_1);
-                        output.accept(EOBlocks.DIORITE_2);
-                        output.accept(EOBlocks.DIORITE_3);
-                        output.accept(EOBlocks.DIORITE_4);
-                        output.accept(EOBlocks.DIORITE_5);
-                        output.accept(EOBlocks.DIORITE_6);
-                        output.accept(EOBlocks.DIORITE_7);
-                        output.accept(EOBlocks.DIORITE_8);
-                        output.accept(EOBlocks.DIORITE_9);
-                        output.accept(EOBlocks.DIRT_1);
-                        output.accept(EOBlocks.DIRT_2);
-                        output.accept(EOBlocks.DIRT_3);
-                        output.accept(EOBlocks.DIRT_4);
-                        output.accept(EOBlocks.DIRT_5);
-                        output.accept(EOBlocks.DIRT_6);
-                        output.accept(EOBlocks.DIRT_7);
-                        output.accept(EOBlocks.DIRT_8);
-                        output.accept(EOBlocks.DIRT_9);
-                        output.accept(EOBlocks.GRANITE_1);
-                        output.accept(EOBlocks.GRANITE_2);
-                        output.accept(EOBlocks.GRANITE_3);
-                        output.accept(EOBlocks.GRANITE_4);
-                        output.accept(EOBlocks.GRANITE_5);
-                        output.accept(EOBlocks.GRANITE_6);
-                        output.accept(EOBlocks.GRANITE_7);
-                        output.accept(EOBlocks.GRANITE_8);
-                        output.accept(EOBlocks.GRANITE_9);
-                        output.accept(EOBlocks.GRAVEL_1);
-                        output.accept(EOBlocks.GRAVEL_2);
-                        output.accept(EOBlocks.GRAVEL_3);
-                        output.accept(EOBlocks.GRAVEL_4);
-                        output.accept(EOBlocks.GRAVEL_5);
-                        output.accept(EOBlocks.GRAVEL_6);
-                        output.accept(EOBlocks.GRAVEL_7);
-                        output.accept(EOBlocks.GRAVEL_8);
-                        output.accept(EOBlocks.GRAVEL_9);
-                        output.accept(EOBlocks.SAND_1);
-                        output.accept(EOBlocks.SAND_2);
-                        output.accept(EOBlocks.SAND_3);
-                        output.accept(EOBlocks.SAND_4);
-                        output.accept(EOBlocks.SAND_5);
-                        output.accept(EOBlocks.SAND_6);
-                        output.accept(EOBlocks.SAND_7);
-                        output.accept(EOBlocks.SAND_8);
-                        output.accept(EOBlocks.SAND_9);
+                        output.accept(EOBlockRegistry.ANDESITE_1);
+                        output.accept(EOBlockRegistry.ANDESITE_2);
+                        output.accept(EOBlockRegistry.ANDESITE_3);
+                        output.accept(EOBlockRegistry.ANDESITE_4);
+                        output.accept(EOBlockRegistry.ANDESITE_5);
+                        output.accept(EOBlockRegistry.ANDESITE_6);
+                        output.accept(EOBlockRegistry.ANDESITE_7);
+                        output.accept(EOBlockRegistry.ANDESITE_8);
+                        output.accept(EOBlockRegistry.ANDESITE_9);
+                        output.accept(EOBlockRegistry.COBBLE_1);
+                        output.accept(EOBlockRegistry.COBBLE_2);
+                        output.accept(EOBlockRegistry.COBBLE_3);
+                        output.accept(EOBlockRegistry.COBBLE_4);
+                        output.accept(EOBlockRegistry.COBBLE_5);
+                        output.accept(EOBlockRegistry.COBBLE_6);
+                        output.accept(EOBlockRegistry.COBBLE_7);
+                        output.accept(EOBlockRegistry.COBBLE_8);
+                        output.accept(EOBlockRegistry.COBBLE_9);
+                        output.accept(EOBlockRegistry.DIORITE_1);
+                        output.accept(EOBlockRegistry.DIORITE_2);
+                        output.accept(EOBlockRegistry.DIORITE_3);
+                        output.accept(EOBlockRegistry.DIORITE_4);
+                        output.accept(EOBlockRegistry.DIORITE_5);
+                        output.accept(EOBlockRegistry.DIORITE_6);
+                        output.accept(EOBlockRegistry.DIORITE_7);
+                        output.accept(EOBlockRegistry.DIORITE_8);
+                        output.accept(EOBlockRegistry.DIORITE_9);
+                        output.accept(EOBlockRegistry.DIRT_1);
+                        output.accept(EOBlockRegistry.DIRT_2);
+                        output.accept(EOBlockRegistry.DIRT_3);
+                        output.accept(EOBlockRegistry.DIRT_4);
+                        output.accept(EOBlockRegistry.DIRT_5);
+                        output.accept(EOBlockRegistry.DIRT_6);
+                        output.accept(EOBlockRegistry.DIRT_7);
+                        output.accept(EOBlockRegistry.DIRT_8);
+                        output.accept(EOBlockRegistry.DIRT_9);
+                        output.accept(EOBlockRegistry.GRANITE_1);
+                        output.accept(EOBlockRegistry.GRANITE_2);
+                        output.accept(EOBlockRegistry.GRANITE_3);
+                        output.accept(EOBlockRegistry.GRANITE_4);
+                        output.accept(EOBlockRegistry.GRANITE_5);
+                        output.accept(EOBlockRegistry.GRANITE_6);
+                        output.accept(EOBlockRegistry.GRANITE_7);
+                        output.accept(EOBlockRegistry.GRANITE_8);
+                        output.accept(EOBlockRegistry.GRANITE_9);
+                        output.accept(EOBlockRegistry.GRAVEL_1);
+                        output.accept(EOBlockRegistry.GRAVEL_2);
+                        output.accept(EOBlockRegistry.GRAVEL_3);
+                        output.accept(EOBlockRegistry.GRAVEL_4);
+                        output.accept(EOBlockRegistry.GRAVEL_5);
+                        output.accept(EOBlockRegistry.GRAVEL_6);
+                        output.accept(EOBlockRegistry.GRAVEL_7);
+                        output.accept(EOBlockRegistry.GRAVEL_8);
+                        output.accept(EOBlockRegistry.GRAVEL_9);
+                        output.accept(EOBlockRegistry.SAND_1);
+                        output.accept(EOBlockRegistry.SAND_2);
+                        output.accept(EOBlockRegistry.SAND_3);
+                        output.accept(EOBlockRegistry.SAND_4);
+                        output.accept(EOBlockRegistry.SAND_5);
+                        output.accept(EOBlockRegistry.SAND_6);
+                        output.accept(EOBlockRegistry.SAND_7);
+                        output.accept(EOBlockRegistry.SAND_8);
+                        output.accept(EOBlockRegistry.SAND_9);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_RAW_MATERIALS = CREATIVE_MODE_TAB.register("eternal_ores_tab_7",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOItems.RAW_CATALYRIUM.get()))
+                    .icon(()-> new ItemStack(EOItemRegistry.RAW_CATALYRIUM.get()))
                     .title(Component.translatable("creativetab.eternalores.raw_ores"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOItems.RAW_ALUMINUM);
-                        output.accept(EOItems.RAW_ARDITE);
-                        output.accept(EOItems.RAW_CATALYRIUM);
-                        output.accept(EOItems.RAW_COBALT);
-                        output.accept(EOItems.RAW_GALLIUM);
-                        output.accept(EOItems.RAW_IRIDIUM);
-                        output.accept(EOItems.RAW_LEAD);
-                        output.accept(EOItems.RAW_NICKEL);
-                        output.accept(EOItems.RAW_OSMIUM);
-                        output.accept(EOItems.RAW_PLATINUM);
-                        output.accept(EOItems.RAW_PLUTONIUM);
-                        output.accept(EOItems.RAW_SILVER);
-                        output.accept(EOItems.SULFUR);
-                        output.accept(EOItems.RAW_TIN);
-                        output.accept(EOItems.RAW_TUNGSTEN);
-                        output.accept(EOItems.RAW_ULTIMATITANIUM);
-                        output.accept(EOItems.RAW_URANINITE);
-                        output.accept(EOItems.RAW_URANIUM);
-                        output.accept(EOItems.RAW_ZINC);
+                        output.accept(EOItemRegistry.RAW_ALUMINUM);
+                        output.accept(EOItemRegistry.RAW_ARDITE);
+                        output.accept(EOItemRegistry.RAW_CATALYRIUM);
+                        output.accept(EOItemRegistry.RAW_COBALT);
+                        output.accept(EOItemRegistry.RAW_GALLIUM);
+                        output.accept(EOItemRegistry.RAW_IRIDIUM);
+                        output.accept(EOItemRegistry.RAW_LEAD);
+                        output.accept(EOItemRegistry.RAW_NICKEL);
+                        output.accept(EOItemRegistry.RAW_OSMIUM);
+                        output.accept(EOItemRegistry.RAW_PLATINUM);
+                        output.accept(EOItemRegistry.RAW_PLUTONIUM);
+                        output.accept(EOItemRegistry.RAW_SILVER);
+                        output.accept(EOItemRegistry.SULFUR);
+                        output.accept(EOItemRegistry.RAW_TIN);
+                        output.accept(EOItemRegistry.RAW_TUNGSTEN);
+                        output.accept(EOItemRegistry.RAW_ULTIMATITANIUM);
+                        output.accept(EOItemRegistry.RAW_URANINITE);
+                        output.accept(EOItemRegistry.RAW_URANIUM);
+                        output.accept(EOItemRegistry.RAW_ZINC);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_MATERIALS = CREATIVE_MODE_TAB.register("eternal_ores_tab_8",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOItems.MISSING_INGOT.get()))
+                    .icon(()-> new ItemStack(EOItemRegistry.MISSING_INGOT.get()))
                     .title(Component.translatable("creativetab.eternalores.materials"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOItems.ALUMINUM_INGOT);
-                        output.accept(EOItems.ARDITE_INGOT);
-                        output.accept(EOItems.BLUE_STEEL_INGOT);
-                        output.accept(EOItems.BRASS_INGOT);
-                        output.accept(EOItems.BRITANNIA_SILVER_INGOT);
-                        output.accept(EOItems.BRONZE_INGOT);
-                        output.accept(EOItems.CATALYRIUM_INGOT);
-                        output.accept(EOItems.CAST_IRON_INGOT);
-                        output.accept(EOItems.CAST_STEEL_INGOT);
-                        output.accept(EOItems.COBALT_INGOT);
-                        output.accept(EOItems.CONSTANTAN_INGOT);
-                        output.accept(EOItems.ELECTRUM_INGOT);
-                        output.accept(EOItems.ETERNAL_DARK_INGOT);
-                        output.accept(EOItems.ETERNAL_LIGHT_INGOT);
-                        output.accept(EOItems.ENDERIUM_INGOT);
-                        output.accept(EOItems.GALLIUM_INGOT);
-                        output.accept(EOItems.GRAPHITE_INGOT);
-                        output.accept(EOItems.INVAR_INGOT);
-                        output.accept(EOItems.IRIDIUM_INGOT);
-                        output.accept(EOItems.LEAD_INGOT);
-                        output.accept(EOItems.LUMIUM_INGOT);
-                        output.accept(EOItems.MISSING_INGOT);
-                        output.accept(EOItems.NETHERSTEEL_INGOT);
-                        output.accept(EOItems.NICKEL_INGOT);
-                        output.accept(EOItems.OSMIUM_INGOT);
-                        output.accept(EOItems.PEWTER_INGOT);
-                        output.accept(EOItems.PIG_IRON_INGOT);
-                        output.accept(EOItems.PLATINUM_INGOT);
-                        output.accept(EOItems.PLUTONIUM_INGOT);
-                        output.accept(EOItems.REDSTONE_INGOT);
-                        output.accept(EOItems.ROSE_GOLD_INGOT);
-                        output.accept(EOItems.SIGNALUM_INGOT);
-                        output.accept(EOItems.SILICON_INGOT);
-                        output.accept(EOItems.SILVER_INGOT);
-                        output.accept(EOItems.SHADOWSTEEL_INGOT);
-                        output.accept(EOItems.STEEL_INGOT);
-                        output.accept(EOItems.TIN_INGOT);
-                        output.accept(EOItems.TITANIUM_INGOT);
-                        output.accept(EOItems.TUNGSTEN_INGOT);
-                        output.accept(EOItems.ULTIMATITANIUM_INGOT);
-                        output.accept(EOItems.URANINITE_INGOT);
-                        output.accept(EOItems.URANIUM_INGOT);
-                        output.accept(EOItems.WROUGHT_IRON_INGOT);
-                        output.accept(EOItems.ZINC_INGOT);
-                        output.accept(EOItems.GEM_AMBER);
-                        output.accept(EOItems.GEM_APATITE);
-                        output.accept(EOItems.GEM_CINNABAR);
-                        output.accept(EOItems.FLUORITE);
-                        output.accept(EOItems.GEM_NECROTICARITE);
-                        output.accept(EOItems.GEM_NITER);
-                        output.accept(EOItems.GEM_OBSIDIAN_SHARD);
-                        output.accept(EOItems.GEM_ONYX);
-                        output.accept(EOItems.GEM_PERIDOT);
-                        output.accept(EOItems.GEM_QUANTIQUARITE);
-                        output.accept(EOItems.GEM_RUBY);
-                        output.accept(EOItems.GEM_SAPPHIRE);
-                        output.accept(EOItems.GEM_TACHYARITE);
-                        output.accept(EOItems.GEM_VOIDERITE);
-                        output.accept(EOItems.SILICON);
+                        output.accept(EOItemRegistry.ALUMINUM_INGOT);
+                        output.accept(EOItemRegistry.ARDITE_INGOT);
+                        output.accept(EOItemRegistry.BLUE_STEEL_INGOT);
+                        output.accept(EOItemRegistry.BRASS_INGOT);
+                        output.accept(EOItemRegistry.BRITANNIA_SILVER_INGOT);
+                        output.accept(EOItemRegistry.BRONZE_INGOT);
+                        output.accept(EOItemRegistry.CATALYRIUM_INGOT);
+                        output.accept(EOItemRegistry.CAST_IRON_INGOT);
+                        output.accept(EOItemRegistry.CAST_STEEL_INGOT);
+                        output.accept(EOItemRegistry.COBALT_INGOT);
+                        output.accept(EOItemRegistry.CONSTANTAN_INGOT);
+                        output.accept(EOItemRegistry.ELECTRUM_INGOT);
+                        output.accept(EOItemRegistry.ETERNAL_DARK_INGOT);
+                        output.accept(EOItemRegistry.ETERNAL_LIGHT_INGOT);
+                        output.accept(EOItemRegistry.ENDERIUM_INGOT);
+                        output.accept(EOItemRegistry.GALLIUM_INGOT);
+                        output.accept(EOItemRegistry.GRAPHITE_INGOT);
+                        output.accept(EOItemRegistry.INVAR_INGOT);
+                        output.accept(EOItemRegistry.IRIDIUM_INGOT);
+                        output.accept(EOItemRegistry.LEAD_INGOT);
+                        output.accept(EOItemRegistry.LUMIUM_INGOT);
+                        output.accept(EOItemRegistry.MISSING_INGOT);
+                        output.accept(EOItemRegistry.NETHERSTEEL_INGOT);
+                        output.accept(EOItemRegistry.NICKEL_INGOT);
+                        output.accept(EOItemRegistry.OSMIUM_INGOT);
+                        output.accept(EOItemRegistry.PEWTER_INGOT);
+                        output.accept(EOItemRegistry.PIG_IRON_INGOT);
+                        output.accept(EOItemRegistry.PLATINUM_INGOT);
+                        output.accept(EOItemRegistry.PLUTONIUM_INGOT);
+                        output.accept(EOItemRegistry.REDSTONE_INGOT);
+                        output.accept(EOItemRegistry.ROSE_GOLD_INGOT);
+                        output.accept(EOItemRegistry.SIGNALUM_INGOT);
+                        output.accept(EOItemRegistry.SILICON_INGOT);
+                        output.accept(EOItemRegistry.SILVER_INGOT);
+                        output.accept(EOItemRegistry.SHADOWSTEEL_INGOT);
+                        output.accept(EOItemRegistry.STEEL_INGOT);
+                        output.accept(EOItemRegistry.TIN_INGOT);
+                        output.accept(EOItemRegistry.TITANIUM_INGOT);
+                        output.accept(EOItemRegistry.TUNGSTEN_INGOT);
+                        output.accept(EOItemRegistry.ULTIMATITANIUM_INGOT);
+                        output.accept(EOItemRegistry.URANINITE_INGOT);
+                        output.accept(EOItemRegistry.URANIUM_INGOT);
+                        output.accept(EOItemRegistry.WROUGHT_IRON_INGOT);
+                        output.accept(EOItemRegistry.ZINC_INGOT);
+                        output.accept(EOItemRegistry.GEM_AMBER);
+                        output.accept(EOItemRegistry.GEM_APATITE);
+                        output.accept(EOItemRegistry.GEM_CINNABAR);
+                        output.accept(EOItemRegistry.FLUORITE);
+                        output.accept(EOItemRegistry.GEM_NECROTICARITE);
+                        output.accept(EOItemRegistry.GEM_NITER);
+                        output.accept(EOItemRegistry.GEM_OBSIDIAN_SHARD);
+                        output.accept(EOItemRegistry.GEM_ONYX);
+                        output.accept(EOItemRegistry.GEM_PERIDOT);
+                        output.accept(EOItemRegistry.GEM_QUANTIQUARITE);
+                        output.accept(EOItemRegistry.GEM_RUBY);
+                        output.accept(EOItemRegistry.GEM_SAPPHIRE);
+                        output.accept(EOItemRegistry.GEM_TACHYARITE);
+                        output.accept(EOItemRegistry.GEM_VOIDERITE);
+                        output.accept(EOItemRegistry.SILICON);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_NUGGETS = CREATIVE_MODE_TAB.register("eternal_ores_tab_9",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOItems.CATALYRIUM_NUGGET.get()))
+                    .icon(()-> new ItemStack(EOItemRegistry.CATALYRIUM_NUGGET.get()))
                     .title(Component.translatable("creativetab.eternalores.nuggets"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOItems.ALUMINUM_NUGGET);
-                        output.accept(EOItems.ARDITE_NUGGET);
-                        output.accept(EOItems.BLUE_STEEL_NUGGET);
-                        output.accept(EOItems.BRASS_NUGGET);
-                        output.accept(EOItems.BRITANNIA_SILVER_NUGGET);
-                        output.accept(EOItems.BRONZE_NUGGET);
-                        output.accept(EOItems.CATALYRIUM_NUGGET);
-                        output.accept(EOItems.CAST_IRON_NUGGET);
-                        output.accept(EOItems.CAST_STEEL_NUGGET);
-                        output.accept(EOItems.COBALT_NUGGET);
-                        output.accept(EOItems.CONSTANTAN_NUGGET);
-                        output.accept(EOItems.COPPER_NUGGET);
-                        output.accept(EOItems.ELECTRUM_NUGGET);
-                        output.accept(EOItems.ENDERIUM_NUGGET);
-                        output.accept(EOItems.GALLIUM_NUGGET);
-                        output.accept(EOItems.GRAPHITE_NUGGET);
-                        output.accept(EOItems.INVAR_NUGGET);
-                        output.accept(EOItems.IRIDIUM_NUGGET);
-                        output.accept(EOItems.LEAD_NUGGET);
-                        output.accept(EOItems.LUMIUM_NUGGET);
-                        output.accept(EOItems.NETHERITE_NUGGET);
-                        output.accept(EOItems.NETHERSTEEL_NUGGET);
-                        output.accept(EOItems.NICKEL_NUGGET);
-                        output.accept(EOItems.OSMIUM_NUGGET);
-                        output.accept(EOItems.PEWTER_NUGGET);
-                        output.accept(EOItems.PIG_IRON_NUGGET);
-                        output.accept(EOItems.PLATINUM_NUGGET);
-                        output.accept(EOItems.PLUTONIUM_NUGGET);
-                        output.accept(EOItems.ROSE_GOLD_NUGGET);
-                        output.accept(EOItems.SIGNALUM_NUGGET);
-                        output.accept(EOItems.SILVER_NUGGET);
-                        output.accept(EOItems.SHADOWSTEEL_NUGGET);
-                        output.accept(EOItems.STEEL_NUGGET);
-                        output.accept(EOItems.TIN_NUGGET);
-                        output.accept(EOItems.TITANIUM_NUGGET);
-                        output.accept(EOItems.TUNGSTEN_NUGGET);
-                        output.accept(EOItems.ULTIMATITANIUM_NUGGET);
-                        output.accept(EOItems.URANINITE_NUGGET);
-                        output.accept(EOItems.URANIUM_NUGGET);
-                        output.accept(EOItems.WROUGHT_IRON_NUGGET);
-                        output.accept(EOItems.ZINC_NUGGET);
+                        output.accept(EOItemRegistry.ALUMINUM_NUGGET);
+                        output.accept(EOItemRegistry.ARDITE_NUGGET);
+                        output.accept(EOItemRegistry.BLUE_STEEL_NUGGET);
+                        output.accept(EOItemRegistry.BRASS_NUGGET);
+                        output.accept(EOItemRegistry.BRITANNIA_SILVER_NUGGET);
+                        output.accept(EOItemRegistry.BRONZE_NUGGET);
+                        output.accept(EOItemRegistry.CATALYRIUM_NUGGET);
+                        output.accept(EOItemRegistry.CAST_IRON_NUGGET);
+                        output.accept(EOItemRegistry.CAST_STEEL_NUGGET);
+                        output.accept(EOItemRegistry.COBALT_NUGGET);
+                        output.accept(EOItemRegistry.CONSTANTAN_NUGGET);
+                        output.accept(EOItemRegistry.COPPER_NUGGET);
+                        output.accept(EOItemRegistry.ELECTRUM_NUGGET);
+                        output.accept(EOItemRegistry.ENDERIUM_NUGGET);
+                        output.accept(EOItemRegistry.GALLIUM_NUGGET);
+                        output.accept(EOItemRegistry.GRAPHITE_NUGGET);
+                        output.accept(EOItemRegistry.INVAR_NUGGET);
+                        output.accept(EOItemRegistry.IRIDIUM_NUGGET);
+                        output.accept(EOItemRegistry.LEAD_NUGGET);
+                        output.accept(EOItemRegistry.LUMIUM_NUGGET);
+                        output.accept(EOItemRegistry.NETHERITE_NUGGET);
+                        output.accept(EOItemRegistry.NETHERSTEEL_NUGGET);
+                        output.accept(EOItemRegistry.NICKEL_NUGGET);
+                        output.accept(EOItemRegistry.OSMIUM_NUGGET);
+                        output.accept(EOItemRegistry.PEWTER_NUGGET);
+                        output.accept(EOItemRegistry.PIG_IRON_NUGGET);
+                        output.accept(EOItemRegistry.PLATINUM_NUGGET);
+                        output.accept(EOItemRegistry.PLUTONIUM_NUGGET);
+                        output.accept(EOItemRegistry.ROSE_GOLD_NUGGET);
+                        output.accept(EOItemRegistry.SIGNALUM_NUGGET);
+                        output.accept(EOItemRegistry.SILVER_NUGGET);
+                        output.accept(EOItemRegistry.SHADOWSTEEL_NUGGET);
+                        output.accept(EOItemRegistry.STEEL_NUGGET);
+                        output.accept(EOItemRegistry.TIN_NUGGET);
+                        output.accept(EOItemRegistry.TITANIUM_NUGGET);
+                        output.accept(EOItemRegistry.TUNGSTEN_NUGGET);
+                        output.accept(EOItemRegistry.ULTIMATITANIUM_NUGGET);
+                        output.accept(EOItemRegistry.URANINITE_NUGGET);
+                        output.accept(EOItemRegistry.URANIUM_NUGGET);
+                        output.accept(EOItemRegistry.WROUGHT_IRON_NUGGET);
+                        output.accept(EOItemRegistry.ZINC_NUGGET);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_DUSTS = CREATIVE_MODE_TAB.register("eternal_ores_tab_10",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOItems.CATALYRIUM_DUST.get()))
+                    .icon(()-> new ItemStack(EOItemRegistry.CATALYRIUM_DUST.get()))
                     .title(Component.translatable("creativetab.eternalores.dusts"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOItems.ALUMINUM_DUST);
-                        output.accept(EOItems.AMBER_DUST);
-                        output.accept(EOItems.AMETHYST_DUST);
-                        output.accept(EOItems.APATITE_DUST);
-                        output.accept(EOItems.ARDITE_DUST);
-                        output.accept(EOItems.BLUE_STEEL_DUST);
-                        output.accept(EOItems.BRASS_DUST);
-                        output.accept(EOItems.BRITANNIA_SILVER_DUST);
-                        output.accept(EOItems.BRONZE_DUST);
-                        output.accept(EOItems.CATALYRIUM_DUST);
-                        output.accept(EOItems.CAST_IRON_DUST);
-                        output.accept(EOItems.CAST_STEEL_DUST);
-                        output.accept(EOItems.CARBON_BLEND);
-                        output.accept(EOItems.COAL_DUST);
-                        output.accept(EOItems.COBALT_DUST);
-                        output.accept(EOItems.CONSTANTAN_DUST);
-                        output.accept(EOItems.COPPER_DUST);
-                        output.accept(EOItems.DIAMOND_DUST);
-                        output.accept(EOItems.ELECTRUM_DUST);
-                        output.accept(EOItems.EMERALD_DUST);
-                        output.accept(EOItems.ENERGETIC_BLEND);
-                        output.accept(EOItems.ENDER_DUST);
-                        output.accept(EOItems.ENDERGETIC_BLEND);
-                        output.accept(EOItems.ENDERIUM_DUST);
-                        output.accept(EOItems.ENDSTONE_DUST);
-                        output.accept(EOItems.FLUORITE_DUST);
-                        output.accept(EOItems.GALLIUM_DUST);
-                        output.accept(EOItems.GOLD_DUST);
-                        output.accept(EOItems.GRAPHITE_DUST);
-                        output.accept(EOItems.INVAR_DUST);
-                        output.accept(EOItems.IRIDIUM_DUST);
-                        output.accept(EOItems.IRON_DUST);
-                        output.accept(EOItems.LAPIS_LAZULI_DUST);
-                        output.accept(EOItems.LEAD_DUST);
-                        output.accept(EOItems.LUMIUM_DUST);
-                        output.accept(EOItems.NECROTICARITE_DUST);
-                        output.accept(EOItems.NETHER_STAR_DUST);
-                        output.accept(EOItems.NETHERITE_DUST);
-                        output.accept(EOItems.NETHERRACK_DUST);
-                        output.accept(EOItems.NETHERSTEEL_DUST);
-                        output.accept(EOItems.NICKEL_DUST);
-                        output.accept(EOItems.NITER_DUST);
-                        output.accept(EOItems.OBSIDIAN_DUST);
-                        output.accept(EOItems.ONYX_DUST);
-                        output.accept(EOItems.OSMIUM_DUST);
-                        output.accept(EOItems.PERIDOT_DUST);
-                        output.accept(EOItems.PEWTER_DUST);
-                        output.accept(EOItems.PIG_IRON_DUST);
-                        output.accept(EOItems.PLATINUM_DUST);
-                        output.accept(EOItems.PLUTONIUM_DUST);
-                        output.accept(EOItems.QUANTIQUARITE_DUST);
-                        output.accept(EOItems.QUARTZ_DUST);
-                        output.accept(EOItems.ROSE_GOLD_DUST);
-                        output.accept(EOItems.RUBY_DUST);
-                        output.accept(EOItems.SAPPHIRE_DUST);
-                        output.accept(EOItems.SCULK_DUST);
-                        output.accept(EOItems.SHADOWSTEEL_DUST);
-                        output.accept(EOItems.SIGNALUM_DUST);
-                        output.accept(EOItems.SILVER_DUST);
-                        output.accept(EOItems.STEEL_DUST);
-                        output.accept(EOItems.SULFUR_DUST);
-                        output.accept(EOItems.TACHYARITE_DUST);
-                        output.accept(EOItems.TIN_DUST);
-                        output.accept(EOItems.TITANIUM_DUST);
-                        output.accept(EOItems.TUNGSTEN_DUST);
-                        output.accept(EOItems.ULTIMATITANIUM_DUST);
-                        output.accept(EOItems.URANINITE_DUST);
-                        output.accept(EOItems.URANIUM_DUST);
-                        output.accept(EOItems.VOIDERITE_DUST);
-                        output.accept(EOItems.WROUGHT_IRON_DUST);
-                        output.accept(EOItems.ZINC_DUST);
+                        output.accept(EOItemRegistry.ALUMINUM_DUST);
+                        output.accept(EOItemRegistry.AMBER_DUST);
+                        output.accept(EOItemRegistry.AMETHYST_DUST);
+                        output.accept(EOItemRegistry.APATITE_DUST);
+                        output.accept(EOItemRegistry.ARDITE_DUST);
+                        output.accept(EOItemRegistry.BLUE_STEEL_DUST);
+                        output.accept(EOItemRegistry.BRASS_DUST);
+                        output.accept(EOItemRegistry.BRITANNIA_SILVER_DUST);
+                        output.accept(EOItemRegistry.BRONZE_DUST);
+                        output.accept(EOItemRegistry.CATALYRIUM_DUST);
+                        output.accept(EOItemRegistry.CAST_IRON_DUST);
+                        output.accept(EOItemRegistry.CAST_STEEL_DUST);
+                        output.accept(EOItemRegistry.CARBON_BLEND);
+                        output.accept(EOItemRegistry.COAL_DUST);
+                        output.accept(EOItemRegistry.COBALT_DUST);
+                        output.accept(EOItemRegistry.CONSTANTAN_DUST);
+                        output.accept(EOItemRegistry.COPPER_DUST);
+                        output.accept(EOItemRegistry.DIAMOND_DUST);
+                        output.accept(EOItemRegistry.ELECTRUM_DUST);
+                        output.accept(EOItemRegistry.EMERALD_DUST);
+                        output.accept(EOItemRegistry.ENERGETIC_BLEND);
+                        output.accept(EOItemRegistry.ENDER_DUST);
+                        output.accept(EOItemRegistry.ENDERGETIC_BLEND);
+                        output.accept(EOItemRegistry.ENDERIUM_DUST);
+                        output.accept(EOItemRegistry.ENDSTONE_DUST);
+                        output.accept(EOItemRegistry.FLUORITE_DUST);
+                        output.accept(EOItemRegistry.GALLIUM_DUST);
+                        output.accept(EOItemRegistry.GOLD_DUST);
+                        output.accept(EOItemRegistry.GRAPHITE_DUST);
+                        output.accept(EOItemRegistry.INVAR_DUST);
+                        output.accept(EOItemRegistry.IRIDIUM_DUST);
+                        output.accept(EOItemRegistry.IRON_DUST);
+                        output.accept(EOItemRegistry.LAPIS_LAZULI_DUST);
+                        output.accept(EOItemRegistry.LEAD_DUST);
+                        output.accept(EOItemRegistry.LUMIUM_DUST);
+                        output.accept(EOItemRegistry.NECROTICARITE_DUST);
+                        output.accept(EOItemRegistry.NETHER_STAR_DUST);
+                        output.accept(EOItemRegistry.NETHERITE_DUST);
+                        output.accept(EOItemRegistry.NETHERRACK_DUST);
+                        output.accept(EOItemRegistry.NETHERSTEEL_DUST);
+                        output.accept(EOItemRegistry.NICKEL_DUST);
+                        output.accept(EOItemRegistry.NITER_DUST);
+                        output.accept(EOItemRegistry.OBSIDIAN_DUST);
+                        output.accept(EOItemRegistry.ONYX_DUST);
+                        output.accept(EOItemRegistry.OSMIUM_DUST);
+                        output.accept(EOItemRegistry.PERIDOT_DUST);
+                        output.accept(EOItemRegistry.PEWTER_DUST);
+                        output.accept(EOItemRegistry.PIG_IRON_DUST);
+                        output.accept(EOItemRegistry.PLATINUM_DUST);
+                        output.accept(EOItemRegistry.PLUTONIUM_DUST);
+                        output.accept(EOItemRegistry.PRISMARINE_DUST);
+                        output.accept(EOItemRegistry.QUANTIQUARITE_DUST);
+                        output.accept(EOItemRegistry.QUARTZ_DUST);
+                        output.accept(EOItemRegistry.ROSE_GOLD_DUST);
+                        output.accept(EOItemRegistry.RUBY_DUST);
+                        output.accept(EOItemRegistry.SAPPHIRE_DUST);
+                        output.accept(EOItemRegistry.SCULK_DUST);
+                        output.accept(EOItemRegistry.SHADOWSTEEL_DUST);
+                        output.accept(EOItemRegistry.SIGNALUM_DUST);
+                        output.accept(EOItemRegistry.SILICON_DUST);
+                        output.accept(EOItemRegistry.SILVER_DUST);
+                        output.accept(EOItemRegistry.STEEL_DUST);
+                        output.accept(EOItemRegistry.SULFUR_DUST);
+                        output.accept(EOItemRegistry.TACHYARITE_DUST);
+                        output.accept(EOItemRegistry.TIN_DUST);
+                        output.accept(EOItemRegistry.TITANIUM_DUST);
+                        output.accept(EOItemRegistry.TUNGSTEN_DUST);
+                        output.accept(EOItemRegistry.ULTIMATITANIUM_DUST);
+                        output.accept(EOItemRegistry.URANINITE_DUST);
+                        output.accept(EOItemRegistry.URANIUM_DUST);
+                        output.accept(EOItemRegistry.VOIDERITE_DUST);
+                        output.accept(EOItemRegistry.WROUGHT_IRON_DUST);
+                        output.accept(EOItemRegistry.ZINC_DUST);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_PLATE = CREATIVE_MODE_TAB.register("eternal_ores_tab_11",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOItems.PLATE_CATALYRIUM.get()))
+                    .icon(()-> new ItemStack(EOItemRegistry.PLATE_CATALYRIUM.get()))
                     .title(Component.translatable("creativetab.eternalores.plates"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOItems.PLATE_ALUMINUM);
-                        output.accept(EOItems.PLATE_ARDITE);
-                        output.accept(EOItems.PLATE_BLUE_STEEL);
-                        output.accept(EOItems.PLATE_BRASS);
-                        output.accept(EOItems.PLATE_BRONZE);
-                        output.accept(EOItems.PLATE_CATALYRIUM);
-                        output.accept(EOItems.PLATE_CAST_IRON);
-                        output.accept(EOItems.PLATE_CAST_STEEL);
-                        output.accept(EOItems.PLATE_COBALT);
-                        output.accept(EOItems.PLATE_CONSTANTAN);
-                        output.accept(EOItems.PLATE_COPPER);
-                        output.accept(EOItems.PLATE_DIAMOND);
-                        output.accept(EOItems.PLATE_ELECTRUM);
-                        output.accept(EOItems.PLATE_ENDERIUM);
-                        output.accept(EOItems.PLATE_GALLIUM);
-                        output.accept(EOItems.PLATE_GOLD);
-                        output.accept(EOItems.PLATE_GRAPHITE);
-                        output.accept(EOItems.PLATE_INVAR);
-                        output.accept(EOItems.PLATE_IRIDIUM);
-                        output.accept(EOItems.PLATE_IRON);
-                        output.accept(EOItems.PLATE_LEAD);
-                        output.accept(EOItems.PLATE_LUMIUM);
-                        output.accept(EOItems.PLATE_NECROTICARITE);
-                        output.accept(EOItems.PLATE_NETHERITE);
-                        output.accept(EOItems.PLATE_NETHERSTEEL);
-                        output.accept(EOItems.PLATE_NICKEL);
-                        output.accept(EOItems.PLATE_OSMIUM);
-                        output.accept(EOItems.PLATE_PIG_IRON);
-                        output.accept(EOItems.PLATE_PLATINUM);
-                        output.accept(EOItems.PLATE_PLUTONIUM);
-                        output.accept(EOItems.PLATE_QUANTIQUARITE);
-                        output.accept(EOItems.PLATE_ROSE_GOLD);
-                        output.accept(EOItems.PLATE_SAPPHIRE);
-                        output.accept(EOItems.PLATE_SHADOWSTEEL);
-                        output.accept(EOItems.PLATE_SIGNALUM);
-                        output.accept(EOItems.PLATE_SILVER);
-                        output.accept(EOItems.PLATE_STEEL);
-                        output.accept(EOItems.PLATE_TACHYARITE);
-                        output.accept(EOItems.PLATE_TIN);
-                        output.accept(EOItems.PLATE_TITANIUM);
-                        output.accept(EOItems.PLATE_TUNGSTEN);
-                        output.accept(EOItems.PLATE_ULTIMATITANIUM);
-                        output.accept(EOItems.PLATE_URANIUM);
-                        output.accept(EOItems.PLATE_VOIDERITE);
-                        output.accept(EOItems.PLATE_WROUGHT_IRON);
-                        output.accept(EOItems.PLATE_ZINC);
+                        output.accept(EOItemRegistry.PLATE_ALUMINUM);
+                        output.accept(EOItemRegistry.PLATE_ARDITE);
+                        output.accept(EOItemRegistry.PLATE_BLUE_STEEL);
+                        output.accept(EOItemRegistry.PLATE_BRASS);
+                        output.accept(EOItemRegistry.PLATE_BRONZE);
+                        output.accept(EOItemRegistry.PLATE_CATALYRIUM);
+                        output.accept(EOItemRegistry.PLATE_CAST_IRON);
+                        output.accept(EOItemRegistry.PLATE_CAST_STEEL);
+                        output.accept(EOItemRegistry.PLATE_COBALT);
+                        output.accept(EOItemRegistry.PLATE_CONSTANTAN);
+                        output.accept(EOItemRegistry.PLATE_COPPER);
+                        output.accept(EOItemRegistry.PLATE_DIAMOND);
+                        output.accept(EOItemRegistry.PLATE_ELECTRUM);
+                        output.accept(EOItemRegistry.PLATE_ENDERIUM);
+                        output.accept(EOItemRegistry.PLATE_GALLIUM);
+                        output.accept(EOItemRegistry.PLATE_GOLD);
+                        output.accept(EOItemRegistry.PLATE_GRAPHITE);
+                        output.accept(EOItemRegistry.PLATE_INVAR);
+                        output.accept(EOItemRegistry.PLATE_IRIDIUM);
+                        output.accept(EOItemRegistry.PLATE_IRON);
+                        output.accept(EOItemRegistry.PLATE_LEAD);
+                        output.accept(EOItemRegistry.PLATE_LUMIUM);
+                        output.accept(EOItemRegistry.PLATE_NECROTICARITE);
+                        output.accept(EOItemRegistry.PLATE_NETHERITE);
+                        output.accept(EOItemRegistry.PLATE_NETHERSTEEL);
+                        output.accept(EOItemRegistry.PLATE_NICKEL);
+                        output.accept(EOItemRegistry.PLATE_OSMIUM);
+                        output.accept(EOItemRegistry.PLATE_PIG_IRON);
+                        output.accept(EOItemRegistry.PLATE_PLATINUM);
+                        output.accept(EOItemRegistry.PLATE_PLUTONIUM);
+                        output.accept(EOItemRegistry.PLATE_QUANTIQUARITE);
+                        output.accept(EOItemRegistry.PLATE_ROSE_GOLD);
+                        output.accept(EOItemRegistry.PLATE_SAPPHIRE);
+                        output.accept(EOItemRegistry.PLATE_SHADOWSTEEL);
+                        output.accept(EOItemRegistry.PLATE_SIGNALUM);
+                        output.accept(EOItemRegistry.PLATE_SILVER);
+                        output.accept(EOItemRegistry.PLATE_STEEL);
+                        output.accept(EOItemRegistry.PLATE_TACHYARITE);
+                        output.accept(EOItemRegistry.PLATE_TIN);
+                        output.accept(EOItemRegistry.PLATE_TITANIUM);
+                        output.accept(EOItemRegistry.PLATE_TUNGSTEN);
+                        output.accept(EOItemRegistry.PLATE_ULTIMATITANIUM);
+                        output.accept(EOItemRegistry.PLATE_URANIUM);
+                        output.accept(EOItemRegistry.PLATE_VOIDERITE);
+                        output.accept(EOItemRegistry.PLATE_WROUGHT_IRON);
+                        output.accept(EOItemRegistry.PLATE_ZINC);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_RODS = CREATIVE_MODE_TAB.register("eternal_ores_tab_12",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOItems.ROD_CATALYRIUM.get()))
+                    .icon(()-> new ItemStack(EOItemRegistry.ROD_CATALYRIUM.get()))
                     .title(Component.translatable("creativetab.eternalores.rods"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOItems.ROD_ALUMINUM);
-                        output.accept(EOItems.ROD_ARDITE);
-                        output.accept(EOItems.ROD_BLUE_STEEL);
-                        output.accept(EOItems.ROD_BRASS);
-                        output.accept(EOItems.ROD_BRONZE);
-                        output.accept(EOItems.ROD_CATALYRIUM);
-                        output.accept(EOItems.ROD_CAST_IRON);
-                        output.accept(EOItems.ROD_CAST_STEEL);
-                        output.accept(EOItems.ROD_COBALT);
-                        output.accept(EOItems.ROD_CONSTANTAN);
-                        output.accept(EOItems.ROD_COPPER);
-                        output.accept(EOItems.ROD_DIAMOND);
-                        output.accept(EOItems.ROD_ELECTRUM);
-                        output.accept(EOItems.ROD_ENDERIUM);
-                        output.accept(EOItems.ROD_GALLIUM);
-                        output.accept(EOItems.ROD_GOLD);
-                        output.accept(EOItems.ROD_GRAPHITE);
-                        output.accept(EOItems.ROD_INVAR);
-                        output.accept(EOItems.ROD_IRIDIUM);
-                        output.accept(EOItems.ROD_IRON);
-                        output.accept(EOItems.ROD_LEAD);
-                        output.accept(EOItems.ROD_LUMIUM);
-                        output.accept(EOItems.ROD_NECROTICARITE);
-                        output.accept(EOItems.ROD_NETHERITE);
-                        output.accept(EOItems.ROD_NETHERSTEEL);
-                        output.accept(EOItems.ROD_NICKEL);
-                        output.accept(EOItems.ROD_OSMIUM);
-                        output.accept(EOItems.ROD_PIG_IRON);
-                        output.accept(EOItems.ROD_PLATINUM);
-                        output.accept(EOItems.ROD_PLUTONIUM);
-                        output.accept(EOItems.ROD_QUANTIQUARITE);
-                        output.accept(EOItems.ROD_ROSE_GOLD);
-                        output.accept(EOItems.ROD_SAPPHIRE);
-                        output.accept(EOItems.ROD_SHADOWSTEEL);
-                        output.accept(EOItems.ROD_SIGNALUM);
-                        output.accept(EOItems.ROD_SILVER);
-                        output.accept(EOItems.ROD_STEEL);
-                        output.accept(EOItems.ROD_TACHYARITE);
-                        output.accept(EOItems.ROD_TIN);
-                        output.accept(EOItems.ROD_TITANIUM);
-                        output.accept(EOItems.ROD_TUNGSTEN);
-                        output.accept(EOItems.ROD_ULTIMATITANIUM);
-                        output.accept(EOItems.ROD_URANIUM);
-                        output.accept(EOItems.ROD_VOIDERITE);
-                        output.accept(EOItems.ROD_WROUGHT_IRON);
-                        output.accept(EOItems.ROD_ZINC);
+                        output.accept(EOItemRegistry.ROD_ALUMINUM);
+                        output.accept(EOItemRegistry.ROD_ARDITE);
+                        output.accept(EOItemRegistry.ROD_BLUE_STEEL);
+                        output.accept(EOItemRegistry.ROD_BRASS);
+                        output.accept(EOItemRegistry.ROD_BRONZE);
+                        output.accept(EOItemRegistry.ROD_CATALYRIUM);
+                        output.accept(EOItemRegistry.ROD_CAST_IRON);
+                        output.accept(EOItemRegistry.ROD_CAST_STEEL);
+                        output.accept(EOItemRegistry.ROD_COBALT);
+                        output.accept(EOItemRegistry.ROD_CONSTANTAN);
+                        output.accept(EOItemRegistry.ROD_COPPER);
+                        output.accept(EOItemRegistry.ROD_DIAMOND);
+                        output.accept(EOItemRegistry.ROD_ELECTRUM);
+                        output.accept(EOItemRegistry.ROD_ENDERIUM);
+                        output.accept(EOItemRegistry.ROD_GALLIUM);
+                        output.accept(EOItemRegistry.ROD_GOLD);
+                        output.accept(EOItemRegistry.ROD_GRAPHITE);
+                        output.accept(EOItemRegistry.ROD_INVAR);
+                        output.accept(EOItemRegistry.ROD_IRIDIUM);
+                        output.accept(EOItemRegistry.ROD_IRON);
+                        output.accept(EOItemRegistry.ROD_LEAD);
+                        output.accept(EOItemRegistry.ROD_LUMIUM);
+                        output.accept(EOItemRegistry.ROD_NECROTICARITE);
+                        output.accept(EOItemRegistry.ROD_NETHERITE);
+                        output.accept(EOItemRegistry.ROD_NETHERSTEEL);
+                        output.accept(EOItemRegistry.ROD_NICKEL);
+                        output.accept(EOItemRegistry.ROD_OSMIUM);
+                        output.accept(EOItemRegistry.ROD_PIG_IRON);
+                        output.accept(EOItemRegistry.ROD_PLATINUM);
+                        output.accept(EOItemRegistry.ROD_PLUTONIUM);
+                        output.accept(EOItemRegistry.ROD_QUANTIQUARITE);
+                        output.accept(EOItemRegistry.ROD_ROSE_GOLD);
+                        output.accept(EOItemRegistry.ROD_SAPPHIRE);
+                        output.accept(EOItemRegistry.ROD_SHADOWSTEEL);
+                        output.accept(EOItemRegistry.ROD_SIGNALUM);
+                        output.accept(EOItemRegistry.ROD_SILVER);
+                        output.accept(EOItemRegistry.ROD_STEEL);
+                        output.accept(EOItemRegistry.ROD_TACHYARITE);
+                        output.accept(EOItemRegistry.ROD_TIN);
+                        output.accept(EOItemRegistry.ROD_TITANIUM);
+                        output.accept(EOItemRegistry.ROD_TUNGSTEN);
+                        output.accept(EOItemRegistry.ROD_ULTIMATITANIUM);
+                        output.accept(EOItemRegistry.ROD_URANIUM);
+                        output.accept(EOItemRegistry.ROD_VOIDERITE);
+                        output.accept(EOItemRegistry.ROD_WROUGHT_IRON);
+                        output.accept(EOItemRegistry.ROD_ZINC);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_GEARS = CREATIVE_MODE_TAB.register("eternal_ores_tab_13",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOItems.GEAR_CATALYRIUM.get()))
+                    .icon(()-> new ItemStack(EOItemRegistry.GEAR_CATALYRIUM.get()))
                     .title(Component.translatable("creativetab.eternalores.gears"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOItems.GEAR_ALUMINUM);
-                        output.accept(EOItems.GEAR_ARDITE);
-                        output.accept(EOItems.GEAR_BRONZE);
-                        output.accept(EOItems.GEAR_CATALYRIUM);
-                        output.accept(EOItems.GEAR_COPPER);
-                        output.accept(EOItems.GEAR_DIAMOND);
-                        output.accept(EOItems.GEAR_ENDERIUM);
-                        output.accept(EOItems.GEAR_GOLD);
-                        output.accept(EOItems.GEAR_IRON);
-                        output.accept(EOItems.GEAR_LEAD);
-                        output.accept(EOItems.GEAR_NECROTICARITE);
-                        output.accept(EOItems.GEAR_OSMIUM);
-                        output.accept(EOItems.GEAR_QUANTIQUARITE);
-                        output.accept(EOItems.GEAR_STEEL);
-                        output.accept(EOItems.GEAR_TACHYARITE);
-                        output.accept(EOItems.GEAR_TIN);
-                        output.accept(EOItems.GEAR_TUNGSTEN);
-                        output.accept(EOItems.GEAR_VOIDERITE);
-                        output.accept(EOItems.ULTIMATE_GEAR);
+                        output.accept(EOItemRegistry.GEAR_ALUMINUM);
+                        output.accept(EOItemRegistry.GEAR_ARDITE);
+                        output.accept(EOItemRegistry.GEAR_BRONZE);
+                        output.accept(EOItemRegistry.GEAR_CATALYRIUM);
+                        output.accept(EOItemRegistry.GEAR_COPPER);
+                        output.accept(EOItemRegistry.GEAR_DIAMOND);
+                        output.accept(EOItemRegistry.GEAR_ENDERIUM);
+                        output.accept(EOItemRegistry.GEAR_GOLD);
+                        output.accept(EOItemRegistry.GEAR_IRON);
+                        output.accept(EOItemRegistry.GEAR_LEAD);
+                        output.accept(EOItemRegistry.GEAR_NECROTICARITE);
+                        output.accept(EOItemRegistry.GEAR_OSMIUM);
+                        output.accept(EOItemRegistry.GEAR_QUANTIQUARITE);
+                        output.accept(EOItemRegistry.GEAR_STEEL);
+                        output.accept(EOItemRegistry.GEAR_TACHYARITE);
+                        output.accept(EOItemRegistry.GEAR_TIN);
+                        output.accept(EOItemRegistry.GEAR_TUNGSTEN);
+                        output.accept(EOItemRegistry.GEAR_VOIDERITE);
+                        output.accept(EOItemRegistry.ULTIMATE_GEAR);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_TOOLS = CREATIVE_MODE_TAB.register("eternal_ores_tab_14",
             ()-> CreativeModeTab.builder()
-                    .icon(()-> new ItemStack(EOItems.COBALT_HAMMER.get()))
+                    .icon(()-> new ItemStack(EOItemRegistry.COBALT_HAMMER.get()))
                     .title(Component.translatable("creativetab.eternalores.tools"))
                     .displayItems((itemDisplayParameters, output) ->
                     {
-                        output.accept(EOItems.COBALT_HAMMER);
-                        output.accept(EOItems.COPPER_HAMMER);
-                        output.accept(EOItems.DIAMOND_HAMMER);
-                        output.accept(EOItems.IRON_HAMMER);
-                        output.accept(EOItems.STONE_HAMMER);
-                        output.accept(EOItems.IRON_GEM_CUTTER);
-                        output.accept(EOItems.FINDER);
+                        output.accept(EOItemRegistry.COBALT_HAMMER);
+                        output.accept(EOItemRegistry.COPPER_HAMMER);
+                        output.accept(EOItemRegistry.DIAMOND_HAMMER);
+                        output.accept(EOItemRegistry.IRON_HAMMER);
+                        output.accept(EOItemRegistry.STONE_HAMMER);
+                        output.accept(EOItemRegistry.IRON_GEM_CUTTER);
+                        output.accept(EOItemRegistry.FINDER);
                     }).build());
 
     public static final Supplier<CreativeModeTab> EO_ORITECH = CREATIVE_MODE_TAB.register("eternal_ores_tab_15",

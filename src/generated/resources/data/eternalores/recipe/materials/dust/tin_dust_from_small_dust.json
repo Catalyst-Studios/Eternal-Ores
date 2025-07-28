@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/tin"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:o_tin_small_dust"
+  }
+}

@@ -12,7 +12,7 @@
   },
   "item_input": {
     "count": 3,
-    "tag": "c:raw_materials/aluminium"
+    "tag": "c:raw_materials/aluminum"
   },
   "output": {
     "amount": 2000,

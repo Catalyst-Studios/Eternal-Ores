@@ -26,18 +26,24 @@
                   }
                 }
               ],
-              "name": "eternalores:cobalt_ore_block"
+              "name": "eternalores:deepslate_cobalt_ore_block"
             },
             {
               "type": "minecraft:item",
               "functions": [
                 {
+                  "add": false,
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "max": 1.0,
+                    "min": 1.0
+                  },
+                  "function": "minecraft:set_count"
+                },
+                {
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops",
                   "function": "minecraft:apply_bonus"
-                },
-                {
-                  "function": "minecraft:explosion_decay"
                 }
               ],
               "name": "eternalores:raw_cobalt"

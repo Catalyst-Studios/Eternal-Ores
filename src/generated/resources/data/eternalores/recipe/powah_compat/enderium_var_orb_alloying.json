@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 16000,
+  "ingredients": [
+    {
+      "tag": "c:ingots/lead"
+    },
+    {
+      "item": "eternalores:endergetic_blend"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "eternalores:enderium_ingot"
+  }
+}

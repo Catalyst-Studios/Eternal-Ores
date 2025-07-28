@@ -296,7 +296,7 @@ public class EOPlacedFeatures
 
     public static ResourceKey<PlacedFeature> registerKey(String name)
     {
-        return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, name));
+        return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(EternalOres.id, name));
     }
 
     private static void register(BootstrapContext<PlacedFeature> context,

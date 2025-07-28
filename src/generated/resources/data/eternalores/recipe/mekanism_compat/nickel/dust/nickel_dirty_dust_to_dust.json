@@ -8,7 +8,7 @@
   "type": "mekanism:enriching",
   "input": {
     "count": 1,
-    "tag": "c:dirty_dust/nickel"
+    "tag": "c:dirty_dusts/nickel"
   },
   "output": {
     "count": 1,

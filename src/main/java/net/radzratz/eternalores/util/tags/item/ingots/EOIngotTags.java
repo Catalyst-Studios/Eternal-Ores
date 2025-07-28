@@ -10,92 +10,92 @@ public class EOIngotTags
     public static class Items
     {
         //Aluminum / Aluminium
-        public static final TagKey<Item> ALUMINUM_INGOT = createIngotTags("ingots/aluminum");
-        public static final TagKey<Item> ALUMINIUM_INGOT = createIngotTags("ingots/aluminium");
+        public static final TagKey<Item> TAG_ALUMINUM_INGOT = createIngotTags("ingots/aluminum");
+        public static final TagKey<Item> TAG_ALUMINIUM_INGOT = createIngotTags("ingots/aluminium");
         //Ardite
-        public static final TagKey<Item> ARDITE_INGOT = createIngotTags("ingots/ardite");
+        public static final TagKey<Item> TAG_ARDITE_INGOT = createIngotTags("ingots/ardite");
         //Blue Steel
-        public static final TagKey<Item> BLUE_STEEL_INGOT = createIngotTags("ingots/blue_steel");
+        public static final TagKey<Item> TAG_BLUE_STEEL_INGOT = createIngotTags("ingots/blue_steel");
         //Brass
-        public static final TagKey<Item> BRASS_INGOT = createIngotTags("ingots/brass");
+        public static final TagKey<Item> TAG_BRASS_INGOT = createIngotTags("ingots/brass");
         //Britannia Silver
-        public static final TagKey<Item> BRITANNIA_INGOT = createIngotTags("ingots/britannia_silver");
+        public static final TagKey<Item> TAG_BRITANNIA_INGOT = createIngotTags("ingots/britannia_silver");
         //Bronze
-        public static final TagKey<Item> BRONZE_INGOT = createIngotTags("ingots/bronze");
+        public static final TagKey<Item> TAG_BRONZE_INGOT = createIngotTags("ingots/bronze");
         //Catalyrium
-        public static final TagKey<Item> CATALYRIUM_INGOT = createIngotTags("ingots/catalyrium");
+        public static final TagKey<Item> TAG_CATALYRIUM_INGOT = createIngotTags("ingots/catalyrium");
         //Cast Iron
-        public static final TagKey<Item> CAST_IRON_INGOT = createIngotTags("ingots/cast_iron");
+        public static final TagKey<Item> TAG_CAST_IRON_INGOT = createIngotTags("ingots/cast_iron");
         //Cast Steel
-        public static final TagKey<Item> CAST_STEEL_INGOT = createIngotTags("ingots/cast_steel");
+        public static final TagKey<Item> TAG_CAST_STEEL_INGOT = createIngotTags("ingots/cast_steel");
         //Cobalt
-        public static final TagKey<Item> COBALT_INGOT = createIngotTags("ingots/cobalt");
+        public static final TagKey<Item> TAG_COBALT_INGOT = createIngotTags("ingots/cobalt");
         //Constantan
-        public static final TagKey<Item> CONSTANTAN_INGOT = createIngotTags("ingots/constantan");
+        public static final TagKey<Item> TAG_CONSTANTAN_INGOT = createIngotTags("ingots/constantan");
         //Electrum
-        public static final TagKey<Item> ELECTRUM_INGOT = createIngotTags("ingots/electrum");
+        public static final TagKey<Item> TAG_ELECTRUM_INGOT = createIngotTags("ingots/electrum");
         //Enderium
-        public static final TagKey<Item> ENDERIUM_INGOT = createIngotTags("ingots/enderium");
+        public static final TagKey<Item> TAG_ENDERIUM_INGOT = createIngotTags("ingots/enderium");
         //Eternal Dark
-        public static final TagKey<Item> ETERNAL_DARK_INGOT = createIngotTags("ingots/eternal_dark");
+        public static final TagKey<Item> TAG_ETERNAL_DARK_INGOT = createIngotTags("ingots/eternal_dark");
         //Eternal Light
-        public static final TagKey<Item> ETERNAL_LIGHT_INGOT = createIngotTags("ingots/eternal_light");
+        public static final TagKey<Item> TAG_ETERNAL_LIGHT_INGOT = createIngotTags("ingots/eternal_light");
         //Gallium
-        public static final TagKey<Item> GALLIUM_INGOT = createIngotTags("ingots/gallium");
+        public static final TagKey<Item> TAG_GALLIUM_INGOT = createIngotTags("ingots/gallium");
         //Graphite
-        public static final TagKey<Item> GRAPHITE_INGOT = createIngotTags("ingots/graphite");
+        public static final TagKey<Item> TAG_GRAPHITE_INGOT = createIngotTags("ingots/graphite");
         //Invar
-        public static final TagKey<Item> INVAR_INGOT = createIngotTags("ingots/invar");
+        public static final TagKey<Item> TAG_INVAR_INGOT = createIngotTags("ingots/invar");
         //Iridium
-        public static final TagKey<Item> IRIDIUM_INGOT = createIngotTags("ingots/iridium");
+        public static final TagKey<Item> TAG_IRIDIUM_INGOT = createIngotTags("ingots/iridium");
         //Lead
-        public static final TagKey<Item> LEAD_INGOT = createIngotTags("ingots/lead");
+        public static final TagKey<Item> TAG_LEAD_INGOT = createIngotTags("ingots/lead");
         //Lumium
-        public static final TagKey<Item> LUMIUM_INGOT = createIngotTags("ingots/lumium");
+        public static final TagKey<Item> TAG_LUMIUM_INGOT = createIngotTags("ingots/lumium");
         //Nethersteel
-        public static final TagKey<Item> NETHERSTEEL_INGOT = createIngotTags("ingots/nethersteel");
+        public static final TagKey<Item> TAG_NETHERSTEEL_INGOT = createIngotTags("ingots/nethersteel");
         //Nickel
-        public static final TagKey<Item> NICKEL_INGOT = createIngotTags("ingots/nickel");
+        public static final TagKey<Item> TAG_NICKEL_INGOT = createIngotTags("ingots/nickel");
         //Osmium
-        public static final TagKey<Item> OSMIUM_INGOT = createIngotTags("ingots/osmium");
+        public static final TagKey<Item> TAG_OSMIUM_INGOT = createIngotTags("ingots/osmium");
         //Pewter
-        public static final TagKey<Item> PEWTER_INGOT = createIngotTags("ingots/pewter");
+        public static final TagKey<Item> TAG_PEWTER_INGOT = createIngotTags("ingots/pewter");
         //Pig Iron
-        public static final TagKey<Item> PIG_IRON_INGOT = createIngotTags("ingots/pig_iron");
+        public static final TagKey<Item> TAG_PIG_IRON_INGOT = createIngotTags("ingots/pig_iron");
         //Platinum
-        public static final TagKey<Item> PLATINUM_INGOT = createIngotTags("ingots/platinum");
+        public static final TagKey<Item> TAG_PLATINUM_INGOT = createIngotTags("ingots/platinum");
         //Plutonium
-        public static final TagKey<Item> PLUTONIUM_INGOT = createIngotTags("ingots/plutonium");
+        public static final TagKey<Item> TAG_PLUTONIUM_INGOT = createIngotTags("ingots/plutonium");
         //Redstone
-        public static final TagKey<Item> REDSTONE_INGOT = createIngotTags("ingots/redstone");
+        public static final TagKey<Item> TAG_REDSTONE_INGOT = createIngotTags("ingots/redstone");
         //Rose Gold
-        public static final TagKey<Item> ROSE_GOLD_INGOT = createIngotTags("ingots/rose_gold");
+        public static final TagKey<Item> TAG_ROSE_GOLD_INGOT = createIngotTags("ingots/rose_gold");
         //Signalum
-        public static final TagKey<Item> SIGNALUM_INGOT = createIngotTags("ingots/signalum");
+        public static final TagKey<Item> TAG_SIGNALUM_INGOT = createIngotTags("ingots/signalum");
         //Silicon
-        public static final TagKey<Item> SILICON_INGOT = createIngotTags("ingots/silicon");
+        public static final TagKey<Item> TAG_SILICON_INGOT = createIngotTags("ingots/silicon");
         //Silver
-        public static final TagKey<Item> SILVER_INGOT = createIngotTags("ingots/silver");
+        public static final TagKey<Item> TAG_SILVER_INGOT = createIngotTags("ingots/silver");
         //Shadowsteel
-        public static final TagKey<Item> SHADOWSTEEL_INGOT = createIngotTags("ingots/shadowsteel");
+        public static final TagKey<Item> TAG_SHADOWSTEEL_INGOT = createIngotTags("ingots/shadowsteel");
         //Steel
-        public static final TagKey<Item> STEEL_INGOT = createIngotTags("ingots/steel");
+        public static final TagKey<Item> TAG_STEEL_INGOT = createIngotTags("ingots/steel");
         //Tin
-        public static final TagKey<Item> TIN_INGOT = createIngotTags("ingots/tin");
+        public static final TagKey<Item> TAG_TIN_INGOT = createIngotTags("ingots/tin");
         //Titanium
-        public static final TagKey<Item> TITANIUM_INGOT = createIngotTags("ingots/titanium");
+        public static final TagKey<Item> TAG_TITANIUM_INGOT = createIngotTags("ingots/titanium");
         //Tungsten
-        public static final TagKey<Item> TUNGSTEN_INGOT = createIngotTags("ingots/tungsten");
+        public static final TagKey<Item> TAG_TUNGSTEN_INGOT = createIngotTags("ingots/tungsten");
         //Ultimatitanium
-        public static final TagKey<Item> ULTIMATITANIUM_INGOT = createIngotTags("ingots/ultimatitanium");
+        public static final TagKey<Item> TAG_ULTIMATITANIUM_INGOT = createIngotTags("ingots/ultimatitanium");
         //Uraninite
-        public static final TagKey<Item> URANINITE_INGOT = createIngotTags("ingots/uraninite");
+        public static final TagKey<Item> TAG_URANINITE_INGOT = createIngotTags("ingots/uraninite");
         //Uranium
-        public static final TagKey<Item> URANIUM_INGOT = createIngotTags("ingots/uranium");
+        public static final TagKey<Item> TAG_URANIUM_INGOT = createIngotTags("ingots/uranium");
         //Wrought Iron
-        public static final TagKey<Item> WROUGHT_IRON_INGOT = createIngotTags("ingots/wrought_iron");
+        public static final TagKey<Item> TAG_WROUGHT_IRON_INGOT = createIngotTags("ingots/wrought_iron");
         //Zinc
-        public static final TagKey<Item> ZINC_INGOT = createIngotTags("ingots/zinc");
+        public static final TagKey<Item> TAG_ZINC_INGOT = createIngotTags("ingots/zinc");
 
         private static TagKey<Item> createIngotTags(String path)
         {

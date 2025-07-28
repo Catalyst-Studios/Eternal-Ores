@@ -3,7 +3,6 @@ package net.radzratz.eternalores.item.tools;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.TagKey;
@@ -21,6 +20,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+
+import static net.radzratz.eternalores.util.EOUtils.C;
 
 public class EOFinder extends Item
 {
@@ -61,10 +62,7 @@ public class EOFinder extends Item
     }
 
     @Override
-    public void appendHoverText(@NotNull ItemStack stack,
-                                @NotNull TooltipContext context,
-                                @NotNull List<Component> tooltipComponents,
-                                @NotNull TooltipFlag tooltipFlag)
+    public void appendHoverText(@NotNull ItemStack stack, @NotNull TooltipContext context, @NotNull List<Component> tooltipComponents, @NotNull TooltipFlag tooltipFlag)
     {
         tooltipComponents.add(Component.literal("§7Yeets everything except ores and bedrock! Dev Tool Only."));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
@@ -75,7 +73,7 @@ public class EOFinder extends Item
         int minY = level.getMinBuildHeight();
         int maxY = level.getMaxBuildHeight();
 
-        TagKey<Block> oresTag = TagKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath("c", "ores"));
+        TagKey<Block> oresTag = TagKey.create(Registries.BLOCK, C("ores"));
 
         List<Block> protectedBlocks = List.of(
                 Blocks.BEDROCK,

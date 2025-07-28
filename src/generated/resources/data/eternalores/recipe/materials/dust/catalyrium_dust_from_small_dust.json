@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/catalyrium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:o_catalyrium_small_dust"
+  }
+}

@@ -46,7 +46,7 @@
                   "function": "minecraft:apply_bonus"
                 }
               ],
-              "name": "eternalores:gem_obsidian_shard"
+              "name": "eternalores:gem_obsidian"
             }
           ]
         }

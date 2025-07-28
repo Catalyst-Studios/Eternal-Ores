@@ -5,6 +5,8 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
+import static net.radzratz.eternalores.util.EOUtils.C;
+
 public class EOOreBlockItemTags
 {
     public static class Items
@@ -55,19 +57,20 @@ public class EOOreBlockItemTags
         public static final TagKey<Item> ITEM_TUNGSTEN_ORE_OW = createOreBlockTags("ores/tungsten");
         //Uraninite
         public static final TagKey<Item> ITEM_URANINITE_ORE_OW = createOreBlockTags("ores/uraninite");
+
+        public static final TagKey<Item> I_URANINITE_ORE = createOreBlockTags("ores/uraninite_regular");
         //Uranium
         public static final TagKey<Item> ITEM_URANIUM_ORE_OW = createOreBlockTags("ores/uranium");
         //Zinc
         public static final TagKey<Item> ITEM_ZINC_ORE_OW = createOreBlockTags("ores/zinc");
         ///Nether
         public static final TagKey<Item> ITEM_ARDITE_ORE_NETHER = createOreBlockTags("ores/ardite");
+
         public static final TagKey<Item> ITEM_OBSIDIAN_ORE_NETHER = createOreBlockTags("ores/obsidian");
+
         public static final TagKey<Item> ITEM_NECROTICARITE_ORE_NETHER = createOreBlockTags("ores/necroticarite");
         ///End
 
-        private static TagKey<Item> createOreBlockTags(String path)
-        {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
-        }
+        private static TagKey<Item> createOreBlockTags(String path) { return ItemTags.create(C(path)); }
     }
 }

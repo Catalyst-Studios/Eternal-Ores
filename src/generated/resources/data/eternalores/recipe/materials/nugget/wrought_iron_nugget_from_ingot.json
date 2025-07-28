@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/wrought_iron"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:wrought_iron_nugget"
+  }
+}

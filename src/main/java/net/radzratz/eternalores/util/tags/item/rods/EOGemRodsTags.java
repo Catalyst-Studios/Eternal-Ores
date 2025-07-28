@@ -11,17 +11,17 @@ public class EOGemRodsTags
     {
 
         //Diamond
-        public static final TagKey<Item> ROD_DIAMOND = createGemRodTag("rods/diamond");
+        public static final TagKey<Item> TAG_ROD_DIAMOND = createGemRodTag("rods/diamond");
         //Necroticarite
-        public static final TagKey<Item> ROD_NECROTICARITE = createGemRodTag("rods/necroticarite");
+        public static final TagKey<Item> TAG_ROD_NECROTICARITE = createGemRodTag("rods/necroticarite");
         //Sapphire
-        public static final TagKey<Item> ROD_SAPPHIRE = createGemRodTag("rods/sapphire");
+        public static final TagKey<Item> TAG_ROD_SAPPHIRE = createGemRodTag("rods/sapphire");
         //Quantiquarite
-        public static final TagKey<Item> ROD_QUANTIQUARITE = createGemRodTag("rods/quantiquarite");
+        public static final TagKey<Item> TAG_ROD_QUANTIQUARITE = createGemRodTag("rods/quantiquarite");
         //Voiderite
-        public static final TagKey<Item> ROD_TACHYARITE = createGemRodTag("rods/tachyarite");
+        public static final TagKey<Item> TAG_ROD_TACHYARITE = createGemRodTag("rods/tachyarite");
         //Tachyarite
-        public static final TagKey<Item> ROD_VOIDERITE = createGemRodTag("rods/voiderite");
+        public static final TagKey<Item> TAG_ROD_VOIDERITE = createGemRodTag("rods/voiderite");
 
         private static TagKey<Item> createGemRodTag(String path)
         {

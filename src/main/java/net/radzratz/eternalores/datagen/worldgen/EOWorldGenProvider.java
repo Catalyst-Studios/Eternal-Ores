@@ -23,6 +23,6 @@ public class EOWorldGenProvider extends DatapackBuiltinEntriesProvider
 
     public EOWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries)
     {
-        super(output, registries, BUILDER, Set.of(EternalOres.MOD_ID));
+        super(output, registries, BUILDER, Set.of(EternalOres.id));
     }
 }

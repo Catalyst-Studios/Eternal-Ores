@@ -183,7 +183,7 @@ public class EOBiomeModifier
     {
         return ResourceKey.create(
                 NeoForgeRegistries.Keys.BIOME_MODIFIERS,
-                ResourceLocation.fromNamespaceAndPath(EternalOres.MOD_ID, name));
+                ResourceLocation.fromNamespaceAndPath(EternalOres.id, name));
 
     }
 }

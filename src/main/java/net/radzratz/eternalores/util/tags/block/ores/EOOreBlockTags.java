@@ -3,6 +3,7 @@ package net.radzratz.eternalores.util.tags.block.ores;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 
 public class EOOreBlockTags
@@ -55,6 +56,7 @@ public class EOOreBlockTags
         public static final TagKey<Block> TUNGSTEN_ORE_OW = createOreBlockTags("ores/tungsten");
         //Uraninite
         public static final TagKey<Block> URANINITE_ORE_OW = createOreBlockTags("ores/uraninite");
+        public static final TagKey<Block> B_URANINITE_ORE = createOreBlockTags("ores/uraninite_regular");
         //Uranium
         public static final TagKey<Block> URANIUM_ORE_OW = createOreBlockTags("ores/uranium");
         //Zinc

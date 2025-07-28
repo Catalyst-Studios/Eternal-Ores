@@ -4,15 +4,21 @@ import mekanism.api.chemical.Chemical;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.material.Fluid;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.radzratz.eternalores.item.types.EODustItem;
+import net.radzratz.eternalores.item.types.EOGemItem;
+import net.radzratz.eternalores.util.compat.util.types.EOClumpItem;
 import net.radzratz.eternalores.util.compat.mekanism.recipe_types.enums.*;
+import net.radzratz.eternalores.util.compat.util.types.EOCrystalItem;
+import net.radzratz.eternalores.util.compat.util.types.EODirtyDustItem;
+import net.radzratz.eternalores.util.compat.util.types.EOShardItem;
 
 import java.util.Map;
-import java.util.function.Supplier;
 
 public class EOMekRecipes
 {
     public static void registerCrystallizationRecipes(Map<String, EOCrystallizationType.Inputs> map, String name,
-                                                      Chemical inputCleanSlurry, Supplier<Item> crystalOutput)
+                                                      Chemical inputCleanSlurry, DeferredItem<EOCrystalItem> crystalOutput)
     {
         map.put(name, new EOCrystallizationType.Inputs(
                 inputCleanSlurry, crystalOutput.get()
@@ -41,7 +47,7 @@ public class EOMekRecipes
     }
 
     public static void registerEnrichingDustRecipes(Map<String, EOEnrichingType.InputsDiff> map, String name, TagKey<Item> rawOre,
-                                                    TagKey<Item> dirtyDustItem, TagKey<Item> rawBlock, Supplier<Item> dirtyDustSupplier)
+                                                    TagKey<Item> dirtyDustItem, TagKey<Item> rawBlock, DeferredItem<EODustItem> dirtyDustSupplier)
     {
         map.put(name, new EOEnrichingType.InputsDiff(
                 rawOre,
@@ -52,7 +58,7 @@ public class EOMekRecipes
     }
 
     public static void registerEnrichingDustTrueRecipes(Map<String, EOEnrichingType.Inputs> map, String name, TagKey<Item> rawOre,
-                                                        TagKey<Item> dirtyDustItem, TagKey<Item> rawBlock, TagKey<Item> oreBlock, Supplier<Item> dustSupplier)
+                                                        TagKey<Item> dirtyDustItem, TagKey<Item> rawBlock, TagKey<Item> oreBlock, DeferredItem<EODustItem> dustSupplier)
     {
         map.put(name, new EOEnrichingType.Inputs(
                 rawOre,
@@ -64,7 +70,7 @@ public class EOMekRecipes
     }
 
     public static void registerEnrichingGemRecipes(Map<String, EOEnrichingType.InputsGem> map, String name,
-                                                   TagKey<Item> oreBlock, Supplier<Item> gemSupplier)
+                                                   TagKey<Item> oreBlock, DeferredItem<EOGemItem> gemSupplier)
     {
         map.put(name, new EOEnrichingType.InputsGem(
                 oreBlock,
@@ -73,7 +79,7 @@ public class EOMekRecipes
     }
 
     public static void registerDecoRecipes(Map<String, EOCrushingType.InputsDeconstruction> map, String name,
-                                           TagKey<Item> plateTag, TagKey<Item> rodTag, Supplier<Item> dustSupplier)
+                                           TagKey<Item> plateTag, TagKey<Item> rodTag, DeferredItem<EODustItem> dustSupplier)
     {
         map.put(name, new EOCrushingType.InputsDeconstruction(
                 plateTag,
@@ -83,7 +89,7 @@ public class EOMekRecipes
     }
 
     public static void registerDirtyDustRecipes(Map<String, EOCrushingType.Inputs> map, String name,
-                                                TagKey<Item> clumpTag, Supplier<Item> dirtyDustSupplier)
+                                                TagKey<Item> clumpTag, DeferredItem<EODirtyDustItem> dirtyDustSupplier)
     {
         map.put(name, new EOCrushingType.Inputs(
                 clumpTag,
@@ -92,7 +98,7 @@ public class EOMekRecipes
     }
 
     public static void registerMaterialCrushingRecipes(Map<String, EOCrushingType.InputsMaterials> map, String name,
-                                                       TagKey<Item> materialTag, Supplier<Item> dustSupplier)
+                                                       TagKey<Item> materialTag, DeferredItem<EODustItem> dustSupplier)
     {
         map.put(name, new EOCrushingType.InputsMaterials(
                 materialTag,
@@ -111,7 +117,7 @@ public class EOMekRecipes
     }
 
     public static void registerInjectingTrueRecipes(Map<String, EOInjectionType.Inputs> map, String name, TagKey<Item> rawOre,
-                                                    TagKey<Item> crystalItem, TagKey<Item> rawBlock, TagKey<Item> oreBlock, Supplier<Item> shardSupplier)
+                                                    TagKey<Item> crystalItem, TagKey<Item> rawBlock, TagKey<Item> oreBlock, DeferredItem<EOShardItem> shardSupplier)
     {
         map.put(name, new EOInjectionType.Inputs(
                 rawOre,
@@ -123,7 +129,7 @@ public class EOMekRecipes
     }
 
     public static void registerInjectingRecipes(Map<String, EOInjectionType.InputsDiff> map, String name, TagKey<Item> rawOre,
-                                                TagKey<Item> crystalItem, TagKey<Item> rawBlock, Supplier<Item> shardSupplier)
+                                                TagKey<Item> crystalItem, TagKey<Item> rawBlock, DeferredItem<EOShardItem> shardSupplier)
     {
         map.put(name, new EOInjectionType.InputsDiff(
                 rawOre,
@@ -134,7 +140,7 @@ public class EOMekRecipes
     }
 
     public static void registerPurificationRecipes(Map<String, EOPurificationType.InputsDiff> map, String name, TagKey<Item> rawOre,
-                                                   TagKey<Item> shardItem, TagKey<Item> rawBlock, Supplier<Item> clumpSupplier)
+                                                   TagKey<Item> shardItem, TagKey<Item> rawBlock, DeferredItem<EOClumpItem> clumpSupplier)
     {
         map.put(name, new EOPurificationType.InputsDiff(
                 rawOre,
@@ -145,7 +151,7 @@ public class EOMekRecipes
     }
 
     public static void registerPurificationTrueRecipes(Map<String, EOPurificationType.Inputs> map, String name, TagKey<Item> rawOre,
-                                                       TagKey<Item> shardItem, TagKey<Item> rawBlock, TagKey<Item> oreBlock, Supplier<Item> clumpSupplier)
+                                                       TagKey<Item> shardItem, TagKey<Item> rawBlock, TagKey<Item> oreBlock, DeferredItem<EOClumpItem> clumpSupplier)
     {
         map.put(name, new EOPurificationType.Inputs(
                 rawOre,

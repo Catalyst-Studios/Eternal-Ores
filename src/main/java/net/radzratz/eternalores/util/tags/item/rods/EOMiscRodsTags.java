@@ -11,7 +11,7 @@ public class EOMiscRodsTags
     {
 
         //Graphite
-        public static final TagKey<Item> ROD_GRAPHITE = createMiscRodTag("rods/graphite");
+        public static final TagKey<Item> TAG_ROD_GRAPHITE = createMiscRodTag("rods/graphite");
 
         private static TagKey<Item> createMiscRodTag(String path)
         {

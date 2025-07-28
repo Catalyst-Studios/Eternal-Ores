@@ -1,18 +1,17 @@
 package net.radzratz.eternalores.util.compat.oritech.recipe_types.foundry.entries;
 
-import net.neoforged.neoforge.common.Tags;
-import net.radzratz.eternalores.item.EOItems;
-import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOFoundryCreationType;
-import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.EOFoundryGemType;
-import net.radzratz.eternalores.util.compat.oritech.tags.EOItemOritechTags;
-import net.radzratz.eternalores.util.tags.item.dusts.EOMiscDustsTags;
-import net.radzratz.eternalores.util.tags.item.ingots.EOIngotTags;
+import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.foundry.EOFoundryCreationType;
+import net.radzratz.eternalores.util.compat.oritech.recipe_types.enums.foundry.EOFoundryGemType;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static net.radzratz.eternalores.util.compat.oritech.recipe_types.foundry.EOFoundryInputRegistry.registerAlloyCreationRecipes;
-import static net.radzratz.eternalores.util.compat.oritech.recipe_types.foundry.EOFoundryInputRegistry.registerGemToIngotRecipes;
+import static net.neoforged.neoforge.common.Tags.Items.*;
+import static net.radzratz.eternalores.item.EOItemRegistry.*;
+import static net.radzratz.eternalores.util.compat.oritech.recipe_types.foundry.EOFoundryInputRegistry.*;
+import static net.radzratz.eternalores.util.compat.oritech.tags.EOItemOritechTags.Items.*;
+import static net.radzratz.eternalores.util.tags.item.dusts.EOMiscDustsTags.Items.*;
+import static net.radzratz.eternalores.util.tags.item.ingots.EOIngotTags.Items.*;
 
 
 public class EOFoundryMachineEntries
@@ -22,75 +21,33 @@ public class EOFoundryMachineEntries
     {
         Map<String, EOFoundryCreationType.InputsAlloyDust> map = new HashMap<>();
 
-        registerAlloyCreationRecipes(map, "brass",
-                Tags.Items.INGOTS_COPPER,
-                EOIngotTags.Items.ZINC_INGOT,
-                EOItems.BRASS_INGOT);
+        registerAlloyCreationRecipes(map, "brass", INGOTS_COPPER, TAG_ZINC_INGOT, BRASS_INGOT);
 
-        registerAlloyCreationRecipes(map, "britannia_silver",
-                Tags.Items.INGOTS_COPPER,
-                EOIngotTags.Items.SILVER_INGOT,
-                EOItems.BRITANNIA_SILVER_INGOT);
+        registerAlloyCreationRecipes(map, "britannia_silver", INGOTS_COPPER, TAG_SILVER_INGOT, BRITANNIA_SILVER_INGOT);
 
-        registerAlloyCreationRecipes(map, "bronze",
-                Tags.Items.INGOTS_COPPER,
-                EOIngotTags.Items.TIN_INGOT,
-                EOItems.BRONZE_INGOT);
+        registerAlloyCreationRecipes(map, "bronze", INGOTS_COPPER, TAG_TIN_INGOT, BRONZE_INGOT);
 
-        registerAlloyCreationRecipes(map, "cast_iron",
-                Tags.Items.INGOTS_IRON,
-                EOMiscDustsTags.Items.CARBON_BLEND,
-                EOItems.CAST_IRON_INGOT);
+        registerAlloyCreationRecipes(map, "cast_iron", INGOTS_IRON, TAG_CARBON_BLEND, CAST_IRON_INGOT);
 
-        registerAlloyCreationRecipes(map, "cast_steel",
-                EOIngotTags.Items.STEEL_INGOT,
-                EOMiscDustsTags.Items.CARBON_BLEND,
-                EOItems.CAST_STEEL_INGOT);
+        registerAlloyCreationRecipes(map, "cast_steel", TAG_STEEL_INGOT, TAG_CARBON_BLEND, CAST_STEEL_INGOT);
 
-        registerAlloyCreationRecipes(map, "constantan",
-                EOIngotTags.Items.NICKEL_INGOT,
-                Tags.Items.INGOTS_COPPER,
-                EOItems.CONSTANTAN_INGOT);
+        registerAlloyCreationRecipes(map, "constantan", TAG_NICKEL_INGOT, INGOTS_COPPER, CONSTANTAN_INGOT);
 
-        registerAlloyCreationRecipes(map, "electrum",
-                EOIngotTags.Items.SILVER_INGOT,
-                Tags.Items.INGOTS_GOLD,
-                EOItems.ELECTRUM_INGOT);
+        registerAlloyCreationRecipes(map, "electrum", TAG_SILVER_INGOT, INGOTS_GOLD, ELECTRUM_INGOT);
 
-        registerAlloyCreationRecipes(map, "enderium",
-                EOIngotTags.Items.LEAD_INGOT,
-                EOMiscDustsTags.Items.ENDERGETIC_BLEND,
-                EOItems.ENDERIUM_INGOT);
+        registerAlloyCreationRecipes(map, "enderium", TAG_LEAD_INGOT, TAG_ENDERGETIC_BLEND, ENDERIUM_INGOT);
 
-        registerAlloyCreationRecipes(map, "lumium",
-                EOIngotTags.Items.TIN_INGOT,
-                EOMiscDustsTags.Items.ENERGETIC_BLEND,
-                EOItems.LUMIUM_INGOT);
+        registerAlloyCreationRecipes(map, "lumium", TAG_TIN_INGOT, TAG_ENERGETIC_BLEND, LUMIUM_INGOT);
 
-        registerAlloyCreationRecipes(map, "pewter",
-                EOIngotTags.Items.TIN_INGOT,
-                EOIngotTags.Items.SILVER_INGOT,
-                EOItems.PEWTER_INGOT);
+        registerAlloyCreationRecipes(map, "pewter", TAG_TIN_INGOT, TAG_SILVER_INGOT, PEWTER_INGOT);
 
-        registerAlloyCreationRecipes(map, "pig_iron",
-                Tags.Items.RAW_MATERIALS_IRON,
-                EOMiscDustsTags.Items.CARBON_BLEND,
-                EOItems.PIG_IRON_INGOT);
+        registerAlloyCreationRecipes(map, "pig_iron", RAW_MATERIALS_IRON, TAG_CARBON_BLEND, PIG_IRON_INGOT);
 
-        registerAlloyCreationRecipes(map, "signalum",
-                Tags.Items.INGOTS_COPPER,
-                EOMiscDustsTags.Items.ENERGETIC_BLEND,
-                EOItems.SIGNALUM_INGOT);
+        registerAlloyCreationRecipes(map, "signalum", INGOTS_COPPER, TAG_ENERGETIC_BLEND, SIGNALUM_INGOT);
 
-        registerAlloyCreationRecipes(map, "steel",
-                EOIngotTags.Items.WROUGHT_IRON_INGOT,
-                EOMiscDustsTags.Items.CARBON_BLEND,
-                EOItems.STEEL_INGOT);
+        registerAlloyCreationRecipes(map, "steel", TAG_WROUGHT_IRON_INGOT, TAG_CARBON_BLEND, STEEL_INGOT);
 
-        registerAlloyCreationRecipes(map, "wrought_iron",
-                Tags.Items.INGOTS_IRON,
-                Tags.Items.STORAGE_BLOCKS_COAL,
-                EOItems.WROUGHT_IRON_INGOT);
+        registerAlloyCreationRecipes(map, "wrought_iron", INGOTS_IRON, STORAGE_BLOCKS_COAL, WROUGHT_IRON_INGOT);
 
         MATERIAL_TO_ALLOY = Map.copyOf(map);
     }
@@ -100,75 +57,33 @@ public class EOFoundryMachineEntries
     {
         Map<String, EOFoundryGemType.InputsGemDust> map = new HashMap<>();
 
-        registerGemToIngotRecipes(map, "aluminum",
-                EOItemOritechTags.Items.O_GEM_ALUMINUM_C,
-                EOItemOritechTags.Items.O_GEM_ALUMINUM_C,
-                EOItems.ALUMINUM_INGOT);
+        registerGemToIngotRecipes(map, "aluminum", O_GEM_ALUMINUM_C, O_GEM_ALUMINUM_C, ALUMINUM_INGOT);
 
-        registerGemToIngotRecipes(map, "ardite",
-                EOItemOritechTags.Items.O_GEM_ARDITE_C,
-                EOItemOritechTags.Items.O_GEM_ARDITE_C,
-                EOItems.ARDITE_INGOT);
+        registerGemToIngotRecipesVar(map, "ardite", O_GEM_ARDITE_C, O_GEM_ARDITE_C, ARDITE_DUST);
 
-        registerGemToIngotRecipes(map, "catalyrium",
-                EOItemOritechTags.Items.O_GEM_CATALYRIUM_C,
-                EOItemOritechTags.Items.O_GEM_CATALYRIUM_C,
-                EOItems.CATALYRIUM_INGOT);
+        registerGemToIngotRecipesVar(map, "catalyrium", O_GEM_CATALYRIUM_C, O_GEM_CATALYRIUM_C, CATALYRIUM_DUST);
 
-        registerGemToIngotRecipes(map, "cobalt",
-                EOItemOritechTags.Items.O_GEM_COBALT_C,
-                EOItemOritechTags.Items.O_GEM_COBALT_C,
-                EOItems.COBALT_INGOT);
+        registerGemToIngotRecipes(map, "cobalt", O_GEM_COBALT_C, O_GEM_COBALT_C, COBALT_INGOT);
 
-        registerGemToIngotRecipes(map, "gallium",
-                EOItemOritechTags.Items.O_GEM_GALLIUM_C,
-                EOItemOritechTags.Items.O_GEM_GALLIUM_C,
-                EOItems.GALLIUM_INGOT);
+        registerGemToIngotRecipes(map, "gallium", O_GEM_GALLIUM_C, O_GEM_GALLIUM_C, GALLIUM_INGOT);
 
-        registerGemToIngotRecipes(map, "iridium",
-                EOItemOritechTags.Items.O_GEM_IRIDIUM_C,
-                EOItemOritechTags.Items.O_GEM_IRIDIUM_C,
-                EOItems.IRIDIUM_INGOT);
+        registerGemToIngotRecipes(map, "iridium", O_GEM_IRIDIUM_C, O_GEM_IRIDIUM_C, IRIDIUM_INGOT);
 
-        registerGemToIngotRecipes(map, "lead",
-                EOItemOritechTags.Items.O_GEM_LEAD_C,
-                EOItemOritechTags.Items.O_GEM_LEAD_C,
-                EOItems.LEAD_INGOT);
+        registerGemToIngotRecipes(map, "lead", O_GEM_LEAD_C, O_GEM_LEAD_C, LEAD_INGOT);
 
-        registerGemToIngotRecipes(map, "osmium",
-                EOItemOritechTags.Items.O_GEM_OSMIUM_C,
-                EOItemOritechTags.Items.O_GEM_OSMIUM_C,
-                EOItems.OSMIUM_INGOT);
+        registerGemToIngotRecipes(map, "osmium", O_GEM_OSMIUM_C, O_GEM_OSMIUM_C, OSMIUM_INGOT);
 
-        registerGemToIngotRecipes(map, "silver",
-                EOItemOritechTags.Items.O_GEM_SILVER_C,
-                EOItemOritechTags.Items.O_GEM_SILVER_C,
-                EOItems.SILVER_INGOT);
+        registerGemToIngotRecipes(map, "silver", O_GEM_SILVER_C, O_GEM_SILVER_C, SILVER_INGOT);
 
-        registerGemToIngotRecipes(map, "tin",
-                EOItemOritechTags.Items.O_GEM_TIN_C,
-                EOItemOritechTags.Items.O_GEM_TIN_C,
-                EOItems.TIN_INGOT);
+        registerGemToIngotRecipes(map, "tin", O_GEM_TIN_C, O_GEM_TIN_C, TIN_INGOT);
 
-        registerGemToIngotRecipes(map, "tungsten",
-                EOItemOritechTags.Items.O_GEM_TUNGSTEN_C,
-                EOItemOritechTags.Items.O_GEM_TUNGSTEN_C,
-                EOItems.TUNGSTEN_INGOT);
+        registerGemToIngotRecipes(map, "tungsten", O_GEM_TUNGSTEN_C, O_GEM_TUNGSTEN_C, TUNGSTEN_INGOT);
 
-        registerGemToIngotRecipes(map, "uraninite",
-                EOItemOritechTags.Items.O_GEM_URANINITE_C,
-                EOItemOritechTags.Items.O_GEM_URANINITE_C,
-                EOItems.URANINITE_INGOT);
+        registerGemToIngotRecipes(map, "uraninite", O_GEM_URANINITE_C, O_GEM_URANINITE_C, URANINITE_INGOT);
 
-        registerGemToIngotRecipes(map, "uranium",
-                EOItemOritechTags.Items.O_GEM_URANIUM_C,
-                EOItemOritechTags.Items.O_GEM_URANIUM_C,
-                EOItems.URANIUM_INGOT);
+        registerGemToIngotRecipes(map, "uranium", O_GEM_URANIUM_C, O_GEM_URANIUM_C, URANIUM_INGOT);
 
-        registerGemToIngotRecipes(map, "zinc",
-                EOItemOritechTags.Items.O_GEM_ZINC_C,
-                EOItemOritechTags.Items.O_GEM_ZINC_C,
-                EOItems.ZINC_INGOT);
+        registerGemToIngotRecipes(map, "zinc", O_GEM_ZINC_C, O_GEM_ZINC_C, ZINC_INGOT);
 
         GEM_TO_MATERIAL = Map.copyOf(map);
     }

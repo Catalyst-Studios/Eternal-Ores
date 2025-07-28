@@ -14,35 +14,22 @@ import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.datagen.loottables.EOLootTableProvider;
 import net.radzratz.eternalores.datagen.models.EOBlockStateProvider;
 import net.radzratz.eternalores.datagen.models.EOItemModelProvider;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.creation.item.dust.EODustDupeEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.compressed.vanilla.EOCompressedEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.creation.block.gem.EOGemBlockEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.creation.block.metal.EOMetalBlockEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.creation.block.raw.EORawBlockEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.creation.item.ingot.EOIngotEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.creation.item.nugget.EONuggetEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.creation.item.plate.EOPlateEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.creation.item.rod.EORodEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.deconstruction.block.gem.EODeconstructionGemBlockEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.deconstruction.block.metal.EODeconstructionMetalBlockEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.deconstruction.block.raw.EODeconstructionRawBlockEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.deconstruction.item.EODeconstructionItemEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.smelting_blasting.EOBlastingEntries;
-import net.radzratz.eternalores.datagen.recipes.recipetypes.smelting_blasting.EOSmeltingEntries;
+import net.radzratz.eternalores.datagen.recipes.EORecipeProvider;
 import net.radzratz.eternalores.datagen.tags.EOBlockTagProvider;
 import net.radzratz.eternalores.datagen.tags.EOItemTagProvider;
 import net.radzratz.eternalores.datagen.worldgen.EOWorldGenProvider;
 import net.radzratz.eternalores.util.compat.mekanism.datagen.EOMekRecipeProvider;
 import net.radzratz.eternalores.util.compat.mekanism.datagen.EOMekanismTagProvider;
-import net.radzratz.eternalores.util.compat.oritech.datagen.EOritechItemTagProvider;
 import net.radzratz.eternalores.util.compat.oritech.datagen.EOritechRecipeProvider;
+import net.radzratz.eternalores.util.compat.powah.datagen.EOPowahRecipeProvider;
+import net.radzratz.eternalores.util.compat.powah.datagen.EOPowahMapProvider;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 @SuppressWarnings("all")
-@EventBusSubscriber(modid = EternalOres.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = EternalOres.id, bus = EventBusSubscriber.Bus.MOD)
 public class EODataGenerators
 {
     @SubscribeEvent
@@ -60,23 +47,9 @@ public class EODataGenerators
                 List.of(new LootTableProvider.SubProviderEntry(EOLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
 
         /// EO Recipes
-        provider.addSubProvider(event.includeServer(), new EODustDupeEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EOCompressedEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EOSmeltingEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EOBlastingEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EODeconstructionItemEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EONuggetEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EOIngotEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EORodEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EOPlateEntries(packOutput, lookupProvider));
-        //Material -> Block
-        provider.addSubProvider(event.includeServer(), new EOGemBlockEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EOMetalBlockEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EORawBlockEntries(packOutput, lookupProvider));
-        //Block -> Material
-        provider.addSubProvider(event.includeServer(), new EODeconstructionGemBlockEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EODeconstructionMetalBlockEntries(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EODeconstructionRawBlockEntries(packOutput, lookupProvider));
+        provider.addSubProvider(event.includeServer(), new EORecipeProvider(packOutput, lookupProvider));
+
+        /// EO Langs
 
         /// EO Tags
         BlockTagsProvider blockTagsProvider = new EOBlockTagProvider(packOutput, lookupProvider, existingFileHelper);
@@ -96,7 +69,10 @@ public class EODataGenerators
 
         /// Oritech Compat
         provider.addSubProvider(event.includeServer(), new EOritechRecipeProvider(packOutput, lookupProvider));
-        provider.addSubProvider(event.includeServer(), new EOritechItemTagProvider(packOutput, lookupProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
+
+        /// Powah Compat
+        provider.addSubProvider(event.includeServer(), new EOPowahRecipeProvider(packOutput, lookupProvider));
+        provider.addSubProvider(event.includeServer(), new EOPowahMapProvider(packOutput, lookupProvider));
 
         generator.addProvider(true, provider);
     }

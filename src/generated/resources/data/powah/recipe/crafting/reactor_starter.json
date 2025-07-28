@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "powah:capacitor_basic_tiny"
+    },
+    "D": {
+      "item": "powah:dielectric_casing"
+    },
+    "U": {
+      "tag": "c:ingots/uraninite"
+    }
+  },
+  "pattern": [
+    "UCU",
+    "CDC",
+    "UCU"
+  ],
+  "result": {
+    "count": 4,
+    "id": "powah:reactor_starter"
+  }
+}

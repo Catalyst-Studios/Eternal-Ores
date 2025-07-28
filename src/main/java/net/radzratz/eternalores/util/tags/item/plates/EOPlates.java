@@ -5,118 +5,116 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
+import static net.radzratz.eternalores.util.EOUtils.C;
+
 public class EOPlates
 {
     public static class Items
     {
-
         //Aluminum / Aluminium
-        public static final TagKey<Item> ALUMINUM_PLATE = createPlateTag("plates/aluminum");
-        public static final TagKey<Item> ALUMINIUM_PLATE = createPlateTag("plates/aluminium");
+        public static final TagKey<Item> TAG_ALUMINUM_PLATE = createPlateTag("plates/aluminum");
+        public static final TagKey<Item> TAG_ALUMINIUM_PLATE = createPlateTag("plates/aluminium");
         //Ardite
-        public static final TagKey<Item> ARDITE_PLATE = createPlateTag("plates/ardite");
+        public static final TagKey<Item> TAG_ARDITE_PLATE = createPlateTag("plates/ardite");
         //Blue Steel
-        public static final TagKey<Item> BLUE_STEEL_PLATE = createPlateTag("plates/blue_steel");
+        public static final TagKey<Item> TAG_BLUE_STEEL_PLATE = createPlateTag("plates/blue_steel");
         //Brass
-        public static final TagKey<Item> BRASS_PLATE = createPlateTag("plates/brass");
+        public static final TagKey<Item> TAG_BRASS_PLATE = createPlateTag("plates/brass");
         //Britannia Silver
-        public static final TagKey<Item> BRITANNIA_PLATE = createPlateTag("plates/britannia_silver");
+        public static final TagKey<Item> TAG_BRITANNIA_PLATE = createPlateTag("plates/britannia_silver");
         //Bronze
-        public static final TagKey<Item> BRONZE_PLATE = createPlateTag("plates/bronze");
+        public static final TagKey<Item> TAG_BRONZE_PLATE = createPlateTag("plates/bronze");
         //Catalyrium
-        public static final TagKey<Item> CATALYRIUM_PLATE = createPlateTag("plates/catalyrium");
+        public static final TagKey<Item> TAG_CATALYRIUM_PLATE = createPlateTag("plates/catalyrium");
         //Cast Iron
-        public static final TagKey<Item> CAST_IRON_PLATE = createPlateTag("plates/cast_iron");
+        public static final TagKey<Item> TAG_CAST_IRON_PLATE = createPlateTag("plates/cast_iron");
         //Cast Steel
-        public static final TagKey<Item> CAST_STEEL_PLATE = createPlateTag("plates/cast_steel");
+        public static final TagKey<Item> TAG_CAST_STEEL_PLATE = createPlateTag("plates/cast_steel");
         //Cobalt
-        public static final TagKey<Item> COBALT_PLATE = createPlateTag("plates/cobalt");
+        public static final TagKey<Item> TAG_COBALT_PLATE = createPlateTag("plates/cobalt");
         //Constantan
-        public static final TagKey<Item> CONSTANTAN_PLATE = createPlateTag("plates/constantan");
+        public static final TagKey<Item> TAG_CONSTANTAN_PLATE = createPlateTag("plates/constantan");
         //Copper
-        public static final TagKey<Item> COPPER_PLATE = createPlateTag("plates/copper");
+        public static final TagKey<Item> TAG_COPPER_PLATE = createPlateTag("plates/copper");
         //Diamond
-        public static final TagKey<Item> DIAMOND_PLATE = createPlateTag("plates/diamond");
+        public static final TagKey<Item> TAG_DIAMOND_PLATE = createPlateTag("plates/diamond");
         //Electrum
-        public static final TagKey<Item> ELECTRUM_PLATE = createPlateTag("plates/electrum");
+        public static final TagKey<Item> TAG_ELECTRUM_PLATE = createPlateTag("plates/electrum");
         //Enderium
-        public static final TagKey<Item> ENDERIUM_PLATE = createPlateTag("plates/enderium");
+        public static final TagKey<Item> TAG_ENDERIUM_PLATE = createPlateTag("plates/enderium");
         //Eternal Dark
-        public static final TagKey<Item> ETERNAL_DARK_PLATE = createPlateTag("plates/eternal_dark");
+        public static final TagKey<Item> TAG_ETERNAL_DARK_PLATE = createPlateTag("plates/eternal_dark");
         //Eternal Light
-        public static final TagKey<Item> ETERNAL_LIGHT_PLATE = createPlateTag("plates/eternal_light");
+        public static final TagKey<Item> TAG_ETERNAL_LIGHT_PLATE = createPlateTag("plates/eternal_light");
         //Gallium
-        public static final TagKey<Item> GALLIUM_PLATE = createPlateTag("plates/gallium");
+        public static final TagKey<Item> TAG_GALLIUM_PLATE = createPlateTag("plates/gallium");
         //Graphite
-        public static final TagKey<Item> GRAPHITE_PLATE = createPlateTag("plates/graphite");
+        public static final TagKey<Item> TAG_GRAPHITE_PLATE = createPlateTag("plates/graphite");
         //Gold
-        public static final TagKey<Item> GOLD_PLATE = createPlateTag("plates/gold");
+        public static final TagKey<Item> TAG_GOLD_PLATE = createPlateTag("plates/gold");
         //Invar
-        public static final TagKey<Item> INVAR_PLATE = createPlateTag("plates/invar");
+        public static final TagKey<Item> TAG_INVAR_PLATE = createPlateTag("plates/invar");
         //Iridium
-        public static final TagKey<Item> IRIDIUM_PLATE = createPlateTag("plates/iridium");
+        public static final TagKey<Item> TAG_IRIDIUM_PLATE = createPlateTag("plates/iridium");
         //Iron
-        public static final TagKey<Item> IRON_PLATE = createPlateTag("plates/iron");
+        public static final TagKey<Item> TAG_IRON_PLATE = createPlateTag("plates/iron");
         //Lead
-        public static final TagKey<Item> LEAD_PLATE = createPlateTag("plates/lead");
+        public static final TagKey<Item> TAG_LEAD_PLATE = createPlateTag("plates/lead");
         //Lumium
-        public static final TagKey<Item> LUMIUM_PLATE = createPlateTag("plates/lumium");
+        public static final TagKey<Item> TAG_LUMIUM_PLATE = createPlateTag("plates/lumium");
         //Necroticarite
-        public static final TagKey<Item> NECROTICARITE_PLATE = createPlateTag("plates/necroticarite");
+        public static final TagKey<Item> TAG_NECROTICARITE_PLATE = createPlateTag("plates/necroticarite");
         //Netherite
-        public static final TagKey<Item> NETHERITE_PLATE = createPlateTag("plates/netherite");
+        public static final TagKey<Item> TAG_NETHERITE_PLATE = createPlateTag("plates/netherite");
         //Nethersteel
-        public static final TagKey<Item> NETHERSTEEL_PLATE = createPlateTag("plates/nethersteel");
+        public static final TagKey<Item> TAG_NETHERSTEEL_PLATE = createPlateTag("plates/nethersteel");
         //Nickel
-        public static final TagKey<Item> NICKEL_PLATE = createPlateTag("plates/nickel");
+        public static final TagKey<Item> TAG_NICKEL_PLATE = createPlateTag("plates/nickel");
         //Osmium
-        public static final TagKey<Item> OSMIUM_PLATE = createPlateTag("plates/osmium");
+        public static final TagKey<Item> TAG_OSMIUM_PLATE = createPlateTag("plates/osmium");
         //Pewter
-        public static final TagKey<Item> PEWTER_PLATE = createPlateTag("plates/pewter");
+        public static final TagKey<Item> TAG_PEWTER_PLATE = createPlateTag("plates/pewter");
         //Pig Iron
-        public static final TagKey<Item> PIG_IRON_PLATE = createPlateTag("plates/pig_iron");
+        public static final TagKey<Item> TAG_PIG_IRON_PLATE = createPlateTag("plates/pig_iron");
         //Platinum
-        public static final TagKey<Item> PLATINUM_PLATE = createPlateTag("plates/platinum");
+        public static final TagKey<Item> TAG_PLATINUM_PLATE = createPlateTag("plates/platinum");
         //Plutonium
-        public static final TagKey<Item> PLUTONIUM_PLATE = createPlateTag("plates/plutonium");
+        public static final TagKey<Item> TAG_PLUTONIUM_PLATE = createPlateTag("plates/plutonium");
         //Redstone
-        public static final TagKey<Item> REDSTONE_PLATE = createPlateTag("plates/redstone");
+        public static final TagKey<Item> TAG_REDSTONE_PLATE = createPlateTag("plates/redstone");
         //Rose Gold
-        public static final TagKey<Item> ROSE_GOLD_PLATE = createPlateTag("plates/rose_gold");
+        public static final TagKey<Item> TAG_ROSE_GOLD_PLATE = createPlateTag("plates/rose_gold");
         //Sapphire
-        public static final TagKey<Item> SAPPHIRE_PLATE = createPlateTag("plates/sapphire");
+        public static final TagKey<Item> TAG_SAPPHIRE_PLATE = createPlateTag("plates/sapphire");
         //Signalum
-        public static final TagKey<Item> SIGNALUM_PLATE = createPlateTag("plates/signalum");
+        public static final TagKey<Item> TAG_SIGNALUM_PLATE = createPlateTag("plates/signalum");
         //Silver
-        public static final TagKey<Item> SILVER_PLATE = createPlateTag("plates/silver");
+        public static final TagKey<Item> TAG_SILVER_PLATE = createPlateTag("plates/silver");
         //Shadowsteel
-        public static final TagKey<Item> SHADOWSTEEL_PLATE = createPlateTag("plates/shadowsteel");
+        public static final TagKey<Item> TAG_SHADOWSTEEL_PLATE = createPlateTag("plates/shadowsteel");
         //Steel
-        public static final TagKey<Item> STEEL_PLATE = createPlateTag("plates/steel");
+        public static final TagKey<Item> TAG_STEEL_PLATE = createPlateTag("plates/steel");
         //Tin
-        public static final TagKey<Item> TIN_PLATE = createPlateTag("plates/tin");
+        public static final TagKey<Item> TAG_TIN_PLATE = createPlateTag("plates/tin");
         //Titanium
-        public static final TagKey<Item> TITANIUM_PLATE = createPlateTag("plates/titanium");
+        public static final TagKey<Item> TAG_TITANIUM_PLATE = createPlateTag("plates/titanium");
         //Tungsten
-        public static final TagKey<Item> TUNGSTEN_PLATE = createPlateTag("plates/tungsten");
+        public static final TagKey<Item> TAG_TUNGSTEN_PLATE = createPlateTag("plates/tungsten");
         //Ultimatitanium
-        public static final TagKey<Item> ULTIMATITANIUM_PLATE = createPlateTag("plates/ultimatitanium");
+        public static final TagKey<Item> TAG_ULTIMATITANIUM_PLATE = createPlateTag("plates/ultimatitanium");
         //Uranium
-        public static final TagKey<Item> URANIUM_PLATE = createPlateTag("plates/uranium");
+        public static final TagKey<Item> TAG_URANIUM_PLATE = createPlateTag("plates/uranium");
         //Wrought Iron
-        public static final TagKey<Item> WROUGHT_IRON_PLATE = createPlateTag("plates/wrought_iron");
+        public static final TagKey<Item> TAG_WROUGHT_IRON_PLATE = createPlateTag("plates/wrought_iron");
         //Zinc
-        public static final TagKey<Item> ZINC_PLATE = createPlateTag("plates/zinc");
+        public static final TagKey<Item> TAG_ZINC_PLATE = createPlateTag("plates/zinc");
         //Quantiquarite
-        public static final TagKey<Item> QUANTIQUARITE_PLATE = createPlateTag("plates/quantiquarite");
+        public static final TagKey<Item> TAG_QUANTIQUARITE_PLATE = createPlateTag("plates/quantiquarite");
         //Tachyarite
-        public static final TagKey<Item> TACHYARITE_PLATE = createPlateTag("plates/tachyarite");
+        public static final TagKey<Item> TAG_TACHYARITE_PLATE = createPlateTag("plates/tachyarite");
         //Voiderite
-        public static final TagKey<Item> VOIDERITE_PLATE = createPlateTag("plates/voiderite");
+        public static final TagKey<Item> TAG_VOIDERITE_PLATE = createPlateTag("plates/voiderite");
 
-        private static TagKey<Item> createPlateTag(String path)
-        {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
-        }
+        private static TagKey<Item> createPlateTag(String path) { return ItemTags.create(C(path)); }
     }
 }

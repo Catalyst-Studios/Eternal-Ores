@@ -81,8 +81,11 @@ configurations {
 dependencies {
 
     implementation "mekanism:Mekanism:${mekanism_version}"
-    api "curse.maven:oritech-1030830:6622162"
+    implementation "curse.maven:oritech-1030830:6622162"
+    implementation "curse.maven:powah-rearchitected-633483:6483151"
 
+    runtimeOnly "curse.maven:cloth-config-348521:5729127"
+    runtimeOnly "curse.maven:guideme-1173950:6688687"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

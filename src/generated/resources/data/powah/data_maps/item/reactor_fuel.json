@@ -1,0 +1,16 @@
+{
+  "values": {
+    "#c:ingots/uraninite": {
+      "fuelAmount": 100,
+      "temperature": 700
+    },
+    "#c:nuggets/uraninite": {
+      "fuelAmount": 5,
+      "temperature": 700
+    },
+    "eternalores:uraninite_block": {
+      "fuelAmount": 1000,
+      "temperature": 1000
+    }
+  }
+}

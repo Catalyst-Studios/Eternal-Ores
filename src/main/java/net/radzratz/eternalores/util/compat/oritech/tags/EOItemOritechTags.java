@@ -5,6 +5,9 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 
+import static net.radzratz.eternalores.util.EOUtils.C;
+import static net.radzratz.eternalores.util.tags.item.EOItemsGeneralTags.Items.createGeneralItemTags;
+
 public class EOItemOritechTags
 {
     public static class Items
@@ -36,7 +39,7 @@ public class EOItemOritechTags
         public static final TagKey<Item> O_SMALL_CLUMP_TIN_C = createSmallClumpTag("small_clumps/tin");
         public static final TagKey<Item> O_SMALL_CLUMP_TUNGSTEN_C = createSmallClumpTag("small_clumps/tungsten");
         public static final TagKey<Item> O_SMALL_CLUMP_URANINITE_C = createSmallClumpTag("small_clumps/uraninite");
-        public static final TagKey<Item> O_SMALL_CLUMP_URANIUM_C = createSmallClumpTag("small_clumps/uraninite");
+        public static final TagKey<Item> O_SMALL_CLUMP_URANIUM_C = createSmallClumpTag("small_clumps/uranium");
         public static final TagKey<Item> O_SMALL_CLUMP_ZINC_C = createSmallClumpTag("small_clumps/zinc");
 
         public static final TagKey<Item> O_SMALL_DUST_ALUMINUM_C = createSmallDustTag("small_dusts/aluminum");
@@ -66,24 +69,15 @@ public class EOItemOritechTags
         public static final TagKey<Item> O_GEM_TIN_C = createGemTag("ore_gem/tin");
         public static final TagKey<Item> O_GEM_TUNGSTEN_C = createGemTag("ore_gem/tungsten");
         public static final TagKey<Item> O_GEM_URANINITE_C = createGemTag("ore_gem/uraninite");
-        public static final TagKey<Item> O_GEM_URANIUM_C = createGemTag("ore_gem/uraninite");
+        public static final TagKey<Item> O_GEM_URANIUM_C = createGemTag("ore_gem/uranium");
         public static final TagKey<Item> O_GEM_ZINC_C = createGemTag("ore_gem/zinc");
     }
 
-    private static TagKey<Item> createClumpTag(String path)
-    {
-        return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
-    }
-    private static TagKey<Item> createSmallClumpTag(String path)
-    {
-        return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
-    }
-    private static TagKey<Item> createSmallDustTag(String path)
-    {
-        return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
-    }
-    private static TagKey<Item> createGemTag(String path)
-    {
-        return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", path));
-    }
+    private static TagKey<Item> createClumpTag(String path) { return ItemTags.create(C(path)); }
+
+    private static TagKey<Item> createSmallClumpTag(String path) { return ItemTags.create(C( path)); }
+
+    private static TagKey<Item> createSmallDustTag(String path) { return ItemTags.create(C(path)); }
+
+    private static TagKey<Item> createGemTag(String path) { return ItemTags.create(C(path)); }
 }

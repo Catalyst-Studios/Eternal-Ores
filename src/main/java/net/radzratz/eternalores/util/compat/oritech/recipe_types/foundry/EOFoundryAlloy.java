@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
-import net.radzratz.eternalores.util.compat.oritech.recipe_types.interfaces.foundry.IFoundryCreation;
+import net.radzratz.eternalores.util.compat.oritech.recipe_types.interfaces.IEOritechRecipeType;
 import rearth.oritech.api.recipe.FoundryRecipeBuilder;
 
 public class EOFoundryAlloy
@@ -15,7 +15,7 @@ public class EOFoundryAlloy
                                                      TagKey<Item> inputTagOne,
                                                      TagKey<Item> inputTagTwo,
                                                      Item outputItem,
-                                                     IFoundryCreation recipeType)
+                                                     IEOritechRecipeType recipeType)
     {
         Ingredient inputIngredient = Ingredient.of(inputTagOne);
         Ingredient inputIngredientTwo = Ingredient.of(inputTagTwo);
@@ -26,17 +26,28 @@ public class EOFoundryAlloy
                                                Ingredient inputIngredient,
                                                Ingredient inputIngredientTwo,
                                                Item outputItem,
-                                               IFoundryCreation recipeType)
+                                                IEOritechRecipeType recipeType)
     {
         String folder = "eternal_ores_compat/" + materialName + "/" + recipeType.folder() + "/";
         String name = folder + materialName + "_" + recipeType.suffix();
 
-        ItemStack resultStack = new ItemStack(outputItem, recipeType.output());
+        ItemStack resultStack = new ItemStack(outputItem, recipeType.outputs());
 
-        FoundryRecipeBuilder.build()
-                .input(inputIngredient)
-                .input(inputIngredientTwo)
-                .result(resultStack)
-                .export(output.withConditions(new ModLoadedCondition("oritech")), name);
+        if(recipeType.isFoundryAlloy())
+        {
+            FoundryRecipeBuilder.build()
+                    .input(inputIngredient)
+                    .input(inputIngredientTwo)
+                    .result(resultStack)
+                    .export(output.withConditions(new ModLoadedCondition("oritech")), name);
+        }
+        if(recipeType.isFoundryGem())
+        {
+            FoundryRecipeBuilder.build()
+                    .input(inputIngredient)
+                    .input(inputIngredientTwo)
+                    .result(resultStack)
+                    .export(output.withConditions(new ModLoadedCondition("oritech")), name);
+        }
     }
 }

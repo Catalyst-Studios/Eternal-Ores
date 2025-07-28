@@ -299,6 +299,11 @@
   "item.eternalores.voiderite_dust": "Voiderite Dust",
   "item.eternalores.ardite_dust": "Ardite Dust",
   "item.eternalores.tungsten_dust": "Tungsten Dust",
+  "item.eternalores.silicon_dust": "Silicon Dust",
+  "item.eternalores.energetic_blend": "Energetic Blend",
+  "item.eternalores.endergetic_blend": "Endergetic Blend",
+  "item.eternalores.carbon_blend": "Carbon Blend",
+  "item.eternalores.prismarine_dust": "Prismarine Dust",
 
   "item.eternalores.gem_obsidian_shard": "Obsidian Gem",
   "item.eternalores.gem_onyx": "Onyx",
@@ -579,6 +584,7 @@
   "block.eternalores.necroticarite_block": "Block of Necroticarite",
   "block.eternalores.ardite_block": "Block of Ardite",
   "block.eternalores.tungsten_block": "Block of Tungsten",
+  "block.eternalores.silicon_block": "Block of Silicon",
 
   "block.eternalores.nether_star_block": "Nether Star Block",
 

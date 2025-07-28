@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/ardite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:o_ardite_small_dust"
+  }
+}

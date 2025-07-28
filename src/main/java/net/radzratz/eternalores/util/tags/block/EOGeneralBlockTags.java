@@ -15,11 +15,15 @@ public class EOGeneralBlockTags
 
         //Metal and Gem Block
         public static final TagKey<Block> METAL_BLOCK = createGeneralBlockTags("c","metal_block");
+
         public static final TagKey<Block> GEM_BLOCK = createGeneralBlockTags("c","gem_block");
+
+        public static final TagKey<Block> COMPRESSED_BLOCK = createGeneralBlockTags("c","compressed_block");
+
+        public static final TagKey<Block> MISC_BLOCK = createGeneralBlockTags("c","misc_block");
 
         public static TagKey<Block> createGeneralBlockTags(String namespace, String path)
         {
-            System.out.println("Loading Custom Block tags");
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(namespace, path));
         }
     }

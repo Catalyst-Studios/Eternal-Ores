@@ -9,85 +9,84 @@ public class EOMetalRodsTags
 {
     public static class Items
     {
-
         //Aluminum
-        public static final TagKey<Item> ROD_ALUMINUM = createMetalRodTag("rods/aluminum");
+        public static final TagKey<Item> TAG_ROD_ALUMINUM = createMetalRodTag("rods/aluminum");
         //Ardite
-        public static final TagKey<Item> ROD_ARDITE = createMetalRodTag("rods/ardite");
+        public static final TagKey<Item> TAG_ROD_ARDITE = createMetalRodTag("rods/ardite");
         //Blue Steel
-        public static final TagKey<Item> ROD_BLUE_STEEL = createMetalRodTag("rods/blue_steel");
+        public static final TagKey<Item> TAG_ROD_BLUE_STEEL = createMetalRodTag("rods/blue_steel");
         //Brass
-        public static final TagKey<Item> ROD_BRASS = createMetalRodTag("rods/brass");
+        public static final TagKey<Item> TAG_ROD_BRASS = createMetalRodTag("rods/brass");
         //Bronze
-        public static final TagKey<Item> ROD_BRONZE = createMetalRodTag("rods/bronze");
+        public static final TagKey<Item> TAG_ROD_BRONZE = createMetalRodTag("rods/bronze");
         //Catalyrium
-        public static final TagKey<Item> ROD_CATALYRIUM = createMetalRodTag("rods/catalyrium");
+        public static final TagKey<Item> TAG_ROD_CATALYRIUM = createMetalRodTag("rods/catalyrium");
         //Cast Iron
-        public static final TagKey<Item> ROD_CAST_IRON = createMetalRodTag("rods/cast_iron");
+        public static final TagKey<Item> TAG_ROD_CAST_IRON = createMetalRodTag("rods/cast_iron");
         //Cast Steel
-        public static final TagKey<Item> ROD_CAST_STEEL = createMetalRodTag("rods/cast_steel");
+        public static final TagKey<Item> TAG_ROD_CAST_STEEL = createMetalRodTag("rods/cast_steel");
         //Cobalt
-        public static final TagKey<Item> ROD_COBALT = createMetalRodTag("rods/cobalt");
+        public static final TagKey<Item> TAG_ROD_COBALT = createMetalRodTag("rods/cobalt");
         //Constantan
-        public static final TagKey<Item> ROD_CONSTANTAN = createMetalRodTag("rods/constantan");
+        public static final TagKey<Item> TAG_ROD_CONSTANTAN = createMetalRodTag("rods/constantan");
         //Copper
-        public static final TagKey<Item> ROD_COPPER = createMetalRodTag("rods/copper");
+        public static final TagKey<Item> TAG_ROD_COPPER = createMetalRodTag("rods/copper");
         //Electrum
-        public static final TagKey<Item> ROD_ELECTRUM = createMetalRodTag("rods/electrum");
+        public static final TagKey<Item> TAG_ROD_ELECTRUM = createMetalRodTag("rods/electrum");
         //Enderium
-        public static final TagKey<Item> ROD_ENDERIUM = createMetalRodTag("rods/enderium");
+        public static final TagKey<Item> TAG_ROD_ENDERIUM = createMetalRodTag("rods/enderium");
         //Gallium
-        public static final TagKey<Item> ROD_GALLIUM = createMetalRodTag("rods/gallium");
+        public static final TagKey<Item> TAG_ROD_GALLIUM = createMetalRodTag("rods/gallium");
         //Gold
-        public static final TagKey<Item> ROD_GOLD = createMetalRodTag("rods/gold");
+        public static final TagKey<Item> TAG_ROD_GOLD = createMetalRodTag("rods/gold");
         //Invar
-        public static final TagKey<Item> ROD_INVAR = createMetalRodTag("rods/invar");
+        public static final TagKey<Item> TAG_ROD_INVAR = createMetalRodTag("rods/invar");
         //Iridium
-        public static final TagKey<Item> ROD_IRIDIUM = createMetalRodTag("rods/iridium");
+        public static final TagKey<Item> TAG_ROD_IRIDIUM = createMetalRodTag("rods/iridium");
         //Iron
-        public static final TagKey<Item> ROD_IRON = createMetalRodTag("rods/iron");
+        public static final TagKey<Item> TAG_ROD_IRON = createMetalRodTag("rods/iron");
         //Lead
-        public static final TagKey<Item> ROD_LEAD = createMetalRodTag("rods/lead");
+        public static final TagKey<Item> TAG_ROD_LEAD = createMetalRodTag("rods/lead");
         //Lumium
-        public static final TagKey<Item> ROD_LUMIUM = createMetalRodTag("rods/lumium");
+        public static final TagKey<Item> TAG_ROD_LUMIUM = createMetalRodTag("rods/lumium");
         //Netherite
-        public static final TagKey<Item> ROD_NETHERITE = createMetalRodTag("rods/netherite");
+        public static final TagKey<Item> TAG_ROD_NETHERITE = createMetalRodTag("rods/netherite");
         //Nethersteel
-        public static final TagKey<Item> ROD_NETHERSTEEL = createMetalRodTag("rods/nethersteel");
+        public static final TagKey<Item> TAG_ROD_NETHERSTEEL = createMetalRodTag("rods/nethersteel");
         //Nickel
-        public static final TagKey<Item> ROD_NICKEL = createMetalRodTag("rods/nickel");
+        public static final TagKey<Item> TAG_ROD_NICKEL = createMetalRodTag("rods/nickel");
         //Osmium
-        public static final TagKey<Item> ROD_OSMIUM = createMetalRodTag("rods/osmium");
+        public static final TagKey<Item> TAG_ROD_OSMIUM = createMetalRodTag("rods/osmium");
         //Pig Iron
-        public static final TagKey<Item> ROD_PIG_IRON = createMetalRodTag("rods/pig_iron");
+        public static final TagKey<Item> TAG_ROD_PIG_IRON = createMetalRodTag("rods/pig_iron");
         //Platinum
-        public static final TagKey<Item> ROD_PLATINUM = createMetalRodTag("rods/platinum");
+        public static final TagKey<Item> TAG_ROD_PLATINUM = createMetalRodTag("rods/platinum");
         //Plutonium
-        public static final TagKey<Item> ROD_PLUTONIUM = createMetalRodTag("rods/plutonium");
+        public static final TagKey<Item> TAG_ROD_PLUTONIUM = createMetalRodTag("rods/plutonium");
         //Rose Gold
-        public static final TagKey<Item> ROD_ROSE_GOLD = createMetalRodTag("rods/rose_gold");
+        public static final TagKey<Item> TAG_ROD_ROSE_GOLD = createMetalRodTag("rods/rose_gold");
         //Signalum
-        public static final TagKey<Item> ROD_SIGNALUM = createMetalRodTag("rods/signalum");
+        public static final TagKey<Item> TAG_ROD_SIGNALUM = createMetalRodTag("rods/signalum");
         //Silver
-        public static final TagKey<Item> ROD_SILVER = createMetalRodTag("rods/silver");
+        public static final TagKey<Item> TAG_ROD_SILVER = createMetalRodTag("rods/silver");
         //Shadowsteel
-        public static final TagKey<Item> ROD_SHADOWSTEEL = createMetalRodTag("rods/shadowsteel");
+        public static final TagKey<Item> TAG_ROD_SHADOWSTEEL = createMetalRodTag("rods/shadowsteel");
         //Steel
-        public static final TagKey<Item> ROD_STEEL = createMetalRodTag("rods/steel");
+        public static final TagKey<Item> TAG_ROD_STEEL = createMetalRodTag("rods/steel");
         //Tin
-        public static final TagKey<Item> ROD_TIN = createMetalRodTag("rods/tin");
+        public static final TagKey<Item> TAG_ROD_TIN = createMetalRodTag("rods/tin");
         //Titanium
-        public static final TagKey<Item> ROD_TITANIUM = createMetalRodTag("rods/titanium");
+        public static final TagKey<Item> TAG_ROD_TITANIUM = createMetalRodTag("rods/titanium");
         //Tungsten
-        public static final TagKey<Item> ROD_TUNGSTEN = createMetalRodTag("rods/tungsten");
+        public static final TagKey<Item> TAG_ROD_TUNGSTEN = createMetalRodTag("rods/tungsten");
         //Ultimatitanium
-        public static final TagKey<Item> ROD_ULTIMATITANIUM = createMetalRodTag("rods/ultimatitanium");
+        public static final TagKey<Item> TAG_ROD_ULTIMATITANIUM = createMetalRodTag("rods/ultimatitanium");
         //Uranium
-        public static final TagKey<Item> ROD_URANIUM = createMetalRodTag("rods/uranium");
+        public static final TagKey<Item> TAG_ROD_URANIUM = createMetalRodTag("rods/uranium");
         //Wrought Iron
-        public static final TagKey<Item> ROD_WROUGHT_IRON = createMetalRodTag("rods/wrought_iron");
+        public static final TagKey<Item> TAG_ROD_WROUGHT_IRON = createMetalRodTag("rods/wrought_iron");
         //Zinc
-        public static final TagKey<Item> ROD_ZINC = createMetalRodTag("rods/zinc");
+        public static final TagKey<Item> TAG_ROD_ZINC = createMetalRodTag("rods/zinc");
 
         private static TagKey<Item> createMetalRodTag(String path)
         {

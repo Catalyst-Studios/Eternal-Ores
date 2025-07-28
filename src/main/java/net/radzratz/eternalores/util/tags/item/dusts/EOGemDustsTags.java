@@ -9,7 +9,6 @@ public class EOGemDustsTags
 {
     public static class Items
     {
-
         //Amber
         public static final TagKey<Item> DUST_AMBER = createGemDustTag("dusts/amber");
         //Amethyst
@@ -38,6 +37,8 @@ public class EOGemDustsTags
         public static final TagKey<Item> DUST_ONYX = createGemDustTag("dusts/onyx");
         //Peridot
         public static final TagKey<Item> DUST_PERIDOT = createGemDustTag("dusts/peridot");
+        // Prismarine
+        public static final TagKey<Item> DUST_PRISMARINE = createGemDustTag("dusts/prismarine");
         //Quartz
         public static final TagKey<Item> DUST_QUARTZ = createGemDustTag("dusts/quartz");
         //Ruby

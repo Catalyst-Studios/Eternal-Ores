@@ -10,17 +10,17 @@ public class EOItemMekTags
     public static class Items
     {
         /// Dirty Dust C Tag
-        public static final TagKey<Item> DIRTY_ALUMINUM_C = createDirtyDustTag("dirty_dust/aluminum");
-        public static final TagKey<Item> DIRTY_ARDITE_C = createDirtyDustTag("dirty_dust/ardite");
-        public static final TagKey<Item> DIRTY_CATALYRIUM_C = createDirtyDustTag("dirty_dust/catalyrium");
-        public static final TagKey<Item> DIRTY_COBALT_C = createDirtyDustTag("dirty_dust/cobalt");
-        public static final TagKey<Item> DIRTY_GALLIUM_C = createDirtyDustTag("dirty_dust/gallium");
-        public static final TagKey<Item> DIRTY_IRIDIUM_C = createDirtyDustTag("dirty_dust/iridium");
-        public static final TagKey<Item> DIRTY_NICKEL_C = createDirtyDustTag("dirty_dust/nickel");
-        public static final TagKey<Item> DIRTY_PLATINUM_C = createDirtyDustTag("dirty_dust/platinum");
-        public static final TagKey<Item> DIRTY_SILVER_C = createDirtyDustTag("dirty_dust/silver");
-        public static final TagKey<Item> DIRTY_URANINITE_C = createDirtyDustTag("dirty_dust/uraninite");
-        public static final TagKey<Item> DIRTY_ZINC_C = createDirtyDustTag("dirty_dust/zinc");
+        public static final TagKey<Item> DIRTY_ALUMINUM_C = createDirtyDustTag("dirty_dusts/aluminum");
+        public static final TagKey<Item> DIRTY_ARDITE_C = createDirtyDustTag("dirty_dusts/ardite");
+        public static final TagKey<Item> DIRTY_CATALYRIUM_C = createDirtyDustTag("dirty_dusts/catalyrium");
+        public static final TagKey<Item> DIRTY_COBALT_C = createDirtyDustTag("dirty_dusts/cobalt");
+        public static final TagKey<Item> DIRTY_GALLIUM_C = createDirtyDustTag("dirty_dusts/gallium");
+        public static final TagKey<Item> DIRTY_IRIDIUM_C = createDirtyDustTag("dirty_dusts/iridium");
+        public static final TagKey<Item> DIRTY_NICKEL_C = createDirtyDustTag("dirty_dusts/nickel");
+        public static final TagKey<Item> DIRTY_PLATINUM_C = createDirtyDustTag("dirty_dusts/platinum");
+        public static final TagKey<Item> DIRTY_SILVER_C = createDirtyDustTag("dirty_dusts/silver");
+        public static final TagKey<Item> DIRTY_URANINITE_C = createDirtyDustTag("dirty_dusts/uraninite");
+        public static final TagKey<Item> DIRTY_ZINC_C = createDirtyDustTag("dirty_dusts/zinc");
 
         private static TagKey<Item> createDirtyDustTag(String path)
         {
