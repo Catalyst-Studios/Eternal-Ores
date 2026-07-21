@@ -66,11 +66,6 @@ repositories {
     }
 
     maven {
-        name = 'Favouriteless Maven'
-        url = 'https://maven.favouriteless.net/releases'
-    }
-
-    maven {
         name = 'Create'
         url = 'https://maven.createmod.net'
     }
@@ -168,7 +163,6 @@ dependencies {
     implementation "curse.maven:create-new-age-${create_new_age_version}"
     implementation "com.tterrag.registrate:Registrate:${registrate_version}"
     implementation "net.createmod.ponder:ponder-neoforge:${ponder_version}"
-    implementation "net.favouriteless.modopedia:modopedia-neoforge-${minecraft_version}:${modopedia_version}"
     implementation "curse.maven:replication-638351:6428716"
     implementation "blusunrize.immersiveengineering:ImmersiveEngineering:${immersive_engineering_version}"
     implementation "com.buuz135:industrialforegoing:1.21-3.6.35"
