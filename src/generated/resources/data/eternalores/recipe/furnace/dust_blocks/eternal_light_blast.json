@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 150,
+  "experience": 1.5,
+  "ingredient": {
+    "tag": "c:dust_blocks/eternal_light"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:eternal_light_block"
+  }
+}

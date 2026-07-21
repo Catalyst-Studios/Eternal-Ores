@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/bituminous_coal"
+    },
+    {
+      "tag": "c:dusts/bituminous_coal"
+    },
+    {
+      "tag": "c:dusts/lignite_coal"
+    },
+    {
+      "tag": "c:dusts/bituminous_coal"
+    },
+    {
+      "tag": "c:dusts/calcium"
+    },
+    {
+      "tag": "c:dusts/calcium"
+    },
+    {
+      "tag": "c:dusts/sulfur"
+    },
+    {
+      "tag": "c:dusts/peat_coal"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:highly_enriched_carbon_blend"
+  }
+}

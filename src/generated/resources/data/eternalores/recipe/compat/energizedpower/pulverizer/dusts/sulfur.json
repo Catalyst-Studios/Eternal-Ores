@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:pulverizer",
+  "ingredient": {
+    "tag": "c:raw_materials/sulfur"
+  },
+  "output": {
+    "output": {
+      "item": "eternalores:sulfur_dust"
+    },
+    "percentages": [
+      1.0
+    ],
+    "percentagesAdvanced": [
+      1.0
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:pulverizer",
+  "ingredient": {
+    "tag": "c:ingots/silicon"
+  },
+  "output": {
+    "output": {
+      "item": "eternalores:silicon_dust"
+    },
+    "percentages": [
+      1.0
+    ],
+    "percentagesAdvanced": [
+      1.0
+    ]
+  }
+}

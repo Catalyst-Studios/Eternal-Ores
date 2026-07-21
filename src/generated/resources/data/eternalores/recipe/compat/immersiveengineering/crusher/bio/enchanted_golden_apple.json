@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 2000,
+  "input": {
+    "item": "minecraft:enchanted_golden_apple"
+  },
+  "result": {
+    "id": "eternalores:biomass_block"
+  },
+  "secondaries": [
+    {
+      "id": "eternalores:gold_dust"
+    }
+  ]
+}

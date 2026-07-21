@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:clumps/osmium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:osmium_gem"
+    },
+    {
+      "count": 1,
+      "id": "eternalores:osmium_small_dust"
+    }
+  ],
+  "time": 100
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "eternalores:mold_rod",
+    {
+      "id": "immersiveengineering:mold_rod",
+      "required": false
+    },
+    {
+      "id": "energizedpower:rod_press_mold",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_overworld",
+  "features": "eternalores:overworld_sulfur_placed",
+  "ore": "eternalores:sulfur_overworld",
+  "step": "underground_ores"
+}

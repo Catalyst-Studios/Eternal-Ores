@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:rods/iron"
+    },
+    "B": {
+      "tag": "c:plates/iron"
+    },
+    "C": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "pattern": [
+    "  B",
+    " A ",
+    "C  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:iron_gem_cutter"
+  }
+}

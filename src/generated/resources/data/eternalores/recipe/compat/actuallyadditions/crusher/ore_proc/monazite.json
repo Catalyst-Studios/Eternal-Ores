@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ores/monazite"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 4,
+        "id": "eternalores:gem_monazite"
+      }
+    },
+    {
+      "result": {
+        "count": 2,
+        "id": "eternalores:phosphorus_small_dust"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:plates/vivid_alloy"
+    },
+    {
+      "tag": "c:tools/crushing_hammers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:vivid_alloy_dust"
+  }
+}

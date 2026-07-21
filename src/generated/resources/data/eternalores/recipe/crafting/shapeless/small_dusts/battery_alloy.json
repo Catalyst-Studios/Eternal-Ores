@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/battery_alloy"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:battery_alloy_small_dust"
+  }
+}

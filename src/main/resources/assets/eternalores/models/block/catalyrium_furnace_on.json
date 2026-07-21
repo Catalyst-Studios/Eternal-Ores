@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "eternalores:block/furnace/catalyrium_furnace_top",
+    "front": "eternalores:block/furnace/furnace/catalyrium_furnace_front_on",
+    "side": "eternalores:block/furnace/catalyrium_furnace_side"
+  }
+}

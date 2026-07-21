@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "eternalores:catalyrium_cluster",
+      "required": false
+    }
+  ]
+}

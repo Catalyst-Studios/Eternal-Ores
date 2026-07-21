@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "ingredient": {
+    "tag": "c:small_dusts/stellar_alloy"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:stellar_alloy_nugget"
+  }
+}

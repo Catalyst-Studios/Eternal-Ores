@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:gems/black_quartz"
+    }
+  },
+  "pattern": [
+    "## ",
+    "## ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:black_quartz_block"
+  }
+}

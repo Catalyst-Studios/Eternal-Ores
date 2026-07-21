@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 3240000,
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/blaze"
+    },
+    {
+      "tag": "c:storage_blocks/blaze"
+    },
+    {
+      "tag": "c:storage_blocks/blaze"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "powah:blazing_crystal_block"
+  }
+}

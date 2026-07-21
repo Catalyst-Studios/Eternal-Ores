@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "item": "minecraft:enchanted_golden_apple"
+  },
+  "outputs": [
+    {
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:biomass_block"
+      }
+    },
+    {
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:gold_dust"
+      }
+    }
+  ]
+}

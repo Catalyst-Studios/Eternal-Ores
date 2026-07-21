@@ -1,0 +1,19 @@
+{
+  "values": [
+    "eternalores:end_fluorite_ore_block",
+    "eternalores:end_iridium_ore_block",
+    "eternalores:end_lead_ore_block",
+    "eternalores:end_molybdenum_ore_block",
+    "eternalores:end_neodymium_ore_block",
+    "eternalores:end_palladium_ore_block",
+    "eternalores:end_platinum_ore_block",
+    "eternalores:end_pyrolite_ore_block",
+    "eternalores:end_sapphire_ore_block",
+    "eternalores:end_tin_ore_block",
+    "eternalores:end_titanium_ore_block",
+    "eternalores:end_tungsten_ore_block",
+    "eternalores:end_uranium_ore_block",
+    "eternalores:end_vanadium_ore_block",
+    "eternalores:ultimatitanium_ore_block"
+  ]
+}

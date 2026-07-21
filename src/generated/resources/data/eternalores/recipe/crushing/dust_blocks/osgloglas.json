@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/osgloglas"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "id": "eternalores:osgloglas_dust_block"
+    }
+  ]
+}

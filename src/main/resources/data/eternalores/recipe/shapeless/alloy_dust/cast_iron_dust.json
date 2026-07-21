@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "tag": "c:dusts/bituminous_coal"
+    },
+    {
+      "tag": "c:dusts/bituminous_coal"
+    },
+    {
+      "tag": "c:dusts/bituminous_coal"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "eternalores:cast_iron_dust"
+  }
+}

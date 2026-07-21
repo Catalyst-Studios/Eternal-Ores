@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 1500,
+  "input": {
+    "tag": "c:gem_shards/spinel"
+  },
+  "result": {
+    "id": "eternalores:spinel_small_dust"
+  }
+}

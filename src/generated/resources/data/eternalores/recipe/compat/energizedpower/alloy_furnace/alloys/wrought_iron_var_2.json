@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:alloy_furnace",
+  "inputs": [
+    {
+      "input": {
+        "tag": "c:dusts/iron"
+      }
+    },
+    {
+      "count": 2,
+      "input": {
+        "item": "minecraft:charcoal"
+      }
+    }
+  ],
+  "output": {
+    "count": 2,
+    "item": "eternalores:wrought_iron_ingot"
+  },
+  "ticks": 500
+}

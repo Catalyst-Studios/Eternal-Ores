@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "item": "minecraft:red_sand"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:dust_block"
+    },
+    {
+      "count": 2,
+      "id": "eternalores:red_sand_small_dust"
+    }
+  ],
+  "time": 210
+}

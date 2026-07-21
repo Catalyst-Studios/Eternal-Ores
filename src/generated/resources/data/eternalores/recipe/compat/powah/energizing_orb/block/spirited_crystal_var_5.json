@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 54000000,
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/emerald"
+    },
+    {
+      "tag": "c:storage_blocks/emerald"
+    },
+    {
+      "tag": "c:storage_blocks/emerald"
+    },
+    {
+      "tag": "c:storage_blocks/emerald"
+    },
+    {
+      "tag": "c:storage_blocks/emerald"
+    },
+    {
+      "tag": "c:storage_blocks/emerald"
+    }
+  ],
+  "result": {
+    "count": 5,
+    "id": "powah:spirited_crystal_block"
+  }
+}

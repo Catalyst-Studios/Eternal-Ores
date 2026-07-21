@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eternalores:item/wire_cutters/copper_wire_cutter"
+  }
+}

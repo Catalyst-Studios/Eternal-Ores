@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/nethersteel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:nethersteel_small_dust"
+  }
+}

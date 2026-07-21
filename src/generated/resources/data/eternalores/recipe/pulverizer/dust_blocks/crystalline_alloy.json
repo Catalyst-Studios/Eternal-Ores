@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/crystalline_alloy"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:crystalline_alloy_dust_block"
+    }
+  ],
+  "time": 100
+}

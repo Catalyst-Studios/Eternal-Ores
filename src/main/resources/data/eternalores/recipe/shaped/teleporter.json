@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "eternalores:compressed_stone_2x"
+   },
+    "B": {
+      "tag": "c:storage_blocks/iron"
+    },
+    "C": {
+      "item": "eternalores:compressed_netherrack_2x"
+    },
+    "D": {
+      "tag": "c:storage_blocks/gold"
+    },
+    "E": {
+      "tag": "c:gems/obsidian"
+    },
+    "F": {
+      "tag": "c:storage_blocks/diamond"
+    },
+    "G": {
+      "item": "eternalores:compressed_deepslate_2x"
+    },
+    "H": {
+      "tag": "c:storage_blocks/redstone"
+    },
+    "I": {
+      "item": "eternalores:compressed_end_stone_2x"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "DEF",
+    "GHI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:teleporter"
+  }
+}

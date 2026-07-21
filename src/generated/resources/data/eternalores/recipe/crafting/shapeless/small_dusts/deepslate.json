@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/deepslate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:deepslate_small_dust"
+  }
+}

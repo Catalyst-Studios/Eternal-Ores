@@ -1,0 +1,26 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:copper_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "minecraft:copper_ore"
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "minecraft:deepslate_copper_ore"
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

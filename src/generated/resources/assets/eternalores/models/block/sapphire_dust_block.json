@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalores:block/dust_block/sapphire_dust_block"
+  }
+}

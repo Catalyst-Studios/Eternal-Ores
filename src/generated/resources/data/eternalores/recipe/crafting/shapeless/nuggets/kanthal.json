@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/kanthal"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:kanthal_nugget"
+  }
+}

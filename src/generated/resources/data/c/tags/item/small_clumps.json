@@ -1,18 +1,51 @@
 {
   "values": [
-    "eternalores:o_aluminum_small_clump",
-    "eternalores:o_ardite_small_clump",
-    "eternalores:o_catalyrium_small_clump",
-    "eternalores:o_cobalt_small_clump",
-    "eternalores:o_gallium_small_clump",
-    "eternalores:o_iridium_small_clump",
-    "eternalores:o_lead_small_clump",
-    "eternalores:o_osmium_small_clump",
-    "eternalores:o_silver_small_clump",
-    "eternalores:o_tin_small_clump",
-    "eternalores:o_tungsten_small_clump",
-    "eternalores:o_uraninite_small_clump",
-    "eternalores:o_uranium_small_clump",
-    "eternalores:o_zinc_small_clump"
+    "eternalores:aluminum_small_clump",
+    "eternalores:ardite_small_clump",
+    "eternalores:beryllium_small_clump",
+    "eternalores:catalyrium_small_clump",
+    "eternalores:cobalt_small_clump",
+    "eternalores:copper_small_clump",
+    "eternalores:gallium_small_clump",
+    "eternalores:gold_small_clump",
+    "eternalores:iridium_small_clump",
+    "eternalores:iron_small_clump",
+    "eternalores:lead_small_clump",
+    "eternalores:molybdenum_small_clump",
+    "eternalores:neodymium_small_clump",
+    "eternalores:nickel_small_clump",
+    "eternalores:osmium_small_clump",
+    "eternalores:palladium_small_clump",
+    "eternalores:platinum_small_clump",
+    "eternalores:sculkite_small_clump",
+    "eternalores:silver_small_clump",
+    "eternalores:tin_small_clump",
+    "eternalores:titanium_small_clump",
+    "eternalores:tungsten_small_clump",
+    "eternalores:ultimatitanium_small_clump",
+    "eternalores:uraninite_small_clump",
+    "eternalores:uranium_small_clump",
+    "eternalores:vanadium_small_clump",
+    "eternalores:zinc_small_clump",
+    {
+      "id": "oritech:small_gold_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_iron_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_copper_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_nickel_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_platinum_clump",
+      "required": false
+    }
   ]
 }

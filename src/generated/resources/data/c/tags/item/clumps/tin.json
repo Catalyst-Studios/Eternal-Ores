@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:o_tin_clump"
+    "eternalores:clump_tin",
+    {
+      "id": "create:crushed_raw_tin",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:gems/primornium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:primornium_shard"
+  }
+}

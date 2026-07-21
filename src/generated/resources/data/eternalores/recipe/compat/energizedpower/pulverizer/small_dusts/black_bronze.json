@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:pulverizer",
+  "ingredient": {
+    "tag": "c:nuggets/black_bronze"
+  },
+  "output": {
+    "output": {
+      "item": "eternalores:black_bronze_small_dust"
+    },
+    "percentages": [
+      1.0
+    ],
+    "percentagesAdvanced": [
+      1.0
+    ]
+  }
+}

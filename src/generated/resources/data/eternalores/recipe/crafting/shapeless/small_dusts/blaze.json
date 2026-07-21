@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/blaze"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:blaze_small_dust"
+  }
+}

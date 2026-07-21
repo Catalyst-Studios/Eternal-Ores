@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#c:is_deep_dark",
+  "features": "eternalores:overworld_sculkite_placed",
+  "ore": "eternalores:sculkite_overworld",
+  "step": "underground_ores"
+}

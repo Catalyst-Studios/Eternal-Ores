@@ -1,0 +1,32 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:redstone_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "minecraft:redstone_ore",
+          "Properties": {
+            "lit": "false"
+          }
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "minecraft:deepslate_redstone_ore",
+          "Properties": {
+            "lit": "false"
+          }
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

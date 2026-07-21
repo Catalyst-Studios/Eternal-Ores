@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:gems/arcanum"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:arcanum_shard"
+  }
+}

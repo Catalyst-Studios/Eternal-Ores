@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "tag": "c:bones"
+  },
+  "outputs": [
+    {
+      "count": 6,
+      "probability": 1.0,
+      "result": {
+        "item": "minecraft:bone_meal"
+      }
+    }
+  ]
+}

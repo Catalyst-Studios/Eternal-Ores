@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:coal_peat"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:peat_coal_dust"
+    }
+  ],
+  "time": 100
+}

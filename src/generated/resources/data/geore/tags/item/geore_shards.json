@@ -1,0 +1,112 @@
+{
+  "values": [
+    {
+      "id": "eternalores:apatite_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:ardite_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:beryllium_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:cinnabar_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:cobalt_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluorite_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:gallium_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:garnet_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:iridium_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:jade_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:molybdenum_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:necroticarite_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:neodymium_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:niter_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:obsidian_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:onyx_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:palladium_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:pearl_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:peridot_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:pyrolite_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:spinel_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:tanzanite_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:titanium_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:ultimatitanium_geoshard",
+      "required": false
+    },
+    {
+      "id": "eternalores:zircon_geoshard",
+      "required": false
+    }
+  ]
+}

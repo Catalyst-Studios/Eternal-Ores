@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/pig_iron"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:pig_iron_dust_block"
+    }
+  ],
+  "time": 210
+}

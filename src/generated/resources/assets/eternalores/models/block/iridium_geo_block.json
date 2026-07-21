@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalores:block/crystal/iridium_geo_block"
+  }
+}

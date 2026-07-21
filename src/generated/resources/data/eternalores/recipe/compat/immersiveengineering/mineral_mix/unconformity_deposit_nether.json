@@ -1,0 +1,66 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:mineral_mix",
+  "biome_predicates": [
+    [
+      "c:is_nether_forest"
+    ],
+    [
+      "c:is_soul_sand_valley"
+    ]
+  ],
+  "fail_chance": 0.02,
+  "ores": [
+    {
+      "chance": 0.4,
+      "output": {
+        "id": "eternalores:nether_uranium_ore_block"
+      }
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "id": "eternalores:nether_cobalt_ore_block"
+      }
+    },
+    {
+      "chance": 0.15,
+      "output": {
+        "id": "eternalores:nether_silver_ore_block"
+      }
+    },
+    {
+      "chance": 0.18,
+      "output": {
+        "id": "eternalores:nether_uraninite_ore_block"
+      }
+    }
+  ],
+  "sample_background": "minecraft:netherrack",
+  "spoils": [
+    {
+      "chance": 0.5,
+      "output": {
+        "id": "minecraft:netherrack"
+      }
+    },
+    {
+      "chance": 0.3,
+      "output": {
+        "id": "minecraft:blackstone"
+      }
+    },
+    {
+      "chance": 0.2,
+      "output": {
+        "id": "minecraft:soul_soil"
+      }
+    }
+  ],
+  "weight": 11
+}

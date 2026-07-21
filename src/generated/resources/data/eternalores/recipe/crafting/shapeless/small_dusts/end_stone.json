@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/end_stone"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:end_stone_small_dust"
+  }
+}

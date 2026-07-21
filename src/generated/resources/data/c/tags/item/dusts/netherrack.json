@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:netherrack_dust"
+    "eternalores:netherrack_dust",
+    {
+      "id": "create:cinder_flour",
+      "required": false
+    }
   ]
 }

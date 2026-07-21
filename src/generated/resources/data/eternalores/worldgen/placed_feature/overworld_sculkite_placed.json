@@ -1,0 +1,26 @@
+{
+  "feature": "eternalores:overworld_sculkite_feature",
+  "placement": [
+    {
+      "type": "eternalores:config_ore_count",
+      "ore": "eternalores:sculkite_overworld"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "eternalores:config_ore_rarity",
+      "ore": "eternalores:sculkite_overworld"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "eternalores:config_ore_height",
+        "ore": "eternalores:sculkite_overworld"
+      }
+    }
+  ]
+}

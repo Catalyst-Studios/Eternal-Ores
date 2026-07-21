@@ -1,0 +1,100 @@
+{
+  "values": {
+    "eternalores:anthracite_coal": {
+      "burn_time": 2400
+    },
+    "eternalores:anthracite_coal_block": {
+      "burn_time": 21600
+    },
+    "eternalores:anthracite_coal_dust": {
+      "burn_time": 2400
+    },
+    "eternalores:anthracite_coal_dust_block": {
+      "burn_time": 21600
+    },
+    "eternalores:anthracite_coal_small_dust": {
+      "burn_time": 267
+    },
+    "eternalores:bituminous_coal": {
+      "burn_time": 1600
+    },
+    "eternalores:bituminous_coal_block": {
+      "burn_time": 14400
+    },
+    "eternalores:bituminous_coal_dust": {
+      "burn_time": 1600
+    },
+    "eternalores:bituminous_coal_dust_block": {
+      "burn_time": 14400
+    },
+    "eternalores:bituminous_coal_small_dust": {
+      "burn_time": 178
+    },
+    "eternalores:charcoal_block": {
+      "burn_time": 16000
+    },
+    "eternalores:charcoal_dust": {
+      "burn_time": 1600
+    },
+    "eternalores:charcoal_dust_block": {
+      "burn_time": 16000
+    },
+    "eternalores:charcoal_small_dust": {
+      "burn_time": 178
+    },
+    "eternalores:coal_dust": {
+      "burn_time": 1600
+    },
+    "eternalores:coal_dust_block": {
+      "burn_time": 16000
+    },
+    "eternalores:coal_small_dust": {
+      "burn_time": 178
+    },
+    "eternalores:coke_coal": {
+      "burn_time": 3200
+    },
+    "eternalores:coke_coal_block": {
+      "burn_time": 28800
+    },
+    "eternalores:coke_coal_dust": {
+      "burn_time": 3200
+    },
+    "eternalores:coke_coal_dust_block": {
+      "burn_time": 28800
+    },
+    "eternalores:coke_coal_small_dust": {
+      "burn_time": 356
+    },
+    "eternalores:lignite_coal": {
+      "burn_time": 800
+    },
+    "eternalores:lignite_coal_block": {
+      "burn_time": 7200
+    },
+    "eternalores:lignite_coal_dust": {
+      "burn_time": 800
+    },
+    "eternalores:lignite_coal_dust_block": {
+      "burn_time": 7200
+    },
+    "eternalores:lignite_coal_small_dust": {
+      "burn_time": 89
+    },
+    "eternalores:peat_coal": {
+      "burn_time": 400
+    },
+    "eternalores:peat_coal_block": {
+      "burn_time": 3600
+    },
+    "eternalores:peat_coal_dust": {
+      "burn_time": 400
+    },
+    "eternalores:peat_coal_dust_block": {
+      "burn_time": 3600
+    },
+    "eternalores:peat_coal_small_dust": {
+      "burn_time": 45
+    }
+  }
+}

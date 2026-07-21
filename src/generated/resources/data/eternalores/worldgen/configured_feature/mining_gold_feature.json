@@ -1,0 +1,35 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:gold_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "minecraft:gold_ore"
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "minecraft:deepslate_gold_ore"
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "minecraft:nether_gold_ore"
+        },
+        "target": {
+          "block": "minecraft:netherrack",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

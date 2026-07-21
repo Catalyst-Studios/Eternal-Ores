@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "extendedae:quartz_blend",
+      "required": false
+    },
+    {
+      "id": "oritech:raw_silicon",
+      "required": false
+    }
+  ]
+}

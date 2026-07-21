@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "ingredient": {
+    "tag": "c:ore_gems/beryllium"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:beryllium_ingot"
+  }
+}

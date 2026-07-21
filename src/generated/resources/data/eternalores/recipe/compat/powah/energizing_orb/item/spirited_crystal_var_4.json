@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 6000000,
+  "ingredients": [
+    {
+      "tag": "c:gems/emerald"
+    },
+    {
+      "tag": "c:gems/emerald"
+    },
+    {
+      "tag": "c:gems/emerald"
+    },
+    {
+      "tag": "c:gems/emerald"
+    },
+    {
+      "tag": "c:gems/emerald"
+    },
+    {
+      "tag": "c:gems/emerald"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "id": "powah:crystal_spirited"
+  }
+}

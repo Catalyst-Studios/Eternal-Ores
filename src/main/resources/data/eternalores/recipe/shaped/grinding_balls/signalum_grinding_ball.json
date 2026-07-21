@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " A ",
+    "AAA",
+    " A "
+  ],
+  "key":
+  {
+    "A": {
+      "tag": "c:ingots/signalum"
+    }
+  },
+  "result": {
+    "count": 16,
+    "id": "eternalores:signalum_grinding_ball"
+  }
+}

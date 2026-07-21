@@ -1,0 +1,10 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "geore"
+    }
+  ],
+  "type": "minecraft:block",
+  "random_sequence": "eternalores:blocks/budding_molybdenum"
+}

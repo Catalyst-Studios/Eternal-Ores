@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/bituminous_coal"
+    },
+    {
+      "tag": "c:dusts/bituminous_coal"
+    },
+    {
+      "tag": "c:dusts/charcoal"
+    },
+    {
+      "tag": "c:dusts/charcoal"
+    },
+    {
+      "tag": "c:dusts/sulfur"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "eternalores:carbon_blend"
+  }
+}

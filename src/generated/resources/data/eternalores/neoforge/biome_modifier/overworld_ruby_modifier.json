@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_overworld",
+  "features": "eternalores:overworld_ruby_placed",
+  "ore": "eternalores:ruby_overworld",
+  "step": "underground_ores"
+}

@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:ore_gems/gallium"
+    },
+    {
+      "tag": "c:ore_gems/gallium"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:gallium_ingot"
+    }
+  ]
+}

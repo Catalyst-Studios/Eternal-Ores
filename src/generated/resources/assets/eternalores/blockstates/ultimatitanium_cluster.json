@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "eternalores:block/ultimatitanium_cluster",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "eternalores:block/ultimatitanium_cluster",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "eternalores:block/ultimatitanium_cluster",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "eternalores:block/ultimatitanium_cluster",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "eternalores:block/ultimatitanium_cluster"
+    },
+    "facing=west": {
+      "model": "eternalores:block/ultimatitanium_cluster",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

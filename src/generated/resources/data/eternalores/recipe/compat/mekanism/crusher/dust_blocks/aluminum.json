@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:storage_blocks/aluminum"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:aluminum_dust_block"
+  }
+}

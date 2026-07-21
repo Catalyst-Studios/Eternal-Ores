@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/cast_steel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:cast_steel_small_dust"
+  }
+}

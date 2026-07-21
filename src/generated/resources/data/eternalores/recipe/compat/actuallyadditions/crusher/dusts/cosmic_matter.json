@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ingots/cosmic_matter"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "eternalores:cosmic_matter_dust"
+      }
+    }
+  ]
+}

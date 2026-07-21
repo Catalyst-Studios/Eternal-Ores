@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:nuggets/quartz_enriched_iron"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:quartz_enriched_iron_small_dust"
+  }
+}

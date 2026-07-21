@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:ores/garnet"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:gem_garnet"
+    }
+  ],
+  "time": 100
+}

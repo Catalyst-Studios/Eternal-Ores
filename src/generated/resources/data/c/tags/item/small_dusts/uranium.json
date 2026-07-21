@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:o_uranium_small_dust"
+    "eternalores:uranium_small_dust",
+    {
+      "id": "oritech:small_uranium_dust",
+      "required": false
+    }
   ]
 }

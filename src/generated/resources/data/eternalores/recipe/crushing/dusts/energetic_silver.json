@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/energetic_silver"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "eternalores:energetic_silver_dust"
+    }
+  ]
+}

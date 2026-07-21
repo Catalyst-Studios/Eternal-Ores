@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": {
+    "item": "minecraft:deepslate_coal_ore"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 5,
+        "id": "minecraft:coal"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "eternalores:diamond_small_dust"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "eternalores:sulfur_small_dust"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "minecraft:cobbled_deepslate"
+      }
+    }
+  ]
+}

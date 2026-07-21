@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:coke_coal_dust_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:coke_coal_dust"
+  }
+}

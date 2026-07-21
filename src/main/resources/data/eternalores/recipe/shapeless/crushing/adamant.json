@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:tools/crushing_hammers"
+    },
+    {
+      "tag": "c:ingots/adamant"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "oritech:adamant_dust"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:ore_gems/tin"
+    },
+    {
+      "tag": "c:ore_gems/tin"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:tin_ingot"
+    }
+  ]
+}

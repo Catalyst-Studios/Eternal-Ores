@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/steel"
+   },
+    "B": {
+      "tag": "c:tools/wire_cutters"
+    }
+  },
+  "pattern": [
+    "   ",
+    "  A",
+    "BA "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:mold_foil"
+  }
+}

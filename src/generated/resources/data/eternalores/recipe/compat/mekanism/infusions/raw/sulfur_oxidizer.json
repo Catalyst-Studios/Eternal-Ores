@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "tag": "c:raw_materials/sulfur"
+  },
+  "output": {
+    "amount": 100,
+    "id": "mekanism:sulfur_dioxide"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "eternalores:chemical_enabled",
+      "chemical": "eternalores:jade"
+    }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "tag": "c:enriched/jade"
+  },
+  "output": {
+    "amount": 80,
+    "id": "eternalores:jade"
+  }
+}

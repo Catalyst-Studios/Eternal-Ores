@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:gem_shards/arcanum"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:arcanum_small_dust"
+    }
+  ],
+  "time": 100
+}

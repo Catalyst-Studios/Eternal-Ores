@@ -1,0 +1,54 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:pulverizer",
+  "ingredient": {
+    "tag": "c:ores/coal"
+  },
+  "output": {
+    "output": {
+      "count": 6,
+      "item": "minecraft:coal"
+    },
+    "percentages": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.25,
+      0.25,
+      0.1
+    ],
+    "percentagesAdvanced": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.5,
+      0.5,
+      0.25
+    ]
+  },
+  "secondaryOutput": {
+    "output": {
+      "count": 3,
+      "item": "eternalores:sulfur_small_dust"
+    },
+    "percentages": [
+      1.0,
+      1.0,
+      1.0,
+      0.25
+    ],
+    "percentagesAdvanced": [
+      1.0,
+      1.0,
+      1.0,
+      0.5
+    ]
+  }
+}

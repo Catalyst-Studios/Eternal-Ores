@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "tag": "c:storage_blocks/lead"
+  },
+  "outputs": [
+    {
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:lead_dust_block"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#eternalores:is_mining_dim",
+  "features": "eternalores:mining_sulfur_placed",
+  "ore": "eternalores:sulfur_mining",
+  "step": "underground_ores"
+}

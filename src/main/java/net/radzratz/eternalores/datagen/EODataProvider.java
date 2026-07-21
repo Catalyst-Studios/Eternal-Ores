@@ -9,37 +9,34 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-public class EODataProvider implements DataProvider
-{
+public class EODataProvider implements DataProvider {
     private final PackOutput packOutput;
     private final List<DataProvider> subProviders = new ArrayList<>();
 
-    public EODataProvider(PackOutput packOutput)
-    {
+    public EODataProvider(PackOutput packOutput) {
         this.packOutput = packOutput;
     }
 
-    public void addSubProvider(boolean include, DataProvider provider)
-    {
-        if(include)
-        {
+    public PackOutput getPackOutput() {
+        return this.packOutput;
+    }
+
+    public void addSubProvider(boolean include, DataProvider provider) {
+        if(include) {
             subProviders.add(provider);
         }
     }
 
     @Override
-    public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cachedOutput)
-    {
-        return CompletableFuture.allOf(
-                subProviders.stream()
-                        .map(provider -> provider.run(cachedOutput))
-                        .toArray(CompletableFuture[]::new)
-        );
+    public @NotNull CompletableFuture<?> run(@NotNull CachedOutput cachedOutput) {
+        return CompletableFuture.allOf(subProviders
+                .stream()
+                .map(provider -> provider.run(cachedOutput))
+                .toArray(CompletableFuture[]::new));
     }
 
     @Override
-    public @NotNull String getName()
-    {
+    public @NotNull String getName() {
         return "Eternal Data Provider";
     }
 }

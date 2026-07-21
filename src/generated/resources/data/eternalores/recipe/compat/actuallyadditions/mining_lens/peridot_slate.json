@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:mining_lens",
+  "ingredient": {
+    "tag": "eternalores:slate_replaceables"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:deepslate_peridot_ore_block"
+  },
+  "weight": 100
+}

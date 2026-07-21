@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:gem_shards/amber"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:amber_small_dust"
+  }
+}

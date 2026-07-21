@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:raw_materials/osmium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:clump_osmium"
+    },
+    {
+      "count": 3,
+      "id": "eternalores:osmium_small_clump"
+    },
+    {
+      "count": 3,
+      "id": "eternalores:platinum_small_clump"
+    }
+  ],
+  "time": 210
+}

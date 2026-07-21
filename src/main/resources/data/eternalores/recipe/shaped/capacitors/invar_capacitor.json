@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "BBB",
+    "ADA",
+    "CBC"
+  ],
+  "key":
+  {
+    "A": {
+      "item": "enderio:octadic_capacitor"
+    },
+    "B": {
+      "tag": "c:foils/invar"
+    },
+    "C": {
+      "tag": "c:rods/invar"
+    },
+    "D": {
+      "tag": "c:storage_blocks/redstone"
+    }
+  },
+  "result": {
+    "id": "eternalores:invar_capacitor"
+  }
+}

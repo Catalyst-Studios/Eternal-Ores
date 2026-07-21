@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:gems/black_quartz"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:black_quartz_shard"
+  }
+}

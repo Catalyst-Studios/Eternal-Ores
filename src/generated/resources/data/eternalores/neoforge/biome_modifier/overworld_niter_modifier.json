@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_overworld",
+  "features": "eternalores:overworld_niter_placed",
+  "ore": "eternalores:niter_overworld",
+  "step": "underground_ores"
+}

@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:pulverizer",
+  "ingredient": {
+    "tag": "c:storage_blocks/spectral_sky_bluerite"
+  },
+  "output": {
+    "output": {
+      "item": "eternalores:spectral_sky_bluerite_dust_block"
+    },
+    "percentages": [
+      1.0
+    ],
+    "percentagesAdvanced": [
+      1.0
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:gems/tachyarite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:tachyarite_shard"
+  }
+}

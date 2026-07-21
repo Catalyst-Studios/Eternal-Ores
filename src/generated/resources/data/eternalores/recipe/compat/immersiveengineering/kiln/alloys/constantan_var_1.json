@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:alloy",
+  "input0": {
+    "tag": "c:ingots/nickel"
+  },
+  "input1": {
+    "tag": "c:ingots/copper"
+  },
+  "result": {
+    "count": 2,
+    "id": "eternalores:constantan_ingot"
+  },
+  "time": 8
+}

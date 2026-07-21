@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:tools/crushing_hammers"
+    },
+    {
+      "tag": "c:ingots/hop_graphite"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "immersiveengineering:dust_hop_graphite"
+  }
+}

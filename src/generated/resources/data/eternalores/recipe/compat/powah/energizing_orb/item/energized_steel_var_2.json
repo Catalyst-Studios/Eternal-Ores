@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 15000,
+  "ingredients": [
+    {
+      "tag": "c:ingots/iron"
+    },
+    {
+      "tag": "c:ingots/gold"
+    },
+    {
+      "tag": "c:blends/energetic"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "powah:steel_energized"
+  }
+}

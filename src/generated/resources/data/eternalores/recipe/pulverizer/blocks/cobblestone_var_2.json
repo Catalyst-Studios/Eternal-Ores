@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "item": "minecraft:tuff"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "minecraft:cobblestone"
+    },
+    {
+      "count": 2,
+      "id": "eternalores:tuff_small_dust"
+    }
+  ],
+  "time": 100
+}

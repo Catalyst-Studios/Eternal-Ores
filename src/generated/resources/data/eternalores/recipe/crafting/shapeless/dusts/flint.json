@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dust_blocks/flint"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:flint_dust"
+  }
+}

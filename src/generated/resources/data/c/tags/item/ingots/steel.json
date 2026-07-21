@@ -1,4 +1,7 @@
 {
+  "remove": [
+    "oritech:biosteel_ingot"
+  ],
   "values": [
     "eternalores:steel_ingot"
   ]

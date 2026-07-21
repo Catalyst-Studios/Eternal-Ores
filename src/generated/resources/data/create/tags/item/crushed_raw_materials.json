@@ -1,0 +1,112 @@
+{
+  "values": [
+    {
+      "id": "eternalores:clump_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clump_zinc",
+      "required": false
+    }
+  ]
+}

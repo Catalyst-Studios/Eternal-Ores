@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/coal"
+    },
+    {
+      "tag": "c:dusts/coal"
+    },
+    {
+      "tag": "c:dusts/coal"
+    },
+    {
+      "tag": "c:dusts/charcoal"
+    },
+    {
+      "tag": "c:small_dusts/calcium"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "eternalores:low_enriched_carbon_blend"
+  }
+}

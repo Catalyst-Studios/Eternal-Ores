@@ -1,14 +1,112 @@
 {
   "values": [
-    "eternalores:crystal_aluminum",
-    "eternalores:crystal_catalyrium",
-    "eternalores:crystal_cobalt",
-    "eternalores:crystal_gallium",
-    "eternalores:crystal_iridium",
-    "eternalores:crystal_nickel",
-    "eternalores:crystal_platinum",
-    "eternalores:crystal_silver",
-    "eternalores:crystal_uraninite",
-    "eternalores:crystal_zinc"
+    {
+      "id": "eternalores:crystal_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:crystal_zinc",
+      "required": false
+    }
   ]
 }

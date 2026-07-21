@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#eternalores:is_mining_dim",
+  "features": "eternalores:mining_quartz_placed",
+  "ore": "eternalores:quartz_mining",
+  "step": "underground_ores"
+}

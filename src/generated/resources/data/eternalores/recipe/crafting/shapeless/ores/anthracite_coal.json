@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ores/anthracite_coal"
+    },
+    {
+      "tag": "c:tools/crushing_hammers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:anthracite_coal_dust"
+  }
+}

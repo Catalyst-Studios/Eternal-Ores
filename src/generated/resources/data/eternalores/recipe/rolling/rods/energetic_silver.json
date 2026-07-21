@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "createaddition"
+    }
+  ],
+  "type": "createaddition:rolling",
+  "ingredients": [
+    {
+      "tag": "c:ingots/energetic_silver"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:rod_energetic_silver"
+    }
+  ]
+}

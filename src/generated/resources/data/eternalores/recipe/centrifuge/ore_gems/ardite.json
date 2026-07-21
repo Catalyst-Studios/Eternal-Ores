@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:clumps/ardite"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:ardite_gem"
+    },
+    {
+      "count": 1,
+      "id": "eternalores:ardite_small_dust"
+    }
+  ],
+  "time": 100
+}

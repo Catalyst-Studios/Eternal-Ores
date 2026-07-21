@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:calcium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:calcium_dust"
+  }
+}

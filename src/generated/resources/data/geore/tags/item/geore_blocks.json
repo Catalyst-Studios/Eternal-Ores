@@ -1,0 +1,112 @@
+{
+  "values": [
+    {
+      "id": "eternalores:apatite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:ardite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:beryllium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:cinnabar_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:cobalt_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluorite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:gallium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:garnet_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:iridium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:jade_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:molybdenum_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:necroticarite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:neodymium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:niter_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:obsidian_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:onyx_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:palladium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:pearl_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:peridot_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:pyrolite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:spinel_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:tanzanite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:titanium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:ultimatitanium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:zircon_geo_block",
+      "required": false
+    }
+  ]
+}

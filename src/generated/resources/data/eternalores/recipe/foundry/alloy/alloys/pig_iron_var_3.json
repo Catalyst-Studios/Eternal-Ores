@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ingots/iron"
+    },
+    {
+      "tag": "c:blends/low_enriched_carbon"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:pig_iron_ingot"
+    }
+  ],
+  "time": 80
+}

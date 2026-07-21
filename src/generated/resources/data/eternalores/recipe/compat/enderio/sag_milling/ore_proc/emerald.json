@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": {
+    "item": "minecraft:emerald_ore"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 2,
+        "id": "minecraft:emerald"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "minecraft:emerald"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "eternalores:beryllium_small_dust"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "minecraft:cobblestone"
+      }
+    }
+  ]
+}

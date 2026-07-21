@@ -4,29 +4,45 @@ ___
 About
 =======
 
-The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, ore blocks and some compressed blocks!
+The Eternal Ores mod adds many well-known items into a single mod, such as **ingots**, **gears**, **rods**, **nuggets**, **plates**, **raw ores**, **ore blocks**, 
+**compressed blocks** and a self-included **mining dimension**!
 
-Based on FTB Materials, AllTheOres, and Emendatus Enigmatica, Eternal Ores is compatible with these mods, using the correct tags 
-for proper integration while adding new materials and ores for Catalyst Studios Modpacks. It also adds ore 
-generation for its ores, compatible with both modded and vanilla biomes.
+Based on **FTB Materials**, **AllTheOres**, and **Emendatus Enigmatica**, **Eternal Ores** is compatible with these mods, using the correct tags 
+for proper integration while adding over **200+** materials and ores for **Catalyst Studios Modpacks**. It also adds ore 
+generation for its ores, highly configurable, and compatible with both modded and vanilla biomes.
 
-The use of Almost Unified is highly recommended to unify Eternal Items ores and ingots with those from other mods.
-Additionally, KubeJS is recommended if you want to avoid duplicate recipes for a single item or specific types of ores and materials.
+The use of **Almost Unified** is highly recommended to unify Eternal Items ores and ingots with those from other mods.
+Additionally, **KubeJS** is recommended if you want to avoid duplicate recipes for a single item or specific types of ores and materials.
 
 This mod can be used in any modpack!
+
+## **Mod Compat**
+
+We have, and plan, to add compatibility/integration to these mods.
+
+- Mekanism
+- Mekanism: More Machine
+- Create
+- Create: Crafts and Additions
+- Oritech
+- Immersive Engineering
+- Energized Power
+- Forbidden and Arcanus
+- EnderIO
+- Actually Additions
+- Powah!
+- Iron Furnaces
+- GeOre
+- Railcraft Reborn
+- Integrated Dynamics
+- Extreme Reactors (Planned)
+- Occultism (Planned)
+- Mystical Agriculture (Planned)
+- and probably others... But in case we missed some, let us know!
+
+Eternal Ores adds a couple of Mixins, which are disabled by default, so check the Config files to know what they do
 ___
-Mod Compat
-===================
-
-We also plan to add compatibility for other mods!
-
-**Like**;
-
-- Create (NYI)
-- Mekanism (Implemented)
-- Oritech (NYI)
-___
-Catalyst Team
+Catalyst Studios Discord
 ==========
 
 Discord Server Link: https://discord.gg/FAvjyGtDbf
@@ -36,29 +52,19 @@ Translation to other Languages
 
 This mod ships in with English & Spanish translations by default!
 
-With the Translations you are free to contribute without asking me, simply create a PR over GitHub, and we'll gladly look at it.
+If you'd like to contribute by translating Eternal Ores material sets into other languages, create a Pull Request, and we'll add it gladly.
 
 However, make sure to **NOT USE ANY TYPE OF AI ON IT**!!!
 
 We are looking for people that actually speak that language. We love machine, but not that kind of machine!
-___
-**For PackDevs**
-=
-
-That look to disable some of Eternal Ores ore generation
-
-Make sure to check out packdevs/PackDevs.md file within our GitHub repository.
 
 ___
 Credits
 ============
 
-This section is still in a W.I.P state!
-
 - RadzRatz - Mod Author/Owner/Artist - Base Items/Blocks Creator
-- BillBertKing1 - Mastermind behind Eternal Ores Creation
-- ApexSlayer - On suggesting new Custom Material Sets
-- PatrioticCross - On suggesting new Custom Material Sets
+- Titop - Contributor - Mixin Wizard
+- ApexSlayer, PatrioticCross, AlmanaX21, BillBertKing1 - On suggesting new Custom Material Sets
 ___
 Licence
 =======
@@ -71,71 +77,26 @@ Have fun and I hope you enjoy the Mod!
 Also, **I do not allow the distribution of Eternal Ores mod outside CurseForge or Modrinth Websites.**
 
 *atte RadzRatz*
-___
-Sección en Español
-=======
-___
-Acerca
-=======
 
-El mod Eternal Ores agrega muchos ítems bien conocidos en un solo mod, como lingotes, engranajes, varillas, pepitas, placas, minerales 
-en bruto y bloques de mineral.
+---
+Textures
+======
+All of Eternal Ores textures can be used in any other projects if its desired, but explicit permission must be given.
 
-Basado en FTB Materials, AllTheOres y Emendatus Enigmatica, Eternal Ores es compatible con estos mods, utilizando las etiquetas 
-correctas para una integración adecuada, al mismo tiempo que añade nuevos materiales y minerales para los Modpacks de Catalyst Studios. 
-También incluye generación de minerales compatible con biomas tanto de mods como de Minecraft Vanilla.
+---
 
-Se recomienda encarecidamente el uso de Almost Unified para unificar los minerales y lingotes de Eternal Ores con los de otros mods. 
-Además, se recomienda KubeJS si deseas evitar recetas duplicadas para un mismo ítem o tipos específicos de minerales y materiales.
+Once said permission is given, you must follow these **rules**;
 
-¡Este mod se puede utilizar en cualquier modpack!
-___
-Compatibilidad con Mods (T.E.P)
-===================
+- **Your project repository must be available at times. If not possible, it can be arranged.**
+- **You cannot redistribute these assets as if they were your own.**
+- **You cannot claim ownership of any these assets.**
+- **If said project's licence is MIT, you must explicitly inform others that certain assets are excluded from said Licence.**
 
-Tambien planeamos agregar compatibilidad con otros mods!
+Otherwise, a proper take down will be requested.
 
-**Como**;
+All these textures were made with love, so please do not steal.
 
-- Create (No Implementado)
-- Mekanism (Implementado)
-___
-Equipo de Catalyst
-==========
+---
 
-Discord: https://discord.gg/FAvjyGtDbf
-___
-Traducción a otros idiomas
-=============
-
-¡Este mod viene con traducciones en Inglés y Español por defecto!
-
-Si deseas contribuir con traducciones, eres libre de hacerlo sin necesidad de pedir permiso. Simplemente crea un PR en 
-Github y con gusto lo revisaremos.
-
-Sin embargo, asegúrate de **NO USAR NINGÚN TIPO DE IA PARA LAS TRADUCCIONES**.
-
-Buscamos personas que realmente hablen el idioma. ¡Amamos la tecnología, pero no ese tipo de tecnología!
-___
-Créditos
-============
-
-Esta sección aún está en desarrollo.
-
-- RadzRatz - Autor del Mod - Creador de Ítems y Bloques Base
-- Billbertking1 - Mente Maestra detras de la creación de Eternal Ores
-- ApexSlayer - Por sugerir nuevos sets de materiales custom
-- PatrioticCross - Por sugerir nuevos sets de materiales custom
-___
-Licencia
-=======
-
-Como se ha mencionado, este mod está bajo la licencia All Rights Reserved (ARR). Dicho esto, el uso de este mod en 
-cualquier modpack está permitido. Sin embargo, se agradecerá si me mencionas que el mod está siendo utilizado 
-en dicho modpack. No estás obligado a mencionarme si no lo deseas.
-
-¡Diviértete y espero que disfrutes el mod!
-
-Además, **NO permito la distribución del mod Eternal Items fuera de las plataformas CurseForge o Modrinth**.
-
-*Atentamente, RadzRatz*
+**Projects that use part of Eternal Ores textures and have permission;**
+- Almanax21; https://github.com/Almana-mc/Assembly-Tech

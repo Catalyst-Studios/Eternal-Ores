@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:plates/blue_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:blue_steel_foil"
+    }
+  ]
+}

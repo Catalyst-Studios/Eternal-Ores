@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ironfurnaces"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "ABA",
+    "BCB",
+    "ADA"
+  ],
+  "key":
+  {
+    "A": {
+      "tag": "c:ingots/catalyrium"
+    },
+    "B": {
+      "tag": "c:plates/catalyrium"
+    },
+    "C": {
+      "tag": "c:storage_blocks/netherite"
+    },
+    "D": {
+      "tag": "c:storage_blocks/nether_star"
+    }
+  },
+  "result": {
+    "id": "eternalores:upgrade_catalyrium"
+  }
+}

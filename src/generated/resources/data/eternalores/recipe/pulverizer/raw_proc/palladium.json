@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:raw_materials/palladium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:palladium_dust"
+    },
+    {
+      "count": 3,
+      "id": "eternalores:palladium_small_dust"
+    }
+  ],
+  "time": 100
+}

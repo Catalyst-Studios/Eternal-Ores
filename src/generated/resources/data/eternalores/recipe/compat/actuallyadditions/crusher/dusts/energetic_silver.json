@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ingots/energetic_silver"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "eternalores:energetic_silver_dust"
+      }
+    }
+  ]
+}

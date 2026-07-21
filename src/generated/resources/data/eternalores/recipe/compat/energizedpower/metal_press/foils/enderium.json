@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/enderium"
+  },
+  "output": {
+    "count": 2,
+    "item": "eternalores:enderium_foil"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_foil"
+  }
+}

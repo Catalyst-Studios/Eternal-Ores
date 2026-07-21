@@ -1,0 +1,108 @@
+{
+  "values": [
+    {
+      "id": "eternalores:dirty_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_sculkite",
+      "required": false
+    },
+    {
+      "id": "mekanism:dirty_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_tungsten",
+      "required": false
+    },
+    {
+      "id": "mekanism:dirty_tin",
+      "required": false
+    },
+    {
+      "id": "mekanism:dirty_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_zinc",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_catalyrium",
+      "required": false
+    },
+    {
+      "id": "mekanism:dirty_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_gallium",
+      "required": false
+    },
+    {
+      "id": "mekanism:dirty_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_neodymium",
+      "required": false
+    },
+    {
+      "id": "mekanism:dirty_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_silver",
+      "required": false
+    },
+    {
+      "id": "mekanism:dirty_uranium",
+      "required": false
+    }
+  ]
+}

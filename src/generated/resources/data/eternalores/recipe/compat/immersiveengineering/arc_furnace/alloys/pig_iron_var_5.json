@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "c:dusts/peat_coal"
+    }
+  ],
+  "energy": 51200,
+  "input": {
+    "tag": "c:dusts/iron"
+  },
+  "results": [
+    {
+      "id": "eternalores:pig_iron_ingot"
+    }
+  ],
+  "time": 100
+}

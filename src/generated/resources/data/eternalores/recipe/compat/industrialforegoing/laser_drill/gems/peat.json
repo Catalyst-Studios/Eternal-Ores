@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:laser_drill_ore",
+  "catalyst": {
+    "item": "industrialforegoing:red_laser_lens"
+  },
+  "output": {
+    "count": 1,
+    "tag": "c:ores/peat_coal"
+  },
+  "rarity": [
+    {
+      "biome_filter": {
+        "blacklist": [],
+        "whitelist": []
+      },
+      "depth_max": 59,
+      "depth_min": 41,
+      "dimension_filter": {
+        "blacklist": [
+          "minecraft:the_end",
+          "minecraft:the_nether"
+        ],
+        "whitelist": [
+          "minecraft:overworld"
+        ]
+      },
+      "weight": 18
+    }
+  ]
+}

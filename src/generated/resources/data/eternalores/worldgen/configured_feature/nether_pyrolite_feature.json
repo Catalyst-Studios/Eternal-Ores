@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:pyrolite_nether",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:pyrolite_ore_block"
+        },
+        "target": {
+          "block": "minecraft:netherrack",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

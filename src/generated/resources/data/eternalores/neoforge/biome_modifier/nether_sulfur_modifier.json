@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_nether",
+  "features": "eternalores:nether_sulfur_placed",
+  "ore": "eternalores:sulfur_nether",
+  "step": "underground_ores"
+}

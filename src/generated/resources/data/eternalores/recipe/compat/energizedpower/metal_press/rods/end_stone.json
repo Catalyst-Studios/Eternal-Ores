@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/end_stone"
+  },
+  "output": {
+    "count": 2,
+    "item": "eternalores:rod_end_stone"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_rod"
+  }
+}

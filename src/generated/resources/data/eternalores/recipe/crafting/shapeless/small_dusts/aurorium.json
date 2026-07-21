@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/aurorium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:aurorium_small_dust"
+  }
+}

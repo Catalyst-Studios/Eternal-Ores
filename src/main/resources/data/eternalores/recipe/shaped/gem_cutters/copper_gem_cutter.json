@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:rods/copper"
+    },
+    "B": {
+      "tag": "c:plates/copper"
+    },
+    "C": {
+      "tag": "c:nuggets/copper"
+    }
+  },
+  "pattern": [
+    "  B",
+    " A ",
+    "C  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:copper_gem_cutter"
+  }
+}

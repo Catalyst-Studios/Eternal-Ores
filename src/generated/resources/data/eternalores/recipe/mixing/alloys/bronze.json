@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:dusts/tin"
+    },
+    {
+      "tag": "c:dusts/copper"
+    },
+    {
+      "tag": "c:dusts/copper"
+    },
+    {
+      "tag": "c:dusts/copper"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "eternalores:bronze_ingot"
+    }
+  ]
+}

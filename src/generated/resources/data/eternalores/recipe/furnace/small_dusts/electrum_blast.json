@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 0.6,
+  "ingredient": {
+    "tag": "c:small_dusts/electrum"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:electrum_nugget"
+  }
+}

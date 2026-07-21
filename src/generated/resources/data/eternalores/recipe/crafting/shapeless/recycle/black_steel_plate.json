@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:plates/black_steel"
+    },
+    {
+      "tag": "c:tools/crushing_hammers"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:black_steel_dust"
+  }
+}

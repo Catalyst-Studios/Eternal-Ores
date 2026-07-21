@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/diorite"
+    },
+    "B": {
+      "tag": "c:tools/gem_cutters"
+    },
+    "C": {
+      "tag": "c:rods/diorite"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:gear_diorite"
+  }
+}

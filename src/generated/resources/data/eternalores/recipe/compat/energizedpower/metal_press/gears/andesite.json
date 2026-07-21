@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/andesite"
+  },
+  "inputCount": 2,
+  "output": {
+    "item": "eternalores:gear_andesite"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_gear"
+  }
+}

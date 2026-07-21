@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dust_blocks/emerald"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:emerald_dust"
+  }
+}

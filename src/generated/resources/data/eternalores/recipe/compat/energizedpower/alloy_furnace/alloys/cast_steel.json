@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:alloy_furnace",
+  "inputs": [
+    {
+      "count": 2,
+      "input": {
+        "tag": "c:dusts/bituminous_coal"
+      }
+    },
+    {
+      "input": {
+        "tag": "c:dusts/steel"
+      }
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "eternalores:cast_steel_ingot"
+  },
+  "ticks": 500
+}

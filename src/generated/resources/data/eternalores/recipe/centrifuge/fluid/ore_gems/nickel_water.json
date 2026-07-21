@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:centrifuge_fluid",
+  "fluidInput": {
+    "fluid": "#minecraft:water"
+  },
+  "ingredients": [
+    {
+      "tag": "c:clumps/nickel"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:nickel_gem"
+    }
+  ],
+  "time": 100
+}

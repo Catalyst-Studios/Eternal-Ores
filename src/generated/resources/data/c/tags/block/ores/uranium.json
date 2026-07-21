@@ -1,6 +1,8 @@
 {
   "values": [
     "eternalores:deepslate_uranium_ore_block",
+    "eternalores:end_uranium_ore_block",
+    "eternalores:nether_uranium_ore_block",
     "eternalores:uranium_ore_block"
   ]
 }

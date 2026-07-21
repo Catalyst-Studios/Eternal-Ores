@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/blaze"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:blaze_dust_block"
+    }
+  ],
+  "time": 100
+}

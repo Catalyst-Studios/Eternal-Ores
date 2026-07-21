@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:alloy_furnace",
+  "inputs": [
+    {
+      "input": {
+        "tag": "c:ore_gems/nickel"
+      }
+    },
+    {
+      "input": {
+        "tag": "c:ore_gems/nickel"
+      }
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "eternalores:nickel_ingot"
+  },
+  "ticks": 800
+}

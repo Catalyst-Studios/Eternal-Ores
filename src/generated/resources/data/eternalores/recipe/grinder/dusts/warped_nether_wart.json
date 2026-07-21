@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_wart_block"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:warped_nether_wart_dust"
+    }
+  ],
+  "time": 210
+}

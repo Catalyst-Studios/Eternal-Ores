@@ -1,0 +1,44 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:molybdenum_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:molybdenum_ore_block"
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternalores:deepslate_molybdenum_ore_block"
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternalores:nether_molybdenum_ore_block"
+        },
+        "target": {
+          "block": "minecraft:netherrack",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternalores:end_molybdenum_ore_block"
+        },
+        "target": {
+          "block": "minecraft:end_stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

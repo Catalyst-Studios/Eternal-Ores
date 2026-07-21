@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eternalores:block/buds/medium_cobalt_bud"
+  }
+}

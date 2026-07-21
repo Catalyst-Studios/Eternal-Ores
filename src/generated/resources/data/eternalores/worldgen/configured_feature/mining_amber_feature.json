@@ -1,0 +1,26 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:amber_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:amber_ore_block"
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternalores:deepslate_amber_ore_block"
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

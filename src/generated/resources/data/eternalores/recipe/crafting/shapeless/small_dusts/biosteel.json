@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/biosteel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:biosteel_small_dust"
+  }
+}

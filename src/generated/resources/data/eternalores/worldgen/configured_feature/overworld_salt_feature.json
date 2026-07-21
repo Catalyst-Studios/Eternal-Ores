@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:salt_overworld",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:salt_ore_block"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:sand"
+        }
+      }
+    ]
+  }
+}

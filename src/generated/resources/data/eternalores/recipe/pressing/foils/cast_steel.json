@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:plates/cast_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:cast_steel_foil"
+    }
+  ]
+}

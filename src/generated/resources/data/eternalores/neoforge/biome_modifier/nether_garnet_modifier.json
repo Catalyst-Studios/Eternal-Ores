@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_nether",
+  "features": "eternalores:nether_garnet_placed",
+  "ore": "eternalores:garnet_nether",
+  "step": "underground_ores"
+}

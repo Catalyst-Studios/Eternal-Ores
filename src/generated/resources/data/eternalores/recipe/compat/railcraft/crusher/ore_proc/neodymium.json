@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "tag": "c:ores/neodymium"
+  },
+  "outputs": [
+    {
+      "count": 2,
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:raw_neodymium"
+      }
+    },
+    {
+      "probability": 0.75,
+      "result": {
+        "item": "eternalores:rare_earth_dust"
+      }
+    },
+    {
+      "count": 2,
+      "probability": 0.25,
+      "result": {
+        "item": "eternalores:neodymium_dust"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "ingredient": {
+    "tag": "c:ores/molybdenum"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:molybdenum_ingot"
+  }
+}

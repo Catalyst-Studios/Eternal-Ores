@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/stainless_steel"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "eternalores:stainless_steel_dust"
+    }
+  ]
+}

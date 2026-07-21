@@ -1,188 +1,1071 @@
 {
   "values": [
+    {
+      "id": "eternalores:catalyrium_furnace",
+      "required": false
+    },
     "eternalores:aluminum_block",
     "eternalores:aluminum_ore_block",
+    "eternalores:alumite_block",
     "eternalores:amber_block",
     "eternalores:amber_ore_block",
+    "eternalores:americium_block",
+    "eternalores:annealed_copper_block",
+    "eternalores:anthracite_coal_block",
+    "eternalores:anthracite_coal_ore_block",
+    "eternalores:antimatter_block",
     "eternalores:apatite_block",
     "eternalores:apatite_ore_block",
+    "eternalores:arcanum_block",
     "eternalores:ardite_block",
     "eternalores:ardite_ore_block",
+    "eternalores:armadillo_scute_block",
+    "eternalores:aurorium_block",
+    "eternalores:battery_alloy_block",
+    "eternalores:beryllium_block",
+    "eternalores:beryllium_ore_block",
+    "eternalores:biomass_block",
+    "eternalores:biosteel_block",
+    "eternalores:bismuth_block",
+    "eternalores:bituminous_coal_block",
+    "eternalores:bituminous_coal_ore_block",
+    "eternalores:black_bronze_block",
+    "eternalores:black_quartz_block",
+    "eternalores:black_quartz_ore_block",
+    "eternalores:black_steel_block",
+    "eternalores:blaze_block",
     "eternalores:blue_steel_block",
     "eternalores:brass_block",
     "eternalores:britannia_silver_block",
     "eternalores:bronze_block",
+    "eternalores:cadmium_block",
+    "eternalores:calcium_block",
+    "eternalores:californium_block",
     "eternalores:cast_iron_block",
     "eternalores:cast_steel_block",
     "eternalores:catalyrium_block",
+    "eternalores:cerium_block",
+    "eternalores:certus_quartz_block",
+    "eternalores:cesium_block",
+    "eternalores:charcoal_block",
+    "eternalores:chromium_block",
     "eternalores:cinnabar_block",
     "eternalores:cinnabar_ore_block",
     "eternalores:cobalt_block",
     "eternalores:cobalt_ore_block",
-    "eternalores:compressed_andesite_1x",
-    "eternalores:compressed_andesite_2x",
-    "eternalores:compressed_andesite_3x",
-    "eternalores:compressed_andesite_4x",
-    "eternalores:compressed_andesite_5x",
-    "eternalores:compressed_andesite_6x",
-    "eternalores:compressed_andesite_7x",
-    "eternalores:compressed_andesite_8x",
-    "eternalores:compressed_andesite_9x",
-    "eternalores:compressed_cobble_1x",
-    "eternalores:compressed_cobble_2x",
-    "eternalores:compressed_cobble_3x",
-    "eternalores:compressed_cobble_4x",
-    "eternalores:compressed_cobble_5x",
-    "eternalores:compressed_cobble_6x",
-    "eternalores:compressed_cobble_7x",
-    "eternalores:compressed_cobble_8x",
-    "eternalores:compressed_cobble_9x",
-    "eternalores:compressed_diorite_1x",
-    "eternalores:compressed_diorite_2x",
-    "eternalores:compressed_diorite_3x",
-    "eternalores:compressed_diorite_4x",
-    "eternalores:compressed_diorite_5x",
-    "eternalores:compressed_diorite_6x",
-    "eternalores:compressed_diorite_7x",
-    "eternalores:compressed_diorite_8x",
-    "eternalores:compressed_diorite_9x",
-    "eternalores:compressed_dirt_1x",
-    "eternalores:compressed_dirt_2x",
-    "eternalores:compressed_dirt_3x",
-    "eternalores:compressed_dirt_4x",
-    "eternalores:compressed_dirt_5x",
-    "eternalores:compressed_dirt_6x",
-    "eternalores:compressed_dirt_7x",
-    "eternalores:compressed_dirt_8x",
-    "eternalores:compressed_dirt_9x",
-    "eternalores:compressed_granite_1x",
-    "eternalores:compressed_granite_2x",
-    "eternalores:compressed_granite_3x",
-    "eternalores:compressed_granite_4x",
-    "eternalores:compressed_granite_5x",
-    "eternalores:compressed_granite_6x",
-    "eternalores:compressed_granite_7x",
-    "eternalores:compressed_granite_8x",
-    "eternalores:compressed_granite_9x",
-    "eternalores:compressed_gravel_1x",
-    "eternalores:compressed_gravel_2x",
-    "eternalores:compressed_gravel_3x",
-    "eternalores:compressed_gravel_4x",
-    "eternalores:compressed_gravel_5x",
-    "eternalores:compressed_gravel_6x",
-    "eternalores:compressed_gravel_7x",
-    "eternalores:compressed_gravel_8x",
-    "eternalores:compressed_gravel_9x",
-    "eternalores:compressed_sand_1x",
-    "eternalores:compressed_sand_2x",
-    "eternalores:compressed_sand_3x",
-    "eternalores:compressed_sand_4x",
-    "eternalores:compressed_sand_5x",
-    "eternalores:compressed_sand_6x",
-    "eternalores:compressed_sand_7x",
-    "eternalores:compressed_sand_8x",
-    "eternalores:compressed_sand_9x",
+    "eternalores:coke_coal_block",
     "eternalores:constantan_block",
+    "eternalores:cosmic_matter_block",
+    "eternalores:crystalline_alloy_block",
+    "eternalores:cupronickel_block",
     "eternalores:deepslate_aluminum_ore_block",
     "eternalores:deepslate_amber_ore_block",
+    "eternalores:deepslate_anthracite_coal_ore_block",
     "eternalores:deepslate_apatite_ore_block",
+    "eternalores:deepslate_beryllium_ore_block",
+    "eternalores:deepslate_bituminous_coal_ore_block",
+    "eternalores:deepslate_black_quartz_ore_block",
     "eternalores:deepslate_cinnabar_ore_block",
     "eternalores:deepslate_cobalt_ore_block",
     "eternalores:deepslate_fluorite_ore_block",
     "eternalores:deepslate_gallium_ore_block",
+    "eternalores:deepslate_garnet_ore_block",
     "eternalores:deepslate_iridium_ore_block",
+    "eternalores:deepslate_jade_ore_block",
     "eternalores:deepslate_lead_ore_block",
+    "eternalores:deepslate_lignite_coal_ore_block",
+    "eternalores:deepslate_molybdenum_ore_block",
+    "eternalores:deepslate_monazite_ore_block",
+    "eternalores:deepslate_neodymium_ore_block",
     "eternalores:deepslate_nickel_ore_block",
     "eternalores:deepslate_niter_ore_block",
     "eternalores:deepslate_onyx_ore_block",
     "eternalores:deepslate_osmium_ore_block",
+    "eternalores:deepslate_palladium_ore_block",
+    "eternalores:deepslate_peat_coal_ore_block",
     "eternalores:deepslate_peridot_ore_block",
     "eternalores:deepslate_platinum_ore_block",
-    "eternalores:deepslate_plutonium_ore_block",
     "eternalores:deepslate_ruby_ore_block",
     "eternalores:deepslate_sapphire_ore_block",
     "eternalores:deepslate_silver_ore_block",
+    "eternalores:deepslate_spinel_ore_block",
     "eternalores:deepslate_sulfur_ore_block",
+    "eternalores:deepslate_tanzanite_ore_block",
     "eternalores:deepslate_tin_ore_block",
+    "eternalores:deepslate_titanium_ore_block",
     "eternalores:deepslate_uraninite_ore_block",
     "eternalores:deepslate_uranium_ore_block",
+    "eternalores:deepslate_vanadium_ore_block",
     "eternalores:deepslate_zinc_ore_block",
+    "eternalores:deepslate_zircon_ore_block",
+    "eternalores:dust_block",
     "eternalores:electrum_block",
+    "eternalores:end_fluorite_ore_block",
+    "eternalores:end_iridium_ore_block",
+    "eternalores:end_lead_ore_block",
+    "eternalores:end_molybdenum_ore_block",
+    "eternalores:end_neodymium_ore_block",
+    "eternalores:end_palladium_ore_block",
+    "eternalores:end_platinum_ore_block",
+    "eternalores:end_pyrolite_ore_block",
+    "eternalores:end_sapphire_ore_block",
+    "eternalores:end_tin_ore_block",
+    "eternalores:end_titanium_ore_block",
+    "eternalores:end_tungsten_ore_block",
+    "eternalores:end_uranium_ore_block",
+    "eternalores:end_vanadium_ore_block",
+    "eternalores:ender_eye_block",
+    "eternalores:ender_pearl_block",
     "eternalores:enderium_block",
+    "eternalores:energetic_silver_block",
+    "eternalores:eternal_dark_block",
+    "eternalores:eternal_light_block",
+    "eternalores:eternity_block",
+    "eternalores:etherium_block",
+    "eternalores:exotic_matter_block",
+    "eternalores:flint_block",
+    "eternalores:fluix_crystal_block",
     "eternalores:fluorite_block",
     "eternalores:fluorite_ore_block",
+    "eternalores:francium_block",
     "eternalores:gallium_block",
     "eternalores:gallium_ore_block",
+    "eternalores:garnet_block",
+    "eternalores:garnet_ore_block",
     "eternalores:graphite_block",
+    "eternalores:gravitronium_block",
+    "eternalores:hafnium_block",
+    "eternalores:hepatizon_block",
+    "eternalores:indium_block",
     "eternalores:invar_block",
     "eternalores:iridium_block",
     "eternalores:iridium_ore_block",
+    "eternalores:jade_block",
+    "eternalores:jade_ore_block",
+    "eternalores:kanthal_block",
     "eternalores:lead_block",
     "eternalores:lead_ore_block",
+    "eternalores:lignite_coal_block",
+    "eternalores:lignite_coal_ore_block",
     "eternalores:lumium_block",
+    "eternalores:magnesium_block",
+    "eternalores:manganese_block",
+    "eternalores:melodic_alloy_block",
+    "eternalores:modularium_block",
+    "eternalores:molybdenum_block",
+    "eternalores:molybdenum_ore_block",
+    "eternalores:monazite_block",
+    "eternalores:monazite_ore_block",
+    "eternalores:morphite_block",
+    "eternalores:nanite_block",
+    "eternalores:nautilus_block",
     "eternalores:necroticarite_block",
     "eternalores:necroticarite_ore_block",
+    "eternalores:neodymium_block",
+    "eternalores:neodymium_ore_block",
+    "eternalores:neptunium_block",
+    "eternalores:nether_black_quartz_ore_block",
+    "eternalores:nether_cinnabar_ore_block",
+    "eternalores:nether_cobalt_ore_block",
+    "eternalores:nether_gallium_ore_block",
+    "eternalores:nether_garnet_ore_block",
+    "eternalores:nether_jade_ore_block",
+    "eternalores:nether_molybdenum_ore_block",
+    "eternalores:nether_monazite_ore_block",
+    "eternalores:nether_nickel_ore_block",
+    "eternalores:nether_onyx_ore_block",
+    "eternalores:nether_osmium_ore_block",
+    "eternalores:nether_peridot_ore_block",
+    "eternalores:nether_ruby_ore_block",
+    "eternalores:nether_silver_ore_block",
+    "eternalores:nether_spinel_ore_block",
     "eternalores:nether_star_block",
+    "eternalores:nether_sulfur_ore_block",
+    "eternalores:nether_tanzanite_ore_block",
+    "eternalores:nether_uraninite_ore_block",
+    "eternalores:nether_uranium_ore_block",
+    "eternalores:nether_zircon_ore_block",
     "eternalores:nethersteel_block",
     "eternalores:nickel_block",
     "eternalores:nickel_ore_block",
+    "eternalores:niobium_block",
     "eternalores:niter_block",
     "eternalores:niter_ore_block",
+    "eternalores:novalloy_block",
+    "eternalores:obsidian_block",
     "eternalores:obsidian_ore_block",
     "eternalores:onyx_block",
     "eternalores:onyx_ore_block",
+    "eternalores:osgloglas_block",
     "eternalores:osmium_block",
     "eternalores:osmium_ore_block",
+    "eternalores:palladium_block",
+    "eternalores:palladium_ore_block",
+    "eternalores:pearl_block",
+    "eternalores:pearl_ore_block",
+    "eternalores:peat_coal_block",
+    "eternalores:peat_coal_ore_block",
     "eternalores:peridot_block",
     "eternalores:peridot_ore_block",
     "eternalores:pewter_block",
+    "eternalores:phantom_membrane_block",
+    "eternalores:phosphorus_block",
     "eternalores:pig_iron_block",
     "eternalores:platinum_block",
     "eternalores:platinum_ore_block",
     "eternalores:plutonium_block",
-    "eternalores:plutonium_ore_block",
+    "eternalores:primornium_block",
+    "eternalores:prismarine_block",
+    "eternalores:pyrolite_block",
+    "eternalores:pyrolite_ore_block",
+    "eternalores:quantiquarite_block",
+    "eternalores:quartz_enriched_copper_block",
+    "eternalores:quartz_enriched_iron_block",
+    "eternalores:rare_earth_block",
     "eternalores:raw_aluminum_block",
     "eternalores:raw_ardite_block",
+    "eternalores:raw_beryllium_block",
     "eternalores:raw_catalyrium_block",
     "eternalores:raw_cobalt_block",
     "eternalores:raw_gallium_block",
     "eternalores:raw_iridium_block",
     "eternalores:raw_lead_block",
+    "eternalores:raw_molybdenum_block",
+    "eternalores:raw_neodymium_block",
     "eternalores:raw_nickel_block",
     "eternalores:raw_osmium_block",
+    "eternalores:raw_palladium_block",
     "eternalores:raw_platinum_block",
-    "eternalores:raw_plutonium_block",
+    "eternalores:raw_sculkite_block",
     "eternalores:raw_silver_block",
     "eternalores:raw_tin_block",
+    "eternalores:raw_titanium_block",
     "eternalores:raw_tungsten_block",
+    "eternalores:raw_ultimatitanium_block",
     "eternalores:raw_uraninite_block",
     "eternalores:raw_uranium_block",
+    "eternalores:raw_vanadium_block",
     "eternalores:raw_zinc_block",
+    "eternalores:red_steel_block",
+    "eternalores:redstone_ingot_block",
+    "eternalores:rhodium_block",
     "eternalores:rose_gold_block",
+    "eternalores:rotten_flesh_block",
+    "eternalores:rubidium_block",
     "eternalores:ruby_block",
     "eternalores:ruby_ore_block",
+    "eternalores:ruthenium_block",
+    "eternalores:salt_block",
+    "eternalores:salt_ore_block",
+    "eternalores:samarium_block",
+    "eternalores:sanguis_vivus_block",
     "eternalores:sapphire_block",
     "eternalores:sapphire_ore_block",
+    "eternalores:sculkite_block",
+    "eternalores:sculkite_ore_block",
+    "eternalores:selenium_block",
     "eternalores:shadowsteel_block",
     "eternalores:signalum_block",
     "eternalores:silicon_block",
+    "eternalores:silicon_ingot_block",
     "eternalores:silver_block",
     "eternalores:silver_ore_block",
+    "eternalores:source_block",
+    "eternalores:spectral_sky_bluerite_block",
+    "eternalores:spinel_block",
+    "eternalores:spinel_ore_block",
+    "eternalores:stainless_steel_block",
     "eternalores:steel_block",
+    "eternalores:stellar_alloy_block",
+    "eternalores:stellarium_block",
+    "eternalores:strange_matter_block",
+    "eternalores:sugar_block",
     "eternalores:sulfur_block",
     "eternalores:sulfur_ore_block",
+    "eternalores:tachyarite_block",
+    "eternalores:tantalum_block",
+    "eternalores:tanzanite_block",
+    "eternalores:tanzanite_ore_block",
+    "eternalores:temictetl_block",
     "eternalores:tin_block",
     "eternalores:tin_ore_block",
     "eternalores:titanium_block",
+    "eternalores:titanium_ore_block",
     "eternalores:tungsten_block",
     "eternalores:tungsten_ore_block",
+    "eternalores:turtle_scute_block",
     "eternalores:ultimatitanium_block",
+    "eternalores:ultimatitanium_ore_block",
+    "eternalores:universium_block",
     "eternalores:uraninite_block",
     "eternalores:uraninite_ore_block",
     "eternalores:uranium_block",
     "eternalores:uranium_ore_block",
+    "eternalores:vanadium_block",
+    "eternalores:vanadium_ore_block",
+    "eternalores:vivid_alloy_block",
+    "eternalores:voiderite_block",
     "eternalores:wrought_iron_block",
+    "eternalores:yttrium_block",
     "eternalores:zinc_block",
-    "eternalores:zinc_ore_block"
+    "eternalores:zinc_ore_block",
+    "eternalores:zircon_block",
+    "eternalores:zircon_ore_block",
+    {
+      "id": "eternalores:apatite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:apatite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:apatite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:ardite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:ardite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:ardite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:beryllium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:beryllium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:beryllium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_apatite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_cinnabar",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_fluorite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_garnet",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_jade",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_necroticarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_niter",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_obsidian",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_onyx",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_pearl",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_peridot",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_pyrolite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_spinel",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_tanzanite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_zircon",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:cinnabar_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:cinnabar_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:cinnabar_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:cobalt_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:cobalt_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:cobalt_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluorite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluorite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluorite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:gallium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:gallium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:gallium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:garnet_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:garnet_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:garnet_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:iridium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:iridium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:iridium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:jade_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:jade_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:jade_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_apatite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_ardite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_beryllium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_catalyrium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_cinnabar_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_cobalt_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_fluorite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_gallium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_garnet_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_iridium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_jade_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_molybdenum_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_necroticarite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_neodymium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_niter_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_obsidian_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_palladium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_pearl_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_peridot_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_pyrolite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_sculkite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_spinel_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_tanzanite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_titanium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_ultimatitanium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_zircon_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_apatite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_ardite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_beryllium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_catalyrium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_cinnabar_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_cobalt_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_fluorite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_gallium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_garnet_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_iridium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_jade_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_molybdenum_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_necroticarite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_neodymium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_niter_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_obsidian_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_palladium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_pearl_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_peridot_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_pyrolite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_sculkite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_spinel_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_tanzanite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_titanium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_ultimatitanium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_zircon_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:molybdenum_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:molybdenum_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:molybdenum_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:necroticarite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:necroticarite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:necroticarite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:neodymium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:neodymium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:neodymium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:niter_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:niter_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:niter_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:obsidian_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:obsidian_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:obsidian_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:onyx_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:onyx_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:onyx_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:palladium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:palladium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:palladium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:pearl_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:pearl_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:pearl_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:peridot_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:peridot_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:peridot_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:pyrolite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:pyrolite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:pyrolite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_apatite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_ardite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_beryllium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_catalyrium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_cinnabar_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_cobalt_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_fluorite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_gallium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_garnet_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_iridium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_jade_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_molybdenum_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_necroticarite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_neodymium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_niter_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_obsidian_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_palladium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_pearl_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_peridot_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_pyrolite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_sculkite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_spinel_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_tanzanite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_titanium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_ultimatitanium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_zircon_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:spinel_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:spinel_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:spinel_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:tanzanite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:tanzanite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:tanzanite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:titanium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:titanium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:titanium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:ultimatitanium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:ultimatitanium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:ultimatitanium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:zircon_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:zircon_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:zircon_geo_block",
+      "required": false
+    }
   ]
 }

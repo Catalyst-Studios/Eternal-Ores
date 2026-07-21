@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "tag": "c:dusts/redstone"
+    },
+    {
+      "tag": "c:dusts/ender_pearl"
+    },
+    {
+      "tag": "c:dusts/ender_pearl"
+    },
+    {
+      "tag": "c:dusts/ender_pearl"
+    },
+    {
+      "tag": "c:dusts/aluminum"
+    },
+    {
+      "tag": "c:dusts/gold"
+    },
+    {
+      "tag": "c:dusts/glowstone"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:endergetic_blend"
+  }
+}

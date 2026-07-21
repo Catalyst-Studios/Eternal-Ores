@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/melodic_alloy"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:melodic_alloy_nugget"
+  }
+}

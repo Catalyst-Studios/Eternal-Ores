@@ -1,0 +1,35 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:cinnabar_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:cinnabar_ore_block"
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternalores:deepslate_cinnabar_ore_block"
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternalores:nether_cinnabar_ore_block"
+        },
+        "target": {
+          "block": "minecraft:netherrack",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

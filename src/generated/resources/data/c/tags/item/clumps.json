@@ -2,28 +2,46 @@
   "values": [
     "eternalores:clump_aluminum",
     "eternalores:clump_ardite",
+    "eternalores:clump_beryllium",
     "eternalores:clump_catalyrium",
     "eternalores:clump_cobalt",
+    "eternalores:clump_copper",
     "eternalores:clump_gallium",
+    "eternalores:clump_gold",
     "eternalores:clump_iridium",
+    "eternalores:clump_iron",
+    "eternalores:clump_lead",
+    "eternalores:clump_molybdenum",
+    "eternalores:clump_neodymium",
     "eternalores:clump_nickel",
+    "eternalores:clump_osmium",
+    "eternalores:clump_palladium",
     "eternalores:clump_platinum",
+    "eternalores:clump_sculkite",
     "eternalores:clump_silver",
+    "eternalores:clump_tin",
+    "eternalores:clump_titanium",
+    "eternalores:clump_tungsten",
+    "eternalores:clump_ultimatitanium",
     "eternalores:clump_uraninite",
+    "eternalores:clump_uranium",
+    "eternalores:clump_vanadium",
     "eternalores:clump_zinc",
-    "eternalores:o_aluminum_clump",
-    "eternalores:o_ardite_clump",
-    "eternalores:o_catalyrium_clump",
-    "eternalores:o_cobalt_clump",
-    "eternalores:o_gallium_clump",
-    "eternalores:o_iridium_clump",
-    "eternalores:o_lead_clump",
-    "eternalores:o_osmium_clump",
-    "eternalores:o_silver_clump",
-    "eternalores:o_tin_clump",
-    "eternalores:o_tungsten_clump",
-    "eternalores:o_uraninite_clump",
-    "eternalores:o_uranium_clump",
-    "eternalores:o_zinc_clump"
+    {
+      "id": "create:crushed_raw_lead",
+      "required": false
+    },
+    {
+      "id": "create:crushed_raw_silver",
+      "required": false
+    },
+    {
+      "id": "create:crushed_raw_tin",
+      "required": false
+    },
+    {
+      "id": "create:crushed_raw_aluminum",
+      "required": false
+    }
   ]
 }

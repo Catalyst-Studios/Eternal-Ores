@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:gems/niter"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:niter_shard"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:uranium_nether",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:nether_uranium_ore_block"
+        },
+        "target": {
+          "block": "minecraft:netherrack",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

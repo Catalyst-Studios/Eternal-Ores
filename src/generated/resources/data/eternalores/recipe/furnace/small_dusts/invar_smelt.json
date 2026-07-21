@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.3,
+  "ingredient": {
+    "tag": "c:small_dusts/invar"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:invar_nugget"
+  }
+}

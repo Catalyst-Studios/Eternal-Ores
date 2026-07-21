@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/apatite"
+  },
+  "inputCount": 2,
+  "output": {
+    "item": "eternalores:gear_apatite"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_gear"
+  }
+}

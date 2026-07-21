@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "tag": "c:dusts/niter"
+    },
+    {
+      "tag": "c:dusts/charcoal"
+    },
+    {
+      "tag": "c:seeds"
+    },
+    {
+      "tag": "c:seeds"
+    },
+    {
+      "tag": "c:seeds"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:biomass"
+  }
+}

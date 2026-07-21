@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/steel"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:steel_dust_block"
+    }
+  ],
+  "time": 210
+}

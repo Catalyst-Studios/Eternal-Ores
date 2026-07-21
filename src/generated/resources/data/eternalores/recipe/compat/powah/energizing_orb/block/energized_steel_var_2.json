@@ -1,0 +1,34 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 270000,
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/gold"
+    },
+    {
+      "tag": "c:storage_blocks/iron"
+    },
+    {
+      "tag": "c:storage_blocks/gold"
+    },
+    {
+      "tag": "c:storage_blocks/iron"
+    },
+    {
+      "tag": "c:storage_blocks/gold"
+    },
+    {
+      "tag": "c:storage_blocks/iron"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "id": "powah:energized_steel_block"
+  }
+}

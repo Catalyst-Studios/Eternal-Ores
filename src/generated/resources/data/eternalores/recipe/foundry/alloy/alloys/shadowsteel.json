@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:dusts/steel"
+    },
+    {
+      "tag": "c:blends/shadow"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:shadowsteel_ingot"
+    }
+  ],
+  "time": 80
+}

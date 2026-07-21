@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:fuels/bio"
+    },
+    {
+      "tag": "c:dusts/cast_steel"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:biosteel_ingot"
+    }
+  ],
+  "time": 80
+}

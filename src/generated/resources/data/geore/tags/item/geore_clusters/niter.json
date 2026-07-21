@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "eternalores:niter_cluster",
+      "required": false
+    }
+  ]
+}

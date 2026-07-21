@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:clumps/catalyrium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:catalyrium_gem"
+    },
+    {
+      "count": 1,
+      "id": "eternalores:catalyrium_small_dust"
+    }
+  ],
+  "time": 100
+}

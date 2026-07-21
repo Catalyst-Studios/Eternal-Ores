@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/certus_quartz"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:gem_certus_quartz"
+  }
+}

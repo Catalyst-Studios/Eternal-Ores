@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ore_gems/lead"
+    },
+    {
+      "tag": "c:ore_gems/lead"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:lead_ingot"
+    }
+  ],
+  "time": 80
+}

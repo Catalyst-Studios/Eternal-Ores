@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ore_gems/neodymium"
+    },
+    {
+      "tag": "c:ore_gems/neodymium"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:neodymium_dust"
+    }
+  ],
+  "time": 80
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:fluix_crystal_block",
+    {
+      "id": "ae2:fluix_block",
+      "required": false
+    }
+  ]
+}

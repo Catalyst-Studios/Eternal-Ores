@@ -1,0 +1,13 @@
+{
+  "values": [
+    "eternalores:platinum_small_clump",
+    {
+      "id": "oritech:small_gold_clump",
+      "required": false
+    },
+    {
+      "id": "oritech:small_platinum_clump",
+      "required": false
+    }
+  ]
+}

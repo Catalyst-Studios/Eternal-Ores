@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:ore_gems/zinc"
+    },
+    {
+      "tag": "c:ore_gems/zinc"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:zinc_ingot"
+    }
+  ]
+}

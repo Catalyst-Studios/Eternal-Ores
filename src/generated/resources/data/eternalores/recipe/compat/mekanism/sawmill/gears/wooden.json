@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:sawing",
+  "input": {
+    "count": 1,
+    "item": "eternalores:plate_wooden"
+  },
+  "main_output": {
+    "count": 1,
+    "id": "eternalores:gear_wooden"
+  },
+  "secondary_chance": 1.0,
+  "secondary_output": {
+    "count": 1,
+    "id": "eternalores:sawdust"
+  }
+}

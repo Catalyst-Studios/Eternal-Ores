@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "item": "eternalores:coke_coal"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:steel_ingot"
+    }
+  ],
+  "time": 80
+}

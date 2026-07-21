@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "eternalores:block/salt_ore_block"
+    }
+  }
+}

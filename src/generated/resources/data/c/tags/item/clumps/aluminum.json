@@ -1,6 +1,9 @@
 {
   "values": [
     "eternalores:clump_aluminum",
-    "eternalores:o_aluminum_clump"
+    {
+      "id": "create:crushed_raw_aluminum",
+      "required": false
+    }
   ]
 }

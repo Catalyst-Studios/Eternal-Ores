@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:alloy_furnace",
+  "inputs": [
+    {
+      "input": {
+        "tag": "c:ore_gems/molybdenum"
+      }
+    },
+    {
+      "input": {
+        "tag": "c:ore_gems/molybdenum"
+      }
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "eternalores:molybdenum_ingot"
+  },
+  "ticks": 800
+}

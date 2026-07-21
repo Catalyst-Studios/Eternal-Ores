@@ -1,0 +1,112 @@
+{
+  "values": [
+    {
+      "id": "eternalores:apatite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:ardite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:beryllium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:cinnabar_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:cobalt_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluorite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:gallium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:garnet_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:iridium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:jade_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:molybdenum_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:necroticarite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:neodymium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:niter_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:obsidian_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:onyx_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:palladium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:pearl_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:peridot_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:pyrolite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:spinel_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:tanzanite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:titanium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:ultimatitanium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:zircon_cluster",
+      "required": false
+    }
+  ]
+}

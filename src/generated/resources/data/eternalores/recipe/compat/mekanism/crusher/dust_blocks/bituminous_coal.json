@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:storage_blocks/bituminous_coal"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:bituminous_coal_dust_block"
+  }
+}

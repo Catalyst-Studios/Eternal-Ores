@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:nuggets/cesium"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:cesium_small_dust"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:enriched_tin",
+    {
+      "id": "mekanism:enriched_tin",
+      "required": false
+    }
+  ]
+}

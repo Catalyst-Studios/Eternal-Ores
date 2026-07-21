@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/iron"
+   },
+    "B": {
+      "item": "minecraft:redstone_torch"
+    },
+    "C": {
+      "tag": "c:storage_blocks/redstone"
+    },
+    "D": {
+      "tag": "c:rods/copper"
+    },
+    "E": {
+      "tag": "c:nuggets/iron"
+    }
+  },
+  "pattern": [
+    "AAB",
+    "ACD",
+    "AEA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:prospector"
+  }
+}

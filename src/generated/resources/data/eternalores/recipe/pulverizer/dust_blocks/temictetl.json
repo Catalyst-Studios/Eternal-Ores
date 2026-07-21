@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/temictetl"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:temictetl_dust_block"
+    }
+  ],
+  "time": 100
+}

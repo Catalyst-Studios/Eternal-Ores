@@ -1,6 +1,7 @@
 {
   "values": [
     "eternalores:deepslate_osmium_ore_block",
+    "eternalores:nether_osmium_ore_block",
     "eternalores:osmium_ore_block"
   ]
 }

@@ -1,0 +1,35 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:iridium_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:iridium_ore_block"
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternalores:deepslate_iridium_ore_block"
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternalores:end_iridium_ore_block"
+        },
+        "target": {
+          "block": "minecraft:end_stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

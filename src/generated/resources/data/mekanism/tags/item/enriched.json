@@ -1,0 +1,772 @@
+{
+  "values": [
+    {
+      "id": "eternalores:enriched_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_amber",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_amber",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_amethyst",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_amethyst",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_apatite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_apatite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_arcanum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_arcanum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_aurorium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_aurorium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_bismuth",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_bismuth",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_black_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_black_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_blaze",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_blaze",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_certus_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_certus_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_chromium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_chromium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_cinnabar",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_cinnabar",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_cosmic_matter",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_cosmic_matter",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_diamond",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_diamond",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_electrum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_electrum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_emerald",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_emerald",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_ender",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_ender",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_endergetic",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_endergetic",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_enderium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_enderium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_energetic",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_energetic",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_eternal_dark",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_eternal_dark",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_eternal_light",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_eternal_light",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_eternity",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_eternity",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_etherium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_etherium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_fluix",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_fluix",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_garnet",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_garnet",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_glowstone",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_glowstone",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_graphite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_graphite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_gravitronium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_gravitronium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_invar",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_invar",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_jade",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_jade",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_lapis",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_lapis",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_lumium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_lumium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_magnesium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_magnesium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_manganese",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_manganese",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_monazite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_monazite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_morphite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_morphite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_necroticarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_necroticarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_nether",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_nether",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_nether_star",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_nether_star",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_netherite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_netherite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_niter",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_niter",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_obsidian",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_obsidian",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_onyx",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_onyx",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_pearl",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_pearl",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_peridot",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_peridot",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_plutonium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_plutonium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_primornium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_primornium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_prismarine",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_prismarine",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_pyrolite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_pyrolite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_quantiquarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_quantiquarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_ruby",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_ruby",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_sanguis_vivus",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_sanguis_vivus",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_sapphire",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_sapphire",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_shadow",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_shadow",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_signalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_signalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_silicon",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_silicon",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_source",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_source",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_spectral_sky_bluerite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_spectral_sky_bluerite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_spinel",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_spinel",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_stellarium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_stellarium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_tachyarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_tachyarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_tanzanite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_tanzanite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_temictetl",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_temictetl",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_universium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_universium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_voiderite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_voiderite",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_wrought_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_wrought_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_zinc",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_zinc",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_zircon",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_zircon",
+      "required": false
+    },
+    {
+      "id": "eternalores:highly_enriched_carbon",
+      "required": false
+    },
+    {
+      "id": "eternalores:highly_enriched_carbon",
+      "required": false
+    },
+    {
+      "id": "eternalores:low_enriched_carbon",
+      "required": false
+    },
+    {
+      "id": "eternalores:low_enriched_carbon",
+      "required": false
+    }
+  ]
+}

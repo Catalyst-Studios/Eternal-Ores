@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "eternalores:mold_foil",
+      "required": false
+    },
+    {
+      "id": "eternalores:mold_gear",
+      "required": false
+    },
+    {
+      "id": "eternalores:mold_plate",
+      "required": false
+    },
+    {
+      "id": "eternalores:mold_rod",
+      "required": false
+    }
+  ]
+}

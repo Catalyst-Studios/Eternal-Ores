@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ores/platinum"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 2,
+        "id": "eternalores:raw_platinum"
+      }
+    },
+    {
+      "result": {
+        "count": 1,
+        "id": "eternalores:raw_iridium"
+      }
+    }
+  ]
+}

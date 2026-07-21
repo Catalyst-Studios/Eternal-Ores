@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "eternalores:item/gems/gem_sapphire_shard"
-  }
-}

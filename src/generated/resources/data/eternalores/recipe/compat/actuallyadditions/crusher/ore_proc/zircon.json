@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ores/zircon"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 3,
+        "id": "eternalores:gem_zircon"
+      }
+    },
+    {
+      "result": {
+        "count": 3,
+        "id": "eternalores:hafnium_small_dust"
+      }
+    }
+  ]
+}

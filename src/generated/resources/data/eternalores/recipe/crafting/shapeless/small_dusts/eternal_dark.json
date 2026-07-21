@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/eternal_dark"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:eternal_dark_small_dust"
+  }
+}

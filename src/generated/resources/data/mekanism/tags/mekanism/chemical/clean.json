@@ -1,0 +1,108 @@
+{
+  "values": [
+    {
+      "id": "eternalores:clean_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_sculkite",
+      "required": false
+    },
+    {
+      "id": "mekanism:clean_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_tungsten",
+      "required": false
+    },
+    {
+      "id": "mekanism:clean_tin",
+      "required": false
+    },
+    {
+      "id": "mekanism:clean_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_zinc",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_catalyrium",
+      "required": false
+    },
+    {
+      "id": "mekanism:clean_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_gallium",
+      "required": false
+    },
+    {
+      "id": "mekanism:clean_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_neodymium",
+      "required": false
+    },
+    {
+      "id": "mekanism:clean_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:clean_silver",
+      "required": false
+    },
+    {
+      "id": "mekanism:clean_uranium",
+      "required": false
+    }
+  ]
+}

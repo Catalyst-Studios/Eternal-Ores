@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:alloy_furnace",
+  "inputs": [
+    {
+      "count": 3,
+      "input": {
+        "tag": "c:dusts/silver"
+      }
+    },
+    {
+      "input": {
+        "tag": "c:dusts/copper"
+      }
+    }
+  ],
+  "output": {
+    "count": 3,
+    "item": "eternalores:britannia_silver_ingot"
+  },
+  "ticks": 500
+}

@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:alloy",
+  "input0": {
+    "basePredicate": {
+      "tag": "c:dusts/bituminous_coal"
+    },
+    "count": 2
+  },
+  "input1": {
+    "tag": "c:dusts/steel"
+  },
+  "result": {
+    "count": 3,
+    "id": "eternalores:cast_steel_ingot"
+  },
+  "time": 8
+}

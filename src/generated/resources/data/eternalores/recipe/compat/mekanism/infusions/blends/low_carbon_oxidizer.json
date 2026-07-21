@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "eternalores:chemical_enabled",
+      "chemical": "eternalores:low_enriched_carbon"
+    }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "tag": "c:blends/low_enriched_carbon"
+  },
+  "output": {
+    "amount": 20,
+    "id": "eternalores:low_enriched_carbon"
+  }
+}

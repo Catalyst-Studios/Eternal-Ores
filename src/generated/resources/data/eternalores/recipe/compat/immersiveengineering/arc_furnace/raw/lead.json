@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [],
+  "energy": 25600,
+  "input": {
+    "tag": "c:raw_materials/lead"
+  },
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:lead_ingot"
+    }
+  ],
+  "secondaries": [
+    {
+      "chance": 0.22,
+      "output": {
+        "id": "eternalores:lead_ingot"
+      }
+    }
+  ],
+  "time": 100
+}

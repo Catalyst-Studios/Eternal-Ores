@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:plates/eternal_dark"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:eternal_dark_foil"
+    }
+  ]
+}

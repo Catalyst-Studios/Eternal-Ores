@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "eternalores:chemical_enabled",
+      "chemical": "eternalores:cosmic_matter"
+    }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "tag": "c:enriched/cosmic_matter"
+  },
+  "output": {
+    "amount": 80,
+    "id": "eternalores:cosmic_matter"
+  }
+}

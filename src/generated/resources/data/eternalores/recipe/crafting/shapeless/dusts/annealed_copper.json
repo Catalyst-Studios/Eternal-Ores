@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dust_blocks/annealed_copper"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:annealed_copper_dust"
+  }
+}

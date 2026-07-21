@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.radzratz.eternalores.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "immersiveengineering.JEIHelperMixin",
+    "immersiveengineering.MetalPressCategoryMixin",
+    "immersiveengineering.PressMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "item": "minecraft:granite"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "minecraft:red_sand"
+      }
+    },
+    {
+      "result": {
+        "count": 2,
+        "id": "eternalores:granite_small_dust"
+      }
+    }
+  ]
+}

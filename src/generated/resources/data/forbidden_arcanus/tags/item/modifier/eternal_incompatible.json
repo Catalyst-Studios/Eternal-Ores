@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "eternalores:cobalt_hammer",
+      "required": false
+    },
+    {
+      "id": "eternalores:cobalt_wire_cutter",
+      "required": false
+    },
+    "eternalores:copper_gem_cutter",
+    {
+      "id": "eternalores:copper_hammer",
+      "required": false
+    },
+    {
+      "id": "eternalores:copper_wire_cutter",
+      "required": false
+    },
+    {
+      "id": "eternalores:diamond_hammer",
+      "required": false
+    },
+    {
+      "id": "eternalores:diamond_wire_cutter",
+      "required": false
+    },
+    "eternalores:gold_gem_cutter",
+    {
+      "id": "eternalores:gold_wire_cutter",
+      "required": false
+    },
+    "eternalores:iron_gem_cutter",
+    {
+      "id": "eternalores:iron_hammer",
+      "required": false
+    },
+    {
+      "id": "eternalores:iron_wire_cutter",
+      "required": false
+    },
+    "eternalores:netherite_gem_cutter",
+    {
+      "id": "eternalores:stone_hammer",
+      "required": false
+    }
+  ]
+}

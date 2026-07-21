@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "c:ore_gems/platinum"
+    }
+  ],
+  "energy": 51200,
+  "input": {
+    "tag": "c:ore_gems/platinum"
+  },
+  "results": [
+    {
+      "count": 4,
+      "id": "eternalores:platinum_ingot"
+    }
+  ],
+  "time": 100
+}

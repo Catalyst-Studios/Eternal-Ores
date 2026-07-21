@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 50000,
+  "ingredients": [
+    {
+      "tag": "c:ores/uraninite_regular"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:uraninite_ingot"
+  }
+}

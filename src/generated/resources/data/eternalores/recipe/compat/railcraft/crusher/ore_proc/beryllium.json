@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "tag": "c:ores/beryllium"
+  },
+  "outputs": [
+    {
+      "count": 2,
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:raw_beryllium"
+      }
+    },
+    {
+      "count": 2,
+      "probability": 0.75,
+      "result": {
+        "item": "eternalores:emerald_small_dust"
+      }
+    },
+    {
+      "count": 2,
+      "probability": 0.25,
+      "result": {
+        "item": "eternalores:emerald_dust"
+      }
+    }
+  ]
+}

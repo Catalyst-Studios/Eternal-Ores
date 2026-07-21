@@ -1,0 +1,41 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "enderio:sag_milling",
+  "energy": 2400,
+  "input": {
+    "item": "minecraft:nether_gold_ore"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 2,
+        "id": "minecraft:raw_gold"
+      }
+    },
+    {
+      "chance": 0.1,
+      "item": {
+        "count": 1,
+        "id": "minecraft:raw_gold"
+      }
+    },
+    {
+      "item": {
+        "count": 1,
+        "id": "eternalores:raw_silver"
+      }
+    },
+    {
+      "chance": 0.15,
+      "item": {
+        "count": 1,
+        "id": "minecraft:netherrack"
+      }
+    }
+  ]
+}

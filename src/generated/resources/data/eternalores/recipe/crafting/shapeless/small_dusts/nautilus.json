@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/nautilus"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:nautilus_small_dust"
+  }
+}

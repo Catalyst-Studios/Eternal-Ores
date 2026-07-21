@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:ores/monazite"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "eternalores:gem_monazite"
+    },
+    {
+      "count": 2,
+      "id": "eternalores:phosphorus_small_dust"
+    }
+  ],
+  "time": 210
+}

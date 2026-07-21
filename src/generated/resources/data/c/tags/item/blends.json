@@ -1,0 +1,19 @@
+{
+  "values": [
+    "eternalores:carbon_blend",
+    "eternalores:endergetic_blend",
+    "eternalores:energetic_blend",
+    "eternalores:highly_enriched_carbon_blend",
+    "eternalores:low_enriched_carbon_blend",
+    "eternalores:nether_blend",
+    "eternalores:shadow_blend",
+    {
+      "id": "extendedae:quartz_blend",
+      "required": false
+    },
+    {
+      "id": "oritech:raw_silicon",
+      "required": false
+    }
+  ]
+}

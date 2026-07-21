@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:clumps/silver"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:silver_small_clump"
+  }
+}

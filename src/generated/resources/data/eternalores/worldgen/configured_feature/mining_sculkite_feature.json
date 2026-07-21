@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:sculkite_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:sculkite_ore_block"
+        },
+        "target": {
+          "block": "minecraft:deepslate",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

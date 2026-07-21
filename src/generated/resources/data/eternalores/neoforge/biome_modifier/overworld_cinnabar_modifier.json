@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_overworld",
+  "features": "eternalores:overworld_cinnabar_placed",
+  "ore": "eternalores:cinnabar_overworld",
+  "step": "underground_ores"
+}

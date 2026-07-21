@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "eternalores:gem_sapphire"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:gem_necroticarite"
+    },
+    {
+      "chance": 0.45,
+      "id": "eternalores:soul_sand_dust"
+    }
+  ]
+}

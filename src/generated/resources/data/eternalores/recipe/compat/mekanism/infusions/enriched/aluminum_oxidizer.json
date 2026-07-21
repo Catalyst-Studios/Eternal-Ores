@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "eternalores:chemical_enabled",
+      "chemical": "eternalores:aluminum"
+    }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "tag": "c:enriched/aluminum"
+  },
+  "output": {
+    "amount": 80,
+    "id": "eternalores:aluminum"
+  }
+}

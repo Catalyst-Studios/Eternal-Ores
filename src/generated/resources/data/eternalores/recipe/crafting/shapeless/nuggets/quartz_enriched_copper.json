@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/quartz_enriched_copper"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:quartz_enriched_copper_nugget"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:obsidians"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "eternalores:obsidian_dust"
+    }
+  ],
+  "time": 210
+}

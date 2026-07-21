@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:coal_lignite"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:lignite_coal_dust"
+    }
+  ],
+  "time": 100
+}

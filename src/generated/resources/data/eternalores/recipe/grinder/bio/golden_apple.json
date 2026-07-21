@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "item": "minecraft:golden_apple"
+    }
+  ],
+  "results": [
+    {
+      "count": 4,
+      "id": "eternalores:biomass"
+    },
+    {
+      "count": 3,
+      "id": "eternalores:gold_small_dust"
+    }
+  ],
+  "time": 210
+}

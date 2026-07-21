@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/energetic_silver"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:energetic_silver_nugget"
+  }
+}

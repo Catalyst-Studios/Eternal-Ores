@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:ingots/enderium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:enderium_dust"
+    }
+  ],
+  "time": 100
+}

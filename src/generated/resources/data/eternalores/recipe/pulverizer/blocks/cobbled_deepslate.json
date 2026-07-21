@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "item": "minecraft:deepslate"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "minecraft:cobbled_deepslate"
+    },
+    {
+      "count": 2,
+      "id": "eternalores:deepslate_small_dust"
+    }
+  ],
+  "time": 100
+}

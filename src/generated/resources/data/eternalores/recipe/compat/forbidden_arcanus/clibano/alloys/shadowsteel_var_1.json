@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "forbidden_arcanus"
+    }
+  ],
+  "type": "forbidden_arcanus:clibano_combustion",
+  "category": "misc",
+  "cooking_time": 50,
+  "enhancer": "forbidden_arcanus:artisan_relic",
+  "experience": 1.5,
+  "fire_type": "fire",
+  "ingredients": {
+    "first": {
+      "tag": "c:ingots/steel"
+    },
+    "second": {
+      "tag": "c:blends/shadow"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "eternalores:shadowsteel_ingot"
+  }
+}

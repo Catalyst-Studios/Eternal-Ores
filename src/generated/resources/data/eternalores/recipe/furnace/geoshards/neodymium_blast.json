@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "geore"
+    }
+  ],
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1.5,
+  "ingredient": {
+    "tag": "geore:geore_shards/neodymium"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:neodymium_dust"
+  }
+}

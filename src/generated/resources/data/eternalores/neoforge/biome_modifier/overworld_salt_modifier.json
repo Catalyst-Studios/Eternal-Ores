@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_ocean",
+  "features": "eternalores:overworld_salt_placed",
+  "ore": "eternalores:salt_overworld",
+  "step": "underground_ores"
+}

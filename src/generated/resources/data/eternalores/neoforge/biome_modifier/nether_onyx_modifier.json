@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_nether",
+  "features": "eternalores:nether_onyx_placed",
+  "ore": "eternalores:onyx_nether",
+  "step": "underground_ores"
+}

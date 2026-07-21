@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/nether_wart"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:nether_wart_small_dust"
+  }
+}

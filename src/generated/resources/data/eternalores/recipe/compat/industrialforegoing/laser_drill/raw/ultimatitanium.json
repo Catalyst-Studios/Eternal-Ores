@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:laser_drill_ore",
+  "catalyst": {
+    "item": "industrialforegoing:purple_laser_lens"
+  },
+  "output": {
+    "count": 1,
+    "tag": "c:raw_materials/ultimatitanium"
+  },
+  "rarity": [
+    {
+      "biome_filter": {
+        "blacklist": [],
+        "whitelist": []
+      },
+      "depth_max": 64,
+      "depth_min": -14,
+      "dimension_filter": {
+        "blacklist": [
+          "minecraft:overworld",
+          "minecraft:the_nether"
+        ],
+        "whitelist": [
+          "minecraft:the_end"
+        ]
+      },
+      "weight": 8
+    }
+  ]
+}

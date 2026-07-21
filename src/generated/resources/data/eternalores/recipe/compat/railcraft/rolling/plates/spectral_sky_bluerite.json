@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:rolling",
+  "key": {
+    "#": {
+      "tag": "c:gems/spectral_sky_bluerite"
+    }
+  },
+  "pattern": [
+    "## ",
+    "## ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:plate_spectral_sky_bluerite"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "integrateddynamics"
+    }
+  ],
+  "type": "integrateddynamics:mechanical_squeezer",
+  "duration": 4,
+  "input_item": {
+    "tag": "c:ores/onyx"
+  },
+  "output_items": [
+    {
+      "item": {
+        "count": 3,
+        "id": "eternalores:gem_onyx"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 2,
+        "id": "eternalores:gem_onyx"
+      }
+    },
+    {
+      "chance": 0.35,
+      "item": {
+        "count": 2,
+        "id": "eternalores:gem_onyx"
+      }
+    }
+  ]
+}

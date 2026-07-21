@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:tanzanite_nether",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:nether_tanzanite_ore_block"
+        },
+        "target": {
+          "block": "minecraft:netherrack",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

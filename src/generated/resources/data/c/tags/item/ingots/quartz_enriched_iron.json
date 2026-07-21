@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:quartz_enriched_iron_ingot",
+    {
+      "id": "refinedstorage:quartz_enriched_iron",
+      "required": false
+    }
+  ]
+}

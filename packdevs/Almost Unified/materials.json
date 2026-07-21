@@ -1,0 +1,88 @@
+{
+  "mod_priorities": [
+    "minecraft",
+    "eternalores",
+    "ae2",
+    "ars_nouveau",
+    "actuallyadditions",
+    "refinedstorage",
+    "create",
+    "oritech",
+    "immersiveengineering",
+    "enderio",
+    "mekanism",
+    "evolvedmekanism",
+    "mekmm",
+    "railcraft",
+    "xycraft_world",
+    "occultism",
+    "energizedpower",
+    "powah",
+    "modern_industrialization"
+  ],
+  "priority_overrides": {
+    "c:gems/fluix": "ae2",
+    "c:dusts/fluix": "ae2",
+    "c:storage_blocks/fluix": "ae2",
+    "c:gems/certus_quartz": "ae2",
+    "c:dusts/certus_quartz": "ae2",
+    "c:storage_blocks/certus_quartz": "ae2",
+    "c:gems/source": "ars_nouveau",
+    "c:storage_blocks/source": "ars_nouveau",
+    "c:gems/black_quartz": "actuallyadditions",
+    "c:storage_blocks/black_quartz": "actuallyadditions"
+  },
+  "stone_variants": [
+    "stone",
+    "andesite",
+    "deepslate",
+    "diorite",
+    "granite",
+    "netherrack",
+    "end_stone"
+  ],
+  "tags": [
+    "c:dusts/{material}",
+    "c:gears/{material}",
+    "c:gems/{material}",
+    "c:ingots/{material}",
+    "c:nuggets/{material}",
+    "c:ores/{material}",
+    "c:plates/{material}",
+    "c:raw_materials/{material}",
+    "c:rods/{material}",
+    "c:storage_blocks/raw_{material}",
+    "c:storage_blocks/{material}",
+    "c:wires/{material}",
+    "c:clumps/{material}",
+    "c:small_clumps/{material}",
+    "c:small_dusts/{material}",
+    "c:tiny_dusts/{material}",
+    "c:ore_gems/{material}",
+    "c:fuels/{material}",
+    "c:fuels/block/{material}",
+    "c:shards/{material}",
+    "c:crystals/{material}",
+    "c:dirty_dusts/{material}",
+    "c:enriched/{material}",
+    "c:pellets/{material}",
+    "c:blends/{material}",
+    "c:silicon",
+    "c:coal_coke"
+  ],
+  "ignored_tags": [],
+  "ignored_items": [
+    "ae2:charged_certus_quartz_crystal",
+    "eternalores:prismarine_dust"
+  ],
+  "ignored_recipe_types": [
+    "cucumber:shaped_tag"
+  ],
+  "ignored_recipe_ids": [
+    "eternalores:crushing/ore_proc/.*",
+    "eternalores:compat/enderio/sag_milling/ore_proc/.*"
+  ],
+  "recipe_viewer_hiding": true,
+  "loot_unification": true,
+  "ignored_loot_tables": []
+}

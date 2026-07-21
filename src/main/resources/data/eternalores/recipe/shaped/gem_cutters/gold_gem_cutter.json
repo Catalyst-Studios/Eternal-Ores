@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:rods/gold"
+    },
+    "B": {
+      "tag": "c:plates/gold"
+    },
+    "C": {
+      "tag": "c:nuggets/gold"
+    }
+  },
+  "pattern": [
+    "  B",
+    " A ",
+    "C  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:gold_gem_cutter"
+  }
+}

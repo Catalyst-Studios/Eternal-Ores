@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#eternalores:is_mining_dim",
+  "features": "eternalores:mining_titanium_placed",
+  "ore": "eternalores:titanium_mining",
+  "step": "underground_ores"
+}

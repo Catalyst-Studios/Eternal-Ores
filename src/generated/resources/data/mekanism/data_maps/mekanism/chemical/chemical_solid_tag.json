@@ -1,0 +1,188 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "values": {
+    "eternalores:clean_aluminum": {
+      "representation": "c:ores/aluminum"
+    },
+    "eternalores:clean_ardite": {
+      "representation": "c:ores/ardite"
+    },
+    "eternalores:clean_beryllium": {
+      "representation": "c:ores/beryllium"
+    },
+    "eternalores:clean_catalyrium": {
+      "representation": "c:ores/catalyrium"
+    },
+    "eternalores:clean_cobalt": {
+      "representation": "c:ores/cobalt"
+    },
+    "eternalores:clean_gallium": {
+      "representation": "c:ores/gallium"
+    },
+    "eternalores:clean_iridium": {
+      "representation": "c:ores/iridium"
+    },
+    "eternalores:clean_molybdenum": {
+      "representation": "c:ores/molybdenum"
+    },
+    "eternalores:clean_neodymium": {
+      "representation": "c:ores/neodymium"
+    },
+    "eternalores:clean_nickel": {
+      "representation": "c:ores/nickel"
+    },
+    "eternalores:clean_platinum": {
+      "representation": "c:ores/platinum"
+    },
+    "eternalores:clean_sculkite": {
+      "representation": "c:ores/sculkite"
+    },
+    "eternalores:clean_silver": {
+      "representation": "c:ores/silver"
+    },
+    "eternalores:clean_titanium": {
+      "representation": "c:ores/titanium"
+    },
+    "eternalores:clean_tungsten": {
+      "representation": "c:ores/tungsten"
+    },
+    "eternalores:clean_ultimatitanium": {
+      "representation": "c:ores/ultimatitanium"
+    },
+    "eternalores:clean_uraninite": {
+      "representation": "c:ores/uraninite"
+    },
+    "eternalores:clean_vanadium": {
+      "representation": "c:ores/vanadium"
+    },
+    "eternalores:clean_zinc": {
+      "representation": "c:ores/zinc"
+    },
+    "mekanism:clean_copper": {
+      "representation": "c:ores/copper"
+    },
+    "mekanism:clean_gold": {
+      "representation": "c:ores/gold"
+    },
+    "mekanism:clean_iron": {
+      "representation": "c:ores/iron"
+    },
+    "mekanism:clean_lead": {
+      "representation": "c:ores/lead"
+    },
+    "mekanism:clean_osmium": {
+      "representation": "c:ores/osmium"
+    },
+    "mekanism:clean_tin": {
+      "representation": "c:ores/tin"
+    },
+    "mekanism:clean_uranium": {
+      "representation": "c:ores/uranium"
+    }
+  }
+}

@@ -2,6 +2,27 @@
   "values": [
     "eternalores:ardite_ore_block",
     "eternalores:necroticarite_ore_block",
-    "eternalores:obsidian_ore_block"
+    "eternalores:nether_black_quartz_ore_block",
+    "eternalores:nether_cinnabar_ore_block",
+    "eternalores:nether_cobalt_ore_block",
+    "eternalores:nether_gallium_ore_block",
+    "eternalores:nether_garnet_ore_block",
+    "eternalores:nether_jade_ore_block",
+    "eternalores:nether_molybdenum_ore_block",
+    "eternalores:nether_monazite_ore_block",
+    "eternalores:nether_nickel_ore_block",
+    "eternalores:nether_onyx_ore_block",
+    "eternalores:nether_osmium_ore_block",
+    "eternalores:nether_peridot_ore_block",
+    "eternalores:nether_ruby_ore_block",
+    "eternalores:nether_silver_ore_block",
+    "eternalores:nether_spinel_ore_block",
+    "eternalores:nether_sulfur_ore_block",
+    "eternalores:nether_tanzanite_ore_block",
+    "eternalores:nether_uraninite_ore_block",
+    "eternalores:nether_uranium_ore_block",
+    "eternalores:nether_zircon_ore_block",
+    "eternalores:obsidian_ore_block",
+    "eternalores:pyrolite_ore_block"
   ]
 }

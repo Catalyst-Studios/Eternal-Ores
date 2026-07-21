@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:dusts/cast_steel"
+    },
+    {
+      "tag": "c:blends/nether"
+    },
+    {
+      "item": "minecraft:fire_charge"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:nethersteel_ingot"
+    }
+  ]
+}

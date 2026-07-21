@@ -1,0 +1,26 @@
+{
+  "feature": "eternalores:end_tungsten_feature",
+  "placement": [
+    {
+      "type": "eternalores:config_ore_count",
+      "ore": "eternalores:tungsten_end"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "eternalores:config_ore_rarity",
+      "ore": "eternalores:tungsten_end"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "eternalores:config_ore_height",
+        "ore": "eternalores:tungsten_end"
+      }
+    }
+  ]
+}

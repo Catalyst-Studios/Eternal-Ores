@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:plates/vivid_alloy"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:vivid_alloy_foil"
+    }
+  ]
+}

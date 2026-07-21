@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:mining_lens",
+  "ingredient": {
+    "tag": "eternalores:stone_replaceables"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:spinel_ore_block"
+  },
+  "weight": 50
+}

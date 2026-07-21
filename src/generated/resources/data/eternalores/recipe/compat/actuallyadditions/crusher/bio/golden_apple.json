@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "item": "minecraft:golden_apple"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 4,
+        "id": "eternalores:biomass"
+      }
+    },
+    {
+      "result": {
+        "count": 3,
+        "id": "eternalores:gold_small_dust"
+      }
+    }
+  ]
+}

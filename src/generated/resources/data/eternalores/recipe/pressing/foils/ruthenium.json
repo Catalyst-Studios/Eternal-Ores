@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:plates/ruthenium"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:ruthenium_foil"
+    }
+  ]
+}

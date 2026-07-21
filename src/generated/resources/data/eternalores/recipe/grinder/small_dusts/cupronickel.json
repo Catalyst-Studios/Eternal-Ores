@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:nuggets/cupronickel"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:cupronickel_small_dust"
+    }
+  ],
+  "time": 210
+}

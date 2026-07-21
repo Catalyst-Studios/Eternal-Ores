@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eternalores:item/nuggets/melodic_alloy_nugget"
+  }
+}

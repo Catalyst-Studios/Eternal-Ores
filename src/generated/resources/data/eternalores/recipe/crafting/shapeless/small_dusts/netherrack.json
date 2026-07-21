@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/netherrack"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:netherrack_small_dust"
+  }
+}

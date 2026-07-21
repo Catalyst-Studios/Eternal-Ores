@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/redstone"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:redstone_nugget"
+  }
+}

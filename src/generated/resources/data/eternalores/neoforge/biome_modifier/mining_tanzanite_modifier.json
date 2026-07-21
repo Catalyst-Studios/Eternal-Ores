@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#eternalores:is_mining_dim",
+  "features": "eternalores:mining_tanzanite_placed",
+  "ore": "eternalores:tanzanite_mining",
+  "step": "underground_ores"
+}

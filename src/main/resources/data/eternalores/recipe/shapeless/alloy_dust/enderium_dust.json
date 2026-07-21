@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/lead"
+    },
+    {
+      "tag": "c:dusts/lead"
+    },
+    {
+      "tag": "c:blends/endergetic"
+    },
+    {
+      "tag": "c:blends/endergetic"
+    },
+    {
+      "tag": "c:blends/endergetic"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:enderium_dust"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:nuggets/vanadium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:vanadium_small_dust"
+    }
+  ],
+  "time": 210
+}

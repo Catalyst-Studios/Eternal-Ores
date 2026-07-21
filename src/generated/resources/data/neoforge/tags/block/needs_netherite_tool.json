@@ -1,9 +1,114 @@
 {
   "values": [
+    "eternalores:antimatter_block",
     "eternalores:ardite_block",
+    "eternalores:ardite_dust_block",
     "eternalores:ardite_ore_block",
     "eternalores:catalyrium_block",
+    "eternalores:catalyrium_dust_block",
+    "eternalores:cosmic_matter_block",
+    "eternalores:cosmic_matter_dust_block",
+    "eternalores:exotic_matter_block",
+    "eternalores:gravitronium_block",
+    "eternalores:gravitronium_dust_block",
+    "eternalores:nanite_block",
+    "eternalores:nanite_dust_block",
+    "eternalores:novalloy_block",
+    "eternalores:novalloy_dust_block",
+    "eternalores:primornium_block",
+    "eternalores:primornium_dust_block",
     "eternalores:raw_ardite_block",
-    "eternalores:raw_catalyrium_block"
+    "eternalores:raw_catalyrium_block",
+    "eternalores:raw_sculkite_block",
+    "eternalores:sculkite_block",
+    "eternalores:sculkite_dust_block",
+    "eternalores:sculkite_ore_block",
+    "eternalores:strange_matter_block",
+    "eternalores:universium_block",
+    "eternalores:universium_dust_block",
+    {
+      "id": "eternalores:ardite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:ardite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:ardite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:catalyrium_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_ardite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_catalyrium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:large_sculkite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_ardite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_catalyrium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:medium_sculkite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_cluster",
+      "required": false
+    },
+    {
+      "id": "eternalores:sculkite_geo_block",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_ardite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_catalyrium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_sculkite_bud",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ores/niter"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 5,
+        "id": "eternalores:gem_niter"
+      }
+    },
+    {
+      "result": {
+        "count": 4,
+        "id": "eternalores:sulfur_small_dust"
+      }
+    }
+  ]
+}

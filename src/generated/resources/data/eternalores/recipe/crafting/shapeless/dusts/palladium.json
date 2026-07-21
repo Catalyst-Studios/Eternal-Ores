@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dust_blocks/palladium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:palladium_dust"
+  }
+}

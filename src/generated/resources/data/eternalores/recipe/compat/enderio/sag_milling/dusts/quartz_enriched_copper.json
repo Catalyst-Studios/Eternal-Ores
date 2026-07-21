@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "enderio:sag_milling",
+  "bonus": "none",
+  "energy": 2400,
+  "input": {
+    "tag": "c:ingots/quartz_enriched_copper"
+  },
+  "outputs": [
+    {
+      "item": {
+        "count": 1,
+        "id": "eternalores:quartz_enriched_copper_dust"
+      }
+    }
+  ]
+}

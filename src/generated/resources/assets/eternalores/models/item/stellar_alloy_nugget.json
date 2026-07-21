@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eternalores:item/nuggets/stellar_alloy_nugget"
+  }
+}

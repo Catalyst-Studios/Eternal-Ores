@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:ingots/iron"
+    },
+    {
+      "tag": "c:dusts/lignite_coal"
+    },
+    {
+      "tag": "c:dusts/lignite_coal"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:pig_iron_ingot"
+    }
+  ]
+}

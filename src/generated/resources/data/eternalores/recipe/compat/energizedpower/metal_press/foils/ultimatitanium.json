@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/ultimatitanium"
+  },
+  "output": {
+    "count": 2,
+    "item": "eternalores:ultimatitanium_foil"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_foil"
+  }
+}

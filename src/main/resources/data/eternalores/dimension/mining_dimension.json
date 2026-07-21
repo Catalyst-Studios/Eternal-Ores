@@ -1,0 +1,10 @@
+{
+  "type": "eternalores:mining",
+  "generator": {
+    "type": "eternalores:mining_chunk_generator",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "eternalores:mining"
+    }
+  }
+}

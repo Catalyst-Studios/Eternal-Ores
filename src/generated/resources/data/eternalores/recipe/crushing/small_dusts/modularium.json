@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:nuggets/modularium"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "eternalores:modularium_small_dust"
+    }
+  ]
+}

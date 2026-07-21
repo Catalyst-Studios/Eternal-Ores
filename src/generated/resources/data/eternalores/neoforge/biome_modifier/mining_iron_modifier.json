@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#eternalores:is_mining_dim",
+  "features": "eternalores:mining_iron_placed",
+  "ore": "eternalores:iron_mining",
+  "step": "underground_ores"
+}

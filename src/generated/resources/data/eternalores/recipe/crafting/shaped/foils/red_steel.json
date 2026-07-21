@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "tag": "c:tools/wire_cutters"
+    },
+    "I": {
+      "tag": "c:plates/red_steel"
+    }
+  },
+  "pattern": [
+    " I ",
+    " I ",
+    " H "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:red_steel_foil"
+  }
+}

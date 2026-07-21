@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:pearl_overworld",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:pearl_ore_block"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:sand"
+        }
+      }
+    ]
+  }
+}

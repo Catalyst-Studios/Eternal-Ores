@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:salt_mining",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:salt_ore_block"
+        },
+        "target": {
+          "block": "minecraft:stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1.5,
+  "ingredient": {
+    "tag": "c:ores/necroticarite"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:gem_necroticarite"
+  }
+}

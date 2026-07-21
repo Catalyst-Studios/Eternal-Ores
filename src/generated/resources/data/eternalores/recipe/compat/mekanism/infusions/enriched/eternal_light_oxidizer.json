@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "eternalores:chemical_enabled",
+      "chemical": "eternalores:eternal_light"
+    }
+  ],
+  "type": "mekanism:oxidizing",
+  "input": {
+    "count": 1,
+    "tag": "c:enriched/eternal_light"
+  },
+  "output": {
+    "amount": 80,
+    "id": "eternalores:eternal_light"
+  }
+}

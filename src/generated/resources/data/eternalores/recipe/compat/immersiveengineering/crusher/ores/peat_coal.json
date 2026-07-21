@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 8250,
+  "input": {
+    "tag": "c:ores/peat_coal"
+  },
+  "result": {
+    "count": 8,
+    "id": "eternalores:peat_coal"
+  },
+  "secondaries": [
+    {
+      "chance": 0.22,
+      "output": {
+        "count": 2,
+        "id": "eternalores:biomass"
+      }
+    }
+  ]
+}

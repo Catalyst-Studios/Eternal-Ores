@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/signalum"
+   },
+    "B": {
+      "item": "minecraft:redstone_torch"
+    },
+    "C": {
+      "item": "eternalores:prospector"
+    },
+    "D": {
+      "tag": "c:rods/signalum"
+    },
+    "E": {
+      "tag": "c:nuggets/signalum"
+    }
+  },
+  "pattern": [
+    "AAB",
+    "ACD",
+    "AEA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:advanced_prospector"
+  }
+}

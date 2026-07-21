@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "item": "eternalores:bituminous_coal"
+    },
+    {
+      "tag": "c:dusts/iron"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:cast_iron_ingot"
+    }
+  ],
+  "time": 80
+}

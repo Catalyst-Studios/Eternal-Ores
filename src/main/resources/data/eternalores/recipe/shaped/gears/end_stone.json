@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:plates/end_stone"
+    },
+    "B": {
+      "tag": "c:tools/gem_cutters"
+    },
+    "C": {
+      "tag": "c:rods/end_stone"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:gear_end_stone"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:nuggets/graphite"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:graphite_small_dust"
+    }
+  ],
+  "time": 100
+}

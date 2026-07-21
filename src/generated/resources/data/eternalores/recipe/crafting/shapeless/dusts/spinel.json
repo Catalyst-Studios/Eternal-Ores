@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dust_blocks/spinel"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:spinel_dust"
+  }
+}

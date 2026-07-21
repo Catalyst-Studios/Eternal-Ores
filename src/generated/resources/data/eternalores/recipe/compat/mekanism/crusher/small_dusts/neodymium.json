@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:nuggets/neodymium"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:neodymium_small_dust"
+  }
+}

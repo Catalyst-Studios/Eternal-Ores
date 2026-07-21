@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/rhodium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:rhodium_small_dust"
+  }
+}

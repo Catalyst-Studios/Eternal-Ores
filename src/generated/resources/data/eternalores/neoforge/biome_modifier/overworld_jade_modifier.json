@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_overworld",
+  "features": "eternalores:overworld_jade_placed",
+  "ore": "eternalores:jade_overworld",
+  "step": "underground_ores"
+}

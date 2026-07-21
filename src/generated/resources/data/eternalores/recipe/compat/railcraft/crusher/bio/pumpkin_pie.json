@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "item": "minecraft:pumpkin_pie"
+  },
+  "outputs": [
+    {
+      "count": 5,
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:biomass"
+      }
+    }
+  ]
+}

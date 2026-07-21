@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 150,
+  "experience": 1.5,
+  "ingredient": {
+    "tag": "c:storage_blocks/raw_ultimatitanium"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:ultimatitanium_block"
+  }
+}

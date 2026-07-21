@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ores/sapphire"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 3,
+        "id": "eternalores:gem_sapphire"
+      }
+    },
+    {
+      "result": {
+        "count": 2,
+        "id": "eternalores:aluminum_small_dust"
+      }
+    }
+  ]
+}

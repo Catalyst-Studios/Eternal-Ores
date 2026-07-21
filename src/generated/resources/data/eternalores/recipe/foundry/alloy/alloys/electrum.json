@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:dusts/silver"
+    },
+    {
+      "tag": "c:dusts/gold"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:electrum_ingot"
+    }
+  ],
+  "time": 80
+}

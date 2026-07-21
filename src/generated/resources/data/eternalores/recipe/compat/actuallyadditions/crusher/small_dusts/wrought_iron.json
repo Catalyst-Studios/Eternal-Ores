@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:nuggets/wrought_iron"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "eternalores:wrought_iron_small_dust"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/sulfur"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:sulfur_small_dust"
+  }
+}

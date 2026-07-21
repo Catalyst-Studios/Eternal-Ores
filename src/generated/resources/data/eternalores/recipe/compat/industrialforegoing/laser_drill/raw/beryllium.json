@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:laser_drill_ore",
+  "catalyst": {
+    "item": "industrialforegoing:green_laser_lens"
+  },
+  "output": {
+    "count": 1,
+    "tag": "c:raw_materials/beryllium"
+  },
+  "rarity": [
+    {
+      "biome_filter": {
+        "blacklist": [],
+        "whitelist": []
+      },
+      "depth_max": 77,
+      "depth_min": 52,
+      "dimension_filter": {
+        "blacklist": [
+          "minecraft:the_end",
+          "minecraft:the_nether"
+        ],
+        "whitelist": [
+          "minecraft:overworld"
+        ]
+      },
+      "weight": 14
+    }
+  ]
+}

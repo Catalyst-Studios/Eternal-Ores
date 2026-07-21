@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:ores/cinnabar"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:gem_cinnabar"
+    }
+  ],
+  "time": 100
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/stainless_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:plate_stainless_steel"
+    }
+  ]
+}

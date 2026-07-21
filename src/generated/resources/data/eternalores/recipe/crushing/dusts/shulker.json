@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:shulker_shell"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "eternalores:shulker_shell_dust"
+    }
+  ]
+}

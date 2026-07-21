@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/salt"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:salt_dust"
+  }
+}

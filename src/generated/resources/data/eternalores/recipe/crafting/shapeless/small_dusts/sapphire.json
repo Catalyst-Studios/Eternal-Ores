@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/sapphire"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:sapphire_small_dust"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:nuggets/eternity"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "eternalores:eternity_small_dust"
+      }
+    }
+  ]
+}

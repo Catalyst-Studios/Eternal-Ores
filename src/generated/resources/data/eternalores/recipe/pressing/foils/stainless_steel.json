@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:plates/stainless_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:stainless_steel_foil"
+    }
+  ]
+}

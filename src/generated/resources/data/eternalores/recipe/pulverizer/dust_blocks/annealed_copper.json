@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/annealed_copper"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:annealed_copper_dust_block"
+    }
+  ],
+  "time": 100
+}

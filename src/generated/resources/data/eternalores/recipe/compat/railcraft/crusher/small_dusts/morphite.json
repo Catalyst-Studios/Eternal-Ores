@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "tag": "c:gem_shards/morphite"
+  },
+  "outputs": [
+    {
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:morphite_small_dust"
+      }
+    }
+  ],
+  "processTime": 100
+}

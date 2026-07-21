@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/selenium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:selenium_small_dust"
+  }
+}

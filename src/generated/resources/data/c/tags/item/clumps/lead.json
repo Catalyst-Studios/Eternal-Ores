@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:o_lead_clump"
+    "eternalores:clump_lead",
+    {
+      "id": "create:crushed_raw_lead",
+      "required": false
+    }
   ]
 }

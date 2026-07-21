@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "item": "minecraft:muddy_mangrove_roots"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 2,
+        "id": "eternalores:biomass"
+      }
+    },
+    {
+      "result": {
+        "count": 1,
+        "id": "minecraft:mud"
+      }
+    }
+  ]
+}

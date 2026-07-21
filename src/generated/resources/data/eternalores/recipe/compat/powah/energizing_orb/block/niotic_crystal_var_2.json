@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
+  "type": "powah:energizing",
+  "energy": 8100000,
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/diamond"
+    },
+    {
+      "tag": "c:storage_blocks/diamond"
+    },
+    {
+      "tag": "c:storage_blocks/diamond"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "powah:niotic_crystal_block"
+  }
+}

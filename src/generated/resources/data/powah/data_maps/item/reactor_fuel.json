@@ -1,4 +1,18 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    },
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "powah"
+    }
+  ],
   "values": {
     "#c:ingots/uraninite": {
       "fuelAmount": 100,
@@ -6,11 +20,11 @@
     },
     "#c:nuggets/uraninite": {
       "fuelAmount": 5,
-      "temperature": 700
+      "temperature": 200
     },
-    "eternalores:uraninite_block": {
-      "fuelAmount": 1000,
-      "temperature": 1000
+    "#c:storage_blocks/uraninite": {
+      "fuelAmount": 700,
+      "temperature": 900
     }
   }
 }

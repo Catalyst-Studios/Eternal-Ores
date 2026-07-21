@@ -1,0 +1,33 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "tag": "c:raw_materials/palladium"
+  },
+  "outputs": [
+    {
+      "count": 2,
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:palladium_dust"
+      }
+    },
+    {
+      "probability": 0.5,
+      "result": {
+        "item": "eternalores:palladium_dust"
+      }
+    },
+    {
+      "probability": 0.25,
+      "result": {
+        "item": "eternalores:palladium_dust"
+      }
+    }
+  ]
+}

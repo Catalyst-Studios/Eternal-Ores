@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:iron_gem",
+    {
+      "id": "oritech:iron_gem",
+      "required": false
+    }
+  ]
+}

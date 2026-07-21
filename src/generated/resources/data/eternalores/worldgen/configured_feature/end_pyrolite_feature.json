@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:pyrolite_end",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:end_pyrolite_ore_block"
+        },
+        "target": {
+          "block": "minecraft:end_stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

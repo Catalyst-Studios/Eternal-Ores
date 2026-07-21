@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "eternalores:plate_stone"
+    },
+    "B": {
+      "tag": "c:tools/gem_cutters"
+    },
+    "C": {
+      "item": "eternalores:rod_stone"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:gear_stone"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "tag": "c:nuggets/cast_iron"
+  },
+  "outputs": [
+    {
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:cast_iron_small_dust"
+      }
+    }
+  ],
+  "processTime": 100
+}

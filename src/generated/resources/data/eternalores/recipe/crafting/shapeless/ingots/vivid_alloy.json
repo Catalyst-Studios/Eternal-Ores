@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/vivid_alloy"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:vivid_alloy_ingot"
+  }
+}

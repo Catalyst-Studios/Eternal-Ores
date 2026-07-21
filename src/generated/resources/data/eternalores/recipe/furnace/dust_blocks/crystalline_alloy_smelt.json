@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "ingredient": {
+    "tag": "c:dust_blocks/crystalline_alloy"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:crystalline_alloy_block"
+  }
+}

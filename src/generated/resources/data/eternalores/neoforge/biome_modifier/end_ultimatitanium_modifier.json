@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_end",
+  "features": "eternalores:end_ultimatitanium_placed",
+  "ore": "eternalores:ultimatitanium_end",
+  "step": "underground_ores"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+   },
+    "B": {
+      "tag": "c:strings"
+    },
+    "C": {
+      "tag": "c:plates/cobalt"
+    },
+    "D": {
+      "tag": "c:leathers"
+    }
+  },
+  "pattern": [
+    " C ",
+    "DBC",
+    "AD "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:cobalt_wire_cutter"
+  }
+}

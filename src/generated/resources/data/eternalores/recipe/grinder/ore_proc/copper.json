@@ -1,0 +1,29 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:raw_materials/copper"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:clump_copper"
+    },
+    {
+      "count": 3,
+      "id": "eternalores:copper_small_clump"
+    },
+    {
+      "count": 3,
+      "id": "eternalores:zinc_small_clump"
+    }
+  ],
+  "time": 210
+}

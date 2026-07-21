@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "enderio"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " A ",
+    "AAA",
+    " A "
+  ],
+  "key":
+  {
+    "A": {
+      "tag": "c:ingots/catalyrium"
+    }
+  },
+  "result": {
+    "count": 3,
+    "id": "eternalores:catalyric_grinding_ball"
+  }
+}

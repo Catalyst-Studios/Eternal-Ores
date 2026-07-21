@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 3000,
+  "input": {
+    "tag": "c:storage_blocks/coal_coke"
+  },
+  "result": {
+    "id": "eternalores:coke_coal_dust_block"
+  }
+}

@@ -1,4 +1,7 @@
 {
+  "remove": [
+    "minecraft:prismarine_shard"
+  ],
   "values": [
     "eternalores:prismarine_dust"
   ]

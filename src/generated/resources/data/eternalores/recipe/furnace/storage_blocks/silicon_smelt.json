@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.3,
+  "ingredient": {
+    "tag": "c:dust_blocks/silicon"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:silicon_ingot_block"
+  }
+}

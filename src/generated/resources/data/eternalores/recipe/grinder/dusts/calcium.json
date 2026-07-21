@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:bones"
+    }
+  ],
+  "results": [
+    {
+      "count": 6,
+      "id": "minecraft:bone_meal"
+    },
+    {
+      "count": 1,
+      "id": "eternalores:calcium_dust"
+    }
+  ],
+  "time": 210
+}

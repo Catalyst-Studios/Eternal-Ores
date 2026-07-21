@@ -1,0 +1,32 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [],
+  "energy": 102400,
+  "input": {
+    "tag": "c:ores/pearl"
+  },
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:gem_pearl"
+    }
+  ],
+  "secondaries": [
+    {
+      "chance": 0.22,
+      "output": {
+        "id": "eternalores:gem_pearl"
+      }
+    }
+  ],
+  "slag": {
+    "id": "immersiveengineering:slag"
+  },
+  "time": 200
+}

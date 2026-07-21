@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/stellarium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:stellarium_small_dust"
+  }
+}

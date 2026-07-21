@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:ingots/energetic_silver"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:energetic_silver_dust"
+    }
+  ],
+  "time": 210
+}

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:raw_materials/catalyrium"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 2,
+        "id": "eternalores:catalyrium_dust"
+      }
+    },
+    {
+      "chance": 0.25,
+      "result": {
+        "count": 3,
+        "id": "eternalores:catalyrium_small_dust"
+      }
+    }
+  ]
+}

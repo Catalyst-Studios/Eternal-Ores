@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/nanite"
+  },
+  "output": {
+    "count": 2,
+    "item": "eternalores:rod_nanite"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_rod"
+  }
+}

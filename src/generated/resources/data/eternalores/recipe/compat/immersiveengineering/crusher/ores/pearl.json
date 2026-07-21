@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 8250,
+  "input": {
+    "tag": "c:ores/pearl"
+  },
+  "result": {
+    "count": 2,
+    "id": "eternalores:gem_pearl"
+  },
+  "secondaries": [
+    {
+      "chance": 0.22,
+      "output": {
+        "count": 3,
+        "id": "eternalores:calcium_small_dust"
+      }
+    }
+  ]
+}

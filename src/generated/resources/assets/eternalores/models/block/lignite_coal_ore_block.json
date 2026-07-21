@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalores:block/ore_stone/lignite_coal_ore_block"
+  }
+}

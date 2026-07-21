@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:tools/crushing_hammers"
+    },
+    {
+      "tag": "c:gems/black_quartz"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:black_quartz_dust"
+  }
+}

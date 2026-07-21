@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:nickel_gem",
+    {
+      "id": "oritech:nickel_gem",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "item": "minecraft:prismarine_bricks"
+  },
+  "outputs": [
+    {
+      "count": 9,
+      "probability": 1.0,
+      "result": {
+        "item": "minecraft:prismarine_shard"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/quartz_enriched_iron"
+  },
+  "output": {
+    "count": 2,
+    "item": "eternalores:quartz_enriched_iron_foil"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_foil"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/rubidium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:rubidium_small_dust"
+  }
+}

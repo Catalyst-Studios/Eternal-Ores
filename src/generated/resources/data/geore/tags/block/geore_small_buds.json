@@ -1,0 +1,112 @@
+{
+  "values": [
+    {
+      "id": "eternalores:small_apatite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_ardite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_beryllium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_catalyrium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_cinnabar_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_cobalt_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_fluorite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_gallium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_garnet_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_iridium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_jade_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_molybdenum_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_necroticarite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_neodymium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_niter_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_obsidian_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_onyx_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_palladium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_pearl_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_peridot_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_pyrolite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_sculkite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_spinel_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_tanzanite_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_titanium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_ultimatitanium_bud",
+      "required": false
+    },
+    {
+      "id": "eternalores:small_zircon_bud",
+      "required": false
+    }
+  ]
+}

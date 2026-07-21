@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/black_bronze"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:black_bronze_small_dust"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ingots/lead"
+    },
+    {
+      "tag": "c:blends/endergetic"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:enderium_ingot"
+    }
+  ],
+  "time": 80
+}

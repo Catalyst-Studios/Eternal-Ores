@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "tag": "c:tools/gem_cutters"
+    },
+    "I": {
+      "tag": "c:gems/voiderite"
+    }
+  },
+  "pattern": [
+    "H  ",
+    " I ",
+    "  I"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:rod_voiderite"
+  }
+}

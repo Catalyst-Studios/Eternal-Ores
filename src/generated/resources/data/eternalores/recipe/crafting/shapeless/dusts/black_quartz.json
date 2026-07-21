@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dust_blocks/black_quartz"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:black_quartz_dust"
+  }
+}

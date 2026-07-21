@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:clumps/neodymium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:neodymium_small_clump"
+  }
+}

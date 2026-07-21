@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_overworld",
+  "features": "eternalores:overworld_spinel_placed",
+  "ore": "eternalores:spinel_overworld",
+  "step": "underground_ores"
+}

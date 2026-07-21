@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:tools/crushing_hammers"
+    },
+    {
+      "item": "eternalores:plate_tuff"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:tuff_dust"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:gems/sanguis_vivus"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:sanguis_vivus_shard"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:atomic_forge",
+  "ingredients": [
+    {
+      "tag": "c:ore_gems/tungsten"
+    },
+    {
+      "tag": "c:gems/fluxite"
+    },
+    {
+      "tag": "c:gems/fluxite"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:tungsten_dust"
+    }
+  ],
+  "time": 20
+}

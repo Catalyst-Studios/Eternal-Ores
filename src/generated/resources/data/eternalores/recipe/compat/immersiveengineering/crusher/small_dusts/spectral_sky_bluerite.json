@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 1500,
+  "input": {
+    "tag": "c:gem_shards/spectral_sky_bluerite"
+  },
+  "result": {
+    "id": "eternalores:spectral_sky_bluerite_small_dust"
+  }
+}

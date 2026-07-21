@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "c:gems/quantiquarite"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:rod_quantiquarite"
+    }
+  ]
+}

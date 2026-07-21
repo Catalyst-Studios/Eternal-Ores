@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/novalloy"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:novalloy_small_dust"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "eternalores:config_ore_feature",
+  "config": {
+    "ore": "eternalores:sculkite_overworld",
+    "targets": [
+      {
+        "state": {
+          "Name": "eternalores:sculkite_ore_block"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:sculk_replaceable"
+        }
+      }
+    ]
+  }
+}

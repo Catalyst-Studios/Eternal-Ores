@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:ingots/cosmic_matter"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:cosmic_matter_nugget"
+  }
+}

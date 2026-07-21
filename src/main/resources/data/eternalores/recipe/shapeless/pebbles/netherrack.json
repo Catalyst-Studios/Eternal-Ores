@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:netherrack"
+    },
+    {
+      "tag": "c:tools/gem_cutters"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:netherrack_pebble"
+  }
+}

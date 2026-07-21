@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/sand"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:sand_small_dust"
+  }
+}

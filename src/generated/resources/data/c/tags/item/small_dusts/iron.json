@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:iron_small_dust",
+    {
+      "id": "oritech:small_iron_dust",
+      "required": false
+    }
+  ]
+}

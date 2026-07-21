@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#eternalores:is_mining_dim",
+  "features": "eternalores:mining_ancient_debris_placed",
+  "ore": "eternalores:ancient_debris_mining",
+  "step": "underground_ores"
+}

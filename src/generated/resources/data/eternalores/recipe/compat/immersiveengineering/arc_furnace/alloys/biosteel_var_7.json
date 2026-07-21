@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "c:dusts/steel"
+    }
+  ],
+  "energy": 51200,
+  "input": {
+    "tag": "c:raw_biopolymer"
+  },
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:biosteel_ingot"
+    }
+  ],
+  "time": 100
+}

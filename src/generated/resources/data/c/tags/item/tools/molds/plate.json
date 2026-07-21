@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:mold_plate",
+    {
+      "id": "immersiveengineering:mold_plate",
+      "required": false
+    }
+  ]
+}

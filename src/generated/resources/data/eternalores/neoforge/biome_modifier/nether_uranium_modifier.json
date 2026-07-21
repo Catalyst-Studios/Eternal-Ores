@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_nether",
+  "features": "eternalores:nether_uranium_placed",
+  "ore": "eternalores:uranium_nether",
+  "step": "underground_ores"
+}

@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:mining_lens",
+  "ingredient": {
+    "tag": "c:end_stones"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:end_iridium_ore_block"
+  },
+  "weight": 200
+}

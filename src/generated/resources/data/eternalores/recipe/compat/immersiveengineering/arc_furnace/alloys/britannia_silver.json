@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "c:dusts/copper"
+    }
+  ],
+  "energy": 51200,
+  "input": {
+    "basePredicate": {
+      "tag": "c:dusts/silver"
+    },
+    "count": 3
+  },
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:britannia_silver_ingot"
+    }
+  ],
+  "time": 100
+}

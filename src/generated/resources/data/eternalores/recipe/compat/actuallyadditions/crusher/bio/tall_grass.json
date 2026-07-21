@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "item": "minecraft:tall_grass"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 2,
+        "id": "eternalores:biomass"
+      }
+    }
+  ]
+}

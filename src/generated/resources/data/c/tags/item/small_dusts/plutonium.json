@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:plutonium_small_dust",
+    {
+      "id": "oritech:small_plutonium_dust",
+      "required": false
+    }
+  ]
+}

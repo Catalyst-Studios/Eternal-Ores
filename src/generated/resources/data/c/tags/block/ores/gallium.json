@@ -1,6 +1,7 @@
 {
   "values": [
     "eternalores:deepslate_gallium_ore_block",
-    "eternalores:gallium_ore_block"
+    "eternalores:gallium_ore_block",
+    "eternalores:nether_gallium_ore_block"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_nether",
+  "features": "eternalores:nether_tanzanite_placed",
+  "ore": "eternalores:tanzanite_nether",
+  "step": "underground_ores"
+}

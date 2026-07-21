@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:copper_small_clump",
+    {
+      "id": "oritech:small_copper_clump",
+      "required": false
+    }
+  ]
+}

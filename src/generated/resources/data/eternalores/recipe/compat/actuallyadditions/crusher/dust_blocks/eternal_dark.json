@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:storage_blocks/eternal_dark"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "eternalores:eternal_dark_dust_block"
+      }
+    }
+  ]
+}

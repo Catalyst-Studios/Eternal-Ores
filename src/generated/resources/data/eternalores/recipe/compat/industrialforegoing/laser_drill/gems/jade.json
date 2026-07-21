@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:laser_drill_ore",
+  "catalyst": {
+    "item": "industrialforegoing:lime_laser_lens"
+  },
+  "output": {
+    "count": 1,
+    "tag": "c:ores/jade"
+  },
+  "rarity": [
+    {
+      "biome_filter": {
+        "blacklist": [],
+        "whitelist": []
+      },
+      "depth_max": 34,
+      "depth_min": 11,
+      "dimension_filter": {
+        "blacklist": [
+          "minecraft:the_end"
+        ],
+        "whitelist": [
+          "minecraft:overworld",
+          "minecraft:the_nether"
+        ]
+      },
+      "weight": 5
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "values": [
+    {
+      "id": "eternalores:budding_apatite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_cinnabar",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_fluorite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_garnet",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_jade",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_necroticarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_niter",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_obsidian",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_onyx",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_pearl",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_peridot",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_pyrolite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_spinel",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_tanzanite",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:budding_zircon",
+      "required": false
+    }
+  ]
+}

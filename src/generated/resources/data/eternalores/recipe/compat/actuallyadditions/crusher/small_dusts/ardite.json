@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:nuggets/ardite"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "eternalores:ardite_small_dust"
+      }
+    }
+  ]
+}

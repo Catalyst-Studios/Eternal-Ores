@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/catalyrium"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:catalyrium_dust_block"
+    }
+  ],
+  "time": 210
+}

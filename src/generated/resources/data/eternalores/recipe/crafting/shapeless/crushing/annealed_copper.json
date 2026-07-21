@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:tools/crushing_hammers"
+    },
+    {
+      "tag": "c:ingots/annealed_copper"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:annealed_copper_dust"
+  }
+}

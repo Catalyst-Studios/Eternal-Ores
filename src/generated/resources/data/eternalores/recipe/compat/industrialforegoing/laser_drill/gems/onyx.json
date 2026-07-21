@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:laser_drill_ore",
+  "catalyst": {
+    "item": "industrialforegoing:black_laser_lens"
+  },
+  "output": {
+    "count": 1,
+    "tag": "c:ores/onyx"
+  },
+  "rarity": [
+    {
+      "biome_filter": {
+        "blacklist": [],
+        "whitelist": []
+      },
+      "depth_max": 43,
+      "depth_min": 25,
+      "dimension_filter": {
+        "blacklist": [
+          "minecraft:the_end"
+        ],
+        "whitelist": [
+          "minecraft:overworld",
+          "minecraft:the_nether"
+        ]
+      },
+      "weight": 14
+    }
+  ]
+}

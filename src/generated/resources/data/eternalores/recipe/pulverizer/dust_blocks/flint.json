@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/flint"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:flint_dust_block"
+    }
+  ],
+  "time": 100
+}

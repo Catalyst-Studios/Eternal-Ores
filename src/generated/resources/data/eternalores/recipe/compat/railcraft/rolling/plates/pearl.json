@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:rolling",
+  "key": {
+    "#": {
+      "tag": "c:gems/pearl"
+    }
+  },
+  "pattern": [
+    "## ",
+    "## ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:plate_pearl"
+  }
+}

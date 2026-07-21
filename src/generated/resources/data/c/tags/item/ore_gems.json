@@ -1,0 +1,51 @@
+{
+  "values": [
+    "eternalores:aluminum_gem",
+    "eternalores:ardite_gem",
+    "eternalores:beryllium_gem",
+    "eternalores:catalyrium_gem",
+    "eternalores:cobalt_gem",
+    "eternalores:copper_gem",
+    "eternalores:gallium_gem",
+    "eternalores:gold_gem",
+    "eternalores:iridium_gem",
+    "eternalores:iron_gem",
+    "eternalores:lead_gem",
+    "eternalores:molybdenum_gem",
+    "eternalores:neodymium_gem",
+    "eternalores:nickel_gem",
+    "eternalores:osmium_gem",
+    "eternalores:palladium_gem",
+    "eternalores:platinum_gem",
+    "eternalores:sculkite_gem",
+    "eternalores:silver_gem",
+    "eternalores:tin_gem",
+    "eternalores:titanium_gem",
+    "eternalores:tungsten_gem",
+    "eternalores:ultimatitanium_gem",
+    "eternalores:uraninite_gem",
+    "eternalores:uranium_gem",
+    "eternalores:vanadium_gem",
+    "eternalores:zinc_gem",
+    {
+      "id": "oritech:gold_gem",
+      "required": false
+    },
+    {
+      "id": "oritech:iron_gem",
+      "required": false
+    },
+    {
+      "id": "oritech:copper_gem",
+      "required": false
+    },
+    {
+      "id": "oritech:nickel_gem",
+      "required": false
+    },
+    {
+      "id": "oritech:platinum_gem",
+      "required": false
+    }
+  ]
+}

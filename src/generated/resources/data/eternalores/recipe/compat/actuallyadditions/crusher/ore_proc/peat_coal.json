@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ores/peat_coal"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 8,
+        "id": "eternalores:peat_coal"
+      }
+    },
+    {
+      "result": {
+        "count": 2,
+        "id": "eternalores:biomass"
+      }
+    }
+  ]
+}

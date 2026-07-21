@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dust_blocks/stellar_alloy"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:stellar_alloy_dust"
+  }
+}

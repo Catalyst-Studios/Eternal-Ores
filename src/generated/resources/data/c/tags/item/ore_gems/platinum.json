@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:platinum_gem",
+    {
+      "id": "oritech:platinum_gem",
+      "required": false
+    }
+  ]
+}

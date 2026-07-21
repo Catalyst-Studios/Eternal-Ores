@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:raw_materials/sulfur"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:sulfur_dust"
+    }
+  ],
+  "time": 210
+}

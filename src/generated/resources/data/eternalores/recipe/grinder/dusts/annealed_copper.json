@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:ingots/annealed_copper"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:annealed_copper_dust"
+    }
+  ],
+  "time": 210
+}

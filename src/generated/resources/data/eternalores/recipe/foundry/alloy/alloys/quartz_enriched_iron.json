@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:foundry",
+  "ingredients": [
+    {
+      "tag": "c:ingots/iron"
+    },
+    {
+      "tag": "c:dusts/quartz"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:quartz_enriched_iron_ingot"
+    }
+  ],
+  "time": 80
+}

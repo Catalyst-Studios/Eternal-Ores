@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#eternalores:is_mining_dim",
+  "features": "eternalores:mining_zircon_placed",
+  "ore": "eternalores:zircon_mining",
+  "step": "underground_ores"
+}

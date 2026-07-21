@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "eternalores:block/stellar_alloy_block"
+    }
+  }
+}

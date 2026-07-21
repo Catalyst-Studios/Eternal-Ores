@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:laser_drill_ore",
+  "catalyst": {
+    "item": "industrialforegoing:pink_laser_lens"
+  },
+  "output": {
+    "count": 1,
+    "tag": "c:raw_materials/neodymium"
+  },
+  "rarity": [
+    {
+      "biome_filter": {
+        "blacklist": [],
+        "whitelist": []
+      },
+      "depth_max": 10,
+      "depth_min": -52,
+      "dimension_filter": {
+        "blacklist": [],
+        "whitelist": []
+      },
+      "weight": 11
+    }
+  ]
+}

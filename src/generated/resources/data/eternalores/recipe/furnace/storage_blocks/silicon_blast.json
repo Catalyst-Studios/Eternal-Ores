@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.5,
+  "ingredient": {
+    "tag": "c:dust_blocks/silicon"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:silicon_ingot_block"
+  }
+}

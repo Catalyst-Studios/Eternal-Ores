@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/tin"
+    },
+    {
+      "tag": "c:dusts/tin"
+    },
+    {
+      "tag": "c:dusts/silver"
+    },
+    {
+      "tag": "c:blends/energetic"
+    },
+    {
+      "tag": "c:blends/energetic"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:lumium_dust"
+  }
+}

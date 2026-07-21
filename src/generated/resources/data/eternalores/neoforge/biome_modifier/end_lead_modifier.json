@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_end",
+  "features": "eternalores:end_lead_placed",
+  "ore": "eternalores:lead_end",
+  "step": "underground_ores"
+}

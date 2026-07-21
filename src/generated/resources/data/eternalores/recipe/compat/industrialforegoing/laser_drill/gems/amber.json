@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "industrialforegoing"
+    }
+  ],
+  "type": "industrialforegoing:laser_drill_ore",
+  "catalyst": {
+    "item": "industrialforegoing:orange_laser_lens"
+  },
+  "output": {
+    "count": 1,
+    "tag": "c:ores/amber"
+  },
+  "rarity": [
+    {
+      "biome_filter": {
+        "blacklist": [],
+        "whitelist": []
+      },
+      "depth_max": 50,
+      "depth_min": 37,
+      "dimension_filter": {
+        "blacklist": [
+          "minecraft:the_end",
+          "minecraft:the_nether"
+        ],
+        "whitelist": [
+          "minecraft:overworld"
+        ]
+      },
+      "weight": 15
+    }
+  ]
+}

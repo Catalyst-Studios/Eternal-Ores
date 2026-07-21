@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dust_blocks/cosmic_matter"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:cosmic_matter_dust"
+  }
+}

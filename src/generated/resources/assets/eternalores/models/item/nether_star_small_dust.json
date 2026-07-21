@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "eternalores:item/small_dusts/nether_star_small_dust"
+  }
+}

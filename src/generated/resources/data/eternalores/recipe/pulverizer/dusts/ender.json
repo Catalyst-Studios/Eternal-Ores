@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:ender_pearls"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "oritech:enderic_compound"
+    },
+    {
+      "count": 1,
+      "id": "eternalores:ender_pearl_dust"
+    }
+  ],
+  "time": 100
+}

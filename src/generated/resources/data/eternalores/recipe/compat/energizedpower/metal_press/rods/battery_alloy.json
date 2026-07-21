@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/battery_alloy"
+  },
+  "output": {
+    "count": 2,
+    "item": "eternalores:rod_battery_alloy"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_rod"
+  }
+}

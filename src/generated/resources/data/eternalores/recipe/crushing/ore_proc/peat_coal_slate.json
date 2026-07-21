@@ -1,0 +1,37 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "eternalores:deepslate_peat_coal_ore_block"
+    }
+  ],
+  "processing_time": 200,
+  "results": [
+    {
+      "count": 8,
+      "id": "eternalores:peat_coal"
+    },
+    {
+      "chance": 0.45,
+      "id": "eternalores:peat_coal"
+    },
+    {
+      "chance": 0.25,
+      "id": "eternalores:biomass"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.12,
+      "id": "minecraft:cobbled_deepslate"
+    }
+  ]
+}

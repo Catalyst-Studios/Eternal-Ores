@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:enriched_diamond",
+    {
+      "id": "mekanism:enriched_diamond",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/spectral_sky_bluerite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:spectral_sky_bluerite_small_dust"
+  }
+}

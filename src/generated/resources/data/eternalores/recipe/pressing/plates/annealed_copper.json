@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:ingots/annealed_copper"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:plate_annealed_copper"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "eternalores:phosphorus_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:phosphorus_dust"
+  }
+}

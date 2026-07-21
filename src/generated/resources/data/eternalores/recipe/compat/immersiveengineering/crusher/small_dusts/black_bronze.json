@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 1500,
+  "input": {
+    "tag": "c:nuggets/black_bronze"
+  },
+  "result": {
+    "id": "eternalores:black_bronze_small_dust"
+  }
+}

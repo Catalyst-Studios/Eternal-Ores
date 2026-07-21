@@ -1,14 +1,112 @@
 {
   "values": [
-    "eternalores:dirty_aluminum_dust",
-    "eternalores:dirty_catalyrium_dust",
-    "eternalores:dirty_cobalt_dust",
-    "eternalores:dirty_gallium_dust",
-    "eternalores:dirty_iridium_dust",
-    "eternalores:dirty_nickel_dust",
-    "eternalores:dirty_platinum_dust",
-    "eternalores:dirty_silver_dust",
-    "eternalores:dirty_uraninite_dust",
-    "eternalores:dirty_zinc_dust"
+    {
+      "id": "eternalores:dirty_aluminum_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_ardite_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_beryllium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_catalyrium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_cobalt_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_copper_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_gallium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_gold_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_iridium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_iron_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_lead_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_molybdenum_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_neodymium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_nickel_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_osmium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_palladium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_platinum_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_sculkite_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_silver_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_tin_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_titanium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_tungsten_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_ultimatitanium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_uraninite_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_uranium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_vanadium_dust",
+      "required": false
+    },
+    {
+      "id": "eternalores:dirty_zinc_dust",
+      "required": false
+    }
   ]
 }

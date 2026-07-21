@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/quartz_enriched_iron"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:quartz_enriched_iron_small_dust"
+  }
+}

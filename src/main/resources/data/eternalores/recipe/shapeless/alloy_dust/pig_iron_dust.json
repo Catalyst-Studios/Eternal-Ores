@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/iron"
+    },
+    {
+      "tag": "c:dusts/lignite_coal"
+    },
+    {
+      "tag": "c:dusts/lignite_coal"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "eternalores:pig_iron_dust"
+  }
+}

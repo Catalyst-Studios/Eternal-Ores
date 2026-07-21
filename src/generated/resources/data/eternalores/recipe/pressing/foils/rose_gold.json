@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "c:plates/rose_gold"
+    }
+  ],
+  "results": [
+    {
+      "id": "eternalores:rose_gold_foil"
+    }
+  ]
+}

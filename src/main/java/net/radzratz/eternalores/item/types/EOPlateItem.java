@@ -1,20 +1,34 @@
 package net.radzratz.eternalores.item.types;
 
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
-import net.radzratz.eternalores.item.types.enums.EOMaterialFormType;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import org.jetbrains.annotations.NotNull;
 
-public class EOPlateItem extends Item
-{
-    private final EOMaterialFormType plateType;
+import java.util.List;
+import java.util.function.BooleanSupplier;
 
-    public EOPlateItem(EOMaterialFormType type, Properties properties)
-    {
-        super(properties);
-        this.plateType = type;
+import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;
+import static net.radzratz.eternalores.util.config.EOTooltipConfig.CFG;
+import static net.radzratz.eternalores.util.lang.EOLangKeys.*;
+
+public class EOPlateItem extends EOConfigItem {
+    public EOPlateItem(Properties properties, BooleanSupplier materialSet, BooleanSupplier individual) {
+        super(properties, materialSet, individual);
     }
 
-    public EOMaterialFormType getPlateType()
-    {
-        return plateType;
+    @Override
+    public void appendHoverText(@NotNull ItemStack stack, Item.@NotNull TooltipContext context, @NotNull List<Component> tooltip, @NotNull TooltipFlag flag) {
+        super.appendHoverText(stack, context, tooltip, flag);
+
+        Item item = stack.getItem();
+
+        if (CFG.EO_TOOLTIPS.temictetlPlate.get()) {
+            if (item == TEMICTETL_SET.PLATE.get()) {
+                tooltip.add(Component.translatable(TEMICTETL_PLATE_DESC).withStyle(ChatFormatting.WHITE));
+            }
+        }
     }
 }

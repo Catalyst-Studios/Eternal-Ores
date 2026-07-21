@@ -1,27 +1,36 @@
 package net.radzratz.eternalores.block.types;
 
-import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.radzratz.eternalores.block.types.enums.EOBlockTier;
 import net.radzratz.eternalores.block.types.enums.EOreLayerType;
 
-public class EOreBlock extends Block
-{
+public class EOreBlock extends EOBlock {
     private final EOreLayerType layerType;
-    private final EOBlockTier blockTier;
+    private final DeferredItem<?> drops;
+    private final int minDrop;
+    private final int maxDrop;
 
-    public EOreBlock(EOreLayerType layerType, EOBlockTier blockTier,Properties properties)
-    {
-        super(properties);
-        this.layerType = layerType;
-        this.blockTier = blockTier;
+    public EOreBlock(EOreLayerType type, EOBlockTier tier, DeferredItem<?> drops, int minDrop, int maxDrop, Properties props) {
+        super(tier, props);
+        this.layerType = type;
+        this.drops = drops;
+        this.minDrop = minDrop;
+        this.maxDrop = maxDrop;
     }
 
-    public EOreLayerType getLayerType()
-    {
+    public EOreLayerType getLayerType() {
         return layerType;
     }
-    public EOBlockTier getTier()
-    {
-        return blockTier;
+
+    public DeferredItem<?> getDrops() {
+        return drops;
+    }
+
+    public int getMinDrop() {
+        return minDrop;
+    }
+
+    public int getMaxDrop() {
+        return maxDrop;
     }
 }

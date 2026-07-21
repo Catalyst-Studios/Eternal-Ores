@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:gem_shards/quantiquarite"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "id": "eternalores:quantiquarite_small_dust"
+    }
+  ]
+}

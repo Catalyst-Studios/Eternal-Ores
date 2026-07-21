@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_end",
+  "features": "eternalores:end_pyrolite_placed",
+  "ore": "eternalores:pyrolite_end",
+  "step": "underground_ores"
+}

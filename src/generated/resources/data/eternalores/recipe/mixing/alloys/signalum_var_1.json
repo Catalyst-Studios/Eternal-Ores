@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "c:ingots/copper"
+    },
+    {
+      "tag": "c:blends/energetic"
+    },
+    {
+      "tag": "c:dusts/redstone"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "eternalores:signalum_ingot"
+    }
+  ]
+}

@@ -1,11 +1,9 @@
 package net.radzratz.eternalores.item.types;
 
-import net.minecraft.world.item.Item;
+import java.util.function.BooleanSupplier;
 
-public class EORawMaterialItem extends Item
-{
-    public EORawMaterialItem(Properties properties)
-    {
-        super(properties);
+public class EORawMaterialItem extends EOConfigItem {
+    public EORawMaterialItem(Properties properties, BooleanSupplier materialSet, BooleanSupplier individual) {
+        super(properties, materialSet, individual);
     }
 }

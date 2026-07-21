@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/graphite"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:graphite_small_dust"
+  }
+}

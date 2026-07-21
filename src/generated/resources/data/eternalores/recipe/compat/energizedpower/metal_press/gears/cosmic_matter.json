@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:metal_press",
+  "ingredient": {
+    "tag": "c:plates/cosmic_matter"
+  },
+  "inputCount": 2,
+  "output": {
+    "item": "eternalores:gear_cosmic_matter"
+  },
+  "pressMold": {
+    "item": "eternalores:mold_gear"
+  }
+}

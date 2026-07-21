@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "tag": "c:end_stones"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "oritech:enderic_compound"
+    },
+    {
+      "count": 1,
+      "id": "eternalores:end_stone_dust"
+    }
+  ],
+  "time": 210
+}

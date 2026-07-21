@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#eternalores:is_mining_dim",
+  "features": "eternalores:mining_anthracite_coal_placed",
+  "ore": "eternalores:anthracite_mining",
+  "step": "underground_ores"
+}

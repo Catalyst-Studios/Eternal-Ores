@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "tag": "c:ores/salt"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 5,
+        "id": "eternalores:salt_dust"
+      }
+    },
+    {
+      "result": {
+        "count": 3,
+        "id": "eternalores:magnesium_small_dust"
+      }
+    }
+  ]
+}

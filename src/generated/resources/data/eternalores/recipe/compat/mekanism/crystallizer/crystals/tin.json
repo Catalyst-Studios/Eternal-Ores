@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crystallizing",
+  "input": {
+    "amount": 200,
+    "chemical": "mekanism:clean_tin"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:crystal_tin"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:nickel_small_clump",
+    {
+      "id": "oritech:small_nickel_clump",
+      "required": false
+    }
+  ]
+}

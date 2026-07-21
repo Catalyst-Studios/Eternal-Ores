@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:alloy_furnace",
+  "inputs": [
+    {
+      "input": {
+        "tag": "c:ingots/biosteel"
+      }
+    },
+    {
+      "input": {
+        "tag": "c:blends/nether"
+      }
+    },
+    {
+      "input": {
+        "item": "minecraft:fire_charge"
+      }
+    }
+  ],
+  "output": {
+    "item": "eternalores:nethersteel_ingot"
+  },
+  "ticks": 500
+}

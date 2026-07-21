@@ -1,0 +1,64 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:pulverizer",
+  "ingredient": {
+    "tag": "c:ores/lapis"
+  },
+  "output": {
+    "output": {
+      "count": 9,
+      "item": "minecraft:lapis_lazuli"
+    },
+    "percentages": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.5,
+      0.5,
+      0.4,
+      0.25,
+      0.25,
+      0.1,
+      0.1
+    ],
+    "percentagesAdvanced": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.75,
+      0.75,
+      0.5,
+      0.5,
+      0.3,
+      0.3
+    ]
+  },
+  "secondaryOutput": {
+    "output": {
+      "count": 3,
+      "item": "eternalores:sulfur_small_dust"
+    },
+    "percentages": [
+      1.0,
+      0.45,
+      0.25,
+      0.1
+    ],
+    "percentagesAdvanced": [
+      1.0,
+      0.55,
+      0.45,
+      0.3
+    ]
+  }
+}

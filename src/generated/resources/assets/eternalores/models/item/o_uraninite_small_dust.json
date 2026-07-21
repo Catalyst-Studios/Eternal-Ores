@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "eternalores:item/small_dusts/o_uraninite_small_dust"
-  }
-}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/prismarine"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:prismarine_small_dust"
+  }
+}

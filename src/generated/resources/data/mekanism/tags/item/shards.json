@@ -1,14 +1,112 @@
 {
   "values": [
-    "eternalores:shard_aluminum",
-    "eternalores:shard_catalyrium",
-    "eternalores:shard_cobalt",
-    "eternalores:shard_gallium",
-    "eternalores:shard_iridium",
-    "eternalores:shard_nickel",
-    "eternalores:shard_platinum",
-    "eternalores:shard_silver",
-    "eternalores:shard_uraninite",
-    "eternalores:shard_zinc"
+    {
+      "id": "eternalores:shard_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:shard_zinc",
+      "required": false
+    }
   ]
 }

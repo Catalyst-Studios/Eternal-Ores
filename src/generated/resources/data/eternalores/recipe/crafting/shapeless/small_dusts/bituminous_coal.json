@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/bituminous_coal"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:bituminous_coal_small_dust"
+  }
+}

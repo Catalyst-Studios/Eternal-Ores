@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "eternalores:niter_geoshard",
+      "required": false
+    }
+  ]
+}

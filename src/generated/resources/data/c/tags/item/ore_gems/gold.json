@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:gold_gem",
+    {
+      "id": "oritech:gold_gem",
+      "required": false
+    }
+  ]
+}

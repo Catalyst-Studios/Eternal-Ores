@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalores:block/ore_nether/nether_black_quartz_ore_block"
+  }
+}

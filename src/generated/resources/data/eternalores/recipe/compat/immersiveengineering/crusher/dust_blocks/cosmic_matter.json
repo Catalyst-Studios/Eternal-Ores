@@ -1,0 +1,16 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:crusher",
+  "energy": 9500,
+  "input": {
+    "tag": "c:storage_blocks/cosmic_matter"
+  },
+  "result": {
+    "id": "eternalores:cosmic_matter_dust_block"
+  }
+}

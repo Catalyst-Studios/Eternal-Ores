@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/signalum"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:signalum_small_dust"
+  }
+}

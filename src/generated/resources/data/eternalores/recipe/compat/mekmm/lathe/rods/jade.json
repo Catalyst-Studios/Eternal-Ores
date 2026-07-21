@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekmm"
+    }
+  ],
+  "type": "mekmm:lathe",
+  "input": {
+    "count": 1,
+    "tag": "c:gems/jade"
+  },
+  "output": {
+    "count": 2,
+    "id": "eternalores:rod_jade"
+  }
+}

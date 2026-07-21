@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:storage_blocks/spectral_sky_bluerite"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:spectral_sky_bluerite_dust_block"
+  }
+}

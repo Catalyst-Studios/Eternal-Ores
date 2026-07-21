@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "tag": "c:storage_blocks/blaze"
+  },
+  "output": {
+    "count": 1,
+    "id": "eternalores:blaze_dust_block"
+  }
+}

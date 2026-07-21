@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "item": "minecraft:chorus_plant"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:biomass"
+    }
+  ],
+  "time": 210
+}

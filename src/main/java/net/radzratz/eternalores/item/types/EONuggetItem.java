@@ -1,11 +1,9 @@
 package net.radzratz.eternalores.item.types;
 
-import net.minecraft.world.item.Item;
+import java.util.function.BooleanSupplier;
 
-public class EONuggetItem extends Item
-{
-    public EONuggetItem(Properties properties)
-    {
-        super(properties);
+public class EONuggetItem extends EOConfigItem {
+    public EONuggetItem(Properties properties, BooleanSupplier materialSet, BooleanSupplier individual) {
+        super(properties, materialSet, individual);
     }
 }

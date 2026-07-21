@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    },
+    {
+      "type": "eternalores:chemical_enabled",
+      "chemical": "eternalores:lapis"
+    }
+  ],
+  "type": "mekanism:chemical_conversion",
+  "input": {
+    "count": 1,
+    "tag": "c:dusts/lapis"
+  },
+  "output": {
+    "amount": 10,
+    "id": "eternalores:lapis"
+  }
+}

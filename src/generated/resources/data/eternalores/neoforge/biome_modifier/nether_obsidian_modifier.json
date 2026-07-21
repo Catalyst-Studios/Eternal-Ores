@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_nether",
+  "features": "eternalores:nether_obsidian_placed",
+  "ore": "eternalores:obsidian_nether",
+  "step": "underground_ores"
+}

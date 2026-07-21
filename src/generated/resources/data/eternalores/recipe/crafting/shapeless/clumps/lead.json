@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:clumps/lead"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:lead_small_clump"
+  }
+}

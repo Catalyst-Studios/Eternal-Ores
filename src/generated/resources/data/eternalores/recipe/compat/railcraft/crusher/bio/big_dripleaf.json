@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "railcraft"
+    }
+  ],
+  "type": "railcraft:crusher",
+  "ingredient": {
+    "item": "minecraft:big_dripleaf"
+  },
+  "outputs": [
+    {
+      "count": 3,
+      "probability": 1.0,
+      "result": {
+        "item": "eternalores:biomass"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/purpur"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:purpur_small_dust"
+  }
+}

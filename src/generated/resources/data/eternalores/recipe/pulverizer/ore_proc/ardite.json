@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:pulverizer",
+  "ingredients": [
+    {
+      "tag": "c:ores/ardite"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "eternalores:raw_ardite"
+    }
+  ],
+  "time": 100
+}

@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:uraninite_ingot"
+    "eternalores:uraninite_ingot",
+    {
+      "id": "powah:uraninite",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:centrifuge",
+  "ingredients": [
+    {
+      "tag": "c:dirty_dusts/molybdenum"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "eternalores:molybdenum_dust"
+    },
+    {
+      "count": 2,
+      "id": "eternalores:stone_small_dust"
+    }
+  ],
+  "time": 100
+}

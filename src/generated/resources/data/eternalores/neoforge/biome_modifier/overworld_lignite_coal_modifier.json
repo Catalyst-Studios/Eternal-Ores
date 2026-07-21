@@ -1,0 +1,7 @@
+{
+  "type": "eternalores:config_ore_modifier",
+  "biomes": "#minecraft:is_overworld",
+  "features": "eternalores:overworld_lignite_coal_placed",
+  "ore": "eternalores:lignite_overworld",
+  "step": "underground_ores"
+}

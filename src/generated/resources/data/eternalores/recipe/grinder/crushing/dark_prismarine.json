@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "oritech"
+    }
+  ],
+  "type": "oritech:grinder",
+  "ingredients": [
+    {
+      "item": "minecraft:dark_prismarine"
+    }
+  ],
+  "results": [
+    {
+      "count": 8,
+      "id": "minecraft:prismarine_shard"
+    }
+  ],
+  "time": 210
+}

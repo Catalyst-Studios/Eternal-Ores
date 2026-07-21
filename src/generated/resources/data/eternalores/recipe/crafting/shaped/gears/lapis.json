@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "tag": "c:tools/gem_cutters"
+    },
+    "I": {
+      "tag": "c:gems/lapis"
+    }
+  },
+  "pattern": [
+    " I ",
+    "IHI",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "eternalores:gear_lapis"
+  }
+}

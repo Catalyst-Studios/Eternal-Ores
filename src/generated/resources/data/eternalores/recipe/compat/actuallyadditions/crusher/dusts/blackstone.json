@@ -1,0 +1,20 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "actuallyadditions"
+    }
+  ],
+  "type": "actuallyadditions:crushing",
+  "ingredient": {
+    "item": "minecraft:blackstone"
+  },
+  "result": [
+    {
+      "result": {
+        "count": 1,
+        "id": "eternalores:blackstone_dust"
+      }
+    }
+  ]
+}
