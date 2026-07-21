@@ -432,7 +432,7 @@ public class EOLocalizationEN_US extends LanguageProvider {
     }
 
     protected String coalName(String mat) {
-        return mat + " Coal";
+        return mat;
     }
 
     protected String hammerName(String mat) {

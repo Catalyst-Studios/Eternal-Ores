@@ -1,5 +1,6 @@
 package net.radzratz.eternalores.item.special.prospectors.hud;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.Screen;
 
 import net.minecraft.ChatFormatting;
@@ -17,6 +18,8 @@ public class EOBasicHudScreen extends Screen {
     private int boxX, boxY;
     private int boxWidth, boxHeight;
 
+    private int previousBlurriness;
+
     private static final EOBasicOverlay.ScanData PREVIEW_DATA =
             new EOBasicOverlay.ScanData("iron", 4, 12, 48);
 
@@ -28,7 +31,18 @@ public class EOBasicHudScreen extends Screen {
     protected void init() {
         super.init();
         recalculateBoxFromCurrentPosition();
+
+        var blurOption = Minecraft.getInstance().options.menuBackgroundBlurriness();
+        previousBlurriness = blurOption.get();
+        blurOption.set(0);
     }
+
+    @Override
+    public void onClose() {
+        Minecraft.getInstance().options.menuBackgroundBlurriness().set(previousBlurriness);
+        super.onClose();
+    }
+
     private void recalculateBoxFromCurrentPosition() {
         var overlay = EOBasicOverlay.buildScanComponent(PREVIEW_DATA);
         boxWidth = font.width(overlay) + 4;

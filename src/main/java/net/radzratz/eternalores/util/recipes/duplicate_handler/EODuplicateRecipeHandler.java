@@ -87,13 +87,27 @@ public class EODuplicateRecipeHandler {
                     "foundry/alloy/steel",
                     "refinery/compat/energizedpowerrawsheol/tin",
                     "refinery/compat/immersiveengineering/rawsheol/lead",
+                    "centrifuge/fluid/compat/clumpwet/crushed_uranium",
+                    "centrifuge/fluid/clumpacid/nickel",
+                    "centrifuge/fluid/clumpacid/gold",
+                    "centrifuge/fluid/clumpacid/iron",
+                    "centrifuge/fluid/clumpacid/platinum",
+                    "centrifuge/fluid/clumpacid/copper",
+                    "centrifuge/fluid/clump/nickel",
+                    "centrifuge/fluid/clump/gold",
+                    "centrifuge/fluid/clump/iron",
+                    "centrifuge/fluid/clump/platinum",
+                    "centrifuge/fluid/clump/copper",
                     "centrifuge/fluid/compat/mekanism/clump/tin",
                     "centrifuge/fluid/compat/mekanism/clump/lead",
                     "centrifuge/fluid/compat/create/clump/zinc",
                     "centrifuge/fluid/compat/create/clumpacid/zinc",
                     "centrifuge/fluid/compat/mekanism/clumpacid/osmium",
+                    "centrifuge/fluid/compat/mekanism/clump/osmium",
                     "centrifuge/fluid/compat/mekanism/clumpacid/lead",
-                    "centrifuge/fluid/compat/mekanism/clumpacid/tin"
+                    "centrifuge/fluid/compat/mekanism/clump/lead",
+                    "centrifuge/fluid/compat/mekanism/clumpacid/tin",
+                    "centrifuge/fluid/compat/mekanism/clump/tin"
             )),
             new RecipeGroup(MEKANISM, EODuplicateRecipeConfig.mekanismRecipes, List.of(
                     "crushing/prismarine/shard_from_brick",
@@ -105,7 +119,8 @@ public class EODuplicateRecipeHandler {
                     "compat/ae2/decorative/certus_quartz/crushing/block_to_chiseled_block",
                     "processing/quartz/from_dust",
                     "enriching/enriched/gold",
-                    "enriching/enriched/tin"
+                    "enriching/enriched/tin",
+                    "compat/ae2/certus_quartz_dust_to_silicon"
             ), List.of(
                     "processing/{mat}/slurry/clean",
                     "processing/{mat}/slurry/dirty/from_raw_ore",
