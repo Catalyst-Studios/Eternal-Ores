@@ -51,8 +51,8 @@ repositories {
     }
 
     maven {
-        name = "TerraformersMC"
-        url = "https://maven.terraformersmc.com/"
+        name = "Gnomecraft"
+        url = "https://maven.gnomecraft.net/releases"
     }
 
     maven {
@@ -187,7 +187,7 @@ dependencies {
     implementation "curse.maven:cyclops-core-232758:7786075"
 
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
-    compileOnly "dev.emi:emi-xplat-mojmap:${emi_version}:api"
+    compileOnly "dev.emi:emi-neoforge:${emi_version}:api"
     compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
     compileOnly ("com.almostreliable.mods:almostunified-neoforge:${au_version}")
 

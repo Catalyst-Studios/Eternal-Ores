@@ -90,7 +90,7 @@ Once said permission is given, you must follow these **rules**;
 - **Your project repository must be available at times. If not possible, it can be arranged.**
 - **You cannot redistribute these assets as if they were your own.**
 - **You cannot claim ownership of any these assets.**
-- **If said project's licence is MIT, you must explicitly inform others that certain assets are excluded from said Licence.**
+- **Regardless of your project's license type, you must explicitly inform others that these assets are excluded from said license.**
 
 Otherwise, a proper take down will be requested.
 
