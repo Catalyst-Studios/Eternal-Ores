@@ -35,18 +35,19 @@ import static net.radzratz.eternalores.util.EOUtils.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Blends.BLENDS;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Blends.BLENDS_SILICON;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Clumps.*;
-import static net.radzratz.eternalores.util.tags.item.EOItemTags.Common.MUSHROOM_BLOCKS;
-import static net.radzratz.eternalores.util.tags.item.EOItemTags.Common.RAW_POLYMER;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.Common.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Compat.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.DustBlocks.ITEM_DUST_BLOCK_COAL_COKE;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.DustBlocks.ITEM_DUST_BLOCK_COKE_COAL_R;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Dusts.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Enriched.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Gears.*;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.GemShards.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Ingots.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Items.BISMUTH;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.OreGems.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Ores.*;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.Pebbles.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Plates.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Rods.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.SmallClumps.*;
@@ -184,6 +185,32 @@ public class EOItemTagProvider extends ItemTagsProvider {
                 TUFF_SET.SMALL_DUST.get()
         );
 
+        tag(ETERNAL_STONES).add(
+                STONE,
+                ANDESITE,
+                GRANITE,
+                DEEPSLATE,
+                TUFF,
+                DIORITE,
+                CALCITE,
+                BLACKSTONE,
+                END_STONE,
+                NETHERRACK,
+                BASALT
+        );
+
+        tag(ETERNAL_ANDESITE).add(ANDESITE);
+        tag(ETERNAL_BASALT).add(BASALT);
+        tag(ETERNAL_BLACKSTONE).add(BLACKSTONE);
+        tag(ETERNAL_CALCITE).add(CALCITE);
+        tag(ETERNAL_DEEPSLATE).add(DEEPSLATE);
+        tag(ETERNAL_DIORITE).add(DIORITE);
+        tag(ETERNAL_END_STONE).add(END_STONE);
+        tag(ETERNAL_GRANITE).add(GRANITE);
+        tag(ETERNAL_NETHERRACK).add(NETHERRACK);
+        tag(ETERNAL_STONE).add(STONE);
+        tag(ETERNAL_TUFF).add(TUFF);
+
         tag(ITEM_STORAGE_QUARTZ).add(QUARTZ_BLOCK);
         tag(ITEM_STORAGE_AMETHYST).add(AMETHYST_BLOCK);
 
@@ -279,6 +306,41 @@ public class EOItemTagProvider extends ItemTagsProvider {
         powahOptional(INGOTS, "uraninite");
         powahOptional(INGOTS_URANINITE, "uraninite");
 
+        actuallyOptional(GEM_SHARDS, "diamatine_crystal_shard");
+        actuallyOptional(GEM_SHARDS_DIAMATINE, "diamatine_crystal_shard");
+        actuallyOptional(GEM_SHARDS, "emeradic_crystal_shard");
+        actuallyOptional(GEM_SHARDS_EMERADIC, "emeradic_crystal_shard");
+        actuallyOptional(GEM_SHARDS, "enori_crystal_shard");
+        actuallyOptional(GEM_SHARDS_ENORI, "enori_crystal_shard");
+        actuallyOptional(GEM_SHARDS, "palis_crystal_shard");
+        actuallyOptional(GEM_SHARDS_PALIS, "palis_crystal_shard");
+        actuallyOptional(GEM_SHARDS, "restonia_crystal_shard");
+        actuallyOptional(GEM_SHARDS_RESTONIA, "restonia_crystal_shard");
+        actuallyOptional(GEM_SHARDS, "void_crystal_shard");
+        actuallyOptional(GEM_SHARDS_VOID_CRYSTAL, "void_crystal_shard");
+
+        energizedOptional(PEBBLES, "stone_pebble");
+        energizedOptional(PEBBLE_STONE, "stone_pebble");
+
+        exDeorumOptional(PEBBLES, "stone_pebble");
+        exDeorumOptional(PEBBLE_STONE, "stone_pebble");
+        exDeorumOptional(PEBBLES, "diorite_pebble");
+        exDeorumOptional(PEBBLE_DIORITE, "diorite_pebble");
+        exDeorumOptional(PEBBLES, "granite_pebble");
+        exDeorumOptional(PEBBLE_GRANITE, "granite_pebble");
+        exDeorumOptional(PEBBLES, "andesite_pebble");
+        exDeorumOptional(PEBBLE_ANDESITE, "andesite_pebble");
+        exDeorumOptional(PEBBLES, "deepslate_pebble");
+        exDeorumOptional(PEBBLE_DEEPSLATE, "deepslate_pebble");
+        exDeorumOptional(PEBBLES, "tuff_pebble");
+        exDeorumOptional(PEBBLE_TUFF, "tuff_pebble");
+        exDeorumOptional(PEBBLES, "calcite_pebble");
+        exDeorumOptional(PEBBLE_CALCITE, "calcite_pebble");
+        exDeorumOptional(PEBBLES, "blackstone_pebble");
+        exDeorumOptional(PEBBLE_BLACKSTONE, "blackstone_pebble");
+        exDeorumOptional(PEBBLES, "basalt_pebble");
+        exDeorumOptional(PEBBLE_BASALT, "basalt_pebble");
+
         removal(DUSTS_SAWDUST_R, WOOD_SET.DUST.get());
         removal(DUSTS_COKE_COAL_R, COKE_SET.DUST.get());
         removal(SMALL_DUSTS_COKE_COAL_R, COKE_SET.SMALL_DUST.get());
@@ -299,6 +361,7 @@ public class EOItemTagProvider extends ItemTagsProvider {
         tag(iTag).remove(item);
     }
 
+    @SuppressWarnings("all")
     private void extendedAEOptional(TagKey<Item> iTag, String path) {
         tag(iTag).addOptional(EXTEND_AE(path));
     }
@@ -315,7 +378,21 @@ public class EOItemTagProvider extends ItemTagsProvider {
         tag(iTag).addOptional(MEK(path));
     }
 
+    @SuppressWarnings("all")
     private void powahOptional(TagKey<Item> iTag, String path) {
         tag(iTag).addOptional(POW(path));
+    }
+
+    private void actuallyOptional(TagKey<Item> iTag, String path) {
+        tag(iTag).addOptional(AA(path));
+    }
+
+    @SuppressWarnings("all")
+    private void energizedOptional(TagKey<Item> iTag, String path) {
+        tag(iTag).addOptional(EP(path));
+    }
+
+    private void exDeorumOptional(TagKey<Item> iTag, String path) {
+        tag(iTag).addOptional(EX(path));
     }
 }

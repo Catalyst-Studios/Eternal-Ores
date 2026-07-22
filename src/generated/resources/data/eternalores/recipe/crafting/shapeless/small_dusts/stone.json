@@ -3,11 +3,14 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "c:dusts/stone"
+      "tag": "c:tools/crushing_hammers"
+    },
+    {
+      "item": "eternalores:stone_pebble"
     }
   ],
   "result": {
-    "count": 9,
+    "count": 2,
     "id": "eternalores:stone_small_dust"
   }
 }

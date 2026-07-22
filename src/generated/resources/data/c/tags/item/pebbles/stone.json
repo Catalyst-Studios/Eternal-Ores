@@ -1,5 +1,13 @@
 {
   "values": [
-    "eternalores:stone_pebble"
+    "eternalores:stone_pebble",
+    {
+      "id": "energizedpower:stone_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:stone_pebble",
+      "required": false
+    }
   ]
 }

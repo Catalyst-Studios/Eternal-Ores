@@ -109,12 +109,12 @@ public class EOCraftingRecipes extends RecipeProvider {
             shapeless(yeet, HAMMERS, r.input(), r.result(), r.resultCount(), base + r.sfx());
         });
 
-        Stream.of(FROM_BLOCK).flatMap(List::stream).forEach(r -> {
+        Stream.of(SHAPELESS).flatMap(List::stream).forEach(r -> {
             String base = resolveRecipeId(r.grp(), paths);
             shapeless(yeet, r.input(), null, r.result(), r.resultCount(), base + r.sfx());
         });
 
-        Stream.of(TO_BLOCK).flatMap(List::stream).forEach(r -> {
+        Stream.of(SHAPED).flatMap(List::stream).forEach(r -> {
             String base = resolveRecipeId(r.grp(), paths);
             shaped(yeet, r.input(), null, r.result(), r.resultCount(), base + r.sfx(), "block");
         });
@@ -133,6 +133,23 @@ public class EOCraftingRecipes extends RecipeProvider {
                 // Dust Block -> Dust
                 if (generatedRecipes.add("dust_blocks_:" + mat) && !mat.equals("coke_coal") && out.DUST != null) {
                     shapeless(yeet, inp.DUST_BLOCK, null, out.DUST, isFours ? 4 : 9, id.Dust());
+                }
+            }
+
+            if (item instanceof EOPebbleItem) {
+                // Pebble -> Stone Type
+                if (generatedRecipes.add("pebbles:" + mat) && out.STONES != null) {
+                    shaped(yeet, inp.PEBBLES, null, out.STONES, 1, id.Storage(), "fours");
+                }
+
+                // Stone Type + Gem Cutter -> Pebble
+                if (generatedRecipes.add("stone_pebble:" + mat) && out.PEBBLE != null) {
+                    shapeless(yeet, GEM_CUTTERS, inp.STONES, out.PEBBLE, 4, id.Pebble());
+                }
+
+                // Pebble + Hammer -> Small Dust
+                if (generatedRecipes.add("pebble_dust:" + mat) && out.SMALL_DUST != null) {
+                    shapeless(yeet, HAMMERS, inp.PEBBLES, out.SMALL_DUST, 2, id.SmallDust() + "_pebble");
                 }
             }
 

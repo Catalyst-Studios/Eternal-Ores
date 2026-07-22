@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "energizedpower"
+    }
+  ],
+  "type": "energizedpower:filtration_plant",
+  "icon": "eternalores:raw_ultimatitanium",
+  "output": {
+    "output": {
+      "item": "eternalores:stone_pebble"
+    },
+    "percentages": [
+      0.33
+    ]
+  },
+  "secondaryOutput": {
+    "output": {
+      "item": "eternalores:raw_ultimatitanium"
+    },
+    "percentages": [
+      0.002
+    ]
+  }
+}

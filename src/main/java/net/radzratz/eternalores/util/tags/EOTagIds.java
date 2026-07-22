@@ -20,15 +20,18 @@ public class EOTagIds {
     public static String enriched = "enriched/";
     public static String blends = "blends/";
     public static String foilTag = "foils/";
+    @SuppressWarnings("all")
     public static String coalsTag = "coals/";
     public static String coalTag = "coal_";
     public static String fuelTag = "fuels/";
     public static String enrichedTag = "enriched/";
     public static String geoshards = "geore_shards/";
     public static String pebbles = "pebbles/";
+    public static String stonesTag = "stones/";
 
     public static String hammerTag = "tools/crushing_hammers";
     public static String cutterTag = "tools/gem_cutters";
+    @SuppressWarnings("all")
     public static String wireCutTag = "tools/wire_cutters";
 
     public static String storage = "storage_blocks/";

@@ -18,7 +18,7 @@ import static net.radzratz.eternalores.util.EOUtils.EO;
 public class EODimensionTypeRegistry {
     public static final ResourceKey<DimensionType> MINING = ResourceKey.create(Registries.DIMENSION_TYPE, EO("mining"));
 
-    public static void dimensionRegistry(BootstrapContext<DimensionType> ctx) {
+    public static void dimensionTypeRegistry(BootstrapContext<DimensionType> ctx) {
         dimType(ctx,
                 MINING,
                 true,

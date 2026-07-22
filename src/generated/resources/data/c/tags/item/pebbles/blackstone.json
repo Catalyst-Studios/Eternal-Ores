@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:blackstone_pebble"
+    "eternalores:blackstone_pebble",
+    {
+      "id": "exdeorum:blackstone_pebble",
+      "required": false
+    }
   ]
 }

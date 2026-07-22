@@ -10,6 +10,46 @@
     "eternalores:granite_pebble",
     "eternalores:netherrack_pebble",
     "eternalores:stone_pebble",
-    "eternalores:tuff_pebble"
+    "eternalores:tuff_pebble",
+    {
+      "id": "energizedpower:stone_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:stone_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:diorite_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:granite_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:andesite_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:deepslate_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:tuff_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:calcite_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:blackstone_pebble",
+      "required": false
+    },
+    {
+      "id": "exdeorum:basalt_pebble",
+      "required": false
+    }
   ]
 }

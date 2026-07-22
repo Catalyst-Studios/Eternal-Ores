@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:andesite_pebble"
+    "eternalores:andesite_pebble",
+    {
+      "id": "exdeorum:andesite_pebble",
+      "required": false
+    }
   ]
 }

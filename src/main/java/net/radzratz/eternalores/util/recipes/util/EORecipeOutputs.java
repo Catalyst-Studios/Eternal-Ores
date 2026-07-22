@@ -10,8 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import static net.radzratz.eternalores.util.EOUtils.EO;
-import static net.radzratz.eternalores.util.EOUtils.getItemFromAnyNamespace;
+import static net.radzratz.eternalores.util.EOUtils.*;
 
 public class EORecipeOutputs {
     public final Item DUST;
@@ -38,10 +37,12 @@ public class EORecipeOutputs {
     public final Item DUST_BLOCK;
     public final Item RAW;
     public final Item RAW_BLOCK;
+    public final Item PEBBLE;
     public final Item COALS;
     public final Item GEM_SHARD;
     public final Item GEOSHARDS;
     public final Item GEOSHARD_BLOCK;
+    public final Item STONES;
 
     public EORecipeOutputs(String mat, Registry<Item> reg) {
         ResourceLocation gemLocation = GEM_EXCEPTIONS.contains(mat)
@@ -78,9 +79,11 @@ public class EORecipeOutputs {
         this.DUST_BLOCK = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.DUST_BLOCK));
         this.RAW = get(reg, EO(outputRawOre));
         this.RAW_BLOCK = get(reg, EO(EOMaterials.materialPrefixSuffixes.RAW + mat + EOMaterials.materialPrefixSuffixes.BLOCK));
+        this.PEBBLE = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.PEBBLE));
         this.DUST_INGOT = getItemFromAnyNamespace(reg, mat + suffix);
         this.GEOSHARDS = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.GEOSHARDS));
         this.GEOSHARD_BLOCK = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.GEORE_BLOCK));
+        this.STONES = get(reg, MC(mat));
     }
 
     private Item get(Registry<Item> registry, ResourceLocation id) {

@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:deepslate_pebble"
+    "eternalores:deepslate_pebble",
+    {
+      "id": "exdeorum:deepslate_pebble",
+      "required": false
+    }
   ]
 }

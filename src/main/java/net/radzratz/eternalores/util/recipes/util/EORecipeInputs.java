@@ -36,6 +36,7 @@ public class EORecipeInputs {
     public final TagKey<Item> SHARD;
     public final TagKey<Item> ORE_GEM;
     public final TagKey<Item> RAW;
+    public final TagKey<Item> PEBBLES;
     public final TagKey<Item> STORAGE_BLOCK;
     public final TagKey<Item> STORAGE_BLOCK_RAW;
     public final TagKey<Item> RAW_BLOCK_CASE;
@@ -47,6 +48,7 @@ public class EORecipeInputs {
     public final TagKey<Item> GEM_SHARDS;
     public final TagKey<Item> GEOSHARDS;
     public final TagKey<Item> GEOSHARD_BLOCKS;
+    public final TagKey<Item> STONES;
 
     public EORecipeInputs(String mat) {
         String cleanCoal = mat.endsWith("_coal") ? mat.substring(0, mat.length() - 5) : mat;
@@ -81,6 +83,7 @@ public class EORecipeInputs {
         this.SHARD = TagKey.create(reg, C(shardTag + mat));
         this.ORE_GEM = TagKey.create(reg, C(oreGemTag + mat));
         this.RAW = TagKey.create(reg, C(rawTag + mat));
+        this.PEBBLES = TagKey.create(reg, C(pebbles + mat));
         this.STORAGE_BLOCK = TagKey.create(reg, C(storage + mat));
         this.STORAGE_BLOCK_RAW = TagKey.create(reg, C(storage + materialPrefixSuffixes.RAW + mat));
         this.RAW_BLOCK_CASE = TagKey.create(reg, mat.equals("sulfur") ? C(storage + "sulfur") : C(storage + materialPrefixSuffixes.RAW + mat));
@@ -90,6 +93,7 @@ public class EORecipeInputs {
         this.BLENDS = TagKey.create(reg, C(blends + mat));
         this.GEOSHARDS = TagKey.create(reg, GEO(geoshards + mat));
         this.GEOSHARD_BLOCKS = TagKey.create(reg, GEO(geoshardBlock + mat));
+        this.STONES = TagKey.create(reg, EO(stonesTag + mat));
     }
 
     public static EORecipeInputs fromPath(String path) {

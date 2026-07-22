@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:tuff_pebble"
+    "eternalores:tuff_pebble",
+    {
+      "id": "exdeorum:tuff_pebble",
+      "required": false
+    }
   ]
 }

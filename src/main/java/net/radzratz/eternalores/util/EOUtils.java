@@ -76,6 +76,10 @@ public class EOUtils {
     public static final boolean enderioMod = ModList.get().isLoaded(ENDERIO);
     public static final ModLoadedCondition ENDERIO_MOD = new ModLoadedCondition(ENDERIO);
 
+    public static String EX_DEORUM = "exdeorum";
+    public static final boolean exDeorumMod = ModList.get().isLoaded(EX_DEORUM);
+    public static final ModLoadedCondition EX_DEORUM_MOD = new ModLoadedCondition(EX_DEORUM);
+
     public static String CREATE = "create";
     public static final boolean createMod = ModList.get().isLoaded(CREATE);
     public static final ModLoadedCondition CREATE_MOD = new ModLoadedCondition(CREATE);
@@ -222,6 +226,14 @@ public class EOUtils {
 
     public static ResourceLocation POW(String path) {
         return ResourceLocation.fromNamespaceAndPath(POWAH, path);
+    }
+
+    public static ResourceLocation AA(String path) {
+        return ResourceLocation.fromNamespaceAndPath(ACTUALLY_ADDITIONS, path);
+    }
+
+    public static ResourceLocation EX(String path) {
+        return ResourceLocation.fromNamespaceAndPath(EX_DEORUM, path);
     }
 
     public static Item getItemFromAnyNamespace(Registry<Item> registry, String path) {

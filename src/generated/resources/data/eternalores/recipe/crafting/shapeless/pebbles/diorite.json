@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:tools/gem_cutters"
+    },
+    {
+      "tag": "eternalores:stones/diorite"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:diorite_pebble"
+  }
+}

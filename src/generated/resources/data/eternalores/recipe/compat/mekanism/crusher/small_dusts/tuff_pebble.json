@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "mekanism:crushing",
+  "input": {
+    "count": 1,
+    "item": "eternalores:tuff_pebble"
+  },
+  "output": {
+    "count": 2,
+    "id": "eternalores:tuff_small_dust"
+  }
+}

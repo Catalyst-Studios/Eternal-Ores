@@ -37,6 +37,30 @@
     "eternalores:tanzanite_shard",
     "eternalores:temictetl_shard",
     "eternalores:voiderite_shard",
-    "eternalores:zircon_shard"
+    "eternalores:zircon_shard",
+    {
+      "id": "actuallyadditions:diamatine_crystal_shard",
+      "required": false
+    },
+    {
+      "id": "actuallyadditions:emeradic_crystal_shard",
+      "required": false
+    },
+    {
+      "id": "actuallyadditions:enori_crystal_shard",
+      "required": false
+    },
+    {
+      "id": "actuallyadditions:palis_crystal_shard",
+      "required": false
+    },
+    {
+      "id": "actuallyadditions:restonia_crystal_shard",
+      "required": false
+    },
+    {
+      "id": "actuallyadditions:void_crystal_shard",
+      "required": false
+    }
   ]
 }

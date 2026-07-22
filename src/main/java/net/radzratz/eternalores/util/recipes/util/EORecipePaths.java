@@ -56,6 +56,10 @@ public record EORecipePaths(String id) {
         return EEP + "/sawmill/";
     }
 
+    public String EEPFiltration() {
+        return EEP + "/filtration_plant/";
+    }
+
     // EnderIO
     public String Sag() {
         return EIO + "/sag_milling/";
@@ -322,6 +326,10 @@ public record EORecipePaths(String id) {
 
     public String Storage() {
         return "storage_blocks/" + id;
+    }
+
+    public String Pebble() {
+        return "pebbles/" + id;
     }
 
     public String BioFuel() {

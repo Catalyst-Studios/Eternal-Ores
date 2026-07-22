@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:calcite_pebble"
+    "eternalores:calcite_pebble",
+    {
+      "id": "exdeorum:calcite_pebble",
+      "required": false
+    }
   ]
 }

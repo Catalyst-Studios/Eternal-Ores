@@ -111,6 +111,18 @@ public class EOCommonRecipes {
             new Common(NUGGETS_IRON, IRON_SET.SMALL_DUST.get(), 1, null, 0, "iron", Grp.SMALL_DUST),
             new Common(NUGGETS_GOLD, GOLD_SET.SMALL_DUST.get(), 1, null, 0, "gold", Grp.SMALL_DUST),
 
+            new Common(STONE_SET.PEBBLE.get(), STONE_SET.SMALL_DUST.get(), 2, null, 0, "stone_pebble", Grp.SMALL_DUST),
+            new Common(ANDESITE_SET.PEBBLE.get(), ANDESITE_SET.SMALL_DUST.get(), 2, null, 0, "andesite_pebble", Grp.SMALL_DUST),
+            new Common(BASALT_SET.PEBBLE.get(), BASALT_SET.SMALL_DUST.get(), 2, null, 0, "basalt_pebble", Grp.SMALL_DUST),
+            new Common(BLACKSTONE_SET.PEBBLE.get(), BLACKSTONE_SET.SMALL_DUST.get(), 2, null, 0, "blackstone_pebble", Grp.SMALL_DUST),
+            new Common(CALCITE_SET.PEBBLE.get(), CALCITE_SET.SMALL_DUST.get(), 2, null, 0, "calcite_pebble", Grp.SMALL_DUST),
+            new Common(DEEPSLATE_SET.PEBBLE.get(), DEEPSLATE_SET.SMALL_DUST.get(), 2, null, 0, "deepslate_pebble", Grp.SMALL_DUST),
+            new Common(DIORITE_SET.PEBBLE.get(), DIORITE_SET.SMALL_DUST.get(), 2, null, 0, "diorite_pebble", Grp.SMALL_DUST),
+            new Common(END_STONE_SET.PEBBLE.get(), END_STONE_SET.SMALL_DUST.get(), 2, null, 0, "end_stone_pebble", Grp.SMALL_DUST),
+            new Common(GRANITE_SET.PEBBLE.get(), GRANITE_SET.SMALL_DUST.get(), 2, null, 0, "granite_pebble", Grp.SMALL_DUST),
+            new Common(NETHERRACK_SET.PEBBLE.get(), NETHERRACK_SET.SMALL_DUST.get(), 2, null, 0, "netherrack_pebble", Grp.SMALL_DUST),
+            new Common(TUFF_SET.PEBBLE.get(), TUFF_SET.SMALL_DUST.get(), 2, null, 0, "tuff_pebble", Grp.SMALL_DUST),
+
             new Common(INGOTS_REDSTONE, REDSTONE.asItem(), 1, null, 0, "redstone", Grp.DUST)
     );
 
@@ -177,7 +189,7 @@ public class EOCommonRecipes {
             new Common(TUFF_SET.PLATE.get(), TUFF_SET.DUST.get(), 1, null, 0, "tuff_plate", Grp.RECYCLE)
     );
 
-    public static final List<Common> FROM_BLOCK = List.of(
+    public static final List<Common> SHAPELESS = List.of(
             new Common(ITEM_STORAGE_ENDER_PEARL, ENDER_PEARL, 9, null, 0, "ender_pearl", Grp.PEARL),
             new Common(ITEM_STORAGE_BLAZE, BLAZE_ROD, 9, null, 0, "blaze", Grp.ROD),
             new Common(ITEM_STORAGE_SUGAR, SUGAR, 9, null, 0, "sugar", Grp.MISC),
@@ -217,7 +229,7 @@ public class EOCommonRecipes {
             new Common(COKE_SET.DUST.get().asItem(), COKE_SET.SMALL_DUST.get(), 9, null, 0, "coal_coke", Grp.SMALL_DUST)
     );
 
-    public static final List<Common> TO_BLOCK = List.of(
+    public static final List<Common> SHAPED = List.of(
             new Common(ARMADILLO_SCUTE, ARMADILLO_SCUTE_SET.BLOCK.asItem(), 1, null, 0, "armadillo", Grp.STORAGE),
             new Common(TURTLE_SCUTE, TURTLE_SET.BLOCK.asItem(), 1, null, 0, "turtle", Grp.STORAGE),
             new Common(NAUTILUS_SHELL, NAUTILUS_SHELL_SET.BLOCK.asItem(), 1, null, 0, "nautilus", Grp.STORAGE),
@@ -517,6 +529,7 @@ public class EOCommonRecipes {
             new Alloys(INGOTS_IRON, 1, COAL, 1, null, 0, WROUGHT_IRON_SET.INGOT.get(), 1, WROUGHT_IRON_ID + "_var_7", Grp.ALLOYS)
     );
 
+    @SuppressWarnings("all")
      private static OreProcessing raw(Item primary, int pCnt, Item byproduct, int bCnt, Item clump, Item smallClump, Item byproductSmallClump,
                                       Item byproductDust, Item byproductSmallDust, String sfx) {
          return new OreProcessing(primary, pCnt, byproduct, bCnt, clump, smallClump,
@@ -524,6 +537,7 @@ public class EOCommonRecipes {
                  Grp.ORE_PROC, standardRawChances());
      }
 
+     @SuppressWarnings("all")
      private static OreProcessing extendedRaw(Item primary, int pCnt, Item byproduct, int bCnt, String sfx) {
          return new OreProcessing(primary, pCnt, byproduct, bCnt, null, null, null, null, null,
                  sfx, Grp.ORE_PROC, extendedRawChances());

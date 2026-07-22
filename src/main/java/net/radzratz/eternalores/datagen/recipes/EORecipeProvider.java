@@ -79,6 +79,7 @@ public class EORecipeProvider extends RecipeProvider {
         EEPInductionRecipes.generate(recipeOutput, reg);
         EEPMetalPressRecipes.generate(recipeOutput, reg);
         EEPSawMill.generate(recipeOutput);
+        EEPFiltrationPlantRecipes.generate(recipeOutput);
 
         // Actually Additions
         EOAACrusherRecipes.generate(recipeOutput, reg);

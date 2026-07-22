@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternalores:diorite_pebble"
+    "eternalores:diorite_pebble",
+    {
+      "id": "exdeorum:diorite_pebble",
+      "required": false
+    }
   ]
 }

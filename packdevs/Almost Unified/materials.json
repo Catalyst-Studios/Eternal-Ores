@@ -67,6 +67,7 @@
     "c:enriched/{material}",
     "c:pellets/{material}",
     "c:blends/{material}",
+    "c:pebbles/{material}",
     "c:silicon",
     "c:coal_coke"
   ],

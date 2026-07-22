@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:tools/gem_cutters"
+    },
+    {
+      "tag": "eternalores:stones/deepslate"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "eternalores:deepslate_pebble"
+  }
+}

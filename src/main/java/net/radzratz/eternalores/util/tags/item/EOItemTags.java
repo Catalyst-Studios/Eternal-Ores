@@ -13,6 +13,24 @@ public class EOItemTags {
     public static class Common {
         public static final TagKey<Item> MUSHROOM_BLOCKS = crteCGeneralTag("mushroom_blocks");
         public static final TagKey<Item> RAW_POLYMER = crteCGeneralTag("raw_biopolymer");
+
+        public static final TagKey<Item> ETERNAL_STONES = crteEOGeneralTag("stones");
+
+        public static final TagKey<Item> ETERNAL_STONE = crteEternalStoneTag("stone");
+        public static final TagKey<Item> ETERNAL_GRANITE = crteEternalStoneTag("granite");
+        public static final TagKey<Item> ETERNAL_DIORITE = crteEternalStoneTag("diorite");
+        public static final TagKey<Item> ETERNAL_ANDESITE = crteEternalStoneTag("andesite");
+        public static final TagKey<Item> ETERNAL_TUFF = crteEternalStoneTag("tuff");
+        public static final TagKey<Item> ETERNAL_DEEPSLATE = crteEternalStoneTag("deepslate");
+        public static final TagKey<Item> ETERNAL_BLACKSTONE = crteEternalStoneTag("blackstone");
+        public static final TagKey<Item> ETERNAL_BASALT = crteEternalStoneTag("basalt");
+        public static final TagKey<Item> ETERNAL_CALCITE = crteEternalStoneTag("calcite");
+        public static final TagKey<Item> ETERNAL_END_STONE = crteEternalStoneTag("end_stone");
+        public static final TagKey<Item> ETERNAL_NETHERRACK = crteEternalStoneTag("netherrack");
+
+        private static TagKey<Item> crteEternalStoneTag(String name) {
+            return ItemTags.create(EO(stonesTag + name));
+        }
     }
 
     public static class Compat {
@@ -377,6 +395,14 @@ public class EOItemTags {
         public static final TagKey<Item> GEM_SHARDS_QUARTZ = createGemShardTags("quartz");
         public static final TagKey<Item> GEM_SHARDS_AMETHYST = createGemShardTags("amethyst");
 
+        public static final TagKey<Item> GEM_SHARDS_ENORI = createGemShardTags("enori_crystal");
+        public static final TagKey<Item> GEM_SHARDS_DIAMATINE = createGemShardTags("diamatine_crystal");
+        public static final TagKey<Item> GEM_SHARDS_EMERADIC = createGemShardTags("emeradic_crystal");
+        public static final TagKey<Item> GEM_SHARDS_PALIS = createGemShardTags("palis_crystal");
+        public static final TagKey<Item> GEM_SHARDS_VOID = createGemShardTags("void_crystal");
+        public static final TagKey<Item> GEM_SHARDS_RESTONIA = createGemShardTags("restonia_crystal");
+        public static final TagKey<Item> GEM_SHARDS_VOID_CRYSTAL = createGemShardTags("void_crystal");
+
         private static TagKey<Item> createGemShardTags(String path) {
             return ItemTags.create(C(gemShardTag + path));
         }
@@ -568,6 +594,21 @@ public class EOItemTags {
 
     public static class Pebbles {
         public static final TagKey<Item> PEBBLES = crteCGeneralTag("pebbles");
+
+        public static final TagKey<Item> PEBBLE_STONE = crtePebbleC("stone");
+        public static final TagKey<Item> PEBBLE_GRANITE = crtePebbleC("granite");
+        public static final TagKey<Item> PEBBLE_ANDESITE = crtePebbleC("andesite");
+        public static final TagKey<Item> PEBBLE_BLACKSTONE = crtePebbleC("blackstone");
+        public static final TagKey<Item> PEBBLE_DIORITE = crtePebbleC("diorite");
+        public static final TagKey<Item> PEBBLE_DEEPSLATE = crtePebbleC("deepslate");
+        public static final TagKey<Item> PEBBLE_CALCITE = crtePebbleC("calcite");
+        public static final TagKey<Item> PEBBLE_TUFF = crtePebbleC("tuff");
+        public static final TagKey<Item> PEBBLE_BASALT = crtePebbleC("basalt");
+        public static final TagKey<Item> PEBBLE_END_STONE = crtePebbleC("end_stone");
+
+        private static TagKey<Item> crtePebbleC(String path) {
+            return ItemTags.create(C(pebbles + path));
+        }
     }
 
     public static class StorageBlocks {
