@@ -19,60 +19,78 @@ Within our .json file we only need to add, inside a curly bracket pair, `"id": "
 
 Correct, you only need to provide the .json file the `mod_id`, like `create`, and the wanted `block_id` to compress,
 like `andesite_alloy_block`. Make sure to check the block id in-game.
-
 ```
 [
   { 
     "id": "modid:block_id"
-  }, To add more entries, just repeat the same steps and add a comma at the end of the curly
-  
-  A quick example;
+  }
+]
+```
+Another example
+```
+[
   {
     "id": "create:andesite_alloy_block"
   },  
   {
     "id": "create:experience_block"
   },
-  
-  {
-    If the block_id doesn't match an actual registered block, that entry is skipped with a warning in the log - check your logs if a block doesn't show up.
-  },
-  
-  {
-    "id": "oritech:steel_block"
-    
-    block_id collisions across mods are auto-resolved and both blocks can exist, no action needed.
-    
-    "id": "eternalores:steel_block"
-
-    The highest registered block of the list with the same id has a higher priority.
-    
-    Meaning that if we register oritech's steel block, it will have its mod_id as the block name suffix.
-    'steel_block_oritech'
-  },
-  
-  {
-    Only a single entry is allowed per curly bracket pair.
-  },
-  
-  {
-    Each block needs to be inside its curly brackets, else it will break and de-register any available block, so double check.
-  },
-  
-  {
-    Any unwanted compressed entry can be deleted safely.
+]
+```
+If the `block_id` doesn't match an actual registered block, that entry is skipped with a warning in the log - check your logs if a block doesn't show up.
+```
+[
+  { 
+    "id": "minecraft:cooblestone" 
   }
 ]
 ```
+`block_id` collisions across mods are auto-resolved and both blocks can co-exist, no action needed.
 
-### However, there may be certain instances where our created block doesn't look like it should or its texture is missing.
+The highest registered block of the list with the same id has a higher priority.
+    
+Meaning that if we register oritech's steel block, it will have its `mod_id` as the block name suffix. Something like `'steel_block_oritech'`
+```
+[
+  {
+    "id": "eternalores:steel_block"
+  },
+  {
+    "id": "oritech:steel_block"
+  },
+]
+```
+Only a single entry is allowed per curly bracket pair.
+```
+[
+  {
+    "id": "minecraft:andesite"
+  },
+]
+```
+Each block needs to be inside its curly brackets, else it will break and de-register any available block, so double check.
+```
+[
+  "id": "eternalores:aluminum_block"
+]
+```
+And lastly, any unwanted compressed entry can be deleted safely.
+
+But for safety, only delete unwanted blocks on test builds.
+```
+[
+  Such emptiness
+]
+```
+---
+## However, there may be certain instances where our created block doesn't look like it should or its texture is missing.
 
 Something we did not mention earlier, is that we have 3 optional fields we can add to our entries;
 - `'model_override'`
 - `'no_occlusion'`
 - `'layers'`
 
-And these 3 optional fields are our solution.
+And these 3 optional fields may be our solution.
 
 But with `model override` and `layers` you'll be forced to dig into said mod id `models/block` or `textures/block` paths. So prep yourself.
 
@@ -189,7 +207,7 @@ either look very weird, terrible, or horrible.
 ---
 
 Once you create your own compressed block, restart your game, and you now have a complete set of Compressed Blocks from
-1x to 9x. These blocks are assigned to EO Compressed Block tab, so make sure to check if everything is in place.
+1x to 9x. These blocks are assigned to EO Compressed Block tab automatically, so make sure to check if everything is in place.
 
 Additionally;
 - `compressed-block-config.toml` automatically overrides the previous file to add the newly added entries, this config
@@ -210,4 +228,4 @@ Additionally;
 But what about their Sound and Hardness? Well, Sound is fetched automatically from the original block itself, and hardness is
 hardcoded to `2.0`.
 
-Fully compatible with any system that automatically de/compresses, liek Mega Cells Compression card, or anything similar.
+Fully compatible with any system that automatically de/compresses items, liek the Mega Cells Compression card, or anything similar.

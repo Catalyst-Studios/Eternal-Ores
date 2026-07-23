@@ -77,3 +77,7 @@ If you find this tag annoying, and decide to delete it, you may want to toggle t
 The name suggests it, allows you to heavily modify EO's ores vein size, veins per chunk, if it's rare or not, if it's placement
 is trapezoid or uniform, and if the ore, in any dimension (vanilla ore values only affect the mining dim, not their og dimension) 
 is available or not.
+
+---
+
+### All Previously mentioned configs, *except Prospector HUD*, need to be shipped by default on your modpacks.
