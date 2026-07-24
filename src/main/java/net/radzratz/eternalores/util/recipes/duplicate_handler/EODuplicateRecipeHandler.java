@@ -190,6 +190,8 @@ public class EODuplicateRecipeHandler {
             LOG.info("[EOCommonEvents] Smart: {} recipes remaining after resolution.", resolved.size());
             recipeManager.replaceRecipes(resolved);
         }
+
+        EORecipeCache.clear();
     }
 
     private static void collect(Set<String> list, RecipeGroup group) {

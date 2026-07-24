@@ -21,6 +21,16 @@ public class EORecipeCache extends SimplePreparableReloadListener<Map<ResourceLo
         return RAW_RECIPES.get(id);
     }
 
+    public static void clear()
+    {
+        if(!RAW_RECIPES.isEmpty())
+        {
+            int size = RAW_RECIPES.size();
+            RAW_RECIPES = Map.of();
+            LOG.info("[EORecipeCache] Free {} JSONs from RAM.", size);
+        }
+    }
+
     @Override
     protected @NotNull Map<ResourceLocation, JsonObject> prepare(ResourceManager manager, @NotNull ProfilerFiller profiler) {
         Map<ResourceLocation, JsonObject> map = new HashMap<>();
