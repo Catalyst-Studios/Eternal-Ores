@@ -84,6 +84,16 @@ repositories {
         name = 'Fuzss Resources'
         url = 'https://raw.githubusercontent.com/Fuzss/modresources/main/maven/'
     }
+
+    maven {
+        name = 'Blakes Mods'
+        url = 'https://maven.blakesmods.com'
+    }
+
+    maven {
+        name = "Curios"
+        url = uri("https://maven.theillusivec4.top/")
+    }
 }
 
 base {
@@ -154,7 +164,6 @@ dependencies {
     implementation "curse.maven:iron-furnaces-${ironfurnaces_version}"
     implementation "curse.maven:energized-power-${energizedpower_version}"
     implementation "curse.maven:actually-additions-${actuallyadditions_version}"
-    implementation "curse.maven:curios-${curios_version}"
     implementation "com.enderio:${enderio_version}"
     implementation "curse.maven:forbidden-arcanus-${forbidden_arcanus_version}"
     implementation "curse.maven:valhelsia-core-416935:5847440"
@@ -171,6 +180,8 @@ dependencies {
     implementation "curse.maven:geore-530544:7563411"
     implementation "curse.maven:refined-storage-243076:8067850"
     implementation "curse.maven:ars-nouveau-401955:7764018"
+    implementation "com.blakebr0.mysticalagriculture:MysticalAgriculture:${minecraft_version}-${mystical_agriculture_version}"
+    implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}"
 
     //implementation "curse.maven:evolved-mekanism-1230085:7599592"
     implementation "curse.maven:applied-energistics-2-223794:7027323"
@@ -179,11 +190,13 @@ dependencies {
     implementation "vazkii.patchouli:Patchouli:${patchouli_version}"
     implementation "xyz.brassgoggledcoders:PatchouliProvider:${patchouli_provider_version}"
     implementation "curse.maven:cyclops-core-232758:7786075"
+    implementation "com.blakebr0.cucumber:Cucumber:${minecraft_version}-${cucumber_version}"
 
     compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
     compileOnly "dev.emi:emi-neoforge:${emi_version}:api"
     compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
     compileOnly ("com.almostreliable.mods:almostunified-neoforge:${au_version}")
+    compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
 
     //runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
     runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
@@ -223,6 +236,7 @@ dependencies {
     runtimeOnly "curse.maven:catalyst-graves-1301830:7813241"
     runtimeOnly "curse.maven:almostunified-633823:8127603"
     runtimeOnly "curse.maven:ender-io-endergy-304346:8017169"
+    runtimeOnly "curse.maven:betterf3-401648:5873258"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

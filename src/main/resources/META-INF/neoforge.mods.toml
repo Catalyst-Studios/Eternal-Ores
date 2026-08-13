@@ -150,6 +150,13 @@ ordering="NONE"
 side="BOTH"
 
 [[dependencies.eternalores]]
+modId="mysticalagriculture"
+type="optional"
+versionRange="1.21-8.0.9"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.eternalores]]
 modId="emi"
 type="optional"
 versionRange="1.1.22+1.21.1"

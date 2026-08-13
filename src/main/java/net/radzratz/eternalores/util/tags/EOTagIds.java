@@ -20,14 +20,13 @@ public class EOTagIds {
     public static String enriched = "enriched/";
     public static String blends = "blends/";
     public static String foilTag = "foils/";
-    @SuppressWarnings("all")
-    public static String coalsTag = "coals/";
     public static String coalTag = "coal_";
     public static String fuelTag = "fuels/";
     public static String enrichedTag = "enriched/";
     public static String geoshards = "geore_shards/";
     public static String pebbles = "pebbles/";
     public static String stonesTag = "stones/";
+    public static String pelletTag = "pellets/";
 
     public static String hammerTag = "tools/crushing_hammers";
     public static String cutterTag = "tools/gem_cutters";
@@ -38,6 +37,7 @@ public class EOTagIds {
     public static String dustB = "dust_blocks/";
     public static String ores = "ores/";
     public static String oresIn = "ores_in_ground/";
+    public static String enrichedBlockTag = "enriched_blocks/";
     public static String compressedBlock = "compressed_block/";
     public static String geoshardBlock = "geore_blocks/";
     public static String geoshardBlockStorage = "geore_blocks/storage_blocks/geore_";

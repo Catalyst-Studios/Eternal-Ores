@@ -21,6 +21,7 @@ import java.util.function.BooleanSupplier;
 
 import static net.radzratz.eternalores.item.special.prospectors.renders.EOBasicOverlay.EDIT_PROSPECTOR_HUD;
 import static net.radzratz.eternalores.util.EOUtils.capitalizeWords;
+import static net.radzratz.eternalores.util.EOUtils.curiosMod;
 import static net.radzratz.eternalores.util.config.EOTooltipConfig.CFG;
 import static net.radzratz.eternalores.util.lang.EOLangKeys.*;
 
@@ -164,6 +165,10 @@ public class EOBasicProspector extends EOProspectors {
             tooltip.add(Component.translatable(BASIC_PROSPECTOR_KEY)
                     .append(EDIT_PROSPECTOR_HUD.getTranslatedKeyMessage())
                     .withStyle(ChatFormatting.WHITE));
+
+            if (curiosMod) {
+                tooltip.add(Component.translatable(PROSPECTOR_CURIO).withStyle(ChatFormatting.WHITE));
+            }
 
             if (!linked.isEmpty()) {
                 tooltip.add(Component.translatable(BASIC_PROSPECTOR_LINKED_TO)

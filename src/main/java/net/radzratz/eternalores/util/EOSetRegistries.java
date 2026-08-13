@@ -37,6 +37,7 @@ public class EOSetRegistries {
     public static final DeferredItem<EOMolds> MOLD_FOIL;
 
     static {
+        // TODO: Material Type Enriched Block Animated Sprites
         // Tools
         DESTROYA = rgtrFinder("finder");
 
@@ -140,17 +141,17 @@ public class EOSetRegistries {
         COAL_SET = of(COAL_ID, CFG.EOCoalSet).coal(16000, 1600, 178, 3f, METAL, T_STONE).build();
         CHARCOAL_SET = of(CHARCOAL_ID, CFG.EOCharcoalSet).mainAllVanillaCoal(16000, 1600, 178, 3f, METAL, T_STONE).build();
 
-        STONE_SET = of(STONE_ID, CFG.EOStoneSet).stoneSets().build();
-        BLACKSTONE_SET = of(BLACKSTONE_ID, CFG.EOBlackstoneSet).stoneSets().build();
-        GRANITE_SET = of(GRANITE_ID, CFG.EOGraniteSet).stoneSets().build();
-        DIORITE_SET = of(DIORITE_ID, CFG.EODioriteSet).stoneSets().build();
-        BASALT_SET = of(BASALT_ID, CFG.EOBasaltSet).stoneSets().build();
-        CALCITE_SET = of(CALCITE_ID, CFG.EOCalciteSet).stoneSets().build();
-        DEEPSLATE_SET = of(DEEPSLATE_ID, CFG.EODeepslateSet).stoneSets().build();
-        NETHERRACK_SET = of(NETHERRACK_ID, CFG.EONetherrackSet).stoneSets().build();
-        END_STONE_SET = of(END_STONE_ID, CFG.EOEndstoneSet).stoneSets().build();
-        TUFF_SET = of(TUFF_ID, CFG.EOTuffSet).stoneSets().build();
-        ANDESITE_SET = of(ANDESITE_ID, CFG.EOAndesiteSet).stoneSets().build();
+        STONE_SET = of(STONE_ID, CFG.EOStoneSet).stoneSets(2f, T_WOOD).build();
+        BLACKSTONE_SET = of(BLACKSTONE_ID, CFG.EOBlackstoneSet).stoneSets(2f, T_WOOD).build();
+        GRANITE_SET = of(GRANITE_ID, CFG.EOGraniteSet).stoneSets(2f, T_WOOD).build();
+        DIORITE_SET = of(DIORITE_ID, CFG.EODioriteSet).stoneSets(2f, T_WOOD).build();
+        BASALT_SET = of(BASALT_ID, CFG.EOBasaltSet).stoneSets(2f, T_WOOD).build();
+        CALCITE_SET = of(CALCITE_ID, CFG.EOCalciteSet).stoneSets(2f, T_WOOD).build();
+        DEEPSLATE_SET = of(DEEPSLATE_ID, CFG.EODeepslateSet).stoneSets(2f, T_WOOD).build();
+        NETHERRACK_SET = of(NETHERRACK_ID, CFG.EONetherrackSet).stoneSets(2f, T_WOOD).build();
+        END_STONE_SET = of(END_STONE_ID, CFG.EOEndstoneSet).stoneSets(2f, T_WOOD).build();
+        TUFF_SET = of(TUFF_ID, CFG.EOTuffSet).stoneSets(2f, T_WOOD).build();
+        ANDESITE_SET = of(ANDESITE_ID, CFG.EOAndesiteSet).stoneSets(2f, T_WOOD).build();
         DRIPSTONE_SET = of(DRIPSTONE_ID, CFG.EODripstoneSet).onlyDusts().build();
         PURPUR_SET = of(PURPUR_ID, CFG.EOPurpurSet).onlyDusts().build();
 
@@ -167,7 +168,7 @@ public class EOSetRegistries {
         NETHER_WART_SET = of(NETHER_WART_ID, CFG.EONetherWartSet).onlyDusts().build();
         WARPED_NETHER_WART_SET = of(WARPED_NETHER_WART_ID, CFG.EOWarpedNetherWartSet).onlyDusts().build();
         SCULK_SET = of(SCULK_ID, CFG.EOSculkSet).onlyDusts().build();
-        GLOWSTONE_SET = of(GLOWSTONE_ID, CFG.EOBlazeSet).enriched().build();
+        GLOWSTONE_SET = of(GLOWSTONE_ID, CFG.EOGlowstoneSet).enriched(2f, T_STONE).build();
         WOOD_SET = of(WOOD_ID, CFG.EOWoodenSet).woodSet(SAWDUST_ID).build();
         SUGAR_SET = of(SUGAR_ID, CFG.EOSugarSet).block(1f, SAND, T_WOOD).build();
 
@@ -276,17 +277,17 @@ public class EOSetRegistries {
         PHOSPHORUS_SET = of(PHOSPHORUS_ID, CFG.EOPhosphorusSet).dustAndBlocks(1f, T_STONE).build();
         RARE_EARTH_SET = of(RARE_EARTH_ID, CFG.EORareEarthSet).dustAndBlocks(1f, T_IRON).build();
 
-        ANTIMATTER_SET = of(ANTIMATTER_ID, CFG.EOAntimatterSet).block(3f, METAL, T_NETHERITE).build();
-        EXOTIC_MATTER_SET = of(EXOTIC_MATTER_ID, CFG.EOExoticMatterSet).block(3f, METAL, T_NETHERITE).build();
-        STRANGE_MATTER_SET = of(STRANGE_MATTER_ID, CFG.EOStrangeMatterSet).block(3f, METAL, T_NETHERITE).build();
+        ANTIMATTER_SET = of(ANTIMATTER_ID, CFG.EOAntimatterSet).matters(3f, METAL, T_NETHERITE).build();
+        EXOTIC_MATTER_SET = of(EXOTIC_MATTER_ID, CFG.EOExoticMatterSet).matters(3f, METAL, T_NETHERITE).build();
+        STRANGE_MATTER_SET = of(STRANGE_MATTER_ID, CFG.EOStrangeMatterSet).matters(3f, METAL, T_NETHERITE).build();
 
-        SHADOW_BLEND_SET = of(SHADOW_BLEND_ID, CFG.EOShadowBlendSet).mainBlend().build();
+        SHADOW_BLEND_SET = of(SHADOW_BLEND_ID, CFG.EOShadowBlendSet).mainBlend(2f, T_DIAMOND).build();
         CARBON_BLEND_SET = of(CARBON_BLEND_ID, CFG.EOCarbonBlend).carbonBlend().build();
-        LE_CARBON_BLEND_SET = of(LE_CARBON_BLEND_ID, CFG.EOLCarbonBlend).secondaryBlend("low_enriched_carbon").build();
-        HE_CARBON_BLEND_SET = of(HE_CARBON_BLEND_ID, CFG.EOHCarbonBlend).secondaryBlend("highly_enriched_carbon").build();
-        NETHER_BLEND_SET = of(NETHER_BLEND_ID, CFG.EONetherBlendSet).mainBlend().build();
-        ENERGETIC_BLEND_SET = of(ENERGETIC_BLEND_ID, CFG.EOEnergeticBlendSet).mainBlend().build();
-        ENDERGETIC_BLEND_SET = of(ENDERGETIC_BLEND_ID, CFG.EOEndergeticSet).mainBlend().build();
+        LE_CARBON_BLEND_SET = of(LE_CARBON_BLEND_ID, CFG.EOLCarbonBlend).secondaryBlend("low_enriched_carbon", 2f, T_IRON).build();
+        HE_CARBON_BLEND_SET = of(HE_CARBON_BLEND_ID, CFG.EOHCarbonBlend).secondaryBlend("highly_enriched_carbon", 3f, T_DIAMOND).build();
+        NETHER_BLEND_SET = of(NETHER_BLEND_ID, CFG.EONetherBlendSet).mainBlend(3f, T_IRON).build();
+        ENERGETIC_BLEND_SET = of(ENERGETIC_BLEND_ID, CFG.EOEnergeticBlendSet).mainBlend(2f, T_IRON).build();
+        ENDERGETIC_BLEND_SET = of(ENDERGETIC_BLEND_ID, CFG.EOEndergeticSet).mainBlend(2f, T_IRON).build();
     }
 
     public static void rgtr(IEventBus bus) {

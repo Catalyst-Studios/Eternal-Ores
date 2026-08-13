@@ -15,6 +15,9 @@ public class EOLangKeys {
     // Categories
     public static final String ETERNAL_ORES_CAT = "key.categories.eternalores";
     public static final String BASIC_PROSPECTOR_CAT = "key.eternalores.edit_prospector_hud";
+    public static final String PROSPECTOR_CURIO_CAT = "key.eternalores.prospector_curio_use";
+    public static final String PROSPECTOR_CURIO_LINK = "key.eternalores.prospector_curio_link";
+    public static final String PROSPECTOR_CURIO_UNLINK = "key.eternalores.prospector_curio_unlink";
 
     // Destroyer - Finder
     public static final String FINDER_CREATIVE_ONLY = "user_message.eternalores.finder.creative";
@@ -35,6 +38,8 @@ public class EOLangKeys {
     public static final String TELEPORTER_MINING_RETURN = "tooltip.eternalores.teleporter.return";
 
     // Prospectors
+    public static final String PROSPECTOR_CURIO = "tooltip.eternalores.prospector.curio";
+
     public static final String BASIC_PROSPECTOR_KEY = "tooltip.eternalores.basic_prospector.key";
     public static final String BASIC_PROSPECTOR_HEADER = "header.eternalores.basic_prospector.name";
     public static final String BASIC_PROSPECTOR_LINKED_TO = "tooltip.eternalores.basic_prospector.linked_to";

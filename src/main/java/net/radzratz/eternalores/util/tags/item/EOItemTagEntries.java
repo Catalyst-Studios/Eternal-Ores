@@ -22,11 +22,13 @@ import static net.radzratz.eternalores.util.tags.item.EOItemTags.Blends.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Compat.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.DustBlocks.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Enriched.*;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.EnrichedBlocks.ITEM_ENRICHED;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Foils.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Gears.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.GemShards.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.OreGems.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Ores.*;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.Pellets.PELLETS;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Plates.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.SmallClumps.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.SmallDusts.*;
@@ -159,6 +161,10 @@ public class EOItemTagEntries implements ITagItemEntryProvider {
             if (item instanceof EOPebbleItem) {
                 register.register(entry, PEBBLES, true, false);
             }
+
+            if (item instanceof EOPelletItem) {
+                register.register(entry, PELLETS, true, false);
+            }
         });
 
         allBlockEntries().sorted(Comparator.comparing(entry -> entry.getId().getPath())).forEach(entry -> {
@@ -184,6 +190,10 @@ public class EOItemTagEntries implements ITagItemEntryProvider {
 
             if (blocks instanceof EOCoalBlock) {
                 register.register(entry, STORAGE_BLOCKS, true, false);
+            }
+
+            if (blocks instanceof EOEnrichedBlock) {
+                register.register(entry, ITEM_ENRICHED, true, false);
             }
         });
     }

@@ -73,7 +73,8 @@ public class EOItemModelProvider extends ItemModelProvider {
                 basePath + "gem_shards/" + itemName,
                 basePath + "geoshards/" + itemName,
                 basePath + "upgrades/" + itemName,
-                basePath + "pebbles/" + itemName
+                basePath + "pebbles/" + itemName,
+                basePath + "pellets/" + itemName
         };
 
         ItemModelBuilder builder = null;

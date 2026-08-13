@@ -14,6 +14,7 @@ import net.radzratz.eternalores.util.EOSetRegistries;
 import net.radzratz.eternalores.item.tools.EOGemCutter;
 import net.radzratz.eternalores.item.tools.EOHammers;
 import net.radzratz.eternalores.item.tools.EOWireCutter;
+import net.radzratz.eternalores.util.compat.curios.EOCurios;
 import net.radzratz.eternalores.util.recipes.EORecipeRegistry;
 import net.radzratz.eternalores.util.compat.enderio.items.EOioItems;
 import net.radzratz.eternalores.util.compat.geore.GEOreRegistry;
@@ -88,6 +89,10 @@ public class EternalOres {
 
         if (georeMod) {
             GEOreRegistry.rgtr(bus);
+        }
+
+        if (curiosMod) {
+            bus.addListener(EOCurios::register);
         }
 
         LOG.info("[Eternal Ores] Loaded Successfully!");

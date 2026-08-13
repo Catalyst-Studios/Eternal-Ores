@@ -1,5 +1,6 @@
 package net.radzratz.eternalores.item.special.prospectors.utils;
 
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerPlayer;
@@ -144,5 +145,55 @@ public abstract class EOProspectors extends Item {
         CompoundTag tag = stack.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
         tag.remove("linked_material");
         stack.set(DataComponents.CUSTOM_DATA, CustomData.of(tag));
+    }
+
+    public InteractionResult curioLink(ServerPlayer player, ItemStack stack, BlockPos targetPos) {
+        Level level = player.level();
+        Optional<String> material = EOProspectorUtils.findMaterialFromBlock(level, targetPos);
+
+        if (material.isEmpty()) {
+            sendNotValidMessage(player);
+            return InteractionResult.FAIL;
+        }
+
+        String materialName = material.get();
+
+        if (EOToolsConfig.CFG.prospectorListAndColors.getBlacklist().contains(materialName)) {
+            sendBlacklistedMessage(player, materialName);
+            return InteractionResult.FAIL;
+        }
+
+        setLinkedMaterial(stack, materialName);
+        onMaterialLinked(player, level, materialName);
+
+        return InteractionResult.SUCCESS;
+    }
+
+    public InteractionResult curioUnlink(ServerPlayer player, ItemStack stack) {
+        String current = getLinkedMaterial(stack);
+
+        if (current.isEmpty()) {
+            sendNothingToClearMessage(player);
+            return InteractionResult.PASS;
+        }
+
+        clearLinkedMaterial(stack);
+        onLinkCleared(player, current);
+
+        return InteractionResult.SUCCESS;
+    }
+
+    public InteractionResult curioUse(ServerPlayer player, ItemStack stack) {
+        String linkedMaterial = getLinkedMaterial(stack);
+
+        if (linkedMaterial.isEmpty()) {
+            sendNoMaterialLinkedMessage(player);
+            return InteractionResult.PASS;
+        }
+
+        performScan(player, stack, linkedMaterial);
+        sendScanningMessage(player, linkedMaterial);
+
+        return InteractionResult.SUCCESS;
     }
 }

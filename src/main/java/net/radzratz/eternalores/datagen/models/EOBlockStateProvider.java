@@ -116,7 +116,8 @@ public class EOBlockStateProvider extends BlockStateProvider {
                 basePath + "smoker/" + name,
                 basePath + "furnace/" + name,
                 basePath + "crystal/" + name,
-                basePath + "budding/" + name
+                basePath + "budding/" + name,
+                basePath + "enriched_block/" + name
         };
 
         BlockModelBuilder builder = null;

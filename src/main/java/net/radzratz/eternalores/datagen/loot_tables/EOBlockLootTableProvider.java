@@ -14,8 +14,8 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.neoforged.neoforge.common.conditions.ICondition;
-import net.radzratz.eternalores.block.types.EOCompressedBlock;
-import net.radzratz.eternalores.block.types.EOreBlock;
+import net.radzratz.eternalores.block.types.*;
+import net.radzratz.eternalores.block.types.special.EORedstoneBlock;
 import net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries;
 import net.radzratz.eternalores.util.compat.iron_furnaces.furnaces.EOIFurnacesFurnaceBlock;
 import net.radzratz.eternalores.util.loot_tables.EOConditionalLootSubProvider;
@@ -46,7 +46,11 @@ public class EOBlockLootTableProvider extends EOConditionalLootSubProvider {
         allBlockEntries().forEach(entry -> {
             Block block = entry.value();
 
-            if (block instanceof EOCompressedBlock) return;
+            if (block instanceof EOCompressedBlock |
+                    block instanceof EOStorageBlock |
+                    block instanceof EOCoalBlock |
+                    block instanceof EORawBlock |
+                    block instanceof EORedstoneBlock) return;
 
             if (block instanceof EOreBlock oreBlock) {
                 Item drop = oreBlock.getDrops().get();
@@ -54,8 +58,6 @@ public class EOBlockLootTableProvider extends EOConditionalLootSubProvider {
                 int max = oreBlock.getMaxDrop();
 
                 this.add(block, b -> crteDrops(b, drop, min, max));
-            } else {
-                this.dropSelf(block);
             }
         });
 

@@ -24,6 +24,7 @@ import static net.radzratz.eternalores.util.recipes.types.EOCommonRecipes.*;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeActions.itemRecipeActions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.crushingExclusions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeInputs.*;
+import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.formTypeExclusions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveRecipeId;
 
 public class IEOCrusherRecipes {
@@ -106,7 +107,7 @@ public class IEOCrusherRecipes {
 
             // Dust Block
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock || isVanillaBlock(inp.STORAGE_BLOCK)) {
-                if (generatedCrusherRecipes.add("dust_block:" + mat) && !crushingExclusions().contains(mat) && out.DUST_BLOCK != null) {
+                if (generatedCrusherRecipes.add("dust_block:" + mat) && !crushingExclusions().contains(mat) && !formTypeExclusions().contains(mat) && out.DUST_BLOCK != null) {
                     crusher(yeet, inp.STORAGE_BLOCK, out.DUST_BLOCK, 1, null, 0, 0f, 9500, id.DustBlock());
                 }
             }

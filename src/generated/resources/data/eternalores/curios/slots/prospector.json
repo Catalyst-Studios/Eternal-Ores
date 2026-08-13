@@ -1,0 +1,9 @@
+{
+  "drop_rule": "ALWAYS_DROP",
+  "icon": "eternalores:item/prospector_slot",
+  "order": 50,
+  "size": 1,
+  "validators": [
+    "curios:tag"
+  ]
+}

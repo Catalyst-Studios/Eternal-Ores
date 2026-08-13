@@ -120,6 +120,7 @@ public class EOBakedModels implements BakedModel, IBakedModelExtension {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public TextureAtlasSprite getParticleIcon() {
         return model != null ? model.getParticleIcon() : overlay;
     }

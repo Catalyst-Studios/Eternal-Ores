@@ -141,6 +141,8 @@ public class EOLocalizationEN_US extends LanguageProvider {
         add(TELEPORTER_MINING_ACCESS, "Right-Click to enter the Mining Dimension.");
         add(TELEPORTER_MINING_RETURN, "Right-Click to return.");
 
+        add(PROSPECTOR_CURIO, "Can be used in a curio slot");
+
         add(BASIC_PROSPECTOR_LINKED_TO, "Linked to: ");
         add(BASIC_PROSPECTOR_CLICK_TO_CLEAR, "Shift + Right Click to clear.");
         add(BASIC_PROSPECTOR_CLICK_TO_SCAN, "Right Click in air to scan.");
@@ -164,6 +166,9 @@ public class EOLocalizationEN_US extends LanguageProvider {
     protected void addCategories() {
         add(ETERNAL_ORES_CAT, "Eternal Ores");
         add(BASIC_PROSPECTOR_CAT, "Edit Prospector HUD Position");
+        add(PROSPECTOR_CURIO_CAT, "Prospector Curio Use");
+        add(PROSPECTOR_CURIO_LINK, "Prospector Curio Link");
+        add(PROSPECTOR_CURIO_UNLINK, "Prospector Curio Unlink");
     }
 
     protected void addScreens() {
@@ -282,8 +287,8 @@ public class EOLocalizationEN_US extends LanguageProvider {
                         itemNames(path, HAMMER, this::hammerName),
                         itemNames(path, GEM_CUT, this::gemCutterName),
                         itemNames(path, WIRE_CUT, this::wireCutterName),
-                        blockNames(path),
                         georeNames(path),
+                        blockNames(path),
                         enderIONames(path)
                 ).filter(Optional::isPresent)
                 .findFirst()
@@ -455,6 +460,10 @@ public class EOLocalizationEN_US extends LanguageProvider {
         return "Block of " + mat + " Dust";
     }
 
+    protected String blockOfEnriched(String mat) {
+        return "Block of Enriched " + mat;
+    }
+
     protected String blockOfName(String mat) {
         return "Block of " + mat;
     }
@@ -520,6 +529,7 @@ public class EOLocalizationEN_US extends LanguageProvider {
         String materialId = EOMaterials.extractMaterialName(path);
         String mat = translateMaterial(capitalizeWords(materialId.replace("_", " ")));
         if (path.contains(DUST_BLOCK)) return Optional.of(blockOfDustName(mat));
+        if (path.contains(ENRICHED_BLOCK)) return Optional.of(blockOfEnriched(mat));
         if (path.startsWith(RAW)) return Optional.of(blockOfRawName(mat));
         if (path.startsWith(SLATE_ORE)) return Optional.of(deepslateOreName(mat));
         if (path.startsWith(NETHER_ORE)) return Optional.of(netherOreName(mat));

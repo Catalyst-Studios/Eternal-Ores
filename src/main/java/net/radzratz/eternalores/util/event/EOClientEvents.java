@@ -38,7 +38,8 @@ import java.awt.*;
 import java.util.Optional;
 
 import static net.radzratz.eternalores.item.special.prospectors.renders.EOBasicOverlay.EDIT_PROSPECTOR_HUD;
-import static net.radzratz.eternalores.util.EOUtils.EO;
+import static net.radzratz.eternalores.util.EOUtils.*;
+import static net.radzratz.eternalores.util.compat.curios.EOCurios.*;
 import static net.radzratz.eternalores.util.lang.EOLangKeys.*;
 import static net.radzratz.eternalores.util.models.EOResourcePack.getResourcesSupplier;
 
@@ -135,6 +136,12 @@ public class EOClientEvents {
     @SubscribeEvent
     public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
         event.register(EDIT_PROSPECTOR_HUD);
+
+        if (curiosMod) {
+            event.register(PROSPECTOR_USE);
+            event.register(PROSPECTOR_LINK);
+            event.register(PROSPECTOR_UNLINK);
+        }
     }
 
     @SubscribeEvent
@@ -144,6 +151,18 @@ public class EOClientEvents {
 
         while (EDIT_PROSPECTOR_HUD.consumeClick()) {
             mc.setScreen(new EOBasicHudScreen());
+        }
+
+        if (curiosMod) {
+            while (PROSPECTOR_LINK.consumeClick()) {
+                sendCurioAction("LINK");
+            }
+            while (PROSPECTOR_UNLINK.consumeClick()) {
+                sendCurioAction("UNLINK");
+            }
+            while (PROSPECTOR_USE.consumeClick()) {
+                sendCurioAction("USE");
+            }
         }
     }
 

@@ -7,7 +7,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.radzratz.eternalores.util.recipes.util.EOAdvancementYeeter;
 
-import static com.hollingsworth.arsnouveau.setup.registry.ItemsRegistry.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;
 import static net.radzratz.eternalores.util.EOUtils.*;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeInputs.*;

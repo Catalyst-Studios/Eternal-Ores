@@ -22,6 +22,7 @@ import static net.radzratz.eternalores.util.recipes.types.EOCommonRecipes.*;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeActions.itemRecipeActions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeInputs.*;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.crushingExclusions;
+import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.formTypeExclusions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.PATH;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveRecipeId;
 
@@ -108,7 +109,7 @@ public class REOCrusherRecipes {
             }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EOBlock || isVanillaBlock(inp.STORAGE_BLOCK)) {
-                if (generatedCrusherRecipes.add("railcraft_crushing_blocks:" + mat) && !crushingExclusions().contains(mat) && out.DUST_BLOCK != null) {
+                if (generatedCrusherRecipes.add("railcraft_crushing_blocks:" + mat) && !crushingExclusions().contains(mat) && !formTypeExclusions().contains(mat) && out.DUST_BLOCK != null) {
                     crusher(yeet, inp.STORAGE_BLOCK, out.DUST_BLOCK, 1, null, 0, 0.0, null, 0, 0.0, 200, id.DustBlock());
                 }
             }

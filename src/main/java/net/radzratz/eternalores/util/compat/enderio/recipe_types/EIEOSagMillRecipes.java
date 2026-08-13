@@ -26,6 +26,7 @@ import static net.radzratz.eternalores.util.recipes.util.EORecipeActions.itemRec
 import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.crushingExclusions;
 import static net.radzratz.eternalores.util.recipes.types.EOCommonRecipes.*;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeInputs.*;
+import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.formTypeExclusions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveOrePath;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveRecipeId;
 
@@ -174,7 +175,7 @@ public class EIEOSagMillRecipes {
 
             // Block -> Dust Block
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock || isVanillaBlock(inp.STORAGE_BLOCK)) {
-                if (generateSagMillingRecipes.add("enderio_sag_dust_block:" + mat) && !crushingExclusions().contains(mat) && out.DUST_BLOCK != null) {
+                if (generateSagMillingRecipes.add("enderio_sag_dust_block:" + mat) && !crushingExclusions().contains(mat) && !formTypeExclusions().contains(mat) && out.DUST_BLOCK != null) {
                     sMill(yeet, inp.STORAGE_BLOCK, out.DUST_BLOCK, id.DustBlock());
                 }
             }

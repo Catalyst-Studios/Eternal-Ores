@@ -38,7 +38,9 @@ public class EOMaterialConfigHelper {
         ENRICHED(1 << 22, "Enriched", "Enable or Disable Enriched %s"),
         ITEM(1 << 23, "Item", "Enable or Disable %s Item"),
         GEM_SHARD(1 << 24, "GemShard", "Enable or Disable %s Gem Shard"),
-        PEBBLE(1 << 24, "Pebble", "Enable or Disable %s Pebble");
+        PEBBLE(1 << 24, "Pebble", "Enable or Disable %s Pebble"),
+        ENRICHED_BLOCK(1 << 25, "EnrichedBlock", "Enable or Disable %s Enriched Block"),
+        PELLET(1 << 26, "Pellet", "Enable or Disable %s Pellet");
 
         public final int bit;
         public final String key;
@@ -193,6 +195,14 @@ public class EOMaterialConfigHelper {
         return get(Feature.PEBBLE);
     }
 
+    public boolean getMaterialEnrichedBlock() {
+        return get(Feature.ENRICHED_BLOCK);
+    }
+
+    public boolean getMaterialPellet() {
+        return get(Feature.PELLET);
+    }
+
     public boolean hasFeature(Feature feature) {
         return isFeatureEnabled(feature);
     }
@@ -221,20 +231,21 @@ public class EOMaterialConfigHelper {
         }
     }
 
+    @SuppressWarnings("unused")
     public static int ALL_FEATURES = createMask(Feature.values());
 
     public static int NATURAL_METAL_FEATURES = createMask(
             Feature.SET, Feature.DUST, Feature.INGOT, Feature.RAW, Feature.SMALL_DUST, Feature.SMALL_CLUMP,
             Feature.RAW_BLOCK, Feature.BLOCK, Feature.PLATE, Feature.ROD, Feature.SHARD, Feature.CRYSTAL,
             Feature.NUGGET, Feature.DIRTY_DUST, Feature.CLUMPS, Feature.GEAR, Feature.DUST_BLOCK, Feature.FOIL,
-            Feature.ORES, Feature.ORE_GEM, Feature.ENRICHED
+            Feature.ORES, Feature.ORE_GEM, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int NATURAL_METAL_FEATURES_WITH_ITEM = createMask(
             Feature.SET, Feature.DUST, Feature.INGOT, Feature.RAW, Feature.SMALL_DUST, Feature.SMALL_CLUMP,
             Feature.RAW_BLOCK, Feature.BLOCK, Feature.PLATE, Feature.ROD, Feature.SHARD, Feature.CRYSTAL,
             Feature.NUGGET, Feature.DIRTY_DUST, Feature.CLUMPS, Feature.GEAR, Feature.DUST_BLOCK, Feature.FOIL,
-            Feature.ORES, Feature.ORE_GEM, Feature.ENRICHED, Feature.ITEM
+            Feature.ORES, Feature.ORE_GEM, Feature.ENRICHED, Feature.ITEM, Feature.ENRICHED_BLOCK
     );
 
     public static int NATURAL_METAL_FEATURES_GEAR_FOILESS = createMask(
@@ -250,7 +261,7 @@ public class EOMaterialConfigHelper {
 
     public static int MOB_MATERIAL_FEATURES = createMask(
             Feature.SET, Feature.DUST, Feature.SMALL_DUST,
-            Feature.BLOCK, Feature.DUST_BLOCK, Feature.ENRICHED
+            Feature.BLOCK, Feature.DUST_BLOCK, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int MOB_MATERIAL_MINIMUM = createMask(
@@ -261,13 +272,17 @@ public class EOMaterialConfigHelper {
             Feature.SET, Feature.BLOCK
     );
 
+    public static int MATTER_FEATURES = createMask(
+            Feature.SET, Feature.BLOCK, Feature.PELLET
+    );
+
     public static int UNSTABLE_SET = createMask(
             Feature.SET, Feature.ITEM, Feature.INGOT, Feature.NUGGET
     );
 
     public static int NATURAL_GEM_FEATURES = createMask(
             Feature.SET, Feature.DUST, Feature.GEM, Feature.SMALL_DUST, Feature.BLOCK, Feature.PLATE, Feature.ROD,
-            Feature.GEAR, Feature.DUST_BLOCK, Feature.ORES, Feature.GEM_SHARD, Feature.ENRICHED
+            Feature.GEAR, Feature.DUST_BLOCK, Feature.ORES, Feature.GEM_SHARD, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int METAL_WITHOUT_FEATURES = createMask(
@@ -303,7 +318,8 @@ public class EOMaterialConfigHelper {
     );
 
     public static int GEO_FEATURES = createMask(
-            Feature.SET, Feature.GEM, Feature.GEM_SHARD, Feature.ORES, Feature.DUST, Feature.SMALL_DUST, Feature.DUST_BLOCK, Feature.BLOCK, Feature.ENRICHED
+            Feature.SET, Feature.GEM, Feature.GEM_SHARD, Feature.ORES, Feature.DUST, Feature.SMALL_DUST, Feature.DUST_BLOCK, Feature.BLOCK,
+            Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int SALT_FEATURES = createMask(
@@ -319,56 +335,60 @@ public class EOMaterialConfigHelper {
     );
 
     public static int BLEND_FEATURES = createMask(
-            Feature.SET, Feature.DUST, Feature.ENRICHED
+            Feature.SET, Feature.DUST, Feature.ENRICHED, Feature.ENRICHED_BLOCK
+    );
+
+    public static int GLOWSTONE_FEATURES = createMask(
+            Feature.SET, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int CATALYST_FEATURES = createMask(
             Feature.SET, Feature.DUST, Feature.INGOT, Feature.RAW, Feature.SMALL_DUST, Feature.SMALL_CLUMP,
             Feature.RAW_BLOCK, Feature.BLOCK, Feature.PLATE, Feature.ROD, Feature.SHARD, Feature.CRYSTAL,
             Feature.NUGGET, Feature.DIRTY_DUST, Feature.CLUMPS, Feature.GEAR, Feature.DUST_BLOCK, Feature.FOIL,
-            Feature.ORE_GEM, Feature.ENRICHED
+            Feature.ORE_GEM, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int VANILLA_METAL_FEATURES = createMask(
             Feature.SET, Feature.PLATE, Feature.ROD, Feature.GEAR, Feature.WIRE, Feature.DUST, Feature.DUST_BLOCK,
             Feature.DIRTY_DUST, Feature.FOIL, Feature.ORE_GEM, Feature.CLUMPS, Feature.SMALL_DUST, Feature.SMALL_CLUMP,
-            Feature.SHARD, Feature.CRYSTAL, Feature.ENRICHED
+            Feature.SHARD, Feature.CRYSTAL, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int VANILLA_METAL_SPECIAL_FEATURES = createMask(
             Feature.SET, Feature.PLATE, Feature.ROD, Feature.GEAR, Feature.WIRE, Feature.DUST, Feature.DUST_BLOCK,
             Feature.DIRTY_DUST, Feature.FOIL, Feature.ORE_GEM, Feature.CLUMPS, Feature.SMALL_DUST, Feature.SMALL_CLUMP,
-            Feature.NUGGET, Feature.SHARD, Feature.CRYSTAL, Feature.ENRICHED
+            Feature.NUGGET, Feature.SHARD, Feature.CRYSTAL, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int NETHERITE_FEATURES = createMask(
             Feature.SET, Feature.PLATE, Feature.ROD, Feature.GEAR, Feature.WIRE, Feature.DUST, Feature.DUST_BLOCK,
-            Feature.FOIL, Feature.SMALL_DUST, Feature.NUGGET, Feature.ENRICHED
+            Feature.FOIL, Feature.SMALL_DUST, Feature.NUGGET, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int VANILLA_GEM_FEATURES = createMask(
             Feature.SET, Feature.GEM, Feature.PLATE, Feature.ROD, Feature.GEAR, Feature.DUST, Feature.DUST_BLOCK,
-            Feature.SMALL_DUST, Feature.GEM_SHARD, Feature.ENRICHED
+            Feature.SMALL_DUST, Feature.GEM_SHARD, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int VANILLA_GEM_FEATURES_BLOCK = createMask(
             Feature.SET, Feature.GEM, Feature.PLATE, Feature.ROD, Feature.GEAR, Feature.DUST, Feature.DUST_BLOCK,
-            Feature.SMALL_DUST, Feature.GEM_SHARD, Feature.ENRICHED, Feature.BLOCK
+            Feature.SMALL_DUST, Feature.GEM_SHARD, Feature.ENRICHED, Feature.BLOCK, Feature.ENRICHED_BLOCK
     );
 
     public static int ALLOY_FEATURES = createMask(
             Feature.SET, Feature.INGOT, Feature.NUGGET, Feature.DUST, Feature.SMALL_DUST, Feature.PLATE, Feature.ROD,
-            Feature.GEAR, Feature.FOIL, Feature.BLOCK, Feature.DUST_BLOCK, Feature.ENRICHED
+            Feature.GEAR, Feature.FOIL, Feature.BLOCK, Feature.DUST_BLOCK, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int ALLOY_FEATURES_WITHOUT_GEAR = createMask(
             Feature.SET, Feature.INGOT, Feature.NUGGET, Feature.DUST, Feature.SMALL_DUST, Feature.PLATE, Feature.ROD,
-            Feature.FOIL, Feature.BLOCK, Feature.DUST_BLOCK, Feature.ENRICHED
+            Feature.FOIL, Feature.BLOCK, Feature.DUST_BLOCK, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int ALLOY_FEATURES_WITHOUT_FOIL = createMask(
             Feature.SET, Feature.ITEM, Feature.INGOT, Feature.NUGGET, Feature.DUST, Feature.SMALL_DUST, Feature.PLATE, Feature.ROD,
-            Feature.GEAR, Feature.BLOCK, Feature.DUST_BLOCK, Feature.ENRICHED
+            Feature.GEAR, Feature.BLOCK, Feature.DUST_BLOCK, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int ALLOY_FEATURES_WITHOUT_FOIL_GEAR = createMask(
@@ -383,12 +403,12 @@ public class EOMaterialConfigHelper {
 
     public static int SILICON_FEATURES = createMask(
             Feature.SET, Feature.INGOT, Feature.NUGGET, Feature.DUST, Feature.SMALL_DUST, Feature.PLATE, Feature.ROD,
-            Feature.GEAR, Feature.FOIL, Feature.BLOCK, Feature.DUST_BLOCK, Feature.ITEM, Feature.ENRICHED
+            Feature.GEAR, Feature.FOIL, Feature.BLOCK, Feature.DUST_BLOCK, Feature.ITEM, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int UNNATURAL_GEM_FEATURES = createMask(
             Feature.SET, Feature.DUST, Feature.SMALL_DUST, Feature.PLATE, Feature.ROD, Feature.GEAR, Feature.FOIL,
-            Feature.BLOCK, Feature.DUST_BLOCK, Feature.GEM, Feature.GEM_SHARD, Feature.ENRICHED
+            Feature.BLOCK, Feature.DUST_BLOCK, Feature.GEM, Feature.GEM_SHARD, Feature.ENRICHED, Feature.ENRICHED_BLOCK
     );
 
     public static int createMask(Feature... features) {

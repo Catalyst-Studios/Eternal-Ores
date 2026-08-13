@@ -10,8 +10,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.radzratz.eternalores.item.special.prospectors.EOBasicProspector;
 import net.radzratz.eternalores.item.special.prospectors.hud.EOBasicHudPos;
+import net.radzratz.eternalores.util.compat.curios.EOCurios;
 import net.radzratz.eternalores.util.config.EOToolsConfig;
 
+import static net.radzratz.eternalores.util.EOUtils.curiosMod;
 import static net.radzratz.eternalores.util.lang.EOLangKeys.*;
 
 public class EOBasicOverlay {
@@ -81,8 +83,7 @@ public class EOBasicOverlay {
                         .withStyle(ChatFormatting.DARK_GRAY));
     }
 
-    @SuppressWarnings("unused")
-    public static void renderText(GuiGraphics gui, Component text, int yUnused) {
+    public static void renderText(GuiGraphics gui, Component text, int ignoredYUnused) {
         Minecraft mc = Minecraft.getInstance();
         int textWidth = mc.font.width(text);
         int screenW = mc.getWindow().getGuiScaledWidth();
@@ -100,6 +101,14 @@ public class EOBasicOverlay {
         ItemStack off = player.getOffhandItem();
         if (main.getItem() instanceof EOBasicProspector) return main;
         if (off.getItem() instanceof EOBasicProspector) return off;
+
+        if (curiosMod) {
+            var curio = EOCurios.findEquippedProspector(player);
+            if (curio.isPresent() && curio.get().getItem() instanceof EOBasicProspector) {
+                return curio.get();
+            }
+        }
+
         return null;
     }
 

@@ -140,6 +140,10 @@ public class EOItemHelpers {
         return EO_ITEMS.register(name, () -> new EOCrystalItem(new Item.Properties(), materialSet, enabled));
     }
 
+    public static DeferredItem<EOPelletItem> rgtrPellet(String name, BooleanSupplier materialSet, BooleanSupplier enabled) {
+        return EO_ITEMS.register(name, () -> new EOPelletItem(new Item.Properties(), materialSet, enabled));
+    }
+
     public static DeferredItem<EOEnrichedItems> rgtrEnriched(String name, BooleanSupplier materialSet, BooleanSupplier enabled) {
         return EO_ITEMS.register(name, () -> new EOEnrichedItems(new Item.Properties(), materialSet, enabled));
     }

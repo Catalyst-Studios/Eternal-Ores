@@ -168,6 +168,10 @@ public class EOUtils {
     public static final boolean railCraftMod = ModList.get().isLoaded(RAILCRAFT);
     public static final ModLoadedCondition RAILCRAFT_MOD = new ModLoadedCondition(RAILCRAFT);
 
+    public static String CURIOS = "curios";
+    public static final boolean curiosMod = ModList.get().isLoaded(CURIOS);
+    public static final ModLoadedCondition CURIOS_MOD = new ModLoadedCondition(CURIOS);
+
     public static Stream<DeferredHolder<Item, ? extends Item>> allItemEntries() {
         return Stream.of(EO_ITEMS.getEntries()).flatMap(Collection::stream);
     }
@@ -234,6 +238,10 @@ public class EOUtils {
 
     public static ResourceLocation EX(String path) {
         return ResourceLocation.fromNamespaceAndPath(EX_DEORUM, path);
+    }
+
+    public static ResourceLocation CURIO(String path) {
+        return ResourceLocation.fromNamespaceAndPath(CURIOS, path);
     }
 
     public static Item getItemFromAnyNamespace(Registry<Item> registry, String path) {

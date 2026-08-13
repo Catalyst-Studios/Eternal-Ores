@@ -120,7 +120,8 @@ public class EODuplicateRecipeHandler {
                     "processing/quartz/from_dust",
                     "enriching/enriched/gold",
                     "enriching/enriched/tin",
-                    "compat/ae2/certus_quartz_dust_to_silicon"
+                    "compat/ae2/certus_quartz_dust_to_silicon",
+                    "compat/ae2/sand_to_silicon"
             ), List.of(
                     "processing/{mat}/slurry/clean",
                     "processing/{mat}/slurry/dirty/from_raw_ore",

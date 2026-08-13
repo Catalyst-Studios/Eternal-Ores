@@ -397,6 +397,8 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
         add(TELEPORTER_MINING_ACCESS, "Click Derecho para entrar a la Dimensión Minera.");
         add(TELEPORTER_MINING_RETURN, "Click Derecho para regresar.");
 
+        add(PROSPECTOR_CURIO, "Se puede usar desde una ranura curio");
+
         add(BASIC_PROSPECTOR_LINKED_TO, "Vinculado a: ");
         add(BASIC_PROSPECTOR_CLICK_TO_CLEAR, "Shift + Click Derecho para desvincular.");
         add(BASIC_PROSPECTOR_CLICK_TO_SCAN, "Click Derecho en el aire para escanear.");

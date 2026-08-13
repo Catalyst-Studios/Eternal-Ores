@@ -125,6 +125,10 @@ public class EOCraftingRecipes extends RecipeProvider {
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock) {
                 boolean isFours = FOURS_DUST_MATERIALS.contains(mat);
 
+                if (isFours) {
+                    isFours = formTypeExclusions().contains(mat);
+                }
+
                 // Dust -> Dust Block
                 if (generatedRecipes.add("dust_block:" + mat) && !mat.equals("coke_coal") && out.DUST_BLOCK != null) {
                     shaped(yeet, inp.DUST, null, out.DUST_BLOCK, 1, id.DustBlock(), isFours ? "fours" : "block");
@@ -313,7 +317,7 @@ public class EOCraftingRecipes extends RecipeProvider {
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EOStorageBlock) {
                 // Block -> Ingot
-                if (generatedRecipes.add("ingot_block_:" + mat) && out.INGOT != null && !mat.equals("redstone")) {
+                if (generatedRecipes.add("ingot_block_:" + mat) && out.INGOT != null && !mat.equals("redstone_ingot")) {
                     shapeless(yeet, inp.STORAGE_BLOCK, null, out.INGOT, 9, id.Ingot());
                 }
             }
@@ -334,6 +338,28 @@ public class EOCraftingRecipes extends RecipeProvider {
                 // Foil -> Dust
                 if (generatedRecipes.add("foil_recycle:" + mat) && out.DUST != null) {
                     shapeless(yeet, HAMMERS, inp.FOIL, out.DUST, 1, id.Recycle() + "_foil");
+                }
+            }
+
+            if (item instanceof EOEnrichedItems) {
+                // Enriched Block -> Enriched
+                if (generatedRecipes.add("enriched:" + mat) && out.ENRICHED != null) {
+                    shapeless(yeet, inp.ENRICHED_BLOCK, null, out.ENRICHED, 9, id.Enriched());
+                }
+
+                // Enriched -> Enriched Block
+                if (generatedRecipes.add("enriched_block:" + mat) && out.ENRICHED_BLOCK != null) {
+                    shaped(yeet, inp.ENRICHED, null, out.ENRICHED_BLOCK, 1, id.Enriched(), "block");
+                }
+            }
+
+            if (item instanceof EOPelletItem) {
+                if (generatedRecipes.add("pellet:" + mat) && out.BLOCK != null) {
+                    shaped(yeet, inp.PELLET, null, out.BLOCK, 1, id.Storage(), "block");
+                }
+
+                if (generatedRecipes.add("pellet_block:" + mat) && out.PELLET != null) {
+                    shapeless(yeet, inp.STORAGE_BLOCK, null, out.PELLET, 9, id.Pellet());
                 }
             }
         });

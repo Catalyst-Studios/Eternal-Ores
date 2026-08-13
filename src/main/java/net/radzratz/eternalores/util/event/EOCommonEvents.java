@@ -18,6 +18,8 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.radzratz.eternalores.EternalOres;
+import net.radzratz.eternalores.item.special.prospectors.packets.EOProspectorCurioPacket;
+import net.radzratz.eternalores.util.compat.curios.EOCurios;
 import net.radzratz.eternalores.util.data.EODataPack;
 import net.radzratz.eternalores.item.special.prospectors.packets.EOAdvScanPacket;
 import net.radzratz.eternalores.item.special.prospectors.EOBasicProspector;
@@ -27,6 +29,7 @@ import net.radzratz.eternalores.util.recipes.duplicate_handler.EORecipeCache;
 
 import java.util.Optional;
 
+import static net.radzratz.eternalores.util.EOUtils.curiosMod;
 import static net.radzratz.eternalores.util.recipes.duplicate_handler.EODuplicateRecipeHandler.*;
 
 @EventBusSubscriber(modid = EternalOres.id)
@@ -48,6 +51,10 @@ public class EOCommonEvents {
                 EOBasicProspector.performServerScanForOverlay(player, main);
             } else if (off.getItem() instanceof EOBasicProspector) {
                 EOBasicProspector.performServerScanForOverlay(player, off);
+            } else if (curiosMod) {
+                EOCurios.findEquippedProspector(player)
+                        .filter(stack -> stack.getItem() instanceof EOBasicProspector)
+                        .ifPresent(stack -> EOBasicProspector.performServerScanForOverlay(player, stack));
             }
         } catch (Exception e) {
             EternalOres.LOG.error("[EOTickEventHandler] Error during prospector tick scan", e);
@@ -65,6 +72,9 @@ public class EOCommonEvents {
 
         registrar.playToClient(EOAdvScanPacket.TYPE,
                 EOAdvScanPacket.STREAM_CODEC, EOAdvScanPacket::handle);
+
+        registrar.playToServer(EOProspectorCurioPacket.TYPE,
+                EOProspectorCurioPacket.STREAM_CODEC, EOProspectorCurioPacket::handle);
 
         EternalOres.LOG.info("[EternalOres] Packets registered correctly");
     }

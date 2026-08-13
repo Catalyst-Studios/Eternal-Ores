@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalores:block/enriched_block/spectral_sky_bluerite_enriched_block"
+  }
+}

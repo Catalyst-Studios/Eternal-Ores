@@ -21,6 +21,7 @@ import static net.radzratz.eternalores.util.EOUtils.*;
 import static net.radzratz.eternalores.util.recipes.types.EOCommonRecipes.BASIC_CRUSHING;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeActions.itemRecipeActions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeInputs.*;
+import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.formTypeExclusions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveRecipeId;
 
 public class EOMKCrusherRecipes {
@@ -58,7 +59,7 @@ public class EOMKCrusherRecipes {
 
             // Block -> Dust Block
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock || isVanillaBlock(inp.STORAGE_BLOCK)) {
-                if (generateCrushingRecipes.add("mek_crusher_dust_block:" + mat) && !mat.contains("coke_coal") && out.DUST_BLOCK != null) {
+                if (generateCrushingRecipes.add("mek_crusher_dust_block:" + mat) && !mat.contains("coke_coal") && !formTypeExclusions().contains(mat) && out.DUST_BLOCK != null) {
                     crusher(yeet, inp.STORAGE_BLOCK, out.DUST_BLOCK, 1, id.DustBlock());
                 }
             }

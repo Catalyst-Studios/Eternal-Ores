@@ -30,6 +30,7 @@ import static net.radzratz.eternalores.util.recipes.util.EORecipeActions.itemRec
 import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.crushingExclusions;
 import static net.radzratz.eternalores.util.recipes.types.EOCommonRecipes.BASIC_CRUSHING;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeInputs.*;
+import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.formTypeExclusions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveOrePath;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveRecipeId;
 
@@ -177,7 +178,7 @@ public class CTEOCrushingWheelRecipes {
 
             // Dust Block
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock || isVanillaBlock(inp.STORAGE_BLOCK)) {
-                if (generatedWheelRecipes.add("dust_block:" + mat) && !crushingExclusions().contains(mat) && out.DUST_BLOCK != null) {
+                if (generatedWheelRecipes.add("dust_block:" + mat) && !crushingExclusions().contains(mat) && !formTypeExclusions().contains(mat) && out.DUST_BLOCK != null) {
                     wheel(yeet, inp.STORAGE_BLOCK, out.DUST_BLOCK, 1, null, 0f, 0, null, 0f, 0,
                             null, 0f, 0, null, 0f, 200, id.DustBlock());
                 }

@@ -1,18 +1,30 @@
 {
   "values": [
+    "eternalores:andesite_dust_block",
     "eternalores:armadillo_scute_block",
+    "eternalores:basalt_dust_block",
     "eternalores:biomass_block",
+    "eternalores:blackstone_dust_block",
+    "eternalores:calcite_dust_block",
     "eternalores:calcium_block",
+    "eternalores:deepslate_dust_block",
+    "eternalores:diorite_dust_block",
     "eternalores:dust_block",
+    "eternalores:end_stone_dust_block",
     "eternalores:ender_pearl_block",
+    "eternalores:ender_pearl_enriched_block",
     "eternalores:flint_block",
     "eternalores:flint_dust_block",
+    "eternalores:granite_dust_block",
     "eternalores:nautilus_block",
     "eternalores:nautilus_dust_block",
+    "eternalores:netherrack_dust_block",
     "eternalores:phantom_membrane_block",
     "eternalores:redstone_ingot_block",
     "eternalores:rotten_flesh_block",
+    "eternalores:stone_dust_block",
     "eternalores:sugar_block",
+    "eternalores:tuff_dust_block",
     "eternalores:turtle_scute_block"
   ]
 }

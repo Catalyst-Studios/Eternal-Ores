@@ -87,6 +87,7 @@ public class EOMaterialConfig {
     public final EOMaterialConfigHelper EOFranciumSet;
     public final EOMaterialConfigHelper EOGalliumSet;
     public final EOMaterialConfigHelper EOGarnetSet;
+    public final EOMaterialConfigHelper EOGlowstoneSet;
     public final EOMaterialConfigHelper EOGoldSet;
     public final EOMaterialConfigHelper EOGraphiteSet;
     public final EOMaterialConfigHelper EOGraniteSet;
@@ -238,7 +239,7 @@ public class EOMaterialConfig {
         this.EOAndesiteSet = new EOMaterialConfigHelper("andesite", EOMaterialConfigHelper.STONE_FEATURES);
         this.EOAnnealedCopperSet = new EOMaterialConfigHelper("annealed_copper", EOMaterialConfigHelper.ALLOY_FEATURES);
         this.EOAnthraciteCoalSet = new EOMaterialConfigHelper("anthracite", EOMaterialConfigHelper.CARBON_FEATURES);
-        this.EOAntimatterSet = new EOMaterialConfigHelper("antimatter", EOMaterialConfigHelper.BLOCK_ONLY);
+        this.EOAntimatterSet = new EOMaterialConfigHelper("antimatter", EOMaterialConfigHelper.MATTER_FEATURES);
         this.EOApatiteSet = new EOMaterialConfigHelper("apatite", EOMaterialConfigHelper.NATURAL_GEM_FEATURES);
         this.EOArcanumSet = new EOMaterialConfigHelper("arcanum", EOMaterialConfigHelper.UNNATURAL_GEM_FEATURES);
         this.EOArditeSet = new EOMaterialConfigHelper("ardite", EOMaterialConfigHelper.NATURAL_METAL_FEATURES);
@@ -302,13 +303,14 @@ public class EOMaterialConfig {
         this.EOEternalLightSet = new EOMaterialConfigHelper("eternal_light", EOMaterialConfigHelper.ALLOY_FEATURES);
         this.EOEternitySet = new EOMaterialConfigHelper("eternity", EOMaterialConfigHelper.ALLOY_FEATURES);
         this.EOEtheriumSet = new EOMaterialConfigHelper("etherium", EOMaterialConfigHelper.ALLOY_FEATURES);
-        this.EOExoticMatterSet = new EOMaterialConfigHelper("exotic_matter", EOMaterialConfigHelper.BLOCK_ONLY);
+        this.EOExoticMatterSet = new EOMaterialConfigHelper("exotic_matter", EOMaterialConfigHelper.MATTER_FEATURES);
         this.EOFlintSet = new EOMaterialConfigHelper("flint", EOMaterialConfigHelper.MINIMUM_FEATURES_BLOCK);
         this.EOFluixSet = new EOMaterialConfigHelper("fluix", EOMaterialConfigHelper.UNNATURAL_GEM_FEATURES);
         this.EOFluoriteSet = new EOMaterialConfigHelper("fluorite", EOMaterialConfigHelper.HALIDE_FEATURES);
         this.EOFranciumSet = new EOMaterialConfigHelper("francium", EOMaterialConfigHelper.METAL_WITHOUT_FEATURES);
         this.EOGalliumSet = new EOMaterialConfigHelper("gallium", EOMaterialConfigHelper.NATURAL_METAL_FEATURES);
         this.EOGarnetSet = new EOMaterialConfigHelper("garnet", EOMaterialConfigHelper.NATURAL_GEM_FEATURES);
+        this.EOGlowstoneSet = new EOMaterialConfigHelper("glowstone", EOMaterialConfigHelper.GLOWSTONE_FEATURES);
         this.EOGoldSet = new EOMaterialConfigHelper("gold", EOMaterialConfigHelper.VANILLA_METAL_FEATURES);
         this.EOGraphiteSet = new EOMaterialConfigHelper("graphite", EOMaterialConfigHelper.ALLOY_FEATURES);
         this.EOGraniteSet = new EOMaterialConfigHelper("granite", EOMaterialConfigHelper.STONE_FEATURES);
@@ -407,7 +409,7 @@ public class EOMaterialConfig {
         this.EOStellarAlloySet = new EOMaterialConfigHelper("stellar_alloy", EOMaterialConfigHelper.ALLOY_FEATURES);
         this.EOSteelSet = new EOMaterialConfigHelper("steel", EOMaterialConfigHelper.ALLOY_FEATURES);
         this.EOStoneSet = new EOMaterialConfigHelper("stone", EOMaterialConfigHelper.STONE_FEATURES);
-        this.EOStrangeMatterSet = new EOMaterialConfigHelper("strange_matter", EOMaterialConfigHelper.BLOCK_ONLY);
+        this.EOStrangeMatterSet = new EOMaterialConfigHelper("strange_matter", EOMaterialConfigHelper.MATTER_FEATURES);
         this.EOSugarSet = new EOMaterialConfigHelper("sugar", EOMaterialConfigHelper.BLOCK_ONLY);
         this.EOSulfurSet = new EOMaterialConfigHelper("sulfur", EOMaterialConfigHelper.SULFUR_FEATURES);
         this.EOTachyariteSet = new EOMaterialConfigHelper("tachyarite", EOMaterialConfigHelper.UNNATURAL_GEM_FEATURES);
@@ -513,6 +515,7 @@ public class EOMaterialConfig {
         this.EOFranciumSet.configure(builder);
         this.EOGalliumSet.configure(builder);
         this.EOGarnetSet.configure(builder);
+        this.EOGlowstoneSet.configure(builder);
         this.EOGoldSet.configure(builder);
         this.EOGraphiteSet.configure(builder);
         this.EOGraniteSet.configure(builder);

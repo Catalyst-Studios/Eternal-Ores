@@ -25,7 +25,7 @@ public class EOEMIPlugin implements EmiPlugin {
         }
 
         if (mekanismMod) {
-            // Hides infusions and slurries from appearing over JEI catalogue
+            // Hides infusions and slurries from appearing over EMI catalogue
             // when said chemical is disabled over the config
             EOInfusions.EO_CHEMICALS.getEntries().stream()
                     .filter(e -> e.get() instanceof EOChemical c && !c.isEnabled())

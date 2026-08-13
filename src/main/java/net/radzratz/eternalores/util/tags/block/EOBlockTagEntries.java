@@ -12,6 +12,7 @@ import static net.minecraft.tags.BlockTags.*;
 import static net.neoforged.neoforge.common.Tags.Blocks.*;
 import static net.radzratz.eternalores.util.EOUtils.allBlockEntries;
 import static net.radzratz.eternalores.util.tags.block.EOBlockTags.DustBlocks.*;
+import static net.radzratz.eternalores.util.tags.block.EOBlockTags.EnrichedBlocks.BLOCK_ENRICHED;
 import static net.radzratz.eternalores.util.tags.block.EOBlockTags.OreBlocks.*;
 import static net.radzratz.eternalores.util.tags.block.EOBlockTags.StorageBlocks.BLOCK_STORAGE_BLOCKS_RAW;
 
@@ -57,6 +58,13 @@ public class EOBlockTagEntries implements ITagBlockEntryProvider {
                 register.register(entry, STORAGE_BLOCKS, block.getTier());
 
                 register.registerWithoutIndividual(entry, MINEABLE_WITH_PICKAXE, block.getTier(), false, NEEDS_STONE_TOOL);
+            }
+
+            if (blocks instanceof EOEnrichedBlock block) {
+                register.register(entry, BLOCK_ENRICHED, true, false);
+
+                register.registerWithoutIndividual(entry, MINEABLE_WITH_PICKAXE, block.getTier(), false, NEEDS_WOOD_TOOL, NEEDS_STONE_TOOL,
+                        NEEDS_IRON_TOOL, NEEDS_DIAMOND_TOOL, NEEDS_NETHERITE_TOOL);
             }
         });
     }

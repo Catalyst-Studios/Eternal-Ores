@@ -12,10 +12,12 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.radzratz.eternalores.block.types.enums.EOBlockTier;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Collections;
 import java.util.List;
 
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.TEMICTETL_SET;
@@ -50,6 +52,11 @@ public class EODustBlock extends EOBlock {
     @Override
     public @NotNull SoundType getSoundType(@NotNull BlockState state, @NotNull LevelReader level, @NotNull BlockPos pos, @Nullable Entity entity) {
         return SoundType.SAND;
+    }
+
+    @Override
+    protected @NotNull List<ItemStack> getDrops(@NotNull BlockState state, LootParams.@NotNull Builder params) {
+        return Collections.singletonList(new ItemStack(this));
     }
 
     public int getBurnTime() {

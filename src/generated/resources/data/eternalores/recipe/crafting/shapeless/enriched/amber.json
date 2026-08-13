@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:enriched_blocks/amber"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:enriched_amber"
+  }
+}

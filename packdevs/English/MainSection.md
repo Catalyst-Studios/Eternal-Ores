@@ -32,7 +32,7 @@ these colors can be toggled if you desire, but they look nice imo.
 And if you're wondering, yes it works with both Sodium and Embeddium. (i frickin made sure it worked, and it costed me sanity)
 
 Another thing about the prospectors, you can easily add more ore entries over `tools-config.json`, all needed details are explained
-over there.
+over there. Additionally, if **Curios API** mod is present, you may place, and use both prospectors over its curio slot.
 
 As to why the hammers can turn most materials into their forms (plates, gears and rods), but not them gems... I had a funsie idea ya know?
 I wanted to create a special tool to transform those gems into their forms, simply because it's weird to use a hammer to turn

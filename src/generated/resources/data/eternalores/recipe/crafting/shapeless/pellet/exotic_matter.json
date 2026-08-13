@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:storage_blocks/exotic_matter"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "eternalores:exotic_matter_pellet"
+  }
+}

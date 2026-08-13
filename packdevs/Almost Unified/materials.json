@@ -30,7 +30,8 @@
     "c:gems/source": "ars_nouveau",
     "c:storage_blocks/source": "ars_nouveau",
     "c:gems/black_quartz": "actuallyadditions",
-    "c:storage_blocks/black_quartz": "actuallyadditions"
+    "c:storage_blocks/black_quartz": "actuallyadditions",
+    "c:pellets/antimatter": "mekanism"
   },
   "stone_variants": [
     "stone",
@@ -68,6 +69,7 @@
     "c:pellets/{material}",
     "c:blends/{material}",
     "c:pebbles/{material}",
+    "c:pellets/{material}",
     "c:silicon",
     "c:coal_coke"
   ],

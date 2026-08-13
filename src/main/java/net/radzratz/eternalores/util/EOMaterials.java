@@ -268,13 +268,14 @@ public class EOMaterials {
         public static final String CAPACITOR = "_capacitor";
         public static final String GEOSHARDS = "_geoshard";
         public static final String PEBBLE = "_pebble";
-        public static final String wPlate = "wooden_plate_";
+        public static final String PELLET = "_pellet";
 
         public static final String ORE = "_ore_block";
         public static final String SLATE_ORE = "deepslate_";
         public static final String NETHER_ORE = "nether_";
         public static final String END_ORE = "end_";
         public static final String BLOCK = "_block";
+        public static final String ENRICHED_BLOCK = "_enriched_block";
         @SuppressWarnings("unused")
         public static final String COMPRESSED = "compressed_";
         public static final String DUST_BLOCK = "_dust_block";
@@ -309,12 +310,14 @@ public class EOMaterials {
         public final DeferredItem<EOCoalItem> COAL;
         public final DeferredItem<EOPebbleItem> PEBBLE;
         public final DeferredItem<EOEnrichedItems> ENRICHED;
+        public final DeferredBlock<EOEnrichedBlock> ENRICHED_BLOCK;
         public final DeferredItem<EODirtyDustItem> DIRTY_DUST;
         public final DeferredItem<EOClumpItem> CLUMP;
         public final DeferredItem<EOSmallClumpItem> SMALL_CLUMP;
         public final DeferredItem<EOShardItem> SHARD;
         public final DeferredItem<EOrGemItem> ORE_GEM;
         public final DeferredItem<EOCrystalItem> CRYSTAL;
+        public final DeferredItem<EOPelletItem> PELLET;
         public final DeferredBlock<EOStorageBlock> BLOCK;
         public final DeferredBlock<EOStorageBlock> BLOCK_TWO;
         public final DeferredBlock<EORawBlock> RAW_BLOCK;
@@ -346,12 +349,14 @@ public class EOMaterials {
             this.COAL = builder.coal;
             this.PEBBLE = builder.pebble;
             this.ENRICHED = builder.enriched;
+            this.ENRICHED_BLOCK = builder.enrichedBlock;
             this.DIRTY_DUST = builder.dirtyDust;
             this.CLUMP = builder.clump;
             this.SMALL_CLUMP = builder.smallClump;
             this.SHARD = builder.shard;
             this.ORE_GEM = builder.oreGem;
             this.CRYSTAL = builder.crystal;
+            this.PELLET = builder.pellet;
             this.BLOCK = builder.block;
             this.BLOCK_TWO = builder.blockTwo;
             this.RAW_BLOCK = builder.rawBlock;
@@ -384,12 +389,14 @@ public class EOMaterials {
             DeferredItem<EOCoalItem> coal;
             DeferredItem<EOPebbleItem> pebble;
             DeferredItem<EOEnrichedItems> enriched;
+            DeferredBlock<EOEnrichedBlock> enrichedBlock;
             DeferredItem<EODirtyDustItem> dirtyDust;
             DeferredItem<EOClumpItem> clump;
             DeferredItem<EOSmallClumpItem> smallClump;
             DeferredItem<EOShardItem> shard;
             DeferredItem<EOrGemItem> oreGem;
             DeferredItem<EOCrystalItem> crystal;
+            DeferredItem<EOPelletItem> pellet;
             DeferredBlock<EOStorageBlock> block;
             DeferredBlock<EOStorageBlock> blockTwo;
             DeferredBlock<EORawBlock> rawBlock;
@@ -650,6 +657,7 @@ public class EOMaterials {
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             builder.dirtyDust = rgtrDirtyDust(mat, config::getMaterialSet, config::getMaterialDirtyDust);
             builder.clump = rgtrClumps(CLUMP + mat, config::getMaterialSet, config::getMaterialClumps);
             builder.smallClump = rgtrSmallClumps(mat + SMALL_CLUMP, config::getMaterialSet, config::getMaterialSmallClump);
@@ -693,6 +701,7 @@ public class EOMaterials {
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.foil = rgtrFoil(mat + FOIL, config::getMaterialSet, config::getMaterialFoil);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             builder.dirtyDust = rgtrDirtyDust(mat, config::getMaterialSet, config::getMaterialDirtyDust);
             builder.clump = rgtrClumps(CLUMP + mat, config::getMaterialSet, config::getMaterialClumps);
             builder.smallClump = rgtrSmallClumps(mat + SMALL_CLUMP, config::getMaterialSet, config::getMaterialSmallClump);
@@ -719,6 +728,7 @@ public class EOMaterials {
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.foil = rgtrFoil(mat + FOIL, config::getMaterialSet, config::getMaterialFoil);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             builder.dirtyDust = rgtrDirtyDust(mat, config::getMaterialSet, config::getMaterialDirtyDust);
             builder.clump = rgtrClumps(CLUMP + mat, config::getMaterialSet, config::getMaterialClumps);
             builder.smallClump = rgtrSmallClumps(mat + SMALL_CLUMP, config::getMaterialSet, config::getMaterialSmallClump);
@@ -738,6 +748,7 @@ public class EOMaterials {
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             builder.dirtyDust = rgtrDirtyDust(mat, config::getMaterialSet, config::getMaterialDirtyDust);
             builder.clump = rgtrClumps(CLUMP + mat, config::getMaterialSet, config::getMaterialClumps);
             builder.smallClump = rgtrSmallClumps(mat + SMALL_CLUMP, config::getMaterialSet, config::getMaterialSmallClump);
@@ -757,6 +768,7 @@ public class EOMaterials {
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.foil = rgtrFoil(mat + FOIL, config::getMaterialSet, config::getMaterialFoil);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -781,6 +793,7 @@ public class EOMaterials {
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -794,6 +807,7 @@ public class EOMaterials {
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -812,13 +826,14 @@ public class EOMaterials {
             return this;
         }
 
-        public materialRegistrar stoneSets() {
+        public materialRegistrar stoneSets(float hardness, EOBlockTier tier) {
             builder.dust = rgtrDust(mat + DUST, config::getMaterialSet, config::getMaterialDust);
             builder.smallDust = rgtrSmallDust(mat + SMALL_DUST, config::getMaterialSet, config::getMaterialSmallDust);
             builder.plate = rgtrPlate(PLATE + mat, config::getMaterialSet, config::getMaterialPlate);
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.pebble = rgtrPebble(mat + PEBBLE, config::getMaterialSet, config::getMaterialPebble);
+            builder.dustBlock = rgtrDustBlock(mat + DUST_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialPebble);
             return this;
         }
 
@@ -861,6 +876,7 @@ public class EOMaterials {
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.foil = rgtrFoil(mat + FOIL, config::getMaterialSet, config::getMaterialFoil);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -875,6 +891,7 @@ public class EOMaterials {
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.foil = rgtrFoil(mat + FOIL, config::getMaterialSet, config::getMaterialFoil);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -950,6 +967,7 @@ public class EOMaterials {
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.foil = rgtrFoil(mat + FOIL, config::getMaterialSet, config::getMaterialFoil);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -965,6 +983,7 @@ public class EOMaterials {
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -979,6 +998,7 @@ public class EOMaterials {
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -993,6 +1013,7 @@ public class EOMaterials {
             builder.rod = rgtrRod(ROD + mat, config::getMaterialSet, config::getMaterialRod);
             builder.gear = rgtrGear(GEAR + mat, config::getMaterialSet, config::getMaterialGear);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -1023,6 +1044,7 @@ public class EOMaterials {
             builder.dust = rgtrDust(mat + DUST, config::getMaterialSet, config::getMaterialDust);
             builder.smallDust = rgtrSmallDust(mat + SMALL_DUST, config::getMaterialSet, config::getMaterialSmallDust);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -1074,9 +1096,10 @@ public class EOMaterials {
             return this;
         }
 
-        public materialRegistrar mainBlend() {
+        public materialRegistrar mainBlend(float hardness, EOBlockTier tier) {
             builder.blend = rgtrBlend(mat + BLEND, config::getMaterialSet, config::getMaterialDust);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -1085,9 +1108,10 @@ public class EOMaterials {
             return this;
         }
 
-        public materialRegistrar secondaryBlend(String material) {
+        public materialRegistrar secondaryBlend(String material, float hardness, EOBlockTier tier) {
             builder.blend = rgtrBlend(mat + BLEND, config::getMaterialSet, config::getMaterialDust);
             builder.enriched = rgtrEnriched(material, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(material + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -1097,6 +1121,7 @@ public class EOMaterials {
             builder.dust = rgtrDust(mat + DUST, config::getMaterialSet, config::getMaterialDust);
             builder.smallDust = rgtrSmallDust(mat + SMALL_DUST, config::getMaterialSet, config::getMaterialSmallDust);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -1105,6 +1130,7 @@ public class EOMaterials {
             builder.dust = rgtrDust(mat + DUST, config::getMaterialSet, config::getMaterialDust);
             builder.smallDust = rgtrSmallDust(mat + SMALL_DUST, config::getMaterialSet, config::getMaterialSmallDust);
             builder.enriched = rgtrEnriched(materialName, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -1113,6 +1139,7 @@ public class EOMaterials {
             builder.dustBlock = rgtrDustBlock(mat + DUST_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialBlock);
             builder.smallDust = rgtrSmallDust(mat + SMALL_DUST, config::getMaterialSet, config::getMaterialSmallDust);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -1123,8 +1150,15 @@ public class EOMaterials {
             return this;
         }
 
-        public materialRegistrar enriched() {
+        public materialRegistrar matters(float hardness, SoundType sound, EOBlockTier tier) {
+            builder.pellet = rgtrPellet(mat + PELLET, config::getMaterialSet, config::getMaterialPellet);
+            builder.block = rgtrBlock(mat + BLOCK, hardness, sound, tier, config::getMaterialSet, config::getMaterialBlock);
+            return this;
+        }
+
+        public materialRegistrar enriched(float hardness, EOBlockTier tier) {
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
+            builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
             return this;
         }
 
@@ -1322,8 +1356,8 @@ public class EOMaterials {
             return path.substring(0, path.length() - 7);
         }
 
-        if (path.startsWith(wPlate)) {
-            return path.substring(13);
+        if (path.endsWith(PELLET)) {
+            return path.substring(0, path.length() - 7);
         }
 
         // Blocks
@@ -1374,6 +1408,10 @@ public class EOMaterials {
             }
 
             return base;
+        }
+
+        if (path.endsWith(ENRICHED_BLOCK)) {
+            return path.substring(0, path.length() - 15);
         }
 
         if (path.endsWith(BLOCK)) {

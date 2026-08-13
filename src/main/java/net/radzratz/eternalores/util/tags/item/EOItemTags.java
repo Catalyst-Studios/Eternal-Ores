@@ -611,6 +611,16 @@ public class EOItemTags {
         }
     }
 
+    public static class Pellets {
+        public static final TagKey<Item> PELLETS = crteCGeneralTag("pellets");
+
+        public static final TagKey<Item> PELLET_ANTIMATTER = crtePebbleC("antimatter");
+
+        private static TagKey<Item> crtePebbleC(String path) {
+            return ItemTags.create(C(pelletTag + path));
+        }
+    }
+
     public static class StorageBlocks {
         public static final TagKey<Item> ITEM_STORAGE_RAW = crteRawStorageBlockGeneralTagC("raw");
 
@@ -742,6 +752,10 @@ public class EOItemTags {
         private static TagKey<Item> crteRawStorageBlockGeneralTagC(String path) {
             return ItemTags.create(C(storage + path));
         }
+    }
+
+    public static class EnrichedBlocks {
+        public static final TagKey<Item> ITEM_ENRICHED = crteCGeneralTag("enriched_blocks");
     }
 
     public static class Ores {

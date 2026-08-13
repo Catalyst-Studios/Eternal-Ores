@@ -20,6 +20,7 @@ import net.radzratz.eternalores.util.compat.geore.tags.GEOreItemTagEntries;
 import net.radzratz.eternalores.util.tags.item.EOItemTags;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import top.theillusivec4.curios.api.CuriosTags;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,6 +31,8 @@ import static me.jddev0.ep.item.EPItems.*;
 import static net.minecraft.tags.ItemTags.COALS;
 import static net.minecraft.world.item.Items.*;
 import static net.neoforged.neoforge.common.Tags.Items.*;
+import static net.radzratz.eternalores.item.special.prospectors.EOAdvProspector.ADV_PROSPECTOR;
+import static net.radzratz.eternalores.item.special.prospectors.EOBasicProspector.PROSPECTOR;
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;
 import static net.radzratz.eternalores.util.EOUtils.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Blends.BLENDS;
@@ -340,6 +343,9 @@ public class EOItemTagProvider extends ItemTagsProvider {
         exDeorumOptional(PEBBLE_BLACKSTONE, "blackstone_pebble");
         exDeorumOptional(PEBBLES, "basalt_pebble");
         exDeorumOptional(PEBBLE_BASALT, "basalt_pebble");
+
+        tag(CuriosTags.createItemTag("prospector")).addOptional(ADV_PROSPECTOR.getId());
+        tag(CuriosTags.createItemTag("prospector")).addOptional(PROSPECTOR.getId());
 
         removal(DUSTS_SAWDUST_R, WOOD_SET.DUST.get());
         removal(DUSTS_COKE_COAL_R, COKE_SET.DUST.get());

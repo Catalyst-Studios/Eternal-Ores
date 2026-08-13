@@ -252,6 +252,10 @@ public record EORecipePaths(String id) {
         return "enriched/" + id;
     }
 
+    public String Pellet() {
+        return "pellet/" + id;
+    }
+
     public String Plate() {
         return "plates/" + id;
     }

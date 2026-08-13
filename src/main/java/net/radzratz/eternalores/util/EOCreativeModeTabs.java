@@ -60,55 +60,7 @@ public class EOCreativeModeTabs {
     public static final Supplier<CreativeModeTab> COMPAT_ITEMS;
 
     static {
-        ORES = rgtrTab(1, ALUMINUM_SET.ORE, "ores", tab ->
-                tab.displayItems((params, output) -> acceptBlocks(output, EOreBlock.class)));
-
-        RAW_BLOCKS = rgtrTab(2, CATALYRIUM_SET.RAW_BLOCK, "raw_mats", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EORawMaterialItem.class);
-                    acceptBlocks(output, EORawBlock.class);
-                })
-        );
-
-        BLOCKS = rgtrTab(3, CATALYRIUM_SET.BLOCK, "blocks", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptBlocks(output, EOStorageBlock.class);
-                    acceptBlocks(output, EODustBlock.class);
-                })
-        );
-
-        COMP_BLOCKS = rgtrTab(4, ENDER_EYE_SET.BLOCK, "compressed", tab ->
-                tab.displayItems((params, output) -> acceptBlocks(output, EOCompressedBlock.class)));
-
-        MATERIALS = rgtrTab(5, MISSING_SET.INGOT, "materials", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EOIngotItem.class);
-                    acceptItems(output, EOItems.class);
-                    acceptItems(output, EOPebbleItem.class);
-                    acceptItems(output, EOGemItem.class);
-                    acceptItems(output, EONuggetItem.class);
-                    acceptItems(output, EOGemShardItem.class);
-                })
-        );
-
-        DUSTS = rgtrTab(6, CATALYRIUM_SET.DUST, "dusts", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EOBlends.class);
-                    acceptItems(output, EODustItem.class);
-                    acceptItems(output, EOSmallDustItem.class);
-                })
-        );
-
-        PLATES = rgtrTab(7, CATALYRIUM_SET.PLATE, "forms", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EOPlateItem.class);
-                    acceptItems(output, EORodItem.class);
-                    acceptItems(output, EOGearItem.class);
-                    acceptItems(output, EOFoilItem.class);
-                })
-        );
-
-        TOOLS = rgtrTab(8, COBALT_HAMMER, "tools", tab ->
+        TOOLS = rgtrTab(1, COBALT_HAMMER, "tools", tab ->
                 tab.displayItems((params, output) -> {
                     acceptItems(output, EOTeleporter.class);
                     acceptItems(output, EOBasicProspector.class);
@@ -120,27 +72,8 @@ public class EOCreativeModeTabs {
                 })
         );
 
-        COALS = rgtrTab(9, COKE_SET.COAL, "coals", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EOCoalItem.class);
-                    acceptBlocks(output, EOCoalBlock.class);
-                })
-        );
-
-        COMPAT_MATS = rgtrTab(10, CATALYRIUM_SET.CLUMP, "compat_materials", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EOClumpItem.class);
-                    acceptItems(output, EOSmallClumpItem.class);
-                    acceptItems(output, EODirtyDustItem.class);
-                    acceptItems(output, EOShardItem.class);
-                    acceptItems(output, EOCrystalItem.class);
-                    acceptItems(output, EOrGemItem.class);
-                    acceptItems(output, EOEnrichedItems.class);
-                })
-        );
-
         // If none of these mods are present, this tab is hidden
-        COMPAT_ITEMS = rgtrTab(11, TELEPORTER, "compat_items", tab ->
+        COMPAT_ITEMS = rgtrTab(2, TELEPORTER, "compat_items", tab ->
                 tab.displayItems((params, output) -> {
                     acceptIfModLoaded(IRON_FURNACES, output, () -> {
                         acceptBlocks(output, EOIFurnacesFurnaceBlock.class);
@@ -163,6 +96,75 @@ public class EOCreativeModeTabs {
                     });
                 })
         );
+
+        ORES = rgtrTab(3, ALUMINUM_SET.ORE, "ores", tab ->
+                tab.displayItems((params, output) -> acceptBlocks(output, EOreBlock.class)));
+
+        RAW_BLOCKS = rgtrTab(4, CATALYRIUM_SET.RAW_BLOCK, "raw_mats", tab ->
+                tab.displayItems((params, output) -> {
+                    acceptItems(output, EORawMaterialItem.class);
+                    acceptBlocks(output, EORawBlock.class);
+                })
+        );
+
+        BLOCKS = rgtrTab(5, CATALYRIUM_SET.BLOCK, "blocks", tab ->
+                tab.displayItems((params, output) -> {
+                    acceptBlocks(output, EOStorageBlock.class);
+                    acceptBlocks(output, EODustBlock.class);
+                })
+        );
+
+        MATERIALS = rgtrTab(6, MISSING_SET.INGOT, "materials", tab ->
+                tab.displayItems((params, output) -> {
+                    acceptItems(output, EOIngotItem.class);
+                    acceptItems(output, EOItems.class);
+                    acceptItems(output, EOPebbleItem.class);
+                    acceptItems(output, EOGemItem.class);
+                    acceptItems(output, EONuggetItem.class);
+                    acceptItems(output, EOGemShardItem.class);
+                })
+        );
+
+        DUSTS = rgtrTab(7, CATALYRIUM_SET.DUST, "dusts", tab ->
+                tab.displayItems((params, output) -> {
+                    acceptItems(output, EOBlends.class);
+                    acceptItems(output, EODustItem.class);
+                    acceptItems(output, EOSmallDustItem.class);
+                })
+        );
+
+        PLATES = rgtrTab(8, CATALYRIUM_SET.PLATE, "forms", tab ->
+                tab.displayItems((params, output) -> {
+                    acceptItems(output, EOPlateItem.class);
+                    acceptItems(output, EORodItem.class);
+                    acceptItems(output, EOGearItem.class);
+                    acceptItems(output, EOFoilItem.class);
+                })
+        );
+
+        COALS = rgtrTab(9, COKE_SET.COAL, "coals", tab ->
+                tab.displayItems((params, output) -> {
+                    acceptItems(output, EOCoalItem.class);
+                    acceptBlocks(output, EOCoalBlock.class);
+                })
+        );
+
+        COMPAT_MATS = rgtrTab(10, CATALYRIUM_SET.CLUMP, "compat_materials", tab ->
+                tab.displayItems((params, output) -> {
+                    acceptItems(output, EOPelletItem.class);
+                    acceptItems(output, EOClumpItem.class);
+                    acceptItems(output, EOSmallClumpItem.class);
+                    acceptItems(output, EODirtyDustItem.class);
+                    acceptItems(output, EOShardItem.class);
+                    acceptItems(output, EOCrystalItem.class);
+                    acceptItems(output, EOrGemItem.class);
+                    acceptItems(output, EOEnrichedItems.class);
+                    acceptBlocks(output, EOEnrichedBlock.class);
+                })
+        );
+
+        COMP_BLOCKS = rgtrTab(11, ENDER_EYE_SET.BLOCK, "compressed", tab ->
+                tab.displayItems((params, output) -> acceptBlocks(output, EOCompressedBlock.class)));
     }
 
     public static CreativeModeTab.Builder base(Supplier<? extends ItemLike> icon) {

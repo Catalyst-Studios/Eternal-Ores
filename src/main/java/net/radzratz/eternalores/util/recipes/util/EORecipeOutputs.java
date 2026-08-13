@@ -35,6 +35,7 @@ public class EORecipeOutputs {
     public final Item BLOCK;
     public final Item BLOCK_DUST;
     public final Item DUST_BLOCK;
+    public final Item ENRICHED_BLOCK;
     public final Item RAW;
     public final Item RAW_BLOCK;
     public final Item PEBBLE;
@@ -43,6 +44,7 @@ public class EORecipeOutputs {
     public final Item GEOSHARDS;
     public final Item GEOSHARD_BLOCK;
     public final Item STONES;
+    public final Item PELLET;
 
     public EORecipeOutputs(String mat, Registry<Item> reg) {
         ResourceLocation gemLocation = GEM_EXCEPTIONS.contains(mat)
@@ -77,6 +79,7 @@ public class EORecipeOutputs {
         this.BLOCK = getItemFromAnyNamespace(reg, mat + EOMaterials.materialPrefixSuffixes.BLOCK);
         this.BLOCK_DUST = getItemFromAnyNamespace(reg, mat + suffixes);
         this.DUST_BLOCK = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.DUST_BLOCK));
+        this.ENRICHED_BLOCK = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.ENRICHED_BLOCK));
         this.RAW = get(reg, EO(outputRawOre));
         this.RAW_BLOCK = get(reg, EO(EOMaterials.materialPrefixSuffixes.RAW + mat + EOMaterials.materialPrefixSuffixes.BLOCK));
         this.PEBBLE = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.PEBBLE));
@@ -84,6 +87,7 @@ public class EORecipeOutputs {
         this.GEOSHARDS = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.GEOSHARDS));
         this.GEOSHARD_BLOCK = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.GEORE_BLOCK));
         this.STONES = get(reg, MC(mat));
+        this.PELLET = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.PELLET));
     }
 
     private Item get(Registry<Item> registry, ResourceLocation id) {

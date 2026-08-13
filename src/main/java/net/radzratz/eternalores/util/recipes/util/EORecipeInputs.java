@@ -41,6 +41,7 @@ public class EORecipeInputs {
     public final TagKey<Item> STORAGE_BLOCK_RAW;
     public final TagKey<Item> RAW_BLOCK_CASE;
     public final TagKey<Item> DUST_BLOCK;
+    public final TagKey<Item> ENRICHED_BLOCK;
     public final TagKey<Item> ORE;
     public final TagKey<Item> COALS;
     public final TagKey<Item> ENRICHED;
@@ -49,6 +50,7 @@ public class EORecipeInputs {
     public final TagKey<Item> GEOSHARDS;
     public final TagKey<Item> GEOSHARD_BLOCKS;
     public final TagKey<Item> STONES;
+    public final TagKey<Item> PELLET;
 
     public EORecipeInputs(String mat) {
         String cleanCoal = mat.endsWith("_coal") ? mat.substring(0, mat.length() - 5) : mat;
@@ -88,12 +90,14 @@ public class EORecipeInputs {
         this.STORAGE_BLOCK_RAW = TagKey.create(reg, C(storage + materialPrefixSuffixes.RAW + mat));
         this.RAW_BLOCK_CASE = TagKey.create(reg, mat.equals("sulfur") ? C(storage + "sulfur") : C(storage + materialPrefixSuffixes.RAW + mat));
         this.DUST_BLOCK = TagKey.create(reg, C(dustB + mat));
+        this.ENRICHED_BLOCK = TagKey.create(reg, C(enrichedBlockTag + mat));
         this.ORE = TagKey.create(reg, C(ores + mat));
         this.ENRICHED = TagKey.create(reg, C(enrichedTag + mat));
         this.BLENDS = TagKey.create(reg, C(blends + mat));
         this.GEOSHARDS = TagKey.create(reg, GEO(geoshards + mat));
         this.GEOSHARD_BLOCKS = TagKey.create(reg, GEO(geoshardBlock + mat));
         this.STONES = TagKey.create(reg, EO(stonesTag + mat));
+        this.PELLET = TagKey.create(reg, C(pelletTag + mat));
     }
 
     public static EORecipeInputs fromPath(String path) {

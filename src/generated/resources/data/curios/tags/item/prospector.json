@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "eternalores:advanced_prospector",
+      "required": false
+    },
+    {
+      "id": "eternalores:prospector",
+      "required": false
+    }
+  ]
+}

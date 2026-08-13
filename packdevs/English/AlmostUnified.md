@@ -43,7 +43,7 @@ will output their corresponding material Clump, but mekanism doesn't have any Sm
 simply to make its integration with Oritech a bit smoother, and Eternal Ores implemented recipes do output both Clumps and Small Clumps. The same can be said with the majority of
 ore block processing recipes, as they have **very** different outputs.
 
-Unfortunately, Almost Unified doesn't fully recognize both Eternal Ores and Oritech's recipes Raw Material Recipes, since both `recipes` from the same `recipe type` differ in `results`, `time`,
+Unfortunately, Almost Unified doesn't fully recognize both Eternal Ores and Oritech's Raw Material Recipes, since both `recipes` from the same `recipe type` differ in `results`, `time`,
 `result count`, etc. But Eternal Ores added, something a bit annoying to some, that removes overlapping and duplicate recipes, one works by removing specific recipe id's, and the other
 by comparing inputs and outputs.
 

@@ -21,6 +21,7 @@ import java.util.*;
 import java.util.function.BooleanSupplier;
 
 import static net.radzratz.eternalores.util.EOUtils.capitalizeWords;
+import static net.radzratz.eternalores.util.EOUtils.curiosMod;
 import static net.radzratz.eternalores.util.config.EOTooltipConfig.CFG;
 import static net.radzratz.eternalores.util.lang.EOLangKeys.*;
 
@@ -161,6 +162,10 @@ public class EOAdvProspector extends EOProspectors {
         int durationSec = EOToolsConfig.CFG.advancedProspector.getOverlayDurationMs() / 1000;
 
         if (CFG.EO_TOOLTIPS.advancedProspectorTooltips.get()) {
+            if (curiosMod) {
+                tooltip.add(Component.translatable(PROSPECTOR_CURIO).withStyle(ChatFormatting.WHITE));
+            }
+
             if (!linked.isEmpty()) {
                 tooltip.add(Component.translatable(ADVANCED_PROSPECTOR_LINKED_TO)
                         .withStyle(ChatFormatting.GRAY)

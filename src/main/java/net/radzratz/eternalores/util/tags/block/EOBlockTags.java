@@ -140,6 +140,10 @@ public class EOBlockTags {
         }
     }
 
+    public static class EnrichedBlocks {
+        public static final TagKey<Block> BLOCK_ENRICHED = crteGeneralBlockTagC("enriched_blocks");
+    }
+
     public static class OreBlocks {
         // Ores
         public static final TagKey<Block> BLOCK_ALUMINUM_ORE = crteOreBlockTagC("aluminum");

@@ -12,9 +12,11 @@ import mekanism.common.registries.MekanismItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.data.recipes.RecipeOutput;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.common.conditions.ICondition;
+import net.radzratz.eternalores.block.types.EOEnrichedBlock;
 import net.radzratz.eternalores.util.recipes.util.EOAdvancementYeeter;
 import net.radzratz.eternalores.item.types.EODustItem;
 import net.radzratz.eternalores.item.types.EOEnrichedItems;
@@ -119,6 +121,13 @@ public class EOMKInfusingRecipes {
             if (item instanceof EOEnrichedItems) {
                 if (generatedInfuserRecipes.add("mek_infuser_enriched_conv" + mat) && !mat.equals("iron")) {
                     infusion(yeet, inp.ENRICHED, mat, 80, id.Enriched());
+                }
+            }
+
+            // Enriched Block -> Chemical
+            if (item instanceof BlockItem b && b.getBlock() instanceof EOEnrichedBlock) {
+                if (generatedInfuserRecipes.add("mek_infuser_enriched_block_conv:" + mat)) {
+                    infusion(yeet, inp.ENRICHED_BLOCK, mat, 720, id.Enriched() + "_block");
                 }
             }
         });

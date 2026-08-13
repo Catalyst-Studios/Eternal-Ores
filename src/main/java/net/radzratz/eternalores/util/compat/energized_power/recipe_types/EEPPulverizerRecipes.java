@@ -23,6 +23,7 @@ import static net.radzratz.eternalores.util.recipes.util.EORecipeActions.itemRec
 import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.crushingExclusions;
 import static net.radzratz.eternalores.util.recipes.types.EOCommonRecipes.*;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeInputs.*;
+import static net.radzratz.eternalores.util.recipes.util.EORecipeOutputs.formTypeExclusions;
 import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveRecipeId;
 
 public class EEPPulverizerRecipes {
@@ -138,7 +139,7 @@ public class EEPPulverizerRecipes {
 
             // Block -> Dust Block
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock || isVanillaBlock(inp.STORAGE_BLOCK)) {
-                if (generatePulverizerRecipes.add("energized_pulverizer_block:" + mat) && !crushingExclusions().contains(mat) && out.DUST_BLOCK != null) {
+                if (generatePulverizerRecipes.add("energized_pulverizer_block:" + mat) && !crushingExclusions().contains(mat) && !formTypeExclusions().contains(mat) && out.DUST_BLOCK != null) {
                     plvr(yeet, inp.STORAGE_BLOCK, out.DUST_BLOCK, 1, ONE, ONE, null, 0, null, null, id.DustBlock());
                 }
             }

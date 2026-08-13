@@ -46,6 +46,7 @@ public class EOBlockHelpers {
     public static DeferredBlock<EORawBlock> rgtrRawBlock(String id, float hardness, SoundType sound, EOBlockTier tier, BooleanSupplier material, BooleanSupplier set) {
         return rgtrBlock(id, () -> new EORawBlock(tier, BlockBehaviour.Properties.of()
                 .strength(hardness)
+                .noLootTable()
                 .requiresCorrectToolForDrops()
                 .sound(sound)), material, set);
     }
@@ -53,6 +54,7 @@ public class EOBlockHelpers {
     public static DeferredBlock<EOStorageBlock> rgtrBlock(String id, float hardness, SoundType sound, EOBlockTier tier, BooleanSupplier material, BooleanSupplier set) {
         return rgtrBlock(id, () -> new EOStorageBlock(tier, BlockBehaviour.Properties.of()
                 .strength(hardness)
+                .noLootTable()
                 .requiresCorrectToolForDrops()
                 .sound(sound)), material, set);
     }
@@ -60,6 +62,7 @@ public class EOBlockHelpers {
     public static DeferredBlock<EORedstoneBlock> rgtrRedstoneBlock(String id, float hardness, SoundType sound, EOBlockTier tier, BooleanSupplier material, BooleanSupplier set) {
         return rgtrBlock(id, () -> new EORedstoneBlock(tier, BlockBehaviour.Properties.of()
                 .strength(hardness)
+                .noLootTable()
                 .requiresCorrectToolForDrops()
                 .sound(sound)), material, set);
     }
@@ -67,6 +70,7 @@ public class EOBlockHelpers {
     public static DeferredBlock<EODustBlock> rgtrDustBlock(String id, float hardness, EOBlockTier tier, BooleanSupplier material, BooleanSupplier set) {
         return rgtrBlock(id, () -> new EODustBlock(tier, BlockBehaviour.Properties.of()
                 .strength(hardness)
+                .noLootTable()
                 .requiresCorrectToolForDrops()), material, set);
     }
 
@@ -74,14 +78,24 @@ public class EOBlockHelpers {
         return rgtrBlock(id, () -> new EODustBlock(tier, burnTime, BlockBehaviour.Properties.of()
                 .strength(hardness)
                 .requiresCorrectToolForDrops()
+                .noLootTable()
                 .sound(sound)), material, set);
     }
 
     public static DeferredBlock<EOCoalBlock> rgtrCoalBlock(String id, float hardness, int burnTime, SoundType sound, EOBlockTier tier, BooleanSupplier material, BooleanSupplier set) {
         return rgtrBlock(id, () -> new EOCoalBlock(tier, burnTime, BlockBehaviour.Properties.of()
                 .strength(hardness)
+                .noLootTable()
                 .requiresCorrectToolForDrops()
                 .sound(sound)), material, set);
+    }
+
+    public static DeferredBlock<EOEnrichedBlock> rgtrEnrichedBlock(String id, float hardness, EOBlockTier tier, BooleanSupplier material, BooleanSupplier set) {
+        return rgtrBlock(id, () -> new EOEnrichedBlock(tier, BlockBehaviour.Properties.of()
+                .strength(hardness)
+                .noLootTable()
+                .requiresCorrectToolForDrops()
+        ), material, set);
     }
 
     public static DeferredBlock<EOCompressedBlock> rgtrCompressedBlock(String id, float hardness, Supplier<SoundType> soundSupplier, Supplier<Boolean> noOcclusionSupplier, EOBlockTier tier, BooleanSupplier ind) {

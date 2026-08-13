@@ -19,5 +19,6 @@ public class EORenderHandler {
 
         ItemBlockRenderTypes.setRenderLayer(ETHERIUM_SET.BLOCK.get(), RenderType.translucent());
         ItemBlockRenderTypes.setRenderLayer(STELLARIUM_SET.BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(SOURCE_SET.BLOCK.get(), RenderType.translucent());
     }
 }
