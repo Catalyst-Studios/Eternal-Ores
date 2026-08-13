@@ -123,11 +123,7 @@ public class EOCraftingRecipes extends RecipeProvider {
             Item rawBlockOutput = reg.getOptional(mat.equals("sulfur") ? EO("sulfur_block") : EO(RAW + mat + BLOCK)).orElse(null);
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock) {
-                boolean isFours = FOURS_DUST_MATERIALS.contains(mat);
-
-                if (isFours) {
-                    isFours = formTypeExclusions().contains(mat);
-                }
+                boolean isFours = FOURS_DUST_MATERIALS.contains(mat) && !formTypeExclusions().contains(mat);
 
                 // Dust -> Dust Block
                 if (generatedRecipes.add("dust_block:" + mat) && !mat.equals("coke_coal") && out.DUST_BLOCK != null) {
