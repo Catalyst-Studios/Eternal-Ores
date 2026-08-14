@@ -6,7 +6,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="eternalores"
-version="2.0"
+version="2.1"
 displayName="Eternal Ores"
 authors="RadzRatz"
 description="The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, ore blocks and compressed blocks!"
@@ -19,7 +19,7 @@ config="eternalores.mixins.json"
 [[dependencies.eternalores]]
 modId="neoforge"
 type="required"
-versionRange="21.1.200"
+versionRange="21.1.244"
 ordering="NONE"
 side="BOTH"
 
@@ -40,7 +40,7 @@ side="BOTH"
 [[dependencies.eternalores]]
 modId="create"
 type="optional"
-versionRange="6.0.9"
+versionRange="6.0.10"
 ordering="NONE"
 side="BOTH"
 
@@ -75,7 +75,7 @@ side="BOTH"
 [[dependencies.eternalores]]
 modId="oritech"
 type="optional"
-versionRange="1.2.6"
+versionRange="1.2.9"
 ordering="NONE"
 side="BOTH"
 
