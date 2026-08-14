@@ -18,7 +18,15 @@ public class EORenderHandler {
         event.registerEntityRenderer(EOEntityRegistry.PEBBLE.get(), ThrownItemRenderer::new);
 
         ItemBlockRenderTypes.setRenderLayer(ETHERIUM_SET.BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ETHERIUM_SET.DUST_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(ETHERIUM_SET.ENRICHED_BLOCK.get(), RenderType.translucent());
+
         ItemBlockRenderTypes.setRenderLayer(STELLARIUM_SET.BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(STELLARIUM_SET.DUST_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(STELLARIUM_SET.ENRICHED_BLOCK.get(), RenderType.translucent());
+
         ItemBlockRenderTypes.setRenderLayer(SOURCE_SET.BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(SOURCE_SET.DUST_BLOCK.get(), RenderType.translucent());
+        ItemBlockRenderTypes.setRenderLayer(SOURCE_SET.ENRICHED_BLOCK.get(), RenderType.translucent());
     }
 }
