@@ -39,7 +39,7 @@ import java.util.Optional;
 
 import static net.radzratz.eternalores.item.special.prospectors.renders.EOBasicOverlay.EDIT_PROSPECTOR_HUD;
 import static net.radzratz.eternalores.util.EOUtils.*;
-import static net.radzratz.eternalores.util.compat.curios.EOCurios.*;
+import static net.radzratz.eternalores.util.compat.curios.EOCuriosKeys.*;
 import static net.radzratz.eternalores.util.lang.EOLangKeys.*;
 import static net.radzratz.eternalores.util.models.EOResourcePack.getResourcesSupplier;
 
