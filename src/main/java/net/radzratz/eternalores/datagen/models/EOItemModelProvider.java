@@ -7,8 +7,10 @@ import net.minecraft.world.item.BlockItem;
 import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
+import net.neoforged.neoforge.client.model.generators.loaders.DynamicFluidContainerModelBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalores.EternalOres;
+import net.radzratz.eternalores.fluids.type.EOFluidBucketItem;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
@@ -25,8 +27,12 @@ public class EOItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         allItemEntries()
-                .filter(entry -> !(entry.get() instanceof BlockItem))
+                .filter(entry -> !(entry.get() instanceof BlockItem || entry.get() instanceof EOFluidBucketItem))
                 .forEach(item -> basicItem(Objects.requireNonNull(BuiltInRegistries.ITEM.getKey(item.get()))));
+
+        allItemEntries()
+                .filter(entry -> entry.get() instanceof EOFluidBucketItem)
+                .forEach(entry -> bucketItem((EOFluidBucketItem) entry.get(), Objects.requireNonNull(BuiltInRegistries.ITEM.getKey(entry.get()))));
 
         if (georeMod) {
             allGeOreItemEntries()
@@ -39,6 +45,14 @@ public class EOItemModelProvider extends ItemModelProvider {
                     .filter(entry -> !(entry.get() instanceof BlockItem))
                     .forEach(item -> basicItem(Objects.requireNonNull(BuiltInRegistries.ITEM.getKey(item.get()))));
         }
+    }
+
+    private void bucketItem(EOFluidBucketItem item, ResourceLocation id) {
+        ResourceLocation fluid = BuiltInRegistries.FLUID.getKey(item.getFluid());
+
+        withExistingParent(id.getPath(), ResourceLocation.fromNamespaceAndPath("neoforge", "item/bucket_drip"))
+                .customLoader(DynamicFluidContainerModelBuilder::begin)
+                .fluid(BuiltInRegistries.FLUID.get(fluid));
     }
 
     public @NotNull ItemModelBuilder basicItem(ResourceLocation item) {

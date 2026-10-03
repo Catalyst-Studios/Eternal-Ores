@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 100,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:ingots/cast_iron"
+  },
+  "result": {
+    "amount": 90,
+    "id": "eternalores:molten_cast_iron"
+  },
+  "temperature": 1000,
+  "time": 50
+}

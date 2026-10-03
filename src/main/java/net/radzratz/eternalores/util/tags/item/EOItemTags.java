@@ -35,6 +35,7 @@ public class EOItemTags {
 
     public static class Compat {
         public static final TagKey<Item> PRESS_MOLDS = crteEPTag("metal_press/press_molds");
+        public static final TagKey<Item> MOLDS_REUSABLE = crteReusable("molds/reusable");
         public static final TagKey<Item> ETERNAL_BLACKLIST = crteFAModifierTag("eternal_incompatible");
         public static final TagKey<Item> STONE_REPLACEABLES_ITEM = crteEOGeneralTag("stone_replaceables");
         public static final TagKey<Item> SLATE_REPLACEABLES_ITEM = crteEOGeneralTag("slate_replaceables");
@@ -61,6 +62,10 @@ public class EOItemTags {
         private static TagKey<Item> crteMekEnriched(String path) {
             return ItemTags.create(MEK(path));
         }
+
+        private static TagKey<Item> crteReusable(String path) {
+            return ItemTags.create(SLAG(path));
+        }
     }
 
     public static class Tools {
@@ -86,12 +91,25 @@ public class EOItemTags {
         public static final TagKey<Item> GEAR_MOLD = crteToolC("molds/gear");
         public static final TagKey<Item> FOIL_MOLD = crteToolC("molds/foil");
         public static final TagKey<Item> WIRE_MOLD = crteToolC("molds/wire");
+        public static final TagKey<Item> INGOT_MOLD = crteToolC("molds/ingot");
+        public static final TagKey<Item> GEM_MOLD = crteToolC("molds/gem");
+        public static final TagKey<Item> NUGGET_MOLD = crteToolC("molds/nugget");
 
         public static final TagKey<Item> HAMMERS = crteToolC("crushing_hammers");
         public static final TagKey<Item> GEM_CUTTERS = crteToolC("gem_cutters");
         public static final TagKey<Item> WIRE_CUTTERS = crteToolC("wire_cutters");
         public static final TagKey<Item> PROSPECTORS = crteToolC("prospectors");
         public static final TagKey<Item> MOLDS = crteToolC("molds");
+        public static final TagKey<Item> CASTS = crteSlagGeneralTag("cast");
+
+        public static final TagKey<Item> CASTS_PLATE = crteSlagGeneralTag("cast/plates");
+        public static final TagKey<Item> CASTS_ROD = crteSlagGeneralTag("cast/rods");
+        public static final TagKey<Item> CASTS_GEAR = crteSlagGeneralTag("cast/gears");
+        public static final TagKey<Item> CASTS_FOIL = crteSlagGeneralTag("cast/foils");
+        public static final TagKey<Item> CASTS_WIRE = crteSlagGeneralTag("cast/wires");
+        public static final TagKey<Item> CASTS_INGOT = crteSlagGeneralTag("cast/ingots");
+        public static final TagKey<Item> CASTS_GEM = crteSlagGeneralTag("cast/gems");
+        public static final TagKey<Item> CASTS_NUGGET = crteSlagGeneralTag("cast/nuggets");
 
         private static TagKey<Item> crteToolC(String path) {
             return ItemTags.create(C("tools/" + path));
@@ -966,5 +984,9 @@ public class EOItemTags {
 
     private static TagKey<Item> crteGeOresGeneralTag(String path) {
         return ItemTags.create(GEO(path));
+    }
+
+    private static TagKey<Item> crteSlagGeneralTag(String path) {
+        return ItemTags.create(SLAG(path));
     }
 }

@@ -3,8 +3,12 @@ package net.radzratz.eternalores.datagen.lang.EN;
 import mekanism.api.chemical.Chemical;
 import mekanism.common.registration.impl.SlurryRegistryObject;
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import net.radzratz.eternalores.EternalOres;
+import net.radzratz.eternalores.fluids.type.EOFluidBucketItem;
+import net.radzratz.eternalores.fluids.type.EOFluidType;
 import net.radzratz.eternalores.util.EOMaterials;
 import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusions;
 import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOMekSlurries;
@@ -36,6 +40,7 @@ public class EOLocalizationEN_US extends LanguageProvider {
     @Override
     protected void addTranslations() {
         addCoreTranslations();
+        addFluids();
         addToolTip();
         addClientMessages();
         addCategories();
@@ -47,64 +52,80 @@ public class EOLocalizationEN_US extends LanguageProvider {
         allItemEntries().forEach(item -> {
             String path = item.getId().getPath();
             if (path.startsWith("compressed_")) return;
+            if (path.endsWith("_bucket")) return;
             add(item.get(), formatNames(path));
         });
 
-        add(CREATIVE_TAB + "ores", tabOresName());
-        add(CREATIVE_TAB + "raw_mats", tabRawMatsName());
-        add(CREATIVE_TAB + "blocks", tabBlocksName());
-        add(CREATIVE_TAB + "compressed", tabCompressedName());
-        add(CREATIVE_TAB + "materials", tabMaterialsName());
-        add(CREATIVE_TAB + "dusts", tabDustsName());
-        add(CREATIVE_TAB + "forms", tabFormsName());
-        add(CREATIVE_TAB + "tools", tabToolsName());
-        add(CREATIVE_TAB + "coals", tabCoalsName());
-        add(CREATIVE_TAB + "compat_materials", tabCompatMaterialsName());
-        add(CREATIVE_TAB + "compat_items", tabCompatItemsName());
+        add(TAB_TOOLS, tabTools());
+        add(TAB_MATERIALS, tabMaterials());
+        add(TAB_BLOCKS, tabBlocksName());
+        add(TAB_FORMS, tabForms());
+        add(TAB_ORES, tabOres());
+        add(TAB_COMPRESSED, tabCompressedName());
+        add(TAB_GEORE, tabGeOre());
+        add(TAB_FLUIDS, tabFluids());
     }
 
-    protected String tabOresName() {
-        return "EO Ores";
+    protected void addFluids() {
+        allFluidSourceEntries().forEach(entry -> {
+            Fluid fluid = entry.get();
+            if (!(fluid.getFluidType() instanceof EOFluidType type)) return;
+
+            String mat = translateMaterial(replaceUnderscoreWithCapitalization(entry.getId().getPath()));
+            String key = "fluid_type." + EternalOres.id + "." + entry.getId().getPath();
+            add(key, fluidName(type.type(), mat));
+        });
+
+        allItemEntries().filter(entry -> entry.get() instanceof EOFluidBucketItem)
+                .forEach(entry -> {
+                    EOFluidBucketItem bucket = (EOFluidBucketItem) entry.get();
+                    if (!(bucket.getFluid().getFluidType() instanceof EOFluidType type)) return;
+
+                    String materialPath = entry.getId().getPath().replace("_bucket", "");
+                    String mat = translateMaterial(replaceUnderscoreWithCapitalization(materialPath));
+                    add(bucket, bucketItemName(fluidName(type.type(), mat)));
+                });
+
+        allBlockEntries().filter(entry -> entry.get() instanceof LiquidBlock)
+                .forEach(entry -> {
+                    LiquidBlock liquidBlock = (LiquidBlock) entry.get();
+                    if (!(liquidBlock.fluid.getFluidType() instanceof EOFluidType type)) return;
+
+                    String mat = translateMaterial(replaceUnderscoreWithCapitalization(entry.getId().getPath()));
+                    add(liquidBlock, fluidName(type.type(), mat));
+                });
     }
 
-    protected String tabRawMatsName() {
-        return "EO Raw Materials";
+    protected String tabTools() {
+        return "EO Tools";
+    }
+
+    protected String tabMaterials() {
+        return "EO Materials";
     }
 
     protected String tabBlocksName() {
         return "EO Blocks";
     }
 
+    protected String tabOres() {
+        return "EO Ores";
+    }
+
+    protected String tabForms() {
+        return "EO Forms";
+    }
+
     protected String tabCompressedName() {
         return "EO Compressed Blocks";
     }
 
-    protected String tabMaterialsName() {
-        return "EO Materials";
+    protected String tabGeOre() {
+        return "EO GeOre";
     }
 
-    protected String tabDustsName() {
-        return "EO Dusts";
-    }
-
-    protected String tabFormsName() {
-        return "EO Material Forms";
-    }
-
-    protected String tabToolsName() {
-        return "EO Tools";
-    }
-
-    protected String tabCoalsName() {
-        return "EO Coals (Fuels)";
-    }
-
-    protected String tabCompatMaterialsName() {
-        return "EO Compat Materials";
-    }
-
-    protected String tabCompatItemsName() {
-        return "EO Compat Items & Blocks";
+    protected String tabFluids() {
+        return "EO Fluids/Chemicals/Gases/Plasmas";
     }
 
     protected void addToolTip() {
@@ -165,10 +186,10 @@ public class EOLocalizationEN_US extends LanguageProvider {
 
     protected void addCategories() {
         add(ETERNAL_ORES_CAT, "Eternal Ores");
-        add(BASIC_PROSPECTOR_CAT, "Edit Prospector HUD Position");
-        add(PROSPECTOR_CURIO_CAT, "Prospector Curio Use");
-        add(PROSPECTOR_CURIO_LINK, "Prospector Curio Link");
-        add(PROSPECTOR_CURIO_UNLINK, "Prospector Curio Unlink");
+        add(BASIC_PROSPECTOR_CAT, "[Prospector] Edit HUD Position");
+        add(PROSPECTOR_CURIO_CAT, "[Prospector] Curio Use");
+        add(PROSPECTOR_CURIO_LINK, "[Prospector] Curio Link");
+        add(PROSPECTOR_CURIO_UNLINK, "[Prospector] Curio Unlink");
     }
 
     protected void addScreens() {
@@ -287,6 +308,7 @@ public class EOLocalizationEN_US extends LanguageProvider {
                         itemNames(path, HAMMER, this::hammerName),
                         itemNames(path, GEM_CUT, this::gemCutterName),
                         itemNames(path, WIRE_CUT, this::wireCutterName),
+                        itemNames(path, BUCKET, this::bucketItemName),
                         georeNames(path),
                         blockNames(path),
                         enderIONames(path)
@@ -309,6 +331,9 @@ public class EOLocalizationEN_US extends LanguageProvider {
         m.put("mold_plate", "Metal Plate Mold");
         m.put("mold_rod", "Metal Rod Mold");
         m.put("mold_foil", "Metal Foil Mold");
+        m.put("mold_ingot", "Metal Ingot Mold");
+        m.put("mold_gem", "Metal Gem Mold");
+        m.put("mold_nugget", "Metal Nugget Mold");
         m.put("salt_dust", "Salt");
         m.put("salt_small_dust", "Small Pile of Salt");
         m.put("sculk_dust", "Sculk Mass");
@@ -357,6 +382,18 @@ public class EOLocalizationEN_US extends LanguageProvider {
         m.put("advanced_prospector", "Advanced Prospector");
         m.put("coke_coal", "Coal Coke");
         m.put("sawdust", "Sawdust");
+        m.put("bio_blend", "Bioblend");
+        m.put("enriched_bio", "Enriched Bioblend");
+        m.put("bio_enriched_block", "Block of Enriched Bioblend");
+
+        m.put("fluid_blood", "Blood");
+        m.put("fluid_honey", "Honey");
+        m.put("fluid_nether_portal_fluid", "Nether Portal Fluid");
+        m.put("fluid_end_portal_fluid", "End Portal Fluid");
+        m.put("fluid_liquid_air", "Liquid Air");
+        m.put("fluid_heavy_water", "Heavy Water");
+        m.put("fluid_lubricant", "Lubricant");
+        m.put("fluid_creosote", "Creosote Oil");
         return m;
     }
 
@@ -450,6 +487,10 @@ public class EOLocalizationEN_US extends LanguageProvider {
 
     protected String wireCutterName(String mat) {
         return mat + " Wire Cutter";
+    }
+
+    protected String bucketItemName(String mat) {
+        return "Bucket of " + mat;
     }
 
     protected String gemShardName(String mat) {
@@ -569,6 +610,13 @@ public class EOLocalizationEN_US extends LanguageProvider {
         if (!matches) return Optional.empty();
         String mat = translateMaterial(replaceUnderscoreWithCapitalization(path));
         return Optional.of(nameBuilder.apply(mat));
+    }
+
+    protected String fluidName(EOFluidType.FluidTypes types, String mat) {
+        return switch (types) {
+            case MOLTEN -> "Molten " + mat;
+            case FLUID, GAS, CHEMICAL -> mat;
+        };
     }
 
     protected String defaultName(String path) {

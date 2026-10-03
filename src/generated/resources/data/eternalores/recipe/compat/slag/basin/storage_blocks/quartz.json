@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:basin_casting",
+  "ingredient": {
+    "amount": 288,
+    "fluid": "eternalores:molten_quartz"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:quartz_block"
+  }
+}

@@ -11,7 +11,6 @@ public class EODuplicateRecipeConfig {
     public static final ModConfigSpec CONFIG_SPEC;
 
     public static ModConfigSpec.BooleanValue enabled;
-    public static ModConfigSpec.EnumValue<Mode> mode;
     public static ModConfigSpec.BooleanValue verboseLogging;
 
     public static ModConfigSpec.BooleanValue oritechRecipes;
@@ -24,8 +23,6 @@ public class EODuplicateRecipeConfig {
     public static ModConfigSpec.BooleanValue railcraftRecipes;
     public static ModConfigSpec.BooleanValue energizedPowerRecipes;
     public static ModConfigSpec.BooleanValue actuallyAdditionsRecipes;
-
-    public enum Mode { ALWAYS_EO, PREFER_HIGHER_YIELD, PREFER_LOWER_YIELD }
 
     static {
         Pair<EODuplicateRecipeConfig, ModConfigSpec> pair = new ModConfigSpec.Builder().configure(EODuplicateRecipeConfig::new);
@@ -65,9 +62,10 @@ public class EODuplicateRecipeConfig {
                     Immersive Engineering: Crusher, Arc Furnace and Alloy
                     Oritech: Grinder, Pulverizer, Refinery, Atomic Forge, Centrifuge, Centrifuge Fluid and Foundry
                     Integrated Dynamics: Squeezer and Mechanical Squeezer
-                    Mekanism More Machine: Stamper // BTW it's real recipe type id is Mekanism:Stamping for some reason
-                    Railcraft: Crusher
+                    Mekanism More Machine: Stamper // it's real recipe type id is mekanism:stamping for some reason
+                    Railcraft: Crusher // it's real recipe type id is railcraft:crushing
                     Ender IO: Sag Milling and Alloy Smelting
+                    Excessive Utilities: Crusher
                     Actually Additions: Crushing
                     Energized Power: Alloy Furnace and Pulverizer
                     Create: Splashing, Mixing and Crushing
@@ -78,16 +76,18 @@ public class EODuplicateRecipeConfig {
                  Runs after Almost Unified finishes its own tag, item and recipe unification. If said Eternal Ores recipe
                  was unified, it is left as is.
                 
-                 Almost Unified is a MUST to use alongside this config. You've been warned.
-                 See: https://www.curseforge.com/minecraft/mc-mods/almost-unified
+                 Almost Unified is HIGHLY SUGGESTED if you intend to use this config. You've been warned.
+                 See: https://www.curseforge.com/minecraft/mc-mods/almostunified
                 
-                 Additionally, KubeJS or CraftTweaker are highly suggested in case we missed any duplicate recipe.
+                 Additionally, KubeJS and CraftTweaker are highly suggested in case we missed any duplicate recipe.
                  See: https://www.curseforge.com/minecraft/mc-mods/crafttweaker
                  See: https://www.curseforge.com/minecraft/mc-mods/kubejs
                 
                  Each config change requires a /reload (or a server restart) to take effect - Eternal Ores
                  re-runs both Basic and Smart automatically whenever datapacks are (re)synced, so a plain
                  /reload is enough, no restart needed.
+                
+                 And lastly, if verbose logging is enabled for whatever reason, you may find these logs over 'logs/eternalores/duplicates'
                 """).push("external_recipe_handler");
 
         oritechRecipes = toggle(bldr, "oritech");
@@ -108,19 +108,11 @@ public class EODuplicateRecipeConfig {
         enabled = bldr.comment(" [Server] Defines if Eternal Ores should compare recipe input ingredients, and outputs, in favor of EO's own implemented recipes.")
                 .define("isSmartRecipeHandlerEnabled", false);
 
-        mode = bldr.comment("""
-                         [Server] Defines if Eternal Ores should replace overlapping recipes.
-                         ALWAYS_EO: EO's recipe always wins, regardless of output yield.
-                         PREFER_HIGHER_YIELD: EO's recipe only wins if its output count is >= the other recipe's.
-                         PREFER_LOWER_YIELD: EO's recipe only wins if its output count is <= the other recipe's.
-                        """)
-                .defineEnum("mode", Mode.ALWAYS_EO);
-
         bldr.pop();
 
         bldr.push("debug");
 
-        verboseLogging = bldr.comment("[Server] Only used for Debug.")
+        verboseLogging = bldr.comment(" [Server] Only used for Debug.")
                 .define("shouldLogsAppear", false);
 
         bldr.pop();
@@ -128,7 +120,7 @@ public class EODuplicateRecipeConfig {
 
     private ModConfigSpec.BooleanValue toggle(ModConfigSpec.Builder bldr, String modId) {
         return bldr
-                .comment("[Server] Disables all whitelisted duplicate/overlapping " + replaceUnderscoreWithCapitalization(modId) + " recipes that conflict with Eternal Ores.")
+                .comment(" [Server] Disables all whitelisted duplicate/overlapping " + replaceUnderscoreWithCapitalization(modId) + " recipes that conflict with Eternal Ores.")
                 .define("are" + capitalize(modId) + "RecipesDisabled", false);
     }
 }

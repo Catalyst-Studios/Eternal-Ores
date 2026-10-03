@@ -14,8 +14,10 @@ import net.radzratz.eternalores.util.compat.create.recipe_types.*;
 import net.radzratz.eternalores.util.compat.enderio.recipe_types.EIEOAlloySmelterRecipes;
 import net.radzratz.eternalores.util.compat.enderio.recipe_types.EIEOSagMillRecipes;
 import net.radzratz.eternalores.util.compat.energized_power.recipe_types.*;
+import net.radzratz.eternalores.util.compat.excessive_utilities.types.EOEUCrusherRecipes;
 import net.radzratz.eternalores.util.compat.forbidden_arcanus.recipe_types.FAEOClibanoRecipes;
 import net.radzratz.eternalores.util.compat.geore.datagen.GEOreRecipes;
+import net.radzratz.eternalores.util.compat.hephaestus_forge.recipe_types.EOHFSmelteryRecipes;
 import net.radzratz.eternalores.util.compat.immersive_engineering.recipe_types.*;
 import net.radzratz.eternalores.util.compat.industrial_foregoing.recipe_types.EOreLaserDrillRecipes;
 import net.radzratz.eternalores.util.compat.integrated_dynamics.recipe_types.EOSqueezerRecipes;
@@ -28,6 +30,7 @@ import net.radzratz.eternalores.util.compat.powah.recipes.EOEnergizingRecipes;
 import net.radzratz.eternalores.util.compat.powah.recipes.EOReactorRecipes;
 import net.radzratz.eternalores.util.compat.railcraft.recipe_types.REOCrusherRecipes;
 import net.radzratz.eternalores.util.compat.railcraft.recipe_types.REOMetalRollingRecipes;
+import net.radzratz.eternalores.util.compat.slag_n_embers.recipe_types.EOSlagSmelteryRecipes;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
@@ -40,6 +43,7 @@ public class EORecipeProvider extends RecipeProvider {
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput, HolderLookup.@NotNull Provider lookup) {
         var reg = BuiltInRegistries.ITEM;
+        var fluidReg = BuiltInRegistries.FLUID;
 
         // Base Eternal Ores / Vanilla
         EOCraftingRecipes.generate(recipeOutput, reg);
@@ -124,5 +128,14 @@ public class EORecipeProvider extends RecipeProvider {
 
         // Ars Nouveau
         EOImbuementChamber.generate(recipeOutput, reg);
+
+        // Excessive Utilities
+        EOEUCrusherRecipes.generate(recipeOutput, reg);
+
+        // Hephaestus
+        EOHFSmelteryRecipes.generate(recipeOutput, reg, fluidReg);
+
+        // Slag n Embers
+        EOSlagSmelteryRecipes.generate(recipeOutput, reg, fluidReg);
     }
 }

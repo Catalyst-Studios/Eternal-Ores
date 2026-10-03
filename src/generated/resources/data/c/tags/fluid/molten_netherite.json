@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:molten_netherite",
+    {
+      "id": "hephaestus:molten_netherite",
+      "required": false
+    }
+  ]
+}

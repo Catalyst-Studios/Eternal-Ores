@@ -13,6 +13,7 @@ public class EOMaterialConfig {
     public final EOMaterialConfigHelper EOAmberSet;
     public final EOMaterialConfigHelper EOAmericiumSet;
     public final EOMaterialConfigHelper EOAmethystSet;
+    public final EOMaterialConfigHelper EOAncientDebrisSet;
     public final EOMaterialConfigHelper EOAndesiteSet;
     public final EOMaterialConfigHelper EOAnnealedCopperSet;
     public final EOMaterialConfigHelper EOAnthraciteCoalSet;
@@ -25,6 +26,7 @@ public class EOMaterialConfig {
     public final EOMaterialConfigHelper EOBasaltSet;
     public final EOMaterialConfigHelper EOBatteryAlloySet;
     public final EOMaterialConfigHelper EOBerylliumSet;
+    public final EOMaterialConfigHelper EOBioBlendSet;
     public final EOMaterialConfigHelper EOBiomassSet;
     public final EOMaterialConfigHelper EOBiosteelSet;
     public final EOMaterialConfigHelper EOBismuthSet;
@@ -236,6 +238,7 @@ public class EOMaterialConfig {
         this.EOAmberSet = new EOMaterialConfigHelper("amber", EOMaterialConfigHelper.NATURAL_GEM_FEATURES);
         this.EOAmericiumSet = new EOMaterialConfigHelper("americium", EOMaterialConfigHelper.ALLOY_FEATURES_WITHOUT_GEAR);
         this.EOAmethystSet = new EOMaterialConfigHelper("amethyst", EOMaterialConfigHelper.VANILLA_GEM_FEATURES);
+        this.EOAncientDebrisSet = new EOMaterialConfigHelper("ancient_debris", EOMaterialConfigHelper.MINIMUM_FEATURES_BLOCK);
         this.EOAndesiteSet = new EOMaterialConfigHelper("andesite", EOMaterialConfigHelper.STONE_FEATURES);
         this.EOAnnealedCopperSet = new EOMaterialConfigHelper("annealed_copper", EOMaterialConfigHelper.ALLOY_FEATURES);
         this.EOAnthraciteCoalSet = new EOMaterialConfigHelper("anthracite", EOMaterialConfigHelper.CARBON_FEATURES);
@@ -248,6 +251,7 @@ public class EOMaterialConfig {
         this.EOBasaltSet = new EOMaterialConfigHelper("basalt", EOMaterialConfigHelper.STONE_FEATURES);
         this.EOBatteryAlloySet = new EOMaterialConfigHelper("battery_alloy", EOMaterialConfigHelper.ALLOY_FEATURES_WITHOUT_FOIL_GEAR);
         this.EOBerylliumSet = new EOMaterialConfigHelper("beryllium", EOMaterialConfigHelper.NATURAL_METAL_FEATURES);
+        this.EOBioBlendSet = new EOMaterialConfigHelper("bio_blend", EOMaterialConfigHelper.BLEND_FEATURES);
         this.EOBiomassSet = new EOMaterialConfigHelper("biomass", EOMaterialConfigHelper.BIOMASS_FEATURE);
         this.EOBiosteelSet = new EOMaterialConfigHelper("biosteel", EOMaterialConfigHelper.ALLOY_FEATURES);
         this.EOBismuthSet = new EOMaterialConfigHelper("bismuth", EOMaterialConfigHelper.ALLOY_FEATURES_WITHOUT_FOIL);
@@ -441,6 +445,7 @@ public class EOMaterialConfig {
         this.EOAmberSet.configure(builder);
         this.EOAmericiumSet.configure(builder);
         this.EOAmethystSet.configure(builder);
+        this.EOAncientDebrisSet.configure(builder);
         this.EOAndesiteSet.configure(builder);
         this.EOAnnealedCopperSet.configure(builder);
         this.EOAnthraciteCoalSet.configure(builder);
@@ -453,6 +458,7 @@ public class EOMaterialConfig {
         this.EOBasaltSet.configure(builder);
         this.EOBatteryAlloySet.configure(builder);
         this.EOBerylliumSet.configure(builder);
+        this.EOBioBlendSet.configure(builder);
         this.EOBiomassSet.configure(builder);
         this.EOBiosteelSet.configure(builder);
         this.EOBismuthSet.configure(builder);

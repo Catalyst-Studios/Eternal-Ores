@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 100,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:dusts/beryllium"
+  },
+  "result": {
+    "amount": 90,
+    "id": "eternalores:molten_beryllium"
+  },
+  "temperature": 1789,
+  "time": 50
+}

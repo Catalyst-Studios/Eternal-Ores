@@ -8,6 +8,10 @@
     {
       "id": "energizedpower:gear_press_mold",
       "required": false
+    },
+    {
+      "id": "hephaestus:gear_cast",
+      "required": false
     }
   ]
 }

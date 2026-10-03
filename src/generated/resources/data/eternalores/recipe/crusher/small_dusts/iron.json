@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "excessive_utilities"
+    }
+  ],
+  "type": "excessive_utilities:crusher",
+  "fe_per_tick": 50,
+  "ingredient": {
+    "tag": "c:nuggets/iron"
+  },
+  "primary_output": {
+    "count": 1,
+    "id": "eternalores:iron_small_dust"
+  },
+  "secondary_chance": 1.0,
+  "ticks": 100
+}

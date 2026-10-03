@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:table_casting",
+  "cast": "slag:cast/rods",
+  "ingredient": {
+    "amount": 144,
+    "fluid": "eternalores:molten_steel"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:rod_steel"
+  }
+}

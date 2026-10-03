@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 50,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:storage_blocks/quartz"
+  },
+  "result": {
+    "amount": 360,
+    "id": "eternalores:molten_quartz"
+  },
+  "temperature": 800,
+  "time": 100
+}

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 100,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:plates/zinc"
+  },
+  "result": {
+    "amount": 45,
+    "id": "eternalores:molten_zinc"
+  },
+  "temperature": 419,
+  "time": 50
+}

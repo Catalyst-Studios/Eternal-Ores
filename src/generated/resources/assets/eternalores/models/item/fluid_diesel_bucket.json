@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket_drip",
+  "fluid": "eternalores:fluid_diesel",
+  "loader": "neoforge:fluid_container"
+}

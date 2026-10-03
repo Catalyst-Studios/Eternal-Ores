@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:alloying",
+  "inputs": [
+    {
+      "amount": 2,
+      "id": "eternalores:molten_copper"
+    },
+    {
+      "amount": 1,
+      "id": "eternalores:molten_cobalt"
+    },
+    {
+      "amount": 1,
+      "id": "eternalores:molten_quartz"
+    }
+  ],
+  "output": {
+    "amount": 3,
+    "id": "eternalores:molten_hepatizon"
+  },
+  "temperature": 1400
+}

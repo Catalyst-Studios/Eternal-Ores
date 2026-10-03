@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:dust_blocks/rose_gold"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 648,
+      "id": "eternalores:molten_rose_gold"
+    }
+  ]
+}

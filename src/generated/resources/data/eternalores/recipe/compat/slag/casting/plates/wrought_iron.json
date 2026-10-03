@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:table_casting",
+  "cast": "slag:cast/plates",
+  "ingredient": {
+    "amount": 144,
+    "fluid": "eternalores:molten_wrought_iron"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:plate_wrought_iron"
+  }
+}

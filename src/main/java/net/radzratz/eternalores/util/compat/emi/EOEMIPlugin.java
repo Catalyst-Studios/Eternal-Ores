@@ -6,12 +6,12 @@ import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.VanillaEmiRecipeCategories;
 import dev.emi.emi.api.stack.EmiStack;
 import mekanism.client.recipe_viewer.emi.ChemicalEmiStack;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.radzratz.eternalores.fluids.type.EOFluidType;
 import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusions;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOMekSlurries;
 import net.radzratz.eternalores.util.compat.mekanism.chemicals.types.EOChemical;
 
-import static net.radzratz.eternalores.util.EOUtils.ironFurnaceMod;
-import static net.radzratz.eternalores.util.EOUtils.mekanismMod;
+import static net.radzratz.eternalores.util.EOUtils.*;
 import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.CATALYRIUM_FURNACE;
 
 @EmiEntrypoint
@@ -31,5 +31,9 @@ public class EOEMIPlugin implements EmiPlugin {
                     .filter(e -> e.get() instanceof EOChemical c && !c.isEnabled())
                     .forEach(e -> registry.removeEmiStacks(new ChemicalEmiStack(e, 1)));
         }
+
+        allFluidSourceEntries()
+                .filter(e -> e.get().getFluidType() instanceof EOFluidType type && !type.isEnabled())
+                .forEach(e -> registry.removeEmiStacks(EmiStack.of(e.get(), FluidType.BUCKET_VOLUME)));
     }
 }

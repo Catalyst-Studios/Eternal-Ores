@@ -2,6 +2,6 @@
   "type": "eternalores:config_ore_modifier",
   "biomes": "#eternalores:is_mining_dim",
   "features": "eternalores:mining_peat_coal_placed",
-  "ore": "eternalores:peat_mining",
+  "ore": "eternalores:peat_coal_mining",
   "step": "underground_ores"
 }

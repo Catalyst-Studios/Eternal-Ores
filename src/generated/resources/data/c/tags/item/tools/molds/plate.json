@@ -4,6 +4,10 @@
     {
       "id": "immersiveengineering:mold_plate",
       "required": false
+    },
+    {
+      "id": "hephaestus:plate_cast",
+      "required": false
     }
   ]
 }

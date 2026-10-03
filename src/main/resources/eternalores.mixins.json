@@ -6,7 +6,11 @@
   "mixins": [
     "immersiveengineering.JEIHelperMixin",
     "immersiveengineering.MetalPressCategoryMixin",
-    "immersiveengineering.PressMixin"
+    "immersiveengineering.PressMixin",
+    "slag_n_embers.TableInventoryMixin",
+    "slag_n_embers.TableBEMixin",
+    "slag_n_embers.JEITableCasting",
+    "slag_n_embers.CastingBEAccessor"
   ],
   "client": [],
   "server": [],

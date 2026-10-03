@@ -1,7 +1,7 @@
 {
   "type": "eternalores:config_ore_feature",
   "config": {
-    "ore": "eternalores:lignite_mining",
+    "ore": "eternalores:lignite_coal_mining",
     "targets": [
       {
         "state": {

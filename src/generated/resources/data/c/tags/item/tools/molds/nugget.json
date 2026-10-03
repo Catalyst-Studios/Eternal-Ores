@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:mold_nugget",
+    {
+      "id": "hephaestus:nugget_cast",
+      "required": false
+    }
+  ]
+}

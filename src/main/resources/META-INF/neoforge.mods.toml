@@ -9,7 +9,7 @@ modId="eternalores"
 version="2.1"
 displayName="Eternal Ores"
 authors="RadzRatz"
-description="The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, ore blocks and compressed blocks!"
+description="The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, ore blocks, fluids and compressed blocks!"
 logoFile= "logo.png"
 displayURL= "https://www.curseforge.com/minecraft/mc-mods/eternal-ores"
 

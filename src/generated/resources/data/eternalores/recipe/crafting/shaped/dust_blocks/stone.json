@@ -3,13 +3,13 @@
   "category": "misc",
   "key": {
     "#": {
-      "item": "eternalores:stone_dust"
+      "tag": "c:dusts/stone"
     }
   },
   "pattern": [
-    "## ",
-    "## ",
-    "   "
+    "###",
+    "###",
+    "###"
   ],
   "result": {
     "count": 1,

@@ -5,10 +5,14 @@ import mekanism.client.recipe_viewer.jei.MekanismJEI;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.constants.RecipeTypes;
+import mezz.jei.api.neoforge.NeoForgeTypes;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.runtime.IJeiRuntime;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.fluids.FluidStack;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.radzratz.eternalores.fluids.type.EOFluidType;
 import net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries;
 import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusions;
 import net.radzratz.eternalores.util.compat.mekanism.chemicals.types.EOChemical;
@@ -36,9 +40,8 @@ public class EOJEIPlugin implements IModPlugin {
 
     @Override
     public void onRuntimeAvailable(@NotNull IJeiRuntime jeiRuntime) {
+
         if (mekanismMod) {
-            // Hides infusions and slurries from appearing over JEI catalogue
-            // when said chemical is disabled over the config
             List<ChemicalStack> infusion = EOInfusions.EO_CHEMICALS.getEntries().stream()
                     .filter(e -> e.get() instanceof EOChemical c && !c.isEnabled())
                     .map(e -> new ChemicalStack(e, 1))
@@ -48,6 +51,16 @@ public class EOJEIPlugin implements IModPlugin {
                 jeiRuntime.getIngredientManager()
                         .removeIngredientsAtRuntime(MekanismJEI.TYPE_CHEMICAL, infusion);
             }
+        }
+
+        List<FluidStack> disabledFluids = allFluidSourceEntries()
+                .filter(e -> e.get().getFluidType() instanceof EOFluidType type && !type.isEnabled())
+                .map(e -> new FluidStack(e.get(), FluidType.BUCKET_VOLUME))
+                .toList();
+
+        if (!disabledFluids.isEmpty()) {
+            jeiRuntime.getIngredientManager()
+                    .removeIngredientsAtRuntime(NeoForgeTypes.FLUID_STACK, disabledFluids);
         }
     }
 }

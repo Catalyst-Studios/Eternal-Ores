@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:molten_ender_pearl",
+    {
+      "id": "hephaestus:molten_ender",
+      "required": false
+    }
+  ]
+}

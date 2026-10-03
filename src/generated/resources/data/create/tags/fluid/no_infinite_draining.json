@@ -1,0 +1,456 @@
+{
+  "values": [
+    {
+      "id": "eternalores:chemical_acetic_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_hydrochloric_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_hydrofluoric_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_nitric_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_phosphoric_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_sulfuric_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_acetone",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_ammonia_solution",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_benzene",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_biodiesel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_bitumen",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_blood",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_brine",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_creosote",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_cyclohexane",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_diesel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_dionized_water",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_distilled_water",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_end_portal_fluid",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_ethanol",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_ethylene",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_experience",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_fuel_oil",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_glycerol",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_heavy_water",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_heptane",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_hexane",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_honey",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_hydrogen_peroxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_kerosene",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_liquid_air",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_lubricant",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_methanol",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_naphtha",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_nether_portal_fluid",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_octane",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_oil",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_pentane",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_phenol",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_plant_oil",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_resin",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_rubber",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_toluene",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_xylene",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_ammonia",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_argon",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_carbon_dioxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_chlorine",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_chlorine_dioxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_fluorine",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_helium",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_hydrogen",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_hydrogen_chloride",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_hydrogen_sulfide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_krypton",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_methane",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_neon",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_nitric_oxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_nitrogen",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_nitrous_oxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_oxygen",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_ozone",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_phosphine",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_radon",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_steam",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_sulfur_dioxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_sulfur_hexafluoride",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_xenon",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_alumite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_amethyst",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_brass",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_britannia_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_bronze",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cast_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cast_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_constantan",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_diamond",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_electrum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_emerald",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_ender_pearl",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_enderium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_hepatizon",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_invar",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_lapis",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_lumium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_modularium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_netherite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_obsidian",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_osgloglas",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_pewter",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_pig_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_prismarine",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_quartz_enriched_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_quartz_enriched_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_redstone",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_rose_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_signalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_silicon",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_wrought_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_zinc",
+      "required": false
+    }
+  ]
+}

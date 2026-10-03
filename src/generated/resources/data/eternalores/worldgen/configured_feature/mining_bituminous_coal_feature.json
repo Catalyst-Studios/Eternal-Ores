@@ -1,7 +1,7 @@
 {
   "type": "eternalores:config_ore_feature",
   "config": {
-    "ore": "eternalores:bituminous_mining",
+    "ore": "eternalores:bituminous_coal_mining",
     "targets": [
       {
         "state": {

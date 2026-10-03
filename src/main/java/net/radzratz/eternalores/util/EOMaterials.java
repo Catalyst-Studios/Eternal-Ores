@@ -1,7 +1,10 @@
 package net.radzratz.eternalores.util;
 
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.material.Fluid;
+import net.neoforged.neoforge.fluids.BaseFlowingFluid;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.radzratz.eternalores.block.types.*;
 import net.radzratz.eternalores.block.types.enums.EOBlockTier;
@@ -11,7 +14,13 @@ import net.radzratz.eternalores.item.special.ingots.EOUnstableIngot;
 import net.radzratz.eternalores.item.types.*;
 import net.radzratz.eternalores.util.config.util.EOMaterialConfigHelper;
 
+import javax.annotation.Nullable;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.IntSupplier;
+
 import static net.radzratz.eternalores.block.EOBlockHelpers.*;
+import static net.radzratz.eternalores.fluids.helpers.EOFluidHelpers.*;
 import static net.radzratz.eternalores.item.helpers.EOItemHelpers.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialPrefixSuffixes.*;
 
@@ -235,12 +244,85 @@ public class EOMaterials {
         public static final String NETHER_BLEND_ID = "nether";
         public static final String ENERGETIC_BLEND_ID = "energetic";
         public static final String ENDERGETIC_BLEND_ID = "endergetic";
+        public static final String BIO_BLEND_ID = "bio";
+
+        public static final String LIQUID_AIR_ID = "liquid_air";
+        public static final String LUBRICANT_ID = "lubricant";
+        public static final String HEAVY_WATER_ID = "heavy_water";
+        public static final String CREOSOTE_ID = "creosote";
+        public static final String EXPERIENCE_ID = "experience";
+        public static final String BLOOD_ID = "blood";
+        public static final String HONEY_ID = "honey";
+        public static final String END_PORTAL_FLUID_ID = "end_portal_fluid";
+        public static final String NETHER_PORTAL_FLUID_ID = "nether_portal_fluid";
+        public static final String BRINE_ID = "brine";
+        public static final String DISTILLED_WATER_ID = "distilled_water";
+        public static final String DIONIZED_WATER_ID = "dionized_water";
+        public static final String AMMONIA_SOLUTION_ID = "ammonia_solution";
+        public static final String ACETONE_ID = "acetone";
+        public static final String METHANOL_ID = "methanol";
+        public static final String ETHANOL_ID = "ethanol";
+        public static final String ETHYLENE_ID = "ethylene";
+        public static final String TOLUENE_ID = "toluene";
+        public static final String BENZENE_ID = "benzene";
+        public static final String XYLENE_ID = "xylene";
+        public static final String HEXANE_ID = "hexane";
+        public static final String HYDROGEN_PEROXIDE_ID = "hydrogen_peroxide";
+        public static final String GLYCEROL_ID = "glycerol";
+        public static final String PHENOL_ID = "phenol";
+        public static final String PLANT_OIL_ID = "plant_oil";
+        public static final String RESIN_ID = "resin";
+        public static final String RUBBER_ID = "rubber";
+        public static final String BIODIESEL_ID = "biodiesel";
+        public static final String DIESEL_ID = "diesel";
+        public static final String BITUMEN_ID = "bitumen";
+        public static final String OIL_ID = "oil";
+        public static final String FUEL_OIL_ID = "fuel_oil";
+        public static final String NAPHTHA_ID = "naphtha";
+        public static final String KEROSENE_ID = "kerosene";
+        public static final String PENTANE_ID = "pentane";
+        public static final String HEPTANE_ID = "heptane";
+        public static final String OCTANE_ID = "octane";
+        public static final String CYCLOHEXANE_ID = "cyclohexane";
+
+        public static final String HYDROGEN_ID = "hydrogen";
+        public static final String STEAM_ID = "steam";
+        public static final String OXYGEN_ID = "oxygen";
+        public static final String NITROGEN_ID = "nitrogen";
+        public static final String CHLORINE_ID = "chlorine";
+        public static final String FLUORINE_ID = "fluorine";
+        public static final String HELIUM_ID = "helium";
+        public static final String CARBON_DIOXIDE_ID = "carbon_dioxide";
+        public static final String SULFUR_DIOXIDE_ID = "sulfur_dioxide";
+        public static final String AMMONIA_ID = "ammonia";
+        public static final String NEON_ID = "neon";
+        public static final String ARGON_ID = "argon";
+        public static final String KRYPTON_ID = "krypton";
+        public static final String XENON_ID = "xenon";
+        public static final String RADON_ID = "radon";
+        public static final String METHANE_ID = "methane";
+        public static final String HYDROGEN_SULFIDE_ID = "hydrogen_sulfide";
+        public static final String HYDROGEN_CHLORIDE_ID = "hydrogen_chloride";
+        public static final String NITRIC_OXIDE_ID = "nitric_oxide";
+        public static final String PHOSPHINE_ID = "phosphine";
+        public static final String SULFUR_HEXAFLUORIDE_ID = "sulfur_hexafluoride";
+        public static final String CHLORINE_DIOXIDE_ID = "chlorine_dioxide";
+        public static final String NITROUS_OXIDE_ID = "nitrous_oxide";
+        public static final String OZONE_ID = "ozone";
+
+        public static final String HYDROCHLORIC_ACID_ID = "hydrochloric_acid";
+        public static final String SULFURIC_ACID_ID = "sulfuric_acid";
+        public static final String NITRIC_ACID_ID = "nitric_acid";
+        public static final String HYDROFLUORIC_ACID_ID = "hydrofluoric_acid";
+        public static final String ACETIC_ACID_ID = "acetic_acid";
+        public static final String PHOSPHORIC_ACID_ID = "phosphoric_acid";
     }
 
     public static class materialPrefixSuffixes {
         public static final String WIRE_CUT = "_wire_cutter";
         public static final String GEM_CUT = "_gem_cutter";
         public static final String HAMMER = "_hammer";
+        public static final String BUCKET = "_bucket";
 
         public static final String PLATE = "plate_";
         public static final String ROD = "rod_";
@@ -290,6 +372,11 @@ public class EOMaterials {
 
         public static final String CLEAN = "clean_";
         public static final String DIRTY = "dirty_";
+
+        public static final String FLUID = "fluid_";
+        public static final String MOLTEN = "molten_";
+        public static final String GAS = "gas_";
+        public static final String CHEM = "chemical_";
     }
 
     public static final class materialTypes {
@@ -331,6 +418,13 @@ public class EOMaterials {
         public final DeferredBlock<EOreBlock> SAND_ORE;
         public final DeferredBlock<EOreBlock> SCULK_ORE;
 
+        public final DeferredHolder<Fluid, BaseFlowingFluid.Source> MOLTEN;
+        public final DeferredHolder<Fluid, BaseFlowingFluid.Source> FLUID;
+        public final DeferredHolder<Fluid, BaseFlowingFluid.Source> GAS;
+        public final DeferredHolder<Fluid, BaseFlowingFluid.Source> CHEMICAL;
+        public final DeferredHolder<Fluid, BaseFlowingFluid.Source> PLASMA;
+        public final DeferredHolder<Fluid, BaseFlowingFluid.Source> CRYOGENIC;
+
         materialTypes(Builder builder) {
             this.ITEM = builder.item;
             this.INGOT = builder.ingot;
@@ -369,6 +463,13 @@ public class EOMaterials {
             this.END_ORE = builder.endOre;
             this.SAND_ORE = builder.sandOre;
             this.SCULK_ORE = builder.sculkOre;
+
+            this.MOLTEN = builder.molten;
+            this.FLUID = builder.fluid;
+            this.GAS = builder.gas;
+            this.CHEMICAL = builder.chemical;
+            this.PLASMA = builder.plasma;
+            this.CRYOGENIC = builder.cryogenic;
         }
 
         static final class Builder {
@@ -410,6 +511,13 @@ public class EOMaterials {
             DeferredBlock<EOreBlock> sandOre;
             DeferredBlock<EOreBlock> sculkOre;
 
+            DeferredHolder<Fluid, BaseFlowingFluid.Source> molten;
+            DeferredHolder<Fluid, BaseFlowingFluid.Source> fluid;
+            DeferredHolder<Fluid, BaseFlowingFluid.Source> gas;
+            DeferredHolder<Fluid, BaseFlowingFluid.Source> chemical;
+            DeferredHolder<Fluid, BaseFlowingFluid.Source> plasma;
+            DeferredHolder<Fluid, BaseFlowingFluid.Source> cryogenic;
+
             materialTypes build() {
                 return new materialTypes(this);
             }
@@ -442,6 +550,7 @@ public class EOMaterials {
         public static materialTypes VANADIUM_SET;
         public static materialTypes ZINC_SET;
 
+        public static materialTypes ANCIENT_DEBRIS_SET;
         public static materialTypes NETHERITE_SET;
         public static materialTypes COPPER_SET;
         public static materialTypes IRON_SET;
@@ -627,12 +736,87 @@ public class EOMaterials {
         public static materialTypes ENERGETIC_BLEND_SET;
         public static materialTypes ENDERGETIC_BLEND_SET;
         public static materialTypes NETHER_BLEND_SET;
+        public static materialTypes BIO_BLEND_SET;
+
+        public static materialTypes LIQUID_AIR_SET;
+        public static materialTypes LUBRICANT_SET;
+        public static materialTypes HEAVY_WATER_SET;
+        public static materialTypes EXPERIENCE_SET;
+        public static materialTypes BLOOD_SET;
+        public static materialTypes HONEY_SET;
+        public static materialTypes CREOSOTE_SET;
+        public static materialTypes END_PORTAL_FLUID_SET;
+        public static materialTypes NETHER_PORTAL_FLUID_SET;
+        public static materialTypes BRINE_SET;
+        public static materialTypes DISTILLED_WATER_SET;
+        public static materialTypes DIONIZED_WATER_SET;
+        public static materialTypes AMMONIA_SOLUTION_SET;
+        public static materialTypes ACETONE_SET;
+        public static materialTypes METHANOL_SET;
+        public static materialTypes ETHANOL_SET;
+        public static materialTypes BENZENE_SET;
+        public static materialTypes TOLUENE_SET;
+        public static materialTypes XYLENE_SET;
+        public static materialTypes HEXANE_SET;
+        public static materialTypes HYDROGEN_PEROXIDE_SET;
+        public static materialTypes PHENOL_SET;
+        public static materialTypes GLYCEROL_SET;
+        public static materialTypes PLANT_OIL_SET;
+        public static materialTypes RESIN_SET;
+        public static materialTypes RUBBER_SET;
+        public static materialTypes BIODIESEL_SET;
+        public static materialTypes DIESEL_SET;
+        public static materialTypes BITUMEN_SET;
+        public static materialTypes OIL_SET;
+        public static materialTypes FUEL_OIL_SET;
+        public static materialTypes NAPHTHA_SET;
+        public static materialTypes KEROSENE_SET;
+        public static materialTypes ETHYLENE_SET;
+        public static materialTypes PENTANE_SET;
+        public static materialTypes HEPTANE_SET;
+        public static materialTypes OCTANE_SET;
+        public static materialTypes CYCLOHEXANE_SET;
+
+        public static materialTypes STEAM_SET;
+        public static materialTypes HYDROGEN_SET;
+        public static materialTypes OXYGEN_SET;
+        public static materialTypes NITROGEN_SET;
+        public static materialTypes CHLORINE_SET;
+        public static materialTypes FLUORINE_SET;
+        public static materialTypes HELIUM_SET;
+        public static materialTypes CARBON_DIOXIDE_SET;
+        public static materialTypes SULFUR_DIOXIDE_SET;
+        public static materialTypes AMMONIA_SET;
+        public static materialTypes NEON_SET;
+        public static materialTypes ARGON_SET;
+        public static materialTypes KRYPTON_SET;
+        public static materialTypes XENON_SET;
+        public static materialTypes RADON_SET;
+        public static materialTypes METHANE_SET;
+        public static materialTypes HYDROGEN_SULFIDE_SET;
+        public static materialTypes HYDROGEN_CHLORIDE_SET;
+        public static materialTypes NITRIC_OXIDE_SET;
+        public static materialTypes PHOSPHINE_SET;
+        public static materialTypes SULFUR_HEXAFLUORIDE_SET;
+        public static materialTypes CHLORINE_DIOXIDE_SET;
+        public static materialTypes OZONE_SET;
+        public static materialTypes NITROUS_OXIDE_SET;
+
+        public static materialTypes SULFURIC_ACID_SET;
+        public static materialTypes HYDROCHLORIC_ACID_SET;
+        public static materialTypes NITRIC_ACID_SET;
+        public static materialTypes HYDROFLUORIC_ACID_SET;
+        public static materialTypes PHOSPHORIC_ACID_SET;
+        public static materialTypes ACETIC_ACID_SET;
     }
 
     public static final class materialRegistrar {
         private final String mat;
         private final EOMaterialConfigHelper config;
         private final materialTypes.Builder builder = new materialTypes.Builder();
+
+        private static final Map<String, Integer> TEMPS = new HashMap<>();
+        private static final Map<String, IntSupplier> TINTS = new HashMap<>();
 
         private materialRegistrar(String mat, EOMaterialConfigHelper cfg) {
             this.mat = mat;
@@ -641,6 +825,29 @@ public class EOMaterials {
 
         public static materialRegistrar of(String mat, EOMaterialConfigHelper cfg) {
             return new materialRegistrar(mat, cfg);
+        }
+
+        public static materialRegistrar of(String mat) {
+            return new materialRegistrar(mat, null);
+        }
+
+        public materialRegistrar temperature(int temp) {
+            TEMPS.put(mat, temp);
+            return this;
+        }
+
+        public materialRegistrar tint(IntSupplier color) {
+            TINTS.put(mat, color);
+            return this;
+        }
+
+        public static int getTemp(String mat) {
+            return TEMPS.getOrDefault(mat, 1200);
+        }
+
+        @Nullable
+        public static IntSupplier getTint(String mat) {
+            return TINTS.get(mat);
         }
 
         public materialRegistrar mainAllMetal(float hardness, SoundType soundMain, EOBlockTier tier) {
@@ -769,6 +976,13 @@ public class EOMaterials {
             builder.foil = rgtrFoil(mat + FOIL, config::getMaterialSet, config::getMaterialFoil);
             builder.enriched = rgtrEnriched(ENRICHED + mat, config::getMaterialSet, config::getMaterialEnriched);
             builder.enrichedBlock = rgtrEnrichedBlock(mat + ENRICHED_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialEnrichedBlock);
+            return this;
+        }
+
+        public materialRegistrar ancientDebris(float hardness, EOBlockTier tier) {
+            builder.dustBlock = rgtrDustBlock(mat + DUST_BLOCK, hardness, tier, config::getMaterialSet, config::getMaterialDustBlock);
+            builder.dust = rgtrDust(mat + DUST, config::getMaterialSet, config::getMaterialDust);
+            builder.smallDust = rgtrSmallDust(mat + SMALL_DUST, config::getMaterialSet, config::getMaterialSmallDust);
             return this;
         }
 
@@ -1190,6 +1404,53 @@ public class EOMaterials {
             return this;
         }
 
+        public materialRegistrar fluidTintable(boolean hazardous) {
+            builder.fluid = rgtrFluid(mat, getTint(mat), hazardous);
+            return this;
+        }
+
+        public materialRegistrar fluidCustomTexture(String texture, boolean hazardous) {
+            builder.fluid = rgtrFluid(mat, null, texture, hazardous);
+            return this;
+        }
+
+        public materialRegistrar moltenTintable() {
+            builder.molten = rgtrMolten(mat, getTint(mat));
+            return this;
+        }
+
+        public materialRegistrar moltenCustomTexture(String texture) {
+            builder.molten = rgtrMolten(mat, null, texture);
+            return this;
+        }
+
+        public materialRegistrar moltenAndFluidTintable(boolean hazardous) {
+            builder.fluid = rgtrFluid(mat, getTint(mat), hazardous);
+            builder.molten = rgtrMolten(mat, getTint(mat));
+            return this;
+        }
+
+        public materialRegistrar moltenAndFluidCustomTexture(String fluid, String molten, boolean hazardous) {
+            builder.fluid = rgtrFluid(mat, null, fluid, hazardous);
+            builder.molten = rgtrMolten(mat, null, molten);
+            return this;
+        }
+
+        public materialRegistrar gasTintable(boolean hazardous) {
+            builder.gas = rgtrGas(mat, getTint(mat), hazardous);
+            return this;
+        }
+
+        public materialRegistrar gasCustomTexture(String texture, boolean hazardous) {
+            builder.gas = rgtrGas(mat, null, texture, hazardous);
+            return this;
+        }
+
+        public materialRegistrar chemicalTintable(boolean hazardous) {
+            builder.chemical = rgtrChem(mat, getTint(mat), hazardous);
+            return this;
+        }
+
         private String oreId(EOreLayerType layer) {
             return switch (layer) {
                 case ORE_STONE, ORE_SAND, ORE_SCULK -> mat + ORE;
@@ -1248,6 +1509,10 @@ public class EOMaterials {
         }
 
         // Items
+        if (path.startsWith(MOLD)) {
+            return path.substring(5);
+        }
+
         if (path.startsWith(PLATE)) {
             return path.substring(6);
         }
@@ -1344,10 +1609,6 @@ public class EOMaterials {
             return path.substring(0, path.length() - 6);
         }
 
-        if (path.startsWith(MOLD)) {
-            return path.substring(5);
-        }
-
         if (path.endsWith(FOIL)) {
             return path.substring(0, path.length() - 5);
         }
@@ -1416,6 +1677,22 @@ public class EOMaterials {
 
         if (path.endsWith(BLOCK)) {
             return path.substring(0, path.length() - 6);
+        }
+
+        if (path.startsWith(MOLTEN)) {
+            return path.substring(7);
+        }
+
+        if (path.startsWith(FLUID)) {
+            return path.substring(6);
+        }
+
+        if (path.startsWith(GAS)) {
+            return path.substring(4);
+        }
+
+        if (path.startsWith(CHEM)) {
+            return path.substring(9);
         }
 
         if (path.endsWith(CAPACITOR)) {

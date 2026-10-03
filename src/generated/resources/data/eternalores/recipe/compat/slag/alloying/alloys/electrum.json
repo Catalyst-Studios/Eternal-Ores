@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:alloying",
+  "ingredients": [
+    {
+      "amount": 1,
+      "fluid": "eternalores:molten_silver"
+    },
+    {
+      "amount": 1,
+      "fluid": "eternalores:molten_gold"
+    }
+  ],
+  "result": {
+    "amount": 2,
+    "id": "eternalores:molten_electrum"
+  }
+}

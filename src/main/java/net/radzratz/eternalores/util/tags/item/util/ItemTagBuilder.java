@@ -150,4 +150,19 @@ public class ItemTagBuilder {
             else provider.getItemTag(individualTag).add(item);
         }
     }
+
+    public void applySlag(EOItemTagProvider provider) {
+        if (optional) {
+            tags.forEach(tag -> provider.getItemTag(tag).addOptional(BuiltInRegistries.ITEM.getKey(item)));
+        } else {
+            tags.forEach(tag -> provider.getItemTag(tag).add(item));
+        }
+
+        if (addIndividual) {
+            String material = EOMaterials.extractMaterialName(path);
+            TagKey<Item> individualTag = TagKey.create(Registries.ITEM, SLAG(individualFolder + "/" + material));
+            if (optional) provider.getItemTag(individualTag).addOptional(BuiltInRegistries.ITEM.getKey(item));
+            else provider.getItemTag(individualTag).add(item);
+        }
+    }
 }

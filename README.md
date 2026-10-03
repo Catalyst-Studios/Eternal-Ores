@@ -4,14 +4,14 @@ ___
 About
 =======
 
-The Eternal Ores mod adds many well-known items into a single mod, such as **ingots**, **gears**, **rods**, **nuggets**, **plates**, **raw ores**, **ore blocks**, 
-**compressed blocks** and a self-included **mining dimension**!
+The Eternal Ores mod adds many well-known items into a single mod, such as **ingots**, **gears**, **rods**, **nuggets**, **plates**, **raw ores**, **ore blocks**,
+**fluids**, **compressed blocks** and a self-included **mining dimension**!
 
 Based on **FTB Materials**, **AllTheOres**, and **Emendatus Enigmatica**, **Eternal Ores** is compatible with these mods, using the correct tags 
 for proper integration while adding over **200+** materials and ores for **Catalyst Studios Modpacks**. It also adds ore 
 generation for its ores, highly configurable, and compatible with both modded and vanilla biomes.
 
-The use of **Almost Unified** is highly recommended to unify Eternal Items ores and ingots with those from other mods.
+The use of **Almost Unified** is highly recommended to unify Eternal Ores ore blocks and ingots with those from other mods.
 Additionally, **KubeJS** is recommended if you want to avoid duplicate recipes for a single item or specific types of ores and materials.
 
 This mod can be used in any modpack!
@@ -20,24 +20,26 @@ This mod can be used in any modpack!
 
 We have, and plan, to add compatibility/integration to these mods.
 
-- Mekanism
-- Mekanism: More Machine
-- Create
-- Create: Crafts and Additions
-- Oritech
-- Immersive Engineering
-- Energized Power
-- Forbidden and Arcanus
-- EnderIO
-- Actually Additions
-- Powah!
-- Iron Furnaces
-- GeOre
-- Railcraft Reborn
-- Integrated Dynamics
-- Extreme Reactors (Planned)
-- Occultism (Planned)
-- Mystical Agriculture (Planned)
+- [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism)
+- [Mekanism: More Machine](https://www.curseforge.com/minecraft/mc-mods/mekanism-more-machine)
+- [Create](https://www.curseforge.com/minecraft/mc-mods/create)
+- [Create: Crafts and Additions](https://www.curseforge.com/minecraft/mc-mods/createaddition)
+- [Oritech](https://www.curseforge.com/minecraft/mc-mods/oritech)
+- [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
+- [Energized Power](https://www.curseforge.com/minecraft/mc-mods/energized-power)
+- [Forbidden and Arcanus](https://www.curseforge.com/minecraft/mc-mods/forbidden-arcanus)
+- [EnderIO](https://www.curseforge.com/minecraft/mc-mods/ender-io)
+- [Actually Additions](https://www.curseforge.com/minecraft/mc-mods/actually-additions)
+- [Powah!](https://www.curseforge.com/minecraft/mc-mods/powah-rearchitected)
+- [Iron Furnaces](https://www.curseforge.com/minecraft/mc-mods/iron-furnaces)
+- [GeOre](https://www.curseforge.com/minecraft/mc-mods/geore)
+- [Railcraft Reborn](https://www.curseforge.com/minecraft/mc-mods/railcraft-reborn)
+- [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics)
+- [Slag n' Embers](https://www.curseforge.com/minecraft/mc-mods/slag-n-embers)
+- [Hephaestus Forge](https://www.curseforge.com/minecraft/mc-mods/hephaestus-forge)
+- [Excessive Utilities](https://www.curseforge.com/minecraft/mc-mods/excessive-utilities)
+- [Occultism](https://www.curseforge.com/minecraft/mc-mods/occultism) (Planned)
+- [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture) (Planned)
 - and probably others... But in case we missed some, let us know!
 
 Eternal Ores adds a couple of Mixins, which are disabled by default, so check the Config files to know what they do

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:rods/alumite"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 72,
+      "id": "eternalores:molten_alumite"
+    }
+  ]
+}

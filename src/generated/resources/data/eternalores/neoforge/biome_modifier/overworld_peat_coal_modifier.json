@@ -2,6 +2,6 @@
   "type": "eternalores:config_ore_modifier",
   "biomes": "#c:is_swamp",
   "features": "eternalores:overworld_peat_coal_placed",
-  "ore": "eternalores:peat_overworld",
+  "ore": "eternalores:peat_coal_overworld",
   "step": "underground_ores"
 }

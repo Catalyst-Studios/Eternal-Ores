@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:alloying",
+  "ingredients": [
+    {
+      "amount": 1,
+      "fluid": "eternalores:molten_copper"
+    },
+    {
+      "amount": 3,
+      "fluid": "eternalores:molten_silver"
+    }
+  ],
+  "result": {
+    "amount": 4,
+    "id": "eternalores:molten_britannia_silver"
+  }
+}

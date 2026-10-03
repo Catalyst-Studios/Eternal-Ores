@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:molten_enderium",
+    {
+      "id": "hephaestus:molten_enderium",
+      "required": false
+    }
+  ]
+}

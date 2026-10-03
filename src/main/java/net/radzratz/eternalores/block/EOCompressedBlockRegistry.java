@@ -11,9 +11,11 @@ import net.neoforged.neoforge.common.util.DeferredSoundType;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.types.enums.EOBlockTier;
+import net.radzratz.eternalores.util.EOLoggers;
 import net.radzratz.eternalores.util.config.EOCompressedBlockConfig;
 import net.radzratz.eternalores.util.config.util.EOCompressedBlockEntry;
 import net.radzratz.eternalores.util.config.util.EOCompressedBlockDefinitions;
+import org.apache.logging.log4j.Logger;
 
 import java.util.HashSet;
 import java.util.LinkedHashMap;
@@ -21,11 +23,12 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Supplier;
 
-import static net.radzratz.eternalores.EternalOres.LOG;
 import static net.radzratz.eternalores.block.EOBlockHelpers.EOCompressedSet.rgtrCompressed;
 
 public class EOCompressedBlockRegistry {
     public static final DeferredRegister.Blocks EO_COMPRESSED_BLOCKS = DeferredRegister.createBlocks(EternalOres.id);
+
+    private static final Logger LOG = EOLoggers.get("EOCompressedBlocks", "compressed_blocks");
 
     private static final Map<String, EOBlockHelpers.EOCompressedSet> SETS = new LinkedHashMap<>();
     private static final Map<String, EOCompressedBlockEntry> RESOLVED = new LinkedHashMap<>();
@@ -47,7 +50,7 @@ public class EOCompressedBlockRegistry {
 
             String key = seenKeys.add(blockId) ? blockId : blockId + "_" + namespace;
             if (!key.equals(blockId)) {
-                LOG.info("[EOCompressedBlockRegistry] Duplicate blockId '{}' from '{}' — registering as '{}'.", blockId, namespace, key);
+                LOG.info("[EOCompressedBlockRegistry] Duplicate blockId '{}' from '{}' - registering as '{}'.", blockId, namespace, key);
             }
 
             ResourceLocation origLoc = ResourceLocation.fromNamespaceAndPath(namespace, blockId);
@@ -69,7 +72,7 @@ public class EOCompressedBlockRegistry {
             RESOLVED.put(key, e);
         }
 
-        LOG.info("[EOCompressedBlockRegistry] Registered {} compressed block sets.", SETS.size());
+        EternalOres.LOG.info("[EOCompressedBlockRegistry] Registered {} compressed block sets.", SETS.size());
     }
 
     public static EOBlockHelpers.EOCompressedSet get(String key) {

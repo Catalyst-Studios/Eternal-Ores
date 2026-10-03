@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket_drip",
+  "fluid": "eternalores:chemical_phosphoric_acid",
+  "loader": "neoforge:fluid_container"
+}

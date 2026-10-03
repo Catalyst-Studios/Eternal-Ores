@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:storage_blocks/raw_tin"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 864,
+      "id": "eternalores:molten_tin"
+    }
+  ]
+}

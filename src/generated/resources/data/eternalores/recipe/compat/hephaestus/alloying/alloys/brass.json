@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:alloying",
+  "inputs": [
+    {
+      "amount": 2,
+      "id": "eternalores:molten_copper"
+    },
+    {
+      "amount": 1,
+      "id": "eternalores:molten_zinc"
+    }
+  ],
+  "output": {
+    "amount": 3,
+    "id": "eternalores:molten_brass"
+  },
+  "temperature": 650
+}

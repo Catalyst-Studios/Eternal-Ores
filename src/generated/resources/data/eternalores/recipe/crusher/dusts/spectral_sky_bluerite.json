@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "excessive_utilities"
+    }
+  ],
+  "type": "excessive_utilities:crusher",
+  "fe_per_tick": 50,
+  "ingredient": {
+    "tag": "c:gems/spectral_sky_bluerite"
+  },
+  "primary_output": {
+    "count": 1,
+    "id": "eternalores:spectral_sky_bluerite_dust"
+  },
+  "ticks": 100
+}

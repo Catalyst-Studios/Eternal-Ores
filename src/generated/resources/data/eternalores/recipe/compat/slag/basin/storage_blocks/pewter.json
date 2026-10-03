@@ -1,0 +1,17 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:basin_casting",
+  "ingredient": {
+    "amount": 648,
+    "fluid": "eternalores:molten_pewter"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:pewter_block"
+  }
+}

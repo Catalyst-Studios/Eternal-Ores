@@ -1,7 +1,7 @@
 **Configs**
 -
 Eternal Ores adds a decent amount of configs that do different or similar things. Some of these were explained
-in other .md files, but we're going to re-explained each in here pretty quick in case you haven't read the other files.
+in other .md files, but we're going to re-explain each in here pretty quick in case you haven't read the other files.
 
 But it is important for you to know that you have the following features in Eternal Ores configs.
 
@@ -49,6 +49,9 @@ There is only one furnace, sadly, but there is a slight chance that more may be 
 ### Materials
 Helps you to disable any unwanted material set or specific form or block for all of Eternal Ores included sets.
 
+### Fluid Settings
+Similar to Materials, but for Fluids.
+
 ### Mining Dimension Settings
 Allows you to tweak Eternal Ores mining dimension layer heights, where they start/end and the max build height.
 
@@ -64,14 +67,19 @@ And the prospectors scan radius, and their whitelisted and blacklisted materials
 If you find a specific tooltip annoying, this config is for you.
 
 ### Tweaks
-Tweaks config, firstly named as Mixins Config, lets you tweak the behaviour of certain machines and their inputs, like
-Immersive Engineering and Energized Power Metal Presses, since both of these machines, for whatever reason, use an Itemstack as
-their mold input and not the lovely Ingredient. 
+Tweaks config, firstly named as Mixins Config, lets you tweak the behavior of certain machines, blocks and their inputs.
+
+Included Mixins
+- Immersive Engineering Metal Press - Tweaks its hardcoded ItemStack (Mold Input) to Ingredient, so it can use both ItemStack and TagKey<Item>.
+- ~~Energized Power Metal Press - Tweaks its hardcoded ItemStack (Mold Input) to Ingredient, so it can use both ItemStack and TagKey<Item>~~. (not implemented yet)
+- Slag n' Embers Casting Table Block - Tweaks its Casting Table (TableBE and TableInventory) so it can use both Slag n' Embers Casts and Eternal Ores molds equally.
 
 Almost Unified does its job fabulously if Eternal Ores, Immersive Engineering, and ~~Energized Power~~ molds have 
 the `c:tools/molds/plate` tag, tag introduced and created by Eternal Ores. 
 
-If you find this tag annoying, and decide to delete it, you may want to toggle this config...
+If you find this tag annoying, and decide to delete it, you may want to toggle IE and ~~EP~~ tweaks...
+
+These mixins are disabled by default.
 
 ### World Gen Settings
 The name suggests it, allows you to heavily modify EO's ores vein size, veins per chunk, if it's rare or not, if it's placement

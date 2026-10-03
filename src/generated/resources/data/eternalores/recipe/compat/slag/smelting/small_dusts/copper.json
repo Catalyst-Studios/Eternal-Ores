@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:small_dusts/copper"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 8,
+      "id": "eternalores:molten_copper"
+    }
+  ]
+}

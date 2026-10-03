@@ -1,0 +1,28 @@
+{
+  "values": [
+    "eternalores:gas_ammonia",
+    "eternalores:gas_argon",
+    "eternalores:gas_carbon_dioxide",
+    "eternalores:gas_chlorine",
+    "eternalores:gas_chlorine_dioxide",
+    "eternalores:gas_fluorine",
+    "eternalores:gas_helium",
+    "eternalores:gas_hydrogen",
+    "eternalores:gas_hydrogen_chloride",
+    "eternalores:gas_hydrogen_sulfide",
+    "eternalores:gas_krypton",
+    "eternalores:gas_methane",
+    "eternalores:gas_neon",
+    "eternalores:gas_nitric_oxide",
+    "eternalores:gas_nitrogen",
+    "eternalores:gas_nitrous_oxide",
+    "eternalores:gas_oxygen",
+    "eternalores:gas_ozone",
+    "eternalores:gas_phosphine",
+    "eternalores:gas_radon",
+    "eternalores:gas_steam",
+    "eternalores:gas_sulfur_dioxide",
+    "eternalores:gas_sulfur_hexafluoride",
+    "eternalores:gas_xenon"
+  ]
+}

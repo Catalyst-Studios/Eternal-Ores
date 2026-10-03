@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "eternalores:stone_dust_block"
+      "tag": "c:dust_blocks/stone"
     }
   ],
   "result": {
-    "count": 4,
+    "count": 9,
     "id": "eternalores:stone_dust"
   }
 }

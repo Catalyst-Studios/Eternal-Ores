@@ -12,6 +12,7 @@ import net.radzratz.eternalores.item.tools.*;
 import net.radzratz.eternalores.item.types.*;
 import net.radzratz.eternalores.item.types.EOSmallDustItem;
 import net.radzratz.eternalores.item.special.ingots.EOUnstableIngot;
+import net.radzratz.eternalores.util.compat.slag_n_embers.SlagTable;
 
 import java.util.function.BooleanSupplier;
 
@@ -34,6 +35,16 @@ public class EOItemHelpers {
 
     public static DeferredItem<EOMolds> rgtrMolds(String name, BooleanSupplier mold) {
         return EO_ITEMS.register(name, () -> new EOMolds(new Item.Properties().stacksTo(1), mold));
+    }
+
+    public static DeferredItem<EOMolds> rgtrMolds(String name, BooleanSupplier mold, TagKey<Item> slagCastPath) {
+        return EO_ITEMS.register(name, () -> {
+            var properties = new Item.Properties().stacksTo(1);
+            if (slagCastPath != null) {
+                properties = SlagTable.withDefaultCastType(properties, slagCastPath);
+            }
+            return new EOMolds(properties, mold);
+        });
     }
 
     public static DeferredItem<EOGemCutter> rgtrCutter(String name, TagKey<Item> repairMat, int durability, BooleanSupplier tool) {

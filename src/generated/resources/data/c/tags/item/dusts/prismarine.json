@@ -3,6 +3,7 @@
     "minecraft:prismarine_shard"
   ],
   "values": [
-    "eternalores:prismarine_dust"
+    "eternalores:prismarine_dust",
+    "minecraft:prismarine_shard"
   ]
 }

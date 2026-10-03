@@ -1,0 +1,18 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:table_casting",
+  "cast": "slag:cast/gears",
+  "ingredient": {
+    "amount": 388,
+    "fluid": "eternalores:molten_redstone"
+  },
+  "result": {
+    "count": 1,
+    "id": "eternalores:gear_redstone"
+  }
+}

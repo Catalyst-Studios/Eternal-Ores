@@ -133,7 +133,7 @@ public class IEOArcFurnaceRecipes {
 
             // Ore smelting
             if (item instanceof BlockItem b && b.getBlock() instanceof EOreBlock || isVanillaOre(inp.ORE)) {
-                if (generatedArcRecipes.add("ore_smelt:" + mat)) {
+                if (generatedArcRecipes.add("ore_smelt:" + mat) && !mat.equals("redstone_ingot")) {
                     Item result = null;
 
                     // Sulfur special case

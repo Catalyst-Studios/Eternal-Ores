@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:alloying",
+  "inputs": [
+    {
+      "amount": 2,
+      "id": "eternalores:molten_iron"
+    },
+    {
+      "amount": 1,
+      "id": "eternalores:molten_nickel"
+    }
+  ],
+  "output": {
+    "amount": 3,
+    "id": "eternalores:molten_invar"
+  },
+  "temperature": 810
+}

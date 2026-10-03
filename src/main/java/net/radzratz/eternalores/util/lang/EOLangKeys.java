@@ -4,6 +4,14 @@ public class EOLangKeys {
 
     // Creative Tabs
     public static String CREATIVE_TAB = "tab.eternalores.";
+    public static String TAB_TOOLS = "tab.eternalores.tools";
+    public static String TAB_ORES = "tab.eternalores.ores";
+    public static String TAB_MATERIALS = "tab.eternalores.materials";
+    public static String TAB_FORMS = "tab.eternalores.forms";
+    public static String TAB_BLOCKS = "tab.eternalores.blocks";
+    public static String TAB_COMPRESSED = "tab.eternalores.compressed";
+    public static String TAB_GEORE = "tab.eternalores.geore";
+    public static String TAB_FLUIDS = "tab.eternalores.fluids";
 
     // Chemicals
     public static final String CHEMICAL = "chemical.eternalores.";

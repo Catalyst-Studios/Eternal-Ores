@@ -7,12 +7,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.types.*;
+import net.radzratz.eternalores.fluids.type.EOFluidBucketItem;
 import net.radzratz.eternalores.item.special.prospectors.EOAdvProspector;
 import net.radzratz.eternalores.item.special.prospectors.EOBasicProspector;
 import net.radzratz.eternalores.item.special.teleporter.EOTeleporter;
@@ -30,7 +32,6 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-import static net.radzratz.eternalores.item.special.teleporter.EOTeleporter.TELEPORTER;
 import static net.radzratz.eternalores.item.tools.EOHammers.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;
 import static net.radzratz.eternalores.util.EOUtils.*;
@@ -48,16 +49,13 @@ public class EOCreativeModeTabs {
     private static final String TAB = "eternal_ores_tab_";
 
     public static final Supplier<CreativeModeTab> ORES;
-    public static final Supplier<CreativeModeTab> RAW_BLOCKS;
     public static final Supplier<CreativeModeTab> BLOCKS;
     public static final Supplier<CreativeModeTab> COMP_BLOCKS;
-    public static final Supplier<CreativeModeTab> MATERIALS;
-    public static final Supplier<CreativeModeTab> DUSTS;
     public static final Supplier<CreativeModeTab> PLATES;
     public static final Supplier<CreativeModeTab> TOOLS;
-    public static final Supplier<CreativeModeTab> COALS;
-    public static final Supplier<CreativeModeTab> COMPAT_MATS;
-    public static final Supplier<CreativeModeTab> COMPAT_ITEMS;
+    public static final Supplier<CreativeModeTab> GEORE;
+    public static final Supplier<CreativeModeTab> MATERIALS;
+    public static final Supplier<CreativeModeTab> FLUIDS;
 
     static {
         TOOLS = rgtrTab(1, COBALT_HAMMER, "tools", tab ->
@@ -72,86 +70,37 @@ public class EOCreativeModeTabs {
                 })
         );
 
-        // If none of these mods are present, this tab is hidden
-        COMPAT_ITEMS = rgtrTab(2, TELEPORTER, "compat_items", tab ->
+        MATERIALS = rgtrTab(2, MISSING_SET.INGOT, "materials", tab ->
                 tab.displayItems((params, output) -> {
-                    acceptIfModLoaded(IRON_FURNACES, output, () -> {
-                        acceptBlocks(output, EOIFurnacesFurnaceBlock.class);
-                        acceptItems(output, EOIFurnacesUpgrade.class);
-                    });
-
+                    acceptItems(output, EORawMaterialItem.class);
+                    acceptItems(output, EOIngotItem.class);
+                    acceptItems(output, EOItems.class);
+                    acceptItems(output, EOPebbleItem.class);
+                    acceptItems(output, EOCoalItem.class);
+                    acceptItems(output, EOPelletItem.class);
+                    acceptItems(output, EOGemItem.class);
                     acceptIfModLoaded(ENDERIO, output, () -> {
                         acceptItems(output, EOCapacitors.class);
                         acceptItems(output, EOGrindingBall.class);
                     });
-
-                    acceptIfModLoaded(GEORE, output, () -> {
-                        acceptBlocks(output, GEOreShardBlock.class);
-                        acceptBlocks(output, GEOreLargeBuds.class);
-                        acceptBlocks(output, GEOreMediumBuds.class);
-                        acceptBlocks(output, GEOreSmallBuds.class);
-                        acceptBlocks(output, GEOreClusterBlock.class);
-                        acceptItems(output, GEOreShardItem.class);
-                        acceptBlocks(output, GEOreBuddingBlock.class);
+                    acceptIfModLoaded(IRON_FURNACES, output, () -> {
+                        acceptBlocks(output, EOIFurnacesFurnaceBlock.class);
+                        acceptItems(output, EOIFurnacesUpgrade.class);
                     });
                 })
         );
 
-        ORES = rgtrTab(3, ALUMINUM_SET.ORE, "ores", tab ->
-                tab.displayItems((params, output) -> acceptBlocks(output, EOreBlock.class)));
-
-        RAW_BLOCKS = rgtrTab(4, CATALYRIUM_SET.RAW_BLOCK, "raw_mats", tab ->
+        PLATES = rgtrTab(3, CATALYRIUM_SET.PLATE, "forms", tab ->
                 tab.displayItems((params, output) -> {
-                    acceptItems(output, EORawMaterialItem.class);
-                    acceptBlocks(output, EORawBlock.class);
-                })
-        );
-
-        BLOCKS = rgtrTab(5, CATALYRIUM_SET.BLOCK, "blocks", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptBlocks(output, EOStorageBlock.class);
-                    acceptBlocks(output, EODustBlock.class);
-                })
-        );
-
-        MATERIALS = rgtrTab(6, MISSING_SET.INGOT, "materials", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EOIngotItem.class);
-                    acceptItems(output, EOItems.class);
-                    acceptItems(output, EOPebbleItem.class);
-                    acceptItems(output, EOGemItem.class);
                     acceptItems(output, EONuggetItem.class);
                     acceptItems(output, EOGemShardItem.class);
-                })
-        );
-
-        DUSTS = rgtrTab(7, CATALYRIUM_SET.DUST, "dusts", tab ->
-                tab.displayItems((params, output) -> {
                     acceptItems(output, EOBlends.class);
                     acceptItems(output, EODustItem.class);
                     acceptItems(output, EOSmallDustItem.class);
-                })
-        );
-
-        PLATES = rgtrTab(8, CATALYRIUM_SET.PLATE, "forms", tab ->
-                tab.displayItems((params, output) -> {
                     acceptItems(output, EOPlateItem.class);
                     acceptItems(output, EORodItem.class);
                     acceptItems(output, EOGearItem.class);
                     acceptItems(output, EOFoilItem.class);
-                })
-        );
-
-        COALS = rgtrTab(9, COKE_SET.COAL, "coals", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EOCoalItem.class);
-                    acceptBlocks(output, EOCoalBlock.class);
-                })
-        );
-
-        COMPAT_MATS = rgtrTab(10, CATALYRIUM_SET.CLUMP, "compat_materials", tab ->
-                tab.displayItems((params, output) -> {
-                    acceptItems(output, EOPelletItem.class);
                     acceptItems(output, EOClumpItem.class);
                     acceptItems(output, EOSmallClumpItem.class);
                     acceptItems(output, EODirtyDustItem.class);
@@ -159,11 +108,38 @@ public class EOCreativeModeTabs {
                     acceptItems(output, EOCrystalItem.class);
                     acceptItems(output, EOrGemItem.class);
                     acceptItems(output, EOEnrichedItems.class);
-                    acceptBlocks(output, EOEnrichedBlock.class);
                 })
         );
 
-        COMP_BLOCKS = rgtrTab(11, ENDER_EYE_SET.BLOCK, "compressed", tab ->
+        ORES = rgtrTab(4, ALUMINUM_SET.ORE, "ores", tab ->
+                tab.displayItems((params, output) -> acceptBlocks(output, EOreBlock.class)));
+
+        BLOCKS = rgtrTab(5, CATALYRIUM_SET.BLOCK, "blocks", tab ->
+                tab.displayItems((params, output) -> {
+                    acceptBlocks(output, EOStorageBlock.class);
+                    acceptBlocks(output, EORawBlock.class);
+                    acceptBlocks(output, EOEnrichedBlock.class);
+                    acceptBlocks(output, EODustBlock.class);
+                })
+        );
+
+        FLUIDS = rgtrTab(6, () -> COBALT_SET.MOLTEN.get().getBucket(), "fluids", tab ->
+                tab.displayItems((params, output) -> acceptItems(output, EOFluidBucketItem.class))
+        );
+
+        GEORE = rgtrTab(7, Blocks.BUDDING_AMETHYST::asItem, "geore", tab ->
+                tab.displayItems((params, output) -> acceptIfModLoaded(EOUtils.GEORE, output, () -> {
+                    acceptBlocks(output, GEOreShardBlock.class);
+                    acceptBlocks(output, GEOreLargeBuds.class);
+                    acceptBlocks(output, GEOreMediumBuds.class);
+                    acceptBlocks(output, GEOreSmallBuds.class);
+                    acceptBlocks(output, GEOreClusterBlock.class);
+                    acceptItems(output, GEOreShardItem.class);
+                    acceptBlocks(output, GEOreBuddingBlock.class);
+                }))
+        );
+
+        COMP_BLOCKS = rgtrTab(8, ENDER_EYE_SET.BLOCK, "compressed", tab ->
                 tab.displayItems((params, output) -> acceptBlocks(output, EOCompressedBlock.class)));
     }
 

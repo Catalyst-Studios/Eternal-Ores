@@ -44,8 +44,8 @@ public class EOMMStamperRecipes {
         Set<String> generateStampingRecipes = new HashSet<>();
 
         // Rods
-        stamping(yeet, BLAZE_POWDER, 5, PLATE_MOLD, BLAZE_ROD, 1, "rods/blaze");
-        stamping(yeet, WIND_CHARGE, 5, PLATE_MOLD, BREEZE_ROD, 1, "rods/breeze");
+        stamping(yeet, BLAZE_POWDER, 5, ROD_MOLD, BLAZE_ROD, 1, "rods/blaze");
+        stamping(yeet, WIND_CHARGE, 5, ROD_MOLD, BREEZE_ROD, 1, "rods/breeze");
 
         itemRecipeActions(reg, (item, path, mat, inp, out, id) -> {
             // Plates

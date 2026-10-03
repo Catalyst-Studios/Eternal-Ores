@@ -65,6 +65,14 @@
       "required": false
     },
     {
+      "id": "eternalores:enriched_bio",
+      "required": false
+    },
+    {
+      "id": "eternalores:enriched_bio",
+      "required": false
+    },
+    {
       "id": "eternalores:enriched_bismuth",
       "required": false
     },

@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 100,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:foils/wrought_iron"
+  },
+  "result": {
+    "amount": 45,
+    "id": "eternalores:molten_wrought_iron"
+  },
+  "temperature": 1000,
+  "time": 50
+}

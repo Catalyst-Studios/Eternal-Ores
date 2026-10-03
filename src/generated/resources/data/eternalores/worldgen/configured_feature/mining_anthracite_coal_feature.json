@@ -1,7 +1,7 @@
 {
   "type": "eternalores:config_ore_feature",
   "config": {
-    "ore": "eternalores:anthracite_mining",
+    "ore": "eternalores:anthracite_coal_mining",
     "targets": [
       {
         "state": {

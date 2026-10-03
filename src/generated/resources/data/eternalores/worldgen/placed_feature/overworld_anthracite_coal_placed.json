@@ -3,14 +3,14 @@
   "placement": [
     {
       "type": "eternalores:config_ore_count",
-      "ore": "eternalores:anthracite_overworld"
+      "ore": "eternalores:anthracite_coal_overworld"
     },
     {
       "type": "minecraft:in_square"
     },
     {
       "type": "eternalores:config_ore_rarity",
-      "ore": "eternalores:anthracite_overworld"
+      "ore": "eternalores:anthracite_coal_overworld"
     },
     {
       "type": "minecraft:biome"
@@ -19,7 +19,7 @@
       "type": "minecraft:height_range",
       "height": {
         "type": "eternalores:config_ore_height",
-        "ore": "eternalores:anthracite_overworld"
+        "ore": "eternalores:anthracite_coal_overworld"
       }
     }
   ]

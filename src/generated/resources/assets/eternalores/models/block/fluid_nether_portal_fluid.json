@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalores:block/fluids/nether_portal_fluid_still",
+    "particle": "eternalores:block/fluids/nether_portal_fluid_still"
+  }
+}

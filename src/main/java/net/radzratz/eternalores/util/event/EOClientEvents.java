@@ -18,14 +18,21 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.*;
+import net.neoforged.neoforge.client.extensions.common.IClientFluidTypeExtensions;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
+import net.neoforged.neoforge.client.model.DynamicFluidContainerModel;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.EOCompressedBlockRegistry;
+import net.radzratz.eternalores.fluids.type.EOFluidBucketItem;
+import net.radzratz.eternalores.fluids.type.EOFluidType;
 import net.radzratz.eternalores.item.special.prospectors.renders.EOAdvOutline;
 import net.radzratz.eternalores.item.special.prospectors.EOBasicProspector;
 import net.radzratz.eternalores.item.special.prospectors.hud.EOBasicHudScreen;
@@ -33,6 +40,7 @@ import net.radzratz.eternalores.item.special.prospectors.renders.EOBasicOverlay;
 import net.radzratz.eternalores.util.config.EOToolsConfig;
 import net.radzratz.eternalores.util.config.util.EOCompressedBlockEntry;
 import net.radzratz.eternalores.util.models.EOModelLoader;
+import org.jetbrains.annotations.NotNull;
 
 import java.awt.*;
 import java.util.Optional;
@@ -218,6 +226,15 @@ public class EOClientEvents {
                 ), holder.get());
             }
         });
+
+        allBlockEntries()
+                .filter(e -> e.get() instanceof LiquidBlock)
+                .forEach(e -> {
+                    Fluid fluid = e.get().defaultBlockState().getFluidState().getType();
+                    if (!(fluid.getFluidType() instanceof EOFluidType eoType) || !eoType.hasTint()) return;
+
+                    event.register((state, level, pos, tintIndex) -> eoType.getTint(), e.get());
+                });
     }
 
     @SubscribeEvent
@@ -243,10 +260,45 @@ public class EOClientEvents {
                         holder.get().asItem());
             }
         });
+
+        allItemEntries()
+                .filter(e -> e.get() instanceof EOFluidBucketItem)
+                .forEach(e -> event.register(new DynamicFluidContainerModel.Colors(), e.get()));
     }
 
     @SubscribeEvent
     public static void onRegisterResourceReloadListeners(RegisterClientReloadListenersEvent event) {
         event.registerReloadListener((ResourceManagerReloadListener) manager -> EOModelLoader.EOGeometry.clearCaches());
+    }
+
+    @SubscribeEvent
+    public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
+        allFluidEntries().forEach(fluidType -> {
+            if (!(fluidType.get() instanceof EOFluidType type)) return;
+
+            ResourceLocation still = type.getStillTexture();
+            ResourceLocation flowing = type.getFlowingTexture();
+            int tint = type.getTint();
+
+            event.registerFluidType(
+                    new IClientFluidTypeExtensions() {
+                        @Override
+                        public @NotNull ResourceLocation getStillTexture() {
+                            return still;
+                        }
+
+                        @Override
+                        public @NotNull ResourceLocation getFlowingTexture() {
+                            return flowing;
+                        }
+
+                        @Override
+                        public int getTintColor() {
+                            return tint;
+                        }
+                    },
+                    fluidType.get()
+            );
+        });
     }
 }

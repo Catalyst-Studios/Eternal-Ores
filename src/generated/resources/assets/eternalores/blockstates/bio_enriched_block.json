@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "eternalores:block/bio_enriched_block"
+    }
+  }
+}

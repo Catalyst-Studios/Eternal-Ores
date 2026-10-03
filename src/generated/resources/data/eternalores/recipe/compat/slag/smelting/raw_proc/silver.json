@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:raw_materials/silver"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 96,
+      "id": "eternalores:molten_silver"
+    }
+  ]
+}

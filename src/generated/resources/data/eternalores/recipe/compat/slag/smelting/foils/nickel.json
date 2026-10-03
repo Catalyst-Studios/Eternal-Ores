@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:foils/nickel"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 72,
+      "id": "eternalores:molten_nickel"
+    }
+  ]
+}

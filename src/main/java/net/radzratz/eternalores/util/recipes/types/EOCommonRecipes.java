@@ -2,6 +2,7 @@ package net.radzratz.eternalores.util.recipes.types;
 
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.material.Fluid;
 import net.radzratz.eternalores.util.tags.item.EOItemTags;
 import org.jetbrains.annotations.Nullable;
 
@@ -37,6 +38,12 @@ public class EOCommonRecipes {
             @Nullable Object inputTwo, int inputTwoCount,
             @Nullable Object inputThree, int inputThreeCount,
             Item result, int resultCount, String sfx, Grp grp) {}
+
+    public record AlloysFluid(
+            Fluid input, int inputCount,
+            @Nullable Fluid inputTwo, int inputTwoCount,
+            @Nullable Fluid inputThree, int inputThreeCount,
+            Fluid result, int resultCount, int temp, String sfx, Grp grp) {}
 
     public record Smeltables(TagKey<Item> input, Item result, String sfx, Grp grp) {}
 
@@ -413,6 +420,7 @@ public class EOCommonRecipes {
             gem(EMERALD, 5, BERYLLIUM_SET.SMALL_DUST.get(), 2, EMERALD_ID),
             bulkOre(LAPIS_LAZULI, 9, SULFUR_SET.SMALL_DUST.get(), 3, LAPIS_ID),
             gem(QUARTZ, 5, SILICON_SET.SMALL_DUST.get(), 3, QUARTZ_ID),
+            gem(BLACK_QUARTZ_SET.GEM.get(), 3, SILICON_SET.SMALL_DUST.get(), 3, BLACK_QUARTZ_ID),
             bulkOre(REDSTONE, 12, CINNABAR_SET.SMALL_DUST.get(), 2, REDSTONE_ID),
 
             coal(ANTHRACITE_SET.COAL.get(), 4, GRAPHITE_SET.SMALL_DUST.get(), 2, ANTHRACITE_ID),
@@ -420,6 +428,21 @@ public class EOCommonRecipes {
             coal(LIGNITE_SET.COAL.get(), 7, SULFUR_SET.SMALL_DUST.get(), 3, LIGNITE_ID),
             coal(PEAT_SET.COAL.get(), 8, BIOMASS_SET.ITEM.get(), 2, PEAT_ID),
             coal(COAL, 6, SULFUR_SET.SMALL_DUST.get(), 3, COAL_ID)
+    );
+
+    public static final List<AlloysFluid> FLUID_ALLOYS = List.of(
+            new AlloysFluid(COPPER_SET.MOLTEN.get(), 2, ZINC_SET.MOLTEN.get(), 1, null, 0, BRASS_SET.MOLTEN.get(), 3, 650, BRASS_ID, Grp.ALLOYS),
+            new AlloysFluid(COPPER_SET.MOLTEN.get(), 1, SILVER_SET.MOLTEN.get(), 3, null, 0, BRITANNIA_SILVER_SET.MOLTEN.get(), 4, 900, BRITANNIA_SILVER_ID, Grp.ALLOYS),
+            new AlloysFluid(COPPER_SET.MOLTEN.get(), 1, NICKEL_SET.MOLTEN.get(), 1, null, 0, CONSTANTAN_SET.MOLTEN.get(), 2, 920, CONSTANTAN_ID, Grp.ALLOYS),
+            new AlloysFluid(COPPER_SET.MOLTEN.get(), 3, TIN_SET.MOLTEN.get(), 1, null, 0, BRONZE_SET.MOLTEN.get(), 4, 700, BRONZE_ID, Grp.ALLOYS),
+            new AlloysFluid(SILVER_SET.MOLTEN.get(), 1, GOLD_SET.MOLTEN.get(), 1, null, 0, ELECTRUM_SET.MOLTEN.get(), 2, 760, ELECTRUM_ID, Grp.ALLOYS),
+            new AlloysFluid(IRON_SET.MOLTEN.get(), 2, NICKEL_SET.MOLTEN.get(), 1, null, 0, INVAR_SET.MOLTEN.get(), 3, 810, INVAR_ID, Grp.ALLOYS),
+            new AlloysFluid(SILVER_SET.MOLTEN.get(), 1, NICKEL_SET.MOLTEN.get(), 1, TIN_SET.MOLTEN.get(), 2, PEWTER_SET.MOLTEN.get(), 3, 910, PEWTER_ID, Grp.ALLOYS),
+            new AlloysFluid(GOLD_SET.MOLTEN.get(), 1, COPPER_SET.MOLTEN.get(), 3, null, 0, ROSE_GOLD_SET.MOLTEN.get(), 4, 820, ROSE_GOLD_ID, Grp.ALLOYS),
+            new AlloysFluid(COPPER_SET.MOLTEN.get(), 3, QUARTZ_SET.MOLTEN.get(), 1, null, 0, QUARTZ_ENRICHED_COPPER_SET.MOLTEN.get(), 4, 820, QUARTZ_ENRICHED_COPPER_ID, Grp.ALLOYS),
+            new AlloysFluid(IRON_SET.MOLTEN.get(), 3, QUARTZ_SET.MOLTEN.get(), 1, null, 0, QUARTZ_ENRICHED_IRON_SET.MOLTEN.get(), 4, 820, QUARTZ_ENRICHED_IRON_ID, Grp.ALLOYS),
+            new AlloysFluid(IRON_SET.MOLTEN.get(), 2, ALUMINUM_SET.MOLTEN.get(), 5, OBSIDIAN_SET.MOLTEN.get(), 2, ALUMITE_SET.MOLTEN.get(), 3, 1200, ALUMITE_ID, Grp.ALLOYS),
+            new AlloysFluid(COPPER_SET.MOLTEN.get(), 2, COBALT_SET.MOLTEN.get(), 1, QUARTZ_SET.MOLTEN.get(), 1, HEPATIZON_SET.MOLTEN.get(), 3, 1400, HEPATIZON_ID, Grp.ALLOYS)
     );
 
     public static final List<Alloys> ALLOYS = List.of(
@@ -478,6 +501,7 @@ public class EOCommonRecipes {
 
             new Alloys(INGOTS_COPPER, 3, DUSTS_QUARTZ, 1, null, 0, QUARTZ_ENRICHED_COPPER_SET.INGOT.get(), 4, "quartz_enriched_copper", Grp.ALLOYS),
             new Alloys(DUSTS_COPPER, 3, DUSTS_QUARTZ, 1, null, 0, QUARTZ_ENRICHED_COPPER_SET.INGOT.get(), 4, "quartz_enriched_copper_var", Grp.ALLOYS),
+
             new Alloys(INGOTS_IRON, 3, DUSTS_QUARTZ, 1, null, 0, QUARTZ_ENRICHED_IRON_SET.INGOT.get(), 4, "quartz_enriched_iron", Grp.ALLOYS),
             new Alloys(DUSTS_IRON, 3, DUSTS_QUARTZ, 1, null, 0, QUARTZ_ENRICHED_IRON_SET.INGOT.get(), 4, "quartz_enriched_iron_var", Grp.ALLOYS),
 

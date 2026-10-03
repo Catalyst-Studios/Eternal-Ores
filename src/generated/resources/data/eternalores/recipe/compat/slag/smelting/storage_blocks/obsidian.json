@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:storage_blocks/obsidian"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 648,
+      "id": "eternalores:molten_obsidian"
+    }
+  ]
+}

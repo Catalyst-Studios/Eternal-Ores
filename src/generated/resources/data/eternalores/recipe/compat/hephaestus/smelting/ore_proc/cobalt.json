@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 100,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:ores/cobalt"
+  },
+  "result": {
+    "amount": 270,
+    "id": "eternalores:molten_cobalt"
+  },
+  "temperature": 1100,
+  "time": 50
+}

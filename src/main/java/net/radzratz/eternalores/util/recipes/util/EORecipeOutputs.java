@@ -4,6 +4,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.material.Fluid;
 import net.radzratz.eternalores.util.EOMaterials;
 
 import java.util.List;
@@ -46,7 +47,16 @@ public class EORecipeOutputs {
     public final Item STONES;
     public final Item PELLET;
 
+    public final Fluid MOLTEN_FLUID;
+
+    // copies the original and old RecipeOutput constructor,
+    // so already defined recipe builders don't blow up due to new
+    // Registry<Fluid> fluidReg call, since we're now calling items and fluids from RecipeOutputs
     public EORecipeOutputs(String mat, Registry<Item> reg) {
+        this(mat, reg, null);
+    }
+
+    public EORecipeOutputs(String mat, Registry<Item> itemReg, Registry<Fluid> fluidReg) {
         ResourceLocation gemLocation = GEM_EXCEPTIONS.contains(mat)
                 ? ResourceLocation.withDefaultNamespace(VANILLA_GEM_IDS.getOrDefault(mat, mat))
                 : EO(EOMaterials.materialPrefixSuffixes.GEM + mat);
@@ -56,41 +66,47 @@ public class EORecipeOutputs {
         String suffixes = dustOutput().contains(mat) ? EOMaterials.materialPrefixSuffixes.DUST : EOMaterials.materialPrefixSuffixes.BLOCK;
         String cleanMaterial = mat.startsWith("raw_") ? mat.substring(4) : mat;
 
-        this.DUST = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.DUST));
-        this.DIRTY_DUST = get(reg, EO(EOMaterials.materialPrefixSuffixes.DIRTY_DUST + mat + EOMaterials.materialPrefixSuffixes.DUST));
-        this.SMALL_DUST = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.SMALL_DUST));
-        this.CLEAN_DUST = get(reg, EO(cleanMaterial + EOMaterials.materialPrefixSuffixes.DUST));
-        this.CLUMP = get(reg, EO(EOMaterials.materialPrefixSuffixes.CLUMP + mat));
-        this.SMALL_CLUMP = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.SMALL_CLUMP));
-        this.SHARD = get(reg, EO(EOMaterials.materialPrefixSuffixes.SHARD + mat));
-        this.CRYSTAL = get(reg, EO(EOMaterials.materialPrefixSuffixes.CRYSTAL + mat));
-        this.ENRICHED = get(reg, EO(EOMaterials.materialPrefixSuffixes.ENRICHED + mat));
-        this.ORE_GEM = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.ORE_GEM));
-        this.INGOT = getItemFromAnyNamespace(reg, mat + EOMaterials.materialPrefixSuffixes.INGOT);
-        this.NUGGET = getItemFromAnyNamespace(reg, mat + EOMaterials.materialPrefixSuffixes.NUGGET);
-        this.COALS = getItemFromAnyNamespace(reg, mat);
-        this.GEM = get(reg, gemLocation);
-        this.GEM_SHARD = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.GEM_SHARD));
-        this.PLATE = get(reg, EO(EOMaterials.materialPrefixSuffixes.PLATE + mat));
-        this.ROD = get(reg, EO(EOMaterials.materialPrefixSuffixes.ROD + mat));
-        this.GEAR = get(reg, EO(EOMaterials.materialPrefixSuffixes.GEAR + mat));
-        this.FOIL = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.FOIL));
-        this.WIRE = get(reg, EO(EOMaterials.materialPrefixSuffixes.WIRE + mat));
-        this.BLOCK = getItemFromAnyNamespace(reg, mat + EOMaterials.materialPrefixSuffixes.BLOCK);
-        this.BLOCK_DUST = getItemFromAnyNamespace(reg, mat + suffixes);
-        this.DUST_BLOCK = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.DUST_BLOCK));
-        this.ENRICHED_BLOCK = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.ENRICHED_BLOCK));
-        this.RAW = get(reg, EO(outputRawOre));
-        this.RAW_BLOCK = get(reg, EO(EOMaterials.materialPrefixSuffixes.RAW + mat + EOMaterials.materialPrefixSuffixes.BLOCK));
-        this.PEBBLE = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.PEBBLE));
-        this.DUST_INGOT = getItemFromAnyNamespace(reg, mat + suffix);
-        this.GEOSHARDS = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.GEOSHARDS));
-        this.GEOSHARD_BLOCK = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.GEORE_BLOCK));
-        this.STONES = get(reg, MC(mat));
-        this.PELLET = get(reg, EO(mat + EOMaterials.materialPrefixSuffixes.PELLET));
+        this.DUST = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.DUST));
+        this.DIRTY_DUST = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.DIRTY_DUST + mat + EOMaterials.materialPrefixSuffixes.DUST));
+        this.SMALL_DUST = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.SMALL_DUST));
+        this.CLEAN_DUST = get(itemReg, EO(cleanMaterial + EOMaterials.materialPrefixSuffixes.DUST));
+        this.CLUMP = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.CLUMP + mat));
+        this.SMALL_CLUMP = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.SMALL_CLUMP));
+        this.SHARD = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.SHARD + mat));
+        this.CRYSTAL = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.CRYSTAL + mat));
+        this.ENRICHED = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.ENRICHED + mat));
+        this.ORE_GEM = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.ORE_GEM));
+        this.INGOT = getItemFromAnyNamespace(itemReg, mat + EOMaterials.materialPrefixSuffixes.INGOT);
+        this.NUGGET = getItemFromAnyNamespace(itemReg, mat + EOMaterials.materialPrefixSuffixes.NUGGET);
+        this.COALS = getItemFromAnyNamespace(itemReg, mat);
+        this.GEM = get(itemReg, gemLocation);
+        this.GEM_SHARD = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.GEM_SHARD));
+        this.PLATE = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.PLATE + mat));
+        this.ROD = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.ROD + mat));
+        this.GEAR = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.GEAR + mat));
+        this.FOIL = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.FOIL));
+        this.WIRE = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.WIRE + mat));
+        this.BLOCK = getItemFromAnyNamespace(itemReg, mat + EOMaterials.materialPrefixSuffixes.BLOCK);
+        this.BLOCK_DUST = getItemFromAnyNamespace(itemReg, mat + suffixes);
+        this.DUST_BLOCK = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.DUST_BLOCK));
+        this.ENRICHED_BLOCK = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.ENRICHED_BLOCK));
+        this.RAW = get(itemReg, EO(outputRawOre));
+        this.RAW_BLOCK = get(itemReg, EO(EOMaterials.materialPrefixSuffixes.RAW + mat + EOMaterials.materialPrefixSuffixes.BLOCK));
+        this.PEBBLE = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.PEBBLE));
+        this.DUST_INGOT = getItemFromAnyNamespace(itemReg, mat + suffix);
+        this.GEOSHARDS = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.GEOSHARDS));
+        this.GEOSHARD_BLOCK = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.GEORE_BLOCK));
+        this.STONES = get(itemReg, MC(mat));
+        this.PELLET = get(itemReg, EO(mat + EOMaterials.materialPrefixSuffixes.PELLET));
+
+        this.MOLTEN_FLUID = fluidReg == null ? null : getFluid(fluidReg, EO(EOMaterials.materialPrefixSuffixes.MOLTEN + mat));
     }
 
     private Item get(Registry<Item> registry, ResourceLocation id) {
+        return registry.getOptional(id).orElse(null);
+    }
+
+    private Fluid getFluid(Registry<Fluid> registry, ResourceLocation id) {
         return registry.getOptional(id).orElse(null);
     }
 
@@ -98,15 +114,19 @@ public class EORecipeOutputs {
         return new EORecipeOutputs(EOMaterials.extractMaterialName(path), registry);
     }
 
+    public static EORecipeOutputs fromPath(String path, Registry<Item> registry, Registry<Fluid> fluidRegistry) {
+        return new EORecipeOutputs(EOMaterials.extractMaterialName(path), registry, fluidRegistry);
+    }
+
     public static List<String> dustOutput() {
         return List.of(
-                "catalyrium", "ardite", "tungsten", "titanium", "vanadium", "neodymium", "palladium"
+                "catalyrium", "tungsten", "titanium", "vanadium", "neodymium", "palladium"
         );
     }
 
     public static Set<String> furnaceExclusions() {
         return Set.of(
-                "ardite", "catalyrium", "nether_star_dust", "sculk", "ender_dust", "quartz_dust", "endstone_dust", "netherrack_dust", "stone_dust",
+                "catalyrium", "nether_star_dust", "sculk", "ender_dust", "quartz_dust", "endstone_dust", "netherrack_dust", "stone_dust",
                 "soul_sand", "blue_steel", "black_steel", "titanium", "tungsten", "stellarium", "redstone", "lapis", "aurorium", "chromium",
                 "universium", "cosmic_matter", "eternity", "gravitronium", "stainless_steel", "vanadium", "ruthenium", "niobium", "hafnium", "novalloy",
                 "rhodium", "indium", "red_steel", "neptunium", "rubidium", "francium", "kanthal", "nanite", "unstable", "neodymium", "etherium", "black_bronze", "yttrium",

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:gears/beryllium"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 388,
+      "id": "eternalores:molten_beryllium"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:nuggets/quartz_enriched_copper"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 8,
+      "id": "eternalores:molten_quartz_enriched_copper"
+    }
+  ]
+}

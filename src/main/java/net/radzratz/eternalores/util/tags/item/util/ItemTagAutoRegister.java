@@ -66,6 +66,15 @@ public class ItemTagAutoRegister {
         builder.applyMek(provider);
     }
 
+    public void registerSlag(DeferredHolder<?, ?> entry, TagKey<Item> mainTag, boolean individual, boolean optional) {
+        ItemTagBuilder builder = new ItemTagBuilder(entry).addTo(mainTag).setOptional(optional);
+
+        if (individual) builder
+                .addIndividual(mainTag.location().getPath());
+
+        builder.applySlag(provider);
+    }
+
     @SafeVarargs
     public final <E extends Enum<E>> void register(DeferredHolder<?, ?> entry, TagKey<Item> mainTag, E type, TagKey<Item>... enumTags) {
         ItemTagBuilder builder = new ItemTagBuilder(entry)

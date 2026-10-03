@@ -552,6 +552,9 @@ public class EOToolsConfig {
         public final ModConfigSpec.BooleanValue foil;
         public final ModConfigSpec.BooleanValue rod;
         public final ModConfigSpec.BooleanValue gear;
+        public final ModConfigSpec.BooleanValue ingot;
+        public final ModConfigSpec.BooleanValue gem;
+        public final ModConfigSpec.BooleanValue nugget;
 
         public MoldConfig(ModConfigSpec.Builder b) {
             b.comment("Mold Settings").push("molds");
@@ -560,6 +563,9 @@ public class EOToolsConfig {
             this.foil = mold(b, "foil");
             this.rod = mold(b, "rod");
             this.gear = mold(b, "gear");
+            this.ingot = mold(b, "ingot");
+            this.gem = mold(b, "gem");
+            this.nugget = mold(b, "nugget");
 
             b.pop();
         }
@@ -584,6 +590,18 @@ public class EOToolsConfig {
 
         public boolean gearEnabled() {
             return gear.get();
+        }
+
+        public boolean ingotEnabled() {
+            return ingot.get();
+        }
+
+        public boolean gemEnabled() {
+            return gem.get();
+        }
+
+        public boolean nuggetEnabled() {
+            return nugget.get();
         }
     }
 

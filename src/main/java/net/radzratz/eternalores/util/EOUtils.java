@@ -4,8 +4,10 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.material.Fluid;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
+import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.radzratz.eternalores.EternalOres;
 
@@ -15,8 +17,7 @@ import java.util.Optional;
 import java.util.stream.Stream;
 
 import static net.radzratz.eternalores.block.EOCompressedBlockRegistry.EO_COMPRESSED_BLOCKS;
-import static net.radzratz.eternalores.util.EOSetRegistries.EO_BLOCKS;
-import static net.radzratz.eternalores.util.EOSetRegistries.EO_ITEMS;
+import static net.radzratz.eternalores.util.EOSetRegistries.*;
 import static net.radzratz.eternalores.util.EOMaterials.extractMaterialName;
 
 @SuppressWarnings("unused")
@@ -172,12 +173,34 @@ public class EOUtils {
     public static final boolean curiosMod = ModList.get().isLoaded(CURIOS);
     public static final ModLoadedCondition CURIOS_MOD = new ModLoadedCondition(CURIOS);
 
+    public static String EUtils = "excessive_utilities";
+    public static final boolean excessive_utils_mod = ModList.get().isLoaded(EUtils);
+    public static final ModLoadedCondition EUTILS_MOD = new ModLoadedCondition(EUtils);
+
+    public static String HEPHAESTUS = "hephaestus";
+    public static final boolean hephaestus_forge_mod = ModList.get().isLoaded(HEPHAESTUS);
+    public static final ModLoadedCondition HEPHAESTUS_MOD = new ModLoadedCondition(HEPHAESTUS);
+
+    public static String SLAG_EMBERS = "slag";
+    public static final boolean slag_n_embers_mod = ModList.get().isLoaded(SLAG_EMBERS);
+    public static final ModLoadedCondition SLAG_MOD = new ModLoadedCondition(SLAG_EMBERS);
+
     public static Stream<DeferredHolder<Item, ? extends Item>> allItemEntries() {
         return Stream.of(EO_ITEMS.getEntries()).flatMap(Collection::stream);
     }
 
     public static Stream<DeferredHolder<Block, ? extends Block>> allBlockEntries() {
         return Stream.of(EO_BLOCKS.getEntries(), EO_COMPRESSED_BLOCKS.getEntries()).flatMap(Collection::stream);
+    }
+
+    public static Stream<DeferredHolder<FluidType, ? extends FluidType>> allFluidEntries() {
+        return Stream.of(EO_FLUID_TYPES.getEntries()).flatMap(Collection::stream);
+    }
+
+    public static Stream<DeferredHolder<Fluid, ? extends Fluid>> allFluidSourceEntries() {
+        return Stream.of(EO_FLUIDS.getEntries())
+                .flatMap(Collection::stream)
+                .filter(entry -> !entry.getId().getPath().endsWith("_flowing"));
     }
 
     public static ResourceLocation EO(String path) {
@@ -242,6 +265,18 @@ public class EOUtils {
 
     public static ResourceLocation CURIO(String path) {
         return ResourceLocation.fromNamespaceAndPath(CURIOS, path);
+    }
+
+    public static ResourceLocation EC(String path) {
+        return ResourceLocation.fromNamespaceAndPath(EVILCRAFT, path);
+    }
+
+    public static ResourceLocation HPF(String path) {
+        return ResourceLocation.fromNamespaceAndPath(HEPHAESTUS, path);
+    }
+
+    public static ResourceLocation SLAG(String path) {
+        return ResourceLocation.fromNamespaceAndPath(SLAG_EMBERS, path);
     }
 
     public static Item getItemFromAnyNamespace(Registry<Item> registry, String path) {

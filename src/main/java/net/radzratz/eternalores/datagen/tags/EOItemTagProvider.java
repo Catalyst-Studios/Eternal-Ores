@@ -1,6 +1,7 @@
 package net.radzratz.eternalores.datagen.tags;
 
 import appeng.core.definitions.AEBlocks;
+import appeng.datagen.providers.tags.ConventionTags;
 import com.refinedmods.refinedstorage.common.content.ContentIds;
 import mekanism.common.tags.MekanismTags;
 import net.minecraft.core.HolderLookup;
@@ -26,7 +27,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import static appeng.datagen.providers.tags.ConventionTags.ALL_CERTUS_QUARTZ;
+import static appeng.datagen.providers.tags.ConventionTags.ALL_FLUIX;
 import static blusunrize.immersiveengineering.common.register.IEItems.Molds.*;
+import static com.titammods.setup.ModItems.*;
 import static me.jddev0.ep.item.EPItems.*;
 import static net.minecraft.tags.ItemTags.COALS;
 import static net.minecraft.world.item.Items.*;
@@ -35,19 +39,17 @@ import static net.radzratz.eternalores.item.special.prospectors.EOAdvProspector.
 import static net.radzratz.eternalores.item.special.prospectors.EOBasicProspector.PROSPECTOR;
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;
 import static net.radzratz.eternalores.util.EOUtils.*;
-import static net.radzratz.eternalores.util.tags.item.EOItemTags.Blends.BLENDS;
-import static net.radzratz.eternalores.util.tags.item.EOItemTags.Blends.BLENDS_SILICON;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.Blends.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Clumps.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Common.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Compat.*;
-import static net.radzratz.eternalores.util.tags.item.EOItemTags.DustBlocks.ITEM_DUST_BLOCK_COAL_COKE;
-import static net.radzratz.eternalores.util.tags.item.EOItemTags.DustBlocks.ITEM_DUST_BLOCK_COKE_COAL_R;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.DustBlocks.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Dusts.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Enriched.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Gears.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.GemShards.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Ingots.*;
-import static net.radzratz.eternalores.util.tags.item.EOItemTags.Items.BISMUTH;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.Items.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.OreGems.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Ores.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Pebbles.*;
@@ -105,6 +107,9 @@ public class EOItemTagProvider extends ItemTagsProvider {
         tag(DYES).add(LAPIS_SET.DUST.get());
         tag(DYES_BLUE).add(LAPIS_SET.DUST.get());
 
+        tag(DUSTS).add(PRISMARINE_SHARD.asItem());
+        tag(DUSTS_PRISMARINE).add(PRISMARINE_SHARD.asItem());
+
         tag(EOItemTags.Items.SILICON).add(SILICON_SET.ITEM.get());
         tag(ITEM_URANINITE_ORE).add(URANINITE_SET.ORE.get().asItem());
         tag(ITEM_URANINITE_ORE).add(URANINITE_SET.SLATE_ORE.get().asItem());
@@ -117,6 +122,10 @@ public class EOItemTagProvider extends ItemTagsProvider {
 
         tag(SMALL_DUSTS_COAL_COKE).add(COKE_SET.SMALL_DUST.get().asItem());
         tag(ITEM_DUST_BLOCK_COAL_COKE).add(COKE_SET.DUST_BLOCK.get().asItem());
+
+        tag(ALL_FLUIX).addOptional(FLUIX_SET.GEM.getId());
+        tag(ConventionTags.ALL_QUARTZ).addOptional(CERTUS_QUARTZ_SET.GEM.getId());
+        tag(ConventionTags.ALL_CERTUS_QUARTZ).addOptional(CERTUS_QUARTZ_SET.GEM.getId());
 
         tag(GEAR_STONES).add(
                 ANDESITE_SET.GEAR.get(),
@@ -222,20 +231,43 @@ public class EOItemTagProvider extends ItemTagsProvider {
 
         tag(MUSHROOM_BLOCKS).add(BROWN_MUSHROOM_BLOCK).add(RED_MUSHROOM_BLOCK).add(MUSHROOM_STEM);
 
+        //tag(WIRE_MOLD).addOptional(EOMolds.MOLD_WIRE.getId());
+
+        // immersive engineering
         tag(GEAR_MOLD).addOptional(MOLD_GEAR.getId());
         tag(ROD_MOLD).addOptional(MOLD_ROD.getId());
         tag(PLATE_MOLD).addOptional(MOLD_PLATE.getId());
-        //tag(WIRE_MOLD).addOptional(EOMolds.MOLD_WIRE.getId());
-        tag(GEAR_MOLD).addOptional(GEAR_PRESS_MOLD.getId());
-        tag(ROD_MOLD).addOptional(ROD_PRESS_MOLD.getId());
-        tag(WIRE_MOLD).addOptional(WIRE_PRESS_MOLD.getId());
+        tag(WIRE_MOLD).addOptional(MOLD_WIRE.getId());
 
         tag(MOLDS).addOptional(MOLD_GEAR.getId());
         tag(MOLDS).addOptional(MOLD_ROD.getId());
         tag(MOLDS).addOptional(MOLD_PLATE.getId());
+        tag(MOLDS).addOptional(MOLD_WIRE.getId());
+
+        // energized power
+        tag(GEAR_MOLD).addOptional(GEAR_PRESS_MOLD.getId());
+        tag(ROD_MOLD).addOptional(ROD_PRESS_MOLD.getId());
+        tag(WIRE_MOLD).addOptional(WIRE_PRESS_MOLD.getId());
+
         tag(MOLDS).addOptional(GEAR_PRESS_MOLD.getId());
         tag(MOLDS).addOptional(ROD_PRESS_MOLD.getId());
         tag(MOLDS).addOptional(WIRE_PRESS_MOLD.getId());
+
+        // hephaestus
+        tag(GEAR_MOLD).addOptional(GEAR_CAST.getId());
+        tag(ROD_MOLD).addOptional(ROD_CAST.getId());
+        tag(PLATE_MOLD).addOptional(PLATE_CAST.getId());
+        tag(NUGGET_MOLD).addOptional(NUGGET_CAST.getId());
+        tag(INGOT_MOLD).addOptional(INGOT_CAST.getId());
+        tag(GEM_MOLD).addOptional(GEM_CAST.getId());
+
+        tag(MOLDS).addOptional(INGOT_CAST.getId());
+        tag(MOLDS).addOptional(GEM_CAST.getId());
+        tag(MOLDS).addOptional(NUGGET_CAST.getId());
+        tag(MOLDS).addOptional(COIN_CAST.getId());
+        tag(MOLDS).addOptional(GEAR_CAST.getId());
+        tag(MOLDS).addOptional(PLATE_CAST.getId());
+        tag(MOLDS).addOptional(ROD_CAST.getId());
 
         tag(ITEM_STORAGE_FLUIX).addOptional(AEBlocks.FLUIX_BLOCK.id());
         extendedAEOptional(BLENDS, "quartz_blend");

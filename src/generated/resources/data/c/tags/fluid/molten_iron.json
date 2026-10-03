@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:molten_iron",
+    {
+      "id": "hephaestus:molten_iron",
+      "required": false
+    }
+  ]
+}

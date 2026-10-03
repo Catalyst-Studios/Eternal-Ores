@@ -2,6 +2,6 @@
   "type": "eternalores:config_ore_modifier",
   "biomes": "#minecraft:is_overworld",
   "features": "eternalores:overworld_bituminous_coal_placed",
-  "ore": "eternalores:bituminous_overworld",
+  "ore": "eternalores:bituminous_coal_overworld",
   "step": "underground_ores"
 }

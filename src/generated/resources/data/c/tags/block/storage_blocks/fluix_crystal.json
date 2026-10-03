@@ -1,6 +1,8 @@
 {
   "remove": [
-    "eternalores:fluix_crystal_block_block"
+    "eternalores:fluix_crystal_block"
   ],
-  "values": []
+  "values": [
+    "eternalores:fluix_crystal_block"
+  ]
 }

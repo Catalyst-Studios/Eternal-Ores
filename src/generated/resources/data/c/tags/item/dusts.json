@@ -184,6 +184,7 @@
     "eternalores:wrought_iron_dust",
     "eternalores:yttrium_dust",
     "eternalores:zinc_dust",
-    "eternalores:zircon_dust"
+    "eternalores:zircon_dust",
+    "minecraft:prismarine_shard"
   ]
 }

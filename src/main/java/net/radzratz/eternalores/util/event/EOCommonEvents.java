@@ -10,6 +10,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.event.AddPackFindersEvent;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.OnDatapackSyncEvent;
@@ -20,6 +21,7 @@ import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.item.special.prospectors.packets.EOProspectorCurioPacket;
 import net.radzratz.eternalores.util.compat.curios.EOCurios;
+import net.radzratz.eternalores.util.compat.slag_n_embers.SlagTable;
 import net.radzratz.eternalores.util.data.EODataPack;
 import net.radzratz.eternalores.item.special.prospectors.packets.EOAdvScanPacket;
 import net.radzratz.eternalores.item.special.prospectors.EOBasicProspector;
@@ -29,11 +31,29 @@ import net.radzratz.eternalores.util.recipes.duplicate_handler.EORecipeCache;
 
 import java.util.Optional;
 
-import static net.radzratz.eternalores.util.EOUtils.curiosMod;
+import static net.radzratz.eternalores.util.EOSetRegistries.*;
+import static net.radzratz.eternalores.util.EOUtils.*;
 import static net.radzratz.eternalores.util.recipes.duplicate_handler.EODuplicateRecipeHandler.*;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.Tools.*;
 
 @EventBusSubscriber(modid = EternalOres.id)
 public class EOCommonEvents {
+
+    @SubscribeEvent
+    public static void commonSetup(FMLCommonSetupEvent event) {
+        if (slag_n_embers_mod) {
+            event.enqueueWork(() -> {
+                SlagTable.register(CASTS_ROD, MOLD_ROD.get());
+                SlagTable.register(CASTS_PLATE, MOLD_PLATE.get());
+                SlagTable.register(CASTS_GEAR, MOLD_GEAR.get());
+                SlagTable.register(CASTS_FOIL, MOLD_FOIL.get());
+                SlagTable.register(CASTS_INGOT, MOLD_INGOT.get());
+                SlagTable.register(CASTS_GEM, MOLD_GEM.get());
+                SlagTable.register(CASTS_NUGGET, MOLD_NUGGET.get());
+            });
+        }
+    }
+
     @SubscribeEvent
     public static void onPlayerTick(PlayerTickEvent.Post event) {
         Player player = event.getEntity();
@@ -105,7 +125,7 @@ public class EOCommonEvents {
     }
 
     @SubscribeEvent
-    public static void registerCache(AddReloadListenerEvent event) {
+    public static void onReloadListener(AddReloadListenerEvent event) {
         event.addListener(new EORecipeCache());
     }
 

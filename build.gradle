@@ -182,7 +182,11 @@ dependencies {
     implementation "curse.maven:ars-nouveau-401955:7764018"
     implementation "com.blakebr0.mysticalagriculture:MysticalAgriculture:${minecraft_version}-${mystical_agriculture_version}"
     implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}"
+    implementation "curse.maven:excessive-utilities-1482270:8710603"
+    implementation "curse.maven:hephaestus-forge-1542467:8440431"
+    implementation "curse.maven:slag-n-embers-1360010:9005870"
 
+    implementation "curse.maven:bbl-casting-1052163:8105156"
     //implementation "curse.maven:evolved-mekanism-1230085:7599592"
     implementation "curse.maven:applied-energistics-2-223794:7027323"
     implementation "curse.maven:occultism-361026:7737734"
@@ -198,8 +202,8 @@ dependencies {
     compileOnly ("com.almostreliable.mods:almostunified-neoforge:${au_version}")
     compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
 
-    //runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
-    runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
+    runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+    // runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
     runtimeOnly "curse.maven:cloth-config-348521:5729127"
     runtimeOnly "curse.maven:guideme-1173950:6688687"
     runtimeOnly "curse.maven:modern-industrialization-405388:6929325"
@@ -237,6 +241,12 @@ dependencies {
     runtimeOnly "curse.maven:almostunified-633823:8127603"
     runtimeOnly "curse.maven:ender-io-endergy-304346:8017169"
     runtimeOnly "curse.maven:betterf3-401648:5873258"
+    runtimeOnly "curse.maven:aaron-1384284:8710909"
+    runtimeOnly "curse.maven:kotlin-for-forge-351264:8335665"
+    runtimeOnly "curse.maven:athena-841890:8061947"
+    runtimeOnly "curse.maven:ferritecore-429235:7524151"
+    runtimeOnly "curse.maven:bbl-core-1135181:7048684"
+    runtimeOnly "curse.maven:ae2-jei-integration-1074338:7727898"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {

@@ -7,11 +7,14 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.world.level.block.AmethystClusterBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.client.model.generators.*;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.block.types.EOCompressedBlock;
+import net.radzratz.eternalores.fluids.type.EOFluidType;
 import org.jetbrains.annotations.NotNull;
 
 
@@ -49,9 +52,25 @@ public class EOBlockStateProvider extends BlockStateProvider {
 
         if (block instanceof AmethystClusterBlock) {
             georeBudBlock(id, block);
+        } else if (block instanceof LiquidBlock liquidBlock) {
+            fluidBlock(id, liquidBlock);
         } else {
             simpleBlockWithItem(block, basicBlock(id));
         }
+    }
+
+    private void fluidBlock(ResourceLocation id, LiquidBlock block) {
+        Fluid fluid = block.defaultBlockState().getFluidState().getType();
+        if (!(fluid.getFluidType() instanceof EOFluidType type)) return;
+
+        ResourceLocation texture = type.getStillTexture();
+
+        BlockModelBuilder model = models().getBuilder(id.toString())
+                .parent(new ModelFile.UncheckedModelFile("minecraft:block/cube_all"))
+                .texture("particle", texture)
+                .texture("all", texture);
+
+        simpleBlock(block, model);
     }
 
     private void georeBudBlock(ResourceLocation id, Block block) {

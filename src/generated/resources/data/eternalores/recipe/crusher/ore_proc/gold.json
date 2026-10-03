@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "excessive_utilities"
+    }
+  ],
+  "type": "excessive_utilities:crusher",
+  "fe_per_tick": 50,
+  "ingredient": {
+    "tag": "c:ores/gold"
+  },
+  "primary_output": {
+    "count": 2,
+    "id": "minecraft:raw_gold"
+  },
+  "secondary_chance": 1.0,
+  "secondary_output": {
+    "count": 1,
+    "id": "eternalores:raw_silver"
+  },
+  "ticks": 100
+}

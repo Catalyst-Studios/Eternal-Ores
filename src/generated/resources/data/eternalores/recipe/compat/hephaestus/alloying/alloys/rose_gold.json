@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:alloying",
+  "inputs": [
+    {
+      "amount": 1,
+      "id": "eternalores:molten_gold"
+    },
+    {
+      "amount": 3,
+      "id": "eternalores:molten_copper"
+    }
+  ],
+  "output": {
+    "amount": 4,
+    "id": "eternalores:molten_rose_gold"
+  },
+  "temperature": 820
+}

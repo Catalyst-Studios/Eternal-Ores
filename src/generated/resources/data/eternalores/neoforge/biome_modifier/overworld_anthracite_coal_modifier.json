@@ -2,6 +2,6 @@
   "type": "eternalores:config_ore_modifier",
   "biomes": "#minecraft:is_overworld",
   "features": "eternalores:overworld_anthracite_coal_placed",
-  "ore": "eternalores:anthracite_overworld",
+  "ore": "eternalores:anthracite_coal_overworld",
   "step": "underground_ores"
 }

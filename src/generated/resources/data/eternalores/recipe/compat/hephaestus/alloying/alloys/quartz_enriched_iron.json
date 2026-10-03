@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:alloying",
+  "inputs": [
+    {
+      "amount": 3,
+      "id": "eternalores:molten_iron"
+    },
+    {
+      "amount": 1,
+      "id": "eternalores:molten_quartz"
+    }
+  ],
+  "output": {
+    "amount": 4,
+    "id": "eternalores:molten_quartz_enriched_iron"
+  },
+  "temperature": 820
+}

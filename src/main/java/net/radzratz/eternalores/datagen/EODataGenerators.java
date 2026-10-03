@@ -20,11 +20,8 @@ import net.radzratz.eternalores.datagen.loot_tables.EOBlockLootTableProvider;
 import net.radzratz.eternalores.datagen.models.EOBlockStateProvider;
 import net.radzratz.eternalores.datagen.models.EOItemModelProvider;
 import net.radzratz.eternalores.datagen.recipes.EORecipeProvider;
-import net.radzratz.eternalores.datagen.tags.EOBiomeTagProvider;
-import net.radzratz.eternalores.datagen.tags.EOBlockTagProvider;
-import net.radzratz.eternalores.datagen.tags.EOItemTagProvider;
+import net.radzratz.eternalores.datagen.tags.*;
 import net.radzratz.eternalores.datagen.worldgen.EOWorldgenProvider;
-import net.radzratz.eternalores.datagen.tags.EOChemicalTagProvider;
 import net.radzratz.eternalores.util.compat.curios.EOCuriosDatagen;
 import net.radzratz.eternalores.util.loot_tables.EOConditionalLootTableProvider;
 
@@ -67,6 +64,7 @@ public class EODataGenerators {
         prov.addSubProvider(evt.includeServer(), new EOBiomeTagProvider(pOutput, lProv, eFileHelp));
         BlockTagsProvider bTagProv = new EOBlockTagProvider(pOutput, lProv, eFileHelp);
         prov.addSubProvider(evt.includeServer(), bTagProv);
+        prov.addSubProvider(evt.includeServer(), new EOFluidTagProvider(pOutput, lProv, eFileHelp));
         prov.addSubProvider(evt.includeServer(), new EOItemTagProvider(pOutput, lProv, bTagProv.contentsGetter(), eFileHelp));
         prov.addSubProvider(evt.includeServer(), new EOChemicalTagProvider(pOutput, lProv, eFileHelp));
 

@@ -1,0 +1,184 @@
+{
+  "values": [
+    {
+      "id": "eternalores:molten_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_alumite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_amethyst",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_brass",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_britannia_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_bronze",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cast_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cast_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_constantan",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_diamond",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_electrum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_emerald",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_ender_pearl",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_enderium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_hepatizon",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_invar",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_lapis",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_lumium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_modularium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_netherite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_obsidian",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_osgloglas",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_pewter",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_pig_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_prismarine",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_quartz_enriched_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_quartz_enriched_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_redstone",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_rose_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_signalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_silicon",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_wrought_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_zinc",
+      "required": false
+    }
+  ]
+}

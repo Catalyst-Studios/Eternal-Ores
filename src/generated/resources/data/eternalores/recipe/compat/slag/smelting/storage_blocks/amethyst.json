@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:storage_blocks/amethyst"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 288,
+      "id": "eternalores:molten_amethyst"
+    }
+  ]
+}

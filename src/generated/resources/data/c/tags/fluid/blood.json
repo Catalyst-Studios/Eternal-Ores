@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:fluid_blood",
+    {
+      "id": "evilcraft:blood",
+      "required": false
+    }
+  ]
+}

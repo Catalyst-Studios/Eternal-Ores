@@ -2,6 +2,7 @@ package net.radzratz.eternalores.datagen.lang.ES;
 
 import net.minecraft.data.PackOutput;
 import net.radzratz.eternalores.datagen.lang.EN.EOLocalizationEN_US;
+import net.radzratz.eternalores.fluids.type.EOFluidType;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,13 +22,13 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
     }
 
     @Override
-    protected String tabOresName() {
-        return "EO Menas";
+    protected String tabTools() {
+        return "EO Herramientas";
     }
 
     @Override
-    protected String tabRawMatsName() {
-        return "EO Materiales en Bruto";
+    protected String tabMaterials() {
+        return "EO Materiales";
     }
 
     @Override
@@ -41,38 +42,18 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
     }
 
     @Override
-    protected String tabMaterialsName() {
-        return "EO Materiales";
+    protected String tabGeOre() {
+        return "EO GeOres";
     }
 
     @Override
-    protected String tabDustsName() {
-        return "EO Polvos";
+    protected String tabForms() {
+        return "EO Componentes";
     }
 
     @Override
-    protected String tabFormsName() {
-        return "EO Formas de Material";
-    }
-
-    @Override
-    protected String tabToolsName() {
-        return "EO Herramientas";
-    }
-
-    @Override
-    protected String tabCoalsName() {
-        return "EO Carbones (Combustibles)";
-    }
-
-    @Override
-    protected String tabCompatMaterialsName() {
-        return "EO Materiales de Compatibilidad";
-    }
-
-    @Override
-    protected String tabCompatItemsName() {
-        return "EO Objetos y Bloques de Compatibilidad";
+    protected String tabFluids() {
+        return "EO Fluidos/Gases/Quimicos/Plasmas";
     }
 
     @Override
@@ -196,6 +177,11 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
     }
 
     @Override
+    protected String bucketItemName(String mat) {
+        return "Cubo de " + mat;
+    }
+
+    @Override
     protected String blockOfDustName(String mat) {
         return "Bloque de Polvo de " + mat;
     }
@@ -309,6 +295,9 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
         m.put("mold_plate", "Molde de Placa Metálica");
         m.put("mold_rod", "Molde de Vara Metálica");
         m.put("mold_foil", "Molde de Lámina Metálica");
+        m.put("mold_ingot", "Molde de Lingote Metálica");
+        m.put("mold_gem", "Molde de Gema Metálica");
+        m.put("mold_nugget", "Molde de Pepita Metálica");
         m.put("salt_dust", "Sal");
         m.put("salt_small_dust", "Pequeño Montón de Sal");
         m.put("sculk_dust", "Masa de Sculk");
@@ -359,6 +348,18 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
         m.put("advanced_prospector", "Prospector Avanzado");
         m.put("lignite_coal", "Carbón Pardo");
         m.put("sawdust", "Aserrín");
+        m.put("bio_blend", "Biomezcla");
+        m.put("enriched_bio", "Biomezcla Enriquecida");
+        m.put("bio_enriched_block", "Bloque de Biomezcla Enriquecia");
+
+        m.put("fluid_blood", "Sangre");
+        m.put("fluid_honey", "Miel");
+        m.put("fluid_nether_portal_fluid", "Fluido de Portal del Nether");
+        m.put("fluid_end_portal_fluid", "Fluido de Portal del End");
+        m.put("fluid_liquid_air", "Aire Liquido");
+        m.put("fluid_heavy_water", "Agua Pesada");
+        m.put("fluid_lubricant", "Lubricante");
+        m.put("fluid_creosote", "Aceite de Creosota");
         return m;
     }
 
@@ -423,6 +424,9 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
     protected void addCategories() {
         add(ETERNAL_ORES_CAT, "Eternal Ores");
         add(BASIC_PROSPECTOR_CAT, "[Prospector] Editar Posición");
+        add(PROSPECTOR_CURIO_CAT, "[Prospector] Usar desde la ranura Curio");
+        add(PROSPECTOR_CURIO_LINK, "[Prospector] Enlazar desde la ranura Curio");
+        add(PROSPECTOR_CURIO_UNLINK, "[Prospector] Desenlazar desde la ranura Curio");
     }
 
     @Override
@@ -467,5 +471,13 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
         add(ADVANCED_PROSPECTOR_LINKED_TO_MATERIAL, "Vinculado a: ");
         add(ADVANCED_PROSPECTOR_IS_BLACKLISTED, " está en la lista negra y no puede rastrearse.");
         add(ADVANCED_PROSPECTOR_NOT_VALID, "No es un bloque de mineral válido.");
+    }
+
+    @Override
+    protected String fluidName(EOFluidType.FluidTypes types, String mat) {
+        return switch (types) {
+            case MOLTEN -> mat + " Fundido";
+            case GAS, CHEMICAL, FLUID -> mat;
+        };
     }
 }

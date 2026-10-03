@@ -34,7 +34,6 @@ public class EOMolds extends Item {
         super.appendHoverText(stack, cxt, tip, flag);
 
         Item item = stack.getItem();
-
         if (CFG.EO_TOOLTIPS.metalGearMold.get()) {
             if (item == MOLD_GEAR.get()) {
                 tip.add(Component.translatable(METAL_GEAR).withStyle(ChatFormatting.WHITE));

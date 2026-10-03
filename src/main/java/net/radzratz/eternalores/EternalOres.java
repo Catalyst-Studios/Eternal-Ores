@@ -53,6 +53,7 @@ public class EternalOres {
         configs(mCont, EOEventsConfig.CONFIG_SPEC, "/events");
         configs(mCont, EODuplicateRecipeConfig.CONFIG_SPEC, "/external-recipe-handler");
         configs(mCont, EOMaterialConfig.CONFIG_SPEC, "/materials-settings");
+        configs(mCont, EOFluidsConfig.CONFIG_SPEC, "/fluid-settings");
         configs(mCont, EOCompressedBlockConfig.CONFIG_SPEC, "/compressed-block-level-settings");
         configs(mCont, EOToolsConfig.CONFIG_SPEC, "/tool-settings");
         configs(mCont, EOTooltipConfig.CONFIG_SPEC, "/tooltips-settings");

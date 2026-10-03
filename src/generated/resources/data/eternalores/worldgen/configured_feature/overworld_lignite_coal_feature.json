@@ -1,7 +1,7 @@
 {
   "type": "eternalores:config_ore_feature",
   "config": {
-    "ore": "eternalores:lignite_overworld",
+    "ore": "eternalores:lignite_coal_overworld",
     "targets": [
       {
         "state": {

@@ -21,6 +21,8 @@ public record EORecipePaths(String id) {
     private static final String INTEG = Compat + INTEGRATED_DYNAMICS;
     private static final String RAIL = Compat + RAILCRAFT;
     private static final String ARS = Compat + ARS_NOUVEAU;
+    private static final String HPF = Compat + HEPHAESTUS;
+    private static final String SLAG = Compat + SLAG_EMBERS;
 
     // Actually Additions
     public String Crush() {
@@ -170,6 +172,40 @@ public record EORecipePaths(String id) {
 
     public String RAILRolling() {
         return RAIL + "/rolling/";
+    }
+
+    // Hephaestus
+    public String HPFSmelt() {
+        return HPF + "/smelting/";
+    }
+
+    public String HPFCasting() {
+        return HPF + "/casting/";
+    }
+
+    public String HPFBasin() {
+        return HPF + "/basin/";
+    }
+
+    public String HPFAlloying() {
+        return HPF + "/alloying/";
+    }
+
+    // Slag n Embers
+    public String SlagSmelt() {
+        return SLAG + "/smelting/";
+    }
+
+    public String SlagCasting() {
+        return SLAG + "/casting/";
+    }
+
+    public String SlagBasin() {
+        return SLAG + "/basin/";
+    }
+
+    public String SlagAlloying() {
+        return SLAG + "/alloying/";
     }
 
     // Base

@@ -1,0 +1,15 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:casting_basin",
+  "input": {
+    "amount": 810,
+    "id": "eternalores:molten_gallium"
+  },
+  "result": "eternalores:gallium_block",
+  "time": 100
+}

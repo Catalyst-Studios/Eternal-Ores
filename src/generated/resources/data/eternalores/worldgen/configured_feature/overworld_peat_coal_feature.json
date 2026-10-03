@@ -1,7 +1,7 @@
 {
   "type": "eternalores:config_ore_feature",
   "config": {
-    "ore": "eternalores:peat_overworld",
+    "ore": "eternalores:peat_coal_overworld",
     "targets": [
       {
         "state": {

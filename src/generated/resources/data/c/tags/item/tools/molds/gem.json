@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:mold_gem",
+    {
+      "id": "hephaestus:gem_cast",
+      "required": false
+    }
+  ]
+}

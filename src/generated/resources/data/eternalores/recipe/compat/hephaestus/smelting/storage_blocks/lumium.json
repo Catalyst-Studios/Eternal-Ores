@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 50,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:storage_blocks/lumium"
+  },
+  "result": {
+    "amount": 810,
+    "id": "eternalores:molten_lumium"
+  },
+  "temperature": 1350,
+  "time": 100
+}

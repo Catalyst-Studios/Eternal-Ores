@@ -64,8 +64,6 @@ public class EOMKEnrichingRecipes {
         enriching(yeet, BLENDS_LOW_CARBON, 1, LE_CARBON_BLEND_SET.ENRICHED.get(), 1, paths.Enriched() + "low_carbon");
         enriching(yeet, BLENDS_CARBON, 1, ENRICHED_CARBON.asItem(), 3, paths.Enriched() + "carbon");
 
-        enriching(yeet, COAL_COKE, 1, COKE_SET.COAL.get(), 1, paths.Coal() + "coke");
-
         String pearls = "pearls/";
         enriching(yeet, DUSTS_ENDER, 1, ENDER_PEARL, 1, pearls + "ender");
         enriching(yeet, ENDER_PEARL, 1, ENDER_PEARL_SET.ENRICHED.get(), 1, paths.Enriched() + "ender");
@@ -103,7 +101,7 @@ public class EOMKEnrichingRecipes {
 
             // Coal Dust -> Coal
             if (item instanceof EOCoalItem) {
-                if (generateEnrichingRecipes.add("mek_enriching_dust_coal:" + mat) && !mat.contains("coke_coal") && out.COALS != null) {
+                if (generateEnrichingRecipes.add("mek_enriching_dust_coal:" + mat) && !mat.equals("coke") && out.COALS != null) {
                     enriching(yeet, inp.DUST, 1, out.COALS, 1, id.Coal());
                 }
             }

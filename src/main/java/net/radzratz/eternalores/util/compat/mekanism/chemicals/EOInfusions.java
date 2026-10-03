@@ -29,6 +29,7 @@ public class EOInfusions {
         INF_ARCANUM = rgtrInfAnim("arcanum", 0xc3a3a9, CFG.chemicalSet.arcanumInfusion, CFG.chemicalSet.allInfusions, 0xc3b8a9, 0xc3a3a9, 0x9975a1, 0x704b74, 0x705c74);
         INF_ARDITE = rgtrInfusion("ardite", 0xf28524, CFG.chemicalSet.arditeInfusion, CFG.chemicalSet.allInfusions);
         INF_AURORIUM = rgtrInfAnim("aurorium", 0xffc100, CFG.chemicalSet.auroriumInfusion, CFG.chemicalSet.allInfusions, 0xd1b9ff, 0xaa82ff, 0x7854ff, 0x5454e9, 0x5454bc, 0x594a95, 0x5e2e85);
+        INF_BIO = rgtrInfusion("bio", 0x544a24, CFG.chemicalSet.bismuthInfusion, CFG.chemicalSet.allInfusions);
         INF_BISMUTH = rgtrInfusion("bismuth", 0xccb0ff, CFG.chemicalSet.bismuthInfusion, CFG.chemicalSet.allInfusions);
         INF_BLAZE = rgtrInfusion("blaze", 0xffc100, CFG.chemicalSet.blazeInfusion, CFG.chemicalSet.allInfusions);
         INF_CATALYRIUM = rgtrInfAnim("catalyrium", 0x213352, CFG.chemicalSet.catalyriumInfusion, CFG.chemicalSet.allInfusions, 0x1f2843, 0x7f1f00);

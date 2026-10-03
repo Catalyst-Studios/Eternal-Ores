@@ -52,6 +52,7 @@ public class EOChemicalsConfig {
         public final ModConfigSpec.BooleanValue arcanumInfusion;
         public final ModConfigSpec.BooleanValue arditeInfusion;
         public final ModConfigSpec.BooleanValue auroriumInfusion;
+        public final ModConfigSpec.BooleanValue bioInfusion;
         public final ModConfigSpec.BooleanValue bismuthInfusion;
         public final ModConfigSpec.BooleanValue blazeInfusion;
         public final ModConfigSpec.BooleanValue catalyriumInfusion;
@@ -158,6 +159,7 @@ public class EOChemicalsConfig {
             this.arcanumInfusion = infusionToggle(bldr, "arcanum");
             this.arditeInfusion = infusionToggle(bldr, "ardite");
             this.auroriumInfusion = infusionToggle(bldr, "aurorium");
+            this.bioInfusion = infusionToggle(bldr, "bio");
             this.bismuthInfusion = infusionToggle(bldr, "bismuth");
             this.blazeInfusion = infusionToggle(bldr, "blaze");
             this.catalyriumInfusion = infusionToggle(bldr, "catalyrium");

@@ -2,6 +2,9 @@
   "values": [
     "eternalores:mold_foil",
     "eternalores:mold_gear",
+    "eternalores:mold_gem",
+    "eternalores:mold_ingot",
+    "eternalores:mold_nugget",
     "eternalores:mold_plate",
     "eternalores:mold_rod",
     {
@@ -17,6 +20,10 @@
       "required": false
     },
     {
+      "id": "immersiveengineering:mold_wire",
+      "required": false
+    },
+    {
       "id": "energizedpower:gear_press_mold",
       "required": false
     },
@@ -26,6 +33,34 @@
     },
     {
       "id": "energizedpower:wire_press_mold",
+      "required": false
+    },
+    {
+      "id": "hephaestus:ingot_cast",
+      "required": false
+    },
+    {
+      "id": "hephaestus:gem_cast",
+      "required": false
+    },
+    {
+      "id": "hephaestus:nugget_cast",
+      "required": false
+    },
+    {
+      "id": "hephaestus:coin_cast",
+      "required": false
+    },
+    {
+      "id": "hephaestus:gear_cast",
+      "required": false
+    },
+    {
+      "id": "hephaestus:plate_cast",
+      "required": false
+    },
+    {
+      "id": "hephaestus:rod_cast",
       "required": false
     }
   ]

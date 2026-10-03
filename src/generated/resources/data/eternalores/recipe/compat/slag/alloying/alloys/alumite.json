@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:alloying",
+  "ingredients": [
+    {
+      "amount": 2,
+      "fluid": "eternalores:molten_iron"
+    },
+    {
+      "amount": 5,
+      "fluid": "eternalores:molten_aluminum"
+    },
+    {
+      "amount": 2,
+      "fluid": "eternalores:molten_obsidian"
+    }
+  ],
+  "result": {
+    "amount": 3,
+    "id": "eternalores:molten_alumite"
+  }
+}

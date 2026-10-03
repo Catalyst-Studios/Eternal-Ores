@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:dusts/saltpeter"
+    },
+    {
+      "tag": "c:dusts/saltpeter"
+    },
+    {
+      "tag": "c:dusts/sulfur"
+    },
+    {
+      "tag": "c:dusts/peat"
+    },
+    {
+      "tag": "c:fuels/bio"
+    },
+    {
+      "tag": "c:fuels/bio"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "eternalores:bio_blend"
+  }
+}

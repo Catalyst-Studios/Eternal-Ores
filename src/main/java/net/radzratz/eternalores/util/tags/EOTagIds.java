@@ -28,6 +28,8 @@ public class EOTagIds {
     public static String stonesTag = "stones/";
     public static String pelletTag = "pellets/";
 
+    public static String moltenTag = "molten_";
+
     public static String hammerTag = "tools/crushing_hammers";
     public static String cutterTag = "tools/gem_cutters";
     @SuppressWarnings("all")

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:mold_ingot",
+    {
+      "id": "hephaestus:ingot_cast",
+      "required": false
+    }
+  ]
+}

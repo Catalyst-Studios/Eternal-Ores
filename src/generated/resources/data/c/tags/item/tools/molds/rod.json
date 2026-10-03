@@ -8,6 +8,10 @@
     {
       "id": "energizedpower:rod_press_mold",
       "required": false
+    },
+    {
+      "id": "hephaestus:rod_cast",
+      "required": false
     }
   ]
 }

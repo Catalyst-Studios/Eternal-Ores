@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:coal_anthracite"
+    },
+    "C": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "C  ",
+    "   "
+  ],
+  "result": {
+    "count": 12,
+    "id": "minecraft:torch"
+  }
+}

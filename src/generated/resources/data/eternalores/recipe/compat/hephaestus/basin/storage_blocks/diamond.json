@@ -1,0 +1,15 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:casting_basin",
+  "input": {
+    "amount": 810,
+    "id": "eternalores:molten_diamond"
+  },
+  "result": "minecraft:diamond_block",
+  "time": 100
+}

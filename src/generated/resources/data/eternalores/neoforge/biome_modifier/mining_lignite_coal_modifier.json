@@ -2,6 +2,6 @@
   "type": "eternalores:config_ore_modifier",
   "biomes": "#eternalores:is_mining_dim",
   "features": "eternalores:mining_lignite_coal_placed",
-  "ore": "eternalores:lignite_mining",
+  "ore": "eternalores:lignite_coal_mining",
   "step": "underground_ores"
 }

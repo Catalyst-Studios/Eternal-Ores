@@ -6,6 +6,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.material.Fluid;
+import net.neoforged.neoforge.fluids.FluidStack;
+import net.neoforged.neoforge.fluids.crafting.FluidIngredient;
 
 import java.util.Set;
 
@@ -52,6 +55,8 @@ public class EORecipeInputs {
     public final TagKey<Item> STONES;
     public final TagKey<Item> PELLET;
 
+    public final TagKey<Fluid> MOLTEN;
+
     public EORecipeInputs(String mat) {
         String cleanCoal = mat.endsWith("_coal") ? mat.substring(0, mat.length() - 5) : mat;
 
@@ -64,40 +69,44 @@ public class EORecipeInputs {
         String materialType = isGem ? gemTag : ingotTag;
         String toolPath = isGem ? cutterTag : hammerTag;
 
-        var reg = Registries.ITEM;
-        this.TOOLS = TagKey.create(reg, C(toolPath));
-        this.INGOT = TagKey.create(reg, C(ingotTag + mat));
-        this.GEM = TagKey.create(reg, C(gemTag + mat));
-        this.GEM_INGOT = TagKey.create(reg, C(materialType + mat));
-        this.NUGGET = TagKey.create(reg, C(nuggetTag + mat));
-        this.GEM_SHARDS = TagKey.create(reg, C(gemShardTag + mat));
-        this.PLATE = TagKey.create(reg, C(plateTag + mat));
-        this.ROD = TagKey.create(reg, C(rodTag + mat));
-        this.GEAR = TagKey.create(reg, C(gearTag + mat));
-        this.FOIL = TagKey.create(reg, C(foilTag + mat));
-        this.CLUMP = TagKey.create(reg, C(clumpTag + mat));
-        this.SMALL_CLUMP = TagKey.create(reg, C(sClumpTag + mat));
-        this.COALS = TagKey.create(reg, C(coalTag + cleanCoal));
-        this.DUST = TagKey.create(reg, C(dustTag + mat));
-        this.DIRTY_DUST = TagKey.create(reg, C(dDustTag + mat));
-        this.SMALL_DUST = TagKey.create(reg, C(smallDustTag + mat));
-        this.CRYSTAL = TagKey.create(reg, C(crystalTag + mat));
-        this.SHARD = TagKey.create(reg, C(shardTag + mat));
-        this.ORE_GEM = TagKey.create(reg, C(oreGemTag + mat));
-        this.RAW = TagKey.create(reg, C(rawTag + mat));
-        this.PEBBLES = TagKey.create(reg, C(pebbles + mat));
-        this.STORAGE_BLOCK = TagKey.create(reg, C(storage + mat));
-        this.STORAGE_BLOCK_RAW = TagKey.create(reg, C(storage + materialPrefixSuffixes.RAW + mat));
-        this.RAW_BLOCK_CASE = TagKey.create(reg, mat.equals("sulfur") ? C(storage + "sulfur") : C(storage + materialPrefixSuffixes.RAW + mat));
-        this.DUST_BLOCK = TagKey.create(reg, C(dustB + mat));
-        this.ENRICHED_BLOCK = TagKey.create(reg, C(enrichedBlockTag + mat));
-        this.ORE = TagKey.create(reg, C(ores + mat));
-        this.ENRICHED = TagKey.create(reg, C(enrichedTag + mat));
-        this.BLENDS = TagKey.create(reg, C(blends + mat));
-        this.GEOSHARDS = TagKey.create(reg, GEO(geoshards + mat));
-        this.GEOSHARD_BLOCKS = TagKey.create(reg, GEO(geoshardBlock + mat));
-        this.STONES = TagKey.create(reg, EO(stonesTag + mat));
-        this.PELLET = TagKey.create(reg, C(pelletTag + mat));
+        var itemReg = Registries.ITEM;
+        var fluidReg = Registries.FLUID;
+
+        this.TOOLS = TagKey.create(itemReg, C(toolPath));
+        this.INGOT = TagKey.create(itemReg, C(ingotTag + mat));
+        this.GEM = TagKey.create(itemReg, C(gemTag + mat));
+        this.GEM_INGOT = TagKey.create(itemReg, C(materialType + mat));
+        this.NUGGET = TagKey.create(itemReg, C(nuggetTag + mat));
+        this.GEM_SHARDS = TagKey.create(itemReg, C(gemShardTag + mat));
+        this.PLATE = TagKey.create(itemReg, C(plateTag + mat));
+        this.ROD = TagKey.create(itemReg, C(rodTag + mat));
+        this.GEAR = TagKey.create(itemReg, C(gearTag + mat));
+        this.FOIL = TagKey.create(itemReg, C(foilTag + mat));
+        this.CLUMP = TagKey.create(itemReg, C(clumpTag + mat));
+        this.SMALL_CLUMP = TagKey.create(itemReg, C(sClumpTag + mat));
+        this.COALS = TagKey.create(itemReg, C(coalTag + cleanCoal));
+        this.DUST = TagKey.create(itemReg, C(dustTag + mat));
+        this.DIRTY_DUST = TagKey.create(itemReg, C(dDustTag + mat));
+        this.SMALL_DUST = TagKey.create(itemReg, C(smallDustTag + mat));
+        this.CRYSTAL = TagKey.create(itemReg, C(crystalTag + mat));
+        this.SHARD = TagKey.create(itemReg, C(shardTag + mat));
+        this.ORE_GEM = TagKey.create(itemReg, C(oreGemTag + mat));
+        this.RAW = TagKey.create(itemReg, C(rawTag + mat));
+        this.PEBBLES = TagKey.create(itemReg, C(pebbles + mat));
+        this.STORAGE_BLOCK = TagKey.create(itemReg, C(storage + mat));
+        this.STORAGE_BLOCK_RAW = TagKey.create(itemReg, C(storage + materialPrefixSuffixes.RAW + mat));
+        this.RAW_BLOCK_CASE = TagKey.create(itemReg, mat.equals("sulfur") ? C(storage + "sulfur") : C(storage + materialPrefixSuffixes.RAW + mat));
+        this.DUST_BLOCK = TagKey.create(itemReg, C(dustB + mat));
+        this.ENRICHED_BLOCK = TagKey.create(itemReg, C(enrichedBlockTag + mat));
+        this.ORE = TagKey.create(itemReg, C(ores + mat));
+        this.ENRICHED = TagKey.create(itemReg, C(enrichedTag + mat));
+        this.BLENDS = TagKey.create(itemReg, C(blends + mat));
+        this.GEOSHARDS = TagKey.create(itemReg, GEO(geoshards + mat));
+        this.GEOSHARD_BLOCKS = TagKey.create(itemReg, GEO(geoshardBlock + mat));
+        this.STONES = TagKey.create(itemReg, EO(stonesTag + mat));
+        this.PELLET = TagKey.create(itemReg, C(pelletTag + mat));
+
+        this.MOLTEN = TagKey.create(fluidReg, C(moltenTag + mat));
     }
 
     public static EORecipeInputs fromPath(String path) {
@@ -125,6 +134,8 @@ public class EORecipeInputs {
      *  Additionally, itemTagInputs can be used as an Output as well, only if the recipe builder
      *  casts Ingredient.of() as an output.
      * <p>
+     *  And the same thing applies to {@link EORecipeInputs#fluidTagInputs(Object)}
+     * <p>
      *  Whoever is reading this, if ya create your recipes using Ingredient.of(), you're an angel, if not
      *  you're a monster, and pray both sides of your pillow are cold, 'cuz that won't happen ever again.
      *  With love: RadzRatz
@@ -141,6 +152,23 @@ public class EORecipeInputs {
 
         if (inp instanceof ItemStack stack) {
             return Ingredient.of(stack);
+        }
+
+        throw new IllegalArgumentException("Invalid recipe input: " + inp);
+    }
+
+    @SuppressWarnings("unchecked")
+    public static FluidIngredient fluidTagInputs(Object inp) {
+        if (inp instanceof TagKey<?> tag) {
+            return FluidIngredient.tag((TagKey<Fluid>) tag);
+        }
+
+        if (inp instanceof Fluid fluid) {
+            return FluidIngredient.of(fluid);
+        }
+
+        if (inp instanceof FluidStack stack) {
+            return FluidIngredient.of(stack);
         }
 
         throw new IllegalArgumentException("Invalid recipe input: " + inp);

@@ -28,6 +28,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import static mekanism.common.registries.MekanismChemicals.*;
+import static mekanism.common.registries.MekanismChemicals.SULFUR_DIOXIDE;
 import static mekanism.common.tags.MekanismTags.Items.ENRICHED_GOLD;
 import static net.neoforged.neoforge.common.Tags.Items.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;

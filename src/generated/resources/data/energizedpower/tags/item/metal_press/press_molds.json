@@ -9,6 +9,18 @@
       "required": false
     },
     {
+      "id": "eternalores:mold_gem",
+      "required": false
+    },
+    {
+      "id": "eternalores:mold_ingot",
+      "required": false
+    },
+    {
+      "id": "eternalores:mold_nugget",
+      "required": false
+    },
+    {
       "id": "eternalores:mold_plate",
       "required": false
     },

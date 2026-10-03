@@ -79,6 +79,7 @@ public class EOChemical extends Chemical {
     public static DeferredChemical<EOChemical> INF_AMETHYST;
     public static DeferredChemical<EOChemical> INF_ARDITE;
     public static DeferredChemical<EOChemical> INF_AURORIUM;
+    public static DeferredChemical<EOChemical> INF_BIO;
     public static DeferredChemical<EOChemical> INF_BISMUTH;
     public static DeferredChemical<EOChemical> INF_CATALYRIUM;
     public static DeferredChemical<EOChemical> INF_CERTUS;

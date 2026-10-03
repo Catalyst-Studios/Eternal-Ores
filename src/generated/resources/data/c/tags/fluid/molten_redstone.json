@@ -1,0 +1,9 @@
+{
+  "values": [
+    "eternalores:molten_redstone",
+    {
+      "id": "hephaestus:molten_redstone",
+      "required": false
+    }
+  ]
+}

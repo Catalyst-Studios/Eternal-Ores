@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:arc_furnace",
+  "additives": [
+    {
+      "tag": "c:ore_gems/ardite"
+    }
+  ],
+  "energy": 51200,
+  "input": {
+    "tag": "c:ore_gems/ardite"
+  },
+  "results": [
+    {
+      "count": 4,
+      "id": "eternalores:ardite_ingot"
+    }
+  ],
+  "time": 100
+}

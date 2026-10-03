@@ -70,6 +70,15 @@ public class EOItemTagEntries implements ITagItemEntryProvider {
                 register.register(entry, ETERNAL_BLACKLIST, false, true);
             }
 
+            if (item instanceof EOMolds) {
+                register.register(entry, MOLDS, true, false);
+                register.register(entry, PRESS_MOLDS, false, true);
+            }
+
+            if (item instanceof EOBasicProspector || item instanceof EOAdvProspector) {
+                register.register(entry, PROSPECTORS, true, false);
+            }
+
             if (item instanceof EOPlateItem) {
                 register.register(entry, PLATES, true, false);
             }
@@ -120,15 +129,6 @@ public class EOItemTagEntries implements ITagItemEntryProvider {
 
             if (item instanceof EOBlends) {
                 register.register(entry, BLENDS, true, false);
-            }
-
-            if (item instanceof EOMolds) {
-                register.register(entry, MOLDS, true, false);
-                register.register(entry, PRESS_MOLDS, false, true);
-            }
-
-            if (item instanceof EOBasicProspector || item instanceof EOAdvProspector) {
-                register.register(entry, PROSPECTORS, true, false);
             }
 
             if (item instanceof EOClumpItem) {

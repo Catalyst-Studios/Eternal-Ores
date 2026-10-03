@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "c:coal_bituminous"
+    },
+    "C": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "C  ",
+    "   "
+  ],
+  "result": {
+    "count": 8,
+    "id": "minecraft:torch"
+  }
+}
