@@ -1,5 +1,6 @@
 {
   "values": [
+    "eternalores:molten_iridium",
     {
       "id": "hephaestus:molten_iridium",
       "required": false

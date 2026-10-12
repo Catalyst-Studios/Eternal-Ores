@@ -1,5 +1,6 @@
 {
   "values": [
+    "eternalores:molten_uranium",
     {
       "id": "hephaestus:molten_uranium",
       "required": false

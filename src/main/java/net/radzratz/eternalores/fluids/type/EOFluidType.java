@@ -38,6 +38,9 @@ public class EOFluidType extends FluidType {
         ),
         GAS("gas", "gas_generic", props -> props
                 .lightLevel(0)
+                .canSwim(false)
+                .canDrown(false)
+                .canConvertToSource(false)
                 .density(-1000)
                 .viscosity(200)
                 .temperature(300)
@@ -52,6 +55,16 @@ public class EOFluidType extends FluidType {
                 .density(1000)
                 .viscosity(200)
                 .temperature(500)
+                .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+                .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
+        ),       PLASMA("plasma", "plasma_generic", props -> props
+                .lightLevel(2)
+                .canSwim(false)
+                .canDrown(false)
+                .canConvertToSource(false)
+                .density(1000)
+                .viscosity(200)
+                .temperature(10000)
                 .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
                 .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY)
         );

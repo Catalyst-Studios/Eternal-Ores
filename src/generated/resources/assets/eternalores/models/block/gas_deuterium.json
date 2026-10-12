@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalores:block/fluids/gas_generic_still",
+    "particle": "eternalores:block/fluids/gas_generic_still"
+  }
+}

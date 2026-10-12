@@ -33,6 +33,11 @@ public class EOFluidTagEntries implements ITagFluidProvider {
                     register.registerExternal(entry, NO_INFINITE_DRAINING, true);
                     register.registerExternal(entry, HOT_FLUID, true);
                 }
+                case PLASMA -> {
+                    register.registerFlat(entry, material + "_plasma", false);
+                    register.registerExternal(entry, NO_INFINITE_DRAINING, true);
+                    register.registerExternal(entry, HOT_FLUID, true);
+                }
                 case FLUID, CHEMICAL -> {
                     register.registerFlat(entry, material, false);
                     register.registerExternal(entry, NO_INFINITE_DRAINING, true);

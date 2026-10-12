@@ -132,20 +132,20 @@ public class EOHFSmelteryRecipes {
 
             if (item instanceof EORawMaterialItem || isVanillaRaw(inp.RAW)) {
                 // raw mat -> molten
-                if (generatedSmelteryRecipes.add("smelting_raw_mats:" + mat) && !mat.equals("sulfur") && out.MOLTEN_FLUID != null) {
+                if (generatedSmelteryRecipes.add("smelting_raw_mats:" + mat) && !mat.equals("sulfur") && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
                     smelting(yeet, inp.RAW, out.MOLTEN_FLUID, 180, LAVA, 100, getTemp(mat), 50, id.RawProc());
                 }
             }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock) {
-                if (generatedSmelteryRecipes.add("smelting_dust_blocks:" + mat) && out.MOLTEN_FLUID != null) {
+                if (generatedSmelteryRecipes.add("smelting_dust_blocks:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
                     smelting(yeet, inp.DUST_BLOCK, out.MOLTEN_FLUID, isFours ? 360 : 810, LAVA, 100, getTemp(mat), 50, id.DustBlock());
                 }
             }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EORawBlock || isVanillaRaw(inp.STORAGE_BLOCK_RAW)) {
                 // raw mat block -> molten
-                if (generatedSmelteryRecipes.add("smelting_raw_mat_blocks:" + mat)) {
+                if (generatedSmelteryRecipes.add("smelting_raw_mat_blocks:" + mat) && !furnaceExclusions().contains(mat)) {
                     smelting(yeet, inp.STORAGE_BLOCK_RAW, out.MOLTEN_FLUID, 1620, LAVA, 100, getTemp(mat), 50, id.RawProcBlock());
                 }
             }
@@ -174,14 +174,14 @@ public class EOHFSmelteryRecipes {
 
             if (item instanceof EODustItem) {
                 // dust -> molten
-                if (generatedSmelteryRecipes.add("smelting_dusts:" + mat) && out.MOLTEN_FLUID != null) {
+                if (generatedSmelteryRecipes.add("smelting_dusts:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
                     smelting(yeet, inp.DUST, out.MOLTEN_FLUID, 90, LAVA, 100, getTemp(mat), 50, id.Dust());
                 }
             }
 
             if (item instanceof EOSmallDustItem) {
                 // small dust -> molten
-                if (generatedSmelteryRecipes.add("smelting_small_dusts:" + mat) && out.MOLTEN_FLUID != null) {
+                if (generatedSmelteryRecipes.add("smelting_small_dusts:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
                     smelting(yeet, inp.SMALL_DUST, out.MOLTEN_FLUID, 10, LAVA, 100, getTemp(mat), 50, id.SmallDust());
                 }
             }
@@ -256,14 +256,14 @@ public class EOHFSmelteryRecipes {
         itemFluidGeOreRecipeActions(reg, fluidReg, (item, path, mat, inp, out, id) -> {
             if (item instanceof GEOreShardItem) {
                 // geore shard -> molten
-                if (generatedSmelteryRecipes.add("smelting_geore_shards:" + mat) && out.MOLTEN_FLUID != null) {
+                if (generatedSmelteryRecipes.add("smelting_geore_shards:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
                     smeltingCompat(yeet, inp.GEOSHARDS, out.MOLTEN_FLUID, 202, LAVA, 100, getTemp(mat), 50, id.Geo() + "_shard");
                 }
             }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof GEOreShardBlock) {
                 // geore block -> molten
-                if (generatedSmelteryRecipes.add("smelting_geore_blocks:" + mat) && out.MOLTEN_FLUID != null) {
+                if (generatedSmelteryRecipes.add("smelting_geore_blocks:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
                     smeltingCompat(yeet, inp.GEOSHARD_BLOCKS, out.MOLTEN_FLUID, 810, LAVA, 100, getTemp(mat), 50, id.Geo() + "_block");
                 }
             }

@@ -52,6 +52,14 @@ public class EOFluidHelpers {
         return rgtr(name, EOFluidType.FluidTypes.CHEMICAL, tint, customTexture, hazardous);
     }
 
+    public static DeferredHolder<Fluid, BaseFlowingFluid.Source> rgtrPlasma(String name, IntSupplier tint) {
+        return rgtr(name, EOFluidType.FluidTypes.PLASMA, tint,  null, true);
+    }
+
+    public static DeferredHolder<Fluid, BaseFlowingFluid.Source> rgtrPlasma(String name, String customTexture, IntSupplier tint) {
+        return rgtr(name, EOFluidType.FluidTypes.PLASMA, tint,  customTexture, true);
+    }
+
     private static class Ref<T> {
         T value;
     }

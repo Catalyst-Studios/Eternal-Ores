@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 100,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:gems/tanzanite"
+  },
+  "result": {
+    "amount": 90,
+    "id": "eternalores:molten_tanzanite"
+  },
+  "temperature": 1005,
+  "time": 50
+}

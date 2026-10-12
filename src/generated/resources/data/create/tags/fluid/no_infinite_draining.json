@@ -29,7 +29,31 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_alumite",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_americium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_ammonia_solution",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_annealed_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_battery_alloy",
       "required": false
     },
     {
@@ -37,7 +61,19 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_beryllium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_biodiesel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_biosteel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_bismuth",
       "required": false
     },
     {
@@ -45,7 +81,23 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_black_bronze",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_black_steel",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_blood",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_blue_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_brass",
       "required": false
     },
     {
@@ -53,7 +105,67 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_britannia_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_bronze",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_cadmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_californium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_cast_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_cast_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_cerium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_cesium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_chromium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_constantan",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_copper",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_creosote",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_crystalline_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_cupronickel",
       "required": false
     },
     {
@@ -73,7 +185,19 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_electrum",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_end_portal_fluid",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_enderium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_energetic_silver",
       "required": false
     },
     {
@@ -89,7 +213,15 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_francium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_fuel_oil",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_gallium",
       "required": false
     },
     {
@@ -97,7 +229,19 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_hafnium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_heavy_water",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_hepatizon",
       "required": false
     },
     {
@@ -117,7 +261,31 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_indium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_invar",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_kanthal",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_kerosene",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_lead",
       "required": false
     },
     {
@@ -125,7 +293,27 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_liquid_helium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_lubricant",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_lumium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_magnesium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_manganese",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_melodic_alloy",
       "required": false
     },
     {
@@ -133,11 +321,43 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_modularium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_molybdenum",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_naphtha",
       "required": false
     },
     {
+      "id": "eternalores:fluid_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_neptunium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_nether_portal_fluid",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_netherite",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_nethersteel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_niobium",
       "required": false
     },
     {
@@ -149,7 +369,23 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_osgloglas",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_palladium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_pentane",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_pewter",
       "required": false
     },
     {
@@ -157,7 +393,47 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_pig_iron",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_plant_oil",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_plutonium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_polybenzimidazole",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_polyethylene",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_polytetrafluoroethylene",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_quartz_enriched_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_quartz_enriched_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_red_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_redstone",
       "required": false
     },
     {
@@ -165,7 +441,75 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_rhodium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_rocket_fuel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_rose_gold",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_rubber",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_rubidium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_ruthenium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_samarium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_shadowsteel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_signalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_silicon",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_stainless_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_stellar_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_tantalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_titanium",
       "required": false
     },
     {
@@ -173,7 +517,43 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_vivid_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_wrought_iron",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_xylene",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_yttrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_zinc",
       "required": false
     },
     {
@@ -182,6 +562,10 @@
     },
     {
       "id": "eternalores:gas_argon",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_carbon",
       "required": false
     },
     {
@@ -197,11 +581,19 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_deuterium",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_fluorine",
       "required": false
     },
     {
       "id": "eternalores:gas_helium",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_helium_3",
       "required": false
     },
     {
@@ -269,6 +661,10 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_tritium",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_xenon",
       "required": false
     },
@@ -281,7 +677,23 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_amber",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_americium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_amethyst",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_annealed_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_apatite",
       "required": false
     },
     {
@@ -289,7 +701,35 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_battery_alloy",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_biosteel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_bismuth",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_black_bronze",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_black_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_black_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_blue_steel",
       "required": false
     },
     {
@@ -313,6 +753,22 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cesium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_chromium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cinnabar",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_cobalt",
       "required": false
     },
@@ -322,6 +778,14 @@
     },
     {
       "id": "eternalores:molten_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_crystalline_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cupronickel",
       "required": false
     },
     {
@@ -345,7 +809,19 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_energetic_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_francium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_garnet",
       "required": false
     },
     {
@@ -353,7 +829,15 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_hafnium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_hepatizon",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_indium",
       "required": false
     },
     {
@@ -361,7 +845,19 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_iridium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_jade",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_kanthal",
       "required": false
     },
     {
@@ -369,7 +865,23 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_lead",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_lumium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_magnesium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_manganese",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_melodic_alloy",
       "required": false
     },
     {
@@ -377,7 +889,27 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_necroticarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_neptunium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_netherite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_nethersteel",
       "required": false
     },
     {
@@ -385,11 +917,35 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_niobium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_obsidian",
       "required": false
     },
     {
+      "id": "eternalores:molten_onyx",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_osgloglas",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_pearl",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_peridot",
       "required": false
     },
     {
@@ -401,7 +957,19 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_plutonium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_prismarine",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_pyrolite",
       "required": false
     },
     {
@@ -417,11 +985,47 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_red_steel",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_redstone",
       "required": false
     },
     {
+      "id": "eternalores:molten_rhodium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_rose_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_rubidium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_ruby",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_ruthenium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_samarium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_sapphire",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_shadowsteel",
       "required": false
     },
     {
@@ -437,7 +1041,27 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_spinel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_stainless_steel",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_stellar_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_tantalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_tanzanite",
       "required": false
     },
     {
@@ -445,11 +1069,223 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_vivid_alloy",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_wrought_iron",
       "required": false
     },
     {
+      "id": "eternalores:molten_yttrium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_zinc",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_zircon",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_americium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_argon",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_chlorine",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_fluorine",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_helium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_hydrogen",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_krypton",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_modularium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_neon",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_netherite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_nitrogen",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_oxygen",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_plutonium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_radon",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_redstone",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_sulfur",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_xenon",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_zinc",
       "required": false
     }
   ]

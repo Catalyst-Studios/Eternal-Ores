@@ -1,5 +1,6 @@
 {
   "values": [
+    "eternalores:molten_lead",
     {
       "id": "hephaestus:molten_lead",
       "required": false

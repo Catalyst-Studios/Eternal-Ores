@@ -1,5 +1,6 @@
 {
   "values": [
+    "eternalores:molten_osmium",
     {
       "id": "hephaestus:molten_osmium",
       "required": false

@@ -247,6 +247,7 @@ public class EOMaterials {
         public static final String BIO_BLEND_ID = "bio";
 
         public static final String LIQUID_AIR_ID = "liquid_air";
+        public static final String LIQUID_HELIUM_ID = "liquid_helium";
         public static final String LUBRICANT_ID = "lubricant";
         public static final String HEAVY_WATER_ID = "heavy_water";
         public static final String CREOSOTE_ID = "creosote";
@@ -273,6 +274,9 @@ public class EOMaterials {
         public static final String PLANT_OIL_ID = "plant_oil";
         public static final String RESIN_ID = "resin";
         public static final String RUBBER_ID = "rubber";
+        public static final String POLYBENZIMIDAZOLE_ID = "polybenzimidazole";
+        public static final String POLYTETRAFLUOROETHYLENE_ID = "polytetrafluoroethylene";
+        public static final String POLYETHYLENE_ID = "polyethylene";
         public static final String BIODIESEL_ID = "biodiesel";
         public static final String DIESEL_ID = "diesel";
         public static final String BITUMEN_ID = "bitumen";
@@ -280,6 +284,7 @@ public class EOMaterials {
         public static final String FUEL_OIL_ID = "fuel_oil";
         public static final String NAPHTHA_ID = "naphtha";
         public static final String KEROSENE_ID = "kerosene";
+        public static final String ROCKET_FUEL_ID = "rocket_fuel";
         public static final String PENTANE_ID = "pentane";
         public static final String HEPTANE_ID = "heptane";
         public static final String OCTANE_ID = "octane";
@@ -292,6 +297,7 @@ public class EOMaterials {
         public static final String CHLORINE_ID = "chlorine";
         public static final String FLUORINE_ID = "fluorine";
         public static final String HELIUM_ID = "helium";
+        public static final String HELIUM_3_ID = "helium_3";
         public static final String CARBON_DIOXIDE_ID = "carbon_dioxide";
         public static final String SULFUR_DIOXIDE_ID = "sulfur_dioxide";
         public static final String AMMONIA_ID = "ammonia";
@@ -309,6 +315,9 @@ public class EOMaterials {
         public static final String CHLORINE_DIOXIDE_ID = "chlorine_dioxide";
         public static final String NITROUS_OXIDE_ID = "nitrous_oxide";
         public static final String OZONE_ID = "ozone";
+        public static final String TRITIUM_ID = "tritium";
+        public static final String DEUTERIUM_ID = "deuterium";
+        public static final String CARBON_ID = "carbon";
 
         public static final String HYDROCHLORIC_ACID_ID = "hydrochloric_acid";
         public static final String SULFURIC_ACID_ID = "sulfuric_acid";
@@ -377,6 +386,7 @@ public class EOMaterials {
         public static final String MOLTEN = "molten_";
         public static final String GAS = "gas_";
         public static final String CHEM = "chemical_";
+        public static final String PLASMA = "plasma_";
     }
 
     public static final class materialTypes {
@@ -739,6 +749,7 @@ public class EOMaterials {
         public static materialTypes BIO_BLEND_SET;
 
         public static materialTypes LIQUID_AIR_SET;
+        public static materialTypes LIQUID_HELIUM_SET;
         public static materialTypes LUBRICANT_SET;
         public static materialTypes HEAVY_WATER_SET;
         public static materialTypes EXPERIENCE_SET;
@@ -764,6 +775,9 @@ public class EOMaterials {
         public static materialTypes PLANT_OIL_SET;
         public static materialTypes RESIN_SET;
         public static materialTypes RUBBER_SET;
+        public static materialTypes POLYBENZIMIDAZOLE_SET;
+        public static materialTypes POLYTETRAFLUOROETHYLENE_SET;
+        public static materialTypes POLYETHYLENE_SET;
         public static materialTypes BIODIESEL_SET;
         public static materialTypes DIESEL_SET;
         public static materialTypes BITUMEN_SET;
@@ -771,6 +785,7 @@ public class EOMaterials {
         public static materialTypes FUEL_OIL_SET;
         public static materialTypes NAPHTHA_SET;
         public static materialTypes KEROSENE_SET;
+        public static materialTypes ROCKET_FUEL_SET;
         public static materialTypes ETHYLENE_SET;
         public static materialTypes PENTANE_SET;
         public static materialTypes HEPTANE_SET;
@@ -784,6 +799,7 @@ public class EOMaterials {
         public static materialTypes CHLORINE_SET;
         public static materialTypes FLUORINE_SET;
         public static materialTypes HELIUM_SET;
+        public static materialTypes HELIUM_3_SET;
         public static materialTypes CARBON_DIOXIDE_SET;
         public static materialTypes SULFUR_DIOXIDE_SET;
         public static materialTypes AMMONIA_SET;
@@ -801,6 +817,9 @@ public class EOMaterials {
         public static materialTypes CHLORINE_DIOXIDE_SET;
         public static materialTypes OZONE_SET;
         public static materialTypes NITROUS_OXIDE_SET;
+        public static materialTypes DEUTERIUM_SET;
+        public static materialTypes TRITIUM_SET;
+        public static materialTypes CARBON_SET;
 
         public static materialTypes SULFURIC_ACID_SET;
         public static materialTypes HYDROCHLORIC_ACID_SET;
@@ -1451,6 +1470,30 @@ public class EOMaterials {
             return this;
         }
 
+        public materialRegistrar plasmaTintable() {
+            builder.plasma = rgtrPlasma(mat, getTint(mat));
+            return this;
+        }
+
+        public materialRegistrar plasmaCustomTexture(String texture) {
+            builder.plasma = rgtrPlasma(mat, texture, null);
+            return this;
+        }
+
+        public materialRegistrar plasmaFluidAndMolten(boolean hazardous) {
+            builder.fluid = rgtrFluid(mat, getTint(mat), hazardous);
+            builder.molten = rgtrMolten(mat, getTint(mat));
+            builder.plasma = rgtrPlasma(mat, getTint(mat));
+            return this;
+        }
+
+        public materialRegistrar plasmaFluidAndMoltenCustomTexture(String texture, boolean hazardous) {
+            builder.fluid = rgtrFluid(mat, null, "fluid_" + texture, hazardous);
+            builder.molten = rgtrMolten(mat, null, "molten_" + texture);
+            builder.plasma = rgtrPlasma(mat, "plasma_" + texture, null);
+            return this;
+        }
+
         private String oreId(EOreLayerType layer) {
             return switch (layer) {
                 case ORE_STONE, ORE_SAND, ORE_SCULK -> mat + ORE;
@@ -1693,6 +1736,10 @@ public class EOMaterials {
 
         if (path.startsWith(CHEM)) {
             return path.substring(9);
+        }
+
+        if (path.startsWith(PLASMA)) {
+            return path.substring(7);
         }
 
         if (path.endsWith(CAPACITOR)) {

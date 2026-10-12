@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket_drip",
+  "fluid": "eternalores:molten_peridot",
+  "loader": "neoforge:fluid_container"
+}

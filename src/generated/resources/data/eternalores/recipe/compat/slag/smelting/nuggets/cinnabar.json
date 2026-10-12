@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:gem_shards/cinnabar"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 8,
+      "id": "eternalores:molten_cinnabar"
+    }
+  ]
+}

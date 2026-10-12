@@ -477,7 +477,7 @@ public class EOLocalizationES_ES extends EOLocalizationEN_US {
     protected String fluidName(EOFluidType.FluidTypes types, String mat) {
         return switch (types) {
             case MOLTEN -> mat + " Fundido";
-            case GAS, CHEMICAL, FLUID -> mat;
+            case GAS, CHEMICAL, FLUID, PLASMA -> mat;
         };
     }
 }

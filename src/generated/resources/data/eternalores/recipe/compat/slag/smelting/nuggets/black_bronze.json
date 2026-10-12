@@ -1,0 +1,19 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:melting",
+  "ingredient": {
+    "tag": "c:nuggets/black_bronze"
+  },
+  "ingredients": [],
+  "result": [
+    {
+      "amount": 8,
+      "id": "eternalores:molten_black_bronze"
+    }
+  ]
+}

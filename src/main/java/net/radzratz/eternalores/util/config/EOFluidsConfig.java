@@ -50,6 +50,7 @@ public class EOFluidsConfig {
         public final ModConfigSpec.BooleanValue allFluids;
         public final ModConfigSpec.BooleanValue allGases;
         public final ModConfigSpec.BooleanValue allChemicals;
+        public final ModConfigSpec.BooleanValue allPlasmas;
 
         private final Map<String, ModConfigSpec.BooleanValue> entries = new HashMap<>();
 
@@ -72,6 +73,11 @@ public class EOFluidsConfig {
             bldr.comment("Chemicals").push("chemicals");
             this.allChemicals = allToggle(bldr, "all_chemicals");
             registerCategory(bldr, EOFluidType.FluidTypes.CHEMICAL);
+            bldr.pop();
+
+            bldr.comment("Plasmas").push("plasmas");
+            this.allPlasmas = allToggle(bldr, "all_plasmas");
+            registerCategory(bldr, EOFluidType.FluidTypes.PLASMA);
             bldr.pop();
         }
 
@@ -107,6 +113,7 @@ public class EOFluidsConfig {
                 case FLUID -> allFluids.get();
                 case GAS -> allGases.get();
                 case CHEMICAL -> allChemicals.get();
+                case PLASMA -> allPlasmas.get();
             };
             if (!categoryEnabled) return false;
 

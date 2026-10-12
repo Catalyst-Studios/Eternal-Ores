@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hephaestus"
+    }
+  ],
+  "type": "hephaestus:melting",
+  "fuel": {
+    "amount": 100,
+    "id": "minecraft:lava"
+  },
+  "ingredient": {
+    "tag": "c:gears/tungsten"
+  },
+  "result": {
+    "amount": 360,
+    "id": "eternalores:molten_tungsten"
+  },
+  "temperature": 4500,
+  "time": 50
+}

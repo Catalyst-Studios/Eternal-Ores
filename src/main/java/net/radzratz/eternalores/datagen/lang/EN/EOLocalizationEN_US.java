@@ -615,6 +615,7 @@ public class EOLocalizationEN_US extends LanguageProvider {
     protected String fluidName(EOFluidType.FluidTypes types, String mat) {
         return switch (types) {
             case MOLTEN -> "Molten " + mat;
+            case PLASMA -> mat + " Plasma";
             case FLUID, GAS, CHEMICAL -> mat;
         };
     }
