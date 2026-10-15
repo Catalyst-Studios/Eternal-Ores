@@ -53,6 +53,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_aurorium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_battery_alloy",
       "required": false
     },
@@ -157,6 +161,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_cosmic_matter",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_creosote",
       "required": false
     },
@@ -201,7 +209,23 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_eternal_dark",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_eternal_light",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_eternity",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_ethanol",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_etherium",
       "required": false
     },
     {
@@ -225,11 +249,19 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_gasoline",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_glycerol",
       "required": false
     },
     {
       "id": "eternalores:fluid_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_gravitronium",
       "required": false
     },
     {
@@ -250,6 +282,10 @@
     },
     {
       "id": "eternalores:fluid_hexane",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_high_octane_gasoline",
       "required": false
     },
     {
@@ -289,11 +325,35 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_liquid_aether_air",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_liquid_air",
       "required": false
     },
     {
+      "id": "eternalores:fluid_liquid_ender_air",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_liquid_helium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_liquid_mining_air",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_liquid_nether_air",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_liquid_twilight_air",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_liquid_void_air",
       "required": false
     },
     {
@@ -329,6 +389,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_nanite",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_naphtha",
       "required": false
     },
@@ -358,6 +422,10 @@
     },
     {
       "id": "eternalores:fluid_niobium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_novalloy",
       "required": false
     },
     {
@@ -465,6 +533,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_salt_water",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_samarium",
       "required": false
     },
@@ -501,7 +573,15 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_stellarium",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_tantalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_tetrafluoroethylene",
       "required": false
     },
     {
@@ -522,6 +602,10 @@
     },
     {
       "id": "eternalores:fluid_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_universium",
       "required": false
     },
     {
@@ -578,6 +662,10 @@
     },
     {
       "id": "eternalores:gas_chlorine_dioxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_coal",
       "required": false
     },
     {
@@ -649,6 +737,10 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_refined_gas",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_steam",
       "required": false
     },
@@ -697,7 +789,15 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_arcanum",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_aurorium",
       "required": false
     },
     {
@@ -745,6 +845,10 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_carbon",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_cast_iron",
       "required": false
     },
@@ -754,6 +858,10 @@
     },
     {
       "id": "eternalores:molten_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_certus_quartz",
       "required": false
     },
     {
@@ -778,6 +886,10 @@
     },
     {
       "id": "eternalores:molten_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_cosmic_matter",
       "required": false
     },
     {
@@ -813,6 +925,26 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_eternal_dark",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_eternal_light",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_eternity",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_etherium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_fluix",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_francium",
       "required": false
     },
@@ -826,6 +958,10 @@
     },
     {
       "id": "eternalores:molten_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_gravitronium",
       "required": false
     },
     {
@@ -893,6 +1029,14 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_morphite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_nanite",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_necroticarite",
       "required": false
     },
@@ -918,6 +1062,10 @@
     },
     {
       "id": "eternalores:molten_niobium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_novalloy",
       "required": false
     },
     {
@@ -965,11 +1113,19 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_primornium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_prismarine",
       "required": false
     },
     {
       "id": "eternalores:molten_pyrolite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_quantiquarite",
       "required": false
     },
     {
@@ -990,6 +1146,10 @@
     },
     {
       "id": "eternalores:molten_redstone",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_refined_gas",
       "required": false
     },
     {
@@ -1017,6 +1177,10 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_sanguis_vivus",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_sapphire",
       "required": false
     },
@@ -1041,6 +1205,14 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_source",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_spectral_sky_bluerite",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_spinel",
       "required": false
     },
@@ -1057,11 +1229,23 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_stellarium",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_tachyarite",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_tantalum",
       "required": false
     },
     {
       "id": "eternalores:molten_tanzanite",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_temictetl",
       "required": false
     },
     {
@@ -1081,6 +1265,10 @@
       "required": false
     },
     {
+      "id": "eternalores:molten_universium",
+      "required": false
+    },
+    {
       "id": "eternalores:molten_uraninite",
       "required": false
     },
@@ -1094,6 +1282,10 @@
     },
     {
       "id": "eternalores:molten_vivid_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:molten_voiderite",
       "required": false
     },
     {
@@ -1129,6 +1321,10 @@
       "required": false
     },
     {
+      "id": "eternalores:plasma_aurorium",
+      "required": false
+    },
+    {
       "id": "eternalores:plasma_beryllium",
       "required": false
     },
@@ -1149,6 +1345,26 @@
       "required": false
     },
     {
+      "id": "eternalores:plasma_cosmic_matter",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_eternal_dark",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_eternal_light",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_eternity",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_etherium",
+      "required": false
+    },
+    {
       "id": "eternalores:plasma_fluorine",
       "required": false
     },
@@ -1158,6 +1374,10 @@
     },
     {
       "id": "eternalores:plasma_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_gravitronium",
       "required": false
     },
     {
@@ -1193,6 +1413,10 @@
       "required": false
     },
     {
+      "id": "eternalores:plasma_nanite",
+      "required": false
+    },
+    {
       "id": "eternalores:plasma_neodymium",
       "required": false
     },
@@ -1210,6 +1434,10 @@
     },
     {
       "id": "eternalores:plasma_nitrogen",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_novalloy",
       "required": false
     },
     {
@@ -1249,6 +1477,10 @@
       "required": false
     },
     {
+      "id": "eternalores:plasma_stellarium",
+      "required": false
+    },
+    {
       "id": "eternalores:plasma_sulfur",
       "required": false
     },
@@ -1266,6 +1498,10 @@
     },
     {
       "id": "eternalores:plasma_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_universium",
       "required": false
     },
     {

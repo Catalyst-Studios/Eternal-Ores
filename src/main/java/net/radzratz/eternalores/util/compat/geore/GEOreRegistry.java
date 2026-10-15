@@ -6,6 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.radzratz.eternalores.EternalOres;
+import net.radzratz.eternalores.util.EOMaterials;
 
 import java.util.Collection;
 import java.util.stream.Stream;

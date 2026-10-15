@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "eternalores:block/fluids/pyrolite_still",
-    "particle": "eternalores:block/fluids/pyrolite_still"
+    "all": "eternalores:block/fluids/molten_pyrolite_still",
+    "particle": "eternalores:block/fluids/molten_pyrolite_still"
   }
 }

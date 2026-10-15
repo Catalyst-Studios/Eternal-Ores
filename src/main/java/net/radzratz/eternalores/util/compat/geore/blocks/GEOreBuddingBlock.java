@@ -10,8 +10,8 @@ import java.util.function.Supplier;
 public class GEOreBuddingBlock extends BuddingGeoreBlock {
     private final EOBlockTier tier;
     public GEOreBuddingBlock(Properties properties, EOBlockTier tier, Supplier<? extends AmethystClusterBlock> smallSupplier, Supplier<? extends AmethystClusterBlock> mediumSupplier,
-                             Supplier<? extends AmethystClusterBlock> largeSupplier, Supplier<? extends AmethystClusterBlock> clusterSupplier) {
-        super(properties, smallSupplier, mediumSupplier, largeSupplier, clusterSupplier);
+                             Supplier<? extends AmethystClusterBlock> largeSupplier, Supplier<? extends AmethystClusterBlock> clusterSupplier, String oreName) {
+        super(properties, smallSupplier, mediumSupplier, largeSupplier, clusterSupplier, oreName);
         this.tier = tier;
     }
 

@@ -160,7 +160,7 @@ public class EOSetRegistries {
         QUARTZ_SET = of(QUARTZ_ID, CFG.EOQuartzSet).mainAllVanillaGems(2f, T_IRON).temperature(800).tint(() -> 0xFFe9d0b1).moltenTintable().build();
         PRISMARINE_SET = of(PRISMARINE_ID, CFG.EOPrismarineSet).prismarineSet(2f, METAL, T_IRON).temperature(1000).tint(() -> 0xFF9ce3e3).moltenTintable().build();
 
-        COAL_SET = of(COAL_ID, CFG.EOCoalSet).coal(16000, 1600, 178, 3f, METAL, T_STONE).build();
+        COAL_SET = of(COAL_ID, CFG.EOCoalSet).coal(16000, 1600, 178, 3f, METAL, T_STONE).tint(() -> 0xFF382c35).gasTintable(true).build();
         CHARCOAL_SET = of(CHARCOAL_ID, CFG.EOCharcoalSet).mainAllVanillaCoal(16000, 1600, 178, 3f, METAL, T_STONE).build();
 
         STONE_SET = of(STONE_ID, CFG.EOStoneSet).stoneSets(2f, T_WOOD).build();
@@ -206,7 +206,7 @@ public class EOSetRegistries {
         ALUMITE_SET = of(ALUMITE_ID, CFG.EOAlumiteSet).mainAllAlloy(4f, METAL, T_IRON).temperature(1500).tint(() -> 0xFFfbb4ec).moltenAndFluidTintable(false).build();
         AMERICIUM_SET = of(AMERICIUM_ID, CFG.EOAmericiumSet).alloyWithoutGearEnriched(4f, METAL, T_DIAMOND).temperature(5100).tint(() -> 0xFF4dc5a2).plasmaFluidAndMolten(true).build();
         ANNEALED_COPPER_SET = of(ANNEALED_COPPER_ID, CFG.EOAnnealedCopperSet).mainAllAlloy(2f, METAL, T_IRON).temperature(1200).tint(() -> 0xFFeebd88).moltenAndFluidTintable(false).build();
-        AURORIUM_SET = of(AURORIUM_ID, CFG.EOAuroriumSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(9000).build();
+        AURORIUM_SET = of(AURORIUM_ID, CFG.EOAuroriumSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(9000).plasmaFluidAndMoltenCustomTexture(AURORIUM_ID, true).build();
         BATTERY_ALLOY_SET = of(BATTERY_ALLOY_ID, CFG.EOBatteryAlloySet).alloyWithoutGearFoil(2f, METAL, T_IRON).temperature(1500).tint(() -> 0xFFd9b9ea).moltenAndFluidTintable(true).build();
         BISMUTH_SET = of(BISMUTH_ID, CFG.EOBismuthSet).bismuthSet(3f, METAL, T_IRON).temperature(2150).tint(() -> 0xFFccb0ff).moltenAndFluidTintable(true).build();
         BIOSTEEL_SET = of(BIOSTEEL_ID, CFG.EOBiosteelSet).mainAllAlloy(3f, METAL, T_IRON).temperature(1600).tint(() -> 0xFF69776d).moltenAndFluidTintable(false).build();
@@ -224,19 +224,19 @@ public class EOSetRegistries {
         CESIUM_SET = of(CESIUM_ID, CFG.EOCesiumSet).alloyWithoutFeatures(3f, METAL, T_DIAMOND).temperature(3150).tint(() -> 0xFFaee0ab).moltenAndFluidTintable(true).build();
         CHROMIUM_SET = of(CHROMIUM_ID, CFG.EOChromiumSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(2150).tint(() -> 0xFFedc2da).moltenAndFluidTintable(true).build();
         CONSTANTAN_SET = of(CONSTANTAN_ID, CFG.EOConstantanSet).mainAllAlloy(3f, METAL, T_IRON).temperature(1220).tint(() -> 0xFFe49138).moltenAndFluidTintable(false).build();
-        COSMIC_MATTER_SET = of(COSMIC_MATTER_ID, CFG.EOCosmicMatterSet).secondaryAllAlloy(3f, METAL, T_NETHERITE).temperature(21750).build();
+        COSMIC_MATTER_SET = of(COSMIC_MATTER_ID, CFG.EOCosmicMatterSet).secondaryAllAlloy(3f, METAL, T_NETHERITE).temperature(21750).plasmaFluidAndMoltenCustomTexture(COSMIC_MATTER_ID, true).build();
         CRYSTALLINE_ALLOY_SET = of(CRYSTALLINE_ALLOY_ID, CFG.EOCrystallineAlloySet).mainAllAlloy(3f, METAL, T_IRON).temperature(2645).tint(() -> 0xFF8bd8d8).moltenAndFluidTintable(false).build();
         CUPRONICKEL_SET = of(CUPRONICKEL_ID, CFG.EOCupronickelSet).alloyWithoutGearEnriched(2f, METAL, T_IRON).temperature(1600).tint(() -> 0xFFf4c88c).moltenAndFluidTintable(false).build();
         ELECTRUM_SET = of(ELECTRUM_ID, CFG.EOElectrumSet).secondaryAllAlloy(3f, METAL, T_IRON).temperature(1000).tint(() -> 0xFFeac66f).moltenAndFluidTintable(false).build();
         ENDERIUM_SET = of(ENDERIUM_ID, CFG.EOEnderiumSet).secondaryAllAlloy(4f, METAL, T_IRON).temperature(1450).tint(() -> 0xFF309584).moltenAndFluidTintable(false).build();
         ENERGETIC_SILVER_SET = of(ENERGETIC_SILVER_ID, CFG.EOEnergeticSilverSet).mainAllAlloy(3f, METAL, T_IRON).temperature(1850).tint(() -> 0xFFa3bddb).moltenAndFluidTintable(false).build();
-        ETERNAL_DARK_SET = of(ETERNAL_DARK_ID, CFG.EOEternalDarkSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(11000).build();
-        ETERNAL_LIGHT_SET = of(ETERNAL_LIGHT_ID, CFG.EOEternalLightSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(11000).build();
-        ETERNITY_SET = of(ETERNITY_ID, CFG.EOEternitySet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(21750).build();
-        ETHERIUM_SET = of(ETHERIUM_ID, CFG.EOEtheriumSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(7500).build();
+        ETERNAL_DARK_SET = of(ETERNAL_DARK_ID, CFG.EOEternalDarkSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(11000).plasmaFluidAndMoltenCustomTexture(ETERNAL_DARK_ID, true).build();
+        ETERNAL_LIGHT_SET = of(ETERNAL_LIGHT_ID, CFG.EOEternalLightSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(11000).plasmaFluidAndMoltenCustomTexture(ETERNAL_LIGHT_ID, true).build();
+        ETERNITY_SET = of(ETERNITY_ID, CFG.EOEternitySet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(21750).plasmaFluidAndMoltenCustomTexture(ETERNITY_ID, true).build();
+        ETHERIUM_SET = of(ETHERIUM_ID, CFG.EOEtheriumSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(7500).plasmaFluidAndMoltenCustomTexture(ETHERIUM_ID, true).build();
         FRANCIUM_SET = of(FRANCIUM_ID, CFG.EOFranciumSet).alloyWithoutFeatures(3f, METAL, T_DIAMOND).temperature(2350).tint(() -> 0xFF96c2c7).moltenAndFluidTintable(true).build();
         GRAPHITE_SET = of(GRAPHITE_ID, CFG.EOGraphiteSet).secondaryAllAlloy(3f, METAL, T_STONE).build();
-        GRAVITRONIUM_SET = of(GRAVITRONIUM_ID, CFG.EOGravitroniumSet).secondaryAllAlloy(5f, METAL, T_NETHERITE).temperature(21750).build();
+        GRAVITRONIUM_SET = of(GRAVITRONIUM_ID, CFG.EOGravitroniumSet).secondaryAllAlloy(5f, METAL, T_NETHERITE).temperature(21750).plasmaFluidAndMoltenCustomTexture(GRAVITRONIUM_ID, true).build();
         HAFNIUM_SET = of(HAFNIUM_ID, CFG.EOHafniumSet).mainAllAlloy(3f, METAL, T_DIAMOND).temperature(4250).tint(() -> 0xFFc0b8df).moltenAndFluidTintable(true).build();
         HEPATIZON_SET = of(HEPATIZON_ID, CFG.EOHepatizonSet).mainAllAlloy(3f, METAL, T_IRON).temperature(2450).tint(() -> 0xFF9883ae).moltenAndFluidTintable(false).build();
         INDIUM_SET = of(INDIUM_ID, CFG.EOIndiumSet).alloyWithoutFeatures(1f, METAL, T_IRON).temperature(2050).tint(() -> 0xFF915ecb).moltenAndFluidTintable(false).build();
@@ -248,11 +248,11 @@ public class EOSetRegistries {
         MELODIC_ALLOY_SET = of(MELODIC_ALLOY_ID, CFG.EOMelodicAlloySet).mainAllAlloy(3f, METAL, T_IRON).temperature(2610).tint(() -> 0xFFdd7dee).moltenAndFluidTintable(false).build();
         MISSING_SET = of(MISSING_ID, CFG.EOMissingSet).ingot().build();
         MODULARIUM_SET = of(MODULARIUM_ID, CFG.EOModulariumSet).mainAllAlloy(3f, METAL, T_IRON).temperature(1500).tint(() -> 0xFFf94a00).plasmaFluidAndMolten(false).build();
-        NANITE_SET = of(NANITE_ID, CFG.EONaniteSet).mainAllAlloy(6f, METAL, T_NETHERITE).temperature(21750).build();
+        NANITE_SET = of(NANITE_ID, CFG.EONaniteSet).mainAllAlloy(6f, METAL, T_NETHERITE).temperature(21750).tint(() -> 0xFFaebad0).plasmaFluidAndMolten(true).build();
         NEPTUNIUM_SET = of(NEPTUNIUM_ID, CFG.EONeptuniumSet).alloyWithoutGearEnriched(4f, METAL, T_IRON).temperature(4150).tint(() -> 0xFF97c0a9).moltenAndFluidTintable(true).build();
         NETHERSTEEL_SET = of(NETHERSTEEL_ID, CFG.EONethersteelSet).mainAllAlloy(4f, METAL, T_IRON).temperature(3100).tint(() -> 0xFFcd032a).moltenAndFluidTintable(false).build();
         NIOBIUM_SET = of(NIOBIUM_ID, CFG.EONiobiumSet).alloyWithoutFeatures(2f, METAL, T_IRON).temperature(2100).tint(() -> 0xFFcda5d9).moltenAndFluidTintable(false).build();
-        NOVALLOY_SET = of(NOVALLOY_ID, CFG.EONovalloySet).mainAllAlloy(5f, NETHERITE_BLOCK, T_NETHERITE).temperature(15750).build();
+        NOVALLOY_SET = of(NOVALLOY_ID, CFG.EONovalloySet).mainAllAlloy(5f, NETHERITE_BLOCK, T_NETHERITE).temperature(15750).tint(() -> 0xFFb53664).plasmaFluidAndMolten(true).build();
         OSGLOGLAS_SET = of(OSGLOGLAS_ID, CFG.EOsgloglasSet).mainAllAlloy(3f, METAL, T_IRON).temperature(1900).tint(() -> 0xFF64de25).moltenAndFluidTintable(false).build();
         PEWTER_SET = of(PEWTER_ID, CFG.EOPewterSet).mainAllAlloy(3f, METAL, T_IRON).temperature(1430).tint(() -> 0xFFa0a9a0).moltenAndFluidTintable(false).build();
         PIG_IRON_SET = of(PIG_IRON_ID, CFG.EOPigIronSet).mainAllAlloy(4f, METAL, T_IRON).temperature(1325).tint(() -> 0xFFb69488).moltenAndFluidTintable(false).build();
@@ -270,27 +270,27 @@ public class EOSetRegistries {
         SILICON_SET = of(SILICON_ID, CFG.EOSiliconSet).siliconSet("silicon_ingot", 2f, METAL, T_IRON).temperature(1600).tint(() -> 0xFF6d6aa8).moltenAndFluidTintable(false).build();
         STAINLESS_STEEL_SET = of(STAINLESS_STEEL_ID, CFG.EOStainlessSteelSet).mainAllAlloy(3f, METAL, T_DIAMOND).temperature(3100).tint(() -> 0xFFb8d1e7).moltenAndFluidTintable(false).build();
         STEEL_SET = of(STEEL_ID, CFG.EOSteelSet).mainAllAlloy(3f, METAL, T_IRON).temperature(900).tint(() -> 0xFF7a7a7a).moltenAndFluidTintable(false).build();
-        STELLARIUM_SET = of(STELLARIUM_ID, CFG.EOStellariumSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(11500).build();
+        STELLARIUM_SET = of(STELLARIUM_ID, CFG.EOStellariumSet).secondaryAllAlloy(3f, METAL, T_DIAMOND).temperature(11500).plasmaFluidAndMoltenCustomTexture(STELLARIUM_ID, true).build();
         STELLAR_ALLOY_SET = of(STELLAR_ALLOY_ID, CFG.EOStellarAlloySet).mainAllAlloy(3f, METAL, T_IRON).temperature(2750).tint(() -> 0xFFb2d3d3).moltenAndFluidTintable(false).build();
         TANTALUM_SET = of(TANTALUM_ID, CFG.EOTantalumSet).alloyWithoutGearRod(3f, METAL, T_IRON).temperature(2100).tint(() -> 0xFF9aa1b8).moltenAndFluidTintable(false).build();
-        UNIVERSIUM_SET = of(UNIVERSIUM_ID, CFG.EOUniversiumSet).secondaryAllAlloy(3f, METAL, T_NETHERITE).temperature(21500).build();
+        UNIVERSIUM_SET = of(UNIVERSIUM_ID, CFG.EOUniversiumSet).secondaryAllAlloy(3f, METAL, T_NETHERITE).temperature(21500).plasmaFluidAndMoltenCustomTexture(UNIVERSIUM_ID, true).build();
         UNSTABLE_SET = of(UNSTABLE_STABLE_ID, CFG.EOUnstableIngotSet).unstableIngot(UNSTABLE_ID).temperature(4000).build();
         VIVID_ALLOY_SET = of(VIVID_ALLOY_ID, CFG.EOVividAlloySet).mainAllAlloy(3f, METAL, T_IRON).temperature(3500).tint(() -> 0xFF4ddbfa).moltenAndFluidTintable(false).build();
         WROUGHT_IRON_SET = of(WROUGHT_IRON_ID, CFG.EOWroughtIronSet).secondaryAllAlloy(3f, METAL, T_IRON).temperature(1000).tint(() -> 0xFFa6a490).moltenAndFluidTintable(false).build();
         YTTRIUM_SET = of(YTTRIUM_ID, CFG.EOYttriumSet).alloyWithoutFeatures(3f, METAL, T_DIAMOND).temperature(4200).tint(() -> 0xFFd3b380).moltenAndFluidTintable(true).build();
 
-        ARCANUM_SET = of(ARCANUM_ID, CFG.EOArcanumSet).mainAllGem(5f, METAL, T_DIAMOND).temperature(2400).build();
-        CERTUS_QUARTZ_SET = of(CERTUS_QUARTZ_ID, CFG.EOCertusQuartzSet).mainAllGem(2f, METAL, T_STONE).temperature(1200).build();
-        FLUIX_SET = of(FLUIX_ID, CFG.EOFluixSet).mainAllGem("fluix_crystal_block", 2f, METAL, T_STONE).temperature(1200).build();
-        MORPHITE_SET = of(MORPHITE_ID, CFG.EOMorphiteSet).mainAllGem(4f, METAL, T_DIAMOND).temperature(3300).build();
-        PRIMORNIUM_SET = of(PRIMORNIUM_ID, CFG.EOPrimorniumSet).mainAllGem(6f, METAL, T_NETHERITE).temperature(8150).build();
-        QUANTIQUARITE_SET = of(QUANTIQUARITE_ID, CFG.EOQuantiquariteSet).mainAllGem(4f, METAL, T_DIAMOND).temperature(8150).build();
-        SANGUIS_VIVUS_SET = of(SANGUIS_VIVUS_ID, CFG.EOSanguisVivusSet).mainAllGem(3f, METAL, T_DIAMOND).temperature(10500).build();
-        SOURCE_SET = of(SOURCE_ID, CFG.EOSourceSet).mainAllGem(1f, METAL, T_STONE).temperature(1500).build();
-        SPECTRAL_SKY_BLUERITE_SET = of(SPECTRAL_SKY_BLUERITE_ID, CFG.EOSpectralSkyBlueriteSet).mainAllGem(4f, METAL, T_IRON).temperature(2100).build();
-        TACHYARITE_SET = of(TACHYARITE_ID, CFG.EOTachyariteSet).mainAllGem(4f, METAL, T_IRON).temperature(5200).build();
-        TEMICTETL_SET = of(TEMICTETL_ID, CFG.EOTemictetlSet).mainAllGem(3f, METAL, T_DIAMOND).temperature(7200).build();
-        VOIDERITE_SET = of(VOIDERITE_ID, CFG.EOVoideriteSet).mainAllGem(4f, METAL, T_IRON).temperature(5100).build();
+        ARCANUM_SET = of(ARCANUM_ID, CFG.EOArcanumSet).mainAllGem(5f, METAL, T_DIAMOND).temperature(2400).moltenCustomTexture(ARCANUM_ID).build();
+        CERTUS_QUARTZ_SET = of(CERTUS_QUARTZ_ID, CFG.EOCertusQuartzSet).mainAllGem(2f, METAL, T_STONE).temperature(1200).tint(() -> 0xFFace9ff).moltenTintable().build();
+        FLUIX_SET = of(FLUIX_ID, CFG.EOFluixSet).mainAllGem("fluix_crystal_block", 2f, METAL, T_STONE).moltenCustomTexture(FLUIX_ID).temperature(1200).build();
+        MORPHITE_SET = of(MORPHITE_ID, CFG.EOMorphiteSet).mainAllGem(4f, METAL, T_DIAMOND).temperature(3300).moltenCustomTexture(MORPHITE_ID).build();
+        PRIMORNIUM_SET = of(PRIMORNIUM_ID, CFG.EOPrimorniumSet).mainAllGem(6f, METAL, T_NETHERITE).temperature(8150).tint(() -> 0xFF9022c8).moltenTintable().build();
+        QUANTIQUARITE_SET = of(QUANTIQUARITE_ID, CFG.EOQuantiquariteSet).mainAllGem(4f, METAL, T_DIAMOND).temperature(8150).moltenCustomTexture(QUANTIQUARITE_ID).build();
+        SANGUIS_VIVUS_SET = of(SANGUIS_VIVUS_ID, CFG.EOSanguisVivusSet).mainAllGem(3f, METAL, T_DIAMOND).temperature(10500).tint(() -> 0xFFb60000).moltenTintable().build();
+        SOURCE_SET = of(SOURCE_ID, CFG.EOSourceSet).mainAllGem(1f, METAL, T_STONE).temperature(1500).tint(() -> 0xFFbb6aee).moltenTintable().build();
+        SPECTRAL_SKY_BLUERITE_SET = of(SPECTRAL_SKY_BLUERITE_ID, CFG.EOSpectralSkyBlueriteSet).mainAllGem(4f, METAL, T_IRON).temperature(2100).moltenCustomTexture(SPECTRAL_SKY_BLUERITE_ID).build();
+        TACHYARITE_SET = of(TACHYARITE_ID, CFG.EOTachyariteSet).mainAllGem(4f, METAL, T_IRON).temperature(5200).moltenCustomTexture(TACHYARITE_ID).build();
+        TEMICTETL_SET = of(TEMICTETL_ID, CFG.EOTemictetlSet).mainAllGem(3f, METAL, T_DIAMOND).temperature(7200).moltenCustomTexture(TEMICTETL_ID).build();
+        VOIDERITE_SET = of(VOIDERITE_ID, CFG.EOVoideriteSet).mainAllGem(4f, METAL, T_IRON).temperature(5100).moltenCustomTexture(VOIDERITE_ID).build();
 
         BIOMASS_SET = of(BIOMASS_ID, CFG.EOBiomassSet).item(1f, SAND, T_WOOD).build();
         CALCIUM_SET = of(CALCIUM_ID, CFG.EOCalciumSet).dustAndBlocks(3f, T_WOOD).build();
@@ -313,12 +313,19 @@ public class EOSetRegistries {
         BIO_BLEND_SET = of(BIO_BLEND_ID, CFG.EOBioBlendSet).mainBlend(2f, T_IRON).build();
 
         LIQUID_AIR_SET = of(LIQUID_AIR_ID).tint(() -> 0xFF9ffffd).fluidTintable(false).build();
+        LIQUID_ENDER_AIR_SET = of(LIQUID_ENDER_AIR_ID).tint(() -> 0xFF725ed0).fluidTintable(false).build();
+        LIQUID_NETHER_AIR_SET = of(LIQUID_NETHER_AIR_ID).tint(() -> 0xFF7a3434).fluidTintable(false).build();
+        LIQUID_AETHER_AIR_SET = of(LIQUID_AETHER_AIR_ID).tint(() -> 0xFF8be1f6).fluidTintable(false).build();
+        LIQUID_TWILIGHT_AIR_SET = of(LIQUID_TWILIGHT_AIR_ID).tint(() -> 0xFF7452e7).fluidTintable(false).build();
+        LIQUID_MINING_AIR_SET = of(LIQUID_MINING_AIR_ID).tint(() -> 0xFF5fe08e).fluidTintable(false).build();
+        LIQUID_VOID_AIR_SET = of(LIQUID_VOID_AIR_ID).tint(() -> 0xFF6a4c6f).fluidTintable(false).build();
         LIQUID_HELIUM_SET = of(LIQUID_HELIUM_ID).tint(() -> 0xFFf0ff8c).fluidTintable(false).build();
         HEAVY_WATER_SET = of(HEAVY_WATER_ID).tint(() -> 0xFF222b4e).fluidTintable(false).build();
         BRINE_SET = of(BRINE_ID).tint(() -> 0xFFf4d888).fluidTintable(false).build();
         DISTILLED_WATER_SET = of(DISTILLED_WATER_ID).tint(() -> 0xFF9fffec).fluidTintable(false).build();
         DIONIZED_WATER_SET = of(DIONIZED_WATER_ID).tint(() -> 0xFF8aeeff).fluidTintable(false).build();
         AMMONIA_SOLUTION_SET = of(AMMONIA_SOLUTION_ID).tint(() -> 0xFF626bb4).fluidTintable(false).build();
+        SALT_WATER_SET = of(SALT_WATER_ID).tint(() -> 0xFF3263ba).fluidTintable(false).build();
 
         ACETONE_SET = of(ACETONE_ID).tint(() -> 0xFFd0d0d0).fluidTintable(false).build();
         METHANOL_SET = of(METHANOL_ID).tint(() -> 0xFFd59659).fluidTintable(false).build();
@@ -350,6 +357,8 @@ public class EOSetRegistries {
         NAPHTHA_SET = of(NAPHTHA_ID).tint(() -> 0xFFe0d20f).fluidTintable(false).build();
         KEROSENE_SET = of(KEROSENE_ID).tint(() -> 0xFFd59e25).fluidTintable(false).build();
         ROCKET_FUEL_SET = of(ROCKET_FUEL_ID).tint(() -> 0xFFdeaf5b).fluidTintable(false).build();
+        GASOLINE_SET = of(GASOLINE_ID).tint(() -> 0xFFe8f45c).fluidTintable(false).build();
+        HIGH_OCTANE_GASOLINE_SET = of(HIGH_OCTANE_GASOLINE_ID).tint(() -> 0xFFc9fb46).fluidTintable(false).build();
 
         ETHYLENE_SET = of(ETHYLENE_ID).tint(() -> 0xFF999999).fluidTintable(false).build();
         POLYBENZIMIDAZOLE_SET = of(POLYBENZIMIDAZOLE_ID).tint(() -> 0xFF525557).fluidTintable(false).build();
@@ -359,6 +368,7 @@ public class EOSetRegistries {
         HEPTANE_SET = of(HEPTANE_ID).tint(() -> 0xFFad9170).fluidTintable(false).build();
         OCTANE_SET = of(OCTANE_ID).tint(() -> 0xFFaf2200).fluidTintable(false).build();
         CYCLOHEXANE_SET = of(CYCLOHEXANE_ID).tint(() -> 0xFFe9ac02).fluidTintable(false).build();
+        TETRAFLUOROETHYLENE_SET = of(TETRAFLUOROETHYLENE_ID).tint(() -> 0xFF7e7070).fluidTintable(false).build();
 
         END_PORTAL_FLUID_SET = of(END_PORTAL_FLUID_ID).fluidCustomTexture(END_PORTAL_FLUID_ID, true).build();
         NETHER_PORTAL_FLUID_SET = of(NETHER_PORTAL_FLUID_ID).fluidCustomTexture(NETHER_PORTAL_FLUID_ID, true).build();
@@ -397,7 +407,8 @@ public class EOSetRegistries {
         NITROUS_OXIDE_SET = of(NITROUS_OXIDE_ID).tint(() -> 0xFF65d5f0).gasTintable(true).build();
         TRITIUM_SET = of(TRITIUM_ID).tint(() -> 0xFFa2f47a).gasTintable(true).build();
         DEUTERIUM_SET = of(DEUTERIUM_ID).tint(() -> 0xFFf4524a).gasTintable(true).build();
-        CARBON_SET = of(CARBON_ID).tint(() -> 0xFF454545).gasTintable(true).build();
+        CARBON_SET = of(CARBON_ID).tint(() -> 0xFF454545).gasTintable(true).moltenTintable().build();
+        REFINED_GAS_SET = of(REFINED_GAS_ID).tint(() -> 0xFFe8ebdf).gasTintable(true).moltenTintable().build();
     }
 
     public static void rgtr(IEventBus bus) {

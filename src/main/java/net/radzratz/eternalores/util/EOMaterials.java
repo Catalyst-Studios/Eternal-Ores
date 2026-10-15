@@ -247,6 +247,12 @@ public class EOMaterials {
         public static final String BIO_BLEND_ID = "bio";
 
         public static final String LIQUID_AIR_ID = "liquid_air";
+        public static final String LIQUID_ENDER_AIR_ID = "liquid_ender_air";
+        public static final String LIQUID_NETHER_AIR_ID = "liquid_nether_air";
+        public static final String LIQUID_AETHER_AIR_ID = "liquid_aether_air";
+        public static final String LIQUID_TWILIGHT_AIR_ID = "liquid_twilight_air";
+        public static final String LIQUID_MINING_AIR_ID = "liquid_mining_air";
+        public static final String LIQUID_VOID_AIR_ID = "liquid_void_air";
         public static final String LIQUID_HELIUM_ID = "liquid_helium";
         public static final String LUBRICANT_ID = "lubricant";
         public static final String HEAVY_WATER_ID = "heavy_water";
@@ -260,6 +266,7 @@ public class EOMaterials {
         public static final String DISTILLED_WATER_ID = "distilled_water";
         public static final String DIONIZED_WATER_ID = "dionized_water";
         public static final String AMMONIA_SOLUTION_ID = "ammonia_solution";
+        public static final String SALT_WATER_ID = "salt_water";
         public static final String ACETONE_ID = "acetone";
         public static final String METHANOL_ID = "methanol";
         public static final String ETHANOL_ID = "ethanol";
@@ -285,10 +292,13 @@ public class EOMaterials {
         public static final String NAPHTHA_ID = "naphtha";
         public static final String KEROSENE_ID = "kerosene";
         public static final String ROCKET_FUEL_ID = "rocket_fuel";
+        public static final String GASOLINE_ID = "gasoline";
+        public static final String HIGH_OCTANE_GASOLINE_ID = "high_octane_gasoline";
         public static final String PENTANE_ID = "pentane";
         public static final String HEPTANE_ID = "heptane";
         public static final String OCTANE_ID = "octane";
         public static final String CYCLOHEXANE_ID = "cyclohexane";
+        public static final String TETRAFLUOROETHYLENE_ID = "tetrafluoroethylene";
 
         public static final String HYDROGEN_ID = "hydrogen";
         public static final String STEAM_ID = "steam";
@@ -318,6 +328,7 @@ public class EOMaterials {
         public static final String TRITIUM_ID = "tritium";
         public static final String DEUTERIUM_ID = "deuterium";
         public static final String CARBON_ID = "carbon";
+        public static final String REFINED_GAS_ID = "refined_gas";
 
         public static final String HYDROCHLORIC_ACID_ID = "hydrochloric_acid";
         public static final String SULFURIC_ACID_ID = "sulfuric_acid";
@@ -749,6 +760,12 @@ public class EOMaterials {
         public static materialTypes BIO_BLEND_SET;
 
         public static materialTypes LIQUID_AIR_SET;
+        public static materialTypes LIQUID_ENDER_AIR_SET;
+        public static materialTypes LIQUID_NETHER_AIR_SET;
+        public static materialTypes LIQUID_AETHER_AIR_SET;
+        public static materialTypes LIQUID_TWILIGHT_AIR_SET;
+        public static materialTypes LIQUID_MINING_AIR_SET;
+        public static materialTypes LIQUID_VOID_AIR_SET;
         public static materialTypes LIQUID_HELIUM_SET;
         public static materialTypes LUBRICANT_SET;
         public static materialTypes HEAVY_WATER_SET;
@@ -762,6 +779,7 @@ public class EOMaterials {
         public static materialTypes DISTILLED_WATER_SET;
         public static materialTypes DIONIZED_WATER_SET;
         public static materialTypes AMMONIA_SOLUTION_SET;
+        public static materialTypes SALT_WATER_SET;
         public static materialTypes ACETONE_SET;
         public static materialTypes METHANOL_SET;
         public static materialTypes ETHANOL_SET;
@@ -786,11 +804,14 @@ public class EOMaterials {
         public static materialTypes NAPHTHA_SET;
         public static materialTypes KEROSENE_SET;
         public static materialTypes ROCKET_FUEL_SET;
+        public static materialTypes GASOLINE_SET;
+        public static materialTypes HIGH_OCTANE_GASOLINE_SET;
         public static materialTypes ETHYLENE_SET;
         public static materialTypes PENTANE_SET;
         public static materialTypes HEPTANE_SET;
         public static materialTypes OCTANE_SET;
         public static materialTypes CYCLOHEXANE_SET;
+        public static materialTypes TETRAFLUOROETHYLENE_SET;
 
         public static materialTypes STEAM_SET;
         public static materialTypes HYDROGEN_SET;
@@ -820,6 +841,7 @@ public class EOMaterials {
         public static materialTypes DEUTERIUM_SET;
         public static materialTypes TRITIUM_SET;
         public static materialTypes CARBON_SET;
+        public static materialTypes REFINED_GAS_SET;
 
         public static materialTypes SULFURIC_ACID_SET;
         public static materialTypes HYDROCHLORIC_ACID_SET;
@@ -1439,7 +1461,7 @@ public class EOMaterials {
         }
 
         public materialRegistrar moltenCustomTexture(String texture) {
-            builder.molten = rgtrMolten(mat, null, texture);
+            builder.molten = rgtrMolten(mat, null, "molten_" + texture);
             return this;
         }
 
@@ -1449,9 +1471,9 @@ public class EOMaterials {
             return this;
         }
 
-        public materialRegistrar moltenAndFluidCustomTexture(String fluid, String molten, boolean hazardous) {
-            builder.fluid = rgtrFluid(mat, null, fluid, hazardous);
-            builder.molten = rgtrMolten(mat, null, molten);
+        public materialRegistrar moltenAndFluidCustomTexture(String fluid, boolean hazardous) {
+            builder.fluid = rgtrFluid("fluid_" + mat, null, fluid, hazardous);
+            builder.molten = rgtrMolten("molten_" + mat, null);
             return this;
         }
 

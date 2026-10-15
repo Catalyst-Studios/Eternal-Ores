@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "eternalores:block/fluids/plasma_eternal_light_still",
+    "particle": "eternalores:block/fluids/plasma_eternal_light_still"
+  }
+}

@@ -177,7 +177,7 @@ dependencies {
     implementation "com.buuz135:industrialforegoing:1.21-3.6.35"
     implementation "curse.maven:integrated-dynamics-236307:7827790"
     implementation "curse.maven:railcraft-reborn-901491:7393678"
-    implementation "curse.maven:geore-530544:7563411"
+    implementation "curse.maven:geore-530544:9101819"
     implementation "curse.maven:refined-storage-243076:8067850"
     implementation "curse.maven:ars-nouveau-401955:7764018"
     implementation "com.blakebr0.mysticalagriculture:MysticalAgriculture:${minecraft_version}-${mystical_agriculture_version}"

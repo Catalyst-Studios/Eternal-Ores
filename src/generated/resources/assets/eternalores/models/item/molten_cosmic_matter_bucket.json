@@ -1,0 +1,5 @@
+{
+  "parent": "neoforge:item/bucket_drip",
+  "fluid": "eternalores:molten_cosmic_matter",
+  "loader": "neoforge:fluid_container"
+}

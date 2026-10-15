@@ -40,6 +40,7 @@ We have, and plan, to add compatibility/integration to these mods.
 - [Excessive Utilities](https://www.curseforge.com/minecraft/mc-mods/excessive-utilities)
 - [Occultism](https://www.curseforge.com/minecraft/mc-mods/occultism) (Planned)
 - [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture) (Planned)
+- [Productive Bees](https://www.curseforge.com/minecraft/mc-mods/productivebees) (Planned)
 - and probably others... But in case we missed some, let us know!
 
 Eternal Ores adds a couple of Mixins, which are disabled by default, so check the Config files to know what they do

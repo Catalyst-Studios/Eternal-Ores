@@ -77,7 +77,7 @@ public class GEOreHelpers {
                         .randomTicks()
                         .strength(1.5f)
                         .sound(SoundType.AMETHYST)
-                        .requiresCorrectToolForDrops(), tier, small, medium, large, cluster)
+                        .requiresCorrectToolForDrops(), tier, small, medium, large, cluster, id)
         );
     }
 
