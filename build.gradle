@@ -249,7 +249,7 @@ dependencies {
     runtimeOnly "curse.maven:ae2-jei-integration-1074338:7727898"
 }
 
-var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
+var generateModMetadata = tasks.register("generateModMetadata", Copy) {
     var replaceProperties = [
             minecraft_version      : minecraft_version,
             minecraft_version_range: minecraft_version_range,
@@ -271,6 +271,16 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
 
 sourceSets.main.resources.srcDir generateModMetadata
 neoForge.ideSyncTask generateModMetadata
+
+tasks.named('processResources', ProcessResources) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.named('jar', Jar) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    entryCompression = ZipEntryCompression.STORED
+}
+
 
 publishing {
     publications {
