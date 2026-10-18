@@ -1,6 +1,7 @@
 package net.radzratz.eternalores.util.recipes.types;
 
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.NonNullList;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.CraftingBookCategory;
@@ -28,7 +29,7 @@ public class EasyToolRepair extends CustomRecipe {
         for (int i = 0; i < inv.size(); i++) {
             ItemStack stack = inv.getItem(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof EOHammers || stack.getItem() instanceof EOGemCutter || stack.getItem() instanceof EOWireCutter) {
+                if (isTool(stack)) {
                     if (!tool.isEmpty()) return false;
                     tool = stack;
                 } else {
@@ -44,7 +45,7 @@ public class EasyToolRepair extends CustomRecipe {
 
         for (int i = 0; i < inv.size(); i++) {
             ItemStack stack = inv.getItem(i);
-            if (!stack.isEmpty() && !(stack.getItem() instanceof EOHammers || stack.getItem() instanceof EOGemCutter || stack.getItem() instanceof EOWireCutter)) {
+            if (!stack.isEmpty() && !isTool(stack)) {
                 if (!tool.getItem().isValidRepairItem(tool, stack)) return false;
             }
         }
@@ -84,10 +85,10 @@ public class EasyToolRepair extends CustomRecipe {
         for (int i = 0; i < inv.size(); i++) {
             ItemStack stack = inv.getItem(i);
             if (!stack.isEmpty()) {
-                if (stack.getItem() instanceof EOHammers || stack.getItem() instanceof EOGemCutter) {
+                if (isTool(stack)) {
                     tools = stack;
                 } else {
-                    materials += stack.getCount();
+                    materials ++;
                 }
             }
         }
@@ -102,6 +103,23 @@ public class EasyToolRepair extends CustomRecipe {
         ItemStack result = tools.copy();
         result.setDamageValue(newDamage);
         return result;
+    }
+
+    @Override
+    public @NotNull NonNullList<ItemStack> getRemainingItems(CraftingInput input) {
+        NonNullList<ItemStack> remaining = NonNullList.withSize(input.size(), ItemStack.EMPTY);
+
+        for (int i = 0; i < input.size(); i++) {
+            ItemStack stack = input.getItem(i);
+
+            if (isTool(stack)) continue;
+
+            if (stack.hasCraftingRemainingItem()) {
+                remaining.set(i, stack.getCraftingRemainingItem());
+            }
+        }
+
+        return remaining;
     }
 
     private int getRepairAmountForTool(ItemStack stack) {
@@ -135,5 +153,11 @@ public class EasyToolRepair extends CustomRecipe {
     @Override
     public @NotNull RecipeSerializer<?> getSerializer() {
         return EORecipeRegistry.EASY_TOOL_REPAIR.get();
+    }
+
+    private static boolean isTool(ItemStack stack) {
+        return stack.getItem() instanceof EOHammers
+                || stack.getItem() instanceof EOGemCutter
+                || stack.getItem() instanceof EOWireCutter;
     }
 }

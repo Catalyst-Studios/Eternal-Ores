@@ -9,7 +9,7 @@
   "cast": {
     "tag": "c:tools/molds/plate"
   },
-  "cooling_time": 10,
+  "cooling_time": 50,
   "fluid": {
     "amount": 45,
     "id": "eternalores:molten_electrum"

@@ -6,7 +6,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="eternalores"
-version="2.1"
+version="2.2"
 displayName="Eternal Ores"
 authors="RadzRatz"
 description="The Eternal Ores mod adds many well-known items into a single mod, such as ingots, gears, rods, nuggets, plates, raw ores, ore blocks, fluids and compressed blocks!"
@@ -103,7 +103,7 @@ side="BOTH"
 [[dependencies.eternalores]]
 modId="geore"
 type="optional"
-versionRange="6.2.2"
+versionRange="6.2.4"
 ordering="NONE"
 side="BOTH"
 
@@ -160,5 +160,19 @@ side="BOTH"
 modId="emi"
 type="optional"
 versionRange="1.1.22+1.21.1"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.eternalores]]
+modId="slag"
+type="optional"
+versionRange="1.21.1-1.1b"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.eternalores]]
+modId="hephaestus"
+type="optional"
+versionRange="1.21.1-1.0.12"
 ordering="NONE"
 side="BOTH"

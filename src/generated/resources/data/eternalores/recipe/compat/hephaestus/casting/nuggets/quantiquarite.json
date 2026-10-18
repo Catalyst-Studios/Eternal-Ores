@@ -9,7 +9,7 @@
   "cast": {
     "tag": "c:tools/molds/nugget"
   },
-  "cooling_time": 10,
+  "cooling_time": 200,
   "fluid": {
     "amount": 10,
     "id": "eternalores:molten_quantiquarite"

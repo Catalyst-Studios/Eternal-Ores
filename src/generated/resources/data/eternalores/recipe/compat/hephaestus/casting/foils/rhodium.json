@@ -9,7 +9,7 @@
   "cast": {
     "tag": "c:tools/molds/foil"
   },
-  "cooling_time": 10,
+  "cooling_time": 200,
   "fluid": {
     "amount": 45,
     "id": "eternalores:molten_rhodium"

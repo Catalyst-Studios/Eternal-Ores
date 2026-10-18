@@ -68,7 +68,7 @@ public class EOSetRegistries {
         COBALT_HAMMER = rgtrHammer("cobalt_hammer", 1024, NUGGETS_COBALT, EOToolsConfig.CFG.hammers.cobalt::isEnabled);
         COPPER_HAMMER = rgtrHammer("copper_hammer", 128, NUGGETS_COPPER, EOToolsConfig.CFG.hammers.copper::isEnabled);
         STONE_HAMMER = rgtrHammer("stone_hammer", 64, STONE_BUTTONS, EOToolsConfig.CFG.hammers.stone::isEnabled);
-        DIAMOND_HAMMER = rgtrHammer("diamond_hammer", 512, GEMS_DIAMOND, EOToolsConfig.CFG.hammers.diamond::isEnabled);
+        DIAMOND_HAMMER = rgtrHammer("diamond_hammer", 512, GEM_SHARDS_DIAMOND, EOToolsConfig.CFG.hammers.diamond::isEnabled);
         IRON_HAMMER = rgtrHammer("iron_hammer", 256, NUGGETS_IRON, EOToolsConfig.CFG.hammers.iron::isEnabled);
 
         IRON_GEM_CUTTER = rgtrCutter("iron_gem_cutter", NUGGETS_IRON, 256, EOToolsConfig.CFG.gemCutter.iron::isEnabled);

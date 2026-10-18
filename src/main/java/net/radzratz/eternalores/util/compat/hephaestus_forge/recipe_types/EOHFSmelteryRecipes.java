@@ -115,67 +115,67 @@ public class EOHFSmelteryRecipes {
             if (item instanceof BlockItem b && b.getBlock() instanceof EOreBlock || isVanillaBlock(inp.ORE)) {
                 // ore -> molten
                 if (generatedSmelteryRecipes.add("smelting_ore:" + mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.ORE, out.MOLTEN_FLUID, 270, LAVA, 100, getTemp(mat), 50, id.OreProc());
+                    smelting(yeet, inp.ORE, out.MOLTEN_FLUID, 270, LAVA, 100, getTemp(mat), 250, id.OreProc());
                 }
             }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EOBlock || isVanillaBlock(inp.STORAGE_BLOCK)) {
                 // block -> molten
                 if (generatedSmelteryRecipes.add("smelting_blocks:" + mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.STORAGE_BLOCK, out.MOLTEN_FLUID, isFours ? 360 : 810, LAVA, 50, getTemp(mat), 100, id.Storage());
+                    smelting(yeet, inp.STORAGE_BLOCK, out.MOLTEN_FLUID, isFours ? 360 : 810, LAVA, 50, getTemp(mat), 200, id.Storage());
                 }
                 // molten -> block
                 if (generatedSmelteryRecipes.add("casting_blocks:" + mat) && out.MOLTEN_FLUID != null && out.BLOCK != null) {
-                    basin(yeet, out.MOLTEN_FLUID, isFours ? 360 : 810, out.BLOCK, 100, id.Storage());
+                    basin(yeet, out.MOLTEN_FLUID, isFours ? 360 : 810, out.BLOCK, 200, id.Storage());
                 }
             }
 
             if (item instanceof EORawMaterialItem || isVanillaRaw(inp.RAW)) {
                 // raw mat -> molten
                 if (generatedSmelteryRecipes.add("smelting_raw_mats:" + mat) && !mat.equals("sulfur") && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.RAW, out.MOLTEN_FLUID, 180, LAVA, 100, getTemp(mat), 50, id.RawProc());
+                    smelting(yeet, inp.RAW, out.MOLTEN_FLUID, 180, LAVA, 100, getTemp(mat), 150, id.RawProc());
                 }
             }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EODustBlock) {
                 if (generatedSmelteryRecipes.add("smelting_dust_blocks:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.DUST_BLOCK, out.MOLTEN_FLUID, isFours ? 360 : 810, LAVA, 100, getTemp(mat), 50, id.DustBlock());
+                    smelting(yeet, inp.DUST_BLOCK, out.MOLTEN_FLUID, isFours ? 360 : 810, LAVA, 100, getTemp(mat), 200, id.DustBlock());
                 }
             }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EORawBlock || isVanillaRaw(inp.STORAGE_BLOCK_RAW)) {
                 // raw mat block -> molten
                 if (generatedSmelteryRecipes.add("smelting_raw_mat_blocks:" + mat) && !furnaceExclusions().contains(mat)) {
-                    smelting(yeet, inp.STORAGE_BLOCK_RAW, out.MOLTEN_FLUID, 1620, LAVA, 100, getTemp(mat), 50, id.RawProcBlock());
+                    smelting(yeet, inp.STORAGE_BLOCK_RAW, out.MOLTEN_FLUID, 1620, LAVA, 100, getTemp(mat), 250, id.RawProcBlock());
                 }
             }
 
             if (item instanceof EOIngotItem || isVanillaIngot(inp.INGOT)) {
                 // ingot -> molten
                 if (generatedSmelteryRecipes.add("smelting_ingots:" + mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.INGOT, out.MOLTEN_FLUID, 90, LAVA, 100, getTemp(mat), 50, id.Ingot());
+                    smelting(yeet, inp.INGOT, out.MOLTEN_FLUID, 90, LAVA, 100, getTemp(mat), 100, id.Ingot());
                 }
                 // molten -> ingot
                 if (generatedSmelteryRecipes.add("casting_ingots:" + mat) && out.MOLTEN_FLUID != null && out.INGOT != null) {
-                    table(yeet, INGOT_MOLD, out.MOLTEN_FLUID, 90, out.INGOT, 10, id.Ingot());
+                    table(yeet, INGOT_MOLD, out.MOLTEN_FLUID, 90, out.INGOT, 100, id.Ingot());
                 }
             }
 
             if (item instanceof EOGemItem || isVanillaGem(inp.GEM)) {
                 // gem -> molten
                 if (generatedSmelteryRecipes.add("smelting_gems:" + mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.GEM, out.MOLTEN_FLUID, 90, LAVA, 100, getTemp(mat), 50, id.Gem());
+                    smelting(yeet, inp.GEM, out.MOLTEN_FLUID, 90, LAVA, 100, getTemp(mat), 100, id.Gem());
                 }
                 // molten -> gem
                 if (generatedSmelteryRecipes.add("casting_gems:" + mat) && out.MOLTEN_FLUID != null  && out.GEM != null) {
-                    table(yeet, GEM_MOLD, out.MOLTEN_FLUID, 90, out.GEM, 10, id.Gem());
+                    table(yeet, GEM_MOLD, out.MOLTEN_FLUID, 90, out.GEM, 100, id.Gem());
                 }
             }
 
             if (item instanceof EODustItem) {
                 // dust -> molten
                 if (generatedSmelteryRecipes.add("smelting_dusts:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.DUST, out.MOLTEN_FLUID, 90, LAVA, 100, getTemp(mat), 50, id.Dust());
+                    smelting(yeet, inp.DUST, out.MOLTEN_FLUID, 90, LAVA, 100, getTemp(mat), 100, id.Dust());
                 }
             }
 
@@ -193,18 +193,18 @@ public class EOHFSmelteryRecipes {
                 }
                 // molten -> nugget
                 if (generatedSmelteryRecipes.add("casting_nuggets:" + mat) && out.MOLTEN_FLUID != null  && out.NUGGET != null) {
-                    table(yeet, NUGGET_MOLD, out.MOLTEN_FLUID, 10, out.NUGGET, 10, id.Nugget());
+                    table(yeet, NUGGET_MOLD, out.MOLTEN_FLUID, 10, out.NUGGET, 50, id.Nugget());
                 }
             }
 
             if (item instanceof EOGemShardItem) {
                 // gem shard -> molten
                 if (generatedSmelteryRecipes.add("smelting_gem_shards:" + mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.GEM_SHARDS, out.MOLTEN_FLUID,  isFours ? 23 : 10, LAVA, 100, getTemp(mat), 50, id.Nugget());
+                    smelting(yeet, inp.GEM_SHARDS, out.MOLTEN_FLUID,  isFours ? 23 : 10, LAVA, 100, getTemp(mat), 200, id.Nugget());
                 }
                 // molten -> gem shard
                 if (generatedSmelteryRecipes.add("casting_gem_shards:" + mat) && out.MOLTEN_FLUID != null  && out.GEM_SHARD != null) {
-                    table(yeet, NUGGET_MOLD, out.MOLTEN_FLUID, isFours ? 23 : 10, out.GEM_SHARD, 10, id.Nugget());
+                    table(yeet, NUGGET_MOLD, out.MOLTEN_FLUID, isFours ? 23 : 10, out.GEM_SHARD, 200, id.Nugget());
                 }
             }
 
@@ -215,7 +215,7 @@ public class EOHFSmelteryRecipes {
                 }
                 // molten -> rod
                 if (generatedSmelteryRecipes.add("casting_rods:" + mat) && out.MOLTEN_FLUID != null && out.ROD != null) {
-                    table(yeet, ROD_MOLD, out.MOLTEN_FLUID, 45, out.ROD, 10, id.Rod());
+                    table(yeet, ROD_MOLD, out.MOLTEN_FLUID, 45, out.ROD, 50, id.Rod());
                 }
             }
 
@@ -226,29 +226,29 @@ public class EOHFSmelteryRecipes {
                 }
                 // molten -> plate
                 if (generatedSmelteryRecipes.add("casting_plates:" + mat) && out.MOLTEN_FLUID != null  && out.PLATE != null) {
-                    table(yeet, PLATE_MOLD, out.MOLTEN_FLUID, 45, out.PLATE, 10, id.Plate());
+                    table(yeet, PLATE_MOLD, out.MOLTEN_FLUID, 45, out.PLATE, 50, id.Plate());
                 }
             }
 
             if (item instanceof EOFoilItem) {
                 // plate -> molten
                 if (generatedSmelteryRecipes.add("smelting_foils:" + mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.FOIL, out.MOLTEN_FLUID, 45, LAVA, 100, getTemp(mat), 50, id.Foil());
+                    smelting(yeet, inp.FOIL, out.MOLTEN_FLUID, 45, LAVA, 100, getTemp(mat), 200, id.Foil());
                 }
                 // molten -> plate
                 if (generatedSmelteryRecipes.add("casting_foils:" + mat) && out.MOLTEN_FLUID != null  && out.FOIL != null) {
-                    table(yeet, FOIL_MOLD, out.MOLTEN_FLUID, 45, out.FOIL, 10, id.Foil());
+                    table(yeet, FOIL_MOLD, out.MOLTEN_FLUID, 45, out.FOIL, 200, id.Foil());
                 }
             }
 
             if (item instanceof EOGearItem) {
                 // gear -> molten
                 if (generatedSmelteryRecipes.add("smelting_gears:" + mat) && out.MOLTEN_FLUID != null) {
-                    smelting(yeet, inp.GEAR, out.MOLTEN_FLUID, 360, LAVA, 100, getTemp(mat), 50, id.Gear());
+                    smelting(yeet, inp.GEAR, out.MOLTEN_FLUID, 360, LAVA, 100, getTemp(mat), 200, id.Gear());
                 }
                 // molten -> gear
                 if (generatedSmelteryRecipes.add("casting_gears:" + mat) && out.MOLTEN_FLUID != null  && out.GEAR != null) {
-                    table(yeet, GEAR_MOLD, out.MOLTEN_FLUID, 360, out.GEAR, 10, id.Gear());
+                    table(yeet, GEAR_MOLD, out.MOLTEN_FLUID, 360, out.GEAR, 200, id.Gear());
                 }
             }
         });
@@ -257,14 +257,14 @@ public class EOHFSmelteryRecipes {
             if (item instanceof GEOreShardItem) {
                 // geore shard -> molten
                 if (generatedSmelteryRecipes.add("smelting_geore_shards:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
-                    smeltingCompat(yeet, inp.GEOSHARDS, out.MOLTEN_FLUID, 202, LAVA, 100, getTemp(mat), 50, id.Geo() + "_shard");
+                    smeltingCompat(yeet, inp.GEOSHARDS, out.MOLTEN_FLUID, 202, LAVA, 100, getTemp(mat), 100, id.Geo() + "_shard");
                 }
             }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof GEOreShardBlock) {
                 // geore block -> molten
                 if (generatedSmelteryRecipes.add("smelting_geore_blocks:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
-                    smeltingCompat(yeet, inp.GEOSHARD_BLOCKS, out.MOLTEN_FLUID, 810, LAVA, 100, getTemp(mat), 50, id.Geo() + "_block");
+                    smeltingCompat(yeet, inp.GEOSHARD_BLOCKS, out.MOLTEN_FLUID, 810, LAVA, 100, getTemp(mat), 250, id.Geo() + "_block");
                 }
             }
         });

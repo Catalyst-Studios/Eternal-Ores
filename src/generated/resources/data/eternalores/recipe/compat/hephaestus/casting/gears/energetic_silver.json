@@ -9,7 +9,7 @@
   "cast": {
     "tag": "c:tools/molds/gear"
   },
-  "cooling_time": 10,
+  "cooling_time": 200,
   "fluid": {
     "amount": 360,
     "id": "eternalores:molten_energetic_silver"
