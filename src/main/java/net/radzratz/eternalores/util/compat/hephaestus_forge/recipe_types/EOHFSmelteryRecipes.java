@@ -143,7 +143,7 @@ public class EOHFSmelteryRecipes {
                 }
             }
 
-            if (item instanceof BlockItem b && b.getBlock() instanceof EORawBlock || isVanillaRaw(inp.STORAGE_BLOCK_RAW)) {
+            if (item instanceof BlockItem b && b.getBlock() instanceof EORawBlock || isVanillaRawBlock(inp.STORAGE_BLOCK_RAW)) {
                 // raw mat block -> molten
                 if (generatedSmelteryRecipes.add("smelting_raw_mat_blocks:" + mat) && !furnaceExclusions().contains(mat)) {
                     smelting(yeet, inp.STORAGE_BLOCK_RAW, out.MOLTEN_FLUID, 1620, LAVA, 100, getTemp(mat), 250, id.RawProcBlock());

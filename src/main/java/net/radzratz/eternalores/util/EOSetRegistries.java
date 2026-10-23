@@ -261,7 +261,7 @@ public class EOSetRegistries {
         QUARTZ_ENRICHED_IRON_SET = of(QUARTZ_ENRICHED_IRON_ID, CFG.EOQuartzEnrichedIronSet).mainAllAlloy(1f, METAL, T_IRON).tint(() -> 0xFFfdf4e8).moltenAndFluidTintable(false).temperature(1100).build();
         RED_STEEL_SET = of(RED_STEEL_ID, CFG.EORedSteelSet).mainAllAlloy(3f, METAL, T_IRON).temperature(3100).tint(() -> 0xFFb83b3b).moltenAndFluidTintable(false).build();
         RHODIUM_SET = of(RHODIUM_ID, CFG.EORhodiumSet).mainAllAlloy(3f, METAL, T_DIAMOND).temperature(1875).tint(() -> 0xFFe94ec2).moltenAndFluidTintable(false).build();
-        ROSE_GOLD_SET = of(ROSE_GOLD_ID, CFG.EORoseGoldSet).mainAllAlloy(3f, METAL, T_IRON).temperature(1200).tint(() -> 0xFFf09885).moltenAndFluidTintable(false).build();
+        ROSE_GOLD_SET = of(ROSE_GOLD_ID, CFG.EORoseGoldSet).mainAllAlloy(3f, METAL, T_IRON).temperature(1200).tint(() -> 0xFFffcbc0).moltenAndFluidTintable(false).build();
         RUBIDIUM_SET = of(RUBIDIUM_ID, CFG.EORubidiumSet).alloyWithoutFeatures(3f, METAL, T_DIAMOND).temperature(3040).tint(() -> 0xFFbbafe6).moltenAndFluidTintable(true).build();
         RUTHENIUM_SET = of(RUTHENIUM_ID, CFG.EORutheniumSet).mainAllAlloy(3f, METAL, T_DIAMOND).temperature(4100).tint(() -> 0xFFb2d5d5).moltenAndFluidTintable(false).build();
         SAMARIUM_SET = of(SAMARIUM_ID, CFG.EOSamariumSet).alloyWithoutGearPlateFoil(3f, METAL, T_IRON).temperature(2150).tint(() -> 0xFFd7dba1).moltenAndFluidTintable(false).build();

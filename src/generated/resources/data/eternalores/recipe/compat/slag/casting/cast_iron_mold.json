@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:table_casting",
+  "cast_item": {
+    "imprint": true,
+    "ingredient": {
+      "tag": "slag:imprintable"
+    },
+    "keep_fireproof": true
+  },
+  "ingredient": {
+    "amount": 72,
+    "fluid": "eternalores:molten_cast_iron"
+  },
+  "result": {
+    "count": 1,
+    "id": "slag:cast_iron_mold"
+  }
+}

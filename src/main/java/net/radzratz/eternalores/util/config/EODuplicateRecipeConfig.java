@@ -23,6 +23,8 @@ public class EODuplicateRecipeConfig {
     public static ModConfigSpec.BooleanValue railcraftRecipes;
     public static ModConfigSpec.BooleanValue energizedPowerRecipes;
     public static ModConfigSpec.BooleanValue actuallyAdditionsRecipes;
+    public static ModConfigSpec.BooleanValue hephaestusRecipes;
+    public static ModConfigSpec.BooleanValue slagRecipes;
 
     static {
         Pair<EODuplicateRecipeConfig, ModConfigSpec> pair = new ModConfigSpec.Builder().configure(EODuplicateRecipeConfig::new);
@@ -69,6 +71,8 @@ public class EODuplicateRecipeConfig {
                     Actually Additions: Crushing
                     Energized Power: Alloy Furnace and Pulverizer
                     Create: Splashing, Mixing and Crushing
+                    Slag: Basin and Table Casting, Melting, and Alloying
+                    Hephaestus: Basin and Table Casting, Melting, and Alloying
                  ]
                 
                  No core progression recipes are touched, and no mod functionality is affected in any way whatsoever.
@@ -100,6 +104,8 @@ public class EODuplicateRecipeConfig {
         railcraftRecipes = toggle(bldr, "railcraft");
         energizedPowerRecipes = toggle(bldr, "energizedpower");
         actuallyAdditionsRecipes = toggle(bldr, "actuallyadditions");
+        hephaestusRecipes = toggle(bldr, "hephaestus");
+        slagRecipes = toggle(bldr, "slag");
 
         bldr.pop();
 

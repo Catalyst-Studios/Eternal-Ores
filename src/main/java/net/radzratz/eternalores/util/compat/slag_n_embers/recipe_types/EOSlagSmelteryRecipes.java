@@ -1,9 +1,16 @@
 package net.radzratz.eternalores.util.compat.slag_n_embers.recipe_types;
 
+import dev.lopyluna.slag.content.blocks.casting.CastItem;
 import dev.lopyluna.slag.content.datagen.AlloyingRecipeBuilder;
 import dev.lopyluna.slag.content.datagen.BasinCastingRecipeBuilder;
 import dev.lopyluna.slag.content.datagen.MeltingRecipeBuilder;
 import dev.lopyluna.slag.content.datagen.TableCastingRecipeBuilder;
+import dev.lopyluna.slag.content.items.dynamic_part.DynamicPartItem;
+import dev.lopyluna.slag.content.types.Incompatible;
+import dev.lopyluna.slag.content.types.MaterialType;
+import dev.lopyluna.slag.content.types.PartType;
+import dev.lopyluna.slag.register.AllDynamicTypes;
+import dev.lopyluna.slag.register.AllItems;
 import net.minecraft.advancements.critereon.RecipeUnlockedTrigger;
 import net.minecraft.core.Registry;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -11,6 +18,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.material.Fluid;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.radzratz.eternalores.block.types.EOBlock;
@@ -24,12 +32,10 @@ import net.radzratz.eternalores.util.recipes.util.EOAdvancementYeeter;
 import net.radzratz.eternalores.util.recipes.util.EORecipePaths;
 
 import javax.annotation.Nullable;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Stream;
 
+import static dev.lopyluna.slag.register.AllTags.IMPRINTABLE;
 import static net.radzratz.eternalores.util.EOUtils.*;
 import static net.radzratz.eternalores.util.recipes.types.EOCommonRecipes.FLUID_ALLOYS;
 import static net.radzratz.eternalores.util.recipes.util.EORecipeActions.itemFluidGeOreRecipeActions;
@@ -41,6 +47,38 @@ import static net.radzratz.eternalores.util.recipes.util.EORecipePaths.resolveRe
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Tools.*;
 
 public class EOSlagSmelteryRecipes {
+    private static final Map<String, MaterialType> SLAG_MATS = new HashMap<>();
+
+    // luna if ya see this mess, I beg and implore ya to use TagKey<Fluid> instead of FluidStack on 'em recipes pretty pwease :c
+    // that way this spaghetti of a thing I call code is way more compatible with Slag
+    private static void slagParts(RecipeOutput output, String mat, Fluid molten, MaterialType slagMat) {
+        DynamicPartItem item = AllItems.DYNAMIC_PART.get();
+
+        for (PartType part : AllItems.PART_TYPES) {
+            TagKey<Item> cast = AllItems.getCast(part);
+            int mb = partMb(slagMat, part);
+
+            // we skip them plates cuz' EO plates already have said part component
+            if (part.id.getPath().equals("plate")) continue;
+
+            if (cast == null || mb <= 0 || !Incompatible.compatible(slagMat, part)) continue;
+
+            ItemStack stack = item.getDefaultInstance();
+            item.setMaterialType(stack, slagMat);
+            item.setPartType(stack, part);
+
+            String sfx = "parts/" + part.id.getPath() + "_" + mat;
+            tableToolPart(output, cast, molten, mb, stack, sfx);
+            smeltingToolPart(output, stack, molten, mb, sfx);
+        }
+    }
+
+    private static int partMb(MaterialType slagMat, PartType part) {
+        String id = slagMat.id.getPath();
+        int mb = (id.equals("obsidian") ? 648 : 72) * AllItems.getSize(part);
+        return mb > 0 && id.equals("netherite") ? 72 : mb;
+    }
+
     private static void smelting(RecipeOutput output, Object input, Fluid result, int rCount, String sfx) {
         if (result == null) return;
 
@@ -63,6 +101,16 @@ public class EOSlagSmelteryRecipes {
                         .unlockedBy("has_", RecipeUnlockedTrigger.unlocked(EO(PATH.SlagSmelt() + sfx)));
 
         bldr.save(yeet.withConditions(SLAG_MOD, GEORE_MOD), EO(PATH.SlagSmelt() + sfx));
+    }
+
+    private static void smeltingToolPart(RecipeOutput output, ItemStack input, Fluid result, int rCount, String sfx) {
+        EOAdvancementYeeter yeet = new EOAdvancementYeeter(output);
+
+        MeltingRecipeBuilder bldr = (MeltingRecipeBuilder)
+                MeltingRecipeBuilder.create(new FluidStack(result, rCount), input)
+                        .unlockedBy("has_", RecipeUnlockedTrigger.unlocked(EO(PATH.SlagSmelt() + sfx)));
+
+        bldr.save(yeet.withConditions(SLAG_MOD), EO(PATH.SlagSmelt() + sfx));
     }
 
     private static void basin(RecipeOutput output, Fluid input, int iCount, Item result, String sfx) {
@@ -89,6 +137,39 @@ public class EOSlagSmelteryRecipes {
         bldr.save(yeet.withConditions(SLAG_MOD), EO(PATH.SlagCasting() + sfx));
     }
 
+    private static void tableToolPart(RecipeOutput output, TagKey<Item> cast, Fluid fInput, int amount, ItemStack result, String sfx) {
+        EOAdvancementYeeter yeet = new EOAdvancementYeeter(output);
+
+        TableCastingRecipeBuilder bldr = (TableCastingRecipeBuilder)
+                TableCastingRecipeBuilder.create(result, new FluidStack(fInput, amount), cast)
+                        .unlockedBy("has_", RecipeUnlockedTrigger.unlocked(EO(PATH.SlagCasting() + sfx)));
+
+        bldr.save(yeet.withConditions(SLAG_MOD), EO(PATH.SlagCasting() + sfx));
+    }
+
+    private static void castIronMoldCasting(RecipeOutput output, Fluid fluid) {
+        EOAdvancementYeeter yeet = new EOAdvancementYeeter(output);
+
+        TableCastingRecipeBuilder bldr = (TableCastingRecipeBuilder)
+                TableCastingRecipeBuilder.create(AllItems.CAST_IRON_MOLD.get(), fluid, 72)
+                        .castItem(CastItem.imprint(Ingredient.of(IMPRINTABLE)))
+                        .unlockedBy("has_", RecipeUnlockedTrigger.unlocked(EO(PATH.SlagCasting() + "cast_iron_mold")));
+
+        bldr.save(yeet.withConditions(SLAG_MOD), EO(PATH.SlagCasting() + "cast_iron_mold"));
+    }
+
+    private static void castIronMoldMelting(RecipeOutput output, Fluid fluid) {
+        EOAdvancementYeeter yeet = new EOAdvancementYeeter(output);
+
+        MeltingRecipeBuilder bldr = (MeltingRecipeBuilder)
+                MeltingRecipeBuilder.create(new FluidStack(fluid, 72), AllItems.CAST_IRON_MOLD.get())
+                        .unlockedBy("has_", RecipeUnlockedTrigger.unlocked(EO(PATH.SlagSmelt() + "cast_iron_mold")));
+
+        bldr.save(yeet.withConditions(SLAG_MOD), EO(PATH.SlagSmelt() + "cast_iron_mold"));
+    }
+
+
+    @SuppressWarnings("all")
     private static void alloying(RecipeOutput output, Fluid inputOne, int iCount, Fluid inputTwo, int iTCount, @Nullable Fluid inputThree,
                                  int iTHCount, @Nullable Fluid inputFour, int iFCount, Fluid result, int rCount, String sfx) {
         List<FluidStack> stacks = new ArrayList<>();
@@ -124,8 +205,23 @@ public class EOSlagSmelteryRecipes {
             alloying(yeet, r.input(), r.inputCount(), r.inputTwo(), r.inputTwoCount(), r.inputThree(), r.inputThreeCount(), null, 0, r.result(), r.resultCount(), base + r.sfx());
         });
 
+        SLAG_MATS.clear();
+        AllDynamicTypes.getAllMaterials().forEach(m -> SLAG_MATS.put(m.id.getPath(), m));
+        if (SLAG_MATS.containsKey("aluminium")) SLAG_MATS.put("aluminum", SLAG_MATS.get("aluminium"));
+        if (SLAG_MATS.containsKey("golden")) SLAG_MATS.put("gold", SLAG_MATS.get("golden"));
+
         itemFluidRecipeActions(itemReg, fluidReg, (item, path, mat, inp, out, id) -> {
             boolean isFours = FOURS_DUST_MATERIALS.contains(mat) && !formTypeExclusions().contains(mat);
+
+            MaterialType slagMat = SLAG_MATS.get(mat);
+            if (slagMat != null && out.MOLTEN_FLUID != null && generatedSmelteryRecipes.add("slag_parts:" + mat)) {
+                slagParts(yeet, mat, out.MOLTEN_FLUID, slagMat);
+            }
+
+            if (mat.equals("cast_iron") && out.MOLTEN_FLUID != null && generatedSmelteryRecipes.add("slag_cast_iron_mold")) {
+                castIronMoldCasting(yeet, out.MOLTEN_FLUID);
+                castIronMoldMelting(yeet, out.MOLTEN_FLUID);
+            }
 
             if (item instanceof BlockItem b && b.getBlock() instanceof EOreBlock || isVanillaBlock(inp.ORE)) {
                 // ore -> molten
@@ -158,7 +254,7 @@ public class EOSlagSmelteryRecipes {
                 }
             }
 
-            if (item instanceof BlockItem b && b.getBlock() instanceof EORawBlock || isVanillaRaw(inp.STORAGE_BLOCK_RAW)) {
+            if (item instanceof BlockItem b && b.getBlock() instanceof EORawBlock || isVanillaRawBlock(inp.STORAGE_BLOCK_RAW)) {
                 // raw mat block -> molten
                 if (generatedSmelteryRecipes.add("smelting_raw_mat_blocks:" + mat) && !furnaceExclusions().contains(mat)) {
                     smelting(yeet, inp.STORAGE_BLOCK_RAW, out.MOLTEN_FLUID, 864, id.RawProcBlock());
@@ -191,6 +287,27 @@ public class EOSlagSmelteryRecipes {
                 // dust -> molten
                 if (generatedSmelteryRecipes.add("smelting_dusts:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
                     smelting(yeet, inp.DUST, out.MOLTEN_FLUID, 72, id.Dust());
+                }
+            }
+
+            if (item instanceof EODirtyDustItem) {
+                // dirty dust -> molten
+                if (generatedSmelteryRecipes.add("smelting_dirty_dusts:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
+                    smelting(yeet, inp.DIRTY_DUST, out.MOLTEN_FLUID, 96, id.Dust() + "_dirty");
+                }
+            }
+
+            if (item instanceof EOClumpItem) {
+                // clump -> molten
+                if (generatedSmelteryRecipes.add("smelting_clumps:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
+                    smelting(yeet, inp.CLUMP, out.MOLTEN_FLUID, 96, id.Clump());
+                }
+            }
+
+            if (item instanceof EOSmallClumpItem) {
+                // small clump -> molten
+                if (generatedSmelteryRecipes.add("smelting_small_clumps:" + mat) && !furnaceExclusions().contains(mat) && out.MOLTEN_FLUID != null) {
+                    smelting(yeet, inp.SMALL_CLUMP, out.MOLTEN_FLUID, 10, id.Clump() + "_small");
                 }
             }
 

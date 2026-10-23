@@ -1,0 +1,564 @@
+{
+  "values": [
+    {
+      "id": "eternalores:plate_aluminum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_alumite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_amber",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_americium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_amethyst",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_andesite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_annealed_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_apatite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_arcanum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_ardite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_aurorium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_basalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_battery_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_beryllium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_biosteel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_bismuth",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_black_bronze",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_black_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_black_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_blackstone",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_blue_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_brass",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_britannia_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_bronze",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_calcite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_cast_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_cast_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_catalyrium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_certus_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_chromium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_cinnabar",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_cobalt",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_constantan",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_cosmic_matter",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_crystalline_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_cupronickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_deepslate",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_diamond",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_diorite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_electrum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_emerald",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_end_stone",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_enderium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_energetic_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_eternal_dark",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_eternal_light",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_eternity",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_etherium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_fluix",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_gallium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_garnet",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_granite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_graphite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_gravitronium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_hafnium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_hepatizon",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_invar",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_iridium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_jade",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_kanthal",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_lapis",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_lead",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_lumium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_magnesium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_manganese",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_melodic_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_modularium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_molybdenum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_monazite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_morphite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_nanite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_necroticarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_neodymium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_neptunium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_netherite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_netherrack",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_nethersteel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_nickel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_novalloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_obsidian",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_onyx",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_osgloglas",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_osmium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_palladium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_pearl",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_peridot",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_pewter",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_pig_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_platinum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_plutonium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_primornium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_prismarine",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_pyrolite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_quantiquarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_quartz",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_quartz_enriched_copper",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_quartz_enriched_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_red_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_redstone",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_rhodium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_rose_gold",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_ruby",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_ruthenium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_sanguis_vivus",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_sapphire",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_sculkite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_shadowsteel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_signalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_silicon",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_silver",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_source",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_spectral_sky_bluerite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_spinel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_stainless_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_steel",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_stellar_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_stellarium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_stone",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_tachyarite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_tantalum",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_tanzanite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_temictetl",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_tin",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_tuff",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_tungsten",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_ultimatitanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_universium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_uraninite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_uranium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_vanadium",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_vivid_alloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_voiderite",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_wooden",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_wrought_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_zinc",
+      "required": false
+    },
+    {
+      "id": "eternalores:plate_zircon",
+      "required": false
+    }
+  ]
+}

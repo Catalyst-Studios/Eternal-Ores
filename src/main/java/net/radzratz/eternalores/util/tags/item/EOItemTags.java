@@ -35,13 +35,13 @@ public class EOItemTags {
 
     public static class Compat {
         public static final TagKey<Item> PRESS_MOLDS = crteEPTag("metal_press/press_molds");
-        public static final TagKey<Item> MOLDS_REUSABLE = crteReusable("molds/reusable");
         public static final TagKey<Item> ETERNAL_BLACKLIST = crteFAModifierTag("eternal_incompatible");
         public static final TagKey<Item> STONE_REPLACEABLES_ITEM = crteEOGeneralTag("stone_replaceables");
         public static final TagKey<Item> SLATE_REPLACEABLES_ITEM = crteEOGeneralTag("slate_replaceables");
         public static final TagKey<Item> GEO_BUDDING_BLOCKS_ITEM = crteGeOreBuddingTag();
         public static final TagKey<Item> CREATE_CRUSHED_RAW_MATERIALS = crteCreateTag("crushed_raw_materials");
         public static final TagKey<Item> MEK_ENRICHED = crteMekEnriched("enriched");
+        public static final TagKey<Item> SLAG_PLATES = crteReusable("cast/plates");
 
         private static TagKey<Item> crteEPTag(String name) {
             return ItemTags.create(EP(name));

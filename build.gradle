@@ -184,6 +184,7 @@ dependencies {
     implementation "top.theillusivec4.curios:curios-neoforge:${curios_version}"
     implementation "curse.maven:excessive-utilities-1482270:8710603"
     implementation "curse.maven:hephaestus-forge-1542467:9055315"
+    implementation "curse.maven:hephaestus-tools-1725286:9065912"
     implementation "curse.maven:slag-n-embers-1360010:9005870"
 
     implementation "curse.maven:bbl-casting-1052163:8105156"

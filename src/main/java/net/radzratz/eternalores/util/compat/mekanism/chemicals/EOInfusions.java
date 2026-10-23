@@ -22,7 +22,7 @@ public class EOInfusions {
     public static final ChemicalDeferredRegister EO_CHEMICALS = new ChemicalDeferredRegister(EternalOres.id);
 
     static {
-        INF_ALUMINUM = rgtrInfusion("aluminum", 0x8cf4e2, CFG.chemicalSet.aluminumInfusion, CFG.chemicalSet.allInfusions);
+        INF_ALUMINUM = rgtrInfusion("aluminum", 0xc9d0d0, CFG.chemicalSet.aluminumInfusion, CFG.chemicalSet.allInfusions);
         INF_AMBER = rgtrInfusion("amber", 0xffb818, CFG.chemicalSet.amberInfusion, CFG.chemicalSet.allInfusions);
         INF_AMETHYST = rgtrInfusion("amethyst", 0xcfa0f3, CFG.chemicalSet.amethystInfusion, CFG.chemicalSet.allInfusions);
         INF_APATITE = rgtrInfusion("apatite", 0x60f9ff, CFG.chemicalSet.apatiteInfusion, CFG.chemicalSet.allInfusions);

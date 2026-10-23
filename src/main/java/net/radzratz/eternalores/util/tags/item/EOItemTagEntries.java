@@ -81,6 +81,7 @@ public class EOItemTagEntries implements ITagItemEntryProvider {
 
             if (item instanceof EOPlateItem) {
                 register.register(entry, PLATES, true, false);
+                register.register(entry, SLAG_PLATES, false, true);
             }
 
             if (item instanceof EORodItem) {

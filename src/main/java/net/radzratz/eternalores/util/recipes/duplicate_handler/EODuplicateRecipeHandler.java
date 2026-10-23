@@ -70,7 +70,7 @@ public class EODuplicateRecipeHandler {
             "copper", "iron", "gold", "platinum", "lead", "osmium", "electrum", "netherite", "coal", "lapis", "fluorite",
             "aluminum", "tin", "silver", "nickel", "zinc", "uranium", "biosteel", "obsidian", "quartz", "emerald",
             "steel", "redstone", "certus", "fluix", "prismarine", "bronze", "charcoal", "diamond", "gravel", "electrum",
-            "constantan", "brass", "cobalt", "ardite", "tungsten", "rose_gold", "invar"
+            "constantan", "brass", "cobalt", "ardite", "tungsten", "rose_gold", "invar", "cast_iron"
     );
 
     private static final List<RecipeGroup> GROUPS = List.of(
@@ -203,6 +203,53 @@ public class EODuplicateRecipeHandler {
             )),
             new RecipeGroup(ACTUALLY_ADDITIONS, EODuplicateRecipeConfig.actuallyAdditionsRecipes, List.of(
                     "crushing/bone"
+            )),
+            new RecipeGroup(HEPHAESTUS, EODuplicateRecipeConfig.hephaestusRecipes, List.of(
+                    "smeltery/alloying/bronze",
+                    "smeltery/alloying/electrum",
+                    "smeltery/alloying/constantan",
+                    "smeltery/alloying/invar",
+                    "smeltery/alloying/brass"
+            )),
+            new RecipeGroup(SLAG_EMBERS, EODuplicateRecipeConfig.slagRecipes, List.of(
+                    "alloying/molten_brass",
+                    "alloying/molten_bronze",
+                    "alloying/molten_electrum",
+                    "alloying/molten_rose_gold"
+            ), List.of(
+                    "melting/axe_head_{mat}",
+                    "melting/pickaxe_head_{mat}",
+                    "melting/helmet_{mat}",
+                    "melting/raw_{mat}_materials",
+                    "melting/chestplate_{mat}",
+                    "melting/leggings_{mat}",
+                    "melting/{mat}_dusts",
+                    "melting/shovel_head_{mat}",
+                    "melting/{mat}_clumps",
+                    "melting/raw_{mat}_blocks",
+                    "melting/sword_blade_{mat}",
+                    "melting/hoe_head_{mat}",
+                    "melting/plate_{mat}",
+                    "melting/guard_{mat}",
+                    "melting/boots_{mat}",
+                    "melting/{mat}_small_clump",
+                    "casting/basin/{mat}_block",
+                    "casting/table/axe_head_{mat}",
+                    "casting/table/guard_{mat}",
+                    "casting/table/{mat}_dust",
+                    "casting/table/pickaxe_head_{mat}",
+                    "casting/table/leggings_{mat}",
+                    "casting/table/helmet_{mat}",
+                    "casting/table/sword_blade_{mat}",
+                    "casting/table/shovel_head_{mat}",
+                    "casting/table/hoe_head_{mat}",
+                    "casting/table/plate_{mat}",
+                    "casting/table/boots_{mat}",
+                    "casting/table/{mat}_ingot",
+                    "casting/table/{mat}_rod",
+                    "casting/table/{mat}_bars",
+                    "casting/table/chestplate_{mat}",
+                    "casting/table/{mat}_nugget"
             ))
     );
 

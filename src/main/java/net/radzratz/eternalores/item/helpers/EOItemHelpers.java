@@ -12,12 +12,15 @@ import net.radzratz.eternalores.item.tools.*;
 import net.radzratz.eternalores.item.types.*;
 import net.radzratz.eternalores.item.types.EOSmallDustItem;
 import net.radzratz.eternalores.item.special.ingots.EOUnstableIngot;
+import net.radzratz.eternalores.util.compat.slag_n_embers.EOSlagPlateItem;
 import net.radzratz.eternalores.util.compat.slag_n_embers.SlagTable;
 
 import java.util.function.BooleanSupplier;
 
 import static net.radzratz.eternalores.util.EOSetRegistries.EO_ITEMS;
 import static net.radzratz.eternalores.util.EOMaterials.materialPrefixSuffixes.*;
+import static net.radzratz.eternalores.util.EOUtils.slag_n_embers_mod;
+import static net.radzratz.eternalores.util.compat.slag_n_embers.SlagTable.slagId;
 
 public class EOItemHelpers {
 
@@ -33,6 +36,7 @@ public class EOItemHelpers {
         return EO_ITEMS.register(name, () -> new EOTeleporter(new Item.Properties().rarity(Rarity.EPIC).stacksTo(1)));
     }
 
+    @SuppressWarnings("unused")
     public static DeferredItem<EOMolds> rgtrMolds(String name, BooleanSupplier mold) {
         return EO_ITEMS.register(name, () -> new EOMolds(new Item.Properties().stacksTo(1), mold));
     }
@@ -45,6 +49,13 @@ public class EOItemHelpers {
             }
             return new EOMolds(properties, mold);
         });
+    }
+
+    public static DeferredItem<EOPlateItem> rgtrPlate(String name, BooleanSupplier materialSet, BooleanSupplier enabled) {
+        String slagId = slagId(name.substring(PLATE.length()));
+        return EO_ITEMS.register(name, () -> slagId != null && slag_n_embers_mod
+                ? EOSlagPlateItem.create(materialSet, enabled, slagId)
+                : new EOPlateItem(new Item.Properties(), materialSet, enabled));
     }
 
     public static DeferredItem<EOGemCutter> rgtrCutter(String name, TagKey<Item> repairMat, int durability, BooleanSupplier tool) {
@@ -109,10 +120,6 @@ public class EOItemHelpers {
 
     public static DeferredItem<EOSmallDustItem> rgtrSmallDust(String name, int burnTime, BooleanSupplier materialSet, BooleanSupplier enabled) {
         return EO_ITEMS.register(name, () -> new EOSmallDustItem(new Item.Properties(), burnTime, materialSet, enabled));
-    }
-
-    public static DeferredItem<EOPlateItem> rgtrPlate(String name, BooleanSupplier materialSet, BooleanSupplier enabled) {
-        return EO_ITEMS.register(name, () -> new EOPlateItem(new Item.Properties(), materialSet, enabled));
     }
 
     public static DeferredItem<EORodItem> rgtrRod(String name, BooleanSupplier materialSet, BooleanSupplier enabled) {

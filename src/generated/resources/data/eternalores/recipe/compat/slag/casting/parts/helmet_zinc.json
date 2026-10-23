@@ -1,0 +1,22 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "slag"
+    }
+  ],
+  "type": "slag:table_casting",
+  "cast": "slag:cast/helmets",
+  "ingredient": {
+    "amount": 216,
+    "fluid": "eternalores:molten_zinc"
+  },
+  "result": {
+    "components": {
+      "slag:material_type": "slag:zinc",
+      "slag:part_type": "slag:helmet"
+    },
+    "count": 1,
+    "id": "slag:dynamic_part"
+  }
+}

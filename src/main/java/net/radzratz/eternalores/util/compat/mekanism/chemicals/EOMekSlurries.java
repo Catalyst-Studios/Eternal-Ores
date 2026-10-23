@@ -22,7 +22,7 @@ public class EOMekSlurries {
     public static final ChemicalDeferredRegister EO_SLURRYS = new ChemicalDeferredRegister(EternalOres.id);
 
     static {
-        ALUMINUM_SLURRY = rgtrSlurry("aluminum", 0xFF947a7a, CFG.chemicalSet.aluminumSlurry, CFG.chemicalSet.allSlurry);
+        ALUMINUM_SLURRY = rgtrSlurry("aluminum", 0xFFc9d0d0, CFG.chemicalSet.aluminumSlurry, CFG.chemicalSet.allSlurry);
         ARDITE_SLURRY = rgtrSlurry("ardite", 0xFFd66113, CFG.chemicalSet.arditeSlurry, CFG.chemicalSet.allSlurry);
         BERYLLIUM_SLURRY = rgtrSlurry("beryllium", 0xFF8acaa8, CFG.chemicalSet.berylliumSlurry, CFG.chemicalSet.allSlurry);
         CATALYRIUM_SLURRY = rgtrSlurryAnim("catalyrium", 0xFF7f1f00, CFG.chemicalSet.catalyriumSlurry, CFG.chemicalSet.allSlurry, 0x1f2843, 0x7f1f00);
