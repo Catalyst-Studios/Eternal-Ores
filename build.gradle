@@ -156,6 +156,26 @@ configurations {
     runtimeClasspath.extendsFrom localRuntime
 }
 
+def productiveBeesDep = "curse.maven:productivebees-377897:8987967"
+
+def getProductiveLibFiles(String depNotation) {
+    def outputFolder = file(".gradle/extracted-libs")
+    outputFolder.mkdirs()
+
+    def pbConfig = configurations.detachedConfiguration(
+        dependencies.create(depNotation)
+    ).files
+
+    copy {
+        from pbConfig.collect { zipTree(it) }
+        into outputFolder
+        include 'META-INF/jarjar/*.jar'
+        eachFile { path = name }
+        includeEmptyDirs = false
+    }
+    return fileTree(outputFolder)
+} 
+
 dependencies {
     implementation "mekanism:Mekanism:${mekanism_version}"
     implementation "curse.maven:mekanism-more-machine-${moremachine_version}"
@@ -186,7 +206,7 @@ dependencies {
     implementation "curse.maven:hephaestus-forge-1542467:9055315"
     implementation "curse.maven:hephaestus-tools-1725286:9065912"
     implementation "curse.maven:slag-n-embers-1360010:9005870"
-    implementation "curse.maven:productivebees-377897:8987967"
+    implementation productiveBeesDep
     implementation "curse.maven:ex-pattern-provider-892005:9305327"
 
     implementation "curse.maven:bbl-casting-1052163:8105156"
@@ -205,7 +225,7 @@ dependencies {
     compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
     compileOnly ("com.almostreliable.mods:almostunified-neoforge:${au_version}")
     compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
-    compileOnly files('libraries/productivelib-1.21.1-0.2.0.jar')
+    compileOnly getProductiveLibFiles(productiveBeesDep)
 
     runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
     // runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
