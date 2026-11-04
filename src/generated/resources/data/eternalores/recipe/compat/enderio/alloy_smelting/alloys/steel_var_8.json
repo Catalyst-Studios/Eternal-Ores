@@ -10,16 +10,16 @@
   "experience": 0.5,
   "inputs": [
     {
-      "count": 2,
-      "tag": "c:dusts/wrought_iron"
+      "count": 1,
+      "tag": "c:dusts/iron"
     },
     {
       "count": 1,
-      "item": "eternalores:anthracite_coal"
+      "tag": "c:coal_coke"
     }
   ],
   "output": {
-    "count": 3,
+    "count": 4,
     "id": "eternalores:steel_ingot"
   }
 }

@@ -389,10 +389,6 @@
       "required": false
     },
     {
-      "id": "eternalores:molten_refined_gas",
-      "required": false
-    },
-    {
       "id": "eternalores:molten_rhodium",
       "required": false
     },
@@ -678,6 +674,10 @@
     },
     {
       "id": "eternalores:plasma_novalloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_oganesson",
       "required": false
     },
     {

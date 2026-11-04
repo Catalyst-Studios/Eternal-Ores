@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "eternalores:oxygen"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:copper"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "eternalores:annealed_copper"
+    }
+  ],
+  "type": "productivebees:bee_breeding",
+  "offspring": "eternalores:annealed_copper",
+  "parent1": "eternalores:oxygen",
+  "parent2": "productivebees:copper",
+  "parentDeathChance": 0.0
+}

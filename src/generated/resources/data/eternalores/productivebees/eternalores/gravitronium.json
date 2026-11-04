@@ -1,0 +1,13 @@
+{
+  "attackResponse": "lava",
+  "coldResistant": true,
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "fireproof": true,
+  "flowerTag": "c:storage_blocks/gravitronium",
+  "primaryColor": "#90a6c5",
+  "secondaryColor": "#576a85",
+  "selfbreed": false,
+  "selfheal": true,
+  "speed": 2.5,
+  "waterproof": true
+}

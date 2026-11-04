@@ -8,10 +8,10 @@
   "type": "oritech:foundry",
   "ingredients": [
     {
-      "tag": "c:ingots/iron"
+      "tag": "c:ingots/wrought_iron"
     },
     {
-      "tag": "c:dusts/coal"
+      "tag": "c:coal_anthracite"
     }
   ],
   "results": [

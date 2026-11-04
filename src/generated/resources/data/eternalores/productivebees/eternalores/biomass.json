@@ -1,0 +1,7 @@
+{
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "flowerTag": "c:fuels/bio/block",
+  "primaryColor": "#6f6b23",
+  "renderer": "thicc",
+  "secondaryColor": "#514514"
+}

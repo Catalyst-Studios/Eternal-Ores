@@ -267,6 +267,13 @@ public class EOMaterials {
         public static final String DIONIZED_WATER_ID = "dionized_water";
         public static final String AMMONIA_SOLUTION_ID = "ammonia_solution";
         public static final String SALT_WATER_ID = "salt_water";
+        public static final String MERCURY_ID = "mercury";
+        public static final String BROMINE_ID = "bromine";
+        public static final String HYDRAZINE_ID = "hydrazine";
+        public static final String TITANIUM_TETRACHLORIDE_ID = "titanium_tetrachloride";
+        public static final String SILICON_TETRACHLORIDE_ID = "silicon_tetrachloride";
+        public static final String PHOSPHORUS_TRICHLORIDE_ID = "phosphorus_trichloride";
+        public static final String THIONYL_CHLORIDE_ID = "thionyl_chloride";
         public static final String ACETONE_ID = "acetone";
         public static final String METHANOL_ID = "methanol";
         public static final String ETHANOL_ID = "ethanol";
@@ -277,6 +284,19 @@ public class EOMaterials {
         public static final String HEXANE_ID = "hexane";
         public static final String HYDROGEN_PEROXIDE_ID = "hydrogen_peroxide";
         public static final String GLYCEROL_ID = "glycerol";
+        public static final String ETHYLENE_GLYCOL_ID = "ethylene_glycol";
+        public static final String ISOPROPANOL_ID = "isopropanol";
+        public static final String FORMALDEHYDE_ID = "formaldehyde";
+        public static final String ETHYL_ACETATE_ID = "ethyl_acetate";
+        public static final String DIETHYL_ETHER_ID = "diethyl_ether";
+        public static final String TETRAHYDROFURAN_ID = "tetrahydrofuran";
+        public static final String ACETONITRILE_ID = "acetonitrile";
+        public static final String ANILINE_ID = "aniline";
+        public static final String NITROBENZENE_ID = "nitrobenzene";
+        public static final String CHLOROFORM_ID = "chloroform";
+        public static final String DICHLOROMETHANE_ID = "dichloromethane";
+        public static final String CARBON_TETRACHLORIDE_ID = "carbon_tetrachloride";
+        public static final String DIMETHYL_SULFOXIDE_ID = "dimethyl_sulfoxide";
         public static final String PHENOL_ID = "phenol";
         public static final String PLANT_OIL_ID = "plant_oil";
         public static final String RESIN_ID = "resin";
@@ -299,6 +319,32 @@ public class EOMaterials {
         public static final String OCTANE_ID = "octane";
         public static final String CYCLOHEXANE_ID = "cyclohexane";
         public static final String TETRAFLUOROETHYLENE_ID = "tetrafluoroethylene";
+        public static final String STYRENE_ID = "styrene";
+        public static final String ETHYLENE_OXIDE_ID = "ethylene_oxide";
+
+        public static final String SODIUM_HYDROXIDE_ID = "sodium_hydroxide";
+        public static final String POTASSIUM_HYDROXIDE_ID = "potassium_hydroxide";
+        public static final String CALCIUM_HYDROXIDE_ID = "calcium_hydroxide";
+        public static final String SODIUM_HYPOCHLORITE_ID = "sodium_hypochlorite";
+
+        public static final String HYDROCHLORIC_ACID_ID = "hydrochloric_acid";
+        public static final String SULFURIC_ACID_ID = "sulfuric_acid";
+        public static final String NITRIC_ACID_ID = "nitric_acid";
+        public static final String HYDROFLUORIC_ACID_ID = "hydrofluoric_acid";
+        public static final String ACETIC_ACID_ID = "acetic_acid";
+        public static final String PHOSPHORIC_ACID_ID = "phosphoric_acid";
+        public static final String HYDROBROMIC_ACID_ID = "hydrobromic_acid";
+        public static final String BORIC_ACID_ID = "boric_acid";
+        public static final String CARBONIC_ACID_ID = "carbonic_acid";
+        public static final String FORMIC_ACID_ID = "formic_acid";
+        public static final String CITRIC_ACID_ID = "citric_acid";
+        public static final String OXALIC_ACID_ID = "oxalic_acid";
+        public static final String LACTIC_ACID_ID = "lactic_acid";
+        public static final String SULFUROUS_ACID_ID = "sulfurous_acid";
+        public static final String HYPOCHLOROUS_ACID_ID = "hypochlorous_acid";
+        public static final String PERCHLORIC_ACID_ID = "perchloric_acid";
+        public static final String CHROMIC_ACID_ID = "chromic_acid";
+        public static final String AQUA_REGIA_ID = "aqua_regia";
 
         public static final String HYDROGEN_ID = "hydrogen";
         public static final String STEAM_ID = "steam";
@@ -317,6 +363,15 @@ public class EOMaterials {
         public static final String XENON_ID = "xenon";
         public static final String RADON_ID = "radon";
         public static final String METHANE_ID = "methane";
+        public static final String ETHANE_ID = "ethane";
+        public static final String PROPANE_ID = "propane";
+        public static final String BUTANE_ID = "butane";
+        public static final String ACETYLENE_ID = "acetylene";
+        public static final String PROPYLENE_ID = "propylene";
+        public static final String BUTADIENE_ID = "butadiene";
+        public static final String NATURAL_GAS_ID = "natural_gas";
+        public static final String SYNGAS_ID = "syngas";
+        public static final String VINYL_CHLORIDE_ID = "vinyl_chloride";
         public static final String HYDROGEN_SULFIDE_ID = "hydrogen_sulfide";
         public static final String HYDROGEN_CHLORIDE_ID = "hydrogen_chloride";
         public static final String NITRIC_OXIDE_ID = "nitric_oxide";
@@ -324,18 +379,21 @@ public class EOMaterials {
         public static final String SULFUR_HEXAFLUORIDE_ID = "sulfur_hexafluoride";
         public static final String CHLORINE_DIOXIDE_ID = "chlorine_dioxide";
         public static final String NITROUS_OXIDE_ID = "nitrous_oxide";
+        public static final String CARBON_MONOXIDE_ID = "carbon_monoxide";
+        public static final String SULFUR_TRIOXIDE_ID = "sulfur_trioxide";
+        public static final String NITROGEN_DIOXIDE_ID = "nitrogen_dioxide";
+        public static final String DINITROGEN_TETROXIDE_ID = "dinitrogen_tetroxide";
+        public static final String CARBON_DISULFIDE_ID = "carbon_disulfide";
+        public static final String SILANE_ID = "silane";
+        public static final String PHOSGENE_ID = "phosgene";
+        public static final String HYDROGEN_CYANIDE_ID = "hydrogen_cyanide";
+        public static final String CHLORINE_TRIFLUORIDE_ID = "chlorine_trifluoride";
         public static final String OZONE_ID = "ozone";
         public static final String TRITIUM_ID = "tritium";
         public static final String DEUTERIUM_ID = "deuterium";
         public static final String CARBON_ID = "carbon";
         public static final String REFINED_GAS_ID = "refined_gas";
-
-        public static final String HYDROCHLORIC_ACID_ID = "hydrochloric_acid";
-        public static final String SULFURIC_ACID_ID = "sulfuric_acid";
-        public static final String NITRIC_ACID_ID = "nitric_acid";
-        public static final String HYDROFLUORIC_ACID_ID = "hydrofluoric_acid";
-        public static final String ACETIC_ACID_ID = "acetic_acid";
-        public static final String PHOSPHORIC_ACID_ID = "phosphoric_acid";
+        public static final String OGANESSON_ID = "oganesson";
     }
 
     public static class materialPrefixSuffixes {
@@ -780,6 +838,13 @@ public class EOMaterials {
         public static materialTypes DIONIZED_WATER_SET;
         public static materialTypes AMMONIA_SOLUTION_SET;
         public static materialTypes SALT_WATER_SET;
+        public static materialTypes MERCURY_SET;
+        public static materialTypes BROMINE_SET;
+        public static materialTypes HYDRAZINE_SET;
+        public static materialTypes TITANIUM_TETRACHLORIDE_SET;
+        public static materialTypes SILICON_TETRACHLORIDE_SET;
+        public static materialTypes PHOSPHORUS_TRICHLORIDE_SET;
+        public static materialTypes THIONYL_CHLORIDE_SET;
         public static materialTypes ACETONE_SET;
         public static materialTypes METHANOL_SET;
         public static materialTypes ETHANOL_SET;
@@ -790,6 +855,19 @@ public class EOMaterials {
         public static materialTypes HYDROGEN_PEROXIDE_SET;
         public static materialTypes PHENOL_SET;
         public static materialTypes GLYCEROL_SET;
+        public static materialTypes ETHYLENE_GLYCOL_SET;
+        public static materialTypes ISOPROPANOL_SET;
+        public static materialTypes FORMALDEHYDE_SET;
+        public static materialTypes ETHYL_ACETATE_SET;
+        public static materialTypes DIETHYL_ETHER_SET;
+        public static materialTypes TETRAHYDROFURAN_SET;
+        public static materialTypes ACETONITRILE_SET;
+        public static materialTypes ANILINE_SET;
+        public static materialTypes NITROBENZENE_SET;
+        public static materialTypes CHLOROFORM_SET;
+        public static materialTypes DICHLOROMETHANE_SET;
+        public static materialTypes CARBON_TETRACHLORIDE_SET;
+        public static materialTypes DIMETHYL_SULFOXIDE_SET;
         public static materialTypes PLANT_OIL_SET;
         public static materialTypes RESIN_SET;
         public static materialTypes RUBBER_SET;
@@ -812,6 +890,32 @@ public class EOMaterials {
         public static materialTypes OCTANE_SET;
         public static materialTypes CYCLOHEXANE_SET;
         public static materialTypes TETRAFLUOROETHYLENE_SET;
+        public static materialTypes STYRENE_SET;
+        public static materialTypes ETHYLENE_OXIDE_SET;
+
+        public static materialTypes SULFURIC_ACID_SET;
+        public static materialTypes HYDROCHLORIC_ACID_SET;
+        public static materialTypes NITRIC_ACID_SET;
+        public static materialTypes HYDROFLUORIC_ACID_SET;
+        public static materialTypes PHOSPHORIC_ACID_SET;
+        public static materialTypes ACETIC_ACID_SET;
+        public static materialTypes HYDROBROMIC_ACID_SET;
+        public static materialTypes BORIC_ACID_SET;
+        public static materialTypes CARBONIC_ACID_SET;
+        public static materialTypes FORMIC_ACID_SET;
+        public static materialTypes CITRIC_ACID_SET;
+        public static materialTypes OXALIC_ACID_SET;
+        public static materialTypes LACTIC_ACID_SET;
+        public static materialTypes SULFUROUS_ACID_SET;
+        public static materialTypes HYPOCHLOROUS_ACID_SET;
+        public static materialTypes PERCHLORIC_ACID_SET;
+        public static materialTypes CHROMIC_ACID_SET;
+        public static materialTypes AQUA_REGIA_SET;
+
+        public static materialTypes SODIUM_HYDROXIDE_SET;
+        public static materialTypes POTASSIUM_HYDROXIDE_SET;
+        public static materialTypes CALCIUM_HYDROXIDE_SET;
+        public static materialTypes SODIUM_HYPOCHLORITE_SET;
 
         public static materialTypes STEAM_SET;
         public static materialTypes HYDROGEN_SET;
@@ -830,6 +934,15 @@ public class EOMaterials {
         public static materialTypes XENON_SET;
         public static materialTypes RADON_SET;
         public static materialTypes METHANE_SET;
+        public static materialTypes ETHANE_SET;
+        public static materialTypes PROPANE_SET;
+        public static materialTypes BUTANE_SET;
+        public static materialTypes ACETYLENE_SET;
+        public static materialTypes PROPYLENE_SET;
+        public static materialTypes BUTADIENE_SET;
+        public static materialTypes NATURAL_GAS_SET;
+        public static materialTypes SYNGAS_SET;
+        public static materialTypes VINYL_CHLORIDE_SET;
         public static materialTypes HYDROGEN_SULFIDE_SET;
         public static materialTypes HYDROGEN_CHLORIDE_SET;
         public static materialTypes NITRIC_OXIDE_SET;
@@ -838,17 +951,20 @@ public class EOMaterials {
         public static materialTypes CHLORINE_DIOXIDE_SET;
         public static materialTypes OZONE_SET;
         public static materialTypes NITROUS_OXIDE_SET;
+        public static materialTypes CARBON_MONOXIDE_SET;
+        public static materialTypes SULFUR_TRIOXIDE_SET;
+        public static materialTypes NITROGEN_DIOXIDE_SET;
+        public static materialTypes DINITROGEN_TETROXIDE_SET;
+        public static materialTypes CARBON_DISULFIDE_SET;
+        public static materialTypes SILANE_SET;
+        public static materialTypes PHOSGENE_SET;
+        public static materialTypes HYDROGEN_CYANIDE_SET;
+        public static materialTypes CHLORINE_TRIFLUORIDE_SET;
         public static materialTypes DEUTERIUM_SET;
         public static materialTypes TRITIUM_SET;
         public static materialTypes CARBON_SET;
         public static materialTypes REFINED_GAS_SET;
-
-        public static materialTypes SULFURIC_ACID_SET;
-        public static materialTypes HYDROCHLORIC_ACID_SET;
-        public static materialTypes NITRIC_ACID_SET;
-        public static materialTypes HYDROFLUORIC_ACID_SET;
-        public static materialTypes PHOSPHORIC_ACID_SET;
-        public static materialTypes ACETIC_ACID_SET;
+        public static materialTypes OGANESSON_SET;
     }
 
     public static final class materialRegistrar {

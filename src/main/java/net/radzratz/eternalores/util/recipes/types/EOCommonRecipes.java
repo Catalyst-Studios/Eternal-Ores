@@ -19,6 +19,7 @@ import static net.neoforged.neoforge.common.Tags.Items.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialNames.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Blends.*;
+import static net.radzratz.eternalores.util.tags.item.EOItemTags.Coals.ANTHRACITE;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Coals.COAL_COKE;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Common.MUSHROOM_BLOCKS;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.DustBlocks.ITEM_DUST_BLOCK_SILICON;
@@ -532,16 +533,12 @@ public class EOCommonRecipes {
             new Alloys(INGOTS_IRON, 1, BLENDS_CARBON, 1, null, 0, STEEL_SET.INGOT.get(), 2, STEEL_ID + "_var_1", Grp.ALLOYS),
             new Alloys(DUSTS_WROUGHT_IRON, 2, DUSTS_ANTHRACITE, 1, null, 0, STEEL_SET.INGOT.get(), 3, STEEL_ID + "_var_2", Grp.ALLOYS),
             new Alloys(INGOTS_WROUGHT_IRON, 2, DUSTS_ANTHRACITE, 1, null, 0, STEEL_SET.INGOT.get(), 3, STEEL_ID + "_var_3", Grp.ALLOYS),
-            new Alloys(DUSTS_IRON, 1, DUSTS_COAL, 1, null, 0, STEEL_SET.INGOT.get(), 1, STEEL_ID + "_var_4", Grp.ALLOYS),
-            new Alloys(INGOTS_IRON, 1, DUSTS_COAL, 1, null, 0, STEEL_SET.INGOT.get(), 1, STEEL_ID + "_var_5", Grp.ALLOYS),
+            new Alloys(DUSTS_WROUGHT_IRON, 2, ANTHRACITE, 1, null, 0, STEEL_SET.INGOT.get(), 3, STEEL_ID + "_var_4", Grp.ALLOYS),
+            new Alloys(INGOTS_WROUGHT_IRON, 2, ANTHRACITE, 1, null, 0, STEEL_SET.INGOT.get(), 3, STEEL_ID + "_var_5", Grp.ALLOYS),
             new Alloys(DUSTS_IRON, 1, DUSTS_COKE, 1, null, 0, STEEL_SET.INGOT.get(), 4, STEEL_ID + "_var_6", Grp.ALLOYS),
             new Alloys(INGOTS_IRON, 1, DUSTS_COKE, 1, null, 0, STEEL_SET.INGOT.get(), 4, STEEL_ID + "_var_7", Grp.ALLOYS),
-            new Alloys(DUSTS_WROUGHT_IRON, 2, ANTHRACITE_SET.COAL.get(), 1, null, 0, STEEL_SET.INGOT.get(), 3, STEEL_ID + "_var_8", Grp.ALLOYS),
-            new Alloys(INGOTS_WROUGHT_IRON, 2, ANTHRACITE_SET.COAL.get(), 1, null, 0, STEEL_SET.INGOT.get(), 3, STEEL_ID + "_var_9", Grp.ALLOYS),
-            new Alloys(DUSTS_IRON, 1, COAL, 1, null, 0, STEEL_SET.INGOT.get(), 1, STEEL_ID + "_var_10", Grp.ALLOYS),
-            new Alloys(INGOTS_IRON, 1, COAL, 1, null, 0, STEEL_SET.INGOT.get(), 1, STEEL_ID + "_var_11", Grp.ALLOYS),
-            new Alloys(DUSTS_IRON, 1, COKE_SET.COAL.get(), 1, null, 0, STEEL_SET.INGOT.get(), 4, STEEL_ID + "_var_12", Grp.ALLOYS),
-            new Alloys(INGOTS_IRON, 1, COKE_SET.COAL.get(), 1, null, 0, STEEL_SET.INGOT.get(), 4, STEEL_ID + "_var_13", Grp.ALLOYS),
+            new Alloys(DUSTS_IRON, 1, COAL_COKE, 1, null, 0, STEEL_SET.INGOT.get(), 4, STEEL_ID + "_var_8", Grp.ALLOYS),
+            new Alloys(INGOTS_IRON, 1, COAL_COKE, 1, null, 0, STEEL_SET.INGOT.get(), 4, STEEL_ID + "_var_9", Grp.ALLOYS),
 
             new Alloys(DUSTS_IRON, 1, DUSTS_CHARCOAL, 2, null, 0, WROUGHT_IRON_SET.INGOT.get(), 2, WROUGHT_IRON_ID, Grp.ALLOYS),
             new Alloys(INGOTS_IRON, 1, DUSTS_CHARCOAL, 2, null, 0, WROUGHT_IRON_SET.INGOT.get(), 2, WROUGHT_IRON_ID + "_var_1", Grp.ALLOYS),

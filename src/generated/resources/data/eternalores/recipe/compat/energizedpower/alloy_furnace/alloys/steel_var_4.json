@@ -8,17 +8,19 @@
   "type": "energizedpower:alloy_furnace",
   "inputs": [
     {
+      "count": 2,
       "input": {
-        "tag": "c:dusts/iron"
+        "tag": "c:dusts/wrought_iron"
       }
     },
     {
       "input": {
-        "tag": "c:dusts/coal"
+        "tag": "c:coal_anthracite"
       }
     }
   ],
   "output": {
+    "count": 3,
     "item": "eternalores:steel_ingot"
   },
   "ticks": 500

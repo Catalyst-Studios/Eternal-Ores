@@ -8,10 +8,10 @@
   "type": "oritech:foundry",
   "ingredients": [
     {
-      "tag": "c:dusts/wrought_iron"
+      "tag": "c:dusts/iron"
     },
     {
-      "item": "eternalores:anthracite_coal"
+      "tag": "c:coal_coke"
     }
   ],
   "results": [

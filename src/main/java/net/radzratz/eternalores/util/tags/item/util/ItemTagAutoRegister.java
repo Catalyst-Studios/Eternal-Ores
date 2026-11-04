@@ -1,9 +1,12 @@
 package net.radzratz.eternalores.util.tags.item.util;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.radzratz.eternalores.datagen.tags.EOItemTagProvider;
+
+import static net.radzratz.eternalores.util.EOUtils.C;
 
 public class ItemTagAutoRegister {
     private final EOItemTagProvider provider;
@@ -73,6 +76,12 @@ public class ItemTagAutoRegister {
                 .addIndividual(mainTag.location().getPath());
 
         builder.applySlag(provider);
+    }
+
+    public void registerBucket(DeferredHolder<?, ?> entry, TagKey<Item> mainTag, String flatName) {
+        Item item = (Item) entry.get();
+        provider.getItemTag(mainTag).add(item);
+        provider.getItemTag(TagKey.create(Registries.ITEM, C("buckets/" + flatName))).add(item);
     }
 
     @SafeVarargs

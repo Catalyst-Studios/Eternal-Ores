@@ -98,6 +98,7 @@ public class EODuplicateRecipeHandler {
                     "pulverizer/bone",
                     "pulverizer/compat/enderio/dust/lapis",
                     "pulverizer/dyes/blue",
+                    "pulverizer/coal",
                     "grinder/pearl_enderic",
                     "grinder/stone_enderic",
                     "grinder/bone",

@@ -1,0 +1,7 @@
+{
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "flowerTag": "c:storage_blocks/necroticarite",
+  "primaryColor": "#a824de",
+  "renderer": "default_crystal",
+  "secondaryColor": "#4d0077"
+}

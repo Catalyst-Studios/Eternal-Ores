@@ -1,0 +1,15 @@
+{
+  "attackResponse": "lava",
+  "coldResistant": true,
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "fireproof": true,
+  "flowerTag": "c:storage_blocks/eternity",
+  "particleColor": "#c27ef7",
+  "primaryColor": "#a6d2e2",
+  "secondaryColor": "#4b4189",
+  "selfbreed": false,
+  "selfheal": true,
+  "speed": 2.5,
+  "tertiaryColor": "#993c4b",
+  "waterproof": true
+}

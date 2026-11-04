@@ -327,6 +327,15 @@ public class EOSetRegistries {
         AMMONIA_SOLUTION_SET = of(AMMONIA_SOLUTION_ID).tint(() -> 0xFF626bb4).fluidTintable(false).build();
         SALT_WATER_SET = of(SALT_WATER_ID).tint(() -> 0xFF3263ba).fluidTintable(false).build();
 
+        MERCURY_SET = of(MERCURY_ID).tint(() -> 0xFFafafaf).fluidTintable(true).build();
+        BROMINE_SET = of(BROMINE_ID).tint(() -> 0xFFa21f00).fluidTintable(true).build();
+
+        HYDRAZINE_SET = of(HYDRAZINE_ID).tint(() -> 0xFFabebd5).fluidTintable(true).build();
+        TITANIUM_TETRACHLORIDE_SET = of(TITANIUM_TETRACHLORIDE_ID).tint(() -> 0xFF806f7f).fluidTintable(true).build();
+        SILICON_TETRACHLORIDE_SET = of(SILICON_TETRACHLORIDE_ID).tint(() -> 0xFF96a2d9).fluidTintable(true).build();
+        PHOSPHORUS_TRICHLORIDE_SET = of(PHOSPHORUS_TRICHLORIDE_ID).tint(() -> 0xFFd5834f).fluidTintable(true).build();
+        THIONYL_CHLORIDE_SET = of(THIONYL_CHLORIDE_ID).tint(() -> 0xFFd3d54f).fluidTintable(true).build();
+
         ACETONE_SET = of(ACETONE_ID).tint(() -> 0xFFd0d0d0).fluidTintable(false).build();
         METHANOL_SET = of(METHANOL_ID).tint(() -> 0xFFd59659).fluidTintable(false).build();
         ETHANOL_SET = of(ETHANOL_ID).tint(() -> 0xFFff552c).fluidTintable(false).build();
@@ -337,6 +346,20 @@ public class EOSetRegistries {
         HYDROGEN_PEROXIDE_SET = of(HYDROGEN_PEROXIDE_ID).tint(() -> 0xFF77e6f2).fluidTintable(false).build();
         PHENOL_SET = of(PHENOL_ID).tint(() -> 0xFF733312).fluidTintable(false).build();
         GLYCEROL_SET = of(GLYCEROL_ID).tint(() -> 0xFF56de94).fluidTintable(false).build();
+
+        ETHYLENE_GLYCOL_SET = of(ETHYLENE_GLYCOL_ID).tint(() -> 0xFF91d969).fluidTintable(true).build();
+        ISOPROPANOL_SET = of(ISOPROPANOL_ID).tint(() -> 0xFFafeb55).fluidTintable(false).build();
+        FORMALDEHYDE_SET = of(FORMALDEHYDE_ID).tint(() -> 0xFF7bebba).fluidTintable(true).build();
+        ETHYL_ACETATE_SET = of(ETHYL_ACETATE_ID).tint(() -> 0xFFc39bd5).fluidTintable(false).build();
+        DIETHYL_ETHER_SET = of(DIETHYL_ETHER_ID).tint(() -> 0xFFd9bfcc).fluidTintable(true).build();
+        TETRAHYDROFURAN_SET = of(TETRAHYDROFURAN_ID).tint(() -> 0xFF86b6db).fluidTintable(false).build();
+        ACETONITRILE_SET = of(ACETONITRILE_ID).tint(() -> 0xFF86b6db).fluidTintable(true).build();
+        ANILINE_SET = of(ANILINE_ID).tint(() -> 0xFFe7d454).fluidTintable(true).build();
+        NITROBENZENE_SET = of(NITROBENZENE_ID).tint(() -> 0xFF929292).fluidTintable(true).build();
+        CHLOROFORM_SET = of(CHLOROFORM_ID).tint(() -> 0xFF4ddead).fluidTintable(true).build();
+        DICHLOROMETHANE_SET = of(DICHLOROMETHANE_ID).tint(() -> 0xFFd954a7).fluidTintable(true).build();
+        CARBON_TETRACHLORIDE_SET = of(CARBON_TETRACHLORIDE_ID).tint(() -> 0xFF78758e).fluidTintable(true).build();
+        DIMETHYL_SULFOXIDE_SET = of(DIMETHYL_SULFOXIDE_ID).tint(() -> 0xFFcca77d).fluidTintable(false).build();
 
         PLANT_OIL_SET = of(PLANT_OIL_ID).tint(() -> 0xFF9abd7b).fluidTintable(false).build();
         RESIN_SET = of(RESIN_ID).tint(() -> 0xFFdeb352).fluidTintable(false).build();
@@ -369,6 +392,8 @@ public class EOSetRegistries {
         OCTANE_SET = of(OCTANE_ID).tint(() -> 0xFFaf2200).fluidTintable(false).build();
         CYCLOHEXANE_SET = of(CYCLOHEXANE_ID).tint(() -> 0xFFe9ac02).fluidTintable(false).build();
         TETRAFLUOROETHYLENE_SET = of(TETRAFLUOROETHYLENE_ID).tint(() -> 0xFF7e7070).fluidTintable(false).build();
+        STYRENE_SET = of(STYRENE_ID).tint(() -> 0xFFb6bfa5).fluidTintable(true).build();
+        ETHYLENE_OXIDE_SET = of(ETHYLENE_OXIDE_ID).tint(() -> 0xFF8c6be9).fluidTintable(true).build();
 
         END_PORTAL_FLUID_SET = of(END_PORTAL_FLUID_ID).fluidCustomTexture(END_PORTAL_FLUID_ID, true).build();
         NETHER_PORTAL_FLUID_SET = of(NETHER_PORTAL_FLUID_ID).fluidCustomTexture(NETHER_PORTAL_FLUID_ID, true).build();
@@ -379,6 +404,23 @@ public class EOSetRegistries {
         HYDROFLUORIC_ACID_SET = of(HYDROFLUORIC_ACID_ID).tint(() -> 0xFF57abe2).chemicalTintable(true).build();
         ACETIC_ACID_SET = of(ACETIC_ACID_ID).tint(() -> 0xFFc7a57d).chemicalTintable(true).build();
         PHOSPHORIC_ACID_SET = of(PHOSPHORIC_ACID_ID).tint(() -> 0xFFeeff2e).chemicalTintable(true).build();
+        HYDROBROMIC_ACID_SET = of(HYDROBROMIC_ACID_ID).tint(() -> 0xFFc1a048).chemicalTintable(true).build();
+        BORIC_ACID_SET = of(BORIC_ACID_ID).tint(() -> 0xFFd5a789).chemicalTintable(false).build();
+        CARBONIC_ACID_SET = of(CARBONIC_ACID_ID).tint(() -> 0xFF625c6a).chemicalTintable(false).build();
+        FORMIC_ACID_SET = of(FORMIC_ACID_ID).tint(() -> 0xFF8fa7c1).chemicalTintable(true).build();
+        CITRIC_ACID_SET = of(CITRIC_ACID_ID).tint(() -> 0xFFceff86).chemicalTintable(false).build();
+        OXALIC_ACID_SET = of(OXALIC_ACID_ID).tint(() -> 0xFF57e245).chemicalTintable(true).build();
+        LACTIC_ACID_SET = of(LACTIC_ACID_ID).tint(() -> 0xFF95c35e).chemicalTintable(false).build();
+        SULFUROUS_ACID_SET = of(SULFUROUS_ACID_ID).tint(() -> 0xFFc36931).chemicalTintable(true).build();
+        HYPOCHLOROUS_ACID_SET = of(HYPOCHLOROUS_ACID_ID).tint(() -> 0xFF75a5d1).chemicalTintable(true).build();
+        PERCHLORIC_ACID_SET = of(PERCHLORIC_ACID_ID).tint(() -> 0xFF4ff4f4).chemicalTintable(true).build();
+        CHROMIC_ACID_SET = of(CHROMIC_ACID_ID).tint(() -> 0xFFc873b1).chemicalTintable(true).build();
+        AQUA_REGIA_SET = of(AQUA_REGIA_ID).tint(() -> 0xFFffc325).chemicalTintable(true).build();
+
+        SODIUM_HYDROXIDE_SET = of(SODIUM_HYDROXIDE_ID).tint(() -> 0xFFcec1a6).chemicalTintable(true).build();
+        POTASSIUM_HYDROXIDE_SET = of(POTASSIUM_HYDROXIDE_ID).tint(() -> 0xFF71c58c).chemicalTintable(true).build();
+        CALCIUM_HYDROXIDE_SET = of(CALCIUM_HYDROXIDE_ID).tint(() -> 0xFF9ba7b3).chemicalTintable(true).build();
+        SODIUM_HYPOCHLORITE_SET = of(SODIUM_HYPOCHLORITE_ID).tint(() -> 0xFFab9b7a).chemicalTintable(true).build();
 
         HYDROGEN_SET = of(HYDROGEN_ID).tint(() -> 0xFF3e80d1).gasTintable(false).plasmaTintable().build();
         STEAM_SET = of(STEAM_ID).tint(() -> 0xFFf4f2ec).gasTintable(true).build();
@@ -397,6 +439,15 @@ public class EOSetRegistries {
         XENON_SET = of(XENON_ID).tint(() -> 0xFF21ef94).gasTintable(true).plasmaTintable().build();
         RADON_SET = of(RADON_ID).tint(() -> 0xFFeb0087).gasTintable(true).plasmaTintable().build();
         METHANE_SET = of(METHANE_ID).tint(() -> 0xFFe9ac02).gasTintable(true).build();
+        ETHANE_SET = of(ETHANE_ID).tint(() -> 0xFFe2a4b6).gasTintable(false).build();
+        PROPANE_SET = of(PROPANE_ID).tint(() -> 0xFFc6dc72).gasTintable(false).build();
+        BUTANE_SET = of(BUTANE_ID).tint(() -> 0xFFababab).gasTintable(false).build();
+        ACETYLENE_SET = of(ACETYLENE_ID).tint(() -> 0xFF9a7bd1).gasTintable(true).build();
+        PROPYLENE_SET = of(PROPYLENE_ID).tint(() -> 0xFFddef57).gasTintable(false).build();
+        BUTADIENE_SET = of(BUTADIENE_ID).tint(() -> 0xFFddef57).gasTintable(true).build();
+        NATURAL_GAS_SET = of(NATURAL_GAS_ID).tint(() -> 0xFFe7e7e7).gasTintable(false).build();
+        SYNGAS_SET = of(SYNGAS_ID).tint(() -> 0xFF7699e2).gasTintable(true).build();
+        VINYL_CHLORIDE_SET = of(VINYL_CHLORIDE_ID).tint(() -> 0xFF40cad1).gasTintable(true).build();
         HYDROGEN_SULFIDE_SET = of(HYDROGEN_SULFIDE_ID).tint(() -> 0xFFe44300).gasTintable(true).build();
         HYDROGEN_CHLORIDE_SET = of(HYDROGEN_CHLORIDE_ID).tint(() -> 0xFF4b3ced).gasTintable(true).build();
         NITRIC_OXIDE_SET = of(NITRIC_OXIDE_ID).tint(() -> 0xFF86c2db).gasTintable(true).build();
@@ -405,10 +456,20 @@ public class EOSetRegistries {
         CHLORINE_DIOXIDE_SET = of(CHLORINE_DIOXIDE_ID).tint(() -> 0xFF62948f).gasTintable(true).build();
         OZONE_SET = of(OZONE_ID).tint(() -> 0xFF86f0e6).gasTintable(true).build();
         NITROUS_OXIDE_SET = of(NITROUS_OXIDE_ID).tint(() -> 0xFF65d5f0).gasTintable(true).build();
+        CARBON_MONOXIDE_SET = of(CARBON_MONOXIDE_ID).tint(() -> 0xFF77817c).gasTintable(true).build();
+        SULFUR_TRIOXIDE_SET = of(SULFUR_TRIOXIDE_ID).tint(() -> 0xFFaf7947).gasTintable(true).build();
+        NITROGEN_DIOXIDE_SET = of(NITROGEN_DIOXIDE_ID).tint(() -> 0xFF548c83).gasTintable(true).build();
+        DINITROGEN_TETROXIDE_SET = of(DINITROGEN_TETROXIDE_ID).tint(() -> 0xFF5c9b7a).gasTintable(true).build();
+        CARBON_DISULFIDE_SET = of(CARBON_DISULFIDE_ID).tint(() -> 0xFF738c72).gasTintable(true).build();
+        SILANE_SET = of(SILANE_ID).tint(() -> 0xFF89de5a).gasTintable(true).build();
+        PHOSGENE_SET = of(PHOSGENE_ID).tint(() -> 0xFFef4f3e).gasTintable(true).build();
+        HYDROGEN_CYANIDE_SET = of(HYDROGEN_CYANIDE_ID).tint(() -> 0xFF716ffa).gasTintable(true).build();
+        CHLORINE_TRIFLUORIDE_SET = of(CHLORINE_TRIFLUORIDE_ID).tint(() -> 0xFF49a5de).gasTintable(true).build();
         TRITIUM_SET = of(TRITIUM_ID).tint(() -> 0xFFa2f47a).gasTintable(true).build();
         DEUTERIUM_SET = of(DEUTERIUM_ID).tint(() -> 0xFFf4524a).gasTintable(true).build();
         CARBON_SET = of(CARBON_ID).tint(() -> 0xFF454545).gasTintable(true).moltenTintable().build();
-        REFINED_GAS_SET = of(REFINED_GAS_ID).tint(() -> 0xFFe8ebdf).gasTintable(true).moltenTintable().build();
+        REFINED_GAS_SET = of(REFINED_GAS_ID).tint(() -> 0xFFe8ebdf).gasTintable(true).build();
+        OGANESSON_SET = of(OGANESSON_ID).tint(() -> 0xFF4b78b6).gasTintable(true).plasmaTintable().build();
     }
 
     public static void rgtr(IEventBus bus) {

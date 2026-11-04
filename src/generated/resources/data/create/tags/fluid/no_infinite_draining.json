@@ -5,6 +5,38 @@
       "required": false
     },
     {
+      "id": "eternalores:chemical_aqua_regia",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_boric_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_calcium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_carbonic_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_chromic_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_citric_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_formic_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_hydrobromic_acid",
+      "required": false
+    },
+    {
       "id": "eternalores:chemical_hydrochloric_acid",
       "required": false
     },
@@ -13,7 +45,23 @@
       "required": false
     },
     {
+      "id": "eternalores:chemical_hypochlorous_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_lactic_acid",
+      "required": false
+    },
+    {
       "id": "eternalores:chemical_nitric_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_oxalic_acid",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_perchloric_acid",
       "required": false
     },
     {
@@ -21,11 +69,31 @@
       "required": false
     },
     {
+      "id": "eternalores:chemical_potassium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_sodium_hydroxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:chemical_sodium_hypochlorite",
+      "required": false
+    },
+    {
       "id": "eternalores:chemical_sulfuric_acid",
       "required": false
     },
     {
+      "id": "eternalores:chemical_sulfurous_acid",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_acetone",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_acetonitrile",
       "required": false
     },
     {
@@ -42,6 +110,10 @@
     },
     {
       "id": "eternalores:fluid_ammonia_solution",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_aniline",
       "required": false
     },
     {
@@ -113,6 +185,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_bromine",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_bronze",
       "required": false
     },
@@ -122,6 +198,10 @@
     },
     {
       "id": "eternalores:fluid_californium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_carbon_tetrachloride",
       "required": false
     },
     {
@@ -142,6 +222,10 @@
     },
     {
       "id": "eternalores:fluid_cesium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_chloroform",
       "required": false
     },
     {
@@ -181,7 +265,19 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_dichloromethane",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_diesel",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_diethyl_ether",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_dimethyl_sulfoxide",
       "required": false
     },
     {
@@ -229,11 +325,27 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_ethyl_acetate",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_ethylene",
       "required": false
     },
     {
+      "id": "eternalores:fluid_ethylene_glycol",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_ethylene_oxide",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_experience",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_formaldehyde",
       "required": false
     },
     {
@@ -293,6 +405,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_hydrazine",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_hydrogen_peroxide",
       "required": false
     },
@@ -310,6 +426,10 @@
     },
     {
       "id": "eternalores:fluid_iron",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_isopropanol",
       "required": false
     },
     {
@@ -377,6 +497,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_mercury",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_methanol",
       "required": false
     },
@@ -425,6 +549,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_nitrobenzene",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_novalloy",
       "required": false
     },
@@ -458,6 +586,10 @@
     },
     {
       "id": "eternalores:fluid_phenol",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_phosphorus_trichloride",
       "required": false
     },
     {
@@ -557,6 +689,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_silicon_tetrachloride",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_silver",
       "required": false
     },
@@ -577,6 +713,10 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_styrene",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_tantalum",
       "required": false
     },
@@ -585,11 +725,23 @@
       "required": false
     },
     {
+      "id": "eternalores:fluid_tetrahydrofuran",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_thionyl_chloride",
+      "required": false
+    },
+    {
       "id": "eternalores:fluid_tin",
       "required": false
     },
     {
       "id": "eternalores:fluid_titanium",
+      "required": false
+    },
+    {
+      "id": "eternalores:fluid_titanium_tetrachloride",
       "required": false
     },
     {
@@ -641,11 +793,23 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_acetylene",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_ammonia",
       "required": false
     },
     {
       "id": "eternalores:gas_argon",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_butadiene",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_butane",
       "required": false
     },
     {
@@ -657,6 +821,14 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_carbon_disulfide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_carbon_monoxide",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_chlorine",
       "required": false
     },
@@ -665,11 +837,23 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_chlorine_trifluoride",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_coal",
       "required": false
     },
     {
       "id": "eternalores:gas_deuterium",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_dinitrogen_tetroxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_ethane",
       "required": false
     },
     {
@@ -693,6 +877,10 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_hydrogen_cyanide",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_hydrogen_sulfide",
       "required": false
     },
@@ -702,6 +890,10 @@
     },
     {
       "id": "eternalores:gas_methane",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_natural_gas",
       "required": false
     },
     {
@@ -717,7 +909,15 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_nitrogen_dioxide",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_nitrous_oxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_oganesson",
       "required": false
     },
     {
@@ -729,7 +929,19 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_phosgene",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_phosphine",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_propane",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_propylene",
       "required": false
     },
     {
@@ -738,6 +950,10 @@
     },
     {
       "id": "eternalores:gas_refined_gas",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_silane",
       "required": false
     },
     {
@@ -753,7 +969,19 @@
       "required": false
     },
     {
+      "id": "eternalores:gas_sulfur_trioxide",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_syngas",
+      "required": false
+    },
+    {
       "id": "eternalores:gas_tritium",
+      "required": false
+    },
+    {
+      "id": "eternalores:gas_vinyl_chloride",
       "required": false
     },
     {
@@ -1149,10 +1377,6 @@
       "required": false
     },
     {
-      "id": "eternalores:molten_refined_gas",
-      "required": false
-    },
-    {
       "id": "eternalores:molten_rhodium",
       "required": false
     },
@@ -1438,6 +1662,10 @@
     },
     {
       "id": "eternalores:plasma_novalloy",
+      "required": false
+    },
+    {
+      "id": "eternalores:plasma_oganesson",
       "required": false
     },
     {

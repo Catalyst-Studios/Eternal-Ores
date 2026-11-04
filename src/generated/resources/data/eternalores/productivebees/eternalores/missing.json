@@ -1,0 +1,9 @@
+{
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "flowerTag": "c:ingots/missing",
+  "primaryColor": "#fc00cf",
+  "secondaryColor": "#000000",
+  "selfbreed": false,
+  "speed": 3.0,
+  "teleporting": true
+}

@@ -1,0 +1,17 @@
+{
+  "attackResponse": "lava",
+  "coldResistant": true,
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "fireproof": true,
+  "flowerTag": "c:storage_blocks/strange_matter",
+  "particleColor": "#7bc379",
+  "particleType": "pop",
+  "primaryColor": "#63eb60",
+  "renderer": "thicc",
+  "secondaryColor": "#32c32f",
+  "selfbreed": false,
+  "selfheal": true,
+  "speed": 1.5,
+  "tertiaryColor": "#67c082",
+  "waterproof": true
+}

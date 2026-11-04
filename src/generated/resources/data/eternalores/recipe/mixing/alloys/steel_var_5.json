@@ -9,14 +9,18 @@
   "heat_requirement": "heated",
   "ingredients": [
     {
-      "tag": "c:ingots/iron"
+      "tag": "c:ingots/wrought_iron"
     },
     {
-      "tag": "c:dusts/coal"
+      "tag": "c:ingots/wrought_iron"
+    },
+    {
+      "tag": "c:coal_anthracite"
     }
   ],
   "results": [
     {
+      "count": 3,
       "id": "eternalores:steel_ingot"
     }
   ]

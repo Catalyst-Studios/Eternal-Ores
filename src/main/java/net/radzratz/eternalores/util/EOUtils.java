@@ -185,6 +185,10 @@ public class EOUtils {
     public static final boolean slag_n_embers_mod = ModList.get().isLoaded(SLAG_EMBERS);
     public static final ModLoadedCondition SLAG_MOD = new ModLoadedCondition(SLAG_EMBERS);
 
+    public static String PBEES = "productivebees";
+    public static final boolean productive_bees_mod = ModList.get().isLoaded(PBEES);
+    public static final ModLoadedCondition PBEES_MOD = new ModLoadedCondition(PBEES);
+
     public static Stream<DeferredHolder<Item, ? extends Item>> allItemEntries() {
         return Stream.of(EO_ITEMS.getEntries()).flatMap(Collection::stream);
     }

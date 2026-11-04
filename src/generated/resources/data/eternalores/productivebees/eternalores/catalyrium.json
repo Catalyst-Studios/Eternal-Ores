@@ -1,0 +1,23 @@
+{
+  "attackResponse": "lava",
+  "attributes": {
+    "behaviour": "behaviour.metaturnal",
+    "endurance": "endurance.strong",
+    "productivity": "productivity.very_high",
+    "temper": "temper.aggressive",
+    "weather_tolerance": "weather_tolerance.any"
+  },
+  "beeTexture": "productivebees:textures/entity/bee/catalyrium/bee",
+  "coldResistant": true,
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "fireproof": true,
+  "flowerTag": "c:storage_blocks/catalyrium",
+  "model": "eternalores:geo/entity/cat_bee.geo.json",
+  "primaryColor": "#213352",
+  "secondaryColor": "#9d2600",
+  "selfbreed": false,
+  "selfheal": true,
+  "size": 6.0,
+  "speed": 2.5,
+  "waterproof": true
+}

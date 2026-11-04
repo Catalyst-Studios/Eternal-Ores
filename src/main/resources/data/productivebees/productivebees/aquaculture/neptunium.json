@@ -1,0 +1,11 @@
+{
+  "primaryColor": "#6bf9d2",
+  "secondaryColor": "#bcfcea",
+  "flowerTag": "c:storage_blocks/neptunium",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "beeTexture": "productivebees:textures/entity/bee/neptunium/bee",
+  "size": 0.5,
+  "attributes": {
+    "weather_tolerance": "weather_tolerance.any"
+  }
+}

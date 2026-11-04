@@ -1,0 +1,15 @@
+{
+  "conditions": [
+    {
+      "modid": "mekanism",
+      "type": "neoforge:mod_loaded"
+    }
+  ],
+  "primaryColor": "#80B425",
+  "secondaryColor": "#bb8d23",
+  "particleColor": "#80B425",
+  "particleType": "pop",
+  "flowerTag": "c:storage_blocks/antimatter",
+  "selfbreed": false,
+  "irradiated": true
+}

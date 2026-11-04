@@ -12,6 +12,7 @@ import net.radzratz.eternalores.fluids.type.EOFluidType;
 import net.radzratz.eternalores.util.EOMaterials;
 import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusions;
 import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOMekSlurries;
+import net.radzratz.eternalores.util.compat.prodbees.EOProdBeesBuilder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -262,6 +263,12 @@ public class EOLocalizationEN_US extends LanguageProvider {
         add(CONTAINER + "catalyrium_furnace", catalyriumFurnaceName());
         add(CATALYRIUM_FURNACE.block().get(), catalyriumFurnaceName());
         add(CATALYRIUM_UPGRADE.get(), catalyriumUpgradeName());
+
+        addProdBees();
+    }
+
+    protected void addProdBees() {
+        EOProdBeesBuilder.BEES.forEach(bee -> add(PRODUCTIVE_BEES + bee.id() + "_bee", prodBeeName(bee)));
     }
 
     protected String cleanSlurryName(String mat) {
@@ -630,5 +637,9 @@ public class EOLocalizationEN_US extends LanguageProvider {
 
     protected String translateMaterial(String englishMaterialName) {
         return materialTranslations().getOrDefault(englishMaterialName, englishMaterialName);
+    }
+
+    protected String prodBeeName(EOProdBeesBuilder.EOBee bee) {
+        return bee.name();
     }
 }

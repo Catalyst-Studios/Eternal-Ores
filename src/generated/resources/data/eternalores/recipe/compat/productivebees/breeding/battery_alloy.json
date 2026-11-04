@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:lead"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:antimony"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "eternalores:battery_alloy"
+    }
+  ],
+  "type": "productivebees:bee_breeding",
+  "offspring": "eternalores:battery_alloy",
+  "parent1": "productivebees:lead",
+  "parent2": "productivebees:antimony",
+  "parentDeathChance": 0.0
+}

@@ -1,5 +1,6 @@
 package net.radzratz.eternalores.util.recipes.util;
 
+import net.radzratz.eternalores.util.EOUtils;
 import net.radzratz.eternalores.util.recipes.types.EOCommonRecipes;
 
 import static net.radzratz.eternalores.util.EOUtils.*;
@@ -23,6 +24,7 @@ public record EORecipePaths(String id) {
     private static final String ARS = Compat + ARS_NOUVEAU;
     private static final String HPF = Compat + HEPHAESTUS;
     private static final String SLAG = Compat + SLAG_EMBERS;
+    private static final String PROD_BEES = Compat + PBEES;
 
     // Actually Additions
     public String Crush() {
@@ -206,6 +208,23 @@ public record EORecipePaths(String id) {
 
     public String SlagAlloying() {
         return SLAG + "/alloying/";
+    }
+
+    // Productive Bees
+    public String PBeeConversion() {
+        return PROD_BEES + "/conversion/";
+    }
+
+    public String PBeeCentrifuge() {
+        return PROD_BEES + "/centrifuge/";
+    }
+
+    public String PBeeHive() {
+        return PROD_BEES + "/beehive/";
+    }
+
+    public String PBreeding() {
+        return PROD_BEES + "/breeding/";
     }
 
     // Base

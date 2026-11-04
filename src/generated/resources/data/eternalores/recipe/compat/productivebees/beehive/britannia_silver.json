@@ -1,0 +1,36 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "eternalores:britannia_silver"
+    }
+  ],
+  "type": "productivebees:advanced_beehive",
+  "ingredient": "eternalores:britannia_silver",
+  "results": [
+    {
+      "chance": 1.0,
+      "item": {
+        "type": "productivebees:component",
+        "components": {
+          "productivebees:bee_type": "eternalores:britannia_silver"
+        },
+        "items": "productivebees:configurable_honeycomb"
+      },
+      "max": 1,
+      "min": 1
+    },
+    {
+      "chance": 0.05,
+      "item": {
+        "tag": "c:pollens"
+      },
+      "max": 1,
+      "min": 1
+    }
+  ]
+}

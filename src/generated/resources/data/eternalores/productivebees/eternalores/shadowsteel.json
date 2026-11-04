@@ -1,0 +1,7 @@
+{
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "fireproof": true,
+  "flowerTag": "c:storage_blocks/shadowsteel",
+  "primaryColor": "#fc00cf",
+  "selfbreed": false
+}

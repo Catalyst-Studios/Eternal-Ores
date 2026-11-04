@@ -176,3 +176,10 @@ type="optional"
 versionRange="1.21.1-1.0.12"
 ordering="NONE"
 side="BOTH"
+
+[[dependencies.eternalores]]
+modId="productivebees"
+type="optional"
+versionRange="1.21.1-13.14.0"
+ordering="AFTER"
+side="BOTH"

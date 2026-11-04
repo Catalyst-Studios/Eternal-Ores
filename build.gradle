@@ -186,11 +186,14 @@ dependencies {
     implementation "curse.maven:hephaestus-forge-1542467:9055315"
     implementation "curse.maven:hephaestus-tools-1725286:9065912"
     implementation "curse.maven:slag-n-embers-1360010:9005870"
+    implementation "curse.maven:productivebees-377897:8987967"
+    implementation "curse.maven:ex-pattern-provider-892005:9305327"
 
     implementation "curse.maven:bbl-casting-1052163:8105156"
     //implementation "curse.maven:evolved-mekanism-1230085:7599592"
     implementation "curse.maven:applied-energistics-2-223794:7027323"
     implementation "curse.maven:occultism-361026:7737734"
+    implementation "curse.maven:neovitae-1404763:9280921"
 
     implementation "vazkii.patchouli:Patchouli:${patchouli_version}"
     implementation "xyz.brassgoggledcoders:PatchouliProvider:${patchouli_provider_version}"
@@ -202,6 +205,7 @@ dependencies {
     compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
     compileOnly ("com.almostreliable.mods:almostunified-neoforge:${au_version}")
     compileOnly "top.theillusivec4.curios:curios-neoforge:${curios_version}:api"
+    compileOnly files('libraries/productivelib-1.21.1-0.2.0.jar')
 
     runtimeOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
     // runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
@@ -215,7 +219,6 @@ dependencies {
     runtimeOnly "curse.maven:iglee-library-541199:7000755"
     runtimeOnly "curse.maven:lmft-656346:7084444"
     runtimeOnly "curse.maven:glodium-957920:5821676"
-    runtimeOnly "curse.maven:ex-pattern-provider-892005:7727948"
     runtimeOnly "curse.maven:advancedae-1084104:7849217"
     runtimeOnly "curse.maven:geckolib-388172:7707149"
     runtimeOnly "curse.maven:mega-cells-622112:7489211"
@@ -248,6 +251,8 @@ dependencies {
     runtimeOnly "curse.maven:ferritecore-429235:7524151"
     runtimeOnly "curse.maven:bbl-core-1135181:7048684"
     runtimeOnly "curse.maven:ae2-jei-integration-1074338:7727898"
+    runtimeOnly "curse.maven:aquaculture-60028:7901588"
+    runtimeOnly "curse.maven:eidolon-repraised-870250:9332315"
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", Copy) {

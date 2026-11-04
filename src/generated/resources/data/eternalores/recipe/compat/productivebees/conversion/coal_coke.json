@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:coal"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "eternalores:coal_coke"
+    }
+  ],
+  "type": "productivebees:bee_conversion",
+  "chance": 1.0,
+  "item": {
+    "item": "eternalores:coke_coal_block"
+  },
+  "result": "eternalores:coal_coke",
+  "source": "productivebees:coal"
+}

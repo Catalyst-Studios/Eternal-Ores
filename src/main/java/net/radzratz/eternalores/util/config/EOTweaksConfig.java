@@ -30,6 +30,9 @@ public class EOTweaksConfig {
                     needed and assigned Data Components 'cast/type' for their specific recipes.
                   - Displays 'cast/type' tag over their JEI Recipe Category, so players know they can use both casts and molds equally.
                  
+                  Extended AE
+                  - Tweaks the useOn method at ItemEntroSeed.class to allow any Fluix Block to be used to create the Budding Entroized Block.
+                 
                   Each change requires a Game Restart.
                  """).push("mixin_config");
 
@@ -41,6 +44,7 @@ public class EOTweaksConfig {
     public static class EternalOresTweaks {
         public final ModConfigSpec.BooleanValue ieMoldTagCompat;
         public final ModConfigSpec.BooleanValue slagTableTweaks;
+        public final ModConfigSpec.BooleanValue extendedAETweaks;
 
         public EternalOresTweaks(ModConfigSpec.Builder bldr) {
             bldr.comment("Immersive Engineering").push("ie");
@@ -57,6 +61,13 @@ public class EOTweaksConfig {
                     .comment("This also defines if Eternal Ores molds are shown on Casting Table recipe category")
                     .gameRestart()
                     .define("isSlagCastTableCompatEnabled", false);
+            bldr.pop();
+
+            bldr.comment("Extended AE").push("extendedae");
+            this.extendedAETweaks = bldr
+                    .comment("Defines if any Fluix Block can be used to create the Budding Entroized Block")
+                    .gameRestart()
+                    .define("isExtendedAECompatEnabled", false);
             bldr.pop();
         }
     }

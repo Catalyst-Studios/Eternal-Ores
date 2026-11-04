@@ -16,6 +16,9 @@ public class EOLangKeys {
     // Chemicals
     public static final String CHEMICAL = "chemical.eternalores.";
 
+    // Prod Bees
+    public static final String PRODUCTIVE_BEES = "entity.productivebees.";
+
     // Container Menus
     // mostly used for the Catalyrium Furnace
     public static final String CONTAINER = "container.eternalores.";

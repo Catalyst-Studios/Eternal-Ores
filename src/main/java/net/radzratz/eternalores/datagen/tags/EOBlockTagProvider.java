@@ -62,6 +62,7 @@ public class EOBlockTagProvider extends BlockTagsProvider {
         tag(BLOCK_URANINITE_ORE).add(URANINITE_SET.ORE.get());
 
         tag(BLOCK_STORAGE_FLUIX).addOptional(AEBlocks.FLUIX_BLOCK.id());
+        tag(BLOCK_STORAGE_FLUIX).add(FLUIX_SET.BLOCK.get());
 
         removal(BLOCK_STORAGE_COKE_COAL, COKE_SET.COAL_BLOCK.get());
         removal(BLOCK_DUST_COKE_COAL_R, COKE_SET.DUST_BLOCK.get());

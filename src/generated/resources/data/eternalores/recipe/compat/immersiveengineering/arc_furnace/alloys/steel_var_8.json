@@ -8,19 +8,16 @@
   "type": "immersiveengineering:arc_furnace",
   "additives": [
     {
-      "item": "eternalores:anthracite_coal"
+      "tag": "c:coal_coke"
     }
   ],
   "energy": 51200,
   "input": {
-    "basePredicate": {
-      "tag": "c:dusts/wrought_iron"
-    },
-    "count": 2
+    "tag": "c:dusts/iron"
   },
   "results": [
     {
-      "count": 3,
+      "count": 4,
       "id": "eternalores:steel_ingot"
     }
   ],

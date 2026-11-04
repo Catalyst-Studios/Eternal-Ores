@@ -23,6 +23,7 @@ import net.radzratz.eternalores.datagen.recipes.EORecipeProvider;
 import net.radzratz.eternalores.datagen.tags.*;
 import net.radzratz.eternalores.datagen.worldgen.EOWorldgenProvider;
 import net.radzratz.eternalores.util.compat.curios.EOCuriosDatagen;
+import net.radzratz.eternalores.util.compat.prodbees.EOProdBeesBuilder;
 import net.radzratz.eternalores.util.loot_tables.EOConditionalLootTableProvider;
 
 import java.util.List;
@@ -80,6 +81,9 @@ public class EODataGenerators {
 
         // EO x Curio Slot/Entity
         prov.addSubProvider(evt.includeServer(), new EOCuriosDatagen(pOutput, eFileHelp, lProv));
+
+        // EO x Productive Bees
+        prov.addSubProvider(evt.includeServer(), new EOProdBeesBuilder(pOutput));
 
         gen.addProvider(true, prov);
     }

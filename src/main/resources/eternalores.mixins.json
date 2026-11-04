@@ -10,7 +10,8 @@
     "slag_n_embers.TableInventoryMixin",
     "slag_n_embers.TableBEMixin",
     "slag_n_embers.JEITableCasting",
-    "slag_n_embers.CastingBEAccessor"
+    "slag_n_embers.CastingBEAccessor",
+    "extendedae.ItemEntroSeedMixin"
   ],
   "client": [],
   "server": [],

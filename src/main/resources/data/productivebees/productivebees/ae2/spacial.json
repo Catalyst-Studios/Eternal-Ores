@@ -1,0 +1,9 @@
+{
+  "primaryColor": "#dfe5f6",
+  "secondaryColor": "#93c7ff",
+  "tertiaryColor": "#93c7ff",
+  "particleColor": "#66aefc",
+  "flowerTag": "c:storage_blocks/certus_quartz",
+  "size": 0.7,
+  "renderer": "default_crystal"
+}

@@ -2,10 +2,15 @@ package net.radzratz.eternalores.util.tags.item;
 
 import mekanism.common.tags.MekanismTags;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.level.material.Fluid;
 import net.radzratz.eternalores.block.types.*;
 import net.radzratz.eternalores.datagen.tags.EOItemTagProvider;
+import net.radzratz.eternalores.fluids.type.EOFluidBucketItem;
+import net.radzratz.eternalores.fluids.type.EOFluidType;
 import net.radzratz.eternalores.item.special.prospectors.EOAdvProspector;
 import net.radzratz.eternalores.item.special.prospectors.EOBasicProspector;
+import net.radzratz.eternalores.util.tags.fluid.EOFluidTagEntries;
 import net.radzratz.eternalores.util.tags.item.util.ITagItemEntryProvider;
 import net.radzratz.eternalores.util.tags.item.util.ItemTagAutoRegister;
 import net.radzratz.eternalores.item.tools.*;
@@ -165,6 +170,14 @@ public class EOItemTagEntries implements ITagItemEntryProvider {
 
             if (item instanceof EOPelletItem) {
                 register.register(entry, PELLETS, true, false);
+            }
+
+            if (item instanceof EOFluidBucketItem bucket) {
+                Fluid fluid = bucket.getFluid();
+                if (fluid.getFluidType() instanceof EOFluidType type) {
+                    String fluidPath = BuiltInRegistries.FLUID.getKey(fluid).getPath();
+                    register.registerBucket(entry, BUCKETS, EOFluidTagEntries.flatName(type, fluidPath));
+                }
             }
         });
 

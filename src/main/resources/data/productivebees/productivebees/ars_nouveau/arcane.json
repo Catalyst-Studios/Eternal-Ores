@@ -1,0 +1,13 @@
+{
+  "primaryColor": "#c203fc",
+  "secondaryColor": "#6c2482",
+  "tertiaryColor": "#c203fc",
+  "particleColor": "#c203fc",
+  "flowerTag": "c:storage_blocks/source",
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "size": 0.8,
+  "renderer": "default_crystal",
+  "attributes": {
+    "endurance": "endurance.medium"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "attackResponse": "lava",
+  "coldResistant": true,
+  "description": "productivebees.ingredient.description.only_spawnegg",
+  "fireproof": true,
+  "flowerTag": "c:storage_blocks/aurorium",
+  "primaryColor": "#9b9bff",
+  "secondaryColor": "#7b73d7",
+  "selfbreed": false,
+  "selfheal": true,
+  "speed": 2.5,
+  "waterproof": true
+}

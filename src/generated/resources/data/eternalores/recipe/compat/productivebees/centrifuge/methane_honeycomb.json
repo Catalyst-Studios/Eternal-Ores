@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "productivebees"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "eternalores:methane"
+    }
+  ],
+  "type": "productivebees:centrifuge",
+  "fluid": {
+    "amount": 50,
+    "fluid": "eternalores:gas_methane"
+  },
+  "ingredient": {
+    "type": "productivebees:component",
+    "components": {
+      "productivebees:bee_type": "eternalores:methane"
+    },
+    "items": "productivebees:configurable_honeycomb"
+  },
+  "outputs": [
+    {
+      "chance": 1.0,
+      "item": {
+        "tag": "c:waxes"
+      },
+      "max": 1,
+      "min": 1
+    }
+  ],
+  "processingTime": 0
+}

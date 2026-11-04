@@ -24,30 +24,23 @@ public class EOFluidTagEntries implements ITagFluidProvider {
             Fluid fluid = entry.get();
             if (!(fluid.getFluidType() instanceof EOFluidType type)) return;
 
-            String path = entry.getId().getPath();
-            String material = EOMaterials.extractMaterialName(path);
+            register.registerFlat(entry, flatName(type, entry.getId().getPath()), false);
+            register.registerExternal(entry, NO_INFINITE_DRAINING, true);
 
             switch (type.type()) {
-                case MOLTEN -> {
-                    register.registerFlat(entry, path, false);
-                    register.registerExternal(entry, NO_INFINITE_DRAINING, true);
-                    register.registerExternal(entry, HOT_FLUID, true);
-                }
-                case PLASMA -> {
-                    register.registerFlat(entry, material + "_plasma", false);
-                    register.registerExternal(entry, NO_INFINITE_DRAINING, true);
-                    register.registerExternal(entry, HOT_FLUID, true);
-                }
-                case FLUID, CHEMICAL -> {
-                    register.registerFlat(entry, material, false);
-                    register.registerExternal(entry, NO_INFINITE_DRAINING, true);
-                }
-                case GAS -> {
-                    register.registerFlat(entry, material, false);
-                    register.register(entry, GASEOUS, false);
-                    register.registerExternal(entry, NO_INFINITE_DRAINING, true);
-                }
+                case MOLTEN, PLASMA -> register.registerExternal(entry, HOT_FLUID, true);
+                case GAS -> register.register(entry, GASEOUS, false);
+                default -> {}
             }
         });
+    }
+
+    public static String flatName(EOFluidType type, String fluidPath) {
+        String material = EOMaterials.extractMaterialName(fluidPath);
+        return switch (type.type()) {
+            case MOLTEN -> fluidPath;
+            case PLASMA -> material + "_plasma";
+            case FLUID, CHEMICAL, GAS -> material;
+        };
     }
 }

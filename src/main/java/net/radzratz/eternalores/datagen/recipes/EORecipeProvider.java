@@ -28,6 +28,7 @@ import net.radzratz.eternalores.util.compat.mekanism.recipe_types.*;
 import net.radzratz.eternalores.util.compat.oritech.recipe_types.*;
 import net.radzratz.eternalores.util.compat.powah.recipes.EOEnergizingRecipes;
 import net.radzratz.eternalores.util.compat.powah.recipes.EOReactorRecipes;
+import net.radzratz.eternalores.util.compat.prodbees.recipe_types.EOProdBeesRecipes;
 import net.radzratz.eternalores.util.compat.railcraft.recipe_types.REOCrusherRecipes;
 import net.radzratz.eternalores.util.compat.railcraft.recipe_types.REOMetalRollingRecipes;
 import net.radzratz.eternalores.util.compat.slag_n_embers.recipe_types.EOSlagSmelteryRecipes;
@@ -137,5 +138,8 @@ public class EORecipeProvider extends RecipeProvider {
 
         // Slag n Embers
         EOSlagSmelteryRecipes.generate(recipeOutput, reg, fluidReg);
+
+        // Productive Bees
+        EOProdBeesRecipes.generate(recipeOutput);
     }
 }

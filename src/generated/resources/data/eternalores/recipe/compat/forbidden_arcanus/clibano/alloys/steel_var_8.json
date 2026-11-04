@@ -13,14 +13,14 @@
   "fire_type": "fire",
   "ingredients": {
     "first": {
-      "tag": "c:dusts/wrought_iron"
+      "tag": "c:dusts/iron"
     },
     "second": {
-      "item": "eternalores:anthracite_coal"
+      "tag": "c:coal_coke"
     }
   },
   "result": {
-    "count": 3,
+    "count": 4,
     "id": "eternalores:steel_ingot"
   }
 }

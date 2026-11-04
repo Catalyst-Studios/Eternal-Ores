@@ -1,0 +1,9 @@
+{
+  "primaryColor": "#6d9195",
+  "secondaryColor": "#415764",
+  "tertiaryColor": "#1a1d27",
+  "particleColor": "#101118",
+  "flowerTag": "c:storage_blocks/black_quartz",
+  "size": 0.7,
+  "renderer": "default_crystal"
+}
