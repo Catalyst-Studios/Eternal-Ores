@@ -1,5 +1,0 @@
-{
-  "parent": "neoforge:item/bucket_drip",
-  "fluid": "eternalores:chemical_potassium_hydroxide",
-  "loader": "neoforge:fluid_container"
-}

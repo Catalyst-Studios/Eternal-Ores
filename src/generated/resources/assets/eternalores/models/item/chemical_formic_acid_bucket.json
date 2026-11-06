@@ -1,5 +1,0 @@
-{
-  "parent": "neoforge:item/bucket_drip",
-  "fluid": "eternalores:chemical_formic_acid",
-  "loader": "neoforge:fluid_container"
-}

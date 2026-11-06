@@ -23,7 +23,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.*;
+import static net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry.*;
 
 /*
  * Copyright 2025 pizzaatime and XenoMustache

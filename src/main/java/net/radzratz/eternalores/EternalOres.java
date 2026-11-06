@@ -14,13 +14,13 @@ import net.radzratz.eternalores.util.EOSetRegistries;
 import net.radzratz.eternalores.item.tools.EOGemCutter;
 import net.radzratz.eternalores.item.tools.EOHammers;
 import net.radzratz.eternalores.item.tools.EOWireCutter;
-import net.radzratz.eternalores.util.compat.curios.EOCurios;
+import net.radzratz.eternalores.util.compat.curios.EOCuriosRegistry;
 import net.radzratz.eternalores.util.recipes.EORecipeRegistry;
-import net.radzratz.eternalores.util.compat.enderio.items.EOioItems;
-import net.radzratz.eternalores.util.compat.geore.GEOreRegistry;
-import net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusions;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOMekSlurries;
+import net.radzratz.eternalores.util.compat.enderio.EIOCompatRegistry;
+import net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry;
+import net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusionCompatRegistry;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOSlurryCompatRegistry;
 import net.radzratz.eternalores.util.compat.mekanism.conditions.EOMKConditionRegistry;
 
 import net.neoforged.bus.api.IEventBus;
@@ -75,25 +75,25 @@ public class EternalOres {
 
         LOG.info("[Eternal ores] Loading Compat Classes...");
         if (mekanismMod) {
-            EOMekSlurries.rgtr(bus);
-            EOInfusions.rgtr(bus);
+            EOSlurryCompatRegistry.rgtr(bus);
+            EOInfusionCompatRegistry.rgtr(bus);
             configs(mCont, EOChemicalsConfig.CONFIG_SPEC, "/chemicals-settings");
         }
 
         if (enderioMod) {
-            EOioItems.rgtr(bus);
+            EIOCompatRegistry.rgtr(bus);
         }
 
         if (ironFurnaceMod) {
-            EOIronFurnaceRegistries.rgtr(bus, mCont);
+            IronFurnacesCompatRegistry.rgtr(bus, mCont);
         }
 
         if (georeMod) {
-            GEOreRegistry.rgtr(bus);
+            GeOreCompatRegistry.rgtr(bus);
         }
 
         if (curiosMod) {
-            bus.addListener(EOCurios::register);
+            bus.addListener(EOCuriosRegistry::register);
         }
 
         LOG.info("[Eternal Ores] Loaded Successfully!");

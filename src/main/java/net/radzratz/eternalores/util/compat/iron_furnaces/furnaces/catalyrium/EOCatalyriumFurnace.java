@@ -18,7 +18,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.CATALYRIUM_FURNACE;
+import static net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry.CATALYRIUM_FURNACE;
 import static net.radzratz.eternalores.util.compat.iron_furnaces.util.EOIronFurnaceConfig.speed;
 
 /*

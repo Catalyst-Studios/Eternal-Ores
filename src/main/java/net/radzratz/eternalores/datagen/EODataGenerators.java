@@ -17,8 +17,6 @@ import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.datagen.data_maps.EODataMapsProvider;
 import net.radzratz.eternalores.datagen.lang.EOLangProvider;
 import net.radzratz.eternalores.datagen.loot_tables.EOBlockLootTableProvider;
-import net.radzratz.eternalores.datagen.models.EOBlockStateProvider;
-import net.radzratz.eternalores.datagen.models.EOItemModelProvider;
 import net.radzratz.eternalores.datagen.recipes.EORecipeProvider;
 import net.radzratz.eternalores.datagen.tags.*;
 import net.radzratz.eternalores.datagen.worldgen.EOWorldgenProvider;
@@ -68,10 +66,6 @@ public class EODataGenerators {
         prov.addSubProvider(evt.includeServer(), new EOFluidTagProvider(pOutput, lProv, eFileHelp));
         prov.addSubProvider(evt.includeServer(), new EOItemTagProvider(pOutput, lProv, bTagProv.contentsGetter(), eFileHelp));
         prov.addSubProvider(evt.includeServer(), new EOChemicalTagProvider(pOutput, lProv, eFileHelp));
-
-        // EO Models
-        prov.addSubProvider(evt.includeClient(), new EOItemModelProvider(pOutput, eFileHelp));
-        prov.addSubProvider(evt.includeClient(), new EOBlockStateProvider(pOutput, eFileHelp));
 
         // EO WorldGen
         prov.addSubProvider(evt.includeServer(), new EOWorldgenProvider(pOutput, lProv));

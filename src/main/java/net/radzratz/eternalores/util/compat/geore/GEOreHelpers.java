@@ -14,8 +14,8 @@ import net.radzratz.eternalores.util.compat.geore.item.GEOreShardItem;
 
 import java.util.function.Supplier;
 
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.GEORE_BLOCKS;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.GEORE_ITEMS;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.GEORE_BLOCKS;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.GEORE_ITEMS;
 
 public class GEOreHelpers {
     public static DeferredBlock<GEOreShardBlock> rgtrGeOreBlock(String id, EOBlockTier tier) {

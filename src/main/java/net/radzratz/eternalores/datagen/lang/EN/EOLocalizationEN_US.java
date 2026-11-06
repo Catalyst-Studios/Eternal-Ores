@@ -10,8 +10,8 @@ import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.fluids.type.EOFluidBucketItem;
 import net.radzratz.eternalores.fluids.type.EOFluidType;
 import net.radzratz.eternalores.util.EOMaterials;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusions;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOMekSlurries;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusionCompatRegistry;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOSlurryCompatRegistry;
 import net.radzratz.eternalores.util.compat.prodbees.EOProdBeesBuilder;
 
 import java.util.HashMap;
@@ -21,11 +21,11 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 import static net.radzratz.eternalores.util.EOUtils.*;
-import static net.radzratz.eternalores.util.compat.enderio.items.EOioItems.allEnderIOItemEntries;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.allGeOreItemEntries;
+import static net.radzratz.eternalores.util.compat.enderio.EIOCompatRegistry.allEnderIOItemEntries;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.allGeOreItemEntries;
 import static net.radzratz.eternalores.util.lang.EOLangKeys.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialPrefixSuffixes.*;
-import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.*;
+import static net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry.*;
 
 public class EOLocalizationEN_US extends LanguageProvider {
     private Map<String, String> specialCaseCache;
@@ -236,7 +236,7 @@ public class EOLocalizationEN_US extends LanguageProvider {
     }
 
     protected void addCompatTranslations() {
-        Map<String, SlurryRegistryObject<? extends Chemical, ? extends Chemical>> map = EOMekSlurries.getSlurryMap();
+        Map<String, SlurryRegistryObject<? extends Chemical, ? extends Chemical>> map = EOSlurryCompatRegistry.getSlurryMap();
 
         map.forEach((material, slurryObj) -> {
             String matName = translateMaterial(capitalize(material));
@@ -244,7 +244,7 @@ public class EOLocalizationEN_US extends LanguageProvider {
             add(CHEMICAL + DIRTY + material, dirtySlurryName(matName));
         });
 
-        EOInfusions.EO_CHEMICALS.getEntries().forEach(entry -> {
+        EOInfusionCompatRegistry.EO_CHEMICALS.getEntries().forEach(entry -> {
             String name = entry.getId().getPath();
             String matName = translateMaterial(capitalizeWords(name.replace("_", " ")));
             add(CHEMICAL + name, matName);

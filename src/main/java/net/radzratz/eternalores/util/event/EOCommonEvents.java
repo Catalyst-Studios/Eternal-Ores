@@ -20,7 +20,7 @@ import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.network.registration.PayloadRegistrar;
 import net.radzratz.eternalores.EternalOres;
 import net.radzratz.eternalores.item.special.prospectors.packets.EOProspectorCurioPacket;
-import net.radzratz.eternalores.util.compat.curios.EOCurios;
+import net.radzratz.eternalores.util.compat.curios.EOCuriosRegistry;
 import net.radzratz.eternalores.util.compat.slag_n_embers.SlagTable;
 import net.radzratz.eternalores.util.data.EODataPack;
 import net.radzratz.eternalores.item.special.prospectors.packets.EOAdvScanPacket;
@@ -72,7 +72,7 @@ public class EOCommonEvents {
             } else if (off.getItem() instanceof EOBasicProspector) {
                 EOBasicProspector.performServerScanForOverlay(player, off);
             } else if (curiosMod) {
-                EOCurios.findEquippedProspector(player)
+                EOCuriosRegistry.findEquippedProspector(player)
                         .filter(stack -> stack.getItem() instanceof EOBasicProspector)
                         .ifPresent(stack -> EOBasicProspector.performServerScanForOverlay(player, stack));
             }

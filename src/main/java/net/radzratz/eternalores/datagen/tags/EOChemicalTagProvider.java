@@ -9,7 +9,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.radzratz.eternalores.EternalOres;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOMekSlurries;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOSlurryCompatRegistry;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -31,7 +31,7 @@ public class EOChemicalTagProvider extends ChemicalTagsProvider {
         TagAppender<Chemical> dirty = this.tag(MekanismAPITags.Chemicals.DIRTY);
         TagAppender<Chemical> clean = this.tag(MekanismAPITags.Chemicals.CLEAN);
 
-        Map<String, SlurryRegistryObject<? extends Chemical, ? extends Chemical>> map = EOMekSlurries.getSlurryMap();
+        Map<String, SlurryRegistryObject<? extends Chemical, ? extends Chemical>> map = EOSlurryCompatRegistry.getSlurryMap();
 
         for (Map.Entry<String, SlurryRegistryObject<? extends Chemical, ? extends Chemical>> e : map.entrySet()) {
             SlurryRegistryObject<? extends Chemical, ? extends Chemical> slurry = e.getValue();

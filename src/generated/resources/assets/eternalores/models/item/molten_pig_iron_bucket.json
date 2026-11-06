@@ -1,5 +1,0 @@
-{
-  "parent": "neoforge:item/bucket_drip",
-  "fluid": "eternalores:molten_pig_iron",
-  "loader": "neoforge:fluid_container"
-}

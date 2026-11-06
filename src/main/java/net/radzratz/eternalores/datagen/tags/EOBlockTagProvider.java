@@ -22,7 +22,7 @@ import java.util.concurrent.CompletableFuture;
 import static net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE;
 import static net.minecraft.world.level.block.Blocks.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;
-import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.CATALYRIUM_FURNACE;
+import static net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry.CATALYRIUM_FURNACE;
 import static net.radzratz.eternalores.util.tags.block.EOBlockTags.Common.*;
 import static net.radzratz.eternalores.util.tags.block.EOBlockTags.DustBlocks.*;
 import static net.radzratz.eternalores.util.tags.block.EOBlockTags.OreBlocks.*;

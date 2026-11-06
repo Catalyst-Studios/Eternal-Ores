@@ -8,11 +8,11 @@ import dev.emi.emi.api.stack.EmiStack;
 import mekanism.client.recipe_viewer.emi.ChemicalEmiStack;
 import net.neoforged.neoforge.fluids.FluidType;
 import net.radzratz.eternalores.fluids.type.EOFluidType;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusions;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.types.EOChemical;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusionCompatRegistry;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOChemical;
 
 import static net.radzratz.eternalores.util.EOUtils.*;
-import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.CATALYRIUM_FURNACE;
+import static net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry.CATALYRIUM_FURNACE;
 
 @EmiEntrypoint
 public class EOEMIPlugin implements EmiPlugin {
@@ -27,7 +27,7 @@ public class EOEMIPlugin implements EmiPlugin {
         if (mekanismMod) {
             // Hides infusions and slurries from appearing over EMI catalogue
             // when said chemical is disabled over the config
-            EOInfusions.EO_CHEMICALS.getEntries().stream()
+            EOInfusionCompatRegistry.EO_CHEMICALS.getEntries().stream()
                     .filter(e -> e.get() instanceof EOChemical c && !c.isEnabled())
                     .forEach(e -> registry.removeEmiStacks(new ChemicalEmiStack(e, 1)));
         }

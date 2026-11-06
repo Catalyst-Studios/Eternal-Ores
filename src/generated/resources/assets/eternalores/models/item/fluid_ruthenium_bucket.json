@@ -1,5 +1,0 @@
-{
-  "parent": "neoforge:item/bucket_drip",
-  "fluid": "eternalores:fluid_ruthenium",
-  "loader": "neoforge:fluid_container"
-}

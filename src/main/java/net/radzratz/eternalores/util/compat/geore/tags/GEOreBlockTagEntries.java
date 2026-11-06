@@ -10,7 +10,7 @@ import java.util.Comparator;
 
 import static net.minecraft.tags.BlockTags.*;
 import static net.neoforged.neoforge.common.Tags.Blocks.*;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.allGeOreBlockEntries;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.allGeOreBlockEntries;
 import static net.radzratz.eternalores.util.tags.block.EOBlockTags.GeOreBuds.*;
 import static net.radzratz.eternalores.util.tags.block.EOBlockTags.GeOreShardBlocks.GEOSHARD_BLOCKS;
 

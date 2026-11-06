@@ -3,7 +3,7 @@ package net.radzratz.eternalores.util.compat.iron_furnaces.upgrades.types;
 import ironfurnaces.init.Registration;
 import net.radzratz.eternalores.util.compat.iron_furnaces.upgrades.EOIFurnacesUpgrade;
 
-import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.CATALYRIUM_FURNACE;
+import static net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry.CATALYRIUM_FURNACE;
 
 /*
  * Copyright 2025 pizzaatime and XenoMustache

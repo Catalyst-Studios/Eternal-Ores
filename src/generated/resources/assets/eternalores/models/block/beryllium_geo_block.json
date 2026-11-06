@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "eternalores:block/crystal/beryllium_geo_block"
-  }
-}

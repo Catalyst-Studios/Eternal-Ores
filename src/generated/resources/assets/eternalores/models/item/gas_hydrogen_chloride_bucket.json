@@ -1,5 +1,0 @@
-{
-  "parent": "neoforge:item/bucket_drip",
-  "fluid": "eternalores:gas_hydrogen_chloride",
-  "loader": "neoforge:fluid_container"
-}

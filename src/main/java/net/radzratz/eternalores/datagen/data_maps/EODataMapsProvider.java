@@ -18,7 +18,7 @@ import net.radzratz.eternalores.block.types.EODustBlock;
 import net.radzratz.eternalores.item.types.EOCoalItem;
 import net.radzratz.eternalores.item.types.EODustItem;
 import net.radzratz.eternalores.item.types.EOSmallDustItem;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOMekSlurries;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOSlurryCompatRegistry;
 import net.radzratz.eternalores.util.recipes.util.EORecipeInputs;
 import org.jetbrains.annotations.NotNull;
 import owmii.powah.recipe.ReactorFuel;
@@ -27,7 +27,7 @@ import java.util.concurrent.CompletableFuture;
 
 import static net.neoforged.neoforge.registries.datamaps.builtin.NeoForgeDataMaps.*;
 import static net.radzratz.eternalores.util.EOUtils.*;
-import static net.radzratz.eternalores.util.compat.enderio.items.types.EOGrindingBall.*;
+import static net.radzratz.eternalores.util.compat.enderio.items.EOGrindingBall.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Ingots.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Nuggets.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.StorageBlocks.*;
@@ -67,7 +67,7 @@ public class EODataMapsProvider extends DataMapProvider {
         reactorFuel(NUGGETS_URANINITE, 5, 200);
         reactorFuel(ITEM_STORAGE_URANINITE, 700, 900);
 
-        EOMekSlurries.getSlurryMap().forEach((mat, slurryObj) -> {
+        EOSlurryCompatRegistry.getSlurryMap().forEach((mat, slurryObj) -> {
             if (slurryObj == null) return;
 
             EORecipeInputs inp = EORecipeInputs.fromPath(mat);

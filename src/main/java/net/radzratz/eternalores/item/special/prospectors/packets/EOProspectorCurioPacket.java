@@ -9,7 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 import net.radzratz.eternalores.EternalOres;
-import net.radzratz.eternalores.util.compat.curios.EOCurios;
+import net.radzratz.eternalores.util.compat.curios.EOCuriosRegistry;
 import org.jetbrains.annotations.NotNull;
 
 public record EOProspectorCurioPacket(String action, BlockPos targetPos) implements CustomPacketPayload {
@@ -32,7 +32,7 @@ public record EOProspectorCurioPacket(String action, BlockPos targetPos) impleme
     public static void handle(EOProspectorCurioPacket packet, IPayloadContext context) {
         context.enqueueWork(() -> {
             if (context.player() instanceof ServerPlayer serverPlayer) {
-                EOCurios.handleCurioAction(serverPlayer, packet.action(), packet.targetPos());
+                EOCuriosRegistry.handleCurioAction(serverPlayer, packet.action(), packet.targetPos());
             }
         });
     }

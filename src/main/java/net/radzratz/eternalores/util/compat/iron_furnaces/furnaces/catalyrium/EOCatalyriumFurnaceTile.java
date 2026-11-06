@@ -8,7 +8,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.common.ModConfigSpec;
-import net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries;
+import net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry;
 import org.jetbrains.annotations.Nullable;
 
 import static net.radzratz.eternalores.util.compat.iron_furnaces.util.EOIronFurnaceConfig.*;
@@ -34,7 +34,7 @@ import static net.radzratz.eternalores.util.compat.iron_furnaces.util.EOIronFurn
 public class EOCatalyriumFurnaceTile extends BlockIronFurnaceTileBase {
 
     public EOCatalyriumFurnaceTile(BlockPos pos, BlockState state) {
-        super(EOIronFurnaceRegistries.CATALYRIUM_FURNACE.tile().get(), pos, state);
+        super(IronFurnacesCompatRegistry.CATALYRIUM_FURNACE.tile().get(), pos, state);
     }
 
     @Override

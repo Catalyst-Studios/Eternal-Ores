@@ -1,5 +1,0 @@
-{
-  "parent": "neoforge:item/bucket_drip",
-  "fluid": "eternalores:gas_dinitrogen_tetroxide",
-  "loader": "neoforge:fluid_container"
-}

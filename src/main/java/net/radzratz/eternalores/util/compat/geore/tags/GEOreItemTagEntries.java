@@ -10,8 +10,8 @@ import net.radzratz.eternalores.util.compat.geore.item.GEOreShardItem;
 import java.util.Comparator;
 
 import static net.neoforged.neoforge.common.Tags.Items.*;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.allGeOreBlockEntries;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.allGeOreItemEntries;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.allGeOreBlockEntries;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.allGeOreItemEntries;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.Compat.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.GeOreBuds.*;
 import static net.radzratz.eternalores.util.tags.item.EOItemTags.GeOreShardBlocks.*;

@@ -20,8 +20,8 @@ import net.radzratz.eternalores.item.special.prospectors.EOBasicProspector;
 import net.radzratz.eternalores.item.special.teleporter.EOTeleporter;
 import net.radzratz.eternalores.item.tools.*;
 import net.radzratz.eternalores.item.types.*;
-import net.radzratz.eternalores.util.compat.enderio.items.types.EOCapacitors;
-import net.radzratz.eternalores.util.compat.enderio.items.types.EOGrindingBall;
+import net.radzratz.eternalores.util.compat.enderio.items.EOCapacitors;
+import net.radzratz.eternalores.util.compat.enderio.items.EOGrindingBall;
 import net.radzratz.eternalores.util.compat.geore.blocks.*;
 import net.radzratz.eternalores.util.compat.geore.item.GEOreShardItem;
 import net.radzratz.eternalores.util.compat.iron_furnaces.furnaces.EOIFurnacesFurnaceBlock;
@@ -35,10 +35,10 @@ import java.util.function.UnaryOperator;
 import static net.radzratz.eternalores.item.tools.EOHammers.*;
 import static net.radzratz.eternalores.util.EOMaterials.materialSets.*;
 import static net.radzratz.eternalores.util.EOUtils.*;
-import static net.radzratz.eternalores.util.compat.enderio.items.EOioItems.allEnderIOItemEntries;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.allGeOreBlockEntries;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.allGeOreItemEntries;
-import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.*;
+import static net.radzratz.eternalores.util.compat.enderio.EIOCompatRegistry.allEnderIOItemEntries;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.allGeOreBlockEntries;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.allGeOreItemEntries;
+import static net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry.*;
 import static net.radzratz.eternalores.util.lang.EOLangKeys.*;
 
 public class EOCreativeModeTabs {
@@ -117,6 +117,7 @@ public class EOCreativeModeTabs {
         BLOCKS = rgtrTab(5, CATALYRIUM_SET.BLOCK, "blocks", tab ->
                 tab.displayItems((params, output) -> {
                     acceptBlocks(output, EOStorageBlock.class);
+                    acceptBlocks(output, EOCoalBlock.class);
                     acceptBlocks(output, EORawBlock.class);
                     acceptBlocks(output, EOEnrichedBlock.class);
                     acceptBlocks(output, EODustBlock.class);

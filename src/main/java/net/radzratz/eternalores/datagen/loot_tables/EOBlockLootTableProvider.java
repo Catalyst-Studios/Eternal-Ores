@@ -16,10 +16,10 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.neoforged.neoforge.common.conditions.ICondition;
 import net.radzratz.eternalores.block.types.*;
 import net.radzratz.eternalores.block.types.special.EORedstoneBlock;
-import net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries;
+import net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry;
 import net.radzratz.eternalores.util.compat.iron_furnaces.furnaces.EOIFurnacesFurnaceBlock;
 import net.radzratz.eternalores.util.loot_tables.EOConditionalLootSubProvider;
-import net.radzratz.eternalores.util.compat.geore.GEOreRegistry;
+import net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry;
 import net.radzratz.eternalores.util.compat.geore.blocks.GEOreBuddingBlock;
 import net.radzratz.eternalores.util.compat.geore.blocks.GEOreClusterBlock;
 import net.radzratz.eternalores.util.compat.geore.blocks.GEOreShardBlock;
@@ -30,8 +30,8 @@ import java.util.stream.Stream;
 
 import static net.radzratz.eternalores.util.EOSetRegistries.EO_BLOCKS;
 import static net.radzratz.eternalores.util.EOUtils.*;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.allGeOreBlockEntries;
-import static net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries.allIronFurnacesBlockEntries;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.allGeOreBlockEntries;
+import static net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry.allIronFurnacesBlockEntries;
 
 public class EOBlockLootTableProvider extends EOConditionalLootSubProvider {
     private static final List<ICondition> GEORE = List.of(GEORE_MOD);
@@ -104,11 +104,11 @@ public class EOBlockLootTableProvider extends EOConditionalLootSubProvider {
         Stream<Block> blocks = EO_BLOCKS.getEntries().stream().map(Holder::value);
 
         if (georeMod) {
-            blocks = Stream.concat(blocks, GEOreRegistry.GEORE_BLOCKS.getEntries().stream().map(Holder::value));
+            blocks = Stream.concat(blocks, GeOreCompatRegistry.GEORE_BLOCKS.getEntries().stream().map(Holder::value));
         }
 
         if (ironFurnaceMod) {
-            blocks = Stream.concat(blocks, EOIronFurnaceRegistries.FURNACE_BLOCK.getEntries().stream().map(Holder::value));
+            blocks = Stream.concat(blocks, IronFurnacesCompatRegistry.FURNACE_BLOCK.getEntries().stream().map(Holder::value));
         }
 
         return blocks::iterator;

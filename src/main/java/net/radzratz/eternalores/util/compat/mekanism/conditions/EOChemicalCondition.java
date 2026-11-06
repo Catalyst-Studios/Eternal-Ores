@@ -6,7 +6,7 @@ import mekanism.api.MekanismAPI;
 import mekanism.api.chemical.Chemical;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.common.conditions.ICondition;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.types.EOChemical;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOChemical;
 import org.jetbrains.annotations.NotNull;
 
 import static net.radzratz.eternalores.util.EOUtils.EO;

@@ -13,9 +13,9 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.FluidType;
 import net.radzratz.eternalores.fluids.type.EOFluidType;
-import net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusions;
-import net.radzratz.eternalores.util.compat.mekanism.chemicals.types.EOChemical;
+import net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOInfusionCompatRegistry;
+import net.radzratz.eternalores.util.compat.mekanism.chemicals.EOChemical;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -33,8 +33,8 @@ public class EOJEIPlugin implements IModPlugin {
     @Override
     public void registerRecipeCatalysts(@NotNull IRecipeCatalystRegistration registry) {
         if(ironFurnaceMod) {
-            registry.addRecipeCatalyst(new ItemStack(EOIronFurnaceRegistries.CATALYRIUM_FURNACE.item()), RecipeTypes.SMELTING);
-            registry.addRecipeCatalyst(new ItemStack(EOIronFurnaceRegistries.CATALYRIUM_FURNACE.item()), RecipeTypes.FUELING);
+            registry.addRecipeCatalyst(new ItemStack(IronFurnacesCompatRegistry.CATALYRIUM_FURNACE.item()), RecipeTypes.SMELTING);
+            registry.addRecipeCatalyst(new ItemStack(IronFurnacesCompatRegistry.CATALYRIUM_FURNACE.item()), RecipeTypes.FUELING);
         }
     }
 
@@ -42,7 +42,7 @@ public class EOJEIPlugin implements IModPlugin {
     public void onRuntimeAvailable(@NotNull IJeiRuntime jeiRuntime) {
 
         if (mekanismMod) {
-            List<ChemicalStack> infusion = EOInfusions.EO_CHEMICALS.getEntries().stream()
+            List<ChemicalStack> infusion = EOInfusionCompatRegistry.EO_CHEMICALS.getEntries().stream()
                     .filter(e -> e.get() instanceof EOChemical c && !c.isEnabled())
                     .map(e -> new ChemicalStack(e, 1))
                     .toList();

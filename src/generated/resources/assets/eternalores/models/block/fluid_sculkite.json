@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "eternalores:block/fluids/fluid_sculkite_still",
-    "particle": "eternalores:block/fluids/fluid_sculkite_still"
-  }
-}

@@ -5,7 +5,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
-import net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistries;
+import net.radzratz.eternalores.util.compat.iron_furnaces.IronFurnacesCompatRegistry;
 
 /*
  * Copyright 2025 pizzaatime and XenoMustache
@@ -27,7 +27,7 @@ import net.radzratz.eternalores.util.compat.iron_furnaces.EOIronFurnaceRegistrie
  */
 public class EOCatalyriumFurnaceContainer extends BlockIronFurnaceContainerBase {
     public EOCatalyriumFurnaceContainer(int windowId, Level world, BlockPos pos, Inventory playerInventory, Player player) {
-        super(EOIronFurnaceRegistries.CATALYRIUM_FURNACE.container().get(), windowId, world, pos, playerInventory, player);
+        super(IronFurnacesCompatRegistry.CATALYRIUM_FURNACE.container().get(), windowId, world, pos, playerInventory, player);
         this.te = (EOCatalyriumFurnaceTile)world.getBlockEntity(pos);
     }
 }

@@ -9,7 +9,7 @@ import java.util.Comparator;
 
 import static net.radzratz.eternalores.util.EOUtils.allItemEntries;
 import static net.radzratz.eternalores.util.EOUtils.georeMod;
-import static net.radzratz.eternalores.util.compat.geore.GEOreRegistry.allGeOreItemEntries;
+import static net.radzratz.eternalores.util.compat.geore.GeOreCompatRegistry.allGeOreItemEntries;
 
 public class EORecipeActions {
     @FunctionalInterface

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "eternalores:block/coal_block/anthracite_coal_block"
-  }
-}
